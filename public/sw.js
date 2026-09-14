@@ -1,22 +1,35 @@
-// Minimal offline cache. Registered only in production builds (see main.tsx).
-const CACHE = 'farm-cost-planner-v1';
-self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/index.html', '/manifest.webmanifest', '/favicon.svg'])));
+// Scope all offline storage to this app, including GitHub Pages project paths.
+const PREFIX = 'farm-cost-planner-';
+const CACHE = `${PREFIX}${self.registration.scope}-v2`;
+const appUrl = (path) => new URL(path, self.registration.scope).href;
+self.addEventListener('install', (event) => {
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll([
+    appUrl('./'), appUrl('index.html'), appUrl('manifest.webmanifest'), appUrl('favicon.svg'),
+  ])));
   self.skipWaiting();
 });
-self.addEventListener('activate', (e) => {
-  e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))));
+self.addEventListener('activate', (event) => {
+  event.waitUntil(caches.keys().then((keys) => Promise.all(keys
+    .filter((key) => key.startsWith(`${PREFIX}${self.registration.scope}-`) && key !== CACHE)
+    .map((key) => caches.delete(key)))));
   self.clients.claim();
 });
-self.addEventListener('fetch', (e) => {
-  if (e.request.method !== 'GET') return;
-  e.respondWith(
-    caches.match(e.request).then((hit) => hit || fetch(e.request).then((res) => {
-      if (res.ok && new URL(e.request.url).origin === location.origin) {
-        const copy = res.clone();
-        caches.open(CACHE).then((c) => c.put(e.request, copy));
-      }
-      return res;
-    }).catch(() => caches.match('/index.html')))
-  );
+self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET' || !event.request.url.startsWith(self.registration.scope)) return;
+  // Refresh online so deployments do not leave users on a stale app shell.
+  event.respondWith(fetch(event.request).then((response) => {
+    if (response.ok) {
+      const copy = response.clone();
+      event.waitUntil(caches.open(CACHE).then((cache) => cache.put(event.request, copy)));
+    }
+    return response;
+  }).catch(async () => {
+    const cached = await caches.match(event.request);
+    if (cached) return cached;
+    if (event.request.mode === 'navigate') {
+      const shell = await caches.match(appUrl('index.html'));
+      if (shell) return shell;
+    }
+    return Response.error();
+  }));
 });
