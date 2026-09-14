@@ -1,0 +1,219 @@
+{
+ "source": {
+  "id": "blue-elderberry-20blueelderberrymultispecieshedgerowwithtillage",
+  "commodity": "blue-elderberry",
+  "title": "SAMPLE COSTS TO ESTABLISH",
+  "year": 2020,
+  "region": "Sacramento Valley",
+  "counties": "Property Taxes.",
+  "description": "Multi-species Hedgerow with Tillage",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/51/8f/518f9a2f-ebc2-4b72-8a9c-b551917c18e2/20blueelderberrymultispecieshedgerowwithtillage.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blue-elderberry",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": {
+   "value": 6,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 6.0 percent used to calculate capital recovery cost is the effective long-term interest rate in January 2020."
+  },
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 14.5,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $14.50 for machine operators and $12.50 for irrigation and general labor."
+  },
+  "laborNonMachineRate": {
+   "value": 12.5,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $14.50 for machine operators and $12.50 for irrigation and general labor."
+  },
+  "laborOverheadPct": {
+   "value": 42.56,
+   "unit": "%",
+   "page": 6,
+   "quote": "Labor rates of $20.67 per hour for machine operators and $17.82 for irrigation and general labor includes payroll overhead of 42.56 percent."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.4,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.75 and $3.40 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.4,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.75 and $3.40 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [
+  {
+   "description": "Rototiller",
+   "yearCode": null,
+   "price": 8500,
+   "yearsLife": 15,
+   "salvageValue": 816,
+   "capitalRecovery": 840,
+   "insurance": 41,
+   "taxes": 47,
+   "repairs": null,
+   "total": 928,
+   "page": 14,
+   "line": "Rototiller 8,500 15 816 840 41 47 928"
+  },
+  {
+   "description": "Kubota B9200",
+   "yearCode": null,
+   "price": 28000,
+   "yearsLife": 20,
+   "salvageValue": 3593,
+   "capitalRecovery": 2344,
+   "insurance": 140,
+   "taxes": 158,
+   "repairs": null,
+   "total": 2641,
+   "page": 14,
+   "line": "Kubota B9200 28,000 20 3,593 2,344 140 158 2,641"
+  },
+  {
+   "description": "Forklift Attachment",
+   "yearCode": null,
+   "price": 2500,
+   "yearsLife": 20,
+   "salvageValue": 139,
+   "capitalRecovery": 214,
+   "insurance": 12,
+   "taxes": 13,
+   "repairs": null,
+   "total": 239,
+   "page": 14,
+   "line": "Forklift Attachment 2,500 20 139 214 12 13 239"
+  }
+ ],
+ "investments": [],
+ "hourlyEquipment": [
+  {
+   "description": "Rototiller",
+   "hoursUsedOnCrop": 5,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 8.4,
+   "insurancePerHr": 0.41,
+   "taxesPerHr": 0.47,
+   "repairsPerHr": 3.93,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 3.93,
+   "totalCostPerHr": 13.21,
+   "page": 14,
+   "line": "Rototiller 5 8.40 0.41 0.47 3.93 0.00 3.93 13.21"
+  },
+  {
+   "description": "Kubota B9200 22",
+   "hoursUsedOnCrop": 3,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 91,
+   "insurancePerHr": 0.23,
+   "taxesPerHr": 0.26,
+   "repairsPerHr": 2.53,
+   "fuelPerHr": 4.13,
+   "totalOperatingPerHr": 6.66,
+   "totalCostPerHr": 11.06,
+   "page": 14,
+   "line": "Kubota B9200 22 3 91 0.23 0.26 2.53 4.13 6.66 11.06"
+  },
+  {
+   "description": "Forklift Attachment",
+   "hoursUsedOnCrop": 15,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.07,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.07,
+   "repairsPerHr": 0.08,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.08,
+   "totalCostPerHr": 1.27,
+   "page": 14,
+   "line": "Forklift Attachment 15 1.07 0.06 0.07 0.08 0.00 0.08 1.27"
+  }
+ ],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  }
+ },
+ "monthly": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "equipment",
+   "hourlyEquipment",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "investments",
+   "businessOverhead",
+   "insuranceRatePct",
+   "monthly"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "monthly table not used: MONTHLY CASH COSTS PER 1,000LF TO ESTABLISH BLUE ELDERBERRIES: no TOTAL CASH COSTS, TOTAL OPERATING COSTS or cash overhead rows found under the month header"
+  ]
+ }
+}

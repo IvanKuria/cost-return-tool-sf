@@ -1,0 +1,335 @@
+{
+ "source": {
+  "id": "grapes-wine-wine-grape-sn-2015",
+  "commodity": "grapes–wine",
+  "title": "SAMPLE COSTS TO ESTABLISH A VINEYARD AND",
+  "year": 2015,
+  "region": "Intermountain - Sierra Nevada",
+  "counties": null,
+  "description": "Establish and produce a 5 acre bilateral cordon vineyard, red wine variety",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/df/68/df68d252-a08d-49d1-8eb6-965637c0b615/wine-grape-sn-2015.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 5,
+   "unit": "acres",
+   "page": 5,
+   "quote": "It is assumed 2,000 feet of deer fence is needed to encircle the 5 acre vineyard."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": {
+   "value": 4,
+   "unit": "Ton",
+   "page": 20,
+   "quote": "TOTAL GROSS RETURNS 4 Ton 5,200"
+  },
+  "yieldUnit": "Ton",
+  "pricePerUnit": {
+   "value": 1300,
+   "unit": "$/Ton",
+   "page": 20,
+   "quote": "Grapes 4 Ton 1300.00 5,200"
+  },
+  "returns": [
+   {
+    "name": "Grapes",
+    "quantity": 4,
+    "unit": "Ton",
+    "price": 1300,
+    "value": 5200,
+    "page": 20,
+    "quote": "Grapes 4 Ton 1300.00 5,200"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 14.1,
+   "unit": "$/hr",
+   "page": 11,
+   "quote": "Hourly wages for workers are $14.10 and $10.24 per hour for machine and non-machine workers, respectively."
+  },
+  "laborNonMachineRate": {
+   "value": 10.24,
+   "unit": "$/hr",
+   "page": 11,
+   "quote": "Hourly wages for workers are $14.10 and $10.24 per hour for machine and non-machine workers, respectively."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": {
+   "page": 7,
+   "quote": "Harvestable yields begin in the third year with 1.0 ton per acre and increase to 4 tons per acre by the fifth year."
+  },
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 4491,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "TOTAL OPERATING COSTS/ACRE 4,491"
+  },
+  "cashOverheadTotal": {
+   "value": 155,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "TOTAL CASH OVERHEAD COSTS/TON 155"
+  },
+  "nonCashOverheadTotal": {
+   "value": 826,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS/TON 826"
+  },
+  "totalCost": {
+   "value": 8414,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "TOTAL COST/ACRE 8,414"
+  },
+  "grossReturns": {
+   "value": 5200,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "TOTAL GROSS RETURNS 4 Ton 5,200"
+  },
+  "netReturnsAboveOperating": {
+   "value": 709,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 709"
+  },
+  "netReturnsAboveTotal": {
+   "value": -3214,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "NET RETURNS ABOVE TOTAL COST -3,214"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 21,
+    "page": 21,
+    "quote": "Liability Insurance 21"
+   },
+   {
+    "description": "Office Expense",
+    "value": 75,
+    "page": 21,
+    "quote": "Office Expense 75"
+   },
+   {
+    "description": "Miscellaneous Cost-Training",
+    "value": 75,
+    "page": 21,
+    "quote": "Miscellaneous Cost-Training 75"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 360,
+    "page": 21,
+    "quote": "Property Taxes 360"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 30,
+    "page": 21,
+    "quote": "Property Insurance 30"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 60,
+    "page": 21,
+    "quote": "Investment Repairs 60"
+   }
+  ],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [
+  {
+   "description": "Land 5 Acres",
+   "yearCode": null,
+   "price": 100000,
+   "yearsLife": 30,
+   "salvageValue": 100000,
+   "capitalRecovery": 4750,
+   "insurance": 84,
+   "taxes": 1000,
+   "repairs": 0,
+   "total": 5834,
+   "page": 26,
+   "line": "Land 5 Acres 100,000 30 100,000 4,750 84 1,000 0 5,834"
+  },
+  {
+   "description": "Drip Irrigation System",
+   "yearCode": null,
+   "price": 16500,
+   "yearsLife": 25,
+   "salvageValue": 0,
+   "capitalRecovery": 1142,
+   "insurance": 7,
+   "taxes": 83,
+   "repairs": 298,
+   "total": 1529,
+   "page": 26,
+   "line": "Drip Irrigation System 16,500 25 0 1,142 7 83 298 1,529"
+  },
+  {
+   "description": "Vineyard Establishment",
+   "yearCode": null,
+   "price": 143015,
+   "yearsLife": 22,
+   "salvageValue": 0,
+   "capitalRecovery": 10619,
+   "insurance": 60,
+   "taxes": 715,
+   "repairs": 0,
+   "total": 11394,
+   "page": 26,
+   "line": "Vineyard Establishment 143,015 22 0 10,619 60 715 0 11,394"
+  }
+ ],
+ "hourlyEquipment": [],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 5,
+   "unit": "Acre",
+   "pricePerUnit": 21,
+   "totalCost": 105,
+   "page": 26,
+   "line": "Liability Insurance 5 Acre 21.00 105"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 5,
+   "unit": "Acre",
+   "pricePerUnit": 75,
+   "totalCost": 375,
+   "page": 26,
+   "line": "Office Expense 5 Acre 75.00 375"
+  },
+  {
+   "description": "Miscellaneous Cost-Training",
+   "unitsPerFarm": 5,
+   "unit": "Acre",
+   "pricePerUnit": 75,
+   "totalCost": 375,
+   "page": 26,
+   "line": "Miscellaneous Cost-Training 5 Acre 75.00 375"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": {
+   "page": 13,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   316,
+   338,
+   212,
+   92,
+   763,
+   511,
+   544,
+   1084,
+   1252,
+   0,
+   0,
+   0
+  ],
+  "operatingPerAcre": [
+   309,
+   115,
+   206,
+   86,
+   756,
+   504,
+   342,
+   1078,
+   1095,
+   0,
+   0,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 5112,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP"
+  ],
+  "spansTwoYears": false,
+  "page": 22,
+  "quote": "MONTHLY COSTS PER ACRE TO PRODUCE WINE GRAPES"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "investments",
+   "businessOverhead",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "counties",
+   "interestRatePct",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "operations",
+   "equipment",
+   "hourlyEquipment",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct"
+  ],
+  "warnings": [
+   "equipment table present but no equipment rows parsed"
+  ]
+ }
+}

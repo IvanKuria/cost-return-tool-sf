@@ -1,0 +1,659 @@
+{
+ "source": {
+  "id": "alfalfa-alfalfaorganiccadraft42021",
+  "commodity": "alfalfa",
+  "title": "SAMPLE COSTS TO ESTABLISH AND PRODUCE",
+  "year": 2020,
+  "region": "San Joaquin Valley South, San Joaquin Valley North, Intermountain, Sacramento Valley",
+  "counties": "Rachael Long UC Cooperative Extension Farm Advisor, Yolo, Solano and Sacramento",
+  "description": "Organic, Establish and Production, Flood Irrigation",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/04/20/alfalfaorganiccadraft42021.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": {
+   "value": 7,
+   "unit": "Ton",
+   "page": 16,
+   "quote": "TOTAL GROSS RETURNS 7 Ton 1,820"
+  },
+  "yieldUnit": "Ton",
+  "pricePerUnit": {
+   "value": 260,
+   "unit": "$/Ton",
+   "page": 16,
+   "quote": "Alfalfa Hay 7 Ton 260.00 1,820"
+  },
+  "returns": [
+   {
+    "name": "Alfalfa Hay",
+    "quantity": 7,
+    "unit": "Ton",
+    "price": 260,
+    "value": 1820,
+    "page": 16,
+    "quote": "Alfalfa Hay 7 Ton 260.00 1,820"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 16,
+   "unit": "$/hr",
+   "page": 7,
+   "quote": "Hourly wages for workers are $16.00 per hour for machine operators and $13.50 per hour non-machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 13.5,
+   "unit": "$/hr",
+   "page": 7,
+   "quote": "Hourly wages for workers are $16.00 per hour for machine operators and $13.50 per hour non-machine labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": {
+   "value": 345,
+   "unit": "$/acre/yr",
+   "page": 10,
+   "quote": "As noted, land in this study is rented by the grower for $345 per acre."
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": {
+   "page": 7,
+   "quote": "The crop in this study is assumed to yield 7.0 tons of hay per acre because yields of organic alfalfa are often slightly lower than conventional due to only partial control of many pests and weeds and the difficulty meeting the nutritional needs of alfalfa using solely organic sources."
+  },
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 886,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "TOTAL OPERATING COSTS/ACRE 1 3 519 295 886"
+  },
+  "cashOverheadTotal": {
+   "value": 398,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 398"
+  },
+  "nonCashOverheadTotal": {
+   "value": 306,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 1,509 306 306"
+  },
+  "totalCost": {
+   "value": 1589,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "TOTAL COSTS/ACRE 1,589"
+  },
+  "grossReturns": {
+   "value": 1820,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "TOTAL GROSS RETURNS 7 Ton 1,820"
+  },
+  "netReturnsAboveOperating": {
+   "value": 934,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 934"
+  },
+  "netReturnsAboveTotal": {
+   "value": 231,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "NET RETURNS ABOVE TOTAL COST 231"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 1,
+    "page": 15,
+    "quote": "Liability Insurance 1"
+   },
+   {
+    "description": "Office Expense",
+    "value": 20,
+    "page": 15,
+    "quote": "Office Expense 20"
+   },
+   {
+    "description": "Organic Certification",
+    "value": 16,
+    "page": 15,
+    "quote": "Organic Certification 16"
+   },
+   {
+    "description": "Land Rent",
+    "value": 345,
+    "page": 15,
+    "quote": "Land Rent 345"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 3,
+    "page": 15,
+    "quote": "Property Taxes 3"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 0,
+    "page": 15,
+    "quote": "Property Insurance 0"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 12,
+    "page": 15,
+    "quote": "Investment Repairs 12"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Weed: Harrow (1/3 cost-Year 3 Only)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.03,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 1,
+    "page": 15,
+    "quote": "Weed: Harrow (1/3 cost-Year 3 Only) 0.03 1 0 0 0 0 1"
+   },
+   {
+    "name": "Insect: Weevil (Entrust)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.05,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 66,
+    "customRent": 0,
+    "totalCost": 67,
+    "page": 15,
+    "quote": "Insect: Weevil (Entrust) 0.05 1 0 0 66 0 67"
+   },
+   {
+    "name": "Irrigate- Flood 6X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 30,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 350,
+    "customRent": 0,
+    "totalCost": 379,
+    "page": 15,
+    "quote": "Irrigate- Flood 6X 0.00 30 0 0 350 0 379"
+   },
+   {
+    "name": "Fertilizer: Tissue Analysis",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 2,
+    "totalCost": 2,
+    "page": 15,
+    "quote": "Fertilizer: Tissue Analysis 0.00 0 0 0 0 2 2"
+   },
+   {
+    "name": "Fertilizer: Compost (1/4 cost)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 60,
+    "customRent": 13,
+    "totalCost": 73,
+    "page": 15,
+    "quote": "Fertilizer: Compost (1/4 cost) 0.00 0 0 0 60 13 73"
+   },
+   {
+    "name": "Insect: Worms (XenTari)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.05,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 43,
+    "customRent": 0,
+    "totalCost": 45,
+    "page": 15,
+    "quote": "Insect: Worms (XenTari) 0.05 1 0 0 43 0 45"
+   },
+   {
+    "name": "Pickup Truck Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.57,
+    "labor": 16,
+    "fuel": 6,
+    "lubeRepairs": 2,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 24,
+    "page": 15,
+    "quote": "Pickup Truck Use 0.57 16 6 2 0 0 24"
+   },
+   {
+    "name": "Harvest - 7X",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 280,
+    "totalCost": 280,
+    "page": 15,
+    "quote": "Harvest - 7X 0.00 0 0 0 0 280 280"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "90 HP 4WD Tractor",
+   "yearCode": "20",
+   "price": 53423,
+   "yearsLife": 10,
+   "salvageValue": 15780,
+   "capitalRecovery": 5862,
+   "insurance": 31,
+   "taxes": 346,
+   "repairs": null,
+   "total": 6239,
+   "page": 19,
+   "line": "20 90 HP 4WD Tractor 53,423 10 15,780 5,862 31 346 6,239"
+  },
+  {
+   "description": "ATV",
+   "yearCode": "20",
+   "price": 6640,
+   "yearsLife": 7,
+   "salvageValue": 2519,
+   "capitalRecovery": 864,
+   "insurance": 4,
+   "taxes": 46,
+   "repairs": null,
+   "total": 914,
+   "page": 19,
+   "line": "20 ATV 6,640 7 2,519 864 4 46 914"
+  },
+  {
+   "description": "Pickup 3/4 Ton",
+   "yearCode": "20",
+   "price": 42000,
+   "yearsLife": 5,
+   "salvageValue": 18823,
+   "capitalRecovery": 6463,
+   "insurance": 27,
+   "taxes": 304,
+   "repairs": null,
+   "total": 6794,
+   "page": 19,
+   "line": "20 Pickup 3/4 Ton 42,000 5 18,823 6,463 27 304 6,794"
+  },
+  {
+   "description": "Spring tooth harrow",
+   "yearCode": "20",
+   "price": 18300,
+   "yearsLife": 10,
+   "salvageValue": 3236,
+   "capitalRecovery": 2176,
+   "insurance": 10,
+   "taxes": 108,
+   "repairs": null,
+   "total": 2294,
+   "page": 19,
+   "line": "20 Spring tooth harrow 18,300 10 3,236 2,176 10 108 2,294"
+  },
+  {
+   "description": "ATV Sprayer System",
+   "yearCode": "20",
+   "price": 9700,
+   "yearsLife": 10,
+   "salvageValue": 1715,
+   "capitalRecovery": 1154,
+   "insurance": 5,
+   "taxes": 57,
+   "repairs": null,
+   "total": 1216,
+   "page": 19,
+   "line": "20 ATV Sprayer System 9,700 10 1,715 1,154 5 57 1,216"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Establishment Cost",
+   "yearCode": null,
+   "price": 87900,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 25077,
+   "insurance": 0,
+   "taxes": 0,
+   "repairs": 0,
+   "total": 25077,
+   "page": 19,
+   "line": "Establishment Cost 87,900 4 0 25,077 0 0 0 25,077"
+  },
+  {
+   "description": "Fuel Tanks & Pumps",
+   "yearCode": null,
+   "price": 10500,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 879,
+   "insurance": 5,
+   "taxes": 53,
+   "repairs": 210,
+   "total": 1146,
+   "page": 19,
+   "line": "Fuel Tanks & Pumps 10,500 20 0 879 5 53 210 1,146"
+  },
+  {
+   "description": "Fuel Wagon",
+   "yearCode": null,
+   "price": 2500,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 332,
+   "insurance": 1,
+   "taxes": 13,
+   "repairs": 50,
+   "total": 395,
+   "page": 19,
+   "line": "Fuel Wagon 2,500 10 0 332 1 13 50 395"
+  },
+  {
+   "description": "Hay Barn",
+   "yearCode": null,
+   "price": 52500,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 4393,
+   "insurance": 23,
+   "taxes": 263,
+   "repairs": 1050,
+   "total": 5729,
+   "page": 19,
+   "line": "Hay Barn 52,500 20 0 4,393 23 263 1,050 5,729"
+  },
+  {
+   "description": "Shop Building",
+   "yearCode": null,
+   "price": 60000,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 4128,
+   "insurance": 27,
+   "taxes": 300,
+   "repairs": 1200,
+   "total": 5655,
+   "page": 19,
+   "line": "Shop Building 60,000 30 0 4,128 27 300 1,200 5,655"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 13000,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 1725,
+   "insurance": 6,
+   "taxes": 65,
+   "repairs": 260,
+   "total": 2055,
+   "page": 19,
+   "line": "Shop Tools 13,000 10 0 1,725 6 65 260 2,055"
+  },
+  {
+   "description": "Siphon Tubes",
+   "yearCode": null,
+   "price": 17000,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 1423,
+   "insurance": 8,
+   "taxes": 85,
+   "repairs": 340,
+   "total": 1855,
+   "page": 19,
+   "line": "Siphon Tubes 17,000 20 0 1,423 8 85 340 1,855"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "90 HP 4WD Tractor",
+   "hoursUsedOnCrop": 8,
+   "totalHours": 1600,
+   "capitalRecoveryPerHr": 1.83,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.11,
+   "repairsPerHr": 3.66,
+   "fuelPerHr": 16.57,
+   "totalOperatingPerHr": 20.23,
+   "totalCostPerHr": 22.18,
+   "page": 20,
+   "line": "20 90 HP 4WD Tractor 8 1600 1.83 0.01 0.11 3.66 16.57 20.23 22.18"
+  },
+  {
+   "description": "ATV",
+   "hoursUsedOnCrop": 10,
+   "totalHours": 285,
+   "capitalRecoveryPerHr": 1.52,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.08,
+   "repairsPerHr": 0.75,
+   "fuelPerHr": 2.27,
+   "totalOperatingPerHr": 3.01,
+   "totalCostPerHr": 4.62,
+   "page": 20,
+   "line": "20 ATV 10 285 1.52 0.01 0.08 0.75 2.27 3.01 4.62"
+  },
+  {
+   "description": "Pickup 3/4 Ton",
+   "hoursUsedOnCrop": 57,
+   "totalHours": 400,
+   "capitalRecoveryPerHr": 8.08,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.38,
+   "repairsPerHr": 4.13,
+   "fuelPerHr": 10.2,
+   "totalOperatingPerHr": 14.33,
+   "totalCostPerHr": 22.83,
+   "page": 20,
+   "line": "20 Pickup 3/4 Ton 57 400 8.08 0.03 0.38 4.13 10.20 14.33 22.83"
+  },
+  {
+   "description": "Spring Tooth Harrow",
+   "hoursUsedOnCrop": 2,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 5.44,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.27,
+   "repairsPerHr": 3.11,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 3.11,
+   "totalCostPerHr": 8.85,
+   "page": 20,
+   "line": "20 Spring Tooth Harrow 2 200 5.44 0.02 0.27 3.11 0.00 3.11 8.85"
+  },
+  {
+   "description": "ATV Sprayer System",
+   "hoursUsedOnCrop": 10,
+   "totalHours": 150,
+   "capitalRecoveryPerHr": 3.85,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.19,
+   "repairsPerHr": 2.17,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.17,
+   "totalCostPerHr": 6.22,
+   "page": 20,
+   "line": "20 ATV Sprayer System 10 150 3.85 0.02 0.19 2.17 0.00 2.17 6.22"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 100,
+   "unit": "Acre",
+   "pricePerUnit": 1.46,
+   "totalCost": 146,
+   "page": 19,
+   "line": "Liability Insurance 100.00 Acre 1.46 146"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 100,
+   "unit": "Acre",
+   "pricePerUnit": 20,
+   "totalCost": 2000,
+   "page": 19,
+   "line": "Office Expense 100.00 Acre 20.00 2,000"
+  },
+  {
+   "description": "Organic Certification",
+   "unitsPerFarm": 100,
+   "unit": "Acre",
+   "pricePerUnit": 16,
+   "totalCost": 1600,
+   "page": 19,
+   "line": "Organic Certification 100.00 Acre 16.00 1,600"
+  },
+  {
+   "description": "Land Rent",
+   "unitsPerFarm": 100,
+   "unit": "Acre",
+   "pricePerUnit": 345,
+   "totalCost": 34500,
+   "page": 19,
+   "line": "Land Rent 100.00 Acre 345.00 34,500"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 9,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 9,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "County taxes are calculated as 1 percent of the average value of the property."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   352,
+   4,
+   72,
+   175,
+   100,
+   109,
+   173,
+   159,
+   140,
+   0,
+   0,
+   0
+  ],
+  "operatingPerAcre": [
+   4,
+   3,
+   70,
+   173,
+   99,
+   108,
+   170,
+   158,
+   101,
+   0,
+   0,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 1284,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP"
+  ],
+  "spansTwoYears": false,
+  "page": 17,
+  "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ALFALFA HAY"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "landRentPerAcre",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "interestRatePct",
+   "laborOverheadPct",
+   "acresFarmed",
+   "insuranceRatePct"
+  ],
+  "warnings": []
+ }
+}

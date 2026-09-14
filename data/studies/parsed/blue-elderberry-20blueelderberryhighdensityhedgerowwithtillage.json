@@ -1,0 +1,196 @@
+{
+ "source": {
+  "id": "blue-elderberry-20blueelderberryhighdensityhedgerowwithtillage",
+  "commodity": "blue-elderberry",
+  "title": "SAMPLE COSTS TO ESTABLISH",
+  "year": 2020,
+  "region": "Sacramento Valley",
+  "counties": "Property Taxes.",
+  "description": "High-density Hedgerow with Tillage",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/72/72/7272112b-2dec-4cb4-95ed-b4253dd5e981/20blueelderberryhighdensityhedgerowwithtillage.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blue-elderberry",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 10,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The LA farm consists of 10 contiguous acres owned by the operator."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": {
+   "value": 6,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 6.0 percent used to calculate capital recovery cost is the effective long-term interest rate in January 2020."
+  },
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 14.5,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $14.50 for machine operators and $12.50 for irrigation and general labor."
+  },
+  "laborNonMachineRate": {
+   "value": 12.5,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $14.50 for machine operators and $12.50 for irrigation and general labor."
+  },
+  "laborOverheadPct": {
+   "value": 42.56,
+   "unit": "%",
+   "page": 6,
+   "quote": "Labor rates of $20.67 per hour for machine operators and $17.82 for irrigation and general labor includes payroll overhead of 42.56 percent."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.4,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.75 and $3.40 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.4,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.75 and $3.40 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [
+  {
+   "description": "Kubota B9200",
+   "yearCode": null,
+   "price": 28000,
+   "yearsLife": 20,
+   "salvageValue": 3593,
+   "capitalRecovery": 2344,
+   "insurance": 140,
+   "taxes": 158,
+   "repairs": null,
+   "total": 2641,
+   "page": 14,
+   "line": "Kubota B9200 28,000 20 3,593 2,344 140 158 2,641"
+  },
+  {
+   "description": "Disc",
+   "yearCode": null,
+   "price": 8000,
+   "yearsLife": 15,
+   "salvageValue": 768,
+   "capitalRecovery": 791,
+   "insurance": 39,
+   "taxes": 44,
+   "repairs": null,
+   "total": 873,
+   "page": 14,
+   "line": "Disc 8,000 15 768 791 39 44 873"
+  }
+ ],
+ "investments": [],
+ "hourlyEquipment": [
+  {
+   "description": "Kubota B9200",
+   "hoursUsedOnCrop": 3,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 3.91,
+   "insurancePerHr": 0.23,
+   "taxesPerHr": 0.26,
+   "repairsPerHr": 2.53,
+   "fuelPerHr": 4.13,
+   "totalOperatingPerHr": 6.66,
+   "totalCostPerHr": 11.06,
+   "page": 14,
+   "line": "Kubota B9200 3 3.91 0.23 0.26 2.53 4.13 6.66 11.06"
+  },
+  {
+   "description": "Disc",
+   "hoursUsedOnCrop": 2,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 5.95,
+   "insurancePerHr": 0.29,
+   "taxesPerHr": 0.33,
+   "repairsPerHr": 2.07,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.07,
+   "totalCostPerHr": 8.64,
+   "page": 14,
+   "line": "Disc 2 5.95 0.29 0.33 2.07 0.00 2.07 8.64"
+  }
+ ],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  }
+ },
+ "monthly": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "acresFarmed",
+   "equipment",
+   "hourlyEquipment",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "landRentPerAcre",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "investments",
+   "businessOverhead",
+   "insuranceRatePct",
+   "monthly"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "monthly table not used: MONTHLY CASH COSTS PER 1,000LF TO ESTABLISH BLUE ELDERBERRY: TOTAL OPERATING COSTS + TOTAL CASH OVERHEAD rows: months sum to 1881 but the Total column says 2179"
+  ]
+ }
+}

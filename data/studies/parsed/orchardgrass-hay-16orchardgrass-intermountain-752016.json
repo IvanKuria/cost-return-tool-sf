@@ -1,0 +1,812 @@
+{
+ "source": {
+  "id": "orchardgrass-hay-16orchardgrass-intermountain-752016",
+  "commodity": "orchardgrass-hay",
+  "title": "SAMPLE COSTS TO ESTABLISH AND PRODUCE",
+  "year": 2016,
+  "region": "Intermountain Siskiyou, Lassen, Shasta",
+  "counties": "Shasta, Lassen and Siskiyou",
+  "description": "Establishment/production, small bales for horse feed industry, 300 acres",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/86/b2/86b28877-5976-4d3a-b0e7-862314057bf1/16orchardgrass_intermountain_752016.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/orchardgrass-hay",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 305,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The 305 acre farm is owned and operated by the grower."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": "Ton",
+  "pricePerUnit": null,
+  "returns": [
+   {
+    "name": "Orchardgrass Hay – 1st Cutting",
+    "quantity": 3.2,
+    "unit": "Ton",
+    "price": 205,
+    "value": 656,
+    "page": 13,
+    "quote": "Orchardgrass Hay – 1st Cutting 3.2 Ton 205.00 656"
+   },
+   {
+    "name": "Orchardgrass Hay – 2nd Cutting",
+    "quantity": 1.8,
+    "unit": "Ton",
+    "price": 245,
+    "value": 441,
+    "page": 13,
+    "quote": "Orchardgrass Hay – 2nd Cutting 1.8 Ton 245.00 441"
+   },
+   {
+    "name": "Orchardgrass Hay – 3rd Cutting",
+    "quantity": 2,
+    "unit": "Ton",
+    "price": 245,
+    "value": 490,
+    "page": 13,
+    "quote": "Orchardgrass Hay – 3rd Cutting 2.0 Ton 245.00 490"
+   }
+  ],
+  "interestRatePct": {
+   "value": 3.75,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 3.75 percent used to calculate capital recovery cost is the effective long term interest rate effective April 2016."
+  },
+  "operatingInterestRatePct": {
+   "value": 4.25,
+   "unit": "%",
+   "page": 6,
+   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 4.25 percent per year."
+  },
+  "laborMachineRate": {
+   "value": 16.25,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $16.25 for equipment operators and $11.50 for irrigation labor."
+  },
+  "laborNonMachineRate": {
+   "value": 11.5,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $16.25 for equipment operators and $11.50 for irrigation labor."
+  },
+  "laborOverheadPct": {
+   "value": 46,
+   "unit": "%",
+   "page": 6,
+   "quote": "Labor: The labor rates of $23.73 per hour for equipment operators and $16.79 for irrigation labor include overhead of 46 percent."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": {
+   "page": 5,
+   "quote": "The crop yield used in this study are 7 tons per acre annually with 3.2 tons the first cutting, 1.8 tons the second cutting and 2.0 tons the third cutting."
+  },
+  "priceStatement": {
+   "page": 5,
+   "quote": "This study applies a price of $205/ton for the first cutting and $245/ton for the second and third cuttings."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 699,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL OPERATING COSTS/ACRE 3.28 125 36 81 348 110 699"
+  },
+  "cashOverheadTotal": {
+   "value": 114,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 114"
+  },
+  "nonCashOverheadTotal": {
+   "value": 347,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 5,972 347 347"
+  },
+  "totalCost": {
+   "value": 1160,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL COSTS/ACRE 1,160"
+  },
+  "grossReturns": {
+   "value": 1587,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL GROSS RETURNS 7.0 Ton 1,587"
+  },
+  "netReturnsAboveOperating": {
+   "value": 888,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 888"
+  },
+  "netReturnsAboveTotal": {
+   "value": 427,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "NET RETURNS ABOVE TOTAL COST 427"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 20,
+    "page": 12,
+    "quote": "Office Expense 20"
+   },
+   {
+    "description": "GPS Fee",
+    "value": 12,
+    "page": 12,
+    "quote": "GPS Fee 12"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 51,
+    "page": 12,
+    "quote": "Property Taxes 51"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 4,
+    "page": 12,
+    "quote": "Property Insurance 4"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 24,
+    "page": 12,
+    "quote": "Investment Repairs 24"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Weed Control - In-Field Application",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 4,
+    "customRent": 8,
+    "totalCost": 12,
+    "page": 12,
+    "quote": "Weed Control - In-Field Application 0.00 0 0 0 4 8 12"
+   },
+   {
+    "name": "Fertilize",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 150,
+    "customRent": 24,
+    "totalCost": 174,
+    "page": 12,
+    "quote": "Fertilize 0.00 0 0 0 150 24 174"
+   },
+   {
+    "name": "Irrigate",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 32,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 188,
+    "customRent": 0,
+    "totalCost": 219,
+    "page": 12,
+    "quote": "Irrigate 0.00 32 0 0 188 0 219"
+   },
+   {
+    "name": "Pickup Truck Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 1,
+    "labor": 28,
+    "fuel": 4,
+    "lubeRepairs": 3,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 36,
+    "page": 12,
+    "quote": "Pickup Truck Use 1.00 28 4 3 0 0 36"
+   },
+   {
+    "name": "ATV Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.5,
+    "labor": 14,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 16,
+    "page": 12,
+    "quote": "ATV Use 0.50 14 1 0 0 0 16"
+   },
+   {
+    "name": "Soil Analysis",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 1,
+    "totalCost": 1,
+    "page": 12,
+    "quote": "Soil Analysis 0.00 0 0 0 0 1 1"
+   },
+   {
+    "name": "Cut Hay",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.39,
+    "labor": 11,
+    "fuel": 9,
+    "lubeRepairs": 7,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 27,
+    "page": 12,
+    "quote": "Cut Hay 0.39 11 9 7 0 0 27"
+   },
+   {
+    "name": "Rake Hay",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.31,
+    "labor": 9,
+    "fuel": 5,
+    "lubeRepairs": 2,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 16,
+    "page": 12,
+    "quote": "Rake Hay 0.31 9 5 2 0 0 16"
+   },
+   {
+    "name": "Bale Hay",
+    "category": "harvest",
+    "timeHrsPerAcre": 1.09,
+    "labor": 31,
+    "fuel": 17,
+    "lubeRepairs": 68,
+    "materials": 7,
+    "customRent": 0,
+    "totalCost": 122,
+    "page": 12,
+    "quote": "Bale Hay 1.09 31 17 68 7 0 122"
+   },
+   {
+    "name": "Roadside, Store & Load Hay",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 77,
+    "totalCost": 77,
+    "page": 12,
+    "quote": "Roadside, Store & Load Hay 0.00 0 0 0 0 77 77"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "ATV",
+   "yearCode": "16",
+   "price": 8350,
+   "yearsLife": 7,
+   "salvageValue": 3167,
+   "capitalRecovery": 974,
+   "insurance": 5,
+   "taxes": 58,
+   "repairs": null,
+   "total": 1037,
+   "page": 16,
+   "line": "16 ATV 8,350 7 3,167 974 5 58 1,037"
+  },
+  {
+   "description": "Rake - 20' Ctr Del",
+   "yearCode": "16",
+   "price": 14394,
+   "yearsLife": 10,
+   "salvageValue": 2545,
+   "capitalRecovery": 1538,
+   "insurance": 7,
+   "taxes": 85,
+   "repairs": null,
+   "total": 1630,
+   "page": 16,
+   "line": "16 Rake - 20' Ctr Del 14,394 10 2,545 1,538 7 85 1,630"
+  },
+  {
+   "description": "Pickup 1/2 Ton 2WD",
+   "yearCode": "16",
+   "price": 30000,
+   "yearsLife": 6,
+   "salvageValue": 12370,
+   "capitalRecovery": 3800,
+   "insurance": 18,
+   "taxes": 212,
+   "repairs": null,
+   "total": 4029,
+   "page": 16,
+   "line": "16 Pickup 1/2 Ton 2WD 30,000 6 12,370 3,800 18 212 4,029"
+  },
+  {
+   "description": "Baler - #1 - small bales",
+   "yearCode": "16",
+   "price": 36557,
+   "yearsLife": 10,
+   "salvageValue": 6896,
+   "capitalRecovery": 3870,
+   "insurance": 18,
+   "taxes": 217,
+   "repairs": null,
+   "total": 4106,
+   "page": 16,
+   "line": "16 Baler - #1 - small bales 36,557 10 6,896 3,870 18 217 4,106"
+  },
+  {
+   "description": "Baler - #2 - small bales",
+   "yearCode": "16",
+   "price": 36557,
+   "yearsLife": 10,
+   "salvageValue": 6896,
+   "capitalRecovery": 3870,
+   "insurance": 18,
+   "taxes": 217,
+   "repairs": null,
+   "total": 4106,
+   "page": 16,
+   "line": "16 Baler - #2 - small bales 36,557 10 6,896 3,870 18 217 4,106"
+  },
+  {
+   "description": "Tractor #1 - 130 HP 4wd",
+   "yearCode": "16",
+   "price": 117421,
+   "yearsLife": 16,
+   "salvageValue": 21031,
+   "capitalRecovery": 8909,
+   "insurance": 58,
+   "taxes": 692,
+   "repairs": null,
+   "total": 9660,
+   "page": 16,
+   "line": "16 Tractor #1 - 130 HP 4wd 117,421 16 21,031 8,909 58 692 9,660"
+  },
+  {
+   "description": "Tractor #2 - 130 HP 4wd",
+   "yearCode": "16",
+   "price": 117421,
+   "yearsLife": 16,
+   "salvageValue": 21031,
+   "capitalRecovery": 8909,
+   "insurance": 58,
+   "taxes": 692,
+   "repairs": null,
+   "total": 9660,
+   "page": 16,
+   "line": "16 Tractor #2 - 130 HP 4wd 117,421 16 21,031 8,909 58 692 9,660"
+  },
+  {
+   "description": "Windrower/Swather 16'",
+   "yearCode": "16",
+   "price": 133764,
+   "yearsLife": 15,
+   "salvageValue": 12842,
+   "capitalRecovery": 11168,
+   "insurance": 62,
+   "taxes": 733,
+   "repairs": null,
+   "total": 11963,
+   "page": 16,
+   "line": "16 Windrower/Swather 16' 133,764 15 12,842 11,168 62 733 11,963"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Fuel Tanks & Pumps",
+   "yearCode": null,
+   "price": 15000,
+   "yearsLife": 15,
+   "salvageValue": 1500,
+   "capitalRecovery": 1249,
+   "insurance": 7,
+   "taxes": 83,
+   "repairs": 300,
+   "total": 1639,
+   "page": 16,
+   "line": "Fuel Tanks & Pumps 15,000 15 1,500 1,249 7 83 300 1,639"
+  },
+  {
+   "description": "Fuel Wagon",
+   "yearCode": null,
+   "price": 8950,
+   "yearsLife": 15,
+   "salvageValue": 627,
+   "capitalRecovery": 759,
+   "insurance": 4,
+   "taxes": 48,
+   "repairs": 179,
+   "total": 990,
+   "page": 16,
+   "line": "Fuel Wagon 8,950 15 627 759 4 48 179 990"
+  },
+  {
+   "description": "Hay Barns - 500T each (3)",
+   "yearCode": null,
+   "price": 180000,
+   "yearsLife": 30,
+   "salvageValue": 1800,
+   "capitalRecovery": 10062,
+   "insurance": 77,
+   "taxes": 909,
+   "repairs": 3600,
+   "total": 14648,
+   "page": 16,
+   "line": "Hay Barns - 500T each (3) 180,000 30 1,800 10,062 77 909 3,600 14,648"
+  },
+  {
+   "description": "Shop Building",
+   "yearCode": null,
+   "price": 45000,
+   "yearsLife": 30,
+   "salvageValue": 4500,
+   "capitalRecovery": 2440,
+   "insurance": 21,
+   "taxes": 248,
+   "repairs": 900,
+   "total": 3609,
+   "page": 16,
+   "line": "Shop Building 45,000 30 4,500 2,440 21 248 900 3,609"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 10000,
+   "yearsLife": 10,
+   "salvageValue": 700,
+   "capitalRecovery": 1159,
+   "insurance": 5,
+   "taxes": 54,
+   "repairs": 200,
+   "total": 1417,
+   "page": 16,
+   "line": "Shop Tools 10,000 10 700 1,159 5 54 200 1,417"
+  },
+  {
+   "description": "GPS Receivers (3)",
+   "yearCode": null,
+   "price": 5385,
+   "yearsLife": 10,
+   "salvageValue": 539,
+   "capitalRecovery": 610,
+   "insurance": 3,
+   "taxes": 30,
+   "repairs": 108,
+   "total": 750,
+   "page": 16,
+   "line": "GPS Receivers (3) 5,385 10 539 610 3 30 108 750"
+  },
+  {
+   "description": "Hay Land",
+   "yearCode": null,
+   "price": 1200000,
+   "yearsLife": 40,
+   "salvageValue": 1200000,
+   "capitalRecovery": 45000,
+   "insurance": 1012,
+   "taxes": 12000,
+   "repairs": 0,
+   "total": 58012,
+   "page": 16,
+   "line": "Hay Land 1,200,000 40 1,200,000 45,000 1,012 12,000 0 58,012"
+  },
+  {
+   "description": "Center Pivot w/out Corners (2)",
+   "yearCode": null,
+   "price": 100000,
+   "yearsLife": 30,
+   "salvageValue": 10000,
+   "capitalRecovery": 5423,
+   "insurance": 46,
+   "taxes": 550,
+   "repairs": 2000,
+   "total": 8019,
+   "page": 16,
+   "line": "Center Pivot w/out Corners (2) 100,000 30 10,000 5,423 46 550 2,000 8,019"
+  },
+  {
+   "description": "Hay Stand Establishment Cost",
+   "yearCode": null,
+   "price": 88200,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 24155,
+   "insurance": 37,
+   "taxes": 441,
+   "repairs": 0,
+   "total": 24633,
+   "page": 16,
+   "line": "Hay Stand Establishment Cost 88,200 4 0 24,155 37 441 0 24,633"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "ATV",
+   "hoursUsedOnCrop": 151,
+   "totalHours": 285,
+   "capitalRecoveryPerHr": 2.05,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.12,
+   "repairsPerHr": 0.89,
+   "fuelPerHr": 1.8,
+   "totalOperatingPerHr": 2.69,
+   "totalCostPerHr": 4.87,
+   "page": 16,
+   "line": "16 ATV 151 285 2.05 0.01 0.12 0.89 1.80 2.69 4.87"
+  },
+  {
+   "description": "Rake - 20' Ctr Del",
+   "hoursUsedOnCrop": 93,
+   "totalHours": 250,
+   "capitalRecoveryPerHr": 3.69,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.2,
+   "repairsPerHr": 2.05,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.05,
+   "totalCostPerHr": 5.97,
+   "page": 16,
+   "line": "16 Rake - 20' Ctr Del 93 250 3.69 0.02 0.20 2.05 0.00 2.05 5.97"
+  },
+  {
+   "description": "Pickup 1/2 Ton 2WD",
+   "hoursUsedOnCrop": 300,
+   "totalHours": 300,
+   "capitalRecoveryPerHr": 7.6,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.42,
+   "repairsPerHr": 3.45,
+   "fuelPerHr": 4.05,
+   "totalOperatingPerHr": 7.5,
+   "totalCostPerHr": 15.56,
+   "page": 16,
+   "line": "16 Pickup 1/2 Ton 2WD 300 300 7.60 0.04 0.42 3.45 4.05 7.50 15.56"
+  },
+  {
+   "description": "Baler - #1 - small bales",
+   "hoursUsedOnCrop": 163,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 11.61,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.65,
+   "repairsPerHr": 113.13,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 113.13,
+   "totalCostPerHr": 125.45,
+   "page": 16,
+   "line": "16 Baler - #1 - small bales 163 200 11.61 0.05 0.65 113.13 0.00 113.13 125.45"
+  },
+  {
+   "description": "Baler - #2 - small bales",
+   "hoursUsedOnCrop": 163,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 11.61,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.65,
+   "repairsPerHr": 0,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0,
+   "totalCostPerHr": 12.32,
+   "page": 16,
+   "line": "16 Baler - #2 - small bales 163 200 11.61 0.05 0.65 0.00 0.00 0.00 12.32"
+  },
+  {
+   "description": "Tractor #1 - 130 HP 4wd",
+   "hoursUsedOnCrop": 281,
+   "totalHours": 1000,
+   "capitalRecoveryPerHr": 5.35,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.42,
+   "repairsPerHr": 5.17,
+   "fuelPerHr": 14.1,
+   "totalOperatingPerHr": 19.27,
+   "totalCostPerHr": 25.07,
+   "page": 16,
+   "line": "16 Tractor #1 - 130 HP 4wd 281 1000 5.35 0.04 0.42 5.17 14.10 19.27 25.07"
+  },
+  {
+   "description": "Tractor #2 - 130 HP 4wd",
+   "hoursUsedOnCrop": 179,
+   "totalHours": 1000,
+   "capitalRecoveryPerHr": 5.35,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.42,
+   "repairsPerHr": 5.17,
+   "fuelPerHr": 14.1,
+   "totalOperatingPerHr": 19.27,
+   "totalCostPerHr": 25.07,
+   "page": 16,
+   "line": "16 Tractor #2 - 130 HP 4wd 179 1000 5.35 0.04 0.42 5.17 14.10 19.27 25.07"
+  },
+  {
+   "description": "Windrower/Swather 16'",
+   "hoursUsedOnCrop": 128,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 33.5,
+   "insurancePerHr": 0.19,
+   "taxesPerHr": 2.2,
+   "repairsPerHr": 16.3,
+   "fuelPerHr": 21.15,
+   "totalOperatingPerHr": 37.46,
+   "totalCostPerHr": 73.35,
+   "page": 16,
+   "line": "16 Windrower/Swather 16' 128 200 33.50 0.19 2.20 16.30 21.15 37.46 73.35"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 305,
+   "unit": "Acre",
+   "pricePerUnit": 3.31,
+   "totalCost": 1010,
+   "page": 16,
+   "line": "Liability Insurance 305 Acre 3.31 1,010"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 305,
+   "unit": "Acre",
+   "pricePerUnit": 20,
+   "totalCost": 6100,
+   "page": 16,
+   "line": "Office Expense 305 Acre 20 6,100"
+  },
+  {
+   "description": "GPS Fee",
+   "unitsPerFarm": 305,
+   "unit": "Acre",
+   "pricePerUnit": 12,
+   "totalCost": 3660,
+   "page": 16,
+   "line": "GPS Fee 305 Acre 12 3,660"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is (Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   0,
+   0,
+   74,
+   121,
+   41,
+   193,
+   188,
+   61,
+   136,
+   0,
+   0,
+   0
+  ],
+  "operatingPerAcre": [
+   0,
+   0,
+   8,
+   117,
+   37,
+   189,
+   185,
+   58,
+   105,
+   0,
+   0,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   false,
+   true,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 814,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 14,
+  "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ORCHARDGRASS"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "landRentPerAcre"
+  ],
+  "warnings": [
+   "Table 2 lists 3 return lines with different prices; pricePerUnit left null, see returns[]"
+  ]
+ }
+}

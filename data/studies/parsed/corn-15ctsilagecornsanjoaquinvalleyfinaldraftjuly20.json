@@ -1,0 +1,748 @@
+{
+ "source": {
+  "id": "corn-15ctsilagecornsanjoaquinvalleyfinaldraftjuly20",
+  "commodity": "corn",
+  "title": "SAMPLE COSTS TO PRODUCE",
+  "year": 2015,
+  "region": "San Joaquin Valley North",
+  "counties": "Property Taxes.",
+  "description": "Silage corn, conservation tillage",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a9/c5/a9c55e16-83cf-46f3-86b8-436ae2deb41f/15ctsilagecornsanjoaquinvalleyfinaldraftjuly20.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/corn",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 300,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The hypothetical farm consists of 300 non-contiguous acres of which 150 acres are rented and 150 owned by the grower."
+  },
+  "acresCrop": {
+   "value": 140,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The grower-owned 150 acres includes 10 acres occupied by buildings and homestead, and 140 acres planted to other crops."
+  },
+  "yieldPerAcre": {
+   "value": 32,
+   "unit": "Ton",
+   "page": 10,
+   "quote": "TOTAL GROSS RETURNS 32 Ton 1,536"
+  },
+  "yieldUnit": "Ton",
+  "pricePerUnit": {
+   "value": 48,
+   "unit": "$/Ton",
+   "page": 10,
+   "quote": "Silage Corn 32 Ton 48.00 1,536"
+  },
+  "returns": [
+   {
+    "name": "Silage Corn",
+    "quantity": 32,
+    "unit": "Ton",
+    "price": 48,
+    "value": 1536,
+    "page": 10,
+    "quote": "Silage Corn 32 Ton 48.00 1,536"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 19.32,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Adding 38% for the employer’s share of federal and state payroll taxes, insurance and other benefits raises the total labor costs to $19.32 per hour for machine operators and $16.56 per hour for non-machine laborers."
+  },
+  "laborNonMachineRate": {
+   "value": 16.56,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Adding 38% for the employer’s share of federal and state payroll taxes, insurance and other benefits raises the total labor costs to $19.32 per hour for machine operators and $16.56 per hour for non-machine laborers."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": {
+   "value": 300,
+   "unit": "$/acre/yr",
+   "page": 6,
+   "quote": "The cash rent for the land is $300 per acre or $310 per production acre (145 acres) for a single crop."
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.41,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and unleaded gasoline are $3.17 and $3.41 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.41,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and unleaded gasoline are $3.17 and $3.41 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 5,
+   "quote": "The crop is assumed to yield 32 tons per acre at 70% moisture."
+  },
+  "priceStatement": {
+   "page": 5,
+   "quote": "Based on the 2013 market, a price of $48 per ton is used to calculate returns."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 1232,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL OPERATING COSTS/ACRE 1 141 7 2 516 547 1,232"
+  },
+  "cashOverheadTotal": {
+   "value": 262,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 262"
+  },
+  "nonCashOverheadTotal": {
+   "value": 28,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 377 28 28"
+  },
+  "totalCost": {
+   "value": 1523,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL COSTS/ACRE 1,523"
+  },
+  "grossReturns": {
+   "value": 1536,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "TOTAL GROSS RETURNS 32 Ton 1,536"
+  },
+  "netReturnsAboveOperating": {
+   "value": 304,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 304"
+  },
+  "netReturnsAboveTotal": {
+   "value": 13,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "NET RETURNS ABOVE TOTAL COST 13"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 3,
+    "page": 9,
+    "quote": "Liability Insurance 3"
+   },
+   {
+    "description": "Miscellaneous Costs (Training)",
+    "value": 20,
+    "page": 9,
+    "quote": "Miscellaneous Costs (Training) 20"
+   },
+   {
+    "description": "Office Expenses",
+    "value": 40,
+    "page": 9,
+    "quote": "Office Expenses 40"
+   },
+   {
+    "description": "Supervisor Salary",
+    "value": 36,
+    "page": 9,
+    "quote": "Supervisor Salary 36"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 2,
+    "page": 9,
+    "quote": "Property Taxes 2"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 0,
+    "page": 9,
+    "quote": "Property Insurance 0"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 6,
+    "page": 9,
+    "quote": "Investment Repairs 6"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Laser Plane-Custom 25% of Acres (50% of cost )",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 15,
+    "totalCost": 15,
+    "page": 9,
+    "quote": "Laser Plane-Custom 25% of Acres (50% of cost ) 0.00 0 0 0 0 15 15"
+   },
+   {
+    "name": "Tri-Plane 75% of Acres (50% of cost)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 12,
+    "totalCost": 12,
+    "page": 9,
+    "quote": "Tri-Plane 75% of Acres (50% of cost) 0.00 0 0 0 0 12 12"
+   },
+   {
+    "name": "Ridge/Shape Borders (50% of cost)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 6,
+    "totalCost": 6,
+    "page": 9,
+    "quote": "Ridge/Shape Borders (50% of cost) 0.00 0 0 0 0 6 6"
+   },
+   {
+    "name": "Haul/Spread Compost (1.5% N)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 129,
+    "totalCost": 129,
+    "page": 9,
+    "quote": "Haul/Spread Compost (1.5% N) 0.00 0 0 0 0 129 129"
+   },
+   {
+    "name": "Pre-Irrigate",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 29,
+    "customRent": 0,
+    "totalCost": 29,
+    "page": 9,
+    "quote": "Pre-Irrigate 0.00 0 0 0 29 0 29"
+   },
+   {
+    "name": "Strip-Tillage Cultivation",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 18,
+    "totalCost": 18,
+    "page": 9,
+    "quote": "Strip-Tillage Cultivation 0.00 0 0 0 0 18 18"
+   },
+   {
+    "name": "Plant/Fertilize/Herbicide",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 178,
+    "customRent": 22,
+    "totalCost": 200,
+    "page": 9,
+    "quote": "Plant/Fertilize/Herbicide 0.00 0 0 0 178 22 200"
+   },
+   {
+    "name": "Cultivate/Furrow Out",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 14,
+    "totalCost": 14,
+    "page": 9,
+    "quote": "Cultivate/Furrow Out 0.00 0 0 0 0 14 14"
+   },
+   {
+    "name": "Weeds-Post Emergence",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.13,
+    "labor": 3,
+    "fuel": 2,
+    "lubeRepairs": 1,
+    "materials": 25,
+    "customRent": 0,
+    "totalCost": 31,
+    "page": 9,
+    "quote": "Weeds-Post Emergence 0.13 3 2 1 25 0 31"
+   },
+   {
+    "name": "Pests-Mites Oberon 2SC",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.13,
+    "labor": 3,
+    "fuel": 2,
+    "lubeRepairs": 1,
+    "materials": 29,
+    "customRent": 0,
+    "totalCost": 34,
+    "page": 9,
+    "quote": "Pests-Mites Oberon 2SC 0.13 3 2 1 29 0 34"
+   },
+   {
+    "name": "Irrigate 7X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 129,
+    "customRent": 0,
+    "totalCost": 129,
+    "page": 9,
+    "quote": "Irrigate 7X 0.00 0 0 0 129 0 129"
+   },
+   {
+    "name": "Fertilize-UAN32",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 126,
+    "customRent": 0,
+    "totalCost": 126,
+    "page": 9,
+    "quote": "Fertilize-UAN32 0.00 0 0 0 126 0 126"
+   },
+   {
+    "name": "Irrigation Labor",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 124,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 124,
+    "page": 9,
+    "quote": "Irrigation Labor 0.00 124 0 0 0 0 124"
+   },
+   {
+    "name": "Pickup Truck-Farm Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.27,
+    "labor": 6,
+    "fuel": 2,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 9,
+    "page": 9,
+    "quote": "Pickup Truck-Farm Use 0.27 6 2 1 0 0 9"
+   },
+   {
+    "name": "ATV-Farm Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.2,
+    "labor": 5,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 6,
+    "page": 9,
+    "quote": "ATV-Farm Use 0.20 5 1 0 0 0 6"
+   },
+   {
+    "name": "Harvest-Chop/Haul-Silage",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 331,
+    "totalCost": 331,
+    "page": 9,
+    "quote": "Harvest-Chop/Haul-Silage 0.00 0 0 0 0 331 331"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "300 Gallon Saddle Tank (Pair)",
+   "yearCode": "15",
+   "price": 1660,
+   "yearsLife": 4,
+   "salvageValue": 652,
+   "capitalRecovery": 314,
+   "insurance": 1,
+   "taxes": 12,
+   "repairs": null,
+   "total": 326,
+   "page": 13,
+   "line": "15 300 Gallon Saddle Tank (Pair) 1,660 4 652 314 1 12 326"
+  },
+  {
+   "description": "Spray Boom - 20'",
+   "yearCode": "15",
+   "price": 3600,
+   "yearsLife": 5,
+   "salvageValue": 1173,
+   "capitalRecovery": 612,
+   "insurance": 2,
+   "taxes": 24,
+   "repairs": null,
+   "total": 638,
+   "page": 13,
+   "line": "15 Spray Boom - 20' 3,600 5 1,173 612 2 24 638"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "yearCode": "15",
+   "price": 28000,
+   "yearsLife": 5,
+   "salvageValue": 12549,
+   "capitalRecovery": 4140,
+   "insurance": 17,
+   "taxes": 203,
+   "repairs": null,
+   "total": 4360,
+   "page": 13,
+   "line": "15 Pickup 1/2 Ton 28,000 5 12,549 4,140 17 203 4,360"
+  },
+  {
+   "description": "ATV-4WD",
+   "yearCode": "15",
+   "price": 8500,
+   "yearsLife": 10,
+   "salvageValue": 1503,
+   "capitalRecovery": 967,
+   "insurance": 4,
+   "taxes": 50,
+   "repairs": null,
+   "total": 1021,
+   "page": 13,
+   "line": "15 ATV-4WD 8,500 10 1,503 967 4 50 1,021"
+  },
+  {
+   "description": "95 HP4WD Tractor",
+   "yearCode": "15",
+   "price": 93000,
+   "yearsLife": 15,
+   "salvageValue": 18105,
+   "capitalRecovery": 7954,
+   "insurance": 46,
+   "taxes": 556,
+   "repairs": null,
+   "total": 8556,
+   "page": 13,
+   "line": "15 95 HP4WD Tractor 93,000 15 18,105 7,954 46 556 8,556"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Fuel Storage Tanks (2)",
+   "yearCode": null,
+   "price": 21950,
+   "yearsLife": 20,
+   "salvageValue": 250,
+   "capitalRecovery": 1716,
+   "insurance": 9,
+   "taxes": 111,
+   "repairs": 130,
+   "total": 1967,
+   "page": 13,
+   "line": "Fuel Storage Tanks (2) 21,950 20 250 1,716 9 111 130 1,967"
+  },
+  {
+   "description": "Shop Building 3,000 sqft",
+   "yearCode": null,
+   "price": 60000,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 3793,
+   "insurance": 25,
+   "taxes": 300,
+   "repairs": 1200,
+   "total": 5317,
+   "page": 13,
+   "line": "Shop Building 3,000 sqft 60,000 30 0 3,793 25 300 1,200 5,317"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 15000,
+   "yearsLife": 20,
+   "salvageValue": 1500,
+   "capitalRecovery": 1132,
+   "insurance": 7,
+   "taxes": 83,
+   "repairs": 300,
+   "total": 1521,
+   "page": 13,
+   "line": "Shop Tools 15,000 20 1,500 1,132 7 83 300 1,521"
+  },
+  {
+   "description": "Closed Mixing System",
+   "yearCode": null,
+   "price": 5074,
+   "yearsLife": 10,
+   "salvageValue": 507,
+   "capitalRecovery": 608,
+   "insurance": 2,
+   "taxes": 28,
+   "repairs": 101,
+   "total": 740,
+   "page": 13,
+   "line": "Closed Mixing System 5,074 10 507 608 2 28 101 740"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "300 Gallon Saddle Tank (Pair)",
+   "hoursUsedOnCrop": 37,
+   "totalHours": 500,
+   "capitalRecoveryPerHr": 0.38,
+   "insurancePerHr": 0,
+   "taxesPerHr": 0.01,
+   "repairsPerHr": 0.03,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.03,
+   "totalCostPerHr": 0.42,
+   "page": 13,
+   "line": "15 300 Gallon Saddle Tank (Pair) 37 500 0.38 0.00 0.01 0.03 0.00 0.03 0.42"
+  },
+  {
+   "description": "Spray Boom - 20'",
+   "hoursUsedOnCrop": 37,
+   "totalHours": 300,
+   "capitalRecoveryPerHr": 1.22,
+   "insurancePerHr": 0,
+   "taxesPerHr": 0.05,
+   "repairsPerHr": 0.99,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.99,
+   "totalCostPerHr": 2.26,
+   "page": 13,
+   "line": "15 Spray Boom - 20' 37 300 1.22 0.00 0.05 0.99 0.00 0.99 2.26"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "hoursUsedOnCrop": 39,
+   "totalHours": 400,
+   "capitalRecoveryPerHr": 6.21,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.3,
+   "repairsPerHr": 3.05,
+   "fuelPerHr": 6.39,
+   "totalOperatingPerHr": 9.44,
+   "totalCostPerHr": 15.98,
+   "page": 13,
+   "line": "15 Pickup 1/2 Ton 39 400 6.21 0.03 0.30 3.05 6.39 9.44 15.98"
+  },
+  {
+   "description": "ATV-4WD",
+   "hoursUsedOnCrop": 32,
+   "totalHours": 150,
+   "capitalRecoveryPerHr": 3.87,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.2,
+   "repairsPerHr": 0.63,
+   "fuelPerHr": 3.41,
+   "totalOperatingPerHr": 4.04,
+   "totalCostPerHr": 8.12,
+   "page": 13,
+   "line": "15 ATV-4WD 32 150 3.87 0.02 0.20 0.63 3.41 4.04 8.12"
+  },
+  {
+   "description": "95 HP4WD Tractor",
+   "hoursUsedOnCrop": 40,
+   "totalHours": 1000,
+   "capitalRecoveryPerHr": 4.77,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.33,
+   "repairsPerHr": 4.44,
+   "fuelPerHr": 14.79,
+   "totalOperatingPerHr": 19.23,
+   "totalCostPerHr": 24.36,
+   "page": 13,
+   "line": "15 95 HP4WD Tractor 40 1000 4.77 0.03 0.33 4.44 14.79 19.23 24.36"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 300,
+   "unit": "Farm",
+   "pricePerUnit": 3.11,
+   "totalCost": 933,
+   "page": 13,
+   "line": "Liability Insurance 300 Farm 3.11 933"
+  },
+  {
+   "description": "Miscellaneous Costs (Training)",
+   "unitsPerFarm": 150,
+   "unit": "Acre",
+   "pricePerUnit": 20,
+   "totalCost": 3000,
+   "page": 13,
+   "line": "Miscellaneous Costs (Training) 150 Acre 20.00 3,000"
+  },
+  {
+   "description": "Land Rent-Silage Corn (50%)",
+   "unitsPerFarm": 145,
+   "unit": "Acre",
+   "pricePerUnit": 155,
+   "totalCost": 22475,
+   "page": 13,
+   "line": "Land Rent-Silage Corn (50%) 145 Acre 155.00 22,475"
+  },
+  {
+   "description": "Office Expenses",
+   "unitsPerFarm": 150,
+   "unit": "Acre",
+   "pricePerUnit": 40,
+   "totalCost": 6000,
+   "page": 13,
+   "line": "Office Expenses 150 Acre 40.00 6,000"
+  },
+  {
+   "description": "Supervisor Salary",
+   "unitsPerFarm": 150,
+   "unit": "Acre",
+   "pricePerUnit": 36,
+   "totalCost": 5400,
+   "page": 13,
+   "line": "Supervisor Salary 150 Acre 36 5,400"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 6,
+   "quote": "[(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)"
+  },
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   3,
+   2,
+   2,
+   160,
+   236,
+   155,
+   133,
+   34,
+   731,
+   35,
+   2,
+   2
+  ],
+  "operatingPerAcre": [
+   1,
+   1,
+   1,
+   160,
+   235,
+   154,
+   132,
+   33,
+   477,
+   34,
+   1,
+   1
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 1494,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "OCT",
+   "NOV",
+   "DEC",
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP"
+  ],
+  "spansTwoYears": false,
+  "page": 11,
+  "quote": "MONTHLY COSTS PER ACRE TO PRODUCE SILAGE CORN CONSERVATION TILLAGE"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "interestRatePct",
+   "laborOverheadPct",
+   "insuranceRatePct",
+   "propertyTaxRatePct"
+  ],
+  "warnings": []
+ }
+}

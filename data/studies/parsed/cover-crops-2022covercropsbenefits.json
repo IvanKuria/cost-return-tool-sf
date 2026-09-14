@@ -1,0 +1,218 @@
+{
+ "source": {
+  "id": "cover-crops-2022covercropsbenefits",
+  "commodity": "cover-crops",
+  "title": "TO PRODUCE COVER CROPS",
+  "year": 2022,
+  "region": "Lower Sacramento Valley",
+  "counties": null,
+  "description": "Winter cover crop in an annual rotation",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/09/28/2022covercropsbenefits.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/cover-crops",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 18,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Hourly wages for workers are $18.00 per hour for machine operators and $15.00 per hour for non- machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 15,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Hourly wages for workers are $18.00 per hour for machine operators and $15.00 per hour for non- machine labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [
+  {
+   "description": "Disc-Residue 15'",
+   "hoursUsedOnCrop": 12,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.02,
+   "insurancePerHr": 0,
+   "taxesPerHr": 0,
+   "repairsPerHr": 0.01,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.01,
+   "totalCostPerHr": 0.02,
+   "page": 9,
+   "line": "Disc-Residue 15' 12 0.02 0.00 0.00 0.01 0.00 0.01 0.02"
+  },
+  {
+   "description": "Grain Drill 15'",
+   "hoursUsedOnCrop": 9,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 13.28,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.67,
+   "repairsPerHr": 7.74,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 7.74,
+   "totalCostPerHr": 21.75,
+   "page": 9,
+   "line": "Grain Drill 15' 9 13.28 0.06 0.67 7.74 0.00 7.74 21.75"
+  },
+  {
+   "description": "Flail Mower 15'",
+   "hoursUsedOnCrop": 10,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 8.79,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.44,
+   "repairsPerHr": 10.47,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 10.47,
+   "totalCostPerHr": 19.74,
+   "page": 9,
+   "line": "Flail Mower 15' 10 8.79 0.04 0.44 10.47 0.00 10.47 19.74"
+  },
+  {
+   "description": "Ring Roller 15'",
+   "hoursUsedOnCrop": 12,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 9.67,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.49,
+   "repairsPerHr": 3.14,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 3.14,
+   "totalCostPerHr": 13.34,
+   "page": 9,
+   "line": "Ring Roller 15' 12 9.67 0.04 0.49 3.14 0.00 3.14 13.34"
+  },
+  {
+   "description": "157 HP4WD Tractor",
+   "hoursUsedOnCrop": 34,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 14.3,
+   "insurancePerHr": 0.08,
+   "taxesPerHr": 0.96,
+   "repairsPerHr": 13.48,
+   "fuelPerHr": 42.08,
+   "totalOperatingPerHr": 55.56,
+   "totalCostPerHr": 70.9,
+   "page": 9,
+   "line": "157 HP4WD Tractor 34 14.30 0.08 0.96 13.48 42.08 55.56 70.90"
+  }
+ ],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": null,
+  "operatingPerAcre": [
+   0,
+   22,
+   43,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   69,
+   0,
+   22
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 156,
+  "checkedRow": "TOTAL OPERATING COSTS (table has no cash overhead rows)",
+  "columns": [
+   "OCT",
+   "NOV",
+   "DEC",
+   "JAN",
+   "FEB",
+   "MAR"
+  ],
+  "spansTwoYears": false,
+  "page": 8,
+  "quote": "MONTHLY COSTS PER ACRE TO ESTABLISH AND PRODUCE COVER CROPS"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "hourlyEquipment",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "no whole-farm equipment table",
+   "monthly table gives operating costs by month only; cash overhead is not spread by month in this study"
+  ]
+ }
+}

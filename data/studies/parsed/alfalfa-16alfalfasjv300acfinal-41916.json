@@ -1,0 +1,613 @@
+{
+ "source": {
+  "id": "alfalfa-16alfalfasjv300acfinal-41916",
+  "commodity": "alfalfa",
+  "title": "SAMPLE COSTS TO ESTABLISH AND PRODUCE",
+  "year": 2016,
+  "region": "San Joaquin Valley South Tulare",
+  "counties": "Nicholas Clark UC Cooperative Extension Farm Advisor, Fresno, Tulare, and Kings",
+  "description": "300 acre study; #1300 bales, custom & grower harvested",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/1c/e2/1ce256d0-957e-4bd4-b17e-18fef4efcedd/16alfalfasjv300acfinal_41916.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 1200,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The hypothetical farm consists of 1,200 non-contiguous acres of field and row crops of which 300 acres are alfalfa and the remaining 900 acres are planted to other crops such as cotton, corn, grains, processing tomatoes, and dry beans."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": "Ton",
+  "pricePerUnit": {
+   "value": 250,
+   "unit": "$/ton",
+   "page": 6,
+   "quote": "A price of $250 per ton for premium hay is based on USDA first quarter 2016 averages for the central San Joaquin Valley market districts."
+  },
+  "returns": [
+   {
+    "name": "Alfalfa Hay",
+    "quantity": 9,
+    "unit": "Ton",
+    "price": 250,
+    "value": 2250,
+    "page": 14,
+    "quote": "Alfalfa Hay 9 Ton 250.00 2,250"
+   },
+   {
+    "name": "Silage",
+    "quantity": 3,
+    "unit": "Ton",
+    "price": 68,
+    "value": 204,
+    "page": 14,
+    "quote": "Silage 3 Ton 68.00 204"
+   }
+  ],
+  "interestRatePct": {
+   "value": 3.25,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 3.25 percent is used to calculate capital recovery."
+  },
+  "operatingInterestRatePct": {
+   "value": 4.25,
+   "unit": "%",
+   "page": 7,
+   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 4.25 percent per year."
+  },
+  "laborMachineRate": {
+   "value": 20.44,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Labor: The labor rates of $20.44 per hour for machine operators and $17.52 for general labor include overhead of 46 percent."
+  },
+  "laborNonMachineRate": {
+   "value": 17.52,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Labor: The labor rates of $20.44 per hour for machine operators and $17.52 for general labor include overhead of 46 percent."
+  },
+  "laborOverheadPct": {
+   "value": 46,
+   "unit": "%",
+   "page": 6,
+   "quote": "Labor: The labor rates of $20.44 per hour for machine operators and $17.52 for general labor include overhead of 46 percent."
+  },
+  "landRentPerAcre": {
+   "value": 300,
+   "unit": "$/acre/yr",
+   "page": 8,
+   "quote": "Land rents for $300 per acre for cropland within a water district and may vary according to value or type of crop planted."
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 2.65,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.38 and $2.65 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.65,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.38 and $2.65 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 6,
+   "quote": "The crop is assumed to yield a total of 10.00 tons of hay per acre at 90 percent dry matter (DM) per year."
+  },
+  "priceStatement": {
+   "page": 6,
+   "quote": "A price of $250 per ton for premium hay is based on USDA first quarter 2016 averages for the central San Joaquin Valley market districts."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 152,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "TOTAL OPERATING COSTS/ACRE 152"
+  },
+  "cashOverheadTotal": {
+   "value": 5,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 5"
+  },
+  "nonCashOverheadTotal": {
+   "value": 80,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 780 80 80"
+  },
+  "totalCost": {
+   "value": 237,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "TOTAL COSTS/ACRE 237"
+  },
+  "grossReturns": {
+   "value": 2454,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL GROSS RETURNS 12 Ton 2,454"
+  },
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": [
+   {
+    "name": "Harvest - Swathing",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.68,
+    "labor": 17,
+    "fuel": 13,
+    "lubeRepairs": 10,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 39,
+    "page": 18,
+    "quote": "Harvest - Swathing 0.68 17 13 10 0 0 39"
+   },
+   {
+    "name": "Harvest - Raking",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.6,
+    "labor": 15,
+    "fuel": 7,
+    "lubeRepairs": 3,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 25,
+    "page": 18,
+    "quote": "Harvest - Raking 0.60 15 7 3 0 0 25"
+   },
+   {
+    "name": "Harvest - Baling",
+    "category": "harvest",
+    "timeHrsPerAcre": 1.27,
+    "labor": 31,
+    "fuel": 17,
+    "lubeRepairs": 9,
+    "materials": 5,
+    "customRent": 0,
+    "totalCost": 62,
+    "page": 18,
+    "quote": "Harvest - Baling 1.27 31 17 9 5 0 62"
+   },
+   {
+    "name": "Harvest – Road-siding",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.23,
+    "labor": 6,
+    "fuel": 9,
+    "lubeRepairs": 10,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 25,
+    "page": 18,
+    "quote": "Harvest – Road-siding 0.23 6 9 10 0 0 25"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "ATV",
+   "yearCode": "16",
+   "price": 8350,
+   "yearsLife": 5,
+   "salvageValue": 3742,
+   "capitalRecovery": 1135,
+   "insurance": 5,
+   "taxes": 60,
+   "repairs": null,
+   "total": 1200,
+   "page": 17,
+   "line": "16 ATV 8,350 5 3,742 1,135 5 60 1,200"
+  },
+  {
+   "description": "90HP 4WD Tractor",
+   "yearCode": "16",
+   "price": 76839,
+   "yearsLife": 10,
+   "salvageValue": 22697,
+   "capitalRecovery": 7166,
+   "insurance": 42,
+   "taxes": 498,
+   "repairs": null,
+   "total": 7706,
+   "page": 17,
+   "line": "16 90HP 4WD Tractor 76,839 10 22,697 7,166 42 498 7,706"
+  },
+  {
+   "description": "Fertilizer Spreader - Pendular",
+   "yearCode": "16",
+   "price": 1350,
+   "yearsLife": 10,
+   "salvageValue": 239,
+   "capitalRecovery": 140,
+   "insurance": 1,
+   "taxes": 8,
+   "repairs": null,
+   "total": 148,
+   "page": 17,
+   "line": "16 Fertilizer Spreader - Pendular 1,350 10 239 140 1 8 148"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "yearCode": "16",
+   "price": 34000,
+   "yearsLife": 5,
+   "salvageValue": 15238,
+   "capitalRecovery": 4621,
+   "insurance": 21,
+   "taxes": 246,
+   "repairs": null,
+   "total": 4888,
+   "page": 17,
+   "line": "16 Pickup 1/2 Ton 34,000 5 15,238 4,621 21 246 4,888"
+  },
+  {
+   "description": "ATV Sprayer System 30'",
+   "yearCode": "16",
+   "price": 5646,
+   "yearsLife": 10,
+   "salvageValue": 998,
+   "capitalRecovery": 584,
+   "insurance": 3,
+   "taxes": 33,
+   "repairs": null,
+   "total": 620,
+   "page": 17,
+   "line": "16 ATV Sprayer System 30' 5,646 10 998 584 3 33 620"
+  },
+  {
+   "description": "Ditcher",
+   "yearCode": "16",
+   "price": 6630,
+   "yearsLife": 10,
+   "salvageValue": 1172,
+   "capitalRecovery": 686,
+   "insurance": 3,
+   "taxes": 39,
+   "repairs": null,
+   "total": 728,
+   "page": 17,
+   "line": "16 Ditcher 6,630 10 1,172 686 3 39 728"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Shop Building 2,400sf",
+   "yearCode": null,
+   "price": 60000,
+   "yearsLife": 20,
+   "salvageValue": 3600,
+   "capitalRecovery": 3996,
+   "insurance": 27,
+   "taxes": 318,
+   "repairs": 1200,
+   "total": 5541,
+   "page": 17,
+   "line": "Shop Building 2,400sf 60,000 20 3,600 3,996 27 318 1,200 5,541"
+  },
+  {
+   "description": "Fuel Tanks & Pumps 10,000gal",
+   "yearCode": null,
+   "price": 29500,
+   "yearsLife": 10,
+   "salvageValue": 2950,
+   "capitalRecovery": 3248,
+   "insurance": 14,
+   "taxes": 162,
+   "repairs": 590,
+   "total": 4014,
+   "page": 17,
+   "line": "Fuel Tanks & Pumps 10,000gal 29,500 10 2,950 3,248 14 162 590 4,014"
+  },
+  {
+   "description": "Hay Barn/Pole Barn",
+   "yearCode": null,
+   "price": 60000,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 4127,
+   "insurance": 25,
+   "taxes": 300,
+   "repairs": 1200,
+   "total": 5652,
+   "page": 17,
+   "line": "Hay Barn/Pole Barn 60,000 20 0 4,127 25 300 1,200 5,652"
+  },
+  {
+   "description": "Irrigation System for 300 acres",
+   "yearCode": null,
+   "price": 74994,
+   "yearsLife": 20,
+   "salvageValue": 7500,
+   "capitalRecovery": 4886,
+   "insurance": 35,
+   "taxes": 412,
+   "repairs": 1500,
+   "total": 6833,
+   "page": 17,
+   "line": "Irrigation System for 300 acres 74,994 20 7,500 4,886 35 412 1,500 6,833"
+  },
+  {
+   "description": "Land (300 acres of alfalfa)",
+   "yearCode": null,
+   "price": 4500000,
+   "yearsLife": 40,
+   "salvageValue": 4500000,
+   "capitalRecovery": 146250,
+   "insurance": 3794,
+   "taxes": 45000,
+   "repairs": 0,
+   "total": 195044,
+   "page": 17,
+   "line": "Land (300 acres of alfalfa) 4,500,000 40 4,500,000 146,250 3,794 45,000 0 195,044"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 20000,
+   "yearsLife": 20,
+   "salvageValue": 7500,
+   "capitalRecovery": 1103,
+   "insurance": 12,
+   "taxes": 138,
+   "repairs": 400,
+   "total": 1653,
+   "page": 17,
+   "line": "Shop Tools 20,000 20 7,500 1,103 12 138 400 1,653"
+  },
+  {
+   "description": "Establishment (300 Acres)",
+   "yearCode": null,
+   "price": 266400,
+   "yearsLife": 3,
+   "salvageValue": 0,
+   "capitalRecovery": 94634,
+   "insurance": 112,
+   "taxes": 1332,
+   "repairs": 0,
+   "total": 96087,
+   "page": 17,
+   "line": "Establishment (300 Acres) 266,400 3 0 94,634 112 1,332 0 96,087"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "ATV",
+   "hoursUsedOnCrop": 192,
+   "totalHours": 400,
+   "capitalRecoveryPerHr": 1.7,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.09,
+   "repairsPerHr": 1.02,
+   "fuelPerHr": 2.65,
+   "totalOperatingPerHr": 3.67,
+   "totalCostPerHr": 5.47,
+   "page": 17,
+   "line": "16 ATV 192 400 1.70 0.01 0.09 1.02 2.65 3.67 5.47"
+  },
+  {
+   "description": "90HP 4WD Tractor",
+   "hoursUsedOnCrop": 27,
+   "totalHours": 1200,
+   "capitalRecoveryPerHr": 3.58,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.25,
+   "repairsPerHr": 3.15,
+   "fuelPerHr": 10.52,
+   "totalOperatingPerHr": 13.67,
+   "totalCostPerHr": 17.52,
+   "page": 17,
+   "line": "16 90HP 4WD Tractor 27 1200 3.58 0.02 0.25 3.15 10.52 13.67 17.52"
+  },
+  {
+   "description": "Fertilizer Spreader - Pendular",
+   "hoursUsedOnCrop": 14,
+   "totalHours": 120,
+   "capitalRecoveryPerHr": 0.7,
+   "insurancePerHr": 0,
+   "taxesPerHr": 0.04,
+   "repairsPerHr": 0.53,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.53,
+   "totalCostPerHr": 1.27,
+   "page": 17,
+   "line": "16 Fertilizer Spreader - Pendular 14 120 0.70 0.00 0.04 0.53 0.00 0.53 1.27"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "hoursUsedOnCrop": 75,
+   "totalHours": 400,
+   "capitalRecoveryPerHr": 6.93,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.37,
+   "repairsPerHr": 3.44,
+   "fuelPerHr": 5.95,
+   "totalOperatingPerHr": 9.39,
+   "totalCostPerHr": 16.73,
+   "page": 17,
+   "line": "16 Pickup 1/2 Ton 75 400 6.93 0.03 0.37 3.44 5.95 9.39 16.73"
+  },
+  {
+   "description": "ATV Sprayer System 30'",
+   "hoursUsedOnCrop": 117,
+   "totalHours": 150,
+   "capitalRecoveryPerHr": 2.34,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.13,
+   "repairsPerHr": 1.54,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 1.54,
+   "totalCostPerHr": 4.02,
+   "page": 17,
+   "line": "16 ATV Sprayer System 30' 117 150 2.34 0.01 0.13 1.54 0.00 1.54 4.02"
+  },
+  {
+   "description": "Ditcher",
+   "hoursUsedOnCrop": 10,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 2.06,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.12,
+   "repairsPerHr": 1.92,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 1.92,
+   "totalCostPerHr": 4.1,
+   "page": 17,
+   "line": "16 Ditcher 10 200 2.06 0.01 0.12 1.92 0.00 1.92 4.10"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance (1200 acres)",
+   "unitsPerFarm": 1200,
+   "unit": "Acre",
+   "pricePerUnit": 1.286,
+   "totalCost": 1543,
+   "page": 17,
+   "line": "Liability Insurance (1200 acres) 1200.00 Acre 1.286 1,543"
+  },
+  {
+   "description": "Office Expense (1200 acres)",
+   "unitsPerFarm": 1200,
+   "unit": "Acre",
+   "pricePerUnit": 50,
+   "totalCost": 60000,
+   "page": 17,
+   "line": "Office Expense (1200 acres) 1200.00 Acre 50.00 60,000"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "formula for the calculation of the annual capital recovery costs is (Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   6,
+   17,
+   103,
+   138,
+   147,
+   201,
+   232,
+   204,
+   226,
+   136,
+   82,
+   84
+  ],
+  "operatingPerAcre": [
+   1,
+   10,
+   13,
+   133,
+   143,
+   196,
+   227,
+   199,
+   136,
+   131,
+   77,
+   79
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "totalCheck": 1575,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 15,
+  "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ALFALFA (300 Acres)"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre"
+  ],
+  "warnings": [
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
+   "several costs-per-acre tables (establishment and production); using the production one",
+   "Table 1 has 2 TOTAL OPERATING COSTS rows (multi-year table); using the last"
+  ]
+ }
+}

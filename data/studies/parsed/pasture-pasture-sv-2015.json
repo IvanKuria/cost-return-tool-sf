@@ -1,0 +1,416 @@
+{
+ "source": {
+  "id": "pasture-pasture-sv-2015",
+  "commodity": "pasture",
+  "title": "SAMPLE COSTS TO PRODUCE",
+  "year": 2015,
+  "region": "Sacramento Valley",
+  "counties": null,
+  "description": "Production; flood irrigation",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/0e/23/0e230982-8610-42a4-8a26-32a0b10a4c5c/pasture_sv_2015.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 40,
+   "unit": "acres",
+   "page": 5,
+   "quote": "On a 40 acre operation, the labor is provided by the owner/operator and will not be a cash cost in this study."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": "Ton",
+  "pricePerUnit": null,
+  "returns": [
+   {
+    "name": "Hay 40 Ac",
+    "quantity": 2.5,
+    "unit": "Ton",
+    "price": 185,
+    "value": 463,
+    "page": 10,
+    "quote": "Hay 40 Ac 2.5 Ton 185.00 463"
+   },
+   {
+    "name": "Graze 40 Ac",
+    "quantity": 5,
+    "unit": "AUM",
+    "price": 35,
+    "value": 175,
+    "page": 10,
+    "quote": "Graze 40 Ac 5 AUM 35.00 175"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.39,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.88 and $3.39 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.39,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.88 and $3.39 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 4,
+   "quote": "The price of $185 per ton is based on October 2014 California hay Report, USDA market prices for fair grade orchard grass hay."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 339,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL OPERATING COSTS/ACRE 0 0 0 0 149 191 339"
+  },
+  "cashOverheadTotal": {
+   "value": 220,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 220"
+  },
+  "nonCashOverheadTotal": {
+   "value": 18,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 240 18 18"
+  },
+  "totalCost": {
+   "value": 577,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL COSTS/ACRE 577"
+  },
+  "grossReturns": {
+   "value": 638,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "TOTAL GROSS RETURNS 638"
+  },
+  "netReturnsAboveOperating": {
+   "value": 298,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 298"
+  },
+  "netReturnsAboveTotal": {
+   "value": 60,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "NET RETURNS ABOVE TOTAL COST 60"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 20,
+    "page": 9,
+    "quote": "Office Expense 20"
+   },
+   {
+    "description": "Property Taxes (Corral fencing)",
+    "value": 1,
+    "page": 9,
+    "quote": "Property Taxes (Corral fencing) 1"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 1,
+    "page": 9,
+    "quote": "Property Insurance 1"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 2,
+    "page": 9,
+    "quote": "Investment Repairs 2"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Weeds-Spot Spray 2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 5,
+    "customRent": 11,
+    "totalCost": 16,
+    "page": 9,
+    "quote": "Weeds-Spot Spray 2X 0.00 0 0 0 5 11 16"
+   },
+   {
+    "name": "Irrigate-Flood 7X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 73,
+    "customRent": 10,
+    "totalCost": 83,
+    "page": 9,
+    "quote": "Irrigate-Flood 7X 0.00 0 0 0 73 10 83"
+   },
+   {
+    "name": "Fencing Setup",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 7,
+    "totalCost": 7,
+    "page": 9,
+    "quote": "Fencing Setup 0.00 0 0 0 0 7 7"
+   },
+   {
+    "name": "Fertilizer-21-0-0, 24% S",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 68,
+    "customRent": 11,
+    "totalCost": 79,
+    "page": 9,
+    "quote": "Fertilizer-21-0-0, 24% S 0.00 0 0 0 68 11 79"
+   },
+   {
+    "name": "Harrow Pasture 2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 15,
+    "totalCost": 15,
+    "page": 9,
+    "quote": "Harrow Pasture 2X 0.00 0 0 0 0 15 15"
+   },
+   {
+    "name": "Weeds-Rotary Wiper",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 2,
+    "customRent": 5,
+    "totalCost": 7,
+    "page": 9,
+    "quote": "Weeds-Rotary Wiper 0.00 0 0 0 2 5 7"
+   },
+   {
+    "name": "Harvest Hay 40 Ac",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 120,
+    "totalCost": 120,
+    "page": 9,
+    "quote": "Harvest Hay 40 Ac 0.00 0 0 0 0 120 120"
+   },
+   {
+    "name": "Graze 40 Ac 5X",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 14,
+    "totalCost": 14,
+    "page": 9,
+    "quote": "Graze 40 Ac 5X 0.00 0 0 0 0 14 14"
+   }
+  ]
+ },
+ "equipment": [],
+ "investments": [
+  {
+   "description": "Corral Fencing",
+   "yearCode": null,
+   "price": 1670,
+   "yearsLife": 20,
+   "salvageValue": 84,
+   "capitalRecovery": 129,
+   "insurance": 7,
+   "taxes": 9,
+   "repairs": 20,
+   "total": 165,
+   "page": 14,
+   "line": "Corral Fencing 1,670 20 84 129 7 9 20 165"
+  },
+  {
+   "description": "Electric Fencing",
+   "yearCode": null,
+   "price": 7920,
+   "yearsLife": 20,
+   "salvageValue": 396,
+   "capitalRecovery": 610,
+   "insurance": 34,
+   "taxes": 42,
+   "repairs": 50,
+   "total": 736,
+   "page": 14,
+   "line": "Electric Fencing 7,920 20 396 610 34 42 50 736"
+  }
+ ],
+ "hourlyEquipment": [],
+ "businessOverhead": [
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 40,
+   "unit": "Acre",
+   "pricePerUnit": 20,
+   "totalCost": 800,
+   "page": 14,
+   "line": "Office Expense 40 Acre 20.00 800"
+  },
+  {
+   "description": "Liability Insurance 45Ac",
+   "unitsPerFarm": 45,
+   "unit": "Acre",
+   "pricePerUnit": 13.93,
+   "totalCost": 627,
+   "page": 14,
+   "line": "Liability Insurance 45Ac 45 Acre 13.93 627"
+  },
+  {
+   "description": "Land Lease 40 Ac",
+   "unitsPerFarm": 40,
+   "unit": "Acre",
+   "pricePerUnit": 180,
+   "totalCost": 7200,
+   "page": 14,
+   "line": "Land Lease 40 Ac 40 Acre 180 7,200"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 6,
+   "quote": "[(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 6,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   0,
+   0,
+   9,
+   24,
+   132,
+   102,
+   17,
+   31,
+   229,
+   12,
+   0,
+   0
+  ],
+  "operatingPerAcre": [
+   0,
+   0,
+   9,
+   24,
+   132,
+   101,
+   16,
+   31,
+   13,
+   12,
+   0,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false
+  ],
+  "totalCheck": 559,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT"
+  ],
+  "spansTwoYears": false,
+  "page": 11,
+  "quote": "MONTHLY COSTS PER ACRE TO PRODUCE PASTURE 40 AC"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "investments",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "equipment",
+   "hourlyEquipment",
+   "insuranceRatePct",
+   "propertyTaxRatePct"
+  ],
+  "warnings": [
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
+   "equipment table present but no equipment rows parsed"
+  ]
+ }
+}

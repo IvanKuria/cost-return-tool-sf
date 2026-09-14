@@ -1,0 +1,1051 @@
+{
+ "source": {
+  "id": "beans-2018garbanzobeansjvsouthfinaldraft3118",
+  "commodity": "beans",
+  "title": "SAMPLE COSTS TO PRODUCE GARBANZO BEANS",
+  "year": 2018,
+  "region": "San Joaquin Valley South",
+  "counties": "Nicholas E. Clark UC Cooperative Extension Farm Advisor, Kings, Fresno, and Tulare",
+  "description": "Garbanzo (Chickpeas), Sub-surface drip irrigation, winter planted",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/5b/00/5b001795-5a45-4340-a83f-76ca9d8ce6af/2018garbanzobeansjvsouthfinaldraft3118.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 200,
+   "unit": "acres",
+   "page": 3,
+   "quote": "This report is based on a 3,500 non-contiguous acre farm on which 200 acres of rented land are producing garbanzo beans."
+  },
+  "acresCrop": {
+   "value": 200,
+   "unit": "acres",
+   "page": 3,
+   "quote": "This report is based on a 3,500 non-contiguous acre farm on which 200 acres of rented land are producing garbanzo beans."
+  },
+  "yieldPerAcre": {
+   "value": 30,
+   "unit": "Cwt",
+   "page": 14,
+   "quote": "Garbanzo Beans 30 Cwt 49.00 1,470"
+  },
+  "yieldUnit": "Cwt",
+  "pricePerUnit": {
+   "value": 49,
+   "unit": "$/Cwt",
+   "page": 14,
+   "quote": "Garbanzo Beans 30 Cwt 49.00 1,470"
+  },
+  "returns": [
+   {
+    "name": "Garbanzo Beans",
+    "quantity": 30,
+    "unit": "Cwt",
+    "price": 49,
+    "value": 1470,
+    "page": 14,
+    "quote": "Garbanzo Beans 30 Cwt 49.00 1,470"
+   }
+  ],
+  "interestRatePct": {
+   "value": 5,
+   "unit": "%",
+   "page": 9,
+   "quote": "An interest rate of 5 percent is used to calculate capital recovery."
+  },
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 16,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Hourly wages for workers are $16.00 per hour for machine operators and $12.00 per hour for non- machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 12,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Hourly wages for workers are $16.00 per hour for machine operators and $12.00 per hour for non- machine labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": {
+   "value": 221,
+   "unit": "$/acre/yr",
+   "page": 13,
+   "quote": "Land Rent- Garbanzo Beans 221"
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": {
+   "page": 5,
+   "quote": "Garbanzo bean yield used in this study is 3,000 pounds (30 cwt) per acre of cleaned beans at 12 percent moisture."
+  },
+  "priceStatement": {
+   "page": 5,
+   "quote": "Based on the Dry Bean Council Market Reports a price of $49 per cwt is used to calculate income."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 943,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL OPERATING COSTS/ACRE 3.29 217 71 35 413 188 943"
+  },
+  "cashOverheadTotal": {
+   "value": 326,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 326"
+  },
+  "nonCashOverheadTotal": {
+   "value": 192,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 1,652 192 192"
+  },
+  "totalCost": {
+   "value": 1461,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL COSTS/ACRE 1,461"
+  },
+  "grossReturns": {
+   "value": 1470,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL GROSS RETURNS 1,470"
+  },
+  "netReturnsAboveOperating": {
+   "value": 527,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 527"
+  },
+  "netReturnsAboveTotal": {
+   "value": 9,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "NET RETURNS ABOVE TOTAL COST 9"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 1,
+    "page": 13,
+    "quote": "Liability Insurance 1"
+   },
+   {
+    "description": "Office Expense",
+    "value": 50,
+    "page": 13,
+    "quote": "Office Expense 50"
+   },
+   {
+    "description": "Sanitation Services",
+    "value": 1,
+    "page": 13,
+    "quote": "Sanitation Services 1"
+   },
+   {
+    "description": "Land Rent- Garbanzo Beans",
+    "value": 221,
+    "page": 13,
+    "quote": "Land Rent- Garbanzo Beans 221"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 5,
+    "page": 13,
+    "quote": "Property Taxes 5"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 0,
+    "page": 13,
+    "quote": "Property Insurance 0"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 12,
+    "page": 13,
+    "quote": "Investment Repairs 12"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Well Test/Water Analysis",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 1,
+    "customRent": 0,
+    "totalCost": 1,
+    "page": 12,
+    "quote": "Well Test/Water Analysis 0.00 0 0 0 1 0 1"
+   },
+   {
+    "name": "Soil Test: (NPK)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 1,
+    "customRent": 0,
+    "totalCost": 1,
+    "page": 12,
+    "quote": "Soil Test: (NPK) 0.00 0 0 0 1 0 1"
+   },
+   {
+    "name": "Condition Beds: Performer 2x",
+    "category": "other",
+    "timeHrsPerAcre": 0.32,
+    "labor": 9,
+    "fuel": 26,
+    "lubeRepairs": 10,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 44,
+    "page": 12,
+    "quote": "Condition Beds: Performer 2x 0.32 9 26 10 0 0 44"
+   },
+   {
+    "name": "Attach Mainlines to Drip Tape",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 53,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 25,
+    "customRent": 0,
+    "totalCost": 78,
+    "page": 12,
+    "quote": "Attach Mainlines to Drip Tape 0.00 53 0 0 25 0 78"
+   },
+   {
+    "name": "Plant Beans: (85lbs/ac)",
+    "category": "other",
+    "timeHrsPerAcre": 0.2,
+    "labor": 6,
+    "fuel": 8,
+    "lubeRepairs": 5,
+    "materials": 81,
+    "customRent": 0,
+    "totalCost": 99,
+    "page": 12,
+    "quote": "Plant Beans: (85lbs/ac) 0.20 6 8 5 81 0 99"
+   },
+   {
+    "name": "Shape Beds/Apply Herbicides",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.2,
+    "labor": 6,
+    "fuel": 8,
+    "lubeRepairs": 3,
+    "materials": 39,
+    "customRent": 0,
+    "totalCost": 55,
+    "page": 12,
+    "quote": "Shape Beds/Apply Herbicides 0.20 6 8 3 39 0 55"
+   },
+   {
+    "name": "Irrigate: Post-Planting-Sprinklers",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 20,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 45,
+    "customRent": 0,
+    "totalCost": 65,
+    "page": 12,
+    "quote": "Irrigate: Post-Planting-Sprinklers 0.00 20 0 0 45 0 65"
+   },
+   {
+    "name": "Irrigate: Drip 5x",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 44,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 143,
+    "customRent": 0,
+    "totalCost": 186,
+    "page": 12,
+    "quote": "Irrigate: Drip 5x 0.00 44 0 0 143 0 186"
+   },
+   {
+    "name": "Fertigate: UAN32 2x",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 44,
+    "customRent": 0,
+    "totalCost": 44,
+    "page": 12,
+    "quote": "Fertigate: UAN32 2x 0.00 0 0 0 44 0 44"
+   },
+   {
+    "name": "Disease: Blight/Weeds: Cultivate",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.28,
+    "labor": 8,
+    "fuel": 6,
+    "lubeRepairs": 3,
+    "materials": 18,
+    "customRent": 0,
+    "totalCost": 35,
+    "page": 12,
+    "quote": "Disease: Blight/Weeds: Cultivate 0.28 8 6 3 18 0 35"
+   },
+   {
+    "name": "Pickup 1/2 Ton",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.25,
+    "labor": 35,
+    "fuel": 11,
+    "lubeRepairs": 4,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 51,
+    "page": 12,
+    "quote": "Pickup 1/2 Ton 1.25 35 11 4 0 0 51"
+   },
+   {
+    "name": "ATV",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.75,
+    "labor": 21,
+    "fuel": 1,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 22,
+    "page": 12,
+    "quote": "ATV 0.75 21 1 1 0 0 22"
+   },
+   {
+    "name": "Harvest: Combine/30' Header",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.2,
+    "labor": 6,
+    "fuel": 8,
+    "lubeRepairs": 9,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 22,
+    "page": 12,
+    "quote": "Harvest: Combine/30' Header 0.20 6 8 9 0 0 22"
+   },
+   {
+    "name": "Roadside: Bankout",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.08,
+    "labor": 2,
+    "fuel": 3,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 7,
+    "page": 12,
+    "quote": "Roadside: Bankout 0.08 2 3 1 0 0 7"
+   },
+   {
+    "name": "Hauling/Transporting",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 15,
+    "totalCost": 15,
+    "page": 12,
+    "quote": "Hauling/Transporting 0.00 0 0 0 0 15 15"
+   },
+   {
+    "name": "Clean/Bag/Store/Insurance",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 173,
+    "totalCost": 173,
+    "page": 12,
+    "quote": "Clean/Bag/Store/Insurance 0.00 0 0 0 0 173 173"
+   },
+   {
+    "name": "Assessments",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 11,
+    "customRent": 0,
+    "totalCost": 11,
+    "page": 12,
+    "quote": "Assessments 0.00 0 0 0 11 0 11"
+   },
+   {
+    "name": "Irrigate: Drip Acid Flush",
+    "category": "postharvest",
+    "timeHrsPerAcre": 0,
+    "labor": 9,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 6,
+    "customRent": 0,
+    "totalCost": 15,
+    "page": 12,
+    "quote": "Irrigate: Drip Acid Flush 0.00 9 0 0 6 0 15"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "Tractor 425HP4WD",
+   "yearCode": "18",
+   "price": 425000,
+   "yearsLife": 16,
+   "salvageValue": 76121,
+   "capitalRecovery": 37533,
+   "insurance": 212,
+   "taxes": 2506,
+   "repairs": null,
+   "total": 40251,
+   "page": 18,
+   "line": "18 Tractor 425HP4WD 425,000 16 76,121 37,533 212 2,506 40,251"
+  },
+  {
+   "description": "Combine",
+   "yearCode": "18",
+   "price": 476827,
+   "yearsLife": 15,
+   "salvageValue": 48830,
+   "capitalRecovery": 45325,
+   "insurance": 222,
+   "taxes": 2628,
+   "repairs": null,
+   "total": 48176,
+   "page": 18,
+   "line": "18 Combine 476,827 15 48,830 45,325 222 2,628 48,176"
+  },
+  {
+   "description": "Tractor 155HP4WD",
+   "yearCode": "18",
+   "price": 155596,
+   "yearsLife": 15,
+   "salvageValue": 30292,
+   "capitalRecovery": 14150,
+   "insurance": 79,
+   "taxes": 929,
+   "repairs": null,
+   "total": 15158,
+   "page": 18,
+   "line": "18 Tractor 155HP4WD 155,596 15 30,292 14,150 79 929 15,158"
+  },
+  {
+   "description": "Tractor 110HP4WD HC",
+   "yearCode": "18",
+   "price": 127363,
+   "yearsLife": 15,
+   "salvageValue": 24795,
+   "capitalRecovery": 11582,
+   "insurance": 64,
+   "taxes": 761,
+   "repairs": null,
+   "total": 12407,
+   "page": 18,
+   "line": "18 Tractor 110HP4WD HC 127,363 15 24,795 11,582 64 761 12,407"
+  },
+  {
+   "description": "Combine Header 30'",
+   "yearCode": "18",
+   "price": 57662,
+   "yearsLife": 15,
+   "salvageValue": 5905,
+   "capitalRecovery": 5481,
+   "insurance": 27,
+   "taxes": 318,
+   "repairs": null,
+   "total": 5826,
+   "page": 18,
+   "line": "18 Combine Header 30' 57,662 15 5,905 5,481 27 318 5,826"
+  },
+  {
+   "description": "Planter-Air 6-Row 15'",
+   "yearCode": "18",
+   "price": 54000,
+   "yearsLife": 15,
+   "salvageValue": 5184,
+   "capitalRecovery": 5148,
+   "insurance": 25,
+   "taxes": 296,
+   "repairs": null,
+   "total": 5469,
+   "page": 18,
+   "line": "18 Planter-Air 6-Row 15' 54,000 15 5,184 5,148 25 296 5,469"
+  },
+  {
+   "description": "Bed Shaper/Power Incorporator 15’",
+   "yearCode": "18",
+   "price": 34000,
+   "yearsLife": 15,
+   "salvageValue": 3264,
+   "capitalRecovery": 3242,
+   "insurance": 16,
+   "taxes": 186,
+   "repairs": null,
+   "total": 3444,
+   "page": 18,
+   "line": "18 Bed Shaper/Power Incorporator 15’ 34,000 15 3,264 3,242 16 186 3,444"
+  },
+  {
+   "description": "Bankout Wagon Pull Type 20 Ton",
+   "yearCode": "18",
+   "price": 38000,
+   "yearsLife": 10,
+   "salvageValue": 6720,
+   "capitalRecovery": 4519,
+   "insurance": 19,
+   "taxes": 224,
+   "repairs": null,
+   "total": 4762,
+   "page": 18,
+   "line": "18 Bankout Wagon Pull Type 20 Ton 38,000 10 6,720 4,519 19 224 4,762"
+  },
+  {
+   "description": "Performer-Bed Disc 3-Row 15'",
+   "yearCode": "18",
+   "price": 33000,
+   "yearsLife": 10,
+   "salvageValue": 5836,
+   "capitalRecovery": 3925,
+   "insurance": 16,
+   "taxes": 194,
+   "repairs": null,
+   "total": 4135,
+   "page": 18,
+   "line": "18 Performer-Bed Disc 3-Row 15' 33,000 10 5,836 3,925 16 194 4,135"
+  },
+  {
+   "description": "Cultivator Sled 3-Row 15’",
+   "yearCode": "18",
+   "price": 11200,
+   "yearsLife": 10,
+   "salvageValue": 1981,
+   "capitalRecovery": 1332,
+   "insurance": 6,
+   "taxes": 66,
+   "repairs": null,
+   "total": 1404,
+   "page": 18,
+   "line": "18 Cultivator Sled 3-Row 15’ 11,200 10 1,981 1,332 6 66 1,404"
+  },
+  {
+   "description": "Spray Boom 15'",
+   "yearCode": "18",
+   "price": 3100,
+   "yearsLife": 10,
+   "salvageValue": 548,
+   "capitalRecovery": 369,
+   "insurance": 2,
+   "taxes": 18,
+   "repairs": null,
+   "total": 388,
+   "page": 18,
+   "line": "18 Spray Boom 15' 3,100 10 548 369 2 18 388"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "yearCode": "18",
+   "price": 28000,
+   "yearsLife": 8,
+   "salvageValue": 9772,
+   "capitalRecovery": 3415,
+   "insurance": 16,
+   "taxes": 189,
+   "repairs": null,
+   "total": 3620,
+   "page": 18,
+   "line": "18 Pickup 1/2 Ton 28,000 8 9,772 3,415 16 189 3,620"
+  },
+  {
+   "description": "ATV 4WD",
+   "yearCode": "18",
+   "price": 8350,
+   "yearsLife": 8,
+   "salvageValue": 2914,
+   "capitalRecovery": 1018,
+   "insurance": 5,
+   "taxes": 56,
+   "repairs": null,
+   "total": 1079,
+   "page": 18,
+   "line": "18 ATV 4WD 8,350 8 2,914 1,018 5 56 1,079"
+  },
+  {
+   "description": "300 Gallon Saddle Tanks",
+   "yearCode": "18",
+   "price": 1660,
+   "yearsLife": 5,
+   "salvageValue": 541,
+   "capitalRecovery": 292,
+   "insurance": 1,
+   "taxes": 11,
+   "repairs": null,
+   "total": 304,
+   "page": 18,
+   "line": "18 300 Gallon Saddle Tanks 1,660 5 541 292 1 11 304"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Building 2,400 sqft",
+   "yearCode": null,
+   "price": 84000,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 5780,
+   "insurance": 36,
+   "taxes": 420,
+   "repairs": 1680,
+   "total": 7915,
+   "page": 18,
+   "line": "Building 2,400 sqft 84,000 30 0 5,780 36 420 1,680 7,915"
+  },
+  {
+   "description": "Irrigation System (sprinklers)",
+   "yearCode": null,
+   "price": 1914600,
+   "yearsLife": 20,
+   "salvageValue": 134022,
+   "capitalRecovery": 156369,
+   "insurance": 867,
+   "taxes": 10243,
+   "repairs": 38292,
+   "total": 205770,
+   "page": 18,
+   "line": "Irrigation System (sprinklers) 1,914,600 20 134,022 156,369 867 10,243 38,292 205,770"
+  },
+  {
+   "description": "Booster Pump (sprinklers)",
+   "yearCode": null,
+   "price": 41000,
+   "yearsLife": 20,
+   "salvageValue": 2870,
+   "capitalRecovery": 3349,
+   "insurance": 19,
+   "taxes": 219,
+   "repairs": 820,
+   "total": 4406,
+   "page": 18,
+   "line": "Booster Pump (sprinklers) 41,000 20 2,870 3,349 19 219 820 4,406"
+  },
+  {
+   "description": "Fuel Storage Tanks & Pumps",
+   "yearCode": null,
+   "price": 39565,
+   "yearsLife": 20,
+   "salvageValue": 2770,
+   "capitalRecovery": 3231,
+   "insurance": 18,
+   "taxes": 212,
+   "repairs": 791,
+   "total": 4252,
+   "page": 18,
+   "line": "Fuel Storage Tanks & Pumps 39,565 20 2,770 3,231 18 212 791 4,252"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 20000,
+   "yearsLife": 20,
+   "salvageValue": 1400,
+   "capitalRecovery": 1633,
+   "insurance": 9,
+   "taxes": 107,
+   "repairs": 400,
+   "total": 2149,
+   "page": 18,
+   "line": "Shop Tools 20,000 20 1,400 1,633 9 107 400 2,149"
+  },
+  {
+   "description": "Irrigation Pipe Trailer (2)",
+   "yearCode": null,
+   "price": 7000,
+   "yearsLife": 20,
+   "salvageValue": 490,
+   "capitalRecovery": 572,
+   "insurance": 3,
+   "taxes": 37,
+   "repairs": 140,
+   "total": 752,
+   "page": 18,
+   "line": "Irrigation Pipe Trailer (2) 7,000 20 490 572 3 37 140 752"
+  },
+  {
+   "description": "Drip Tape",
+   "yearCode": null,
+   "price": 57600,
+   "yearsLife": 5,
+   "salvageValue": 0,
+   "capitalRecovery": 13489,
+   "insurance": 24,
+   "taxes": 288,
+   "repairs": 0,
+   "total": 13801,
+   "page": 18,
+   "line": "Drip Tape 57,600 5 0 13,489 24 288 0 13,801"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "Pickup 1/2 Ton",
+   "hoursUsedOnCrop": 250,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 8.2,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.45,
+   "repairsPerHr": 3.4,
+   "fuelPerHr": 9,
+   "totalOperatingPerHr": 12.4,
+   "totalCostPerHr": 21.09,
+   "page": 19,
+   "line": "18 Pickup 1/2 Ton 250 8.20 0.04 0.45 3.40 9.00 12.40 21.09"
+  },
+  {
+   "description": "ATV 4WD",
+   "hoursUsedOnCrop": 150,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 2.44,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.14,
+   "repairsPerHr": 0.76,
+   "fuelPerHr": 0.96,
+   "totalOperatingPerHr": 1.72,
+   "totalCostPerHr": 4.31,
+   "page": 19,
+   "line": "18 ATV 4WD 150 2.44 0.01 0.14 0.76 0.96 1.72 4.31"
+  },
+  {
+   "description": "Tractor 155HP4WD",
+   "hoursUsedOnCrop": 106,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 7.96,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.52,
+   "repairsPerHr": 9.35,
+   "fuelPerHr": 36.43,
+   "totalOperatingPerHr": 45.79,
+   "totalCostPerHr": 54.32,
+   "page": 19,
+   "line": "18 Tractor 155HP4WD 106 7.96 0.04 0.52 9.35 36.43 45.79 54.32"
+  },
+  {
+   "description": "300 Gallon Saddle Tanks",
+   "hoursUsedOnCrop": 96,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.58,
+   "insurancePerHr": 0,
+   "taxesPerHr": 0.02,
+   "repairsPerHr": 0.45,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.45,
+   "totalCostPerHr": 1.06,
+   "page": 19,
+   "line": "18 300 Gallon Saddle Tanks 96 0.58 0.00 0.02 0.45 0.00 0.45 1.06"
+  },
+  {
+   "description": "Spray Boom 15'",
+   "hoursUsedOnCrop": 96,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.47,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.07,
+   "repairsPerHr": 0.83,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.83,
+   "totalCostPerHr": 2.39,
+   "page": 19,
+   "line": "18 Spray Boom 15' 96 1.47 0.01 0.07 0.83 0.00 0.83 2.39"
+  },
+  {
+   "description": "Tractor 425HP4WD",
+   "hoursUsedOnCrop": 71,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 22.52,
+   "insurancePerHr": 0.13,
+   "taxesPerHr": 1.5,
+   "repairsPerHr": 21.32,
+   "fuelPerHr": 72.02,
+   "totalOperatingPerHr": 93.35,
+   "totalCostPerHr": 117.5,
+   "page": 19,
+   "line": "18 Tractor 425HP4WD 71 22.52 0.13 1.50 21.32 72.02 93.35 117.50"
+  },
+  {
+   "description": "Performer-Bed Disc 3-Row 15'",
+   "hoursUsedOnCrop": 65,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 11.77,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.58,
+   "repairsPerHr": 6.74,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 6.74,
+   "totalCostPerHr": 19.15,
+   "page": 19,
+   "line": "18 Performer-Bed Disc 3-Row 15' 65 11.77 0.05 0.58 6.74 0.00 6.74 19.15"
+  },
+  {
+   "description": "Tractor 110HP4WD HC",
+   "hoursUsedOnCrop": 62,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 6.52,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.43,
+   "repairsPerHr": 5.98,
+   "fuelPerHr": 18.64,
+   "totalOperatingPerHr": 24.62,
+   "totalCostPerHr": 31.6,
+   "page": 19,
+   "line": "18 Tractor 110HP4WD HC 62 6.52 0.04 0.43 5.98 18.64 24.62 31.60"
+  },
+  {
+   "description": "Cultivator Sled 3-Row 15’",
+   "hoursUsedOnCrop": 56,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 4,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.2,
+   "repairsPerHr": 2.37,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.37,
+   "totalCostPerHr": 6.58,
+   "page": 19,
+   "line": "18 Cultivator Sled 3-Row 15’ 56 4.00 0.02 0.20 2.37 0.00 2.37 6.58"
+  },
+  {
+   "description": "Combine",
+   "hoursUsedOnCrop": 44,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 135.98,
+   "insurancePerHr": 0.67,
+   "taxesPerHr": 7.88,
+   "repairsPerHr": 38.42,
+   "fuelPerHr": 36.43,
+   "totalOperatingPerHr": 74.86,
+   "totalCostPerHr": 219.38,
+   "page": 19,
+   "line": "18 Combine 44 135.98 0.67 7.88 38.42 36.43 74.86 219.38"
+  },
+  {
+   "description": "Planter-Air 6-Row 15'",
+   "hoursUsedOnCrop": 40,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 30.89,
+   "insurancePerHr": 0.15,
+   "taxesPerHr": 1.78,
+   "repairsPerHr": 13.93,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 13.93,
+   "totalCostPerHr": 46.75,
+   "page": 19,
+   "line": "18 Planter-Air 6-Row 15' 40 30.89 0.15 1.78 13.93 0.00 13.93 46.75"
+  },
+  {
+   "description": "Combine Header 30'",
+   "hoursUsedOnCrop": 40,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 16.44,
+   "insurancePerHr": 0.08,
+   "taxesPerHr": 0.95,
+   "repairsPerHr": 1,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 1,
+   "totalCostPerHr": 18.48,
+   "page": 19,
+   "line": "18 Combine Header 30' 40 16.44 0.08 0.95 1.00 0.00 1.00 18.48"
+  },
+  {
+   "description": "Bed Shaper/Power Incorporator 15’",
+   "hoursUsedOnCrop": 40,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 14.62,
+   "insurancePerHr": 0.07,
+   "taxesPerHr": 0.84,
+   "repairsPerHr": 3.8,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 3.8,
+   "totalCostPerHr": 19.34,
+   "page": 19,
+   "line": "18 Bed Shaper/Power Incorporator 15’ 40 14.62 0.07 0.84 3.80 0.00 3.80 19.34"
+  },
+  {
+   "description": "Bankout Wagon Pull Type 20 Ton",
+   "hoursUsedOnCrop": 17,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 13.56,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.67,
+   "repairsPerHr": 5.19,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 5.19,
+   "totalCostPerHr": 19.48,
+   "page": 19,
+   "line": "18 Bankout Wagon Pull Type 20 Ton 17 13.56 0.06 0.67 5.19 0.00 5.19 19.48"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 200,
+   "unit": "Acre",
+   "pricePerUnit": 50,
+   "totalCost": 10000,
+   "page": 18,
+   "line": "Office Expense 200 Acre 50.00 10,000"
+  },
+  {
+   "description": "Land Rent",
+   "unitsPerFarm": 200,
+   "unit": "Acre",
+   "pricePerUnit": 220.5,
+   "totalCost": 44100,
+   "page": 18,
+   "line": "Land Rent 200 Acre 220.50 44,100"
+  },
+  {
+   "description": "Crop Insurance- 75%",
+   "unitsPerFarm": 200,
+   "unit": "Acre",
+   "pricePerUnit": 36.75,
+   "totalCost": 7350,
+   "page": 18,
+   "line": "Crop Insurance- 75% 200 Acre 36.75 7,350"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 9,
+   "quote": "The formula for the calculation of the annual capital recovery costs is: ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 9,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "County taxes are calculated as 1 percent of the average value of the property."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   18,
+   83,
+   114,
+   49,
+   49,
+   49,
+   521,
+   0,
+   0,
+   60,
+   14,
+   312
+  ],
+  "operatingPerAcre": [
+   9,
+   77,
+   108,
+   43,
+   43,
+   43,
+   254,
+   0,
+   0,
+   54,
+   8,
+   306
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 1269,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "OCT",
+   "NOV",
+   "DEC",
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL"
+  ],
+  "spansTwoYears": false,
+  "page": 16,
+  "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE GARBANZO BEANS (Chickpeas)"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "laborOverheadPct",
+   "insuranceRatePct"
+  ],
+  "warnings": []
+ }
+}

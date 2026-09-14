@@ -1,0 +1,252 @@
+{
+ "source": {
+  "id": "blue-elderberry-20blueelderberryhedgerowwithouttillage",
+  "commodity": "blue-elderberry",
+  "title": "SAMPLE COSTS TO ESTABLISH",
+  "year": 2020,
+  "region": "Sacramento Valley",
+  "counties": "Property Taxes.",
+  "description": "Hedgerow Without Tillage",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c9/6f/c96fb62f-512f-41bd-b587-7db8d3b437dc/20blueelderberryhedgerowwithouttillage.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blue-elderberry",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 40,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The Pacific Star Garden farm consists of 40 contiguous acres owned by the operator."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": {
+   "value": 6,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 6.0 percent used to calculate capital recovery cost is the effective long-term interest rate in January 2020."
+  },
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 14.5,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $14.50 for machine operators and $12.50 for irrigation and general labor."
+  },
+  "laborNonMachineRate": {
+   "value": 12.5,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $14.50 for machine operators and $12.50 for irrigation and general labor."
+  },
+  "laborOverheadPct": {
+   "value": 42.56,
+   "unit": "%",
+   "page": 6,
+   "quote": "Labor rates of $20.67 per hour for machine operators and $17.82 for irrigation and general labor includes payroll overhead of 42.56 percent."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.4,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.75 and $3.40 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.4,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.75 and $3.40 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [
+  {
+   "description": "John Deere 4WD Tractor",
+   "yearCode": null,
+   "price": 33000,
+   "yearsLife": 20,
+   "salvageValue": 4234,
+   "capitalRecovery": 2762,
+   "insurance": 165,
+   "taxes": 186,
+   "repairs": null,
+   "total": 3113,
+   "page": 13,
+   "line": "John Deere 4WD Tractor 33,000 20 4,234 2,762 165 186 3,113"
+  },
+  {
+   "description": "Bush Hog Rotary Mower",
+   "yearCode": null,
+   "price": 7500,
+   "yearsLife": 20,
+   "salvageValue": 391,
+   "capitalRecovery": 643,
+   "insurance": 35,
+   "taxes": 39,
+   "repairs": null,
+   "total": 718,
+   "page": 13,
+   "line": "Bush Hog Rotary Mower 7,500 20 391 643 35 39 718"
+  },
+  {
+   "description": "ATV-4WD",
+   "yearCode": null,
+   "price": 6500,
+   "yearsLife": 15,
+   "salvageValue": 1265,
+   "capitalRecovery": 615,
+   "insurance": 34,
+   "taxes": 39,
+   "repairs": null,
+   "total": 688,
+   "page": 13,
+   "line": "ATV-4WD 6,500 15 1,265 615 34 39 688"
+  },
+  {
+   "description": "ATV Trailer",
+   "yearCode": null,
+   "price": 1500,
+   "yearsLife": 25,
+   "salvageValue": 45,
+   "capitalRecovery": 117,
+   "insurance": 7,
+   "taxes": 8,
+   "repairs": null,
+   "total": 131,
+   "page": 13,
+   "line": "ATV Trailer 1,500 25 45 117 7 8 131"
+  }
+ ],
+ "investments": [],
+ "hourlyEquipment": [
+  {
+   "description": "John Deere 4WD Tractor 2",
+   "hoursUsedOnCrop": 3.45,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0,
+   "insurancePerHr": 21,
+   "taxesPerHr": 0.23,
+   "repairsPerHr": 2.23,
+   "fuelPerHr": 6.29,
+   "totalOperatingPerHr": 8.52,
+   "totalCostPerHr": 12.41,
+   "page": 13,
+   "line": "John Deere 4WD Tractor 2 3.45 0 21 0.23 2.23 6.29 8.52 12.41"
+  },
+  {
+   "description": "Bush Hog Rotary Mower",
+   "hoursUsedOnCrop": 2,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 6.43,
+   "insurancePerHr": 0.35,
+   "taxesPerHr": 0.39,
+   "repairsPerHr": 5.35,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 5.35,
+   "totalCostPerHr": 12.53,
+   "page": 13,
+   "line": "Bush Hog Rotary Mower 2 6.43 0.35 0.39 5.35 0.00 5.35 12.53"
+  },
+  {
+   "description": "ATV-4WD",
+   "hoursUsedOnCrop": 2,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 4.62,
+   "insurancePerHr": 0.26,
+   "taxesPerHr": 0.29,
+   "repairsPerHr": 1.27,
+   "fuelPerHr": 1.76,
+   "totalOperatingPerHr": 3.03,
+   "totalCostPerHr": 8.21,
+   "page": 13,
+   "line": "ATV-4WD 2 4.62 0.26 0.29 1.27 1.76 3.03 8.21"
+  },
+  {
+   "description": "ATV Trailer 1",
+   "hoursUsedOnCrop": 1.17,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.07,
+   "insurancePerHr": 0.08,
+   "taxesPerHr": 0.04,
+   "repairsPerHr": 0,
+   "fuelPerHr": 0.04,
+   "totalOperatingPerHr": 1,
+   "totalCostPerHr": 35,
+   "page": 13,
+   "line": "ATV Trailer 1 1.17 0.07 0.08 0.04 0.00 0.04 1 35"
+  }
+ ],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  }
+ },
+ "monthly": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "acresFarmed",
+   "equipment",
+   "hourlyEquipment",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "landRentPerAcre",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "investments",
+   "businessOverhead",
+   "insuranceRatePct",
+   "monthly"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "monthly table not used: MONTHLY CASH COSTS PER 1,000LF TO ESTABLISH BLUE ELDERBERRIES: no TOTAL CASH COSTS, TOTAL OPERATING COSTS or cash overhead rows found under the month header"
+  ]
+ }
+}

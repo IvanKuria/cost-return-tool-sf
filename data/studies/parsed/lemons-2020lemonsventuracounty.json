@@ -1,0 +1,682 @@
+{
+ "source": {
+  "id": "lemons-2020lemonsventuracounty",
+  "commodity": "lemons",
+  "title": "SAMPLE COSTS TO ESTABLISH AN ORCHARD AND",
+  "year": 2020,
+  "region": "South Coast Ventura",
+  "counties": "SAMPLE COSTS TO ESTABLISH AN ORCHARD AND PRODUCE EUREKA LEMONS Ventura",
+  "description": "Eureka Lemons, Establishment and Production, Micro-sprinkler Irrigation",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/38/fa/38fa8f9c-c93b-4c62-9740-a850bbc40df9/2020lemonsventuracounty.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": {
+   "value": 1018,
+   "unit": "Carton",
+   "page": 18,
+   "quote": "Eureka Lemon (Packed) 1,018 Carton 16.42 16,709"
+  },
+  "yieldUnit": "Carton",
+  "pricePerUnit": {
+   "value": 16.42,
+   "unit": "$/Carton",
+   "page": 18,
+   "quote": "Eureka Lemon (Packed) 1,018 Carton 16.42 16,709"
+  },
+  "returns": [
+   {
+    "name": "Eureka Lemon (Packed)",
+    "quantity": 1018,
+    "unit": "Carton",
+    "price": 16.42,
+    "value": 16709,
+    "page": 18,
+    "quote": "Eureka Lemon (Packed) 1,018 Carton 16.42 16,709"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 10797,
+   "unit": "$/acre",
+   "page": 17,
+   "quote": "TOTAL OPERATING COSTS/ACRE 3.08 743 25 10 2,081 7,786 10,797"
+  },
+  "cashOverheadTotal": {
+   "value": 1292,
+   "unit": "$/acre",
+   "page": 17,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 1,292"
+  },
+  "nonCashOverheadTotal": {
+   "value": 5398,
+   "unit": "$/acre",
+   "page": 17,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 95,531 5,398 5,398"
+  },
+  "totalCost": {
+   "value": 17487,
+   "unit": "$/acre",
+   "page": 17,
+   "quote": "TOTAL COSTS/ACRE 17,487"
+  },
+  "grossReturns": {
+   "value": 16709,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "TOTAL GROSS RETURNS 16,709"
+  },
+  "netReturnsAboveOperating": {
+   "value": 5912,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 5,912"
+  },
+  "netReturnsAboveTotal": {
+   "value": -779,
+   "unit": "$/acre",
+   "page": 19,
+   "quote": "NET RETURNS ABOVE TOTAL COST -779"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 150,
+    "page": 17,
+    "quote": "Office Expense 150"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 22,
+    "page": 17,
+    "quote": "Liability Insurance 22"
+   },
+   {
+    "description": "Field Sanitation",
+    "value": 18,
+    "page": 17,
+    "quote": "Field Sanitation 18"
+   },
+   {
+    "description": "Food Safety/GAP",
+    "value": 38,
+    "page": 17,
+    "quote": "Food Safety/GAP 38"
+   },
+   {
+    "description": "Leaf Analysis",
+    "value": 9,
+    "page": 17,
+    "quote": "Leaf Analysis 9"
+   },
+   {
+    "description": "Soil Analysis",
+    "value": 10,
+    "page": 17,
+    "quote": "Soil Analysis 10"
+   },
+   {
+    "description": "Irrigation Waiver Fee",
+    "value": 16,
+    "page": 17,
+    "quote": "Irrigation Waiver Fee 16"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 879,
+    "page": 17,
+    "quote": "Property Taxes 879"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 78,
+    "page": 17,
+    "quote": "Property Insurance 78"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 73,
+    "page": 17,
+    "quote": "Investment Repairs 73"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Frost Protection",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 546,
+    "customRent": 0,
+    "totalCost": 546,
+    "page": 17,
+    "quote": "Frost Protection 0.00 0 0 0 546 0 546"
+   },
+   {
+    "name": "Winter Pesticide Application",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 105,
+    "customRent": 30,
+    "totalCost": 135,
+    "page": 17,
+    "quote": "Winter Pesticide Application 0.00 0 0 0 105 30 135"
+   },
+   {
+    "name": "Fertilizer: UAN32 3x",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 62,
+    "customRent": 0,
+    "totalCost": 62,
+    "page": 17,
+    "quote": "Fertilizer: UAN32 3x 0.00 0 0 0 62 0 62"
+   },
+   {
+    "name": "Fertilizer: Urea/Potassium",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 97,
+    "customRent": 0,
+    "totalCost": 97,
+    "page": 17,
+    "quote": "Fertilizer: Urea/Potassium 0.00 0 0 0 97 0 97"
+   },
+   {
+    "name": "Prune",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 501,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 501,
+    "page": 17,
+    "quote": "Prune 0.00 501 0 0 0 0 501"
+   },
+   {
+    "name": "Irrigation: Water & labor",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 143,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 750,
+    "customRent": 0,
+    "totalCost": 893,
+    "page": 17,
+    "quote": "Irrigation: Water & labor 0.00 143 0 0 750 0 893"
+   },
+   {
+    "name": "Summer Pesticide Application",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 293,
+    "customRent": 30,
+    "totalCost": 323,
+    "page": 17,
+    "quote": "Summer Pesticide Application 0.00 0 0 0 293 30 323"
+   },
+   {
+    "name": "Weeds: Spot Spray",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 19,
+    "customRent": 5,
+    "totalCost": 24,
+    "page": 17,
+    "quote": "Weeds: Spot Spray 0.00 0 0 0 19 5 24"
+   },
+   {
+    "name": "Fall Pesticide Application",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 46,
+    "customRent": 30,
+    "totalCost": 76,
+    "page": 17,
+    "quote": "Fall Pesticide Application 0.00 0 0 0 46 30 76"
+   },
+   {
+    "name": "Weeds: Pre-emergence",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 14,
+    "customRent": 30,
+    "totalCost": 44,
+    "page": 17,
+    "quote": "Weeds: Pre-emergence 0.00 0 0 0 14 30 44"
+   },
+   {
+    "name": "Truck: Pick-Up",
+    "category": "cultural",
+    "timeHrsPerAcre": 2.08,
+    "labor": 67,
+    "fuel": 17,
+    "lubeRepairs": 8,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 91,
+    "page": 17,
+    "quote": "Truck: Pick-Up 2.08 67 17 8 0 0 91"
+   },
+   {
+    "name": "UTV",
+    "category": "cultural",
+    "timeHrsPerAcre": 1,
+    "labor": 32,
+    "fuel": 8,
+    "lubeRepairs": 2,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 42,
+    "page": 17,
+    "quote": "UTV 1.00 32 8 2 0 0 42"
+   },
+   {
+    "name": "Vertebrate Pests: Gophers",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 37,
+    "customRent": 0,
+    "totalCost": 37,
+    "page": 17,
+    "quote": "Vertebrate Pests: Gophers 0.00 0 0 0 37 0 37"
+   },
+   {
+    "name": "PCA Services",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 38,
+    "totalCost": 38,
+    "page": 17,
+    "quote": "PCA Services 0.00 0 0 0 0 38 38"
+   },
+   {
+    "name": "Pick and Haul",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 3399,
+    "totalCost": 3399,
+    "page": 17,
+    "quote": "Pick and Haul 0.00 0 0 0 0 3,399 3,399"
+   },
+   {
+    "name": "Sort and Pack",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 4225,
+    "totalCost": 4225,
+    "page": 17,
+    "quote": "Sort and Pack 0.00 0 0 0 0 4,225 4,225"
+   },
+   {
+    "name": "Assessments: CPDPP/CRB",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 112,
+    "customRent": 0,
+    "totalCost": 112,
+    "page": 17,
+    "quote": "Assessments: CPDPP/CRB 0.00 0 0 0 112 0 112"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "Pickup Truck ½-Ton",
+   "yearCode": null,
+   "price": 35000,
+   "yearsLife": 10,
+   "salvageValue": 10338,
+   "capitalRecovery": 3840,
+   "insurance": 20,
+   "taxes": 227,
+   "repairs": null,
+   "total": 4087,
+   "page": 22,
+   "line": "Pickup Truck ½-Ton 35,000 10 10,338 3,840 20 227 4,087"
+  },
+  {
+   "description": "UTV",
+   "yearCode": null,
+   "price": 8500,
+   "yearsLife": 10,
+   "salvageValue": 3249,
+   "capitalRecovery": 875,
+   "insurance": 5,
+   "taxes": 59,
+   "repairs": null,
+   "total": 939,
+   "page": 22,
+   "line": "UTV 8,500 10 3,249 875 5 59 939"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Wind Machines",
+   "yearCode": null,
+   "price": 50000,
+   "yearsLife": 40,
+   "salvageValue": 3500,
+   "capitalRecovery": 3090,
+   "insurance": 24,
+   "taxes": 268,
+   "repairs": 1000,
+   "total": 4382,
+   "page": 22,
+   "line": "Wind Machines 50,000 40 3,500 3,090 24 268 1,000 4,382"
+  },
+  {
+   "description": "Shop Building",
+   "yearCode": null,
+   "price": 10000,
+   "yearsLife": 40,
+   "salvageValue": 700,
+   "capitalRecovery": 618,
+   "insurance": 5,
+   "taxes": 54,
+   "repairs": 200,
+   "total": 876,
+   "page": 22,
+   "line": "Shop Building 10,000 40 700 618 5 54 200 876"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 8000,
+   "yearsLife": 20,
+   "salvageValue": 560,
+   "capitalRecovery": 653,
+   "insurance": 4,
+   "taxes": 43,
+   "repairs": 160,
+   "total": 860,
+   "page": 22,
+   "line": "Shop Tools 8,000 20 560 653 4 43 160 860"
+  },
+  {
+   "description": "Drip Irrigation (48 Acres)",
+   "yearCode": null,
+   "price": 98500,
+   "yearsLife": 40,
+   "salvageValue": 6895,
+   "capitalRecovery": 6088,
+   "insurance": 47,
+   "taxes": 527,
+   "repairs": 1970,
+   "total": 8632,
+   "page": 22,
+   "line": "Drip Irrigation (48 Acres) 98,500 40 6,895 6,088 47 527 1,970 8,632"
+  },
+  {
+   "description": "Land (50 Acres)",
+   "yearCode": null,
+   "price": 4000000,
+   "yearsLife": 40,
+   "salvageValue": 4000000,
+   "capitalRecovery": 220000,
+   "insurance": 3544,
+   "taxes": 40000,
+   "repairs": 0,
+   "total": 263544,
+   "page": 22,
+   "line": "Land (50 Acres) 4,000,000 40 4,000,000 220,000 3,544 40,000 0 263,544"
+  },
+  {
+   "description": "Fuel Tanks (2)",
+   "yearCode": null,
+   "price": 10500,
+   "yearsLife": 40,
+   "salvageValue": 735,
+   "capitalRecovery": 649,
+   "insurance": 5,
+   "taxes": 56,
+   "repairs": 210,
+   "total": 920,
+   "page": 22,
+   "line": "Fuel Tanks (2) 10,500 40 735 649 5 56 210 920"
+  },
+  {
+   "description": "Grove Establishment (48 Acres)",
+   "yearCode": null,
+   "price": 557904,
+   "yearsLife": 37,
+   "salvageValue": 0,
+   "capitalRecovery": 35594,
+   "insurance": 247,
+   "taxes": 2790,
+   "repairs": 0,
+   "total": 38631,
+   "page": 22,
+   "line": "Grove Establishment (48 Acres) 557,904 37 0 35,594 247 2,790 0 38,631"
+  }
+ ],
+ "hourlyEquipment": [],
+ "businessOverhead": [
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 48,
+   "unit": "Acre",
+   "pricePerUnit": 150,
+   "totalCost": 7200,
+   "page": 22,
+   "line": "Office Expense 48 Acre 150.00 7,200"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 48,
+   "unit": "Acre",
+   "pricePerUnit": 21.84,
+   "totalCost": 1092,
+   "page": 22,
+   "line": "Liability Insurance 48 Acre 21.84 1,092"
+  },
+  {
+   "description": "Field Sanitation",
+   "unitsPerFarm": 48,
+   "unit": "Arce",
+   "pricePerUnit": 17.5,
+   "totalCost": 840,
+   "page": 22,
+   "line": "Field Sanitation 48 Arce 17.50 840"
+  },
+  {
+   "description": "Food Safety/GAP",
+   "unitsPerFarm": 48,
+   "unit": "Acre",
+   "pricePerUnit": 38,
+   "totalCost": 1824,
+   "page": 22,
+   "line": "Food Safety/GAP 48 Acre 38.00 1,824"
+  },
+  {
+   "description": "Leaf Analysis",
+   "unitsPerFarm": 48,
+   "unit": "Acre",
+   "pricePerUnit": 8.66,
+   "totalCost": 416,
+   "page": 22,
+   "line": "Leaf Analysis 48 Acre 8.66 416"
+  },
+  {
+   "description": "Soil Analysis",
+   "unitsPerFarm": 48,
+   "unit": "Acre",
+   "pricePerUnit": 9.5,
+   "totalCost": 456,
+   "page": 22,
+   "line": "Soil Analysis 48 Acre 9.50 456"
+  },
+  {
+   "description": "Irrigation Waiver Fee",
+   "unitsPerFarm": 48,
+   "unit": "Acre",
+   "pricePerUnit": 16.26,
+   "totalCost": 780,
+   "page": 22,
+   "line": "Irrigation Waiver Fee 48 Acre 16.26 780"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   360,
+   518,
+   60,
+   789,
+   192,
+   172,
+   975,
+   198,
+   210,
+   2804,
+   2837,
+   2973
+  ],
+  "operatingPerAcre": [
+   340,
+   19,
+   40,
+   769,
+   172,
+   151,
+   476,
+   178,
+   155,
+   2784,
+   2817,
+   2897
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true
+  ],
+  "totalCheck": 12089,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 20,
+  "quote": "MONTHLY COSTS PER ACRE TO PRODUCE EUREKA LEMONS"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "businessOverhead",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "hourlyEquipment",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct"
+  ],
+  "warnings": []
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "source": {
+  "id": "pasture-20pasturesnfhestabtillnotill",
+  "commodity": "pasture",
+  "title": "TO ESTABLISH OR REESTABLISH AND PRODUCE",
+  "year": 2020,
+  "region": "Sierra Nevada Foothill",
+  "counties": "Dan Macon UCCE Farm Advisor, Placer, Nevada, Sutter, and Yuba",
+  "description": "Establish (till) or Reestablish (no-till) and Production, Flood Irrigated",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/bf/2a/bf2a6a2f-10da-4e01-97fc-7ed8e9bade2f/20pasturesnfhestabtillnotill.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 40,
+   "unit": "acres",
+   "page": 6,
+   "quote": "On this 40-acre operation, the labor is listed under custom charges."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": {
+   "value": 3.5,
+   "unit": "Ton",
+   "page": 15,
+   "quote": "Hay 3.50 Ton 230.00 805"
+  },
+  "yieldUnit": "Ton",
+  "pricePerUnit": {
+   "value": 230,
+   "unit": "$/Ton",
+   "page": 15,
+   "quote": "Hay 3.50 Ton 230.00 805"
+  },
+  "returns": [
+   {
+    "name": "Hay",
+    "quantity": 3.5,
+    "unit": "Ton",
+    "price": 230,
+    "value": 805,
+    "page": 15,
+    "quote": "Hay 3.50 Ton 230.00 805"
+   }
+  ],
+  "interestRatePct": {
+   "value": 6,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 6.00 percent is used to calculate capital recovery, which is the basic suggested rate by a farm-lending agency as of January 2020."
+  },
+  "operatingInterestRatePct": {
+   "value": 5.25,
+   "unit": "%",
+   "page": 6,
+   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 5.25 percent per year."
+  },
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": {
+   "page": 6,
+   "quote": "The June hay harvest at 90 percent dry matter is assumed to yield 2.0 tons per acre in the first cutting and 1.5 tons per acre from the second cutting in late August or early September."
+  },
+  "priceStatement": {
+   "page": 6,
+   "quote": "The price of $230 per ton is based on an average of the 2019 Sacramento Valley USDA market prices for hay."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 515,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL OPERATING COSTS/ACRE 0.00 0 0 0 286 229 515"
+  },
+  "cashOverheadTotal": {
+   "value": 285,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 285"
+  },
+  "nonCashOverheadTotal": {
+   "value": 57,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 783 57 57"
+  },
+  "totalCost": {
+   "value": 857,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL COSTS/ACRE 857"
+  },
+  "grossReturns": {
+   "value": 805,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "TOTAL GROSS RETURNS 805"
+  },
+  "netReturnsAboveOperating": {
+   "value": 290,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 290"
+  },
+  "netReturnsAboveTotal": {
+   "value": -52,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "NET RETURNS ABOVE TOTAL COST -52"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 25,
+    "page": 14,
+    "quote": "Office Expense 25"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 16,
+    "page": 14,
+    "quote": "Liability Insurance 16"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 4,
+    "page": 14,
+    "quote": "Property Taxes 4"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Weeds: Spot Spray 2x",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 3,
+    "customRent": 3,
+    "totalCost": 5,
+    "page": 14,
+    "quote": "Weeds: Spot Spray 2x 0.00 0 0 0 3 3 5"
+   },
+   {
+    "name": "Irrigate: Flood 7x",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 211,
+    "customRent": 46,
+    "totalCost": 257,
+    "page": 14,
+    "quote": "Irrigate: Flood 7x 0.00 0 0 0 211 46 257"
+   },
+   {
+    "name": "Fertilizer: 46-0-0",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 72,
+    "customRent": 13,
+    "totalCost": 85,
+    "page": 14,
+    "quote": "Fertilizer: 46-0-0 0.00 0 0 0 72 13 85"
+   },
+   {
+    "name": "Harvest: Hay",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 168,
+    "totalCost": 168,
+    "page": 14,
+    "quote": "Harvest: Hay 0.00 0 0 0 0 168 168"
+   }
+  ]
+ },
+ "equipment": [],
+ "investments": [
+  {
+   "description": "Establish Pasture: Tilled 40 Ac",
+   "yearCode": null,
+   "price": 31320,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 2275,
+   "insurance": 14,
+   "taxes": 157,
+   "repairs": 0,
+   "total": 2446,
+   "page": 18,
+   "line": "Establish Pasture: Tilled 40 Ac 31,320 30 0 2,275 14 157 0 2,446"
+  }
+ ],
+ "hourlyEquipment": [],
+ "businessOverhead": [
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 40,
+   "unit": "Acre",
+   "pricePerUnit": 25,
+   "totalCost": 1000,
+   "page": 18,
+   "line": "Office Expense 40 Acre 25.00 1,000"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 40,
+   "unit": "Acre",
+   "pricePerUnit": 15.53,
+   "totalCost": 621,
+   "page": 18,
+   "line": "Liability Insurance 40 Acre 15.53 621"
+  },
+  {
+   "description": "Land Lease 40 Ac",
+   "unitsPerFarm": 40,
+   "unit": "Acre",
+   "pricePerUnit": 240,
+   "totalCost": 9600,
+   "page": 18,
+   "line": "Land Lease 40 Ac 40 Acre 240.00 9,600"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The formula for the calculation of the annual capital recovery costs is; ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property taxes are calculated as 1 percent of the average value of the property and not influenced by the Williamson Act or additional county taxes."
+  }
+ },
+ "monthly": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "investments",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct"
+  ],
+  "fieldsMissing": [
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "equipment",
+   "hourlyEquipment",
+   "insuranceRatePct",
+   "monthly"
+  ],
+  "warnings": [
+   "equipment table present but no equipment rows parsed",
+   "monthly table not used: MONTHLY CASH COSTS PER ACRE TO PRODUCE PASTURE: TOTAL CASH COSTS row: months sum to 870 but the Total column says 800"
+  ]
+ }
+}

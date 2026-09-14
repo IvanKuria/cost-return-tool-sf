@@ -1,0 +1,106 @@
+{
+ "source": {
+  "id": "beef-17beefcowcalfeastbayareafinaldraft121417",
+  "commodity": "beef",
+  "title": "SAMPLE COSTS FOR BEEF CATTLE",
+  "year": 2017,
+  "region": "San Francisco Bay Area–Public Lands",
+  "counties": "Sheila Barry UC Cooperative Extension Farm Advisor, Santa Clara",
+  "description": "Cow/Calf Production (100 Head)",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/7a/4a/7a4aeb5f-3684-4db2-9d59-d4d2461c00c8/17beefcowcalfeastbayareafinaldraft121417.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beef",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": {
+   "value": 5,
+   "unit": "%",
+   "page": 8,
+   "quote": "An interest rate of 5.0 percent is used to calculate capital recovery."
+  },
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The formula for the calculation of the annual capital recovery costs is: ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null
+ },
+ "monthly": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "interestRatePct",
+   "capitalRecoveryFormula"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "warnings": [
+   "Table 2 found but no GROSS RETURNS block",
+   "3 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)",
+   "equipment table present but no equipment rows parsed",
+   "monthly table has no TABLE heading; parsed from the month header line",
+   "monthly table not used: monthly table without a heading: month header has no Total column, so rows cannot be checked"
+  ]
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "source": {
+  "id": "sheep-2022sheepproductionsjvsouth",
+  "commodity": "sheep",
+  "title": "SAMPLE COSTS FOR SHEEP PRODUCTION",
+  "year": 2022,
+  "region": "San Joaquin Valley South",
+  "counties": "Natural Resources Advisor, Kern, Tulare, and Kings",
+  "description": "3,000 head (ewes) operation",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/07/07/2022sheepproductionsjvsouth.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sheep",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": {
+   "value": 5,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 5.0 percent used to calculate capital recovery cost is the effective long term interest rate effective April 2022."
+  },
+  "operatingInterestRatePct": {
+   "value": 6,
+   "unit": "%",
+   "page": 8,
+   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until sale months at a nominal rate of 6.0 percent per year."
+  },
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 6,
+   "quote": "The price used for whiteface wool is $1.84 per pound; coarser wool from blackface or cross-bred sheep is lower and in some cases the wool may not be marketable."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": {
+   "value": 3.83,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "Total Cash Overhead Costs 14,647 3.83"
+  },
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The formula for the calculation of the annual capital recovery costs is: ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null
+ },
+ "monthly": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "interestRatePct",
+   "cashOverheadTotal",
+   "capitalRecoveryFormula"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "warnings": [
+   "Table 2 found but no GROSS RETURNS block",
+   "5 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)",
+   "equipment table present but no equipment rows parsed",
+   "monthly table has no TABLE heading; parsed from the month header line",
+   "monthly table not used: monthly table without a heading: month header has no Total column, so rows cannot be checked"
+  ]
+ }
+}

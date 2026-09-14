@@ -1,0 +1,931 @@
+{
+ "source": {
+  "id": "onions-2023onions-final",
+  "commodity": "onions",
+  "title": "SAMPLE COSTS TO PRODUCE",
+  "year": 2023,
+  "region": "Intermountain - Tulelake Basin, Intermountain - Klamath Basin",
+  "counties": "Siskiyou",
+  "description": "For dehydrating",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/2024/05/10/2023Onions-Final.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/onions",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 50,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The whole 1,500-acre farm has 50 acres in roads, irrigation systems, farmstead, and unused or unusable land."
+  },
+  "acresCrop": {
+   "value": 50,
+   "unit": "acres",
+   "page": 3,
+   "quote": "Just over 2.5 acres are in the buffer zone and are part of the 50 acres of unused land."
+  },
+  "yieldPerAcre": null,
+  "yieldUnit": "Cwt",
+  "pricePerUnit": null,
+  "returns": [
+   {
+    "name": "Onions",
+    "quantity": 465,
+    "unit": "Cwt",
+    "price": 12,
+    "value": 5580,
+    "page": 11,
+    "quote": "Onions 465 Cwt 12 5580"
+   },
+   {
+    "name": "Quality Incentive",
+    "quantity": 465,
+    "unit": "Cwt",
+    "price": 0.5,
+    "value": 232.5,
+    "page": 11,
+    "quote": "Quality Incentive 465 Cwt 0.5 232.5"
+   }
+  ],
+  "interestRatePct": {
+   "value": 7,
+   "unit": "%",
+   "page": 7,
+   "quote": "The interest rate of 7.00 percent is used to calculate capital recovery cost is the effective long term interest rate in May 2023."
+  },
+  "operatingInterestRatePct": {
+   "value": 8.5,
+   "unit": "%",
+   "page": 5,
+   "quote": "Interest on operating capital is based on cash operating costs calculated monthly until harvest at a nominal rate of 8.50 percent per year."
+  },
+  "laborMachineRate": {
+   "value": 30.13,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Labor rates of $30.13 per hour for machine operators and $24.25 for non-machine workers includes payroll overhead of 47 percent."
+  },
+  "laborNonMachineRate": {
+   "value": 24.25,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Labor rates of $30.13 per hour for machine operators and $24.25 for non-machine workers includes payroll overhead of 47 percent."
+  },
+  "laborOverheadPct": {
+   "value": 47,
+   "unit": "%",
+   "page": 5,
+   "quote": "Labor rates of $30.13 per hour for machine operators and $24.25 for non-machine workers includes payroll overhead of 47 percent."
+  },
+  "landRentPerAcre": {
+   "value": 550,
+   "unit": "$/acre/yr",
+   "page": 12,
+   "quote": "Land Rent-Onions 550.00"
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.7,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.10 and $3.70 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.7,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.10 and $3.70 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 5,
+   "quote": "A current selling price of $12.00 per cwt of fresh onions is used to estimate market income."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 3615.29,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL OPERATING COSTS/ACRE 3615.29"
+  },
+  "cashOverheadTotal": {
+   "value": 1.6,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL CASH OVERHEAD COSTS/CWT 1.60"
+  },
+  "nonCashOverheadTotal": {
+   "value": 0.337,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS/CWT 0.337"
+  },
+  "totalCost": {
+   "value": 4518.11,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL COSTS/ACRE 4518.11"
+  },
+  "grossReturns": {
+   "value": 5812.5,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL GROSS RETURNS 5812.5"
+  },
+  "netReturnsAboveOperating": {
+   "value": 2197.21,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 2197.21"
+  },
+  "netReturnsAboveTotal": {
+   "value": 1294.39,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "NET RETURNS ABOVE TOTAL COSTS 1294.39"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Land Rent-Onions",
+    "value": 550,
+    "page": 12,
+    "quote": "Land Rent-Onions 550.00"
+   },
+   {
+    "description": "Field Sanitation",
+    "value": 2,
+    "page": 12,
+    "quote": "Field Sanitation 2.00"
+   },
+   {
+    "description": "Field Supervisor Salary",
+    "value": 55.44,
+    "page": 12,
+    "quote": "Field Supervisor Salary 55.44"
+   },
+   {
+    "description": "GPS Auto-TracActivation",
+    "value": 2.33,
+    "page": 12,
+    "quote": "GPS Auto-TracActivation 2.33"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 1.08,
+    "page": 12,
+    "quote": "Liability Insurance 1.08"
+   },
+   {
+    "description": "Regulatory Compliance",
+    "value": 55,
+    "page": 12,
+    "quote": "Regulatory Compliance 55.00"
+   },
+   {
+    "description": "Office Expense",
+    "value": 75,
+    "page": 12,
+    "quote": "Office Expense 75.00"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 4.46,
+    "page": 12,
+    "quote": "Investment Repairs 4.46"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 0.76,
+    "page": 12,
+    "quote": "Property Insurance 0.76"
+   }
+  ],
+  "operations": []
+ },
+ "equipment": [
+  {
+   "description": "225 Hp 4WD Tractor",
+   "yearCode": null,
+   "price": 245388,
+   "yearsLife": 15,
+   "salvageValue": 166864,
+   "capitalRecovery": 20299,
+   "insurance": 174,
+   "taxes": 2061,
+   "repairs": null,
+   "total": 22534,
+   "page": 16,
+   "line": "225 Hp 4WD Tractor 245,388 15 166,864 20,299 174 2,061 22,534"
+  },
+  {
+   "description": "175 Hp 4wd Tractor",
+   "yearCode": null,
+   "price": 175833,
+   "yearsLife": 15,
+   "salvageValue": 119566,
+   "capitalRecovery": 14545,
+   "insurance": 125,
+   "taxes": 1477,
+   "repairs": null,
+   "total": 16147,
+   "page": 16,
+   "line": "175 Hp 4wd Tractor 175,833 15 119,566 14,545 125 1,477 16,147"
+  },
+  {
+   "description": "158 Hp 4Wd Tractor",
+   "yearCode": null,
+   "price": 166954,
+   "yearsLife": 15,
+   "salvageValue": 113529,
+   "capitalRecovery": 13811,
+   "insurance": 118,
+   "taxes": 1402,
+   "repairs": null,
+   "total": 15331,
+   "page": 16,
+   "line": "158 Hp 4Wd Tractor 166,954 15 113,529 13,811 118 1,402 15,331"
+  },
+  {
+   "description": "125 Hp 4wd Tractor",
+   "yearCode": null,
+   "price": 115412,
+   "yearsLife": 15,
+   "salvageValue": 78480,
+   "capitalRecovery": 9547,
+   "insurance": 82,
+   "taxes": 969,
+   "repairs": null,
+   "total": 10598,
+   "page": 16,
+   "line": "125 Hp 4wd Tractor 115,412 15 78,480 9,547 82 969 10,598"
+  },
+  {
+   "description": "Onion Harvester",
+   "yearCode": null,
+   "price": 55814,
+   "yearsLife": 2,
+   "salvageValue": 31256,
+   "capitalRecovery": 13904,
+   "insurance": 37,
+   "taxes": 435,
+   "repairs": null,
+   "total": 14376,
+   "page": 16,
+   "line": "Onion Harvester 55,814 2 31,256 13,904 37 435 14,376"
+  },
+  {
+   "description": "Hp 4wd Tractor",
+   "yearCode": "75",
+   "price": 45000,
+   "yearsLife": 40,
+   "salvageValue": 30600,
+   "capitalRecovery": 3222,
+   "insurance": 32,
+   "taxes": 378,
+   "repairs": null,
+   "total": 3632,
+   "page": 16,
+   "line": "75 Hp 4wd Tractor 45,000 40 30,600 3,222 32 378 3,632"
+  },
+  {
+   "description": "Planter 6 Row 18'",
+   "yearCode": null,
+   "price": 65000,
+   "yearsLife": 8,
+   "salvageValue": 39000,
+   "capitalRecovery": 7303,
+   "insurance": 44,
+   "taxes": 520,
+   "repairs": null,
+   "total": 7867,
+   "page": 16,
+   "line": "Planter 6 Row 18' 65,000 8 39,000 7,303 44 520 7,867"
+  },
+  {
+   "description": "Finish Disc 28'",
+   "yearCode": null,
+   "price": 14000,
+   "yearsLife": 10,
+   "salvageValue": 8400,
+   "capitalRecovery": 1385,
+   "insurance": 9,
+   "taxes": 112,
+   "repairs": null,
+   "total": 1507,
+   "page": 16,
+   "line": "Finish Disc 28' 14,000 10 8,400 1,385 9 112 1,507"
+  },
+  {
+   "description": "18' Rollover Plow",
+   "yearCode": null,
+   "price": 20000,
+   "yearsLife": 10,
+   "salvageValue": 12000,
+   "capitalRecovery": 1979,
+   "insurance": 13,
+   "taxes": 160,
+   "repairs": null,
+   "total": 2153,
+   "page": 16,
+   "line": "18' Rollover Plow 20,000 10 12,000 1,979 13 160 2,153"
+  },
+  {
+   "description": "Rotospike-18'",
+   "yearCode": null,
+   "price": 7500,
+   "yearsLife": 10,
+   "salvageValue": 4800,
+   "capitalRecovery": 720,
+   "insurance": 5,
+   "taxes": 62,
+   "repairs": null,
+   "total": 787,
+   "page": 16,
+   "line": "Rotospike-18' 7,500 10 4,800 720 5 62 787"
+  },
+  {
+   "description": "Chisel- 21'",
+   "yearCode": null,
+   "price": 18000,
+   "yearsLife": 10,
+   "salvageValue": 10800,
+   "capitalRecovery": 1781,
+   "insurance": 12,
+   "taxes": 144,
+   "repairs": null,
+   "total": 1937,
+   "page": 16,
+   "line": "Chisel- 21' 18,000 10 10,800 1,781 12 144 1,937"
+  },
+  {
+   "description": "Flail M ower 18'",
+   "yearCode": null,
+   "price": 13203,
+   "yearsLife": 10,
+   "salvageValue": 7922,
+   "capitalRecovery": 1306,
+   "insurance": 9,
+   "taxes": 106,
+   "repairs": null,
+   "total": 1421,
+   "page": 16,
+   "line": "Flail M ower 18' 13,203 10 7,922 1,306 9 106 1,421"
+  },
+  {
+   "description": "Bed Shaper-6 Row 18'",
+   "yearCode": null,
+   "price": 38000,
+   "yearsLife": 7,
+   "salvageValue": 24320,
+   "capitalRecovery": 4340,
+   "insurance": 26,
+   "taxes": 312,
+   "repairs": null,
+   "total": 4678,
+   "page": 16,
+   "line": "Bed Shaper-6 Row 18' 38,000 7 24,320 4,340 26 312 4,678"
+  },
+  {
+   "description": "Roller- Flat- 18'",
+   "yearCode": null,
+   "price": 10500,
+   "yearsLife": 10,
+   "salvageValue": 6300,
+   "capitalRecovery": 1039,
+   "insurance": 7,
+   "taxes": 84,
+   "repairs": null,
+   "total": 1130,
+   "page": 16,
+   "line": "Roller- Flat- 18' 10,500 10 6,300 1,039 7 84 1,130"
+  },
+  {
+   "description": "Cultivator Sled 6 Row",
+   "yearCode": null,
+   "price": 120000,
+   "yearsLife": 12,
+   "salvageValue": 72000,
+   "capitalRecovery": 11083,
+   "insurance": 81,
+   "taxes": 960,
+   "repairs": null,
+   "total": 12124,
+   "page": 16,
+   "line": "Cultivator Sled 6 Row 120,000 12 72,000 11,083 81 960 12,124"
+  },
+  {
+   "description": "15' Grain Drill",
+   "yearCode": null,
+   "price": 50000,
+   "yearsLife": 6,
+   "salvageValue": 4946,
+   "capitalRecovery": 9798,
+   "insurance": 23,
+   "taxes": 275,
+   "repairs": null,
+   "total": 10096,
+   "page": 16,
+   "line": "15' Grain Drill 50,000 6 4,946 9,798 23 275 10,096"
+  },
+  {
+   "description": "Subsoiler 14'",
+   "yearCode": null,
+   "price": 53000,
+   "yearsLife": 10,
+   "salvageValue": 9373,
+   "capitalRecovery": 6868,
+   "insurance": 26,
+   "taxes": 312,
+   "repairs": null,
+   "total": 7206,
+   "page": 16,
+   "line": "Subsoiler 14' 53,000 10 9,373 6,868 26 312 7,206"
+  },
+  {
+   "description": "Pickup 1/2 ton #1",
+   "yearCode": null,
+   "price": 11259,
+   "yearsLife": 10,
+   "salvageValue": 7656,
+   "capitalRecovery": 1049,
+   "insurance": 8,
+   "taxes": 95,
+   "repairs": null,
+   "total": 1151,
+   "page": 16,
+   "line": "Pickup 1/2 ton #1 11,259 10 7,656 1,049 8 95 1,151"
+  },
+  {
+   "description": "Lister- 6 Row 18'",
+   "yearCode": null,
+   "price": 9500,
+   "yearsLife": 10,
+   "salvageValue": 5700,
+   "capitalRecovery": 940,
+   "insurance": 6,
+   "taxes": 76,
+   "repairs": null,
+   "total": 1022,
+   "page": 16,
+   "line": "Lister- 6 Row 18' 9,500 10 5,700 940 6 76 1,022"
+  },
+  {
+   "description": "Side Cutter 6 Row 18'",
+   "yearCode": null,
+   "price": 33309,
+   "yearsLife": 10,
+   "salvageValue": 21318,
+   "capitalRecovery": 3200,
+   "insurance": 23,
+   "taxes": 273,
+   "repairs": null,
+   "total": 3496,
+   "page": 16,
+   "line": "Side Cutter 6 Row 18' 33,309 10 21,318 3,200 23 273 3,496"
+  },
+  {
+   "description": "#1 ATV",
+   "yearCode": null,
+   "price": 13054,
+   "yearsLife": 5,
+   "salvageValue": 8877,
+   "capitalRecovery": 1640,
+   "insurance": 9,
+   "taxes": 110,
+   "repairs": null,
+   "total": 1759,
+   "page": 16,
+   "line": "#1 ATV 13,054 5 8,877 1,640 9 110 1,759"
+  },
+  {
+   "description": "Pipe Trailer",
+   "yearCode": null,
+   "price": 10250,
+   "yearsLife": 4,
+   "salvageValue": 6560,
+   "capitalRecovery": 1549,
+   "insurance": 7,
+   "taxes": 84,
+   "repairs": null,
+   "total": 1640,
+   "page": 16,
+   "line": "Pipe Trailer 10,250 4 6,560 1,549 7 84 1,640"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Fuel Tanks 2-500, 1000 gal",
+   "yearCode": null,
+   "price": 21950,
+   "yearsLife": 20,
+   "salvageValue": 2195,
+   "capitalRecovery": 2018,
+   "insurance": 10,
+   "taxes": 121,
+   "repairs": 439,
+   "total": 2588,
+   "page": 17,
+   "line": "Fuel Tanks 2-500, 1000 gal 21,950 20 2,195 2,018 10 121 439 2,588"
+  },
+  {
+   "description": "Pipe Trailer (10)",
+   "yearCode": null,
+   "price": 35000,
+   "yearsLife": 10,
+   "salvageValue": 3500,
+   "capitalRecovery": 4730,
+   "insurance": 16,
+   "taxes": 193,
+   "repairs": 700,
+   "total": 5639,
+   "page": 17,
+   "line": "Pipe Trailer (10) 35,000 10 3,500 4,730 16 193 700 5,639"
+  },
+  {
+   "description": "Booster Pumps (125 HP x 2)",
+   "yearCode": null,
+   "price": 39838,
+   "yearsLife": 10,
+   "salvageValue": 3984,
+   "capitalRecovery": 5384,
+   "insurance": 18,
+   "taxes": 219,
+   "repairs": 797,
+   "total": 6418,
+   "page": 17,
+   "line": "Booster Pumps (125 HP x 2) 39,838 10 3,984 5,384 18 219 797 6,418"
+  },
+  {
+   "description": "Semi-Truck & Lowbed",
+   "yearCode": null,
+   "price": 95000,
+   "yearsLife": 15,
+   "salvageValue": 3617,
+   "capitalRecovery": 10287,
+   "insurance": 42,
+   "taxes": 493,
+   "repairs": 1900,
+   "total": 12721,
+   "page": 17,
+   "line": "Semi-Truck & Lowbed 95,000 15 3,617 10,287 42 493 1,900 12,721"
+  },
+  {
+   "description": "Implement Carrier",
+   "yearCode": null,
+   "price": 16700,
+   "yearsLife": 15,
+   "salvageValue": 1670,
+   "capitalRecovery": 1767,
+   "insurance": 8,
+   "taxes": 92,
+   "repairs": 334,
+   "total": 2201,
+   "page": 17,
+   "line": "Implement Carrier 16,700 15 1,670 1,767 8 92 334 2,201"
+  },
+  {
+   "description": "GPS Guidence System",
+   "yearCode": null,
+   "price": 8500,
+   "yearsLife": 10,
+   "salvageValue": 850,
+   "capitalRecovery": 1149,
+   "insurance": 4,
+   "taxes": 47,
+   "repairs": 170,
+   "total": 1369,
+   "page": 17,
+   "line": "GPS Guidence System 8,500 10 850 1,149 4 47 170 1,369"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 20000,
+   "yearsLife": 20,
+   "salvageValue": 2000,
+   "capitalRecovery": 1839,
+   "insurance": 9,
+   "taxes": 110,
+   "repairs": 400,
+   "total": 2358,
+   "page": 17,
+   "line": "Shop Tools 20,000 20 2,000 1,839 9 110 400 2,358"
+  },
+  {
+   "description": "Solid Set/pump/main line",
+   "yearCode": null,
+   "price": 72404,
+   "yearsLife": 20,
+   "salvageValue": 7240,
+   "capitalRecovery": 6658,
+   "insurance": 34,
+   "taxes": 398,
+   "repairs": 1448,
+   "total": 8538,
+   "page": 17,
+   "line": "Solid Set/pump/main line 72,404 20 7,240 6,658 34 398 1,448 8,538"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "225 Hp 4WD Tractor",
+   "hoursUsedOnCrop": 1066,
+   "totalHours": 93,
+   "capitalRecoveryPerHr": 11.43,
+   "insurancePerHr": 0.1,
+   "taxesPerHr": 1.16,
+   "repairsPerHr": 13.92,
+   "fuelPerHr": 53.54,
+   "totalOperatingPerHr": 67.46,
+   "totalCostPerHr": 80.14,
+   "page": 18,
+   "line": "225 Hp 4WD Tractor 1066 93 11.43 0.10 1.16 13.92 53.54 67.46 80.14"
+  },
+  {
+   "description": "200 Hp 4wd Tractor",
+   "hoursUsedOnCrop": 1066,
+   "totalHours": 315,
+   "capitalRecoveryPerHr": 14.42,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.66,
+   "repairsPerHr": 12.74,
+   "fuelPerHr": 47.59,
+   "totalOperatingPerHr": 60.33,
+   "totalCostPerHr": 75.46,
+   "page": 18,
+   "line": "200 Hp 4wd Tractor 1066 315 14.42 0.06 0.66 12.74 47.59 60.33 75.46"
+  },
+  {
+   "description": "175 Hp 4wd Tractor",
+   "hoursUsedOnCrop": 1066,
+   "totalHours": 304,
+   "capitalRecoveryPerHr": 8.19,
+   "insurancePerHr": 0.07,
+   "taxesPerHr": 0.83,
+   "repairsPerHr": 10.47,
+   "fuelPerHr": 41.64,
+   "totalOperatingPerHr": 52.11,
+   "totalCostPerHr": 61.2,
+   "page": 18,
+   "line": "175 Hp 4wd Tractor 1066 304 8.19 0.07 0.83 10.47 41.64 52.11 61.20"
+  },
+  {
+   "description": "158 Hp 4Wd Tractor",
+   "hoursUsedOnCrop": 1066,
+   "totalHours": 234,
+   "capitalRecoveryPerHr": 7.77,
+   "insurancePerHr": 0.07,
+   "taxesPerHr": 0.79,
+   "repairsPerHr": 9.36,
+   "fuelPerHr": 35.69,
+   "totalOperatingPerHr": 45.05,
+   "totalCostPerHr": 53.68,
+   "page": 18,
+   "line": "158 Hp 4Wd Tractor 1066 234 7.77 0.07 0.79 9.36 35.69 45.05 53.68"
+  },
+  {
+   "description": "125 Hp 4wd Tractor",
+   "hoursUsedOnCrop": 1066,
+   "totalHours": 253,
+   "capitalRecoveryPerHr": 5.37,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.55,
+   "repairsPerHr": 7.23,
+   "fuelPerHr": 29.74,
+   "totalOperatingPerHr": 36.98,
+   "totalCostPerHr": 42.94,
+   "page": 18,
+   "line": "125 Hp 4wd Tractor 1066 253 5.37 0.05 0.55 7.23 29.74 36.98 42.94"
+  },
+  {
+   "description": "Hp 4wd Tractor",
+   "hoursUsedOnCrop": 400,
+   "totalHours": 735,
+   "capitalRecoveryPerHr": 4.83,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.57,
+   "repairsPerHr": 3.04,
+   "fuelPerHr": 15.1,
+   "totalOperatingPerHr": 18.14,
+   "totalCostPerHr": 23.59,
+   "page": 18,
+   "line": "75 Hp 4wd Tractor 400 735 4.83 0.05 0.57 3.04 15.10 18.14 23.59"
+  },
+  {
+   "description": "Pickup 1/2 ton #1",
+   "hoursUsedOnCrop": 200,
+   "totalHours": 220,
+   "capitalRecoveryPerHr": 3.15,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.28,
+   "repairsPerHr": 2.47,
+   "fuelPerHr": 11.1,
+   "totalOperatingPerHr": 13.57,
+   "totalCostPerHr": 17.03,
+   "page": 18,
+   "line": "Pickup 1/2 ton #1 200 220 3.15 0.02 0.28 2.47 11.10 13.57 17.03"
+  },
+  {
+   "description": "#1 ATV",
+   "hoursUsedOnCrop": 400,
+   "totalHours": 147,
+   "capitalRecoveryPerHr": 2.46,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.16,
+   "repairsPerHr": 1.52,
+   "fuelPerHr": 3.7,
+   "totalOperatingPerHr": 5.22,
+   "totalCostPerHr": 7.86,
+   "page": 18,
+   "line": "#1 ATV 400 147 2.46 0.01 0.16 1.52 3.70 5.22 7.86"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Land Rent-Onions",
+   "unitsPerFarm": 200,
+   "unit": "Acre",
+   "pricePerUnit": 550,
+   "totalCost": 110000,
+   "page": 17,
+   "line": "Land Rent-Onions 200 Acre 550 110,000"
+  },
+  {
+   "description": "Field Sanitation",
+   "unitsPerFarm": 1500,
+   "unit": "Acre",
+   "pricePerUnit": 2,
+   "totalCost": 3000,
+   "page": 17,
+   "line": "Field Sanitation 1,500 Acre 2 3,000"
+  },
+  {
+   "description": "Field Supervisor Salary",
+   "unitsPerFarm": 1500,
+   "unit": "Acre",
+   "pricePerUnit": 55,
+   "totalCost": 83160,
+   "page": 17,
+   "line": "Field Supervisor Salary 1,500 Acre 55 83,160"
+  },
+  {
+   "description": "GPS Auto-TracActivation",
+   "unitsPerFarm": 1500,
+   "unit": "Acre",
+   "pricePerUnit": 2,
+   "totalCost": 3500,
+   "page": 17,
+   "line": "GPS Auto-TracActivation 1,500 Acre 2 3,500"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 1500,
+   "unit": "Acre",
+   "pricePerUnit": 1,
+   "totalCost": 1623,
+   "page": 17,
+   "line": "Liability Insurance 1,500 Acre 1 1,623"
+  },
+  {
+   "description": "Regulatory Compliance",
+   "unitsPerFarm": 1500,
+   "unit": "Acre",
+   "pricePerUnit": 55,
+   "totalCost": 82500,
+   "page": 17,
+   "line": "Regulatory Compliance 1,500 Acre 55 82,500"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 1500,
+   "unit": "Acre",
+   "pricePerUnit": 75,
+   "totalCost": 112500,
+   "page": 17,
+   "line": "Office Expense 1,500 Acre 75 112,500"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The calculation for the annual capital recovery costs is as follows: ((Purchase Price-Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 6,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   18.33,
+   15.95,
+   15.95,
+   685.99,
+   113.21,
+   425.55,
+   821.72,
+   91.53,
+   816.65,
+   1306.62,
+   33.92,
+   15.95
+  ],
+  "operatingPerAcre": [
+   0,
+   0,
+   0,
+   670,
+   97,
+   410,
+   806,
+   76,
+   797,
+   741,
+   18,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false
+  ],
+  "totalCheck": 4361.36,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "Nov",
+   "Dec",
+   "Jan",
+   "Feb",
+   "Mar",
+   "Apr",
+   "May",
+   "Jun",
+   "Jul",
+   "Aug",
+   "Sept",
+   "Oct"
+  ],
+  "spansTwoYears": false,
+  "page": 13,
+  "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ONIONS-DEHYDRATED"
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "operations"
+  ],
+  "warnings": [
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]"
+  ]
+ }
+}

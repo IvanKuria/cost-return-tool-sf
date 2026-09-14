@@ -1,0 +1,95 @@
+{
+ "source": {
+  "id": "strawberries-span-muestra-de-costos-para-producir-y-cosecha-fresas-2024",
+  "commodity": "strawberries",
+  "title": "Strawberries",
+  "year": 2024,
+  "region": "Central Coast Santa Cruz, Monterey, San Benito",
+  "counties": "San Benito",
+  "description": "Producir y cosechar (Spanish Translation)",
+  "language": "es",
+  "url": "https://coststudyfiles.ucdavis.edu/2025/08/13/(SPAN)_%20MUESTRA%20DE%20COSTOS%20PARA%20PRODUCIR%20Y%20COSECHA%20FRESAS%20-2024.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/current/commodities/strawberries",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-14"
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null
+ },
+ "monthly": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "warnings": [
+   "Spanish-language study; prose regexes are English only",
+   "no costs-per-acre table found",
+   "no whole-farm equipment table",
+   "monthly table has no TABLE heading; parsed from the month header line",
+   "monthly table not used: monthly table without a heading: month header has no Total column, so rows cannot be checked"
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { loadManifest, slugOf, TEXT_DIR } from './manifest';
+import { parseStudy, proseSentencesForDebug } from './parse';
+const slug = process.argv[2]; const re = new RegExp(process.argv[3] ?? 'overhead', 'i');
+const e = loadManifest().find(x => slugOf(x) === slug)!;
+const text = fs.readFileSync(path.join(TEXT_DIR, `${slug}.txt`), 'utf8');
+const p = parseStudy(e, text);
+console.log(JSON.stringify({ a: p.assumptions, m: p.method, warn: p.parse.warnings }, null, 1).slice(0, 3000));
+console.log('--- sentences matching', re);
+for (const s of proseSentencesForDebug(text)) if (re.test(s.text)) console.log(s.page, '|', s.text.slice(0, 220));
