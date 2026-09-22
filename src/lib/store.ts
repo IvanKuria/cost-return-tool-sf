@@ -1,6 +1,7 @@
 import { useEffect, useReducer } from 'react';
 import { cropDefaultsFromStudy, studyById } from '../data/studies';
-import type { Crop, Equipment, Farm, Plan } from './types';
+import { STUDY_INSURANCE_RATE, STUDY_PROPERTY_TAX_RATE } from './rates';
+import type { Citation, Crop, Equipment, Farm, Plan } from './types';
 
 export type Step = 'farm' | 'crops' | 'equipment' | 'results' | 'sources';
 export const STEPS: { id: Step; label: string }[] = [
@@ -30,7 +31,8 @@ export type Action =
 export const DEFAULT_FARM: Farm = {
   name: '', county: 'Santa Cruz', areaUnit: 'acres', bedLengthFt: 100, bedWidthIn: 30,
   interestRate: 0.0475, ownLaborRate: 0, hiredLaborRate: 0, payrollOverhead: 0.40,
-  landRentPerAcre: 0, otherOverheadPerYear: 0,
+  landRentPerAcre: 0, overheadItems: [], overheadBasis: 'acres', equipmentBasis: 'hours',
+  insuranceRate: STUDY_INSURANCE_RATE, propertyTaxRate: STUDY_PROPERTY_TAX_RATE,
   citations: {},
 };
 
@@ -50,8 +52,36 @@ export function reducer(s: State, a: Action): State {
   }
 }
 
-// v3: plans now carry citations. Anything saved by an earlier version held uncited defaults and is dropped.
-const KEY = 'farm-cost-planner.v3';
+// v3: plans carry citations. v4: itemized overhead, allocation bases, split running cost (migrated from v3).
+const KEY = 'farm-cost-planner.v4';
+const OLD_KEY = 'farm-cost-planner.v3';
+
+/** Bring a v3 plan up to v4 without losing anything the farmer typed. */
+export function migratePlan(raw: unknown): Plan {
+  const p = raw as Plan & { farm: Farm & { otherOverheadPerYear?: number }; equipment: (Equipment & { operatingCostPerHour?: number })[] };
+  const farm: Farm = { ...DEFAULT_FARM, ...p.farm };
+  if (!Array.isArray(farm.overheadItems)) {
+    const legacy = p.farm.otherOverheadPerYear ?? 0;
+    const legacyCitation = (p.farm.citations as Record<string, Citation | undefined>).otherOverheadPerYear;
+    farm.overheadItems = legacy > 0 ? [{ id: 'other', name: 'Other farm costs', amountPerYear: legacy, basis: 'acres', ...(legacyCitation ? { citation: legacyCitation } : {}) }] : [];
+  }
+  if (!farm.overheadBasis) farm.overheadBasis = 'acres';
+  if (!farm.equipmentBasis) farm.equipmentBasis = 'hours';
+  if (typeof farm.insuranceRate !== 'number') farm.insuranceRate = STUDY_INSURANCE_RATE;
+  if (typeof farm.propertyTaxRate !== 'number') farm.propertyTaxRate = STUDY_PROPERTY_TAX_RATE;
+  const equipment: Equipment[] = p.equipment.map(e => {
+    if (typeof e.fuelLubePerHour === 'number' && typeof e.repairsPerHour === 'number') return e;
+    // A v3 plan held one running figure. Keep it whole under fuel and lube rather than invent a split.
+    const legacy = (e as { operatingCostPerHour?: number }).operatingCostPerHour ?? 0;
+    const cits = e.citations as Record<string, Citation | undefined>;
+    const citations = { ...e.citations } as Equipment['citations'];
+    if (cits.operatingCostPerHour) citations.fuelLubePerHour = { ...cits.operatingCostPerHour, field: 'Fuel, lube and repairs per hour (not split in this saved plan)' };
+    const missing = (e.missingFields ?? []).filter(f => (f as string) !== 'operatingCostPerHour') as Equipment['missingFields'];
+    return { ...e, fuelLubePerHour: legacy, repairsPerHour: 0, citations, missingFields: missing };
+  });
+  const crops = p.crops.map(c => ({ ...c, operations: Array.isArray(c.operations) ? c.operations : [] }));
+  return { ...p, farm, equipment, crops };
+}
 
 function isCurrentPlan(p: unknown): p is Plan {
   if (!p || typeof p !== 'object') return false;
@@ -76,11 +106,11 @@ export function hydratePlan(plan: Plan): Plan {
 export function usePlanStore(initial: State) {
   const [state, dispatch] = useReducer(reducer, initial, (init) => {
     try {
-      const raw = localStorage.getItem(KEY);
+      const raw = localStorage.getItem(KEY) ?? localStorage.getItem(OLD_KEY);
       if (raw) {
         const saved = JSON.parse(raw) as Partial<State>;
         if (saved.plan && isCurrentPlan(saved.plan)) {
-          const plan = hydratePlan(saved.plan);
+          const plan = hydratePlan(migratePlan(saved.plan));
           const step = saved.step && [...STEPS.map(s => s.id), 'sources'].includes(saved.step) ? saved.step : init.step;
           return { step: window.location.hash === '#results' ? 'results' as const : step, plan };
         }

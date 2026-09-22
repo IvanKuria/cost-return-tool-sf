@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b4/3d/b43d58d9-1e91-4a3e-80f9-a2edb14958b0/2020avocadohighdensitysandiegocounty.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/avocados",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -626,7 +626,8 @@
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -719,7 +720,8 @@
    "acresFarmed",
    "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "machineLaborFactor"
   ],
   "warnings": []
  }

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/dc/15/dc158210-055c-494c-9c2f-54083fbf0323/2016wheatsacvalleyfinaldraft122116.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/wheat",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1114,6 +1114,12 @@
    "unit": "%",
    "page": 6,
    "quote": "Counties charge a base property tax rate of 1 percent on the assessed value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Tables 1 and 6 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair.!"
   }
  },
  "monthly": {
@@ -1199,6 +1205,7 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

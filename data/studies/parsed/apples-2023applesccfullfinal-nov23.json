@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/11/13/2023applesccfullfinal-nov23.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/apples",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1071,6 +1071,12 @@
    "unit": "%",
    "page": 8,
    "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for the operations involving machinery are 20 percent higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1160,6 +1166,7 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

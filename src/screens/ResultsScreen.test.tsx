@@ -89,6 +89,27 @@ describe('farmer-facing results', () => {
     expect(cash).toContain('Cumulative balance');
     expect(cash).toContain('Lowest projected month-end balance: −$200 in January');
     expect(cash).toContain('starting from $0.');
-    expect(cash).toContain('Equipment capital recovery is excluded');
+    expect(cash).toContain('charged evenly over 12 months');
+  });
+
+  it('shows a cash flow table by month with sales, costs, fixed costs, net and running balance', () => {
+    const html = render([enteredCrop()]);
+    const table = html.match(/<section aria-labelledby="cashflow-heading">([\s\S]*?)<\/section>/)?.[1];
+    expect(table).toBeDefined();
+    expect(html.indexOf('cashflow-heading')).toBeLessThan(html.indexOf('cash-heading'));
+    expect(table).toContain('Market beans sales');
+    expect(table).toContain('Market beans costs');
+    expect(table).toContain('Overhead and equipment');
+    expect(table).toContain('Running balance');
+    expect(table).toContain('>Jan<');
+    expect(table).toContain('>Dec<');
+    expect(table).toContain('$1,200');
+    expect(table).toContain('−$200');
+    expect(table).toContain('Percent of year');
+  });
+
+  it('offers a per-crop detail of shared costs when the breakdown is on', () => {
+    const html = render([enteredCrop()]);
+    expect(html).toContain('Show what the costs are made of');
   });
 });

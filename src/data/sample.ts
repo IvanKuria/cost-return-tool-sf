@@ -1,5 +1,5 @@
 import type { Citation, Crop, Equipment, Plan } from '../lib/types';
-import { newCropFromStudy, newEquipmentFromCatalog } from '../lib/engine';
+import { newCropFromStudy, newEquipmentFromCatalog, STUDY_INSURANCE_RATE, STUDY_PROPERTY_TAX_RATE } from '../lib/engine';
 import { cite, equipmentCatalog, normalizeDescription, studyById } from './studies';
 
 // Example farm built only from UC Davis Central Coast cost studies. Every default here is cited.
@@ -36,7 +36,8 @@ function sampleFarm(): Plan['farm'] {
   const farm: Plan['farm'] = {
     name: 'Example farm', county: 'Santa Cruz', areaUnit: 'acres', bedLengthFt: 100, bedWidthIn: 30,
     interestRate: 0.0475, ownLaborRate: 0, hiredLaborRate: 0, payrollOverhead: 0.40,
-    landRentPerAcre: 0, otherOverheadPerYear: 0, citations,
+    landRentPerAcre: 0, overheadItems: [], overheadBasis: 'acres', equipmentBasis: 'hours',
+    insuranceRate: STUDY_INSURANCE_RATE, propertyTaxRate: STUDY_PROPERTY_TAX_RATE, citations,
   };
   if (a.interestRatePct) { farm.interestRate = a.interestRatePct.value / 100; citations.interestRate = cite(s, a.interestRatePct.page, a.interestRatePct.quote, 'Interest rate for capital recovery', a.interestRatePct.value); }
   if (a.laborNonMachineRate) {
@@ -47,16 +48,31 @@ function sampleFarm(): Plan['farm'] {
   }
   if (a.laborOverheadPct) { farm.payrollOverhead = a.laborOverheadPct.value / 100; citations.payrollOverhead = cite(s, a.laborOverheadPct.page, a.laborOverheadPct.quote, 'Labor overhead percent', a.laborOverheadPct.value); }
   if (a.landRentPerAcre) { farm.landRentPerAcre = a.landRentPerAcre.value; citations.landRentPerAcre = cite(s, a.landRentPerAcre.page, a.landRentPerAcre.quote, 'Land rent per acre', a.landRentPerAcre.value); }
-  // Other yearly costs: the study's business overhead rows other than land rent, per acre, times the example's acres.
+  // Other yearly costs: one item per business overhead row in the study (other than land rent), per acre times the example's acres.
   const rows = s.businessOverhead.filter(r => !/land rent/i.test(r.description));
-  if (rows.length > 0) {
-    const perAcre = rows.reduce((sum, r) => sum + r.pricePerUnit, 0);
-    const total = Math.round(perAcre * SAMPLE_ACRES);
-    farm.otherOverheadPerYear = total;
-    const c: Citation = cite(s, rows[0].page, `${rows.map(r => `${r.description} $${r.pricePerUnit} per acre`).join('; ')}. Added up ($${Math.round(perAcre)} per acre) and multiplied by the example's ${SAMPLE_ACRES} acres.`, 'Business overhead rows other than land rent', total);
-    citations.otherOverheadPerYear = c;
-  }
+  farm.overheadItems = rows.map((r, i) => {
+    const amountPerYear = Math.round(r.pricePerUnit * SAMPLE_ACRES);
+    const citation: Citation = cite(s, r.page, `${r.description} $${r.pricePerUnit} per ${r.unit || 'acre'}, multiplied by the example's ${SAMPLE_ACRES} acres.`, 'Business overhead row', amountPerYear);
+    return { id: `oh-${i}`, name: r.description, amountPerYear, basis: 'acres' as const, citation };
+  });
   return farm;
+}
+
+/**
+ * Example inputs that are the farmer's to make: which owned machine does each of the study's
+ * machine operations. Matched by the operation's name; anything else with machine time stays hired.
+ */
+function assign(c: Crop): Crop {
+  const pick = (name: string): string | null => {
+    const n = name.toLowerCase();
+    if (/disc/.test(n)) return 'e-disc';
+    if (/mow|flail/.test(n)) return 'e-mower';
+    if (/spray|fungicide|insecticide|herbicide/.test(n)) return 'e-sprayer';
+    if (/haul|truck|pickup|deliver/.test(n)) return 'e-pickup';
+    if (/subsoil|chisel|level|list|shape|bed|cultivat|plant|fertiliz|compost|mulch|drip|trench|grade|irrigat/.test(n)) return 'e-tractor';
+    return null;
+  };
+  return { ...c, operations: c.operations.map(o => o.machineHoursPerAcre > 0 ? { ...o, equipmentId: pick(o.name) } : o) };
 }
 
 export function buildSamplePlan(): Plan {
@@ -64,21 +80,11 @@ export function buildSamplePlan(): Plan {
     example: true,
     farm: sampleFarm(),
     crops: [
-      crop('c-straw', STRAW, 2, {
-        machineHours: [{ equipmentId: 'e-tractor', hoursPerAcre: 12 }, { equipmentId: 'e-disc', hoursPerAcre: 2 }, { equipmentId: 'e-sprayer', hoursPerAcre: 6 }, { equipmentId: 'e-pickup', hoursPerAcre: 20 }],
-      }),
-      crop('c-lettuce', LETTUCE, 1.5, {
-        machineHours: [{ equipmentId: 'e-tractor', hoursPerAcre: 8 }, { equipmentId: 'e-disc', hoursPerAcre: 1.5 }, { equipmentId: 'e-pickup', hoursPerAcre: 6 }],
-      }),
-      crop('c-broccoli', BROCCOLI, 1.5, {
-        machineHours: [{ equipmentId: 'e-tractor', hoursPerAcre: 8 }, { equipmentId: 'e-disc', hoursPerAcre: 1.5 }, { equipmentId: 'e-sprayer', hoursPerAcre: 3 }, { equipmentId: 'e-pickup', hoursPerAcre: 6 }],
-      }),
-      crop('c-blackberry', BLACKBERRY, 1, {
-        machineHours: [{ equipmentId: 'e-tractor', hoursPerAcre: 6 }, { equipmentId: 'e-mower', hoursPerAcre: 3 }, { equipmentId: 'e-pickup', hoursPerAcre: 15 }],
-      }),
-      crop('c-raspberry', RASPBERRY, 1, {
-        machineHours: [{ equipmentId: 'e-tractor', hoursPerAcre: 6 }, { equipmentId: 'e-mower', hoursPerAcre: 3 }, { equipmentId: 'e-pickup', hoursPerAcre: 15 }],
-      }),
+      assign(crop('c-straw', STRAW, 2)),
+      assign(crop('c-lettuce', LETTUCE, 1.5)),
+      assign(crop('c-broccoli', BROCCOLI, 1.5)),
+      assign(crop('c-blackberry', BLACKBERRY, 1)),
+      assign(crop('c-raspberry', RASPBERRY, 1)),
     ],
     equipment: [
       machine('e-tractor', STRAW, '42HP 4WD Tractor', { condition: 'used', yearBought: 2021, hoursPerYear: 140 }),

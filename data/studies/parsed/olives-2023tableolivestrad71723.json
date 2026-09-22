@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/07/24/2023tableolivestrad71723.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -741,6 +741,12 @@
    "unit": "%",
    "page": 6,
    "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 5,
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -830,6 +836,7 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

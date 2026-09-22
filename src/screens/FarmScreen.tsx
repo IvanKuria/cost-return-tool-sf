@@ -1,9 +1,10 @@
 import { restoreSourceValue, sourceDisplayValue } from '../lib/source';
 import { useState, type Dispatch } from 'react';
 import { inputPatch, isMissing } from '../lib/inputs';
-import type { Action } from '../lib/store';
-import type { AreaUnit, Farm, FarmCitedField, FarmResult, Plan } from '../lib/types';
-import { Card, Choice, Field, Input, NumberInput, Select, SourceTag } from '../ui';
+import { uid, type Action } from '../lib/store';
+import type { AllocationBasis, AreaUnit, EquipmentBasis, Farm, FarmCitedField, FarmResult, OverheadItem, Plan } from '../lib/types';
+import { METHOD } from '../lib/engine';
+import { Button, Card, Choice, Field, Input, NumberInput, Select, SourceTag, money } from '../ui';
 import { useT } from '../i18n';
 
 const COUNTIES = ['Santa Cruz', 'Monterey', 'San Benito', 'Santa Clara', 'San Mateo', 'Yolo', 'Sonoma', 'Fresno', 'Other'];
@@ -13,12 +14,27 @@ export function FarmScreen({ plan, dispatch }: { plan: Plan; dispatch: Dispatch<
   const farm = plan.farm;
   const set = (patch: Partial<Farm>) => dispatch({ type: 'farm', patch });
   const [advanced, setAdvanced] = useState(() => !!farm.missingFields?.some(f => f === 'interestRate' || f === 'payrollOverhead'));
-  const numberProps = (field: 'bedLengthFt' | 'bedWidthIn' | 'landRentPerAcre' | 'ownLaborRate' | 'hiredLaborRate' | 'otherOverheadPerYear' | 'interestRate' | 'payrollOverhead', factor = 1) => ({
+  const numberProps = (field: 'bedLengthFt' | 'bedWidthIn' | 'landRentPerAcre' | 'ownLaborRate' | 'hiredLaborRate' | 'interestRate' | 'payrollOverhead' | 'insuranceRate' | 'propertyTaxRate', factor = 1) => ({
     value: round(farm[field] * factor, 4), missing: isMissing(farm, field), placeholder: t('inputs.enterNumber'),
     onChange: (v: number) => set(inputPatch(farm, field, v / factor)), onMissingChange: () => set(inputPatch(farm, field, undefined)),
   });
 
   const sourceTag = (field: FarmCitedField) => <SourceTag citation={farm.citations[field]} value={sourceDisplayValue(farm, field) ?? 0} missing={isMissing(farm, field)} onRestore={() => set(restoreSourceValue(farm, field, farm.citations[field]))} />;
+
+  // Insurance and property tax rates come from the study method; the tag opens the study's own wording.
+  const rateTag = (field: 'insuranceRate' | 'propertyTaxRate') => {
+    const item = METHOD.find(m => m.key === (field === 'insuranceRate' ? 'insurance' : 'propertyTax'));
+    if (!item) return undefined;
+    const studyValue = field === 'insuranceRate' ? 0.843 : 1;
+    const citation = { ...item.citation, value: studyValue };
+    return <SourceTag citation={citation} value={round(farm[field] * 100, 4)} onRestore={() => set({ [field]: studyValue / 100 })} />;
+  };
+
+  const items = farm.overheadItems ?? [];
+  const setItem = (id: string, patch: Partial<OverheadItem>) => set({ overheadItems: items.map(o => o.id === id ? { ...o, ...patch } : o) });
+  const addItem = () => set({ overheadItems: [...items, { id: uid(), name: '', amountPerYear: 0, basis: farm.overheadBasis }] });
+  const removeItem = (id: string) => set({ overheadItems: items.filter(o => o.id !== id) });
+  const overheadTotal = items.reduce((sum, o) => sum + (Number.isFinite(o.amountPerYear) ? o.amountPerYear : 0), 0);
 
   return (
     <div className="max-w-[680px] mx-auto">
@@ -73,8 +89,47 @@ export function FarmScreen({ plan, dispatch }: { plan: Plan; dispatch: Dispatch<
           <NumberInput {...numberProps('hiredLaborRate')} prefix="$" suffix={t('common.perHour')} />
         </Field>
 
-        <Field label={t('farm.otherCosts')} tag={sourceTag('otherOverheadPerYear')} hint={t('farm.otherCosts.hint')}>
-          <NumberInput {...numberProps('otherOverheadPerYear')} prefix="$" suffix={t('common.perYear')} />
+      </Card>
+
+      <Card className="mt-4 p-5 flex flex-col gap-4">
+        <div>
+          <div className="font-semibold text-[17px]">{t('farm.otherCosts')}</div>
+          <div className="text-[14px] text-ink-2">{t('farm.overhead.hint')}</div>
+        </div>
+        {items.map(o => (
+          <div key={o.id} className="grid grid-cols-1 sm:grid-cols-[1fr_210px_auto] gap-2 items-start">
+            <div className="min-w-0">
+              <Input className="min-w-0" value={o.name} onChange={e => setItem(o.id, { name: e.target.value })} placeholder={t('farm.overhead.namePlaceholder')} aria-label={t('farm.overhead.nameAria')} />
+              {o.citation && <div className="mt-1"><SourceTag citation={o.citation} value={o.amountPerYear} onRestore={o.citation.value != null ? () => setItem(o.id, { amountPerYear: o.citation!.value as number }) : undefined} /></div>}
+            </div>
+            <NumberInput className="w-full" value={o.amountPerYear} onChange={v => setItem(o.id, { amountPerYear: v })} prefix="$" suffix={t('common.perYear')} aria-label={t('farm.overhead.amountAria')} />
+            <div className="flex items-center gap-2">
+              <Select className="w-[150px]" value={o.basis} onChange={e => setItem(o.id, { basis: e.target.value as AllocationBasis })} aria-label={t('farm.overhead.basisAria')}>
+                <option value="acres">{t('farm.basis.acres')}</option>
+                <option value="revenue">{t('farm.basis.revenue')}</option>
+              </Select>
+              <Button variant="ghost" className="h-12 px-3 text-[14px]" onClick={() => removeItem(o.id)} aria-label={t('farm.overhead.removeAria')}>{t('common.remove')}</Button>
+            </div>
+          </div>
+        ))}
+        <div className="flex flex-wrap items-center gap-3">
+          <Button variant="secondary" className="h-10 px-4 text-[15px]" onClick={addItem}>{t('farm.overhead.add')}</Button>
+          {items.length > 0 && <span className="ml-auto text-[15px]"><span className="text-ink-2">{t('farm.overhead.total')}</span> <span className="font-semibold tnum">{money(overheadTotal)}</span> <span className="text-ink-2">{t('common.perYear')}</span></span>}
+        </div>
+      </Card>
+
+      <Card className="mt-4 p-5 flex flex-col gap-5">
+        <div>
+          <div className="font-semibold text-[17px]">{t('farm.split.title')}</div>
+          <div className="text-[14px] text-ink-2">{t('farm.split.hint')}</div>
+        </div>
+        <Field label={t('farm.split.equipment')} hint={t(farm.equipmentBasis === 'hours' ? 'farm.split.hours.hint' : farm.equipmentBasis === 'acres' ? 'farm.split.acres.hint' : 'farm.split.revenue.hint')}>
+          <Choice<EquipmentBasis> value={farm.equipmentBasis} onChange={equipmentBasis => set({ equipmentBasis })}
+            options={[{ value: 'hours', label: t('farm.basis.hours') }, { value: 'acres', label: t('farm.basis.acres') }, { value: 'revenue', label: t('farm.basis.revenue') }]} />
+        </Field>
+        <Field label={t('farm.split.overhead')} hint={t(farm.overheadBasis === 'acres' ? 'farm.split.acres.hint' : 'farm.split.revenue.hint')}>
+          <Choice<AllocationBasis> value={farm.overheadBasis} onChange={overheadBasis => set({ overheadBasis })}
+            options={[{ value: 'acres', label: t('farm.basis.acres') }, { value: 'revenue', label: t('farm.basis.revenue') }]} />
         </Field>
       </Card>
 
@@ -89,6 +144,12 @@ export function FarmScreen({ plan, dispatch }: { plan: Plan; dispatch: Dispatch<
             </Field>
             <Field label={t('farm.payroll')} tag={sourceTag('payrollOverhead')} hint={t('farm.payroll.hint')}>
               <NumberInput {...numberProps('payrollOverhead', 100)} step={0.1} suffix={t('common.percent')} />
+            </Field>
+            <Field label={t('farm.insuranceRate')} tag={rateTag('insuranceRate')} hint={t('farm.insuranceRate.hint')}>
+              <NumberInput {...numberProps('insuranceRate', 100)} step={0.001} suffix={t('common.percent')} />
+            </Field>
+            <Field label={t('farm.propertyTaxRate')} tag={rateTag('propertyTaxRate')} hint={t('farm.propertyTaxRate.hint')}>
+              <NumberInput {...numberProps('propertyTaxRate', 100)} step={0.01} suffix={t('common.percent')} />
             </Field>
           </Card>
         )}

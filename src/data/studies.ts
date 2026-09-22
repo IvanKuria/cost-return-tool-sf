@@ -4,7 +4,7 @@
 
 import bundle from './studies.generated.json';
 import type { Cited, EquipmentRow, HourlyEquipmentRow, ParsedStudy } from './studySchema';
-import type { Citation } from '../lib/types';
+import type { Citation, CropOperation } from '../lib/types';
 
 interface Bundle {
   generatedAt: string;
@@ -165,6 +165,54 @@ export function cropDefaultsFromStudy(s: ParsedStudy): CropDefaults {
   return { yieldPerAcre, unit, price, plantingsPerYear, operatingCostPerAcre, costMonths, revenueMonths, citations: cit };
 }
 
+/**
+ * The study's costs-per-acre rows as crop operations, each cited to its table line. The study's own
+ * labor rates and machine labor factor are used to turn its labor dollars back into hours, so the
+ * farm can reprice them at its own wages. Anything that cannot be turned into hours stays as dollars.
+ */
+export function operationsFromStudy(s: ParsedStudy): CropOperation[] {
+  const rows = s.costsPerAcre.operations;
+  if (!rows || rows.length === 0) return [];
+  const machineRate = s.assumptions.laborMachineRate?.value ?? null;
+  const handRate = s.assumptions.laborNonMachineRate?.value ?? null;
+  const factorItem = (s.method as { machineLaborFactor?: { value: number; page: number; quote: string } | null }).machineLaborFactor ?? null;
+  const factor = factorItem?.value ?? 1;
+  const r2 = (n: number) => Math.round(n * 100) / 100;
+  return rows.map((o, i) => {
+    const time = o.timeHrsPerAcre ?? 0;
+    const labor = o.labor ?? 0;
+    const fuelLube = (o.fuel ?? 0) + (o.lubeRepairs ?? 0);
+    const isMachine = time > 0 && fuelLube > 0;
+    const notes: string[] = [];
+    let operatorHours = 0, operatorDollars = 0, handHours = 0, otherLabor = 0;
+    if (isMachine) {
+      operatorHours = r2(time * factor);
+      notes.push(factorItem ? `Operator hours are the machine time times ${factor} (${factorItem.quote})` : 'Operator hours equal the machine time; this study states no machine labor factor');
+      if (machineRate != null) {
+        operatorDollars = Math.min(labor, operatorHours * machineRate);
+        const rest = Math.max(0, labor - operatorDollars);
+        if (rest > 0) {
+          if (handRate) { handHours = r2(rest / handRate); notes.push(`Remaining labor $${Math.round(rest)} turned into hand hours at the study's $${handRate} per hour`); }
+          else { otherLabor = rest; notes.push('Remaining labor kept in dollars; the study states no field labor rate'); }
+        }
+      } else {
+        operatorDollars = labor; notes.push('All labor on this row counted as machine work; the study states no machine labor rate');
+      }
+    } else if (labor > 0) {
+      if (handRate) { handHours = r2(labor / handRate); notes.push(`Hand hours are the labor column divided by the study's $${handRate} per hour`); }
+      else { otherLabor = labor; notes.push('Labor kept in dollars; the study states no field labor rate'); }
+    }
+    const hiredMachine = isMachine ? Math.round(fuelLube + operatorDollars) : 0;
+    const citation = cite(s, o.page, `${o.quote}${notes.length ? ' (' + notes.join('. ') + '.)' : ''}`, 'Costs per acre table row', o.totalCost ?? null);
+    return {
+      id: `op-${i}`, name: o.name, category: o.category, enabled: true,
+      machineHoursPerAcre: isMachine ? time : 0, operatorHoursPerAcre: operatorHours, equipmentId: null,
+      hiredMachinePerAcre: hiredMachine, handHoursPerAcre: handHours, otherLaborPerAcre: Math.round(otherLabor),
+      materialsPerAcre: o.materials ?? 0, customPerAcre: o.customRent ?? 0, source: 'study', citation,
+    };
+  });
+}
+
 // ---------- equipment ----------
 
 export interface CatalogRow {
@@ -228,8 +276,9 @@ export interface EquipmentDefaults {
   pricePaid: number;
   keepYears: number;
   salvageValue: number;
-  operatingCostPerHour: number | null;
-  citations: { pricePaid: Citation; keepYears: Citation; salvageValue: Citation; operatingCostPerHour?: Citation };
+  fuelLubePerHour: number | null;
+  repairsPerHour: number | null;
+  citations: { pricePaid: Citation; keepYears: Citation; salvageValue: Citation; fuelLubePerHour?: Citation; repairsPerHour?: Citation };
 }
 
 /** Seed values for one machine from one study row, each cited to its table line. */
@@ -244,13 +293,17 @@ export function equipmentDefaultsFromRow(entry: CatalogEntry, pick: CatalogRow =
     keepYears: cite(s, r.page, r.line, 'Years of life, whole farm equipment table', r.yearsLife),
     salvageValue: cite(s, r.page, r.line, 'Salvage value, whole farm equipment table', r.salvageValue),
   };
-  let operatingCostPerHour: number | null = null;
+  let fuelLubePerHour: number | null = null;
+  let repairsPerHour: number | null = null;
   if (pick.hourly) {
     const h = pick.hourly;
-    operatingCostPerHour = Math.round((h.fuelPerHr + h.repairsPerHr) * 100) / 100;
-    citations.operatingCostPerHour = cite(s, h.page, `${h.line} (fuel plus lube and repairs per hour)`, 'Operating cost per hour, hourly equipment table', operatingCostPerHour);
+    // The parser folds lube into fuelPerHr (fuel plus lube column).
+    fuelLubePerHour = Math.round(h.fuelPerHr * 100) / 100;
+    repairsPerHour = Math.round(h.repairsPerHr * 100) / 100;
+    citations.fuelLubePerHour = cite(s, h.page, `${h.line} (fuel plus lube per hour)`, 'Fuel and lube per hour, hourly equipment table', fuelLubePerHour);
+    citations.repairsPerHour = cite(s, h.page, `${h.line} (repairs per hour)`, 'Repairs per hour, hourly equipment table', repairsPerHour);
   }
-  return { name: r.description, typeId: entry.key, pricePaid: r.price, keepYears: r.yearsLife, salvageValue: r.salvageValue, operatingCostPerHour, citations };
+  return { name: r.description, typeId: entry.key, pricePaid: r.price, keepYears: r.yearsLife, salvageValue: r.salvageValue, fuelLubePerHour, repairsPerHour, citations };
 }
 
 // ---------- method ----------

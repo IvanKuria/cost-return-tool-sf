@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a1/39/a139af36-5c70-48ec-8367-bc534c314eb3/lemons-vs-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -803,7 +803,13 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 9,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 3 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": null,
  "parse": {
@@ -823,7 +829,8 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula"
+   "capitalRecoveryFormula",
+   "machineLaborFactor"
   ],
   "fieldsMissing": [
    "counties",

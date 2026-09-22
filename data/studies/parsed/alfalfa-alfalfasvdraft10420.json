@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/02/ee/02ee0710-8c2c-41ea-8b25-736d1854b737/alfalfasvdraft10420.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1008,6 +1008,12 @@
    "unit": "%",
    "page": 7,
    "quote": "Counties charge a base property tax rate of 1 percent on the assessed value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1096,6 +1102,7 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

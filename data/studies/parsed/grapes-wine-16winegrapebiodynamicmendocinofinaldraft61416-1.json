@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/62/3a/623a8e4d-ba4c-4c7b-9f13-389e17fd1928/16winegrapebiodynamicmendocinofinaldraft61416-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1305,6 +1305,12 @@
    "unit": "%",
    "page": 9,
    "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 8,
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1379,6 +1385,7 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

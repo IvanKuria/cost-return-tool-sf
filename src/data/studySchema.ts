@@ -77,6 +77,8 @@ export interface Method {
   salvageMethod: Quote | null;
   insuranceRatePct: Cited | null;
   propertyTaxRatePct: Cited | null;
+  /** Operator labor hours divided by machine time in the costs table (1.2 when the study says labor is 20 percent higher). Null when the study does not say. */
+  machineLaborFactor: Cited | null;
 }
 
 export interface ParseReport { fieldsFound: string[]; fieldsMissing: string[]; warnings: string[] }

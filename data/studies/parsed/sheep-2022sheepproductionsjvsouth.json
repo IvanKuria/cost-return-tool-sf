@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/07/07/2022sheepproductionsjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sheep",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -75,7 +75,8 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": null,
  "parse": {
@@ -106,6 +107,7 @@
    "businessOverhead",
    "insuranceRatePct",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "warnings": [

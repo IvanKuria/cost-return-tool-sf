@@ -12,8 +12,8 @@ describe('capital recovery', () => {
   });
 
   it('ownership adds insurance and tax on average value', () => {
-    const e: Equipment = { id: 'x', typeId: 'tractor-compact', name: 't', condition: 'used', pricePaid: 18500, yearBought: 2019, keepYears: 8, hoursPerYear: 350, salvageValue: 6000, citations: {}, operatingCostPerHour: 9.4 };
-    const o = ownership(e, 0.0475);
+    const e: Equipment = { id: 'x', typeId: 'tractor-compact', name: 't', condition: 'used', pricePaid: 18500, yearBought: 2019, keepYears: 8, hoursPerYear: 350, salvageValue: 6000, citations: {}, fuelLubePerHour: 7.4, repairsPerHour: 2.0 };
+    const o = ownership(e, { interestRate: 0.0475, insuranceRate: 0.00843, propertyTaxRate: 0.01 });
     expect(o.capitalRecovery).toBeGreaterThan(1800);
     expect(o.insuranceAndTax).toBeCloseTo(12250 * 0.01843, 0);
     expect(o.allInPerHour).toBeCloseTo(o.ownPerHour + 9.4, 6);
@@ -34,8 +34,9 @@ describe('computePlan', () => {
   const r = computePlan(SAMPLE_PLAN);
 
   it('has no NaN anywhere', () => {
-    const flat = JSON.stringify(r);
-    expect(flat).not.toContain('null');
+    // JSON turns NaN into null; `monthly: null` is a legitimate value, so check numbers directly instead.
+    const walk = (v: unknown): void => { if (typeof v === 'number') expect(Number.isNaN(v)).toBe(false); else if (v && typeof v === 'object') Object.values(v).forEach(walk); };
+    walk(r);
     expect(Number.isNaN(r.net)).toBe(false);
     r.crops.forEach((c) => Object.values(c).forEach((v) => { if (typeof v === 'number') expect(Number.isNaN(v)).toBe(false); }));
   });

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/09/28/2022covercropsbenefits.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/cover-crops",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -132,7 +132,13 @@
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 5,
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time to account for the extra labor involved in equipment set up, moving, maintenance, worker breaks, and field repair."
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -186,6 +192,7 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "hourlyEquipment",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

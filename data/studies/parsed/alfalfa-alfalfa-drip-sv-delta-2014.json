@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/69/ed/69ed1c05-999e-4c06-b59f-ebe6dbcecc8a/alfalfa-drip-sv-delta-2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -612,7 +612,13 @@
   },
   "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor costs for operations involving machinery are 20% higher than the operation time given in Tables 1 and 4 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair. 2014 Alfalfa Costs & Returns Study SDI-­‐-­‐-­‐Sacramento Valley & northern Delta UC Cooperative Extension 6"
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -691,6 +697,7 @@
    "investments",
    "hourlyEquipment",
    "capitalRecoveryFormula",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

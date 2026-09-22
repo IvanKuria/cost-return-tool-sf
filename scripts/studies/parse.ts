@@ -675,9 +675,18 @@ function parseMethod(lines: Line[]): Method {
     || sentenceMatch(S, /insurance.{0,60}?charged at (\d+(?:\.\d+)?)\s*percent/i);
   const tax = sentenceMatch(S, /(?:property )?tax(?:es)?.{0,120}?(\d+(?:\.\d+)?)\s*percent of the average value/i)
     || sentenceMatch(S, /base property tax rate of (\d+(?:\.\d+)?)\s*percent/i);
+  // Operator labor versus machine time: "Labor for operations involving machinery are 20 percent higher than the
+  // operation time ..." in most studies. The tractor-versus-implement time sentence ("Tractor time is 10 percent
+  // higher than implement time") is a different quantity and is deliberately not matched.
+  const mlf = sentenceMatch(S, /(?:labor|labour|mano de obra)[^.]{0,120}?(?:machin|equip|maquinaria)[^.]{0,120}?(\d+(?:\.\d+)?)\s*(?:percent|%|por ciento)[^.]{0,40}?(?:higher|more|greater|mayor|más)/i)
+    || sentenceMatch(S, /(?:machin|maquinaria)[^.]{0,120}?(?:labor|labour|mano de obra)[^.]{0,120}?(\d+(?:\.\d+)?)\s*(?:percent|%|por ciento)[^.]{0,40}?(?:higher|more|greater|mayor|más)/i);
+  const mlfCited = mlf ? citeS(mlf, 1, '%') : null;
+  const machineLaborFactor: Cited | null = mlfCited && mlfCited.value >= 0 && mlfCited.value <= 100
+    ? { ...mlfCited, value: Math.round((1 + mlfCited.value / 100) * 1000) / 1000, unit: 'x' } : null;
   return {
     capitalRecoveryFormula: q(cr), salvageMethod: q(sal),
     insuranceRatePct: ins ? citeS(ins, 1, '%') : null, propertyTaxRatePct: tax ? citeS(tax, 1, '%') : null,
+    machineLaborFactor,
   };
 }
 
@@ -709,6 +718,7 @@ export function parseStudy(e: ManifestEntry, text: string): ParsedStudy {
     operations: costsPerAcre.operations.length || null, equipment: equipment.length || null, investments: investments.length || null,
     hourlyEquipment: hourlyEquipment.length || null, businessOverhead: businessOverhead.length || null,
     capitalRecoveryFormula: method.capitalRecoveryFormula, insuranceRatePct: method.insuranceRatePct, propertyTaxRatePct: method.propertyTaxRatePct,
+    machineLaborFactor: method.machineLaborFactor,
     monthly,
   };
   const fieldsFound = Object.keys(fields).filter(k => fields[k] != null);

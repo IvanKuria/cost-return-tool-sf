@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/79/02/79023ea8-80a8-4fba-b69e-5d60225dbf8b/2015_organicspinach-finaldraftjan29.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/spinach",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1022,6 +1022,12 @@
    "unit": "%",
    "page": 6,
    "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1111,6 +1117,7 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

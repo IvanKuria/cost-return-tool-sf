@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c2/a9/c2a9d0ea-f089-48a9-a9b2-64ec58355b46/2016sorghumsilagesjvfinaldraftmar23.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sorghum",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -703,7 +703,8 @@
    "unit": "%",
    "page": 5,
    "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
-  }
+  },
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -790,7 +791,8 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "investments"
+   "investments",
+   "machineLaborFactor"
   ],
   "warnings": []
  }

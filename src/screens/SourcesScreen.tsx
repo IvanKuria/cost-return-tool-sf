@@ -13,6 +13,8 @@ export function SourcesScreen({ plan, dispatch }: { plan: Plan; dispatch?: Dispa
   const groups = [
     { name: t('sources.farm'), values: plan.farm, citations: plan.farm.citations,
       restore: (field: string, citation: Citation) => dispatch?.({ type: 'farm', patch: restoreSourceValue(plan.farm, field as NumericField<Farm>, citation) }) },
+    ...(plan.farm.overheadItems ?? []).filter(o => o.citation).map(o => ({ name: `${t('sources.farm')}: ${o.name}`, values: { ...plan.farm, amountPerYear: o.amountPerYear } as Farm & { amountPerYear: number }, citations: { amountPerYear: o.citation },
+      restore: (_field: string, citation: Citation) => { if (citation.value !== null) dispatch?.({ type: 'farm', patch: { overheadItems: plan.farm.overheadItems.map(x => x.id === o.id ? { ...x, amountPerYear: citation.value as number } : x) } }); } })),
     ...plan.crops.map(c => ({ name: typeName('crop', c.typeId, c.name), values: c, citations: c.citations,
       restore: (field: string, citation: Citation) => dispatch?.({ type: 'crop.update', id: c.id, patch: restoreSourceValue(c, field as NumericField<Crop>, citation) }) })),
     ...plan.equipment.map(e => ({ name: e.name, values: e, citations: e.citations,
@@ -20,7 +22,13 @@ export function SourcesScreen({ plan, dispatch }: { plan: Plan; dispatch?: Dispa
   ].filter(group => Object.values(group.citations).some(Boolean));
   return <div className="max-w-[680px] mx-auto space-y-8">
     <div><h1 className="text-[28px] font-bold">{t('sources.title')}</h1><p className="mt-2 text-ink-2">{t('sources.intro')}</p></div>
-    <section className="space-y-4"><h2 className="text-xl font-semibold">{t('sources.formulas')}</h2><p>{t('sources.method.hours')}</p>{METHOD.map(m => <details key={m.key} className="border-b border-line pb-3"><summary className="cursor-pointer font-medium py-2">{t(`sources.method.${m.key}`)}</summary><CitationCard citation={m.citation} /></details>)}</section>
+    <section className="space-y-4"><h2 className="text-xl font-semibold">{t('sources.formulas')}</h2><p>{t('sources.method.hours')}</p>{METHOD.map(m => <details key={m.key} className="border-b border-line pb-3"><summary className="cursor-pointer font-medium py-2">{t(`sources.method.${m.key}`)}</summary>
+      {m.key === 'insurance' && <p className="mb-2 text-[14px]">{t('sources.rate.insurance', { rate: (plan.farm.insuranceRate * 100).toLocaleString('en-US', { maximumFractionDigits: 3 }) })}</p>}
+      {m.key === 'propertyTax' && <p className="mb-2 text-[14px]">{t('sources.rate.propertyTax', { rate: (plan.farm.propertyTaxRate * 100).toLocaleString('en-US', { maximumFractionDigits: 3 }) })}</p>}
+      <CitationCard citation={m.citation} /></details>)}
+      <div className="rounded-[var(--radius-ctl)] bg-well p-4 text-[14px] space-y-1"><div className="font-medium">{t('sources.rates')}</div>
+        <div>{t('sources.rate.insurance', { rate: (plan.farm.insuranceRate * 100).toLocaleString('en-US', { maximumFractionDigits: 3 }) })}</div>
+        <div>{t('sources.rate.propertyTax', { rate: (plan.farm.propertyTaxRate * 100).toLocaleString('en-US', { maximumFractionDigits: 3 }) })}</div></div></section>
     <section className="space-y-5"><h2 className="text-xl font-semibold">{t('sources.plan')}</h2><p className="text-ink-2">{t('sources.plan.intro')}</p>{groups.length === 0 && <p className="rounded-[var(--radius-ctl)] bg-well p-4 text-ink-2">{t('sources.none')}</p>}{groups.map((g, i) => <div key={i} className="space-y-3"><h3 className="font-semibold">{g.name}</h3>{Object.entries(g.citations).filter(([, citation]) => Boolean(citation)).map(([key, raw]) => {
       const citation = raw as Citation;
       const value = sourceDisplayValue(g.values, key);
@@ -37,6 +45,15 @@ export function SourcesScreen({ plan, dispatch }: { plan: Plan; dispatch?: Dispa
         {changedUnit && <p className="mt-2 text-[14px] text-ink-2">{t('source.restoreUnitHint')}</p>}
         {dispatch && canRestoreSource(g.values, key, citation) && <button type="button" className="mt-2 py-2 text-[14px] font-medium text-accent underline underline-offset-2" onClick={() => g.restore(key, citation)}>{t('source.restore')}</button>}
       </details>;
-    })}</div>)}</section>
+    })}</div>)}
+    {plan.crops.filter(c => (c.operations ?? []).some(o => o.citation)).map(c => {
+      const ops = c.operations.filter(o => o.citation);
+      return <details key={`ops-${c.id}`} className="space-y-3"><summary className="cursor-pointer font-semibold py-2">{typeName('crop', c.typeId, c.name)}: {t('sources.operations', { count: String(ops.length) })}</summary>
+        {ops.map(o => <details key={o.id} className="border-b border-line pb-3 ml-3">
+          <summary className="cursor-pointer py-2">{o.name}{!o.enabled && <span className="ml-2 text-[12px] text-ink-2">{t('export.offLine')}</span>}</summary>
+          <CitationCard citation={o.citation!} />
+        </details>)}
+      </details>;
+    })}</section>
   </div>;
 }

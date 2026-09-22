@@ -2,7 +2,7 @@ import { restoreSourceValue } from '../lib/source';
 import { useState, type Dispatch } from 'react';
 import type { Action } from '../lib/store';
 import type { Condition, Equipment, Farm, FarmResult, Plan } from '../lib/types';
-import { newBlankEquipment, newEquipmentFromCatalog, ownership } from '../lib/engine';
+import { newBlankEquipment, newEquipmentFromCatalog, ownership, runPerHour } from '../lib/engine';
 import { EquipmentStudyPicker } from './StudyPickers';
 import { Button, Card, Choice, SourceTag, Field, Input, NumberInput, money, num, cents } from '../ui';
 import { inputPatch, isMissing } from '../lib/inputs';
@@ -62,7 +62,7 @@ export function EquipmentScreen({ plan, dispatch, result, editId }: { plan: Plan
               <EquipmentForm key={e.id} farm={farm} draft={panel.draft} onChange={draft => setPanel({ mode: 'edit', draft })} onSave={save} onCancel={() => setPanel({ mode: 'closed' })} />
             );
           }
-          const o = ownership(e, farm.interestRate);
+          const o = ownership(e, farm);
           const incomplete = !!e.missingFields?.length || isMissing(farm, 'interestRate');
           const m = result?.machines.find(x => x.equipmentId === e.id);
           const users = m ? m.byCrop.filter(b => b.hours > 0).map(b => cropName(b.cropId, b.name)) : [];
@@ -73,7 +73,7 @@ export function EquipmentScreen({ plan, dispatch, result, editId }: { plan: Plan
                 <div className="text-[14px] text-ink-2">
                   {incomplete ? t('inputs.incomplete') : t('equip.rowSummary', {
                     condition: (e.condition === 'new' ? t('common.new') : t('common.used')).toLowerCase(),
-                    year: e.yearBought, price: money(e.pricePaid), hours: num(e.hoursPerYear), perHour: cents(o.allInPerHour),
+                    year: e.yearBought, price: money(e.pricePaid), hours: num(e.hoursPerYear), perHour: cents(o.allInPerHour), run: cents(runPerHour(e)),
                   })}
                 </div>
                 <div className="text-[13px] text-ink-2">
@@ -100,12 +100,12 @@ export function EquipmentScreen({ plan, dispatch, result, editId }: { plan: Plan
 function EquipmentForm({ farm, draft, onChange, onSave, onCancel }: { farm: Farm; draft: Equipment; onChange: (e: Equipment) => void; onSave: (e: Equipment) => void; onCancel: () => void }) {
   const { t } = useT();
   const [why, setWhy] = useState(false);
-  const o = ownership(draft, farm.interestRate);
+  const o = ownership(draft, farm);
   const salvage = Math.min(draft.salvageValue, draft.pricePaid);
   const lossPerYear = draft.keepYears > 0 && salvage < draft.pricePaid ? (draft.pricePaid - salvage) / draft.keepYears : 0;
 
   const incomplete = !!draft.missingFields?.length || isMissing(farm, 'interestRate');
-  const numberProps = (field: 'pricePaid' | 'yearBought' | 'keepYears' | 'hoursPerYear' | 'salvageValue' | 'operatingCostPerHour') => ({
+  const numberProps = (field: 'pricePaid' | 'yearBought' | 'keepYears' | 'hoursPerYear' | 'salvageValue' | 'fuelLubePerHour' | 'repairsPerHour') => ({
     value: draft[field],
     missing: isMissing(draft, field),
     placeholder: t('inputs.enterNumber'),
@@ -154,9 +154,14 @@ function EquipmentForm({ farm, draft, onChange, onSave, onCancel }: { farm: Farm
         <NumberInput {...numberProps('salvageValue')} prefix="$" />
       </Field>
 
-      <Field label={t('equip.run')} tag={<SourceTag citation={draft.citations.operatingCostPerHour} value={draft.operatingCostPerHour} missing={isMissing(draft, 'operatingCostPerHour')} onRestore={() => onChange({ ...draft, ...restoreSourceValue(draft, 'operatingCostPerHour', draft.citations.operatingCostPerHour) })} />} hint={t('equip.run.hint')}>
-        <NumberInput {...numberProps('operatingCostPerHour')} step={0.01} prefix="$" suffix={t('common.perHour')} />
-      </Field>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <Field label={t('equip.fuel')} tag={<SourceTag citation={draft.citations.fuelLubePerHour} value={draft.fuelLubePerHour} missing={isMissing(draft, 'fuelLubePerHour')} onRestore={() => onChange({ ...draft, ...restoreSourceValue(draft, 'fuelLubePerHour', draft.citations.fuelLubePerHour) })} />} hint={t('equip.fuel.hint')}>
+          <NumberInput {...numberProps('fuelLubePerHour')} step={0.01} prefix="$" suffix={t('common.perHour')} />
+        </Field>
+        <Field label={t('equip.repairs')} tag={<SourceTag citation={draft.citations.repairsPerHour} value={draft.repairsPerHour} missing={isMissing(draft, 'repairsPerHour')} onRestore={() => onChange({ ...draft, ...restoreSourceValue(draft, 'repairsPerHour', draft.citations.repairsPerHour) })} />} hint={t('equip.repairs.hint')}>
+          <NumberInput {...numberProps('repairsPerHour')} step={0.01} prefix="$" suffix={t('common.perHour')} />
+        </Field>
+      </div>
 
       <div className="rounded-[var(--radius-ctl)] bg-well px-4 py-3 flex flex-col gap-2">
         {incomplete && <p className="font-medium text-[14px]">{t('inputs.provisional')}</p>}
@@ -166,8 +171,16 @@ function EquipmentForm({ farm, draft, onChange, onSave, onCancel }: { farm: Farm
         <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-[14px] text-ink-2">
           <span>{t('equip.worthEnd')}</span><span className="tnum text-ink text-right">{money(salvage)}</span>
           <span>{t('equip.losesPerYear')}</span><span className="tnum text-ink text-right">{money(lossPerYear)}</span>
+          <span className="col-span-2 border-t border-line pt-1 mt-1 font-medium text-ink">{t('equip.breakdown.year')}</span>
+          <span>{t('equip.breakdown.capitalRecovery')}</span><span className="tnum text-ink text-right">{money(o.capitalRecovery)}</span>
+          <span>{t('equip.breakdown.interestOnSalvage')}</span><span className="tnum text-ink text-right">{money(o.interestOnSalvage)}</span>
+          <span>{t('equip.breakdown.insurance')}</span><span className="tnum text-ink text-right">{money(o.insurance)}</span>
+          <span>{t('equip.breakdown.taxes')}</span><span className="tnum text-ink text-right">{money(o.taxes)}</span>
+          <span className="font-medium text-ink">{t('equip.breakdown.total')}</span><span className="tnum text-ink text-right font-medium">{money(o.totalPerYear)}</span>
+          <span className="col-span-2 border-t border-line pt-1 mt-1 font-medium text-ink">{t('equip.breakdown.hour')}</span>
           <span>{t('equip.ownPerHour')}</span><span className="tnum text-ink text-right">{cents(o.ownPerHour)}</span>
           <span>{t('equip.runPerHour')}</span><span className="tnum text-ink text-right">{cents(o.runPerHour)}</span>
+          <span className="font-medium text-ink">{t('equip.breakdown.allIn')}</span><span className="tnum text-ink text-right font-medium">{cents(o.allInPerHour)}</span>
         </div>
         <button type="button" onClick={() => setWhy(w => !w)} className="self-start text-[14px] font-medium text-accent hover:underline" aria-expanded={why}>
           {t('equip.why')}

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/24/b6/24b68b4a-4c04-4853-b127-d3461e1a248f/16alfalfasjv50ac_final_4192016.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -494,6 +494,12 @@
    "unit": "%",
    "page": 7,
    "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Table 1 and 4 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -585,6 +591,7 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

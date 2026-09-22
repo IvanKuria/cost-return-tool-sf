@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/09/30/AlmondsSJVNorth%20Final%20draft4.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -880,6 +880,12 @@
    "unit": "%",
    "page": 11,
    "quote": "County taxes are calculated as 1 percent of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 10,
+   "quote": "Labor time for operations involving machinery is 20 percent higher than the equipment time to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -967,6 +973,7 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

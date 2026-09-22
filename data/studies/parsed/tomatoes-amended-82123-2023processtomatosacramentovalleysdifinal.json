@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/08/21/amended_82123_2023processtomatosacramentovalleysdifinal.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/tomatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -2145,6 +2145,12 @@
    "unit": "%",
    "page": 7,
    "quote": "Property taxes are calculated as 1 percent of the average value of the property and not influenced by the Williamson Act or additional county taxes."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "The labor for operations involving machinery is 20% higher than the field operation time to account for equipment set up, road travel, maintenance, and repair and downtime."
   }
  },
  "monthly": {
@@ -2228,6 +2234,7 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

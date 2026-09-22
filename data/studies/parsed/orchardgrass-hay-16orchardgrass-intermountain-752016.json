@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/86/b2/86b28877-5976-4d3a-b0e7-862314057bf1/16orchardgrass_intermountain_752016.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/orchardgrass-hay",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -709,6 +709,12 @@
    "unit": "%",
    "page": 7,
    "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor costs for operations involving machinery are 20 percent higher than the operation time for the equipment to account for the extra labor involved with the equipment set up, moving, maintenance, work breaks and field repair."
   }
  },
  "monthly": {
@@ -798,6 +804,7 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a2/fe/a2fec200-2ff7-4166-9ff9-59b47bb28a70/beans_double-cropped_sv_2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1118,7 +1118,13 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its life."
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 3,
+   "quote": "The labor for operations involving machinery are 20% higher than the operation time to account for the additional time involved in equipment set up, moving, maintenance and repair."
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -1197,6 +1203,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

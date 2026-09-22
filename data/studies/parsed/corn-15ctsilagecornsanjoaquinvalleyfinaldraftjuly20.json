@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a9/c5/a9c55e16-83cf-46f3-86b8-436ae2deb41f/15ctsilagecornsanjoaquinvalleyfinaldraftjuly20.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/corn",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -647,7 +647,13 @@
   },
   "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 5,
+   "quote": "The labor for operations involving machinery is 20% higher than the field operation time to account for equipment set up, road travel, maintenance, and repair."
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -735,6 +741,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

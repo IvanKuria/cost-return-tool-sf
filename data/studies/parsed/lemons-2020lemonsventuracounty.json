@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/38/fa/38fa8f9c-c93b-4c62-9740-a850bbc40df9/2020lemonsventuracounty.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -581,7 +581,8 @@
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -675,7 +676,8 @@
    "hourlyEquipment",
    "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "machineLaborFactor"
   ],
   "warnings": []
  }

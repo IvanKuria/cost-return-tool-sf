@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/fe/24/fe24e27a-5c29-4cc3-a83c-63a31cd0c767/2020napawinegrape.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -717,7 +717,8 @@
    "unit": "%",
    "page": 12,
    "quote": "Property taxes are calculated as 1 percent of the average value of the property and not influenced by the Williamson Act or additional county taxes."
-  }
+  },
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -809,7 +810,8 @@
    "grossReturns",
    "equipment",
    "hourlyEquipment",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "machineLaborFactor"
   ],
   "warnings": [
    "Table 2 found but no GROSS RETURNS block",

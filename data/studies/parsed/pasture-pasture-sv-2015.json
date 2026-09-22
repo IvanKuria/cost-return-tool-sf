@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/0e/23/0e230982-8610-42a4-8a26-32a0b10a4c5c/pasture_sv_2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -316,7 +316,8 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -406,7 +407,8 @@
    "equipment",
    "hourlyEquipment",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "machineLaborFactor"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/7a/4a/7a4aeb5f-3684-4db2-9d59-d4d2461c00c8/17beefcowcalfeastbayareafinaldraft121417.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beef",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -62,7 +62,8 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": null,
  "parse": {
@@ -93,6 +94,7 @@
    "businessOverhead",
    "insuranceRatePct",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "warnings": [

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/05/11/20022ricedeltacontinuousrotation5923.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/rice",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1305,7 +1305,8 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life. 7 Rice (Continuous Planting) Cost and Returns Study Delta Region – 2022 UCCE, UC DAVIS-ARE"
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -1399,7 +1400,8 @@
   ],
   "fieldsMissing": [
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "machineLaborFactor"
   ],
   "warnings": []
  }

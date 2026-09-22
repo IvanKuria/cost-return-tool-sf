@@ -21,7 +21,21 @@ export interface Citation {
   value: number | null;       // null when the study only gives a sentence, not a number
 }
 
-export type FarmCitedField = 'interestRate' | 'hiredLaborRate' | 'ownLaborRate' | 'payrollOverhead' | 'landRentPerAcre' | 'otherOverheadPerYear';
+export type FarmCitedField = 'interestRate' | 'hiredLaborRate' | 'ownLaborRate' | 'payrollOverhead' | 'landRentPerAcre' | 'insuranceRate' | 'propertyTaxRate';
+
+/** How a whole-farm cost is split between crops. */
+export type AllocationBasis = 'acres' | 'revenue';
+/** How a machine's ownership cost is split: by the hours each crop uses it, falling back to the farm basis when no crop lists hours. */
+export type EquipmentBasis = 'hours' | 'acres' | 'revenue';
+
+/** One whole-farm cost the farmer pays regardless of crop: insurance, certification, office, market fees. */
+export interface OverheadItem {
+  id: string;
+  name: string;
+  amountPerYear: number;
+  basis: AllocationBasis;
+  citation?: Citation;
+}
 
 export interface Farm {
   missingFields?: NumericField<Farm>[];
@@ -34,8 +48,12 @@ export interface Farm {
   ownLaborRate: number;        // $/hr the farmer pays themself
   hiredLaborRate: number;      // $/hr for hired field work, before payroll overhead
   payrollOverhead: number;     // 0.34 means 34 percent on top of wages
-  landRentPerAcre: number;     // $/acre/yr, 0 if owned outright
-  otherOverheadPerYear: number; // insurance, certification, office, market fees: whole farm, per year
+  landRentPerAcre: number;     // $/acre/yr, 0 if owned outright; always split by acres
+  overheadItems: OverheadItem[]; // other whole-farm costs, each with its own split basis
+  overheadBasis: AllocationBasis;   // default basis for new overhead items
+  equipmentBasis: EquipmentBasis;   // how machine ownership cost is split
+  insuranceRate: number;       // 0.00843 means 0.843 percent of a machine's average value per year
+  propertyTaxRate: number;     // 0.01 means 1 percent of a machine's average value per year
   citations: Partial<Record<FarmCitedField, Citation>>;
 }
 
@@ -49,6 +67,31 @@ export interface CustomHire { id: string; name: string; costPerAcre: number }
 
 export type CropCitedField = 'yieldPerAcre' | 'price' | 'operatingCostPerAcre' | 'months' | 'plantingsPerYear';
 
+export type OperationCategory = 'cultural' | 'harvest' | 'assessment' | 'postharvest' | 'other';
+
+/**
+ * One line of work on a crop, per acre, one planting: the rows of a UC study's costs-per-acre table.
+ * Machine work is either assigned to a machine the farmer owns (then it costs their running rate and
+ * operator time, and shares that machine's ownership by hours) or left hired (then it costs
+ * hiredMachinePerAcre, the study's price for that work). Never both, so nothing is counted twice.
+ */
+export interface CropOperation {
+  id: string;
+  name: string;
+  category: OperationCategory;
+  enabled: boolean;
+  machineHoursPerAcre: number;     // machine time, from the study's Time column
+  operatorHoursPerAcre: number;    // operator labor hours; the study's machine time times its labor factor
+  equipmentId: string | null;      // owned machine doing it, or null when hired out
+  hiredMachinePerAcre: number;     // fuel, lube, repairs and operator labor the study priced for this work
+  handHoursPerAcre: number;        // hand labor hours, repriced at the farm's hired rate
+  otherLaborPerAcre: number;       // labor dollars the study gave that could not be turned into hours
+  materialsPerAcre: number;
+  customPerAcre: number;           // the study's custom or rent column
+  source: 'study' | 'custom';
+  citation?: Citation;
+}
+
 export interface Crop {
   missingFields?: NumericField<Crop>[];
   id: string;
@@ -61,9 +104,10 @@ export interface Crop {
   unit: string;                // 'tray', 'carton', 'ton', 'lb' ...
   price: number;               // $ per unit, blended across channels
   channel: SalesChannel;
-  operatingCostPerAcre: number; // $ per acre per planting for seed, materials and hired labor
+  operatingCostPerAcre: number; // $ per acre per planting for seed, materials and hired labor; used only when operations is empty
   ownLaborHoursPerAcre: number; // farmer's own hours per acre per planting
-  machineHours: MachineUse[];   // which owned machines this crop uses and for how long
+  machineHours: MachineUse[];   // owned machine hours typed directly; used only when operations is empty
+  operations: CropOperation[];  // the crop's work, line by line; when present it replaces operatingCostPerAcre and machineHours
   customHire: CustomHire[];     // work hired out, like custom seeding or mowing
   timingSource?: 'custom' | 'study';
   costMonths: number[] | null;    // 12 weights summing to 1, only when a study gives a monthly table
@@ -73,7 +117,7 @@ export interface Crop {
 
 export type Condition = 'new' | 'used';
 
-export type EquipmentCitedField = 'pricePaid' | 'keepYears' | 'salvageValue' | 'operatingCostPerHour';
+export type EquipmentCitedField = 'pricePaid' | 'keepYears' | 'salvageValue' | 'fuelLubePerHour' | 'repairsPerHour';
 
 export interface Equipment {
   missingFields?: NumericField<Equipment>[];
@@ -86,7 +130,8 @@ export interface Equipment {
   keepYears: number;           // years from now they expect to keep it
   hoursPerYear: number;
   salvageValue: number;        // what they expect to sell it for at the end
-  operatingCostPerHour: number; // fuel, oil, repairs
+  fuelLubePerHour: number;     // fuel and lube per hour of use
+  repairsPerHour: number;      // repairs per hour of use
   citations: Partial<Record<EquipmentCitedField, Citation>>;
 }
 
@@ -102,7 +147,9 @@ export interface Plan {
 export interface OwnershipBreakdown {
   capitalRecovery: number;     // (paid - salvage) x CRF
   interestOnSalvage: number;   // salvage x rate
-  insuranceAndTax: number;     // on average value
+  insurance: number;           // insuranceRate x average value
+  taxes: number;               // propertyTaxRate x average value
+  insuranceAndTax: number;     // the two above
   totalPerYear: number;
   ownPerHour: number;
   runPerHour: number;
@@ -126,6 +173,11 @@ export interface CropResult {
   breakEvenPrice: number;      // total cost / units
   breakEvenYieldPerAcre: number;
   hasMonths: boolean;          // whether this crop is in the monthly cash view
+  costParts: { materials: number; handLabor: number; operatorLabor: number; machineRunning: number; hiredMachine: number; custom: number; otherLabor: number; ownLabor: number; hiredJobs: number; lump: number }; // what operating is made of; lump is the typed per-acre cost when no operations exist
+  operationRows: { id: string; name: string; category: OperationCategory; cost: number; assigned: string | null }[]; // per enabled operation, for the year
+  overheadItems: { id: string; name: string; amount: number; basis: AllocationBasis }[]; // this crop's share of each whole-farm cost, land rent first
+  machines: { equipmentId: string; name: string; share: number; ownership: number; capitalRecovery: number; interestOnSalvage: number; insurance: number; taxes: number; running: number; hours: number }[];
+  monthly: { revenue: number[]; costs: number[] } | null; // 12 entries each, dollars, when the crop has month data
 }
 
 export interface MachineResult {
@@ -151,6 +203,8 @@ export interface FarmResult {
   crops: CropResult[];
   machines: MachineResult[];
   monthlyCash: number[];       // 12 entries, Jan..Dec, revenue minus cash costs, crops with month data only
+  monthlyOverhead: number[];   // 12 entries, the overhead charged in the cash view each month
+  runningCash: number[];       // 12 entries, cumulative monthlyCash
   lowestCashPoint: { month: number; cumulative: number };
   cashCoverage: { withMonths: number; total: number }; // how many crops the monthly view covers
 }

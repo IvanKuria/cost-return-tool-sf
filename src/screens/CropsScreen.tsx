@@ -2,7 +2,9 @@ import { restoreSourceValue, sourceUnitChanged } from '../lib/source';
 import { useState, type Dispatch } from 'react';
 import { uid, type Action } from '../lib/store';
 import type { Crop, CustomHire, Equipment, Farm, FarmResult, Plan, SalesChannel } from '../lib/types';
-import { newBlankCrop, newCropFromStudy, ownership, toAcres } from '../lib/engine';
+import { newBlankCrop, newCropFromStudy, newBlankOperation, ownership, toAcres, usesOperations } from '../lib/engine';
+import { operationsFromStudy, studyById } from '../data/studies';
+import { CropOperations, operationsPerAcre } from './CropOperations';
 import { inputPatch, isMissing, missingPlanInputs } from '../lib/inputs';
 import { CropTiming } from './CropTiming';
 import { CropStudyPicker } from './StudyPickers';
@@ -113,9 +115,19 @@ function CropForm({ farm, equipment, draft, onChange, onSave, onCancel }: { farm
   const removeHire = (id: string) => set({ customHire: draft.customHire.filter(h => h.id !== id) });
   const addHire = () => set({ customHire: [...draft.customHire, { id: uid(), name: '', costPerAcre: 0 }] });
 
+  const fromOps = usesOperations(draft);
+  const opsCost = fromOps ? operationsPerAcre(draft, farm, equipment) : null;
   // Per acre, one planting: what the machines and hired work add on top of materials and labor.
-  const machinePerAcre = equipment.reduce((sum, e) => sum + hoursFor(e.id) * ownership(e, farm.interestRate).allInPerHour, 0);
+  const machinePerAcre = fromOps
+    ? opsCost!.parts.machineRunning + opsCost!.parts.operatorLabor + opsCost!.parts.hiredMachine
+    : equipment.reduce((sum, e) => sum + hoursFor(e.id) * ownership(e, farm).allInPerHour, 0);
   const hirePerAcre = draft.customHire.reduce((sum, h) => sum + h.costPerAcre, 0);
+  // Yearly growing costs for the timing grid: the same pieces the engine adds up, without overhead shares.
+  const seasons = toAcres(draft.area, farm) * draft.plantingsPerYear;
+  const growPerAcre = fromOps ? opsCost!.total : draft.operatingCostPerAcre + machinePerAcre;
+  const yearlyCosts = seasons * (growPerAcre + draft.ownLaborHoursPerAcre * farm.ownLaborRate + hirePerAcre);
+  const study = studyById(draft.studyId);
+  const [advanced, setAdvanced] = useState(false);
 
   return (
     <Card className="p-5 flex flex-col gap-5">
@@ -146,9 +158,9 @@ function CropForm({ farm, equipment, draft, onChange, onSave, onCancel }: { farm
         <NumberInput value={draft.price} onChange={v => setNumber('price', v)} missing={isMissing(draft, 'price')} onMissingChange={() => setNumber('price', undefined)} placeholder={t('inputs.enterNumber')} step={0.01} prefix="$" suffix={t('common.perUnit', { unit: unitWord(draft.unit) })} />
       </Field>
 
-      <Field label={t('crops.operating')} tag={<SourceTag citation={draft.citations.operatingCostPerAcre} value={draft.operatingCostPerAcre} missing={isMissing(draft, 'operatingCostPerAcre')} onRestore={sourceUnitChanged(draft, 'operatingCostPerAcre') ? undefined : () => set(restoreSourceValue(draft, 'operatingCostPerAcre', draft.citations.operatingCostPerAcre))} restoreHint={sourceUnitChanged(draft, 'operatingCostPerAcre') ? t('source.restoreUnitHint') : undefined} />} hint={isMissing(draft, 'operatingCostPerAcre') ? t('inputs.missingHint') : t('crops.operating.hint')}>
+      {!fromOps && <Field label={t('crops.operating')} tag={<SourceTag citation={draft.citations.operatingCostPerAcre} value={draft.operatingCostPerAcre} missing={isMissing(draft, 'operatingCostPerAcre')} onRestore={sourceUnitChanged(draft, 'operatingCostPerAcre') ? undefined : () => set(restoreSourceValue(draft, 'operatingCostPerAcre', draft.citations.operatingCostPerAcre))} restoreHint={sourceUnitChanged(draft, 'operatingCostPerAcre') ? t('source.restoreUnitHint') : undefined} />} hint={isMissing(draft, 'operatingCostPerAcre') ? t('inputs.missingHint') : t('crops.operating.hint')}>
         <NumberInput value={draft.operatingCostPerAcre} missing={isMissing(draft, 'operatingCostPerAcre')} onChange={v => setNumber('operatingCostPerAcre', v)} onMissingChange={() => setNumber('operatingCostPerAcre', undefined)} placeholder={t('inputs.enterNumber')} prefix="$" suffix={t('common.perAcre')} />
-      </Field>
+      </Field>}
       <Field label={t('crops.ownHours')} tag={<SourceTag citation={undefined} value={draft.ownLaborHoursPerAcre} missing={isMissing(draft, 'ownLaborHoursPerAcre')} />} hint={t('crops.ownHours.hint', { rate: money(farm.ownLaborRate) })}>
         <NumberInput value={draft.ownLaborHoursPerAcre} onChange={v => setNumber('ownLaborHoursPerAcre', v)} missing={isMissing(draft, 'ownLaborHoursPerAcre')} onMissingChange={() => setNumber('ownLaborHoursPerAcre', undefined)} suffix={t('common.hoursPerAcre')} />
       </Field>
@@ -160,6 +172,20 @@ function CropForm({ farm, equipment, draft, onChange, onSave, onCancel }: { farm
         />
       </Field>
 
+      {fromOps ? (
+        <>
+          <CropOperations crop={draft} farm={farm} equipment={equipment} seasons={seasons} onChange={set} />
+          <div>
+            <button type="button" onClick={() => setAdvanced(a => !a)} className="text-[15px] font-medium text-accent hover:underline" aria-expanded={advanced}>{advanced ? t('common.hideAdvanced') : t('common.advanced')}</button>
+            {advanced && (
+              <div className="mt-2 flex justify-between gap-3 text-[14px] rounded-[var(--radius-ctl)] bg-well px-4 py-3">
+                <span className="text-ink-2">{t('ops.derivedOperating')}</span>
+                <span className="tnum text-loss whitespace-nowrap">{money(-opsCost!.total)} {t('common.perAcre')}</span>
+              </div>
+            )}
+          </div>
+        </>
+      ) : (
       <div className="border-t border-line pt-5 flex flex-col gap-4">
         <div>
           <div className="font-semibold text-[17px]">{t('crops.machines')}</div>
@@ -170,13 +196,13 @@ function CropForm({ farm, equipment, draft, onChange, onSave, onCancel }: { farm
         ) : (
           <div className="flex flex-col divide-y divide-line border border-line rounded-[var(--radius-ctl)] overflow-hidden">
             {equipment.map(e => {
-              const o = ownership(e, farm.interestRate);
+              const o = ownership(e, farm);
               const name = typeName('equipment', e.typeId, e.name);
               return (
                 <div key={e.id} className="flex items-center gap-3 px-4 py-2.5">
                   <div className="min-w-0 flex-1">
                     <div className="font-medium text-[15px] truncate">{name}</div>
-                    <div className="text-[13px] text-ink-2 tnum">{e.hoursPerYear > 0 ? t('crops.machines.perHour', { cost: cents(o.allInPerHour) }) : t('crops.machines.notTracked')}</div>
+                    <div className="text-[13px] text-ink-2 tnum">{e.hoursPerYear > 0 ? t('crops.machines.perHourSplit', { run: cents(o.runPerHour), all: cents(o.allInPerHour) }) : t('crops.machines.notTracked')}</div>
                   </div>
                   {e.hoursPerYear > 0 && <NumberInput className="w-[170px]" value={hoursFor(e.id)} onChange={v => setHours(e.id, v)} step={0.1} suffix={t('common.hrsPerAcre')} aria-label={t('crops.machines.aria', { name })} />}
                 </div>
@@ -185,6 +211,13 @@ function CropForm({ farm, equipment, draft, onChange, onSave, onCancel }: { farm
           </div>
         )}
 
+        <div className="flex flex-wrap gap-2">
+          {study && study.costsPerAcre.operations.length > 0 && <Button variant="secondary" className="h-10 px-4 text-[15px]" onClick={() => set({ operations: operationsFromStudy(study) })}>{t('ops.addStudy')}</Button>}
+          <Button variant="secondary" className="h-10 px-4 text-[15px]" onClick={() => set({ operations: [newBlankOperation()] })}>{t('ops.add')}</Button>
+        </div>
+      </div>
+      )}
+      <div className="border-t border-line pt-5 flex flex-col gap-4">
         <div>
           <div className="font-semibold text-[17px]">{t('crops.hire')}</div>
           <div className="text-[14px] text-ink-2">{t('crops.hire.hint')}</div>
@@ -203,7 +236,7 @@ function CropForm({ farm, equipment, draft, onChange, onSave, onCancel }: { farm
         <Button variant="secondary" className="self-start h-10 px-4 text-[15px]" onClick={addHire}>{t('crops.hire.add')}</Button>
       </div>
 
-      <CropTiming crop={draft} onChange={set} />
+      <CropTiming crop={draft} onChange={set} yearlyCosts={yearlyCosts} yearlySales={sales} />
 
       <div className="rounded-[var(--radius-ctl)] bg-well px-4 py-3 flex flex-col gap-1">
         <div className="flex items-baseline gap-2">

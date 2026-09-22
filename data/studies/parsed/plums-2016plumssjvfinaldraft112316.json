@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/05/1e/051eabc3-9bdd-45cc-9c85-f122f8f275f0/2016plumssjvfinaldraft112316.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/plums",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -896,7 +896,8 @@
    "unit": "%",
    "page": 7,
    "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
-  }
+  },
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -989,7 +990,8 @@
   ],
   "fieldsMissing": [
    "landRentPerAcre",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "machineLaborFactor"
   ],
   "warnings": []
  }

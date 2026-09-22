@@ -1,7 +1,7 @@
 import type { Crop, Equipment, Farm, NumericField, Plan } from './types';
 
 const cropFields = ['area', 'plantingsPerYear', 'yieldPerAcre', 'price', 'operatingCostPerAcre'] as const;
-const equipmentFields = ['pricePaid', 'keepYears', 'salvageValue', 'operatingCostPerHour'] as const;
+const equipmentFields = ['pricePaid', 'keepYears', 'salvageValue', 'fuelLubePerHour', 'repairsPerHour'] as const;
 type InputItem = Crop | Equipment | Farm;
 
 /** Explicit flags preserve the distinction between a blank and an intentional zero. */

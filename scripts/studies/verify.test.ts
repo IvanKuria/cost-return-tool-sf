@@ -22,6 +22,8 @@ describe('2015 organic spinach, Central Coast', () => {
     expect(s.assumptions.interestRatePct?.value).toBe(4.75);
     expect(s.method.insuranceRatePct?.value).toBe(0.843);
     expect(s.method.propertyTaxRatePct?.value).toBe(1);
+    expect(s.method.machineLaborFactor?.value).toBe(1.2);
+    expect(s.method.machineLaborFactor?.page).toBeGreaterThan(0);
     expect(s.assumptions.landRentPerAcre?.value).toBe(2400);
     expect(s.assumptions.laborMachineRate?.value).toBe(21.7);
     expect(s.assumptions.laborOverheadPct?.value).toBe(40);
@@ -39,8 +41,31 @@ describe('2015 organic spinach, Central Coast', () => {
   });
 });
 
+describe('2024 organic strawberries, Central Coast', () => {
+  const s = load().find(x => x.source.id === 'strawberries-2024orgstrawberries-final-may2024')!;
+  it('machine labor factor', () => {
+    expect(s).toBeTruthy();
+    expect(s.method.machineLaborFactor?.value).toBe(1.2);
+    expect(s.method.machineLaborFactor?.page).toBeGreaterThan(0);
+    expect(s.method.machineLaborFactor?.quote).toMatch(/machinery/i);
+  });
+});
+
 describe('all studies', () => {
   const all = load();
+  it('operation rows carry numeric or null cost columns', () => {
+    for (const s of all) for (const o of s.costsPerAcre.operations) {
+      for (const k of ['timeHrsPerAcre', 'labor', 'fuel', 'lubeRepairs', 'materials', 'customRent'] as const) {
+        const v = o[k];
+        expect(v === null || (typeof v === 'number' && Number.isFinite(v))).toBe(true);
+      }
+    }
+  });
+  it('machine labor factor is 1.2 wherever stated, and coverage is printed', () => {
+    const withFactor = all.filter(s => s.method.machineLaborFactor);
+    for (const s of withFactor) expect(s.method.machineLaborFactor!.value).toBeGreaterThan(1);
+    console.log(`machine labor factor: ${withFactor.length} of ${all.length} studies (${withFactor.filter(s => s.method.machineLaborFactor!.value === 1.2).length} at 1.2)`);
+  });
   it('at least 80 percent have year, region and url', () => {
     const ok = all.filter(s => s.source.year && s.source.region && s.source.url).length;
     expect(ok / all.length).toBeGreaterThanOrEqual(0.8);

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e4/bd/e4bd9353-25a1-4258-b5b1-42a203bc09ad/2020pistachiosjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pistachios",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -968,6 +968,12 @@
    "unit": "%",
    "page": 15,
    "quote": "Property taxes are calculated as 1 percent of the average value of the property and not influenced by the Williamson Act or additional county taxes."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 14,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 3 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1056,6 +1062,7 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

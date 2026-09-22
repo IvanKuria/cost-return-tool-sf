@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/bb/94/bb94edc2-fbfb-4be0-8853-6565b486e032/20pasturesnfhproduction.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -270,7 +270,8 @@
    "unit": "%",
    "page": 6,
    "quote": "Property taxes are calculated as 1 percent of the average value of the property and not influenced by the Williamson Act or additional county taxes."
-  }
+  },
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -360,7 +361,8 @@
    "nonCashOverheadTotal",
    "equipment",
    "investments",
-   "hourlyEquipment"
+   "hourlyEquipment",
+   "machineLaborFactor"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",

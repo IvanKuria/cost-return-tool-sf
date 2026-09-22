@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/df/68/df68d252-a08d-49d1-8eb6-965637c0b615/wine-grape-sn-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": {
@@ -235,7 +235,13 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 11,
+   "quote": "Labor time for operations involving machinery are 20% higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -314,6 +320,7 @@
    "grossReturns",
    "investments",
    "businessOverhead",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [

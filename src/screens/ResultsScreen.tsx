@@ -1,11 +1,11 @@
 import { useMemo, useState, type Dispatch } from 'react';
 import type { Action } from '../lib/store';
-import type { CropResult, FarmResult, Plan } from '../lib/types';
+import type { AllocationBasis, CropResult, EquipmentBasis, FarmResult, OperationCategory, Plan } from '../lib/types';
 import { inputPatch, missingPlanInputs } from '../lib/inputs';
 import { MissingInputs } from './MissingInputs';
 import { ExportActions } from './ExportActions';
 import { computePlan } from '../lib/engine';
-import { Button, Select, money, num, cents } from '../ui';
+import { Button, Choice, Select, money, num, cents } from '../ui';
 import { Slider as ShadSlider } from '@/components/ui/slider';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { useT, useTypeName, useUnit } from '../i18n';
@@ -14,6 +14,7 @@ import type { Key } from '../i18n/en';
 /** A cost shown per hour: real minus sign, two decimals. */
 const negCents = (n: number) => (n > 0 ? `\u2212${cents(n)}` : cents(n));
 
+const CATEGORY_KEY: Record<OperationCategory, Key> = { cultural: 'ops.category.cultural', harvest: 'ops.category.harvest', assessment: 'ops.category.assessment', postharvest: 'ops.category.postharvest', other: 'ops.category.other' };
 const monthKey = (i: number) => `month.${i}` as Key;
 const monthLongKey = (i: number) => `monthLong.${i}` as Key;
 
@@ -52,9 +53,10 @@ export function ResultsScreen({ plan, dispatch, result }: { plan: Plan; dispatch
   }
 
   return (
-    <div className="max-w-[860px] mx-auto space-y-10">
+    <div className="max-w-[860px] lg:max-w-[1000px] mx-auto space-y-10">
       <TheAnswer result={result} provisional={missingPlanInputs(plan).length > 0} />
       <MissingInputs plan={plan} dispatch={dispatch} />
+      <CashFlowTable plan={plan} result={result} />
       <CashChart plan={plan} result={result} />
       <CropTable plan={plan} result={result} />
       <details className="border-t border-line pt-5">
@@ -105,6 +107,13 @@ function CropTable({ plan, result }: { plan: Plan; result: FarmResult }) {
   const netCls = (n: number) => (n < 0 ? 'text-loss' : n > 0 ? 'text-gain' : '');
   const right = 'text-right tnum whitespace-nowrap';
   const cost = `${right} py-2.5 text-loss`;
+  const [open, setOpen] = useState<Record<string, boolean>>({});
+  const toggle = (id: string) => setOpen(o => ({ ...o, [id]: !o[id] }));
+  const detailButton = (c: CropResult, suffix = '') => (
+    <button type="button" aria-expanded={!!open[c.cropId]} aria-controls={`detail-${c.cropId}${suffix}`} onClick={() => toggle(c.cropId)} className="mt-1 text-[13px] font-medium text-accent hover:underline">
+      {open[c.cropId] ? t('results.breakdown.hide') : t('results.breakdown.show')}
+    </button>
+  );
 
   return (
     <section>
@@ -140,6 +149,7 @@ function CropTable({ plan, result }: { plan: Plan; result: FarmResult }) {
                   </>
                 )}
               </div>
+              {breakdown && !isTotal && <>{detailButton(c, '-m')}{open[c.cropId] && <div id={`detail-${c.cropId}-m`}><CropDetail plan={plan} crop={c} /></div>}</>}
             </div>
           );
         })}
@@ -183,7 +193,13 @@ function CropTable({ plan, result }: { plan: Plan; result: FarmResult }) {
                 <TableCell className={`${right} py-2.5 font-semibold ${netCls(c.net)}`}>{money(c.net, { sign: true })}</TableCell>
                 <TableCell className={`${right} py-2.5 pr-0 ${netCls(c.net)}`}>{c.acres > 0 ? money(c.net / c.acres, { sign: true }) : ''}</TableCell>
               </TableRow>
-            ))}
+            )).flatMap((row, i) => breakdown ? [row,
+              <TableRow key={`${rows[i].cropId}-detail`} className="hover:bg-transparent">
+                <TableCell colSpan={7} className="pl-0 pr-0 pt-0 pb-3">
+                  {detailButton(rows[i])}
+                  {open[rows[i].cropId] && <div id={`detail-${rows[i].cropId}`}><CropDetail plan={plan} crop={rows[i]} /></div>}
+                </TableCell>
+              </TableRow>] : [row])}
             <TableRow className="font-semibold border-t-2 border-line-strong">
               <TableCell className="pl-0 py-2.5">
                 <div>{t('results.table.wholeFarm')}</div>
@@ -218,6 +234,140 @@ function CropTable({ plan, result }: { plan: Plan; result: FarmResult }) {
           {t('results.realLoser.text', { amount: money(-realLoser.contribution) })}
         </div>
       )}
+    </section>
+  );
+}
+
+/* ---------- 2b. What a crop's shared costs are made of ---------- */
+
+function useBasisWords() {
+  const { t } = useT();
+  const basis = (b: AllocationBasis | 'hours') => t(`basis.${b}` as Key);
+  const equipment = (b: EquipmentBasis, fallback: AllocationBasis) => b === 'hours' ? t('basis.hoursFallback', { fallback: basis(fallback) }) : basis(b);
+  return { basis, equipment };
+}
+
+function CropDetail({ plan, crop }: { plan: Plan; crop: CropResult }) {
+  const { t } = useT();
+  const typeName = useTypeName();
+  const { basis, equipment } = useBasisWords();
+  const farm = plan.farm;
+  const machineName = (id: string, fallback: string) => { const e = plan.equipment.find(x => x.id === id); return e ? typeName('equipment', e.typeId, e.name) : fallback; };
+  const machines = crop.machines.filter(m => m.ownership > 0 || m.running > 0);
+  const line = (label: string, amount: number, sub?: string, strong = false) => (
+    <div className={`flex justify-between gap-3 text-[14px] ${strong ? 'font-medium' : ''}`}>
+      <span className={strong ? '' : 'text-ink-2'}>{label}{sub && <span className="text-ink-3"> {sub}</span>}</span>
+      <span className="tnum text-loss whitespace-nowrap">{money(-amount)}</span>
+    </div>
+  );
+  const [opsOpen, setOpsOpen] = useState(false);
+  const partLabel: Record<keyof CropResult['costParts'], Key> = { materials: 'ops.part.materials', handLabor: 'ops.part.handLabor', operatorLabor: 'ops.part.operatorLabor', machineRunning: 'ops.part.machineRunning', hiredMachine: 'ops.part.hiredMachine', custom: 'ops.part.custom', otherLabor: 'ops.part.otherLabor', ownLabor: 'ops.part.ownLabor', hiredJobs: 'ops.part.hiredJobs', lump: 'ops.part.lump' };
+  const parts = (Object.keys(partLabel) as (keyof CropResult['costParts'])[]).filter(k => crop.costParts[k] > 0);
+  return (
+    <div className="mt-2 rounded-[10px] bg-well px-4 py-3 space-y-4">
+      <p className="text-[13px] text-ink-2">{t('results.breakdown.rule', { overhead: basis(farm.overheadBasis), equipment: equipment(farm.equipmentBasis, farm.overheadBasis) })}</p>
+      {crop.operating > 0 && (
+        <div className="space-y-1">
+          {line(t('results.breakdown.operating'), crop.operating, undefined, true)}
+          {parts.map(k => <div key={k} className="pl-3">{line(t(partLabel[k]), crop.costParts[k])}</div>)}
+          {crop.operationRows.length > 0 && (
+            <div className="pl-3 pt-1">
+              <button type="button" onClick={() => setOpsOpen(o => !o)} aria-expanded={opsOpen} className="text-[13px] font-medium text-accent hover:underline">{opsOpen ? t('results.breakdown.operationsHide') : `${t('results.breakdown.operations')} (${crop.operationRows.length})`}</button>
+              {opsOpen && (
+                <div className="mt-1 space-y-0.5">
+                  {crop.operationRows.map(o => <div key={o.id}>{line(o.name, o.cost, `${t(CATEGORY_KEY[o.category])}, ${o.assigned ? machineName(o.assigned, o.assigned) : t('ops.hired')}`)}</div>)}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+      {crop.overheadItems.length === 0 && machines.length === 0 && crop.operating <= 0 && <p className="text-[14px] text-ink-2">{t('results.breakdown.none')}</p>}
+      {crop.overheadItems.length > 0 && (
+        <div className="space-y-1">
+          {line(t('results.breakdown.overhead'), crop.overheadShare, undefined, true)}
+          {crop.overheadItems.map(o => <div key={o.id} className="pl-3">{line(o.id === 'land-rent' ? t('results.breakdown.landRent') : (o.name.trim() || t('export.item')), o.amount, t('results.breakdown.by', { basis: basis(o.basis) }))}</div>)}
+        </div>
+      )}
+      {machines.length > 0 && (
+        <div className="space-y-2">
+          {line(t('results.breakdown.machines'), crop.equipmentShare + crop.machineRunning, undefined, true)}
+          {machines.map(m => (
+            <div key={m.equipmentId} className="pl-3 space-y-0.5">
+              {line(machineName(m.equipmentId, m.name), m.ownership + m.running, t('results.breakdown.by', { basis: farm.equipmentBasis === 'hours' && m.hours > 0 ? basis('hours') : basis(farm.equipmentBasis === 'revenue' ? 'revenue' : 'acres') }))}
+              <div className="pl-3">
+                {line(t('results.breakdown.capitalRecovery'), m.capitalRecovery)}
+                {line(t('results.breakdown.interestOnSalvage'), m.interestOnSalvage)}
+                {line(t('results.breakdown.insurance'), m.insurance)}
+                {line(t('results.breakdown.propertyTax'), m.taxes)}
+                {m.running > 0 && line(t('results.breakdown.running', { hours: num(m.hours) }), m.running)}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ---------- 2c. Cash flow by month ---------- */
+
+function CashFlowTable({ plan, result }: { plan: Plan; result: FarmResult }) {
+  const { t } = useT();
+  const cropName = useCropName(plan);
+  const [mode, setMode] = useState<'dollars' | 'percent'>('dollars');
+  const timed = result.crops.filter(c => c.monthly);
+  const excluded = result.crops.filter(c => !c.hasMonths).map(c => cropName(c.cropId, c.name));
+  if (timed.length === 0) return null;
+  const sum = (a: number[]) => a.reduce((p, q) => p + q, 0);
+  type Row = { key: string; label: string; values: number[]; total: number; kind: 'in' | 'out' | 'net' | 'balance' };
+  const rows: Row[] = [
+    ...timed.flatMap((c): Row[] => [
+      { key: `${c.cropId}-in`, label: t('results.cashFlow.in', { crop: cropName(c.cropId, c.name) }), values: c.monthly!.revenue, total: sum(c.monthly!.revenue), kind: 'in' },
+      { key: `${c.cropId}-out`, label: t('results.cashFlow.out', { crop: cropName(c.cropId, c.name) }), values: c.monthly!.costs.map(v => -v), total: -sum(c.monthly!.costs), kind: 'out' },
+    ]),
+    { key: 'fixed', label: t('results.cashFlow.fixed'), values: result.monthlyOverhead.map(v => -v), total: -sum(result.monthlyOverhead), kind: 'out' },
+    { key: 'net', label: t('results.cashFlow.net'), values: result.monthlyCash, total: sum(result.monthlyCash), kind: 'net' },
+    { key: 'balance', label: t('results.cashFlow.balance'), values: result.runningCash, total: result.runningCash[11] ?? 0, kind: 'balance' },
+  ];
+  const show = (row: Row, v: number, isTotal = false) => {
+    if (mode === 'percent' && row.kind !== 'balance') {
+      const base = Math.abs(row.total);
+      return base > 0 ? `${num(v / base * 100, 0)}%` : '';
+    }
+    if (mode === 'percent' && isTotal) return '';
+    return money(v);
+  };
+  const tone = (row: Row, v: number) => Math.abs(v) < 0.5 ? 'text-ink-3' : row.kind === 'out' ? 'text-loss' : row.kind === 'in' ? '' : v < 0 ? 'text-loss' : 'text-gain';
+  const cellCls = 'px-1.5 py-1.5 text-right tnum whitespace-nowrap text-[12px] sm:text-[12.5px]';
+  return (
+    <section aria-labelledby="cashflow-heading">
+      <h2 id="cashflow-heading" className="text-[20px] font-semibold mb-2">{t('results.cashFlow')}</h2>
+      <p className="text-[14px] text-ink-2 mb-3">{t('results.cashFlow.intro')}</p>
+      <div className="max-w-[320px] mb-3">
+        <Choice<'dollars' | 'percent'> value={mode} onChange={setMode} aria-label={t('results.cashFlow')} options={[{ value: 'dollars', label: t('results.cashFlow.dollars') }, { value: 'percent', label: t('results.cashFlow.percent') }]} />
+      </div>
+      <div className="overflow-x-auto -mx-4 px-4">
+        <table className="w-full border-collapse text-[13px]">
+          <thead>
+            <tr className="text-ink-2 border-b border-line">
+              <th className="sticky left-0 z-10 bg-ground text-left px-2 py-1.5 font-medium min-w-[120px] max-w-[150px]">{t('export.row')}</th>
+              {Array.from({ length: 12 }, (_, i) => <th key={i} className="px-1.5 py-1.5 text-right font-medium text-[12px]">{t(monthKey(i))}</th>)}
+              <th className="px-1.5 py-1.5 text-right font-semibold text-[12px]">{t('results.cashFlow.total')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(row => (
+              <tr key={row.key} className={`border-b border-line ${row.kind === 'net' ? 'border-t-2 border-t-line-strong font-semibold' : row.kind === 'balance' ? 'font-semibold' : ''}`}>
+                <th scope="row" className="sticky left-0 z-10 bg-ground text-left px-2 py-1.5 font-medium min-w-[120px] max-w-[150px] whitespace-normal leading-tight text-[13px]">{row.label}</th>
+                {row.values.map((v, i) => <td key={i} className={`${cellCls} ${tone(row, v)}`}>{show(row, v)}</td>)}
+                <td className={`${cellCls} font-semibold ${tone(row, row.total)}`}>{show(row, row.total, true)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {excluded.length > 0 && <p className="mt-3 text-[14px] text-ink-2">{t('results.cashFlow.notInView', { crops: excluded.join(', ') })}</p>}
     </section>
   );
 }
@@ -349,7 +499,7 @@ function CashChart({ plan, result }: { plan: Plan; result: FarmResult }) {
         </div>
         <p className="text-[14px] text-ink-2 mb-4">{t(mode === 'monthly' ? 'chart.monthlyHelp' : 'chart.cumulativeHelp')}</p>
         <div className="flex gap-1">
-          <div className="relative w-12 shrink-0 h-[200px] text-[11px] text-ink-2 tnum" aria-hidden="true">
+          <div className="relative w-14 shrink-0 h-[200px] text-[12px] sm:text-[13px] text-ink-2 tnum" aria-hidden="true">
             <span className="absolute top-0 right-0">{compact(top)}</span>
             <span className="absolute top-1/2 -translate-y-1/2 right-0">$0</span>
             <span className="absolute bottom-0 right-0">{compact(-top)}</span>
@@ -365,7 +515,7 @@ function CashChart({ plan, result }: { plan: Plan; result: FarmResult }) {
                 {data.map((value, i) => <line key={i} x1={i * 100 + 50} x2={i * 100 + 50} y1={y(value) - 3} y2={y(value) + 3} stroke="var(--color-accent)" strokeWidth="5" vectorEffect="non-scaling-stroke" />)}
               </>}
             </svg>
-            <div className="grid grid-cols-12 mt-2 text-center text-[11px] sm:text-[12px] text-ink-2" aria-hidden="true">
+            <div className="grid grid-cols-12 mt-2 text-center text-[12px] sm:text-[13px] text-ink-2" aria-hidden="true">
               {data.map((_, i) => <span key={i} className={selectedMonth === i ? 'font-bold text-accent' : ''}>{t(monthKey(i))}</span>)}
             </div>
           </div>

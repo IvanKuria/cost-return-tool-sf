@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2025/08/13/(SPAN)_%20MUESTRA%20DE%20COSTOS%20PARA%20PRODUCIR%20Y%20COSECHA%20FRESAS%20-2024.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/strawberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-14"
+  "fetchedAt": "2026-09-22"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -51,14 +51,21 @@
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 7,
+   "quote": "La mano de obra para las operaciones que involucran maquinaria es un 20 por ciento más alta que el tiempo de operación que se indica en la Tabla 1 para tener en cuenta la mano de obra adicional involucrada en la instalación, el traslado, el mantenimiento, los descansos laborales y la reparación del campo del equipo."
+  }
  },
  "monthly": null,
  "parse": {
   "fieldsFound": [
    "year",
    "region",
-   "counties"
+   "counties",
+   "machineLaborFactor"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
