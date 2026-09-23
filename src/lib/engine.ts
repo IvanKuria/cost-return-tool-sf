@@ -43,7 +43,7 @@ export function toAcres(area: number, farm: Farm): number {
   switch (farm.areaUnit) {
     case 'acres': return area;
     case 'beds': return (area * farm.bedLengthFt * (farm.bedWidthIn / 12)) / SQFT_PER_ACRE;
-    case 'rows100ft': return (area * 100 * (30 / 12)) / SQFT_PER_ACRE;
+    case 'rows100ft': return (area * 100 * (farm.bedWidthIn / 12)) / SQFT_PER_ACRE;
   }
 }
 
@@ -159,8 +159,33 @@ export function computePlan(plan: Plan): FarmResult {
     };
     const machineRunning = costParts.machineRunning;
     const customHire = hiredJobs + costParts.hiredMachine + costParts.custom;
-    const operating = Object.values(costParts).reduce((a, b) => a + b, 0);
+    const operatingBeforeInterest = Object.values(costParts).reduce((a, b) => a + b, 0);
     const operationRows = opCosts.map(o => ({ id: o.id, name: o.name, category: o.category, cost: o.perAcre * seasons, assigned: o.assigned }));
+
+    // Cash timing comes from the farmer or a study; require valid profiles for both costs and sales.
+    // Interest on operating capital, as the studies charge it: each month's cash spent ahead of sales
+    // carries the operating rate for that month. Without month timing there is nothing to charge it on.
+    const hasMonths = isMonthlyProfile(c.costMonths) && isMonthlyProfile(c.revenueMonths);
+    let monthly: CropResult['monthly'] = null;
+    let interest = 0;
+    if (hasMonths) {
+      withMonths++;
+      const monthlyRate = (farm.operatingInterestRate || 0) / 12;
+      const revenueByMonth = c.revenueMonths!.map(w => revenue * w);
+      const costsByMonth = c.costMonths!.map(w => operatingBeforeInterest * w);
+      let balance = 0;
+      for (let m = 0; m < 12; m++) {
+        balance += costsByMonth[m] - revenueByMonth[m];
+        const charge = balance > 0 ? balance * monthlyRate : 0;
+        costsByMonth[m] += charge;
+        interest += charge;
+      }
+      monthly = { revenue: revenueByMonth, costs: costsByMonth };
+      for (let m = 0; m < 12; m++) monthlyCash[m] += monthly.revenue[m] - monthly.costs[m];
+    }
+    const costPartsFull = { ...costParts, interest };
+    const operating = operatingBeforeInterest + interest;
+
     const overheadRows = [
       ...(landRent > 0 ? [{ id: 'land-rent', name: 'Land rent', amount: landRent * shareBy('acres', i), basis: 'acres' as AllocationBasis }] : []),
       ...overheadItems.map(o => ({ id: o.id, name: o.name, amount: o.amountPerYear * shareBy(o.basis, i), basis: o.basis })),
@@ -174,16 +199,7 @@ export function computePlan(plan: Plan): FarmResult {
     const perAcreDenominator = c.price * seasons;
     const breakEvenYieldPerAcre = perAcreDenominator > 0 ? totalCost / perAcreDenominator : 0;
 
-    // Cash timing comes from the farmer or a study; require valid profiles for both costs and sales.
-    const hasMonths = isMonthlyProfile(c.costMonths) && isMonthlyProfile(c.revenueMonths);
-    let monthly: CropResult['monthly'] = null;
-    if (hasMonths) {
-      withMonths++;
-      monthly = { revenue: c.revenueMonths!.map(w => revenue * w), costs: c.costMonths!.map(w => operating * w) };
-      for (let m = 0; m < 12; m++) monthlyCash[m] += monthly.revenue[m] - monthly.costs[m];
-    }
-
-    return { cropId: c.id, name: c.name, acres, units, revenue, operating, machineRunning, customHire, overheadShare, equipmentShare, totalCost, net, contribution, breakEvenPrice, breakEvenYieldPerAcre, hasMonths, overheadItems: overheadRows, machines: machineRows, monthly, costParts, operationRows };
+    return { cropId: c.id, name: c.name, acres, units, revenue, operating, machineRunning, customHire, overheadShare, equipmentShare, totalCost, net, contribution, breakEvenPrice, breakEvenYieldPerAcre, hasMonths, overheadItems: overheadRows, machines: machineRows, monthly, costParts: costPartsFull, operationRows };
   });
 
   // Overhead and equipment ownership go out evenly through the year, but only the share belonging to

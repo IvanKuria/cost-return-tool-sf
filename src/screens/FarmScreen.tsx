@@ -14,7 +14,7 @@ export function FarmScreen({ plan, dispatch }: { plan: Plan; dispatch: Dispatch<
   const farm = plan.farm;
   const set = (patch: Partial<Farm>) => dispatch({ type: 'farm', patch });
   const [advanced, setAdvanced] = useState(() => !!farm.missingFields?.some(f => f === 'interestRate' || f === 'payrollOverhead'));
-  const numberProps = (field: 'bedLengthFt' | 'bedWidthIn' | 'landRentPerAcre' | 'ownLaborRate' | 'hiredLaborRate' | 'interestRate' | 'payrollOverhead' | 'insuranceRate' | 'propertyTaxRate', factor = 1) => ({
+  const numberProps = (field: 'bedLengthFt' | 'bedWidthIn' | 'landRentPerAcre' | 'ownLaborRate' | 'hiredLaborRate' | 'interestRate' | 'operatingInterestRate' | 'payrollOverhead' | 'insuranceRate' | 'propertyTaxRate', factor = 1) => ({
     value: round(farm[field] * factor, 4), missing: isMissing(farm, field), placeholder: t('inputs.enterNumber'),
     onChange: (v: number) => set(inputPatch(farm, field, v / factor)), onMissingChange: () => set(inputPatch(farm, field, undefined)),
   });
@@ -64,11 +64,11 @@ export function FarmScreen({ plan, dispatch }: { plan: Plan; dispatch: Dispatch<
           />
         </Field>
 
-        {farm.areaUnit === 'beds' && (
+        {farm.areaUnit !== 'acres' && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Field label={t('farm.bedLength')}>
+            {farm.areaUnit === 'beds' && <Field label={t('farm.bedLength')}>
               <NumberInput {...numberProps('bedLengthFt')} suffix={t('common.ft')} />
-            </Field>
+            </Field>}
             <Field label={t('farm.bedWidth')}>
               <NumberInput {...numberProps('bedWidthIn')} suffix={t('common.in')} />
             </Field>
@@ -141,6 +141,9 @@ export function FarmScreen({ plan, dispatch }: { plan: Plan; dispatch: Dispatch<
           <Card className="mt-3 p-5 flex flex-col gap-5">
             <Field label={t('farm.interest')} tag={sourceTag('interestRate')} hint={t('farm.interest.hint')}>
               <NumberInput {...numberProps('interestRate', 100)} step={0.01} suffix={t('common.percent')} />
+            </Field>
+            <Field label={t('farm.operatingInterest')} tag={sourceTag('operatingInterestRate')} hint={t('farm.operatingInterest.hint')}>
+              <NumberInput {...numberProps('operatingInterestRate', 100)} step={0.01} suffix={t('common.percent')} />
             </Field>
             <Field label={t('farm.payroll')} tag={sourceTag('payrollOverhead')} hint={t('farm.payroll.hint')}>
               <NumberInput {...numberProps('payrollOverhead', 100)} step={0.1} suffix={t('common.percent')} />

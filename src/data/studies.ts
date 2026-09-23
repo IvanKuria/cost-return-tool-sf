@@ -203,6 +203,7 @@ export function operationsFromStudy(s: ParsedStudy): CropOperation[] {
       else { otherLabor = labor; notes.push('Labor kept in dollars; the study states no field labor rate'); }
     }
     const hiredMachine = isMachine ? Math.round(fuelLube + operatorDollars) : 0;
+    if (isMachine) notes.push(`If hired out, the starting price $${hiredMachine} is the study's fuel, lube, repairs and operator labor for this row, not a custom rate; a custom operator also charges for owning the machine, so enter the quote you get`);
     const citation = cite(s, o.page, `${o.quote}${notes.length ? ' (' + notes.join('. ') + '.)' : ''}`, 'Costs per acre table row', o.totalCost ?? null);
     return {
       id: `op-${i}`, name: o.name, category: o.category, enabled: true,

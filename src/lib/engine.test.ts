@@ -1,5 +1,6 @@
+import { DEFAULT_FARM } from './store';
 import { describe, expect, it } from 'vitest';
-import { computePlan, crf,  ownership, toAcres } from './engine';
+import { computePlan, crf, ownership, toAcres } from './engine';
 import { SAMPLE_PLAN } from '../data/sample';
 import type { Equipment } from './types';
 
@@ -67,5 +68,22 @@ describe('computePlan', () => {
     expect(e.net).toBe(0); // no crops means nothing is allocated, so nothing is lost on paper
     expect(e.crops).toHaveLength(0);
     expect(e.monthlyCash.every((m) => !Number.isNaN(m))).toBe(true);
+  });
+
+  it('charges interest on cash spent ahead of sales, and none at a zero rate', async () => {
+    const { SAMPLE_PLAN } = await import('../data/sample');
+    const timed = SAMPLE_PLAN.crops.find(c => c.costMonths && c.revenueMonths);
+    expect(timed).toBeTruthy();
+    const plan = { ...SAMPLE_PLAN, crops: [timed!], farm: { ...SAMPLE_PLAN.farm, operatingInterestRate: 0.06 } };
+    const withInterest = computePlan(plan).crops[0];
+    expect(withInterest.costParts.interest).toBeGreaterThan(0);
+    const noInterest = computePlan({ ...plan, farm: { ...plan.farm, operatingInterestRate: 0 } }).crops[0];
+    expect(noInterest.costParts.interest).toBe(0);
+    expect(withInterest.operating - noInterest.operating).toBeCloseTo(withInterest.costParts.interest, 6);
+  });
+
+  it('converts 100 ft rows with the farm bed width', () => {
+    const farm = { ...DEFAULT_FARM, areaUnit: 'rows100ft' as const, bedWidthIn: 60 };
+    expect(toAcres(1, farm)).toBeCloseTo((100 * 5) / 43560, 8);
   });
 });

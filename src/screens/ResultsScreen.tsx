@@ -261,7 +261,7 @@ function CropDetail({ plan, crop }: { plan: Plan; crop: CropResult }) {
     </div>
   );
   const [opsOpen, setOpsOpen] = useState(false);
-  const partLabel: Record<keyof CropResult['costParts'], Key> = { materials: 'ops.part.materials', handLabor: 'ops.part.handLabor', operatorLabor: 'ops.part.operatorLabor', machineRunning: 'ops.part.machineRunning', hiredMachine: 'ops.part.hiredMachine', custom: 'ops.part.custom', otherLabor: 'ops.part.otherLabor', ownLabor: 'ops.part.ownLabor', hiredJobs: 'ops.part.hiredJobs', lump: 'ops.part.lump' };
+  const partLabel: Record<keyof CropResult['costParts'], Key> = { materials: 'ops.part.materials', handLabor: 'ops.part.handLabor', operatorLabor: 'ops.part.operatorLabor', machineRunning: 'ops.part.machineRunning', hiredMachine: 'ops.part.hiredMachine', custom: 'ops.part.custom', otherLabor: 'ops.part.otherLabor', ownLabor: 'ops.part.ownLabor', hiredJobs: 'ops.part.hiredJobs', lump: 'ops.part.lump', interest: 'ops.part.interest' };
   const parts = (Object.keys(partLabel) as (keyof CropResult['costParts'])[]).filter(k => crop.costParts[k] > 0);
   return (
     <div className="mt-2 rounded-[10px] bg-well px-4 py-3 space-y-4">

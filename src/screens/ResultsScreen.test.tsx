@@ -17,7 +17,7 @@ function enteredCrop(): Crop {
   };
 }
 function render(crops: Crop[]) {
-  const plan: Plan = { farm: { ...DEFAULT_FARM }, crops, equipment: [] };
+  const plan: Plan = { farm: { ...DEFAULT_FARM, operatingInterestRate: 0 }, crops, equipment: [] };
   return renderToStaticMarkup(<I18nProvider><ResultsScreen plan={plan} result={computePlan(plan)} dispatch={() => {}} /></I18nProvider>);
 }
 function chart(html: string) {

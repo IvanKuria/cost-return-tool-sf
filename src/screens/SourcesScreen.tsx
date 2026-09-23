@@ -2,6 +2,7 @@ import type { Dispatch } from 'react';
 import type { Plan, Citation, Farm, Crop, Equipment, NumericField } from '../lib/types';
 import type { Action } from '../lib/store';
 import { METHOD } from '../lib/engine';
+import { APP_METHODS } from '../lib/methods';
 import { isMissing } from '../lib/inputs';
 import { canRestoreSource, restoreSourceValue, sourceDisplayValue, sourceStatus, sourceUnitChanged } from '../lib/source';
 import { CitationCard } from '../ui';
@@ -29,6 +30,11 @@ export function SourcesScreen({ plan, dispatch }: { plan: Plan; dispatch?: Dispa
       <div className="rounded-[var(--radius-ctl)] bg-well p-4 text-[14px] space-y-1"><div className="font-medium">{t('sources.rates')}</div>
         <div>{t('sources.rate.insurance', { rate: (plan.farm.insuranceRate * 100).toLocaleString('en-US', { maximumFractionDigits: 3 }) })}</div>
         <div>{t('sources.rate.propertyTax', { rate: (plan.farm.propertyTaxRate * 100).toLocaleString('en-US', { maximumFractionDigits: 3 }) })}</div></div></section>
+    <section className="space-y-3"><h2 className="text-xl font-semibold">{t('sources.ours')}</h2><p className="text-ink-2 text-[15px]">{t('sources.ours.intro')}</p>
+      <div className="divide-y divide-line border-t border-line">{APP_METHODS.map(m => <div key={m.key} className="py-3">
+        <div className="flex items-baseline gap-2"><span className="font-medium">{t(`sources.ours.${m.key}` as Parameters<typeof t>[0])}</span><span className={`text-[12px] rounded-full px-2 py-0.5 ${m.kind === 'assumption' ? 'bg-accent-soft text-accent-deep' : 'bg-well text-ink-2'}`}>{t(m.kind === 'assumption' ? 'sources.ours.assumption' : 'sources.ours.standard')}</span></div>
+        <code className="block mt-1 text-[13px] text-ink-2 whitespace-pre-wrap font-mono">{m.formula}</code>
+      </div>)}</div></section>
     <section className="space-y-5"><h2 className="text-xl font-semibold">{t('sources.plan')}</h2><p className="text-ink-2">{t('sources.plan.intro')}</p>{groups.length === 0 && <p className="rounded-[var(--radius-ctl)] bg-well p-4 text-ink-2">{t('sources.none')}</p>}{groups.map((g, i) => <div key={i} className="space-y-3"><h3 className="font-semibold">{g.name}</h3>{Object.entries(g.citations).filter(([, citation]) => Boolean(citation)).map(([key, raw]) => {
       const citation = raw as Citation;
       const value = sourceDisplayValue(g.values, key);

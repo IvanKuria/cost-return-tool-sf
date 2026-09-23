@@ -30,7 +30,7 @@ export type Action =
  */
 export const DEFAULT_FARM: Farm = {
   name: '', county: 'Santa Cruz', areaUnit: 'acres', bedLengthFt: 100, bedWidthIn: 30,
-  interestRate: 0.0475, ownLaborRate: 0, hiredLaborRate: 0, payrollOverhead: 0.40,
+  interestRate: 0.0475, operatingInterestRate: 0.0575, ownLaborRate: 0, hiredLaborRate: 0, payrollOverhead: 0.40,
   landRentPerAcre: 0, overheadItems: [], overheadBasis: 'acres', equipmentBasis: 'hours',
   insuranceRate: STUDY_INSURANCE_RATE, propertyTaxRate: STUDY_PROPERTY_TAX_RATE,
   citations: {},
@@ -69,6 +69,7 @@ export function migratePlan(raw: unknown): Plan {
   if (!farm.equipmentBasis) farm.equipmentBasis = 'hours';
   if (typeof farm.insuranceRate !== 'number') farm.insuranceRate = STUDY_INSURANCE_RATE;
   if (typeof farm.propertyTaxRate !== 'number') farm.propertyTaxRate = STUDY_PROPERTY_TAX_RATE;
+  if (typeof farm.operatingInterestRate !== 'number') farm.operatingInterestRate = DEFAULT_FARM.operatingInterestRate;
   const equipment: Equipment[] = p.equipment.map(e => {
     if (typeof e.fuelLubePerHour === 'number' && typeof e.repairsPerHour === 'number') return e;
     // A v3 plan held one running figure. Keep it whole under fuel and lube rather than invent a split.

@@ -186,6 +186,9 @@ export async function buildWorkbook(snapshot: ExportSnapshot): Promise<Uint8Arra
     sheet.addRow([]);
     fmtRow(sheet, [L.methods], NUMBER, { bold: true });
     for (const m of snapshot.sources.methods) { const row = sheet.addRow([m.studyTitle, '', m.name, '', m.page, m.quote, '']); row.alignment = { vertical: 'top', wrapText: true }; }
+    sheet.addRow([]);
+    fmtRow(sheet, [snapshot.sources.oursTitle], NUMBER, { bold: true });
+    for (const m of snapshot.sources.ours) { const row = sheet.addRow(['', m.kind, m.name, '', '', m.formula, '']); row.alignment = { vertical: 'top', wrapText: true }; }
     [40, 22, 34, 16, 8, 70, 40].forEach((w, i) => { sheet.getColumn(i + 1).width = w; });
   }
 
@@ -435,6 +438,15 @@ export async function buildPdf(snapshot: ExportSnapshot): Promise<Uint8Array<Arr
       ensure(16);
       para(`${m.name} (${m.studyTitle}, ${L.page.toLowerCase()} ${m.page})`, 9.5, ink, 'bold');
       para(m.quote, 8.5, grey);
+    }
+  }
+  if (snapshot.sources.ours.length) {
+    subhead(snapshot.sources.oursTitle);
+    para(snapshot.sources.oursIntro, 8.5, grey);
+    for (const m of snapshot.sources.ours) {
+      ensure(14);
+      para(`${m.name} (${m.kind})`, 9.5, ink, 'bold');
+      para(m.formula, 8.5, grey);
     }
   }
 

@@ -5,6 +5,7 @@ import type { Lang } from '../i18n';
 import { studyById } from '../data/studies';
 import type { Citation, Crop, Equipment, FarmResult, Plan } from './types';
 import { isMissing, missingPlanInputs } from './inputs';
+import { APP_METHODS } from './methods';
 import { METHOD, operationCost, ownership, toAcres, usesOperations } from './engine';
 import { sourceDisplayValue, sourceStatus } from './source';
 
@@ -23,6 +24,7 @@ export interface CropDetail { id: string; name: string; inputs: LabeledValue[]; 
 export interface EquipmentRow { name: string; condition: string; paid: number; year: number; keepYears: number; hoursPerYear: number; salvage: number; fuelLube: number; repairs: number; capitalRecovery: number; interestOnSalvage: number; insurance: number; taxes: number; totalPerYear: number; ownPerHour: number; allInPerHour: number }
 export interface SourceStudy { title: string; year: number | null; region: string | null; url: string; items: { owner: string; what: string; value: string; page: number; quote: string }[] }
 export interface MethodLine { name: string; quote: string; page: number; studyTitle: string }
+export interface OurMethodLine { name: string; kind: string; formula: string }
 
 export interface ExportSnapshot {
   title: string;
@@ -40,7 +42,7 @@ export interface ExportSnapshot {
   cropDetails: CropDetail[];
   equipment: EquipmentRow[];
   farm: { fields: LabeledValue[]; overheadItems: { name: string; amount: number; basis: string }[]; rules: string[]; rates: LabeledValue[] };
-  sources: { studies: SourceStudy[]; methods: MethodLine[] };
+  sources: { studies: SourceStudy[]; methods: MethodLine[]; ours: OurMethodLine[]; oursTitle: string; oursIntro: string };
   labels: Record<string, string>;
 }
 
@@ -236,7 +238,8 @@ export function createExportSnapshot(plan: Plan, result: FarmResult, lang: Lang,
     cashFlow: { months, rows: cashRows, excluded, intro: t('results.cashFlow.intro') },
     cropDetails, equipment,
     farm: { fields: farmFields, overheadItems, rules, rates },
-    sources: { studies: [...studies.values()], methods },
+    sources: { studies: [...studies.values()], methods, oursTitle: t('sources.ours'), oursIntro: t('sources.ours.intro'),
+      ours: APP_METHODS.map(m => ({ name: t(`sources.ours.${m.key}` as Key), kind: t(m.kind === 'assumption' ? 'sources.ours.assumption' : 'sources.ours.standard'), formula: m.formula })) },
     labels,
   };
 }

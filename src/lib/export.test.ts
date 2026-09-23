@@ -9,7 +9,7 @@ import type { Plan } from './types';
 
 function planFixture(): Plan {
   return {
-    farm: { ...DEFAULT_FARM, name: 'Finca Peña', interestRate: 0.05, overheadItems: [{ id: 'ins', name: 'Insurance', amountPerYear: 120, basis: 'acres' }] }, equipment: [],
+    farm: { ...DEFAULT_FARM, name: 'Finca Peña', interestRate: 0.05, operatingInterestRate: 0, overheadItems: [{ id: 'ins', name: 'Insurance', amountPerYear: 120, basis: 'acres' }] }, equipment: [],
     crops: [{ ...newBlankCrop('beans'), name: '=SUM(A1:A2)', area: 1, plantingsPerYear: 1,
       yieldPerAcre: 100, price: 12, operatingCostPerAcre: 200, missingFields: ['ownLaborHoursPerAcre'],
       costMonths: Array.from({ length: 12 }, (_, i) => i === 0 ? 1 : 0),

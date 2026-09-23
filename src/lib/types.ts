@@ -21,7 +21,7 @@ export interface Citation {
   value: number | null;       // null when the study only gives a sentence, not a number
 }
 
-export type FarmCitedField = 'interestRate' | 'hiredLaborRate' | 'ownLaborRate' | 'payrollOverhead' | 'landRentPerAcre' | 'insuranceRate' | 'propertyTaxRate';
+export type FarmCitedField = 'interestRate' | 'operatingInterestRate' | 'hiredLaborRate' | 'ownLaborRate' | 'payrollOverhead' | 'landRentPerAcre' | 'insuranceRate' | 'propertyTaxRate';
 
 /** How a whole-farm cost is split between crops. */
 export type AllocationBasis = 'acres' | 'revenue';
@@ -44,7 +44,8 @@ export interface Farm {
   areaUnit: AreaUnit;          // how the farmer thinks about land; engine converts to acres
   bedLengthFt: number;         // used when areaUnit is 'beds'
   bedWidthIn: number;
-  interestRate: number;        // 0.0475 means 4.75 percent
+  interestRate: number;        // 0.0475 means 4.75 percent, for capital recovery
+  operatingInterestRate: number; // yearly rate charged on cash spent before sales come in (the studies' interest on operating capital)
   ownLaborRate: number;        // $/hr the farmer pays themself
   hiredLaborRate: number;      // $/hr for hired field work, before payroll overhead
   payrollOverhead: number;     // 0.34 means 34 percent on top of wages
@@ -173,7 +174,7 @@ export interface CropResult {
   breakEvenPrice: number;      // total cost / units
   breakEvenYieldPerAcre: number;
   hasMonths: boolean;          // whether this crop is in the monthly cash view
-  costParts: { materials: number; handLabor: number; operatorLabor: number; machineRunning: number; hiredMachine: number; custom: number; otherLabor: number; ownLabor: number; hiredJobs: number; lump: number }; // what operating is made of; lump is the typed per-acre cost when no operations exist
+  costParts: { materials: number; handLabor: number; operatorLabor: number; machineRunning: number; hiredMachine: number; custom: number; otherLabor: number; ownLabor: number; hiredJobs: number; lump: number; interest: number }; // what operating is made of; lump is the typed per-acre cost when no operations exist
   operationRows: { id: string; name: string; category: OperationCategory; cost: number; assigned: string | null }[]; // per enabled operation, for the year
   overheadItems: { id: string; name: string; amount: number; basis: AllocationBasis }[]; // this crop's share of each whole-farm cost, land rent first
   machines: { equipmentId: string; name: string; share: number; ownership: number; capitalRecovery: number; interestOnSalvage: number; insurance: number; taxes: number; running: number; hours: number }[];

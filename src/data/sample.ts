@@ -35,10 +35,11 @@ function sampleFarm(): Plan['farm'] {
   const citations: Plan['farm']['citations'] = {};
   const farm: Plan['farm'] = {
     name: 'Example farm', county: 'Santa Cruz', areaUnit: 'acres', bedLengthFt: 100, bedWidthIn: 30,
-    interestRate: 0.0475, ownLaborRate: 0, hiredLaborRate: 0, payrollOverhead: 0.40,
+    interestRate: 0.0475, operatingInterestRate: 0.0575, ownLaborRate: 0, hiredLaborRate: 0, payrollOverhead: 0.40,
     landRentPerAcre: 0, overheadItems: [], overheadBasis: 'acres', equipmentBasis: 'hours',
     insuranceRate: STUDY_INSURANCE_RATE, propertyTaxRate: STUDY_PROPERTY_TAX_RATE, citations,
   };
+  if (a.operatingInterestRatePct) { farm.operatingInterestRate = a.operatingInterestRatePct.value / 100; citations.operatingInterestRate = cite(s, a.operatingInterestRatePct.page, a.operatingInterestRatePct.quote, 'Interest rate on operating capital', a.operatingInterestRatePct.value); }
   if (a.interestRatePct) { farm.interestRate = a.interestRatePct.value / 100; citations.interestRate = cite(s, a.interestRatePct.page, a.interestRatePct.quote, 'Interest rate for capital recovery', a.interestRatePct.value); }
   if (a.laborNonMachineRate) {
     farm.hiredLaborRate = a.laborNonMachineRate.value;
