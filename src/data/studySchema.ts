@@ -97,6 +97,20 @@ export interface MonthlyCosts {
   quote: string;
 }
 
+export interface EstablishmentYear { year: number; label: string; totalCost: number | null; returns: number | null; netCost: number | null; accumulated: number | null; page: number; quote: string }
+/** How a perennial study turns its establishment years into a yearly charge during production. Only what the study prints. */
+export interface Establishment {
+  years: EstablishmentYear[];
+  accumulatedNetCost: { value: number; page: number; quote: string } | null;
+  annualCharge: { value: number; page: number; quote: string } | null;
+  productionYears: { value: number; page: number; quote: string } | null;
+  plantingLife: { value: number; page: number; quote: string } | null;
+  amortizedFromYear: { value: number; page: number; quote: string } | null;
+  removalCost: { value: number; note: string; page: number; quote: string } | null;
+  asset: { price: number; yearsLife: number; salvageValue: number; capitalRecovery: number; page: number; line: string } | null;
+  method: { page: number; quote: string } | null;
+}
+
 export interface ParsedStudy {
   source: StudySource;
   assumptions: Assumptions;
@@ -107,5 +121,6 @@ export interface ParsedStudy {
   businessOverhead: BusinessOverheadRow[];
   method: Method;
   monthly?: MonthlyCosts | null;
+  establishment?: Establishment | null;
   parse: ParseReport;
 }

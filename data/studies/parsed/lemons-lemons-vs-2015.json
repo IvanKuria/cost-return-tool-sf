@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a1/39/a139af36-5c70-48ec-8367-bc534c314eb3/lemons-vs-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -812,6 +812,40 @@
   }
  },
  "monthly": null,
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 6453,
+   "page": 11,
+   "quote": "For this study the cost is $6,453 per acre or $64,530 for the 10-acre orchard."
+  },
+  "annualCharge": {
+   "value": 374,
+   "page": 18,
+   "quote": "Orchard Establishment 6,453 374 374"
+  },
+  "productionYears": {
+   "value": 37,
+   "page": 23,
+   "quote": "Orchard Establishment (10 acres) 64,530 37 0 3,736 27 323 0 4,086 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 40,
+   "page": 11,
+   "quote": "The establishment cost is spread over the remaining 37 years of the 40 years the orchard is in production."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 64530,
+   "yearsLife": 37,
+   "salvageValue": 0,
+   "capitalRecovery": 3736,
+   "page": 23,
+   "line": "Orchard Establishment (10 acres) 64,530 37 0 3,736 27 323 0 4,086"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -830,7 +864,10 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",

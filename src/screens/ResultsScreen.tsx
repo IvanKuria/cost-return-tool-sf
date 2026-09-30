@@ -1,18 +1,14 @@
-import { useMemo, useState, type Dispatch } from 'react';
+import { useState, type Dispatch } from 'react';
 import type { Action } from '../lib/store';
 import type { AllocationBasis, CropResult, EquipmentBasis, FarmResult, OperationCategory, Plan } from '../lib/types';
-import { inputPatch, missingPlanInputs } from '../lib/inputs';
+import { missingPlanInputs } from '../lib/inputs';
 import { MissingInputs } from './MissingInputs';
 import { ExportActions } from './ExportActions';
-import { computePlan } from '../lib/engine';
-import { Button, Choice, Select, money, num, cents } from '../ui';
-import { Slider as ShadSlider } from '@/components/ui/slider';
+import { Button, Choice, money, num } from '../ui';
+import { UcTables } from './UcTables';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { useT, useTypeName, useUnit } from '../i18n';
+import { useT, useTypeName } from '../i18n';
 import type { Key } from '../i18n/en';
-
-/** A cost shown per hour: real minus sign, two decimals. */
-const negCents = (n: number) => (n > 0 ? `\u2212${cents(n)}` : cents(n));
 
 const CATEGORY_KEY: Record<OperationCategory, Key> = { cultural: 'ops.category.cultural', harvest: 'ops.category.harvest', assessment: 'ops.category.assessment', postharvest: 'ops.category.postharvest', other: 'ops.category.other' };
 const monthKey = (i: number) => `month.${i}` as Key;
@@ -60,13 +56,9 @@ export function ResultsScreen({ plan, dispatch, result }: { plan: Plan; dispatch
       <CashChart plan={plan} result={result} />
       <CropTable plan={plan} result={result} />
       <details className="border-t border-line pt-5">
-        <summary className="cursor-pointer text-[20px] font-semibold">{t('results.whatIf')}</summary>
-        <div className="pt-5"><Room plan={plan} dispatch={dispatch} result={result} /></div>
+        <summary className="cursor-pointer text-[20px] font-semibold">{t('uc.tables')}</summary>
+        <div className="pt-5"><UcTables plan={plan} result={result} /></div>
       </details>
-      {result.machines.length > 0 && <details className="border-t border-line pt-5">
-        <summary className="cursor-pointer text-[20px] font-semibold">{t('results.machines')}</summary>
-        <div className="pt-5"><Machines plan={plan} result={result} /></div>
-      </details>}
       <Button onClick={() => dispatch({ type: 'go', step: 'sources' })}>{t('app.sources')}</Button>
       <ExportActions plan={plan} result={result} />
     </div>
@@ -84,6 +76,7 @@ function TheAnswer({ result, provisional }: { result: FarmResult; provisional: b
       <div className="mt-6 pt-5 border-t border-line grid gap-5 sm:grid-cols-3">
         <Fact label={t('results.sales')} value={money(result.revenue)} />
         <Fact label={t('results.allCosts')} value={money(-result.totalCost)} tone="loss" />
+        {result.customWork.income > 0 && <Fact label={t('uc.cw.income')} value={money(result.customWork.net, { sign: true })} tone={result.customWork.net < 0 ? 'loss' : 'gain'} />}
         <Fact label={t('summary.net')} value={money(result.net, { sign: true })} tone={result.net < 0 ? 'loss' : 'gain'} />
       </div>
     </section>
@@ -261,7 +254,7 @@ function CropDetail({ plan, crop }: { plan: Plan; crop: CropResult }) {
     </div>
   );
   const [opsOpen, setOpsOpen] = useState(false);
-  const partLabel: Record<keyof CropResult['costParts'], Key> = { materials: 'ops.part.materials', handLabor: 'ops.part.handLabor', operatorLabor: 'ops.part.operatorLabor', machineRunning: 'ops.part.machineRunning', hiredMachine: 'ops.part.hiredMachine', custom: 'ops.part.custom', otherLabor: 'ops.part.otherLabor', ownLabor: 'ops.part.ownLabor', hiredJobs: 'ops.part.hiredJobs', lump: 'ops.part.lump', interest: 'ops.part.interest' };
+  const partLabel: Record<keyof CropResult['costParts'], Key> = { materials: 'ops.part.materials', handLabor: 'ops.part.handLabor', operatorLabor: 'ops.part.operatorLabor', machineRunning: 'ops.part.machineRunning', rent: 'ops.part.rent', hiredMachine: 'ops.part.hiredMachine', custom: 'ops.part.custom', otherLabor: 'ops.part.otherLabor', ownLabor: 'ops.part.ownLabor', hiredJobs: 'ops.part.hiredJobs', lump: 'ops.part.lump', interest: 'ops.part.interest' };
   const parts = (Object.keys(partLabel) as (keyof CropResult['costParts'])[]).filter(k => crop.costParts[k] > 0);
   return (
     <div className="mt-2 rounded-[10px] bg-well px-4 py-3 space-y-4">
@@ -282,11 +275,21 @@ function CropDetail({ plan, crop }: { plan: Plan; crop: CropResult }) {
           )}
         </div>
       )}
-      {crop.overheadItems.length === 0 && machines.length === 0 && crop.operating <= 0 && <p className="text-[14px] text-ink-2">{t('results.breakdown.none')}</p>}
+      {crop.overheadItems.length === 0 && machines.length === 0 && crop.operating <= 0 && !crop.establishment && <p className="text-[14px] text-ink-2">{t('results.breakdown.none')}</p>}
       {crop.overheadItems.length > 0 && (
         <div className="space-y-1">
           {line(t('results.breakdown.overhead'), crop.overheadShare, undefined, true)}
           {crop.overheadItems.map(o => <div key={o.id} className="pl-3">{line(o.id === 'land-rent' ? t('results.breakdown.landRent') : (o.name.trim() || t('export.item')), o.amount, t('results.breakdown.by', { basis: basis(o.basis) }))}</div>)}
+        </div>
+      )}
+      {crop.establishment && (
+        <div className="space-y-1">
+          {line(t('results.breakdown.establishment'), crop.establishment.total, undefined, true)}
+          <div className="pl-3">
+            {line(t('results.breakdown.capitalRecovery'), crop.establishment.capitalRecovery)}
+            {line(t('results.breakdown.insurance'), crop.establishment.insurance)}
+            {line(t('results.breakdown.propertyTax'), crop.establishment.taxes)}
+          </div>
         </div>
       )}
       {machines.length > 0 && (
@@ -372,95 +375,6 @@ function CashFlowTable({ plan, result }: { plan: Plan; result: FarmResult }) {
   );
 }
 
-/* ---------- 3. What if ---------- */
-
-function Room({ plan, dispatch, result }: { plan: Plan; dispatch: Dispatch<Action>; result: FarmResult }) {
-  const { t } = useT();
-  const typeName = useTypeName();
-  const unitWord = useUnit();
-  const [cropId, setCropId] = useState(plan.crops[0].id);
-  const crop = plan.crops.find(c => c.id === cropId) ?? plan.crops[0];
-  const name = typeName('crop', crop.typeId, crop.name);
-  const [yieldPct, setYieldPct] = useState(100);
-  const [pricePct, setPricePct] = useState(100);
-
-  const yieldPerAcre = crop.yieldPerAcre * (yieldPct / 100);
-  const price = crop.price * (pricePct / 100);
-
-  const trial = useMemo(() => {
-    const changed: Plan = { ...plan, crops: plan.crops.map(c => c.id === crop.id ? { ...c, yieldPerAcre, price } : c) };
-    return computePlan(changed);
-  }, [plan, crop.id, yieldPerAcre, price]);
-  const trialCrop: CropResult | undefined = trial.crops.find(c => c.cropId === crop.id);
-  const baseCrop = result.crops.find(c => c.cropId === crop.id);
-
-  const pick = (id: string) => { setCropId(id); setYieldPct(100); setPricePct(100); };
-  const keep = () => {
-    dispatch({ type: 'crop.update', id: crop.id, patch: { ...inputPatch({ ...crop, ...inputPatch(crop, 'yieldPerAcre', yieldPerAcre) }, 'price', price), yieldPerAcre, price } });
-    setYieldPct(100); setPricePct(100);
-  };
-  const changed = yieldPct !== 100 || pricePct !== 100;
-  const unit = unitWord(crop.unit);
-  const units = unitWord(crop.unit, true);
-
-  return (
-    <section>
-      <div className="max-w-[560px] space-y-5">
-        <Select value={crop.id} onChange={e => pick(e.target.value)} aria-label={t('results.crop')}>
-          {plan.crops.map(c => <option key={c.id} value={c.id}>{typeName('crop', c.typeId, c.name)}</option>)}
-        </Select>
-
-        <Slider
-          label={t('results.yieldPerAcre')}
-          shown={`${num(yieldPerAcre)} ${units}`}
-          min={50} max={150} value={yieldPct} onChange={setYieldPct}
-          lo={`${num(crop.yieldPerAcre * 0.5)}`} hi={`${num(crop.yieldPerAcre * 1.5)}`}
-        />
-        <Slider
-          label={t('results.pricePer', { unit })}
-          shown={cents(price)}
-          min={60} max={140} value={pricePct} onChange={setPricePct}
-          lo={cents(crop.price * 0.6)} hi={cents(crop.price * 1.4)}
-        />
-
-        <div className="grid grid-cols-2 gap-x-6 gap-y-4 pt-4 border-t border-line">
-          <Fact label={t('results.cropSales', { crop: name })} value={money(trialCrop?.revenue ?? 0)} />
-          <Fact label={t('results.cropNet', { crop: name })} value={money(trialCrop?.net ?? 0, { sign: true })} tone={(trialCrop?.net ?? 0) < 0 ? 'loss' : undefined} />
-          <Fact label={t('results.farmNet')} value={money(trial.net)} tone={trial.net < 0 ? 'loss' : undefined} />
-          <Fact label={t('results.breakEven', { unit })} value={cents(trialCrop?.breakEvenPrice ?? 0)} />
-        </div>
-        {baseCrop && changed && (
-          <p className="text-[14px] text-ink-2">
-            {t('results.netMoves', { crop: name, from: money(baseCrop.net, { sign: true }), to: money(trialCrop?.net ?? 0, { sign: true }) })}
-          </p>
-        )}
-        <div className="flex items-center gap-3">
-          <Button variant="secondary" onClick={keep} disabled={!changed}>{t('results.keep')}</Button>
-          {changed && <Button variant="ghost" onClick={() => { setYieldPct(100); setPricePct(100); }}>{t('results.reset')}</Button>}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Slider({ label, shown, min, max, value, onChange, lo, hi }: { label: string; shown: string; min: number; max: number; value: number; onChange: (n: number) => void; lo: string; hi: string }) {
-  return (
-    <div>
-      <div className="flex justify-between items-baseline mb-3">
-        <span className="font-medium text-[15px]">{label}</span>
-        <span className="tnum font-semibold">{shown}</span>
-      </div>
-      <ShadSlider
-        aria-label={label}
-        min={min} max={max} step={1} value={[value]}
-        onValueChange={(v) => onChange(v[0] ?? value)}
-        className="py-2 [&_[data-slot=slider-track]]:h-2 [&_[data-slot=slider-thumb]]:size-6 [&_[data-slot=slider-thumb]]:border-2 [&_[data-slot=slider-thumb]]:border-accent"
-      />
-      <div className="flex justify-between text-[12px] text-ink-3 tnum mt-1"><span>{lo}</span><span>{hi}</span></div>
-    </div>
-  );
-}
-
 /* ---------- 4. Cash through the year ---------- */
 
 function niceStep(maxAbs: number) {
@@ -532,88 +446,6 @@ function CashChart({ plan, result }: { plan: Plan; result: FarmResult }) {
         <p className="mt-2 text-[14px] text-ink-2">{t('chart.lowest', { month: t(monthLongKey(result.lowestCashPoint.month)), amount: money(result.lowestCashPoint.cumulative) })}</p>
       </>}
       <p className="mt-4 text-[13px] text-ink-2 leading-relaxed">{t('chart.assumptions')}</p>
-    </section>
-  );
-}
-
-/* ---------- 5. What your machines cost per hour ---------- */
-
-function Machines({ plan, result }: { plan: Plan; result: FarmResult }) {
-  const { t } = useT();
-  const typeName = useTypeName();
-  const cropName = useCropName(plan);
-  if (result.machines.length === 0) return null;
-  const rows = [...result.machines].sort((a, b) => b.ownPerYear - a.ownPerYear);
-  const machineName = (id: string, fallback: string) => {
-    const e = plan.equipment.find(x => x.id === id);
-    return e ? typeName('equipment', e.typeId, e.name) : fallback;
-  };
-  return (
-    <section>
-      <div className="sm:hidden divide-y divide-line border-t border-line">
-        {rows.map(m => {
-          const top = [...m.byCrop].filter(b => b.hours > 0).sort((a, b) => b.hours - a.hours).slice(0, 2);
-          return (
-            <div key={m.equipmentId} className="py-3">
-              <div className="flex items-baseline justify-between gap-3">
-                <div className="font-medium min-w-0 truncate">{machineName(m.equipmentId, m.name)}</div>
-                {m.hoursPerYear > 0
-                  ? <div className="text-[17px] font-semibold tnum text-loss whitespace-nowrap">{negCents(m.allInPerHour)} <span className="text-[13px] font-normal text-ink-2">{t('results.perHourShort')}</span></div>
-                  : <div className="text-[13px] text-ink-2">{t('results.notTracked')}</div>}
-              </div>
-              <div className="text-[13px] text-ink-2 mt-0.5">
-                <span className="text-loss tnum">{t('results.aYearToOwn', { amount: money(-m.ownPerYear) })}</span>
-                {m.hoursPerYear > 0 && <span>, {num(m.hoursPerYear)} {t('results.hoursAYear').toLowerCase()}</span>}
-              </div>
-              <div className="text-[13px] text-ink-2">{top.length === 0 ? t('results.sharedByAcres') : top.map(b => `${cropName(b.cropId, b.name)} ${Math.round(b.share * 100)}%`).join(', ')}</div>
-            </div>
-          );
-        })}
-      </div>
-      <div className="hidden sm:block overflow-x-auto -mx-4 px-4">
-        <Table className="text-[15px]">
-          <TableHeader>
-            <TableRow className="text-ink-2">
-              <TableHead className="pl-0">{t('results.machine')}</TableHead>
-              <TableHead className="text-right">{t('results.hoursAYear')}</TableHead>
-              <TableHead className="text-right">{t('results.owning')}</TableHead>
-              <TableHead className="text-right">{t('results.running')}</TableHead>
-              <TableHead className="text-right">{t('results.allIn')}</TableHead>
-              <TableHead>{t('results.mostlyUsedOn')}</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {rows.map(m => {
-              const top = [...m.byCrop].filter(b => b.hours > 0).sort((a, b) => b.hours - a.hours).slice(0, 2);
-              const unclaimed = m.hoursPerYear - m.hoursAssigned;
-              return (
-                <TableRow key={m.equipmentId} className="align-top">
-                  <TableCell className="pl-0 py-2.5">
-                    <div className="font-medium">{machineName(m.equipmentId, m.name)}</div>
-                    <div className="text-[13px] text-loss tnum">{t('results.aYearToOwn', { amount: money(-m.ownPerYear) })}</div>
-                  </TableCell>
-                  {m.hoursPerYear > 0 ? (
-                    <>
-                      <TableCell className="py-2.5 text-right tnum">
-                        {num(m.hoursPerYear)}
-                        {unclaimed > 0.5 && <div className="text-[12px] text-ink-2">{t('results.notOnCrop', { hours: num(unclaimed) })}</div>}
-                      </TableCell>
-                      <TableCell className="py-2.5 text-right tnum text-loss">{negCents(m.ownPerHour)}</TableCell>
-                      <TableCell className="py-2.5 text-right tnum text-loss">{negCents(m.runPerHour)}</TableCell>
-                      <TableCell className="py-2.5 text-right tnum font-semibold text-loss">{negCents(m.allInPerHour)}</TableCell>
-                    </>
-                  ) : (
-                    <TableCell colSpan={4} className="py-2.5 text-ink-2 text-right">{t('results.notTracked')}</TableCell>
-                  )}
-                  <TableCell className="py-2.5 text-ink-2 whitespace-normal min-w-[180px]">
-                    {top.length === 0 ? t('results.sharedByAcres') : top.map(b => `${cropName(b.cropId, b.name)} ${Math.round(b.share * 100)}%`).join(', ')}
-                  </TableCell>
-                </TableRow>
-              );
-            })}
-          </TableBody>
-        </Table>
-      </div>
     </section>
   );
 }

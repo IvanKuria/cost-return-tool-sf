@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/04/20/alfalfaorganiccadraft42021.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -630,6 +630,50 @@
   "page": 17,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ALFALFA HAY"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 879,
+    "returns": null,
+    "netCost": 879,
+    "accumulated": null,
+    "page": 13,
+    "quote": "TOTAL CASH COSTS/ACRE 879"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 879,
+   "page": 10,
+   "quote": "For this study, the cost is $879 per acre or $87,900 for the 100 acres."
+  },
+  "annualCharge": {
+   "value": 251,
+   "page": 15,
+   "quote": "Establishment Cost 879 251 251"
+  },
+  "productionYears": {
+   "value": 4,
+   "page": 10,
+   "quote": "The establishment cost is amortized over the remaining four years of stand life."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 87900,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 25077,
+   "page": 19,
+   "line": "Establishment Cost 87,900 4 0 25,077 0 0 0 25,077"
+  },
+  "method": {
+   "page": 10,
+   "quote": "The establishment cost is amortized over the remaining four years of stand life."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -653,7 +697,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "interestRatePct",

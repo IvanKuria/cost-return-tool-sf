@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a0/49/a049aa0b-6c15-4f16-b8d1-6f971a003d78/2018tablegrapessjvscarletroyalfinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1186,6 +1186,64 @@
   "page": 20,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE TABLE GRAPES-Scarlet Royal"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 6155,
+    "returns": 0,
+    "netCost": 6155,
+    "accumulated": 6155,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,155 15,433 15,427"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 9278,
+    "returns": 0,
+    "netCost": 9.278,
+    "accumulated": 15433,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,155 15,433 15,427"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 11394,
+    "returns": 11400,
+    "netCost": 0,
+    "accumulated": 15427,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,155 15,433 15,427"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": {
+   "value": 22,
+   "page": 23,
+   "quote": "Establishment: SR 617,080 22 0 49,040 261 3,085 0 52,387 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 443,
+   "page": 14,
+   "quote": "Vineyard Removal (50%) 443",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 617080,
+   "yearsLife": 22,
+   "salvageValue": 0,
+   "capitalRecovery": 49040,
+   "page": 23,
+   "line": "Establishment: SR 617,080 22 0 49,040 261 3,085 0 52,387"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1200,7 +1258,8 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "monthly"
+   "monthly",
+   "establishment"
   ],
   "fieldsMissing": [
    "counties",
@@ -1215,10 +1274,13 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block"
+   "Table 2 found but no GROSS RETURNS block",
+   "establishment year 2: running net 6164.278 differs from printed accumulated 15433"
   ]
  }
 }

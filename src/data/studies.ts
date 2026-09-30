@@ -4,7 +4,7 @@
 
 import bundle from './studies.generated.json';
 import type { Cited, EquipmentRow, HourlyEquipmentRow, ParsedStudy } from './studySchema';
-import type { Citation, CropOperation } from '../lib/types';
+import type { Citation, CropOperation, Establishment } from '../lib/types';
 
 interface Bundle {
   generatedAt: string;
@@ -78,9 +78,10 @@ export interface CropDefaults {
   price: number | null;
   plantingsPerYear: number | null;
   operatingCostPerAcre: number | null;
+  establishment: Establishment | null;
   costMonths: number[] | null;
   revenueMonths: number[] | null;
-  citations: { yieldPerAcre?: Citation; price?: Citation; operatingCostPerAcre?: Citation; months?: Citation; plantingsPerYear?: Citation };
+  citations: { yieldPerAcre?: Citation; price?: Citation; operatingCostPerAcre?: Citation; months?: Citation; plantingsPerYear?: Citation; establishment?: Citation };
 }
 
 /** The main product row of the returns table: the one with the largest value. */
@@ -162,7 +163,16 @@ export function cropDefaultsFromStudy(s: ParsedStudy): CropDefaults {
     else { costMonths = null; revenueMonths = null; }
   }
 
-  return { yieldPerAcre, unit, price, plantingsPerYear, operatingCostPerAcre, costMonths, revenueMonths, citations: cit };
+  // Perennials: the study's accumulated net establishment cost and the production years it recovers it over.
+  let establishment: Establishment | null = null;
+  const e = s.establishment;
+  if (e?.accumulatedNetCost && e.productionYears) {
+    establishment = { accumulatedNetCostPerAcre: e.accumulatedNetCost.value, productionYears: e.productionYears.value, removalCostPerAcre: 0 };
+    const printed = e.annualCharge ? ` The study prints the resulting yearly charge as $${e.annualCharge.value} per acre.` : '';
+    const method = e.method ? ` ${e.method.quote}` : '';
+    cit.establishment = cite(s, e.accumulatedNetCost.page, `${e.accumulatedNetCost.quote} Recovered over ${e.productionYears.value} production years (${e.productionYears.quote}) with salvage zero.${printed}${method}`, 'Establishment cost per acre and production years', e.accumulatedNetCost.value);
+  }
+  return { yieldPerAcre, unit, price, plantingsPerYear, operatingCostPerAcre, establishment, costMonths, revenueMonths, citations: cit };
 }
 
 /**
@@ -207,7 +217,7 @@ export function operationsFromStudy(s: ParsedStudy): CropOperation[] {
     const citation = cite(s, o.page, `${o.quote}${notes.length ? ' (' + notes.join('. ') + '.)' : ''}`, 'Costs per acre table row', o.totalCost ?? null);
     return {
       id: `op-${i}`, name: o.name, category: o.category, enabled: true,
-      machineHoursPerAcre: isMachine ? time : 0, operatorHoursPerAcre: operatorHours, equipmentId: null,
+      machineHoursPerAcre: isMachine ? time : 0, operatorHoursPerAcre: operatorHours, mode: 'hire', equipmentId: null, rentPerHour: 0,
       hiredMachinePerAcre: hiredMachine, handHoursPerAcre: handHours, otherLaborPerAcre: Math.round(otherLabor),
       materialsPerAcre: o.materials ?? 0, customPerAcre: o.customRent ?? 0, source: 'study', citation,
     };
@@ -278,8 +288,9 @@ export interface EquipmentDefaults {
   keepYears: number;
   salvageValue: number;
   fuelLubePerHour: number | null;
-  repairsPerHour: number | null;
-  citations: { pricePaid: Citation; keepYears: Citation; salvageValue: Citation; fuelLubePerHour?: Citation; repairsPerHour?: Citation };
+  repairsPctPerYear: number | null;   // the study's repairs per hour x its hours per year / its price
+  studyHoursPerYear: number | null;   // the study's total annual hours for this machine, for reference
+  citations: { pricePaid: Citation; keepYears: Citation; salvageValue: Citation; fuelLubePerHour?: Citation; repairsPctPerYear?: Citation };
 }
 
 /** Seed values for one machine from one study row, each cited to its table line. */
@@ -295,16 +306,21 @@ export function equipmentDefaultsFromRow(entry: CatalogEntry, pick: CatalogRow =
     salvageValue: cite(s, r.page, r.line, 'Salvage value, whole farm equipment table', r.salvageValue),
   };
   let fuelLubePerHour: number | null = null;
-  let repairsPerHour: number | null = null;
+  let repairsPctPerYear: number | null = null;
+  let studyHoursPerYear: number | null = null;
   if (pick.hourly) {
     const h = pick.hourly;
     // The parser folds lube into fuelPerHr (fuel plus lube column).
     fuelLubePerHour = Math.round(h.fuelPerHr * 100) / 100;
-    repairsPerHour = Math.round(h.repairsPerHr * 100) / 100;
     citations.fuelLubePerHour = cite(s, h.page, `${h.line} (fuel plus lube per hour)`, 'Fuel and lube per hour, hourly equipment table', fuelLubePerHour);
-    citations.repairsPerHour = cite(s, h.page, `${h.line} (repairs per hour)`, 'Repairs per hour, hourly equipment table', repairsPerHour);
+    if (h.totalHours && h.totalHours > 0 && r.price > 0) {
+      studyHoursPerYear = h.totalHours;
+      const pct = (h.repairsPerHr * h.totalHours) / r.price;
+      repairsPctPerYear = Math.round(pct * 10000) / 10000;
+      citations.repairsPctPerYear = cite(s, h.page, `${h.line} (repairs $${h.repairsPerHr} per hour x ${h.totalHours} hours a year / price $${r.price} = ${(pct * 100).toFixed(2)} percent of the price each year)`, 'Repairs as a percent of price per year, from the hourly equipment table', repairsPctPerYear);
+    }
   }
-  return { name: r.description, typeId: entry.key, pricePaid: r.price, keepYears: r.yearsLife, salvageValue: r.salvageValue, fuelLubePerHour, repairsPerHour, citations };
+  return { name: r.description, typeId: entry.key, pricePaid: r.price, keepYears: r.yearsLife, salvageValue: r.salvageValue, fuelLubePerHour, repairsPctPerYear, studyHoursPerYear, citations };
 }
 
 // ---------- method ----------

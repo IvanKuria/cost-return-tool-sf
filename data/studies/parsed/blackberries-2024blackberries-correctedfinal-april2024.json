@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/04/23/2024Blackberries-CorrectedFINAL-APRIL2024.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1095,6 +1095,218 @@
   "page": 24,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AND HARVEST BLACKBERRIES – PRODUCTION YEARS 2-5"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "Year",
+    "totalCost": 92291,
+    "returns": 76500,
+    "netCost": 15791,
+    "accumulated": null,
+    "page": 13,
+    "quote": "NET CASH COSTS/ACRE FOR THE YEAR 15,791"
+   },
+   {
+    "year": 2,
+    "label": "1",
+    "totalCost": 70596,
+    "returns": 76500,
+    "netCost": 15791,
+    "accumulated": null,
+    "page": 13,
+    "quote": "NET CASH COSTS/ACRE FOR THE YEAR 15,791"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 92291,
+    "returns": null,
+    "netCost": 92291,
+    "accumulated": null,
+    "page": 15,
+    "quote": "TOTAL CASH COSTS/ACRE 92,291"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 92291,
+    "returns": null,
+    "netCost": 92291,
+    "accumulated": null,
+    "page": 17,
+    "quote": "TOTAL CASH COSTS/ACRE 92,291"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 4393,
+    "returns": null,
+    "netCost": 4393,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 2,
+    "label": "2",
+    "totalCost": 14180,
+    "returns": null,
+    "netCost": 14180,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 3,
+    "label": "3",
+    "totalCost": 510,
+    "returns": null,
+    "netCost": 510,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 4,
+    "label": "4",
+    "totalCost": 1607,
+    "returns": null,
+    "netCost": 1607,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 5,
+    "label": "5",
+    "totalCost": 2289,
+    "returns": null,
+    "netCost": 2289,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 6,
+    "label": "6",
+    "totalCost": 5280,
+    "returns": null,
+    "netCost": 5280,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 7,
+    "label": "7",
+    "totalCost": 987,
+    "returns": null,
+    "netCost": 987,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 8,
+    "label": "8",
+    "totalCost": 10663,
+    "returns": null,
+    "netCost": 10663,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 9,
+    "label": "9",
+    "totalCost": 18621,
+    "returns": null,
+    "netCost": 18621,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 10,
+    "label": "10",
+    "totalCost": 18733,
+    "returns": null,
+    "netCost": 18733,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 11,
+    "label": "11",
+    "totalCost": 10033,
+    "returns": null,
+    "netCost": 10033,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 12,
+    "label": "12",
+    "totalCost": 253,
+    "returns": null,
+    "netCost": 253,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 13,
+    "label": "13",
+    "totalCost": 1312,
+    "returns": null,
+    "netCost": 1312,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   },
+   {
+    "year": 14,
+    "label": "14",
+    "totalCost": 92291,
+    "returns": null,
+    "netCost": 92291,
+    "accumulated": null,
+    "page": 19,
+    "quote": "TOTAL CASH COSTS/ACRE 4,393 14,180 510 1,607 2,289 5,280 987 10,663 18,621 18,733 10,033 253 1,312 92,291"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 15791,
+   "page": 11,
+   "quote": "The Net Cash Cost on Table 1 represents the establishment cost, which is $15,791 per acre or $236,865 for the 15-acre field after the first harvest."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 4,
+   "page": 27,
+   "quote": "Blackberry Establishment 236,865 4 0 71,913 84 1,184 0 73,181 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 143,
+   "page": 14,
+   "quote": "Tunnel/Trellis Removal (Prior Crop) 143.00 3,492 0 0 0 0 3,492",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 236865,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 71913,
+   "page": 27,
+   "line": "Blackberry Establishment 236,865 4 0 71,913 84 1,184 0 73,181"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1121,10 +1333,13 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "counties"
+   "counties",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

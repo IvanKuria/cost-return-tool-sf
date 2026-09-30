@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/09/28/2022covercropsbenefits.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/cover-crops",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -185,6 +185,7 @@
   "page": 8,
   "quote": "MONTHLY COSTS PER ACRE TO ESTABLISH AND PRODUCE COVER CROPS"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -214,7 +215,10 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "no costs-per-acre table found",

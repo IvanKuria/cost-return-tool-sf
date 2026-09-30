@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e5/1b/e51bb4b8-4469-4dc0-bfbf-81e34fadfdea/2016largelimabeansjvfinaldraftaug15.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1143,6 +1143,7 @@
   "page": 14,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE LARGE LIMA BEANS"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1172,7 +1173,10 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

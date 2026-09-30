@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/03/28/2023%20Baby%20Lima%20Final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -366,6 +366,7 @@
   "page": 14,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE BABY LIMA BEANS"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -395,7 +396,10 @@
    "operations",
    "equipment",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "equipment table present but no equipment rows parsed"

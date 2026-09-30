@@ -19,16 +19,16 @@ describe('farmer inputs', () => {
   it('accepts intentional zero amounts but requires positive area, plantings and useful life', () => {
     const crop = { ...newBlankCrop(), missingFields: [], area: 1, plantingsPerYear: 1 };
     const equipment = { ...newBlankEquipment(), missingFields: [], keepYears: 1 };
-    expect(missingPlanInputs({ farm: DEFAULT_FARM, crops: [crop], equipment: [equipment] })).toEqual([]);
+    expect(missingPlanInputs({ farm: DEFAULT_FARM, crops: [crop], equipment: [equipment], customWork: [] })).toEqual([]);
     crop.area = 0;
     equipment.keepYears = 0;
-    expect(missingPlanInputs({ farm: DEFAULT_FARM, crops: [crop], equipment: [equipment] }).map(x => x.field)).toEqual(['area', 'keepYears']);
+    expect(missingPlanInputs({ farm: DEFAULT_FARM, crops: [crop], equipment: [equipment], customWork: [] }).map(x => x.field)).toEqual(['area', 'keepYears']);
   });
 
   it('reports explicitly cleared optional inputs alongside critical fields', () => {
     const crop = { ...newBlankCrop(), area: 1, plantingsPerYear: 1, missingFields: ['ownLaborHoursPerAcre' as const] };
-    const equipment = { ...newBlankEquipment(), keepYears: 1, missingFields: ['hoursPerYear' as const] };
-    expect(missingPlanInputs({ farm: DEFAULT_FARM, crops: [crop], equipment: [equipment] }).map(x => x.field)).toEqual(['ownLaborHoursPerAcre', 'hoursPerYear']);
+    const equipment = { ...newBlankEquipment(), keepYears: 1, missingFields: ['yearBought' as const] };
+    expect(missingPlanInputs({ farm: DEFAULT_FARM, crops: [crop], equipment: [equipment], customWork: [] }).map(x => x.field)).toEqual(['ownLaborHoursPerAcre', 'yearBought']);
   });
 
   it('infers legacy missing study amounts without treating explicitly entered zero as absent', () => {
@@ -40,7 +40,7 @@ describe('farmer inputs', () => {
 
   it('keeps incomplete drafts finite and excludes invalid monthly weights', () => {
     const crop = { ...newBlankCrop(), price: NaN, costMonths: Array(12).fill(-1), revenueMonths: Array(12).fill(1 / 12) };
-    const result = computePlan({ farm: DEFAULT_FARM, crops: [crop], equipment: [newBlankEquipment()] });
+    const result = computePlan({ farm: DEFAULT_FARM, crops: [crop], equipment: [newBlankEquipment()], customWork: [] });
     expect(result.net).toBe(0);
     expect(result.cashCoverage.withMonths).toBe(0);
     expect(result.monthlyCash.every(Number.isFinite)).toBe(true);

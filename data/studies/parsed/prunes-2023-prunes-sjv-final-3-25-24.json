@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/03/27/2023.Prunes.SJV-Final-3.25.24.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/prunes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -901,6 +901,113 @@
   "page": 18,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE PRUNES"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 8329,
+    "returns": 0,
+    "netCost": 8329,
+    "accumulated": 8329,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,329 10,428 12,745 14,823 16,250 15,939"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 2099,
+    "returns": 0,
+    "netCost": 2099,
+    "accumulated": 10428,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,329 10,428 12,745 14,823 16,250 15,939"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 2317,
+    "returns": 0,
+    "netCost": 2317,
+    "accumulated": 12745,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,329 10,428 12,745 14,823 16,250 15,939"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 3728,
+    "returns": 1650,
+    "netCost": 2078,
+    "accumulated": 14823,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,329 10,428 12,745 14,823 16,250 15,939"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 4177,
+    "returns": 2750,
+    "netCost": 1427,
+    "accumulated": 16250,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,329 10,428 12,745 14,823 16,250 15,939"
+   },
+   {
+    "year": 6,
+    "label": "6th",
+    "totalCost": 5189,
+    "returns": 5500,
+    "netCost": 0,
+    "accumulated": 15939,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,329 10,428 12,745 14,823 16,250 15,939"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 14823,
+   "page": 10,
+   "quote": "The cost is $14,823 per acre or $592,920 for the 40-acre orchard."
+  },
+  "annualCharge": {
+   "value": 1368,
+   "page": 15,
+   "quote": "Orchard Establishment 14,823 1,368 1,368"
+  },
+  "productionYears": {
+   "value": 21,
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 21 years of production."
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 3,
+   "quote": "Orchard life is estimated to be 25 years."
+  },
+  "amortizedFromYear": {
+   "value": 5,
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 21 years of production."
+  },
+  "removalCost": {
+   "value": 1500,
+   "page": 12,
+   "quote": "Orchard Removal/Grind/Spread 1,500",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 592920,
+   "yearsLife": 21,
+   "salvageValue": 0,
+   "capitalRecovery": 54720,
+   "page": 20,
+   "line": "Establishment 592,920 21 0 54,720 210 2,965 0 57,895"
+  },
+  "method": {
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 21 years of production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -925,7 +1032,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborOverheadPct",

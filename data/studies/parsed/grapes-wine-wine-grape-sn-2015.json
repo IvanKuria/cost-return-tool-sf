@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/df/68/df68d252-a08d-49d1-8eb6-965637c0b615/wine-grape-sn-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -304,6 +304,86 @@
   "page": 22,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE WINE GRAPES"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "20,933",
+    "totalCost": 20933,
+    "returns": 0,
+    "netCost": 20933,
+    "accumulated": 20933,
+    "page": 16,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 20,933 25,734 28,603 30,653 30,565"
+   },
+   {
+    "year": 2,
+    "label": "4,801",
+    "totalCost": 4801,
+    "returns": 0,
+    "netCost": 4801,
+    "accumulated": 25734,
+    "page": 16,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 20,933 25,734 28,603 30,653 30,565"
+   },
+   {
+    "year": 3,
+    "label": "2,869",
+    "totalCost": 4169,
+    "returns": 1300,
+    "netCost": 2869,
+    "accumulated": 28603,
+    "page": 16,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 20,933 25,734 28,603 30,653 30,565"
+   },
+   {
+    "year": 4,
+    "label": "2,050",
+    "totalCost": 4650,
+    "returns": 2600,
+    "netCost": 2050,
+    "accumulated": 30653,
+    "page": 16,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 20,933 25,734 28,603 30,653 30,565"
+   },
+   {
+    "year": 5,
+    "label": "0",
+    "totalCost": 5112,
+    "returns": 5200,
+    "netCost": 0,
+    "accumulated": 30565,
+    "page": 16,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 20,933 25,734 28,603 30,653 30,565"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": {
+   "value": 22,
+   "page": 13,
+   "quote": "The cost is amortized over the remaining 22 years of vineyard production to estimate the annual capital recovery cost."
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 5,
+   "quote": "The irrigation system is considered an improvement to the property and has a 25 year lifespan."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 143015,
+   "yearsLife": 22,
+   "salvageValue": 0,
+   "capitalRecovery": 10619,
+   "page": 26,
+   "line": "Vineyard Establishment 143,015 22 0 10,619 60 715 0 11,394"
+  },
+  "method": {
+   "page": 13,
+   "quote": "The cost is amortized over the remaining 22 years of vineyard production to estimate the annual capital recovery cost."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -321,7 +401,8 @@
    "investments",
    "businessOverhead",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment"
   ],
   "fieldsMissing": [
    "counties",
@@ -333,7 +414,9 @@
    "hourlyEquipment",
    "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "equipment table present but no equipment rows parsed"

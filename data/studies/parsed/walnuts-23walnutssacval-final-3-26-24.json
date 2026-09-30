@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/03/27/23WalnutsSacVal-Final-3.26.24.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -837,6 +837,103 @@
   "page": 19,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE WALNUTS"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "Est/1st",
+    "totalCost": 11948,
+    "returns": null,
+    "netCost": 11948,
+    "accumulated": 11948,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,948 13,727 15,500 17,475 19,064"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1779,
+    "returns": null,
+    "netCost": 1779,
+    "accumulated": 13727,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,948 13,727 15,500 17,475 19,064"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 1773,
+    "returns": null,
+    "netCost": 1773,
+    "accumulated": 15500,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,948 13,727 15,500 17,475 19,064"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 1975,
+    "returns": null,
+    "netCost": 1975,
+    "accumulated": 17475,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,948 13,727 15,500 17,475 19,064"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 2339,
+    "returns": 750,
+    "netCost": 1589,
+    "accumulated": 19064,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,948 13,727 15,500 17,475 19,064"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 19064,
+   "page": 11,
+   "quote": "For this study, this cost is $19,064 per acre or $724,432 for the 38-acre orchard."
+  },
+  "annualCharge": {
+   "value": 1636,
+   "page": 16,
+   "quote": "Orchard Establishment 19,064 1,636 1,636"
+  },
+  "productionYears": {
+   "value": 25,
+   "page": 11,
+   "quote": "Establishment cost is amortized beginning in the sixth year over the remaining 25 years of production."
+  },
+  "plantingLife": {
+   "value": 30,
+   "page": 3,
+   "quote": "The economic life of the orchard is assumed to be 30 years."
+  },
+  "amortizedFromYear": {
+   "value": 6,
+   "page": 11,
+   "quote": "Establishment cost is amortized beginning in the sixth year over the remaining 25 years of production."
+  },
+  "removalCost": {
+   "value": 1800,
+   "page": 13,
+   "quote": "Orchard Removal/Grind/Spread 1,800",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 724432,
+   "yearsLife": 25,
+   "salvageValue": 0,
+   "capitalRecovery": 62164,
+   "page": 21,
+   "line": "Orchard Establishment 724,432 25 0 62,164 257 3,622 0 66,043"
+  },
+  "method": {
+   "page": 11,
+   "quote": "Establishment cost is amortized beginning in the sixth year over the remaining 25 years of production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -860,7 +957,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",

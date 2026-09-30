@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/cb/2c/cb2c22b4-04b7-45fb-a29b-7a5babe95776/2016sorghumgrainsjvfinaldraftmar23.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sorghum",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -783,6 +783,7 @@
   "machineLaborFactor": null
  },
  "monthly": null,
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -812,7 +813,10 @@
   ],
   "fieldsMissing": [
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "monthly table not used: MONTHLY COSTS PER ACRE TO PRODUCE GRAIN SORGHUM: TOTAL CASH COSTS row: months sum to 1322 but the Total column says 1430"

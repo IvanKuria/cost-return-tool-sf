@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/04/04/2024Strawberry-FULL-FINAL-March2024.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/strawberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1490,6 +1490,7 @@
   "page": 15,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AND HARVEST STRAWBERRIES"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1519,7 +1520,11 @@
    "machineLaborFactor",
    "monthly"
   ],
-  "fieldsMissing": [],
+  "fieldsMissing": [
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
   "warnings": []
  }
 }

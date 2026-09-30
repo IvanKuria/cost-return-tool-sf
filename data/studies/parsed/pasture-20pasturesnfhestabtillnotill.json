@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/bf/2a/bf2a6a2f-10da-4e01-97fc-7ed8e9bade2f/20pasturesnfhestabtillnotill.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -257,6 +257,78 @@
   "machineLaborFactor": null
  },
  "monthly": null,
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 783,
+    "returns": null,
+    "netCost": 783,
+    "accumulated": null,
+    "page": 10,
+    "quote": "TOTAL CASH COSTS/ACRE 783"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 783,
+    "returns": null,
+    "netCost": 783,
+    "accumulated": null,
+    "page": 11,
+    "quote": "TOTAL CASH COSTS/ACRE 783"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 574,
+    "returns": null,
+    "netCost": 574,
+    "accumulated": null,
+    "page": 12,
+    "quote": "TOTAL CASH COSTS/ACRE 574"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 574,
+    "returns": null,
+    "netCost": 574,
+    "accumulated": null,
+    "page": 13,
+    "quote": "TOTAL CASH COSTS/ACRE 574"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 783,
+   "page": 8,
+   "quote": "For this method, the cost is $783 per acre or $31,320 for the 40 acres."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 30,
+   "page": 8,
+   "quote": "The pasture stand establishment cost is amortized over the 30-year stand life."
+  },
+  "plantingLife": {
+   "value": 30,
+   "page": 8,
+   "quote": "The pasture stand establishment cost is amortized over the 30-year stand life."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 0,
+   "page": 12,
+   "quote": "Remove Litter/Graze 0.00 0 0 0 0 22 22",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": null,
+  "method": {
+   "page": 8,
+   "quote": "The pasture stand establishment cost is amortized over the 30-year stand life."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -275,7 +347,9 @@
    "investments",
    "businessOverhead",
    "capitalRecoveryFormula",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "laborMachineRate",
@@ -286,7 +360,8 @@
    "hourlyEquipment",
    "insuranceRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishmentAnnual"
   ],
   "warnings": [
    "equipment table present but no equipment rows parsed",

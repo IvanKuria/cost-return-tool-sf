@@ -96,6 +96,20 @@ export interface MonthlyCosts {
   quote: string;                    // the table title line as printed
 }
 
+/** How a perennial study turns its establishment years into a yearly charge during production. Only what the study prints. */
+export interface EstablishmentYear { year: number; label: string; totalCost: number | null; returns: number | null; netCost: number | null; accumulated: number | null; page: number; quote: string }
+export interface Establishment {
+  years: EstablishmentYear[];                 // one entry per column of the establishment table
+  accumulatedNetCost: Quote & { value: number } | null; // per acre, as the prose states it (accumulated net cash cost at the end of establishment)
+  annualCharge: Quote & { value: number } | null;       // per acre per production year, the "establishment" line in the production year's non-cash overhead
+  productionYears: Quote & { value: number } | null;    // years the charge runs (the "remaining N years" in the amortization sentence)
+  plantingLife: Quote & { value: number } | null;       // total life of the planting when stated
+  amortizedFromYear: Quote & { value: number } | null;  // first production year the charge appears in, when stated
+  removalCost: Quote & { value: number; note: string } | null; // cost printed for removing the previous planting, a pre-plant establishment cost
+  asset: { price: number; yearsLife: number; salvageValue: number; capitalRecovery: number; page: number; line: string } | null; // the establishment row of the investment table, whole farm
+  method: Quote | null;                       // the sentence describing the amortization
+}
+
 export interface ParseReport { fieldsFound: string[]; fieldsMissing: string[]; warnings: string[] }
 
 export interface ParsedStudy {
@@ -108,5 +122,6 @@ export interface ParsedStudy {
   businessOverhead: BusinessOverheadRow[];
   method: Method;
   monthly: MonthlyCosts | null;
+  establishment: Establishment | null;
   parse: ParseReport;
 }

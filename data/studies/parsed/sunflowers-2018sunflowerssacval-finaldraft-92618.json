@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/18/2d/182dcc66-2b3e-4048-b639-b87d0a6456fd/2018sunflowerssacval-finaldraft_92618.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sunflowers",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1386,6 +1386,7 @@
   "page": 15,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE SUNFLOWERS"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1415,7 +1416,10 @@
    "landRentPerAcre",
    "acresFarmed",
    "totalCost",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

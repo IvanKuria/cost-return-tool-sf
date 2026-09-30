@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/03/dc/03dc4496-32af-47c6-b479-38e1d27c134e/15cornsacramentovalleyfinaldraftjuly20.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/corn",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1520,6 +1520,7 @@
   "page": 13,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE FIELD CORN"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1549,7 +1550,10 @@
    "landRentPerAcre",
    "acresFarmed",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "monthly table gives operating costs by month only; cash overhead is not spread by month in this study"

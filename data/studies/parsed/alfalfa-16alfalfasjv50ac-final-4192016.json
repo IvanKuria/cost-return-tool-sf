@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/24/b6/24b68b4a-4c04-4853-b127-d3461e1a248f/16alfalfasjv50ac_final_4192016.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -566,6 +566,50 @@
   "page": 14,
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ALFALFA (50 Acres)"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 966,
+    "returns": null,
+    "netCost": 966,
+    "accumulated": null,
+    "page": 10,
+    "quote": "TOTAL CASH COSTS/ACRE 966"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 966,
+   "page": 8,
+   "quote": "For this study, the cost is $966 per acre or $48,300 for the 50 acres."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 3,
+   "page": 8,
+   "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
+  },
+  "plantingLife": {
+   "value": 3,
+   "page": 8,
+   "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 48300,
+   "yearsLife": 3,
+   "salvageValue": 0,
+   "capitalRecovery": 17158,
+   "page": 16,
+   "line": "Establishment 50 acres 48,300 3 0 17,158 20 242 0 17,420"
+  },
+  "method": {
+   "page": 8,
+   "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -592,10 +636,13 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "landRentPerAcre"
+   "landRentPerAcre",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

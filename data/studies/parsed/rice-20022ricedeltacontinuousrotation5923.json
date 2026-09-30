@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/05/11/20022ricedeltacontinuousrotation5923.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/rice",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1372,6 +1372,46 @@
   "page": 14,
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE RICE"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 1263,
+    "returns": null,
+    "netCost": 1263,
+    "accumulated": null,
+    "page": 10,
+    "quote": "TOTAL CASH COSTS/ACRE 1,263"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": {
+   "value": 203,
+   "page": 11,
+   "quote": "Field Establishment 843 203 203"
+  },
+  "productionYears": {
+   "value": 5,
+   "page": 8,
+   "quote": "The costs are amortized over the 5 years the field is expected to be in production."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 843000,
+   "yearsLife": 5,
+   "salvageValue": 0,
+   "capitalRecovery": 202855,
+   "page": 16,
+   "line": "Field Establishment 843,000 5 0 202,855 373 4,215 0 207,443"
+  },
+  "method": {
+   "page": 8,
+   "quote": "The costs are amortized over the 5 years the field is expected to be in production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1396,12 +1436,15 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishmentAccumulated"
   ],
   "warnings": []
  }

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2025/08/11/2024%20AlmondsSJVsouth.Final%20Draft.8.3.25.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1252,6 +1252,103 @@
   "page": 20,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ALMONDS"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 11599,
+    "returns": null,
+    "netCost": 11599,
+    "accumulated": 11599,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,599 14,061 16,758 19,778 21,454"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 2462,
+    "returns": null,
+    "netCost": 2462,
+    "accumulated": 14061,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,599 14,061 16,758 19,778 21,454"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 3657,
+    "returns": 960,
+    "netCost": 2697,
+    "accumulated": 16758,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,599 14,061 16,758 19,778 21,454"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 4940,
+    "returns": 1920,
+    "netCost": 3020,
+    "accumulated": 19778,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,599 14,061 16,758 19,778 21,454"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 5516,
+    "returns": 3840,
+    "netCost": 1676,
+    "accumulated": 21454,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,599 14,061 16,758 19,778 21,454"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 17096,
+   "page": 12,
+   "quote": "The cost is $17,096 per acre or $1,709,600 for the 100-acre orchard."
+  },
+  "annualCharge": {
+   "value": 1739,
+   "page": 15,
+   "quote": "Establishment Costs 1,739 1,739"
+  },
+  "productionYears": {
+   "value": 20,
+   "page": 12,
+   "quote": "Establishment costs are amortized beginning in the fourth year and are continuous for the remaining 20 years of production."
+  },
+  "plantingLife": {
+   "value": 23,
+   "page": 4,
+   "quote": "The life of the orchard at the time of planting is estimated to be 23 years."
+  },
+  "amortizedFromYear": {
+   "value": 4,
+   "page": 12,
+   "quote": "Establishment costs are amortized beginning in the fourth year and are continuous for the remaining 20 years of production."
+  },
+  "removalCost": {
+   "value": 86,
+   "page": 14,
+   "quote": "Irrigation System Removal 86",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 1675800,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 173872,
+   "page": 22,
+   "line": "Establishment- SJV South 1,675,800 20 0 173,872 595 8,379 8,379 191,224"
+  },
+  "method": {
+   "page": 12,
+   "quote": "Establishment costs are amortized beginning in the fourth year and are continuous for the remaining 20 years of production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1275,7 +1372,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",

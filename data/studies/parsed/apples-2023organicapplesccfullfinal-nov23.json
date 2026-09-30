@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/11/13/2023organicapplesccfullfinal-nov23.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/apples",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1096,6 +1096,25 @@
   "page": 15,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AND HARVEST ORGANIC APPLES FOR PROCESSING"
  },
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 30000,
+   "page": 3,
+   "quote": "In this study, land value for an established apple orchard is estimated at $30,000 per acre; no other establishment costs are included here."
+  },
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": {
+   "value": 25,
+   "page": 9,
+   "quote": "The irrigation system is considered an improvement to the property and has a 25-year lifespan."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1120,12 +1139,15 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
    "landRentPerAcre",
-   "acresFarmed"
+   "acresFarmed",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

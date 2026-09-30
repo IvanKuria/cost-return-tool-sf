@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/02/ee/02ee0710-8c2c-41ea-8b25-736d1854b737/alfalfasvdraft10420.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1078,6 +1078,50 @@
   "page": 17,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ALFALFA HAY"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 721,
+    "returns": null,
+    "netCost": 721,
+    "accumulated": null,
+    "page": 13,
+    "quote": "TOTAL CASH COSTS/ACRE 721"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 721,
+   "page": 9,
+   "quote": "For this study, the cost is $721 per acre or $57,680 for the 80 acres."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 4,
+   "page": 9,
+   "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
+  },
+  "plantingLife": {
+   "value": 4,
+   "page": 4,
+   "quote": "In this cost study the pre-plant fertilizer costs are charged to the establishment year and amortized over the 4 year life of the stand."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 57680,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 16456,
+   "page": 19,
+   "line": "Establishment- Alfalfa 57,680 4 0 16,456 26 288 0 16,770"
+  },
+  "method": {
+   "page": 9,
+   "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1103,11 +1147,14 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

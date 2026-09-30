@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/05/1e/051eabc3-9bdd-45cc-9c85-f122f8f275f0/2016plumssjvfinaldraft112316.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/plums",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -962,6 +962,87 @@
   "page": 17,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE PLUMS"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 6575,
+    "returns": null,
+    "netCost": 6575,
+    "accumulated": 6575,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,575 7,937 7,807 6,711 4,039"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1362,
+    "returns": null,
+    "netCost": 1362,
+    "accumulated": 7937,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,575 7,937 7,807 6,711 4,039"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 4670,
+    "returns": 4800,
+    "netCost": 0,
+    "accumulated": 7807,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,575 7,937 7,807 6,711 4,039"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 8504,
+    "returns": 9600,
+    "netCost": 0,
+    "accumulated": 6711,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,575 7,937 7,807 6,711 4,039"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 11728,
+    "returns": 14400,
+    "netCost": 0,
+    "accumulated": 4039,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,575 7,937 7,807 6,711 4,039"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": {
+   "value": 629,
+   "page": 12,
+   "quote": "Orchard Establishment 629 629"
+  },
+  "productionYears": {
+   "value": 17,
+   "page": 19,
+   "quote": "Establishment Cost-Plums 78,070 17 0 6,293 33 390 1,561 8,278 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 18,
+   "page": 3,
+   "quote": "The life of the orchard at the time of planting is estimated to be at least 18 years."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 78070,
+   "yearsLife": 17,
+   "salvageValue": 0,
+   "capitalRecovery": 6293,
+   "page": 19,
+   "line": "Establishment Cost-Plums 78,070 17 0 6,293 33 390 1,561 8,278"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -986,13 +1067,18 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "landRentPerAcre",
    "insuranceRatePct",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishmentAccumulated"
   ],
-  "warnings": []
+  "warnings": [
+   "establishment year 4: running net 7937 differs from printed accumulated 6711"
+  ]
  }
 }

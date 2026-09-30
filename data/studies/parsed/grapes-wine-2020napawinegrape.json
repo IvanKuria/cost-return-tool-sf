@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/fe/24/fe24e27a-5c29-4cc3-a83c-63a31cd0c767/2020napawinegrape.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -782,6 +782,72 @@
   "page": 22,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE WINEGRAPES"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 37056,
+    "returns": null,
+    "netCost": 37056,
+    "accumulated": 37056,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 37,056 48,862 45,837"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 11806,
+    "returns": null,
+    "netCost": 37056,
+    "accumulated": 48862,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 37,056 48,862 45,837"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 9275,
+    "returns": 12300,
+    "netCost": 11806,
+    "accumulated": 45837,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 37,056 48,862 45,837"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 45837,
+   "page": 14,
+   "quote": "The cost is $45,837 per acre or $458,370 for the 10-acre vineyard."
+  },
+  "annualCharge": {
+   "value": 3298,
+   "page": 19,
+   "quote": "Vineyard Establishment 45,837 3,298 3,298"
+  },
+  "productionYears": {
+   "value": 27,
+   "page": 25,
+   "quote": "Vineyard Establishment 458,370 27 0 32,981 203 2,292 0 35,476 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 4500,
+   "page": 16,
+   "quote": "Custom: Vineyard Removal and Clean Field by Hand 4,500",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 458370,
+   "yearsLife": 27,
+   "salvageValue": 0,
+   "capitalRecovery": 32981,
+   "page": 25,
+   "line": "Vineyard Establishment 458,370 27 0 32,981 203 2,292 0 35,476"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -802,7 +868,10 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "yieldPerAcre",

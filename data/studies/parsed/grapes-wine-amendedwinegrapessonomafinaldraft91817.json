@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c6/28/c6287d1a-64b9-4ba6-b8ff-d83d6c0d0a64/amendedwinegrapessonomafinaldraft91817.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1126,6 +1126,35 @@
   "page": 24,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE WINE GRAPES-Pinot noir"
  },
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": null,
+  "annualCharge": {
+   "value": 3419,
+   "page": 15,
+   "quote": "Vineyard Establishment 45,000 3,419 3,419"
+  },
+  "productionYears": {
+   "value": 22,
+   "page": 12,
+   "quote": "The cost is amortized over the remaining 22 years of vineyard production to estimate the annual capital recovery cost."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 1800000,
+   "yearsLife": 22,
+   "salvageValue": 0,
+   "capitalRecovery": 136747,
+   "page": 28,
+   "line": "Vineyard Establishment 1,800,000 22 0 136,747 761 9,000 0 146,508"
+  },
+  "method": {
+   "page": 12,
+   "quote": "The cost is amortized over the remaining 22 years of vineyard production to estimate the annual capital recovery cost."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1152,10 +1181,13 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "landRentPerAcre"
+   "landRentPerAcre",
+   "establishmentAccumulated"
   ],
   "warnings": [
    "several costs-per-acre tables (establishment and production); using the production one"

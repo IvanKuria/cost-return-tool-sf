@@ -1,7 +1,7 @@
 import type { CatalogEntry, CatalogRow, MethodItem } from '../data/studies';
 import { cropDefaultsFromStudy, equipmentDefaultsFromRow, methodFromStudies, commodityName, operationsFromStudy } from '../data/studies';
 import type { ParsedStudy } from '../data/studySchema';
-import type { AllocationBasis, Citation, Condition, Crop, CropOperation, MachineUse, CropResult, Equipment, Farm, FarmResult, MachineResult, OwnershipBreakdown, Plan } from './types';
+import type { AllocationBasis, Citation, Condition, Crop, CropOperation, CustomWorkResult, MachineRates, MachineUse, CropResult, Equipment, Farm, FarmResult, MachineResult, OwnershipBreakdown, Plan } from './types';
 import { uid } from './store';
 import { isMonthlyProfile } from './inputs';
 
@@ -10,7 +10,6 @@ const SQFT_PER_ACRE = 43560;
 export { STUDY_INSURANCE_RATE, STUDY_PROPERTY_TAX_RATE } from './rates';
 
 export type OwnershipRates = { interestRate: number; insuranceRate: number; propertyTaxRate: number };
-export const runPerHour = (e: Pick<Equipment, 'fuelLubePerHour' | 'repairsPerHour'>) => (e.fuelLubePerHour || 0) + (e.repairsPerHour || 0);
 
 /** Every formula the engine uses, with the study sentence it comes from. */
 export const METHOD: MethodItem[] = methodFromStudies();
@@ -22,7 +21,7 @@ export function crf(rate: number, years: number): number {
   return rate / (1 - Math.pow(1 + rate, -years));
 }
 
-/** Annual cost of owning one machine, using the UC Davis capital recovery method. */
+/** Annual cost of owning one machine, using the UC Davis capital recovery method. these should be documented in the sources */
 export function ownership(e: Equipment, rates: OwnershipRates): OwnershipBreakdown {
   const rate = rates.interestRate;
   const salvage = Math.min(e.salvageValue, e.pricePaid);
@@ -33,9 +32,38 @@ export function ownership(e: Equipment, rates: OwnershipRates): OwnershipBreakdo
   const taxes = averageValue * rates.propertyTaxRate;
   const insuranceAndTax = insurance + taxes;
   const totalPerYear = capitalRecovery + interestOnSalvage + insuranceAndTax;
-  const ownPerHour = e.hoursPerYear > 0 ? totalPerYear / e.hoursPerYear : 0;
-  const run = runPerHour(e);
-  return { capitalRecovery, interestOnSalvage, insurance, taxes, insuranceAndTax, totalPerYear, ownPerHour, runPerHour: run, allInPerHour: ownPerHour + run };
+  const repairsPerYear = e.pricePaid * (e.repairsPctPerYear || 0);
+  return { capitalRecovery, interestOnSalvage, insurance, taxes, insuranceAndTax, totalPerYear, repairsPerYear };
+}
+
+/** Per-hour rates at a given number of hours a year. Owning and repairs are yearly amounts spread over the hours the machine actually runs. */
+export function machineRates(e: Equipment, rates: OwnershipRates, hoursPerYear: number): MachineRates {
+  const o = ownership(e, rates);
+  const h = hoursPerYear > 0 ? hoursPerYear : 0;
+  const ownPerHour = h > 0 ? o.totalPerYear / h : 0;
+  const repairsPerHour = h > 0 ? o.repairsPerYear / h : 0;
+  const fuelLubePerHour = e.fuelLubePerHour || 0;
+  const runPerHour = fuelLubePerHour + repairsPerHour;
+  return { hoursPerYear: h, ownPerHour, fuelLubePerHour, repairsPerHour, runPerHour, allInPerHour: ownPerHour + runPerHour };
+}
+
+/** Hours every machine runs in a year: each crop's own-machine operations plus custom work for others. */
+export function machineHoursInPlan(plan: Plan): Map<string, { crop: number; custom: number }> {
+  const out = new Map<string, { crop: number; custom: number }>();
+  const bump = (id: string, key: 'crop' | 'custom', h: number) => { const cur = out.get(id) ?? { crop: 0, custom: 0 }; cur[key] += h; out.set(id, cur); };
+  for (const c of plan.crops) {
+    const seasons = toAcres(c.area, plan.farm) * c.plantingsPerYear;
+    const uses = usesOperations(c) ? machineHoursFromOperations(c.operations) : (c.machineHours ?? []);
+    for (const u of uses) bump(u.equipmentId, 'crop', u.hoursPerAcre * seasons);
+  }
+  for (const j of plan.customWork ?? []) bump(j.equipmentId, 'custom', j.hoursPerYear || 0);
+  return out;
+}
+
+/** Rates for every machine in the plan at the hours it runs. Screens use this for live figures. */
+export function machineRatesInPlan(plan: Plan): Map<string, MachineRates> {
+  const hours = machineHoursInPlan(plan);
+  return new Map(plan.equipment.map(e => { const h = hours.get(e.id); return [e.id, machineRates(e, plan.farm, (h?.crop ?? 0) + (h?.custom ?? 0))]; }));
 }
 
 /** Convert the farmer's land unit to acres. */
@@ -52,29 +80,36 @@ const zeros = (): number[] => Array.from({ length: 12 }, () => 0);
 /** Hired labor cost per hour, wages plus payroll overhead. */
 export const hiredHourly = (farm: Pick<Farm, 'hiredLaborRate' | 'payrollOverhead'>) => farm.hiredLaborRate * (1 + (farm.payrollOverhead || 0));
 
-export interface OperationCost { id: string; name: string; category: CropOperation['category']; perAcre: number; assigned: string | null; parts: { materials: number; handLabor: number; operatorLabor: number; machineRunning: number; hiredMachine: number; custom: number; otherLabor: number } }
+export interface OperationCost { id: string; name: string; category: CropOperation['category']; perAcre: number; assigned: string | null; mode: CropOperation['mode']; parts: { materials: number; handLabor: number; operatorLabor: number; machineRunning: number; rent: number; hiredMachine: number; custom: number; otherLabor: number } }
 
-/** Cost of one operation per acre, one planting, given the farm's rates and machines. Ownership is not in here; it is shared by hours in computePlan. */
-export function operationCost(op: CropOperation, farm: Farm, equipment: Equipment[]): OperationCost {
-  const machine = op.equipmentId ? equipment.find(e => e.id === op.equipmentId) ?? null : null;
+/**
+ * Cost of one operation per acre, one planting. `rates` gives each owned machine's run rate at its
+ * hours for the year (see machineRatesInPlan). Ownership is not in here; computePlan shares it by hours.
+ */
+export function operationCost(op: CropOperation, farm: Farm, equipment: Equipment[], rates?: Map<string, MachineRates>): OperationCost {
+  const mode = op.mode ?? (op.equipmentId ? 'own' : 'hire');
+  const machine = mode === 'own' && op.equipmentId ? equipment.find(e => e.id === op.equipmentId) ?? null : null;
   const hourly = hiredHourly(farm);
+  const hours = op.machineHoursPerAcre || 0;
+  const runRate = machine ? (rates?.get(machine.id)?.runPerHour ?? (machine.fuelLubePerHour || 0)) : 0;
   const parts = {
     materials: op.materialsPerAcre || 0,
     custom: op.customPerAcre || 0,
     otherLabor: op.otherLaborPerAcre || 0,
     handLabor: (op.handHoursPerAcre || 0) * hourly,
-    operatorLabor: machine ? (op.operatorHoursPerAcre || 0) * hourly : 0,
-    machineRunning: machine ? (op.machineHoursPerAcre || 0) * runPerHour(machine) : 0,
-    hiredMachine: !machine && (op.machineHoursPerAcre || 0) > 0 ? (op.hiredMachinePerAcre || 0) : 0,
+    operatorLabor: mode !== 'hire' && hours > 0 ? (op.operatorHoursPerAcre || 0) * hourly : 0,
+    machineRunning: machine ? hours * runRate : 0,
+    rent: mode === 'rent' ? hours * (op.rentPerHour || 0) : 0,
+    hiredMachine: mode === 'hire' && hours > 0 ? (op.hiredMachinePerAcre || 0) : 0,
   };
   const perAcre = Object.values(parts).reduce((a, b) => a + b, 0);
-  return { id: op.id, name: op.name, category: op.category, perAcre, assigned: machine ? machine.id : null, parts };
+  return { id: op.id, name: op.name, category: op.category, perAcre, assigned: machine ? machine.id : null, mode, parts };
 }
 
 /** Owned machine hours per acre implied by a crop's operations, grouped by machine. */
 export function machineHoursFromOperations(ops: CropOperation[]): MachineUse[] {
   const acc = new Map<string, number>();
-  for (const op of ops) if (op.enabled && op.equipmentId && op.machineHoursPerAcre > 0) acc.set(op.equipmentId, (acc.get(op.equipmentId) ?? 0) + op.machineHoursPerAcre);
+  for (const op of ops) if (op.enabled && (op.mode ?? (op.equipmentId ? 'own' : 'hire')) === 'own' && op.equipmentId && op.machineHoursPerAcre > 0) acc.set(op.equipmentId, (acc.get(op.equipmentId) ?? 0) + op.machineHoursPerAcre);
   return [...acc].map(([equipmentId, hoursPerAcre]) => ({ equipmentId, hoursPerAcre }));
 }
 
@@ -113,20 +148,45 @@ export function computePlan(plan: Plan): FarmResult {
   // Hours each crop puts on each machine in a year: hoursPerAcre x acres x plantings.
   const hoursOn = (c: Crop, i: number, equipmentId: string) =>
     (c.machineHours ?? []).filter((m) => m.equipmentId === equipmentId).reduce((s, m) => s + m.hoursPerAcre, 0) * seasonsByCrop[i];
+  const customWork = (plan.customWork ?? []).map(finiteFields);
 
-  // Ownership cost is shared by hours when the farm basis is hours and crops list hours on the machine;
-  // otherwise by the farm's fallback basis, so no machine's cost is ever dropped.
+  // A machine's year is the crop hours plus custom work hours. Ownership and the yearly repair pool
+  // are shared by those hours; when no one lists hours, crops share them by the farm's fallback basis.
   const fallbackBasis: AllocationBasis = farm.equipmentBasis === 'revenue' ? 'revenue' : 'acres';
-  const machines: MachineResult[] = equipment.map((e) => {
-    const o = ownership(e, farm);
-    const hours = crops.map((c, i) => hoursOn(c, i, e.id));
-    const hoursAssigned = hours.reduce((a, b) => a + b, 0);
-    const byHours = farm.equipmentBasis === 'hours' && hoursAssigned > 0;
-    const byCrop = crops.map((c, i) => ({ cropId: c.id, name: c.name, hours: hours[i], share: byHours ? hours[i] / hoursAssigned : shareBy(fallbackBasis, i) }));
-    return { equipmentId: e.id, name: e.name, hoursPerYear: e.hoursPerYear, hoursAssigned, ownPerYear: o.totalPerYear, ownPerHour: o.ownPerHour, runPerHour: o.runPerHour, allInPerHour: o.allInPerHour, byCrop };
-  });
   const ownershipByMachine = equipment.map(e => ownership(e, farm));
+  const machines: MachineResult[] = equipment.map((e, k) => {
+    const o = ownershipByMachine[k];
+    const hours = crops.map((c, i) => hoursOn(c, i, e.id));
+    const cropHours = hours.reduce((a, b) => a + b, 0);
+    const customHours = customWork.filter(j => j.equipmentId === e.id).reduce((s, j) => s + (j.hoursPerYear || 0), 0);
+    const total = cropHours + customHours;
+    const byHours = farm.equipmentBasis === 'hours' && total > 0;
+    const byCrop = crops.map((c, i) => ({ cropId: c.id, name: c.name, hours: hours[i], share: byHours ? hours[i] / total : (customHours > 0 && total > 0 ? shareBy(fallbackBasis, i) * (cropHours / total) : shareBy(fallbackBasis, i)) }));
+    const customShare = total > 0 ? customHours / total : 0;
+    const r = machineRates(e, farm, total);
+    return { equipmentId: e.id, name: e.name, hoursPerYear: total, cropHours, customHours, ownPerYear: o.totalPerYear, repairsPerYear: o.repairsPerYear,
+      ownPerHour: r.ownPerHour, fuelLubePerHour: r.fuelLubePerHour, repairsPerHour: r.repairsPerHour, runPerHour: r.runPerHour, allInPerHour: r.allInPerHour, byCrop, customShare };
+  });
+  const ratesById = new Map(machines.map(m => [m.equipmentId, { hoursPerYear: m.hoursPerYear, ownPerHour: m.ownPerHour, fuelLubePerHour: m.fuelLubePerHour, repairsPerHour: m.repairsPerHour, runPerHour: m.runPerHour, allInPerHour: m.allInPerHour } as MachineRates]));
   const equipmentOwnership = machines.reduce((s, m) => s + m.ownPerYear, 0);
+
+  // Custom work for others: income minus fuel, the hours' share of repairs and ownership, and the farmer's time.
+  const customJobs = customWork.map(j => {
+    const m = machines.find(x => x.equipmentId === j.equipmentId);
+    const hours = j.hoursPerYear || 0;
+    const fuelLube = m ? hours * m.fuelLubePerHour : 0;
+    const repairs = m ? hours * m.repairsPerHour : 0;
+    const ownershipCost = m && m.hoursPerYear > 0 ? m.ownPerYear * (hours / m.hoursPerYear) : 0;
+    const operatorLabor = hours * (farm.ownLaborRate || 0);
+    const cost = fuelLube + repairs + ownershipCost + operatorLabor;
+    return { id: j.id, name: j.name, equipmentId: j.equipmentId, machineName: m?.name ?? '', hours, income: j.incomePerYear || 0, cost, net: (j.incomePerYear || 0) - cost, fuelLube, repairs, ownershipCost, operatorLabor };
+  });
+  const customResult: CustomWorkResult = {
+    income: customJobs.reduce((s, j) => s + j.income, 0), fuelLube: customJobs.reduce((s, j) => s + j.fuelLube, 0), repairs: customJobs.reduce((s, j) => s + j.repairs, 0),
+    operatorLabor: customJobs.reduce((s, j) => s + j.operatorLabor, 0), ownership: customJobs.reduce((s, j) => s + j.ownershipCost, 0),
+    cost: customJobs.reduce((s, j) => s + j.cost, 0), net: customJobs.reduce((s, j) => s + j.net, 0),
+    jobs: customJobs.map(({ id, name, equipmentId, machineName, hours, income, cost, net }) => ({ id, name, equipmentId, machineName, hours, income, cost, net })),
+  };
 
   const monthlyCash = zeros();
   const monthlyOverhead = zeros();
@@ -143,18 +203,22 @@ export function computePlan(plan: Plan): FarmResult {
     const machineRows = machines.map((m, k) => {
       const o = ownershipByMachine[k];
       const share = m.byCrop[i].share;
-      return { equipmentId: m.equipmentId, name: m.name, share, hours: m.byCrop[i].hours, ownership: o.totalPerYear * share,
+      const hours = m.byCrop[i].hours;
+      // Repairs are a yearly pool; a machine with hours pays by hours, one without shares the pool like ownership.
+      const fuelLube = hours * m.fuelLubePerHour;
+      const repairs = m.hoursPerYear > 0 ? hours * m.repairsPerHour : o.repairsPerYear * share;
+      return { equipmentId: m.equipmentId, name: m.name, share, hours, ownership: o.totalPerYear * share,
         capitalRecovery: o.capitalRecovery * share, interestOnSalvage: o.interestOnSalvage * share, insurance: o.insurance * share, taxes: o.taxes * share,
-        running: m.byCrop[i].hours * m.runPerHour };
+        running: fuelLube + repairs, fuelLube, repairs };
     });
     const hiredJobs = (c.customHire ?? []).reduce((s, h) => s + h.costPerAcre, 0) * seasons;
     const fromOps = usesOperations(c);
-    const opCosts = fromOps ? c.operations.filter(o => o.enabled).map(o => operationCost(o, farm, equipment)) : [];
+    const opCosts = fromOps ? c.operations.filter(o => o.enabled).map(o => operationCost(o, farm, equipment, ratesById)) : [];
     const sumPart = (k: keyof OperationCost['parts']) => opCosts.reduce((s, o) => s + o.parts[k], 0) * seasons;
     const costParts = {
       materials: sumPart('materials'), handLabor: sumPart('handLabor'), operatorLabor: sumPart('operatorLabor'),
-      machineRunning: fromOps ? sumPart('machineRunning') : machineRows.reduce((s, r) => s + r.running, 0),
-      hiredMachine: sumPart('hiredMachine'), custom: sumPart('custom'), otherLabor: sumPart('otherLabor'),
+      machineRunning: machineRows.reduce((s, r) => s + r.running, 0),
+      rent: sumPart('rent'), hiredMachine: sumPart('hiredMachine'), custom: sumPart('custom'), otherLabor: sumPart('otherLabor'),
       ownLabor, hiredJobs, lump: fromOps ? 0 : seasons * c.operatingCostPerAcre,
     };
     const machineRunning = costParts.machineRunning;
@@ -192,19 +256,29 @@ export function computePlan(plan: Plan): FarmResult {
     ];
     const overheadShare = overheadRows.reduce((s, r) => s + r.amount, 0);
     const equipmentShare = machineRows.reduce((s, r) => s + r.ownership, 0);
-    const totalCost = operating + overheadShare + equipmentShare;
+    // A perennial planting is an investment: accumulated establishment cost (plus any removal the
+    // farmer adds as a pre-plant cost) recovered over its production years, salvage zero, with the
+    // same insurance and tax the studies charge on an investment.
+    const est = c.establishment;
+    let establishment: CropResult['establishment'] = null;
+    if (est && est.productionYears > 0 && (est.accumulatedNetCostPerAcre > 0 || est.removalCostPerAcre > 0)) {
+      const price = (est.accumulatedNetCostPerAcre + (est.removalCostPerAcre || 0)) * acres;
+      const o = ownership({ pricePaid: price, salvageValue: 0, keepYears: est.productionYears, repairsPctPerYear: 0 } as Equipment, farm);
+      establishment = { capitalRecovery: o.capitalRecovery, insurance: o.insurance, taxes: o.taxes, total: o.totalPerYear, perAcre: acres > 0 ? o.totalPerYear / acres : 0 };
+    }
+    const totalCost = operating + overheadShare + equipmentShare + (establishment?.total ?? 0);
     const net = revenue - totalCost;
     const contribution = revenue - operating;
     const breakEvenPrice = units > 0 ? totalCost / units : 0;
     const perAcreDenominator = c.price * seasons;
     const breakEvenYieldPerAcre = perAcreDenominator > 0 ? totalCost / perAcreDenominator : 0;
 
-    return { cropId: c.id, name: c.name, acres, units, revenue, operating, machineRunning, customHire, overheadShare, equipmentShare, totalCost, net, contribution, breakEvenPrice, breakEvenYieldPerAcre, hasMonths, overheadItems: overheadRows, machines: machineRows, monthly, costParts: costPartsFull, operationRows };
+    return { cropId: c.id, name: c.name, acres, units, revenue, operating, machineRunning, customHire, overheadShare, equipmentShare, totalCost, net, contribution, breakEvenPrice, breakEvenYieldPerAcre, hasMonths, overheadItems: overheadRows, machines: machineRows, monthly, costParts: costPartsFull, operationRows, establishment };
   });
 
   // Overhead and equipment ownership go out evenly through the year, but only the share belonging to
   // the crops in the cash view, so the chart is not charged for crops it cannot show.
-  const fixedInView = cropResults.reduce((s, r) => s + (r.hasMonths ? r.overheadShare + r.equipmentShare : 0), 0);
+  const fixedInView = cropResults.reduce((s, r) => s + (r.hasMonths ? r.overheadShare + r.equipmentShare + (r.establishment?.total ?? 0) : 0), 0);
   if (withMonths > 0) for (let m = 0; m < 12; m++) { monthlyOverhead[m] = fixedInView / 12; monthlyCash[m] -= monthlyOverhead[m]; }
 
   const runningCash = zeros();
@@ -220,8 +294,8 @@ export function computePlan(plan: Plan): FarmResult {
   const totalCost = cropResults.reduce((s, r) => s + r.totalCost, 0);
 
   return {
-    totalAcres, revenue, totalCost, net: revenue - totalCost, overhead, equipmentOwnership, ownLaborPaid,
-    crops: cropResults, machines, monthlyCash, monthlyOverhead, runningCash, lowestCashPoint: lowest,
+    totalAcres, revenue, totalCost, net: revenue - totalCost + customResult.net, overhead, equipmentOwnership, ownLaborPaid,
+    crops: cropResults, machines, customWork: customResult, monthlyCash, monthlyOverhead, runningCash, lowestCashPoint: lowest,
     cashCoverage: { withMonths, total: crops.length },
   };
 }
@@ -241,6 +315,7 @@ export function newCropFromStudy(s: ParsedStudy, area: number, id: string = uid(
     operatingCostPerAcre: d.operatingCostPerAcre ?? 0, ownLaborHoursPerAcre: 0,
     machineHours: [], customHire: [],
     operations: operationsFromStudy(s),
+    establishment: d.establishment,
     costMonths: d.costMonths, revenueMonths: d.revenueMonths,
     citations: d.citations,
     missingFields: [
@@ -258,12 +333,11 @@ export function newEquipmentFromCatalog(entry: CatalogEntry, condition: Conditio
   return {
     id, typeId: d.typeId, name: d.name, condition,
     pricePaid: d.pricePaid, yearBought: new Date().getFullYear(), keepYears: d.keepYears,
-    hoursPerYear: 0,
     salvageValue: d.salvageValue,
     fuelLubePerHour: d.fuelLubePerHour ?? 0,
-    repairsPerHour: d.repairsPerHour ?? 0,
+    repairsPctPerYear: d.repairsPctPerYear ?? 0,
     citations: d.citations,
-    missingFields: [...(d.fuelLubePerHour == null ? ['fuelLubePerHour' as const] : []), ...(d.repairsPerHour == null ? ['repairsPerHour' as const] : [])],
+    missingFields: [...(d.fuelLubePerHour == null ? ['fuelLubePerHour' as const] : []), ...(d.repairsPctPerYear == null ? ['repairsPctPerYear' as const] : [])],
   };
 }
 
@@ -296,12 +370,12 @@ export function newBlankCrop(id: string = uid()): Crop {
 
 /** A farmer-written operation with nothing filled in. */
 export function newBlankOperation(id: string = uid()): CropOperation {
-  return { id, name: '', category: 'cultural', enabled: true, machineHoursPerAcre: 0, operatorHoursPerAcre: 0, equipmentId: null,
+  return { id, name: '', category: 'cultural', enabled: true, machineHoursPerAcre: 0, operatorHoursPerAcre: 0, mode: 'hire', equipmentId: null, rentPerHour: 0,
     hiredMachinePerAcre: 0, handHoursPerAcre: 0, otherLaborPerAcre: 0, materialsPerAcre: 0, customPerAcre: 0, source: 'custom' };
 }
 
 export function newBlankEquipment(id: string = uid()): Equipment {
   return { id, typeId: 'custom', name: '', condition: 'used', pricePaid: 0,
-    yearBought: 0, keepYears: 0, hoursPerYear: 0, salvageValue: 0,
-    fuelLubePerHour: 0, repairsPerHour: 0, citations: {}, missingFields: ['pricePaid', 'keepYears', 'salvageValue', 'fuelLubePerHour', 'repairsPerHour', 'hoursPerYear', 'yearBought'] };
+    yearBought: 0, keepYears: 0, salvageValue: 0,
+    fuelLubePerHour: 0, repairsPctPerYear: 0, citations: {}, missingFields: ['pricePaid', 'keepYears', 'salvageValue', 'fuelLubePerHour', 'repairsPctPerYear', 'yearBought'] };
 }

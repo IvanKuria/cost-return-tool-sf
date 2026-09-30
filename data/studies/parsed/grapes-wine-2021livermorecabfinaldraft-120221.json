@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/12/07/2021livermorecabfinaldraft_120221.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -746,6 +746,75 @@
   "page": 20,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE WINEGRAPES"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 24189,
+    "returns": null,
+    "netCost": 24189,
+    "accumulated": 24189,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 24,189 28,035 28,063"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 3846,
+    "returns": null,
+    "netCost": 3846,
+    "accumulated": 28035,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 24,189 28,035 28,063"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 4828,
+    "returns": 4800,
+    "netCost": 28,
+    "accumulated": 28063,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 24,189 28,035 28,063"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": {
+   "value": 2019,
+   "page": 17,
+   "quote": "Vineyard Establishment 28,063 2,019 2,019"
+  },
+  "productionYears": {
+   "value": 27,
+   "page": 11,
+   "quote": "The establishment cost is amortized over the remaining 27 years of the vineyard’s projected 30-year life span."
+  },
+  "plantingLife": {
+   "value": 30,
+   "page": 11,
+   "quote": "The establishment cost is amortized over the remaining 27 years of the vineyard’s projected 30-year life span."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 2225,
+   "page": 14,
+   "quote": "Vineyard Removal 2,225",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 505134,
+   "yearsLife": 27,
+   "salvageValue": 0,
+   "capitalRecovery": 36346,
+   "page": 22,
+   "line": "Vineyard Establishment 505,134 27 0 36,346 224 2,526 2,526 41,621"
+  },
+  "method": {
+   "page": 11,
+   "quote": "The establishment cost is amortized over the remaining 27 years of the vineyard’s projected 30-year life span."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -766,7 +835,9 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborMachineRate",
@@ -775,7 +846,8 @@
    "landRentPerAcre",
    "equipment",
    "hourlyEquipment",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishmentAccumulated"
   ],
   "warnings": [
    "equipment table present but no equipment rows parsed"

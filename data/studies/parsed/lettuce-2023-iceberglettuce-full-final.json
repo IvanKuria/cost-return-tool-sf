@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/08/04/2023-iceberglettuce-full-final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lettuce",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1289,6 +1289,7 @@
   "page": 14,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE AND HARVEST WRAPPED ICEBERG LETTUCE"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1318,7 +1319,10 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "counties"
+   "counties",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

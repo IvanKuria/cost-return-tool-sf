@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/dc/15/dc158210-055c-494c-9c2f-54083fbf0323/2016wheatsacvalleyfinaldraft122116.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/wheat",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1184,6 +1184,7 @@
   "page": 14,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE WHEAT"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1213,7 +1214,10 @@
    "pricePerUnit",
    "landRentPerAcre",
    "acresFarmed",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]"

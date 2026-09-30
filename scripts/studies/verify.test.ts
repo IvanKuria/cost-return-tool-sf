@@ -51,6 +51,41 @@ describe('2024 organic strawberries, Central Coast', () => {
   });
 });
 
+describe('establishment cost in perennial studies', () => {
+  const all = load();
+  it('2024 almonds, Sacramento Valley', () => {
+    const s = all.find(x => x.source.id === 'almonds-2024sacvalleyalmonds7-5-24-final-draft')!;
+    expect(s.establishment).toBeTruthy();
+    expect(s.establishment!.accumulatedNetCost?.value).toBe(14894);
+    expect(s.establishment!.annualCharge?.value).toBe(1489);
+    expect(s.establishment!.productionYears?.value).toBe(22);
+    expect(s.establishment!.amortizedFromYear?.value).toBe(4);
+    expect(s.establishment!.years.find(y => y.year === 3)?.accumulated).toBe(14894);
+    expect(s.establishment!.removalCost?.value).toBe(1600);
+  });
+  it('2017 cling peaches, early harvested', () => {
+    const s = all.find(x => x.source.id === 'peaches-2017peachsvsjv-ecling-final-draft2')!;
+    expect(s.establishment?.accumulatedNetCost?.value).toBe(7939);
+    expect(s.establishment?.annualCharge?.value).toBe(765);
+    expect(s.establishment?.productionYears?.value).toBe(15);
+    expect(s.establishment?.asset?.price).toBe(317560);
+    expect(s.establishment?.asset?.salvageValue).toBe(0);
+  });
+  it('2021 Lodi wine grapes', () => {
+    const s = all.find(x => x.source.id === 'grapes-wine-2021-grapewinelodi-22522')!;
+    expect(s.establishment?.accumulatedNetCost?.value).toBe(26313);
+    expect(s.establishment?.annualCharge?.value).toBe(1954);
+    expect(s.establishment?.productionYears?.value).toBe(22);
+    expect(s.establishment?.plantingLife?.value).toBe(25);
+  });
+  it('salvage of the establishment asset is zero wherever printed, and coverage is printed', () => {
+    const withEst = all.filter(s => s.establishment);
+    for (const s of withEst) if (s.establishment!.asset) expect(s.establishment!.asset.salvageValue).toBe(0);
+    const n = (k: (e: NonNullable<ParsedStudy['establishment']>) => unknown) => withEst.filter(s => k(s.establishment!) != null && k(s.establishment!) !== 0).length;
+    console.log(`establishment: ${withEst.length} studies; accumulated ${n(e => e.accumulatedNetCost)}, annual charge ${n(e => e.annualCharge)}, production years ${n(e => e.productionYears)}, planting life ${n(e => e.plantingLife)}, years table ${withEst.filter(s => s.establishment!.years.length).length}, removal ${n(e => e.removalCost)}, asset ${n(e => e.asset)}, method ${n(e => e.method)}`);
+  });
+});
+
 describe('all studies', () => {
   const all = load();
   it('operation rows carry numeric or null cost columns', () => {

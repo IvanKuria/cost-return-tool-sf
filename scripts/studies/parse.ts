@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { loadManifest, slugOf, TEXT_DIR, PARSED_DIR, type ManifestEntry } from './manifest';
 import type {
-  Assumptions, BusinessOverheadRow, Cited, CostsPerAcre, EquipmentRow, HourlyEquipmentRow, Method, MonthlyCosts,
+  Assumptions, BusinessOverheadRow, Cited, CostsPerAcre, EquipmentRow, Establishment, EstablishmentYear, HourlyEquipmentRow, Method, MonthlyCosts,
   OperationCategory, OperationRow, ParsedStudy, Quote, StudySource,
 } from './types';
 
@@ -663,6 +663,119 @@ function parseMonthly(lines: Line[], warn: (s: string) => void): MonthlyCosts | 
   return null;
 }
 
+
+// ---------------------------------------------------------------- establishment (perennials)
+
+const ORDINAL: Record<string, number> = { first: 1, second: 2, third: 3, fourth: 4, fifth: 5, sixth: 6, seventh: 7, eighth: 8, ninth: 9, tenth: 10 };
+const wordOrNum = (w: string | undefined): number | null => {
+  if (!w) return null;
+  const k = w.toLowerCase().replace(/[^a-z0-9]/g, '');
+  if (/^\d+$/.test(k)) return Number(k);
+  if (k in WORD_NUM) return WORD_NUM[k];
+  if (k in ORDINAL) return ORDINAL[k];
+  const more: Record<string, number> = { seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12 };
+  return k in more ? more[k] : null;
+};
+/** All numbers at the end of a table row, in order (dashes count as zero). */
+function tailNumbers(text: string): number[] {
+  const m = text.match(new RegExp(String.raw`((?:\s+(?:${NUM}|[-—]))+)\s*$`));
+  if (!m) return [];
+  return m[1].trim().split(/\s+/).map(zeroDash).filter((n): n is number => n != null);
+}
+
+function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s: string) => void): Establishment | null {
+  const S = proseSentences(lines);
+  const all = findTables(lines);
+  const estTables = all.filter(t => /ESTABLISH|DEVELOP|ESTABLEC/i.test(t.title));
+  const hasProse = S.some(x => /establishment cost/i.test(x.text));
+  if (!estTables.length && !hasProse) return null;
+
+  // Prose: the "Establishment Cost." paragraph, read as a window of sentences.
+  // The paragraph can share its heading with an earlier section ("Orchard Establishment." in the cultural
+  // practices), so take the first candidate window that actually holds the amortization or the dollar figure.
+  const starts = S.map((x, i) => (/^(?:orchard |vineyard |grove )?establishment(?: costs?)?[.:]/i.test(x.text) || /^Establishment Cost/i.test(x.text) || /establishment cost is the sum/i.test(x.text) ? i : -1)).filter(i => i >= 0);
+  const pickWindow = starts.map(i => S.slice(i, i + 10)).find(w => w.some(x => /amortiz/i.test(x.text) || /\$\s?[\d,]+\s*per acre/i.test(x.text)));
+  const win = pickWindow ?? S.filter(x => /establishment/i.test(x.text));
+  const q = (hit: { s: { text: string; page: number }; m: RegExpMatchArray } | null, group = 1) => {
+    const v = hit ? wordOrNum(hit.m[group]) : null;
+    return hit && v != null ? { value: v, page: hit.s.page, quote: hit.s.text } : null;
+  };
+  const acc = sentenceMatch(win, /\$\s?([\d,]+)\s*per acre/i);
+  const accumulatedNetCost = acc ? (() => { const v = toNum(acc.m[1]); return v == null ? null : { value: v, page: acc.s.page, quote: acc.s.text }; })() : null;
+  const amort = sentenceMatch(win, /amortiz/i);
+  const productionYears = q(sentenceMatch(win, /amortiz[^.]*?remaining\s+(\w+)\s+years?/i))
+    || q(sentenceMatch(win, /amortiz[^.]*?over the\s+(\w+)[- ]years?/i))
+    || q(sentenceMatch(win, /amortiz[^.]*?over the remaining\s+(\w+)/i));
+  const plantingLife = q(sentenceMatch(S, /of the\s+(\d+)\s+years? the (?:vineyard|orchard|stand|planting) is in production/i))
+    || q(sentenceMatch(S, /(?:projected|assumed|estimated)?\s*(\d+)[- ]year (?:life|stand life|vineyard|orchard)/i))
+    || q(sentenceMatch(S, /(?:economic )?life of the (?:orchard|vineyard|stand|planting|grove)[^.]*?(\d+)\s+years/i))
+    || q(sentenceMatch(S, /(?:orchard|vineyard|stand|planting|grove)[^.]{0,60}?(?:economic )?life[^.]{0,40}?(\d+)\s+years/i));
+  const amortizedFromYear = q(sentenceMatch(win, /amortiz[^.]*?beginning in the\s+(\w+)\s+year/i));
+
+  // Table: total cash costs, returns, net and accumulated rows by establishment year.
+  const years: EstablishmentYear[] = [];
+  let removalCost: Establishment['removalCost'] = null;
+  let annualFromTable: Establishment['annualCharge'] = null;
+  for (const t of estTables) {
+    const [a, b] = spanOf(lines, all, t);
+    const rowsIn = (re: RegExp) => findAll(lines, re, a, b);
+    const total = rowsIn(/^\s*TOTAL CASH COSTS?\s*\/\s*ACRE\b/i)[0] ?? null;
+    const returns = rowsIn(/^\s*(?:INCOME|REVENUE|RETURNS?)\s*\/\s*ACRE FROM PRODUCTION\b/i)[0] ?? null;
+    const net = rowsIn(/^\s*NET CASH COSTS?\s*\/\s*ACRE FOR THE YEAR\b/i)[0] ?? null;
+    const accRow = rowsIn(/^\s*(?:TOTAL\s+)?ACCUMULATED NET CASH COSTS?\s*\/\s*ACRE\b/i)[0] ?? null;
+    const header = rowsIn(/\bYear:?\s+(?:Est(?:ab)?\S*|1st|Year\s*1|\d)/i)[0] ?? null;
+    if (!total && !net) continue;
+    const tn = total ? tailNumbers(total.line.text) : [];
+    const nn = net ? tailNumbers(net.line.text) : [];
+    const an = accRow ? tailNumbers(accRow.line.text) : [];
+    const rn = returns ? tailNumbers(returns.line.text) : [];
+    const cols = Math.max(tn.length, nn.length, an.length);
+    if (cols === 0) continue;
+    const labels: string[] = header ? (header.line.text.match(/Year:?\s*(.*)$/i)?.[1] ?? '').trim().split(/\s{2,}|\s+(?=\d)/).filter(Boolean) : [];
+    // Rows with fewer numbers are right-aligned to the last columns (returns start when harvest starts).
+    const at = (arr: number[], i: number) => (arr.length ? (i - (cols - arr.length) >= 0 ? arr[i - (cols - arr.length)] ?? null : null) : null);
+    for (let i = 0; i < cols; i++) {
+      const totalCost = at(tn, i), ret = at(rn, i), netCost = at(nn, i), accumulated = at(an, i);
+      years.push({ year: i + 1, label: labels[i] ?? String(i + 1), totalCost, returns: ret, netCost: netCost ?? (totalCost != null ? totalCost - (ret ?? 0) : null), accumulated, page: (accRow ?? net ?? total)!.line.page, quote: clean((accRow ?? net ?? total)!.line.text) });
+    }
+    // Reconcile the running sum of net costs with the printed accumulated row.
+    if (an.length && nn.length === cols) {
+      let run = 0;
+      for (let i = 0; i < cols; i++) { run += nn[i]; const printed = an[i]; if (printed != null && Math.abs(run - printed) > 0.02 * Math.max(1, Math.abs(printed))) { warn(`establishment year ${i + 1}: running net ${run} differs from printed accumulated ${printed}`); break; } }
+    }
+    // Removal of the previous planting is a pre-plant cost in the first establishment year.
+    const rem = rowsIn(/^\s*(?:\S.*?)?(?:orchard|vineyard|tree|vine|tunnel\/trellis|stand|field)?\s*(?:removal|remove\b|tear[- ]?out|pull (?:out )?(?:vines|trees))/i).find(h => tailNumbers(h.line.text).length);
+    if (rem && !removalCost) { const v = tailNumbers(rem.line.text)[0]; removalCost = { value: v, page: rem.line.page, quote: clean(rem.line.text), note: 'Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero.' }; }
+    const estLine = rowsIn(/^\s*(?:orchard|vineyard|grove|stand)?\s*establishment( costs?)?\s+[\d,]/i)[0];
+    if (estLine && !annualFromTable) { const v = tailNumbers(estLine.line.text); if (v.length) annualFromTable = { value: v[v.length - 1], page: estLine.line.page, quote: clean(estLine.line.text) }; }
+  }
+
+  // Production year: the establishment line in the non-cash overhead block gives per producing acre and the annual charge.
+  let annualCharge: Establishment['annualCharge'] = null;
+  const prodTables = all.filter(t => !/ESTABLISH|DEVELOP|ESTABLEC/i.test(t.title) && (t.kind === 'costs' || t.kind === 'returns' || t.kind === 'other'));
+  for (const t of prodTables) {
+    const [a, b] = spanOf(lines, all, t);
+    const hit = find(lines, /^\s*(?:orchard|vineyard|grove|field|stand)?\s*establishment( costs?)?\s+[\d,]{3,}(?:\s+[\d,]+)+\s*$/i, a, b);
+    if (hit) { const v = tailNumbers(hit.line.text); if (v.length >= 2) { annualCharge = { value: v[1], page: hit.line.page, quote: clean(hit.line.text) }; if (accumulatedNetCost && Math.abs(v[0] - accumulatedNetCost.value) > 0.02 * accumulatedNetCost.value) warn(`establishment per producing acre ${v[0]} differs from prose ${accumulatedNetCost.value}`); break; } }
+  }
+  if (!annualCharge && annualFromTable) annualCharge = annualFromTable;
+
+  // The establishment row of the investment table, whole farm figures.
+  const inv = investments.find(r => /establishment/i.test(r.description));
+  const asset = inv ? { price: inv.price, yearsLife: inv.yearsLife, salvageValue: inv.salvageValue, capitalRecovery: inv.capitalRecovery, page: inv.page, line: inv.line } : null;
+
+  if (accumulatedNetCost && years.length) {
+    const printed = years.map(y => y.accumulated).filter((v): v is number => v != null);
+    if (printed.length && !printed.some(v => Math.abs(v - accumulatedNetCost.value) <= 0.02 * accumulatedNetCost.value)) warn(`prose establishment cost ${accumulatedNetCost.value} matches no column of the accumulated row [${printed.join(', ')}]`);
+  }
+  if (!accumulatedNetCost && !years.length && !annualCharge) return null;
+  return {
+    years, accumulatedNetCost, annualCharge,
+    productionYears: productionYears ?? (asset ? { value: asset.yearsLife, page: asset.page, quote: `${asset.line} (years of life of the establishment row in the investment table)` } : null),
+    plantingLife, amortizedFromYear, removalCost, asset, method: amort ? { page: amort.s.page, quote: amort.s.text } : null,
+  };
+}
+
 // ---------------------------------------------------------------- method
 
 function parseMethod(lines: Line[]): Method {
@@ -707,6 +820,7 @@ export function parseStudy(e: ManifestEntry, text: string): ParsedStudy {
   const hourlyEquipment = parseHourly(lines, warn);
   const method = parseMethod(lines);
   const monthly = parseMonthly(lines, warn);
+  const establishment = parseEstablishment(lines, investments, warn);
 
   const fields: Record<string, unknown> = {
     year: source.year, region: source.region, counties: source.counties,
@@ -720,10 +834,11 @@ export function parseStudy(e: ManifestEntry, text: string): ParsedStudy {
     capitalRecoveryFormula: method.capitalRecoveryFormula, insuranceRatePct: method.insuranceRatePct, propertyTaxRatePct: method.propertyTaxRatePct,
     machineLaborFactor: method.machineLaborFactor,
     monthly,
+    establishment: establishment ?? null, establishmentAccumulated: establishment?.accumulatedNetCost ?? null, establishmentAnnual: establishment?.annualCharge ?? null,
   };
   const fieldsFound = Object.keys(fields).filter(k => fields[k] != null);
   const fieldsMissing = Object.keys(fields).filter(k => fields[k] == null);
-  return { source, assumptions, costsPerAcre, equipment, investments, hourlyEquipment, businessOverhead, method, monthly, parse: { fieldsFound, fieldsMissing, warnings } };
+  return { source, assumptions, costsPerAcre, equipment, investments, hourlyEquipment, businessOverhead, method, monthly, establishment, parse: { fieldsFound, fieldsMissing, warnings } };
 }
 
 function main() {

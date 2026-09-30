@@ -20,5 +20,9 @@ export const APP_METHODS: AppMethod[] = [
   { key: 'totals', kind: 'standard', formula: 'all costs = operating + overhead share + equipment share; net = sales - all costs; contribution = sales - operating' },
   { key: 'breakEven', kind: 'standard', formula: 'break-even price = all costs / units; break-even yield = all costs / (price x acre-plantings)' },
   { key: 'cashMonths', kind: 'assumption', formula: 'costs by month follow the study\'s monthly table or your percents; sales are spread equally over harvest months unless you set percents; overhead and ownership are charged evenly, one twelfth a month' },
+  { key: 'establishment', kind: 'standard', formula: 'yearly establishment charge = capital recovery on (accumulated net establishment cost + removal you enter) x acres over the production years, salvage zero, plus insurance and property tax on its average value' },
+  { key: 'repairs', kind: 'assumption', formula: 'repairs per year = price paid x repairs percent; repairs per hour = that / hours the machine runs (crop hours + custom hours)' },
+  { key: 'customWork', kind: 'standard', formula: 'custom work net = paid - (hours x fuel and lube + hours x repairs per hour + hours / machine hours x ownership + hours x what you pay yourself)' },
+  { key: 'rent', kind: 'standard', formula: 'rented machine work = machine hours x rent per hour + operator hours x hired hourly, no ownership share' },
   { key: 'units', kind: 'standard', formula: 'beds to acres = beds x bed length x bed width / 43,560 sq ft; 100 ft rows use the same bed width' },
 ];

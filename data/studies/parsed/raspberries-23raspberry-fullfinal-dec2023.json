@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/12/15/23raspberry-fullfinal-dec2023.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/raspberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1365,6 +1365,87 @@
   "page": 32,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AND HARVEST RASPBERRIES – PRODUCTION YEAR"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "Establish",
+    "totalCost": 13762,
+    "returns": null,
+    "netCost": 13762,
+    "accumulated": null,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 13,762 13,199"
+   },
+   {
+    "year": 2,
+    "label": "Prod Yr",
+    "totalCost": 80187,
+    "returns": 80750,
+    "netCost": -563,
+    "accumulated": null,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 13,762 13,199"
+   },
+   {
+    "year": 3,
+    "label": "1",
+    "totalCost": 119733,
+    "returns": 129200,
+    "netCost": -9467,
+    "accumulated": 13762,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 13,762 13,199"
+   },
+   {
+    "year": 4,
+    "label": "Prod Yr",
+    "totalCost": 75539,
+    "returns": 80750,
+    "netCost": 13762,
+    "accumulated": 13199,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 13,762 13,199"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 13762,
+    "returns": null,
+    "netCost": 13762,
+    "accumulated": null,
+    "page": 14,
+    "quote": "TOTAL CASH COSTS/ACRE 13,762"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 13762,
+    "returns": null,
+    "netCost": 13762,
+    "accumulated": null,
+    "page": 15,
+    "quote": "TOTAL CASH COSTS/ACRE 13,762"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 13762,
+   "page": 11,
+   "quote": "For this study the cost is $13,762 per acre or $578,004 for the 42-acre field."
+  },
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 112,
+   "page": 15,
+   "quote": "Plastic Removal 1.00 acre 112.00 112",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": null,
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1391,10 +1472,13 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "counties"
+   "counties",
+   "establishmentAnnual"
   ],
   "warnings": [
    "several costs-per-acre tables (establishment and production); using the production one",

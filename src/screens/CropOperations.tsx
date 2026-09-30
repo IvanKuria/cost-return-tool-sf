@@ -1,30 +1,39 @@
 import { useState } from 'react';
-import type { Crop, CropOperation, Equipment, Farm, OperationCategory } from '../lib/types';
-import { hiredHourly, newBlankOperation, operationCost, runPerHour } from '../lib/engine';
+import type { Crop, CropOperation, Equipment, Farm, MachineRates, OperationCategory } from '../lib/types';
+import { hiredHourly, newBlankOperation, operationCost } from '../lib/engine';
 import { Button, Field, Input, NumberInput, Select, SourceTag, cents, money, num } from '../ui';
 import { useT, useTypeName } from '../i18n';
 import type { Key } from '../i18n/en';
 
-const HIRED = '__hired__';
+const RENT = '__rent__';
+const HIRE = '__hire__';
 const CATEGORIES: OperationCategory[] = ['cultural', 'harvest', 'assessment', 'postharvest', 'other'];
 const CATEGORY_KEY: Record<OperationCategory, Key> = { cultural: 'ops.category.cultural', harvest: 'ops.category.harvest', assessment: 'ops.category.assessment', postharvest: 'ops.category.postharvest', other: 'ops.category.other' };
 
-export type PartKey = 'materials' | 'handLabor' | 'operatorLabor' | 'machineRunning' | 'hiredMachine' | 'custom' | 'otherLabor';
-export const PART_KEYS: PartKey[] = ['materials', 'handLabor', 'operatorLabor', 'machineRunning', 'hiredMachine', 'custom', 'otherLabor'];
+export type PartKey = 'materials' | 'handLabor' | 'operatorLabor' | 'machineRunning' | 'rent' | 'hiredMachine' | 'custom' | 'otherLabor';
+export const PART_KEYS: PartKey[] = ['materials', 'handLabor', 'operatorLabor', 'machineRunning', 'rent', 'hiredMachine', 'custom', 'otherLabor'];
 
-/** Per acre, one planting: the operations' cost parts added up. */
-export function operationsPerAcre(crop: Crop, farm: Farm, equipment: Equipment[]) {
-  const parts: Record<PartKey, number> = { materials: 0, handLabor: 0, operatorLabor: 0, machineRunning: 0, hiredMachine: 0, custom: 0, otherLabor: 0 };
+/** Per acre, one planting: the operations' cost parts added up. `rates` are the machines' run rates at their hours for the year. */
+export function operationsPerAcre(crop: Crop, farm: Farm, equipment: Equipment[], rates?: Map<string, MachineRates>) {
+  const parts: Record<PartKey, number> = { materials: 0, handLabor: 0, operatorLabor: 0, machineRunning: 0, rent: 0, hiredMachine: 0, custom: 0, otherLabor: 0 };
   for (const op of crop.operations) {
     if (!op.enabled) continue;
-    const c = operationCost(op, farm, equipment);
+    const c = operationCost(op, farm, equipment, rates);
     for (const k of PART_KEYS) parts[k] += c.parts[k];
   }
   const total = PART_KEYS.reduce((s, k) => s + parts[k], 0);
   return { parts, total };
 }
 
-export function CropOperations({ crop, farm, equipment, seasons, onChange }: { crop: Crop; farm: Farm; equipment: Equipment[]; seasons: number; onChange: (patch: Partial<Crop>) => void }) {
+/** The Select value for a row: a machine id, or the rent or hire sentinel. */
+const modeValue = (op: CropOperation) => {
+  const mode = op.mode ?? (op.equipmentId ? 'own' : 'hire');
+  return mode === 'own' && op.equipmentId ? op.equipmentId : mode === 'rent' ? RENT : HIRE;
+};
+const patchForValue = (v: string): Partial<CropOperation> =>
+  v === RENT ? { mode: 'rent', equipmentId: null } : v === HIRE ? { mode: 'hire', equipmentId: null } : { mode: 'own', equipmentId: v };
+
+export function CropOperations({ crop, farm, equipment, rates, seasons, onChange }: { crop: Crop; farm: Farm; equipment: Equipment[]; rates: Map<string, MachineRates>; seasons: number; onChange: (patch: Partial<Crop>) => void }) {
   const { t } = useT();
   const typeName = useTypeName();
   const [open, setOpen] = useState<Record<string, boolean>>({});
@@ -36,11 +45,24 @@ export function CropOperations({ crop, farm, equipment, seasons, onChange }: { c
   const add = () => { const o = newBlankOperation(); onChange({ operations: [...ops, o] }); setOpen(s => ({ ...s, [o.id]: true })); };
   const machineName = (e: Equipment) => typeName('equipment', e.typeId, e.name);
   const nameOf = (op: CropOperation) => op.name.trim() || t('ops.name');
-  const { parts, total } = operationsPerAcre(crop, farm, equipment);
+  const { parts, total } = operationsPerAcre(crop, farm, equipment, rates);
   const machineOps = ops.filter(o => o.machineHoursPerAcre > 0);
   const disabled = ops.filter(o => !o.enabled).length;
 
   const groups = CATEGORIES.map(cat => ({ cat, rows: ops.filter(o => o.category === cat) })).filter(g => g.rows.length > 0);
+
+  const whoSelect = (op: CropOperation, ariaLabel?: string) => (
+    <Select value={modeValue(op)} onChange={e => update(op.id, patchForValue(e.target.value))} aria-label={ariaLabel}>
+      {equipment.map(e => <option key={e.id} value={e.id}>{machineName(e)}</option>)}
+      <option value={RENT}>{t('ops.mode.rent')}</option>
+      <option value={HIRE}>{t('ops.mode.hire')}</option>
+    </Select>
+  );
+
+  const whoLabel = (op: CropOperation, machine: Equipment | null) => {
+    const mode = op.mode ?? (op.equipmentId ? 'own' : 'hire');
+    return mode === 'own' && machine ? machineName(machine) : mode === 'rent' ? t('ops.rented') : t('ops.hired');
+  };
 
   return (
     <div className="border-t border-line pt-5 flex flex-col gap-4">
@@ -54,7 +76,7 @@ export function CropOperations({ crop, farm, equipment, seasons, onChange }: { c
         <p className="text-[14px] text-ink-2 rounded-[var(--radius-ctl)] bg-well px-4 py-3">{t('ops.noMachines')}</p>
       )}
 
-      {equipment.length > 0 && machineOps.length > 0 && (
+      {machineOps.length > 0 && (
         <div>
           <Button variant="secondary" className="h-10 px-4 text-[15px]" onClick={() => setAssigning(a => !a)} aria-expanded={assigning}>{assigning ? t('ops.assign.done') : t('ops.assign')}</Button>
           {assigning && (
@@ -66,10 +88,7 @@ export function CropOperations({ crop, farm, equipment, seasons, onChange }: { c
                     <div className="text-[15px] truncate">{nameOf(op)}</div>
                     <div className="text-[13px] text-ink-2 tnum">{t('ops.hoursShort', { hours: num(op.machineHoursPerAcre, 2) })} {t('common.perAcre')}</div>
                   </div>
-                  <Select value={op.equipmentId ?? HIRED} onChange={e => update(op.id, { equipmentId: e.target.value === HIRED ? null : e.target.value })} aria-label={`${t('ops.who')}: ${nameOf(op)}`}>
-                    <option value={HIRED}>{t('ops.hired')}</option>
-                    {equipment.map(e => <option key={e.id} value={e.id}>{machineName(e)}</option>)}
-                  </Select>
+                  {whoSelect(op, `${t('ops.who')}: ${nameOf(op)}`)}
                 </div>
               ))}
             </div>
@@ -83,17 +102,21 @@ export function CropOperations({ crop, farm, equipment, seasons, onChange }: { c
             <div className="text-[13px] font-medium text-ink-2 mb-1.5">{t(CATEGORY_KEY[g.cat])}</div>
             <div className="flex flex-col divide-y divide-line border border-line rounded-[var(--radius-ctl)] overflow-hidden">
               {g.rows.map(op => {
-                const cost = operationCost(op, farm, equipment);
+                const cost = operationCost(op, farm, equipment, rates);
                 const isOpen = !!open[op.id];
-                const machine = op.equipmentId ? equipment.find(e => e.id === op.equipmentId) ?? null : null;
-                const who = op.machineHoursPerAcre > 0 ? (machine ? machineName(machine) : t('ops.hired')) : null;
+                const mode = op.mode ?? (op.equipmentId ? 'own' : 'hire');
+                const machine = mode === 'own' && op.equipmentId ? equipment.find(e => e.id === op.equipmentId) ?? null : null;
+                const isMachineRow = op.machineHoursPerAcre > 0;
+                const who = isMachineRow ? whoLabel(op, machine) : null;
+                const machineRate = machine ? rates.get(machine.id) : undefined;
+                const capacity = op.machineHoursPerAcre > 0 ? 1 / op.machineHoursPerAcre : 0;
                 return (
                   <div key={op.id} className={op.enabled ? '' : 'opacity-60'}>
                     <div className="flex items-center gap-3 px-3 py-2">
                       <input type="checkbox" className="size-5 accent-[var(--color-accent)] shrink-0" checked={op.enabled} onChange={e => update(op.id, { enabled: e.target.checked })} aria-label={t('ops.on', { name: nameOf(op) })} />
                       <button type="button" className="min-w-0 flex-1 text-left" onClick={() => setOpen(s => ({ ...s, [op.id]: !isOpen }))} aria-expanded={isOpen} aria-label={t('ops.expand', { name: nameOf(op) })}>
                         <div className="text-[15px] truncate">{nameOf(op)}</div>
-                        {who && <div className="text-[12.5px] text-ink-2 truncate">{who}{op.machineHoursPerAcre > 0 ? `, ${t('ops.hoursShort', { hours: num(op.machineHoursPerAcre, 2) })}` : ''}</div>}
+                        {who && <div className="text-[12.5px] text-ink-2 truncate">{who}, {t('ops.hoursShort', { hours: num(op.machineHoursPerAcre, 2) })}</div>}
                       </button>
                       <div className="tnum text-[14px] text-loss whitespace-nowrap">{money(-cost.perAcre)}</div>
                     </div>
@@ -110,25 +133,28 @@ export function CropOperations({ crop, farm, equipment, seasons, onChange }: { c
                           </div>
                         )}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          <Field label={t('ops.machineHours')}>
+                          <Field label={t('ops.machineHours')} hint={isMachineRow && op.source === 'study' ? t('ops.capacity', { acres: num(capacity, 2) }) : t('ops.machineHours.hint')}>
                             <NumberInput value={op.machineHoursPerAcre} onChange={v => update(op.id, { machineHoursPerAcre: v })} step={0.01} suffix={t('common.perAcre')} />
                           </Field>
-                          {op.machineHoursPerAcre > 0 && (
-                            <Field label={t('ops.who')}>
-                              <Select value={op.equipmentId ?? HIRED} onChange={e => update(op.id, { equipmentId: e.target.value === HIRED ? null : e.target.value })}>
-                                <option value={HIRED}>{t('ops.hired')}</option>
-                                {equipment.map(e => <option key={e.id} value={e.id}>{machineName(e)}</option>)}
-                              </Select>
-                            </Field>
-                          )}
+                          <Field label={t('ops.acresPerHour')} hint={t('ops.acresPerHour.hint')}>
+                            <NumberInput value={capacity > 0 ? Math.round(capacity * 100) / 100 : 0} onChange={v => update(op.id, { machineHoursPerAcre: v > 0 ? Math.round((1 / v) * 10000) / 10000 : 0 })} step={0.01} suffix={t('common.perHour')} />
+                          </Field>
                         </div>
-                        {op.machineHoursPerAcre > 0 && !machine && (
+                        {isMachineRow && (
+                          <Field label={t('ops.who')}>{whoSelect(op)}</Field>
+                        )}
+                        {isMachineRow && mode === 'hire' && (
                           <Field label={t('ops.hiredMachine')} hint={t('ops.hiredMachine.hint')}>
                             <NumberInput value={op.hiredMachinePerAcre} onChange={v => update(op.id, { hiredMachinePerAcre: v })} prefix="$" suffix={t('common.perAcre')} />
                           </Field>
                         )}
-                        {op.machineHoursPerAcre > 0 && machine && (
-                          <Field label={t('ops.operatorHours')} hint={`${t('ops.operatorHours.hint', { rate: cents(rate) })} ${t('ops.runRate', { name: machineName(machine), rate: cents(runPerHour(machine)) })}`}>
+                        {isMachineRow && mode === 'rent' && (
+                          <Field label={t('ops.rent')} hint={t('ops.rent.hint')}>
+                            <NumberInput value={op.rentPerHour} onChange={v => update(op.id, { rentPerHour: v })} step={0.01} prefix="$" suffix={t('common.perHour')} />
+                          </Field>
+                        )}
+                        {isMachineRow && mode !== 'hire' && (
+                          <Field label={t('ops.operatorHours')} hint={`${t('ops.operatorHours.hint', { rate: cents(rate) })}${machine && machineRate ? ` ${t('ops.runRate.hours', { name: machineName(machine), rate: cents(machineRate.runPerHour), hours: num(machineRate.hoursPerYear) })}` : ''}`}>
                             <NumberInput value={op.operatorHoursPerAcre} onChange={v => update(op.id, { operatorHoursPerAcre: v })} step={0.01} suffix={t('common.perAcre')} />
                           </Field>
                         )}

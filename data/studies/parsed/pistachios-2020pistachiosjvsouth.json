@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e4/bd/e4bd9353-25a1-4258-b5b1-42a203bc09ad/2020pistachiosjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pistachios",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1039,6 +1039,106 @@
   "page": 29,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE PISTACHIOS"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 3976,
+    "returns": null,
+    "netCost": 3976,
+    "accumulated": 3976,
+    "page": 22,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,976 5,305 6,780 8,357 10,267 11,308"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1329,
+    "returns": null,
+    "netCost": 1329,
+    "accumulated": 5305,
+    "page": 22,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,976 5,305 6,780 8,357 10,267 11,308"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 1475,
+    "returns": null,
+    "netCost": 1475,
+    "accumulated": 6780,
+    "page": 22,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,976 5,305 6,780 8,357 10,267 11,308"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 1577,
+    "returns": null,
+    "netCost": 1577,
+    "accumulated": 8357,
+    "page": 22,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,976 5,305 6,780 8,357 10,267 11,308"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 1910,
+    "returns": null,
+    "netCost": 1910,
+    "accumulated": 10267,
+    "page": 22,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,976 5,305 6,780 8,357 10,267 11,308"
+   },
+   {
+    "year": 6,
+    "label": "6th",
+    "totalCost": 2310,
+    "returns": 1269,
+    "netCost": 1041,
+    "accumulated": 11308,
+    "page": 22,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,976 5,305 6,780 8,357 10,267 11,308"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 11308,
+   "page": 18,
+   "quote": "For this study, the cost is $11,308 per acre or $859,408 for the 76-acre orchard."
+  },
+  "annualCharge": {
+   "value": 742,
+   "page": 26,
+   "quote": "Establishment Cost 11,308 742 742"
+  },
+  "productionYears": {
+   "value": 34,
+   "page": 32,
+   "quote": "Establishment Cost 859,408 34 0 56,403 381 4,297 0 61,080 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 40,
+   "page": 18,
+   "quote": "The establishment cost is spread over the remaining 34 producing years of the 40-year orchard life."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 102,
+   "page": 21,
+   "quote": "Plant: Remove & Stack Tree Stakes 102",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 859408,
+   "yearsLife": 34,
+   "salvageValue": 0,
+   "capitalRecovery": 56403,
+   "page": 32,
+   "line": "Establishment Cost 859,408 34 0 56,403 381 4,297 0 61,080"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1063,7 +1163,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "interestRatePct",

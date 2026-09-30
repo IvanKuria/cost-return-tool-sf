@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c2/a9/c2a9d0ea-f089-48a9-a9b2-64ec58355b46/2016sorghumsilagesjvfinaldraftmar23.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sorghum",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -763,6 +763,7 @@
   "page": 10,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE SORGHUM SILAGE"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -792,7 +793,10 @@
   ],
   "fieldsMissing": [
    "investments",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

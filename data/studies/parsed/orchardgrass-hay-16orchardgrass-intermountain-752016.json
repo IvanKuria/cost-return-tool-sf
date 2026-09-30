@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/86/b2/86b28877-5976-4d3a-b0e7-862314057bf1/16orchardgrass_intermountain_752016.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/orchardgrass-hay",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -781,6 +781,50 @@
   "page": 14,
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ORCHARDGRASS"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 294,
+    "returns": null,
+    "netCost": 294,
+    "accumulated": null,
+    "page": 10,
+    "quote": "TOTAL CASH COSTS/ACRE 294"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 294,
+   "page": 8,
+   "quote": "For this study, the cost is $294 per acre or $88,200 for the 300 acre field."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 4,
+   "page": 8,
+   "quote": "The establishment cost is amortized over the remaining 4 years of the stand life."
+  },
+  "plantingLife": {
+   "value": 5,
+   "page": 3,
+   "quote": "The expected stand life for orchardgrass is a minimum of 5 years, if planted for hay production, which is the expected stand life used in this study."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 88200,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 24155,
+   "page": 16,
+   "line": "Hay Stand Establishment Cost 88,200 4 0 24,155 37 441 0 24,633"
+  },
+  "method": {
+   "page": 8,
+   "quote": "The establishment cost is amortized over the remaining 4 years of the stand life."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -805,12 +849,15 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "landRentPerAcre"
+   "landRentPerAcre",
+   "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 lists 3 return lines with different prices; pricePerUnit left null, see returns[]"

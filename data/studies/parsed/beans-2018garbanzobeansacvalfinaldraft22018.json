@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/8c/23/8c232c39-e3b8-4f12-ac02-911cb4602cc2/2018garbanzobeansacvalfinaldraft22018.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1000,6 +1000,7 @@
   "page": 16,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE GARBANZO BEANS (Chickpeas)"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1029,7 +1030,10 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

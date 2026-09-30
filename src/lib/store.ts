@@ -1,13 +1,13 @@
 import { useEffect, useReducer } from 'react';
 import { cropDefaultsFromStudy, studyById } from '../data/studies';
 import { STUDY_INSURANCE_RATE, STUDY_PROPERTY_TAX_RATE } from './rates';
-import type { Citation, Crop, Equipment, Farm, Plan } from './types';
+import type { Citation, Crop, CustomWorkJob, Equipment, Farm, Plan } from './types';
 
-export type Step = 'farm' | 'crops' | 'equipment' | 'results' | 'sources';
+export type Step = 'farm' | 'equipment' | 'crops' | 'results' | 'sources';
 export const STEPS: { id: Step; label: string }[] = [
   { id: 'farm', label: 'Your farm' },
-  { id: 'crops', label: 'What you grow' },
   { id: 'equipment', label: 'What you own' },
+  { id: 'crops', label: 'What you grow' },
   { id: 'results', label: 'Results' },
 ];
 
@@ -22,6 +22,7 @@ export type Action =
   | { type: 'equipment.add'; item: Equipment }
   | { type: 'equipment.update'; id: string; patch: Partial<Equipment> }
   | { type: 'equipment.remove'; id: string }
+  | { type: 'customWork.set'; jobs: CustomWorkJob[] }
   | { type: 'reset'; state: State };
 
 /**
@@ -36,7 +37,7 @@ export const DEFAULT_FARM: Farm = {
   citations: {},
 };
 
-export const EMPTY_PLAN: Plan = { farm: DEFAULT_FARM, crops: [], equipment: [], example: false };
+export const EMPTY_PLAN: Plan = { farm: DEFAULT_FARM, crops: [], equipment: [], customWork: [], example: false };
 
 export function reducer(s: State, a: Action): State {
   switch (a.type) {
@@ -48,6 +49,7 @@ export function reducer(s: State, a: Action): State {
     case 'equipment.add': return { ...s, plan: { ...s.plan, equipment: [...s.plan.equipment, a.item] } };
     case 'equipment.update': return { ...s, plan: { ...s.plan, equipment: s.plan.equipment.map(e => e.id === a.id ? { ...e, ...a.patch } : e) } };
     case 'equipment.remove': return { ...s, plan: { ...s.plan, equipment: s.plan.equipment.filter(e => e.id !== a.id) } };
+    case 'customWork.set': return { ...s, plan: { ...s.plan, customWork: a.jobs } };
     case 'reset': return a.state;
   }
 }
@@ -70,18 +72,30 @@ export function migratePlan(raw: unknown): Plan {
   if (typeof farm.insuranceRate !== 'number') farm.insuranceRate = STUDY_INSURANCE_RATE;
   if (typeof farm.propertyTaxRate !== 'number') farm.propertyTaxRate = STUDY_PROPERTY_TAX_RATE;
   if (typeof farm.operatingInterestRate !== 'number') farm.operatingInterestRate = DEFAULT_FARM.operatingInterestRate;
-  const equipment: Equipment[] = p.equipment.map(e => {
-    if (typeof e.fuelLubePerHour === 'number' && typeof e.repairsPerHour === 'number') return e;
+  const equipment: Equipment[] = p.equipment.map(raw => {
+    const e = raw as Equipment & { operatingCostPerHour?: number; repairsPerHour?: number; hoursPerYear?: number };
+    if (typeof e.repairsPctPerYear !== 'number' && typeof e.fuelLubePerHour === 'number') {
+      // Older plans held repairs per hour and hours per year; the yearly percent is their product over the price.
+      const cits = e.citations as Record<string, Citation | undefined>;
+      const citations = { ...e.citations } as Equipment['citations'];
+      const pct = e.pricePaid > 0 && typeof e.repairsPerHour === 'number' && typeof e.hoursPerYear === 'number' ? (e.repairsPerHour * e.hoursPerYear) / e.pricePaid : 0;
+      if (cits.repairsPerHour) citations.repairsPctPerYear = { ...cits.repairsPerHour, value: pct, field: 'Repairs per hour times hours per year over price, from a plan saved before repairs were a yearly percent' };
+      delete (citations as Record<string, unknown>).repairsPerHour;
+      const { repairsPerHour: _r, hoursPerYear: _h, ...rest } = e;
+      const missing = (rest.missingFields ?? []).filter(f => !['repairsPerHour', 'hoursPerYear'].includes(f as string)) as Equipment['missingFields'];
+      return { ...rest, repairsPctPerYear: pct, citations, missingFields: missing } as Equipment;
+    }
+    if (typeof e.fuelLubePerHour === 'number') return e;
     // A v3 plan held one running figure. Keep it whole under fuel and lube rather than invent a split.
     const legacy = (e as { operatingCostPerHour?: number }).operatingCostPerHour ?? 0;
     const cits = e.citations as Record<string, Citation | undefined>;
     const citations = { ...e.citations } as Equipment['citations'];
     if (cits.operatingCostPerHour) citations.fuelLubePerHour = { ...cits.operatingCostPerHour, field: 'Fuel, lube and repairs per hour (not split in this saved plan)' };
     const missing = (e.missingFields ?? []).filter(f => (f as string) !== 'operatingCostPerHour') as Equipment['missingFields'];
-    return { ...e, fuelLubePerHour: legacy, repairsPerHour: 0, citations, missingFields: missing };
+    return { ...e, fuelLubePerHour: legacy, repairsPctPerYear: 0, citations, missingFields: missing };
   });
-  const crops = p.crops.map(c => ({ ...c, operations: Array.isArray(c.operations) ? c.operations : [] }));
-  return { ...p, farm, equipment, crops };
+  const crops = p.crops.map(c => ({ ...c, operations: (Array.isArray(c.operations) ? c.operations : []).map(o => ({ ...o, mode: o.mode ?? (o.equipmentId ? 'own' : 'hire'), rentPerHour: o.rentPerHour ?? 0 })) }));
+  return { ...p, farm, equipment, crops, customWork: Array.isArray(p.customWork) ? p.customWork : [] };
 }
 
 function isCurrentPlan(p: unknown): p is Plan {

@@ -73,13 +73,14 @@ function assign(c: Crop): Crop {
     if (/subsoil|chisel|level|list|shape|bed|cultivat|plant|fertiliz|compost|mulch|drip|trench|grade|irrigat/.test(n)) return 'e-tractor';
     return null;
   };
-  return { ...c, operations: c.operations.map(o => o.machineHoursPerAcre > 0 ? { ...o, equipmentId: pick(o.name) } : o) };
+  return { ...c, operations: c.operations.map(o => { if (o.machineHoursPerAcre <= 0) return o; const id = pick(o.name); return { ...o, mode: id ? 'own' as const : 'hire' as const, equipmentId: id }; }) };
 }
 
 export function buildSamplePlan(): Plan {
   return {
     example: true,
     farm: sampleFarm(),
+    customWork: [],
     crops: [
       assign(crop('c-straw', STRAW, 2)),
       assign(crop('c-lettuce', LETTUCE, 1.5)),
@@ -88,11 +89,11 @@ export function buildSamplePlan(): Plan {
       assign(crop('c-raspberry', RASPBERRY, 1)),
     ],
     equipment: [
-      machine('e-tractor', STRAW, '42HP 4WD Tractor', { condition: 'used', yearBought: 2021, hoursPerYear: 140 }),
-      machine('e-disc', STRAW, "Disc Offset 14'", { condition: 'used', yearBought: 2021, hoursPerYear: 15 }),
-      machine('e-sprayer', STRAW, "Sprayer 20' boom", { condition: 'new', yearBought: 2023, hoursPerYear: 20 }),
-      machine('e-mower', BLACKBERRY, "Mower-Flail 7'", { condition: 'used', yearBought: 2022, hoursPerYear: 10 }),
-      machine('e-pickup', STRAW, 'Pickup Truck 1/2 T', { condition: 'used', yearBought: 2019, hoursPerYear: 200 }),
+      machine('e-tractor', STRAW, '42HP 4WD Tractor', { condition: 'used', yearBought: 2021 }),
+      machine('e-disc', STRAW, "Disc Offset 14'", { condition: 'used', yearBought: 2021 }),
+      machine('e-sprayer', STRAW, "Sprayer 20' boom", { condition: 'new', yearBought: 2023 }),
+      machine('e-mower', BLACKBERRY, "Mower-Flail 7'", { condition: 'used', yearBought: 2022 }),
+      machine('e-pickup', STRAW, 'Pickup Truck 1/2 T', { condition: 'used', yearBought: 2019 }),
     ],
   };
 }

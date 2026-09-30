@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/84/4f/844f0de3-7c1c-4bd3-89ac-893e3388c140/cherry2017_nsjv_final_draft4.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/cherries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1029,6 +1029,90 @@
   "page": 18,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE CHERRY"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 4330,
+    "returns": 0,
+    "netCost": 4330,
+    "accumulated": 4330,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,330 5,847 7,478 8,688 9,561"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1517,
+    "returns": 0,
+    "netCost": 1517,
+    "accumulated": 5847,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,330 5,847 7,478 8,688 9,561"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 1631,
+    "returns": 0,
+    "netCost": 1631,
+    "accumulated": 7478,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,330 5,847 7,478 8,688 9,561"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 4722,
+    "returns": 3512,
+    "netCost": 1210,
+    "accumulated": 8688,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,330 5,847 7,478 8,688 9,561"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 5556,
+    "returns": 4683,
+    "netCost": 873,
+    "accumulated": 9561,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,330 5,847 7,478 8,688 9,561"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 8688,
+   "page": 10,
+   "quote": "For this study the cost is $8,688 per acre or $347,520 for the 40-acre orchard."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 21,
+   "page": 10,
+   "quote": "The establishment cost is amortized over the remaining 21 years of the 25 years the orchard is in production."
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 10,
+   "quote": "The establishment cost is amortized over the remaining 21 years of the 25 years the orchard is in production."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 347520,
+   "yearsLife": 21,
+   "salvageValue": 0,
+   "capitalRecovery": 27105,
+   "page": 22,
+   "line": "Orchard Establishment 347,520 21 0 27,105 147 1,738 0 28,990"
+  },
+  "method": {
+   "page": 10,
+   "quote": "The establishment cost is amortized over the remaining 21 years of the 25 years the orchard is in production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1050,7 +1134,9 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
@@ -1058,7 +1144,8 @@
    "pricePerUnit",
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 lists 4 return lines with different prices; pricePerUnit left null, see returns[]"

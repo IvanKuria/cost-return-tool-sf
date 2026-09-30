@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/de/d6/ded6333c-02e2-4a1c-9efb-b0b96a1fc713/beans_singlecropped_sv_2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1182,6 +1182,7 @@
   }
  },
  "monthly": null,
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1211,7 +1212,10 @@
    "acresFarmed",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "monthly table not used: MONTHLY COSTS PER ACRE TO PRODUCE BEANS (SINGLE CROP): TOTAL CASH COSTS row: months sum to 1240 but the Total column says 1312"

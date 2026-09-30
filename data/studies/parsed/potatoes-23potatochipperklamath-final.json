@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/05/10/23PotatoChipperKlamath-FINAL.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/potatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1271,6 +1271,7 @@
   "page": 13,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE POTATOES-CHIPPERS"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1300,7 +1301,10 @@
    "interestRatePct",
    "landRentPerAcre",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

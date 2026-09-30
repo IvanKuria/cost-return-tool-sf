@@ -1,7 +1,7 @@
 import { describe, expect, it, vi, afterEach } from 'vitest';
 import ExcelJS from 'exceljs';
 import { buildCashFlowCsv, buildPdf, buildWorkbook, downloadExport } from './exportFiles';
-import { createExportSnapshot, exportFilename } from './exportData';
+import { buildTable1, buildTable5, createExportSnapshot, exportFilename } from './exportData';
 import { newBlankCrop, computePlan } from './engine';
 import { DEFAULT_FARM } from './store';
 import { SAMPLE_PLAN } from '../data/sample';
@@ -9,7 +9,7 @@ import type { Plan } from './types';
 
 function planFixture(): Plan {
   return {
-    farm: { ...DEFAULT_FARM, name: 'Finca Peña', interestRate: 0.05, operatingInterestRate: 0, overheadItems: [{ id: 'ins', name: 'Insurance', amountPerYear: 120, basis: 'acres' }] }, equipment: [],
+    farm: { ...DEFAULT_FARM, name: 'Finca Peña', interestRate: 0.05, operatingInterestRate: 0, overheadItems: [{ id: 'ins', name: 'Insurance', amountPerYear: 120, basis: 'acres' }] }, equipment: [], customWork: [],
     crops: [{ ...newBlankCrop('beans'), name: '=SUM(A1:A2)', area: 1, plantingsPerYear: 1,
       yieldPerAcre: 100, price: 12, operatingCostPerAcre: 200, missingFields: ['ownLaborHoursPerAcre'],
       costMonths: Array.from({ length: 12 }, (_, i) => i === 0 ? 1 : 0),
@@ -87,7 +87,7 @@ describe('export snapshot', () => {
     const bytes = await buildWorkbook(createExportSnapshot(plan, computePlan(plan), 'en'));
     const book = new ExcelJS.Workbook();
     await book.xlsx.load(bytes.buffer);
-    expect(book.worksheets.map(s => s.name)).toEqual(['Summary', 'Cash flow by month', 'Crops', 'Crop timing', 'Equipment', 'Farm', 'Sources']);
+    expect(book.worksheets.map(s => s.name)).toEqual(['Summary', 'Cash flow by month', 'Crops', 'Crop timing', 'Table 1', 'Table 4', 'Table 5', 'Equipment', 'Farm', 'Sources']);
     const summary = book.getWorksheet('Summary')!;
     expect(summary.getCell('A1').value).toBe('Finca Peña');
     expect(summary.getCell('B4').value).toBe('=SUM(A1:A2)');
@@ -120,7 +120,7 @@ describe('export snapshot', () => {
     expect(content).toContain('Flujo de efectivo por mes');
     expect(content).toContain('$1,200');
     expect(content).not.toContain('$1,200.00');
-    expect(content.match(/\/Type \/Page\b/g)!.length).toBeLessThanOrEqual(6);
+    expect(content.match(/\/Type \/Page\b/g)!.length).toBeLessThanOrEqual(9); // summary, cash flow, Table 1, Table 4, Table 5, farm, sources
     expect(content).toContain('%%EOF');
   });
 
@@ -130,7 +130,39 @@ describe('export snapshot', () => {
     const content = new TextDecoder('latin1').decode(bytes);
     const pages = content.match(/\/Type \/Page\b/g)!.length;
     expect(pages).toBeGreaterThanOrEqual(5);
-    expect(pages).toBeLessThan(20); // five crops, each with 25 to 40 study operations listed
+    expect(pages).toBeLessThan(28); // five crops, each with a full UC style Table 1, plus ranging, Table 5 and 6
+  });
+
+  it('builds UC style tables that reconcile with the engine', async () => {
+    const plan = filledSample();
+    const result = computePlan(plan);
+    for (const c of plan.crops) {
+      const tb = buildTable1(plan, result, c.id)!;
+      const r = result.crops.find(k => k.cropId === c.id)!;
+      const opsTotal = tb.groups.reduce((a, g) => a + g.subtotal.total, 0) + tb.extra.reduce((a, e) => a + e.amount, 0);
+      expect(Math.abs(opsTotal - tb.totalOperating)).toBeLessThan(1);
+      expect(Math.abs(tb.cashOverhead.reduce((a, o) => a + o.amount, 0) - tb.totalCashOverhead)).toBeLessThan(1);
+      expect(Math.abs(tb.nonCash.reduce((a, m) => a + m.amount, 0) + (tb.establishment?.total ?? 0) - tb.totalNonCash)).toBeLessThan(1);
+      expect(Math.abs((tb.totalOperating + tb.totalCashOverhead + tb.totalNonCash) * tb.seasons - r.totalCost)).toBeLessThan(1);
+      expect(Math.abs(tb.totalCosts * tb.seasons - r.totalCost)).toBeLessThan(1);
+    }
+    const t5 = buildTable5(plan, result, 'Land rent');
+    const repairs = result.machines.reduce((a, m) => a + m.repairsPerYear, 0);
+    const establishment = result.crops.reduce((a, c) => a + (c.establishment?.total ?? 0), 0);
+    expect(Math.abs(t5.totals.total - (result.equipmentOwnership + repairs + establishment))).toBeLessThan(1);
+    expect(t5.machines.length).toBe(plan.equipment.length);
+    const data = createExportSnapshot(plan, result, 'en');
+    expect(data.table1.length).toBe(plan.crops.length);
+    expect(data.ranging.length).toBe(3);
+    expect(data.ranging[0].net.length).toBe(5);
+    expect(data.ranging[0].net[2][2]).toBeCloseTo(result.crops[0].net / result.crops[0].acres, 3);
+    expect(data.table6.length).toBe(plan.equipment.length);
+    const book = new ExcelJS.Workbook();
+    await book.xlsx.load((await buildWorkbook(data)).buffer);
+    for (const name of ['Table 1', 'Table 4', 'Table 5', 'Table 6']) expect(book.getWorksheet(name), name).toBeDefined();
+    const pdf = new TextDecoder('latin1').decode(await buildPdf(data));
+    expect(pdf).toContain('Table 5');
+    expect(pdf).toContain('Table 6');
   });
 
   it('offers real download MIME and a safe filename, then releases the object URL', () => {

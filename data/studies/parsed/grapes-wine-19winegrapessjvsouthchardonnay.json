@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/82/9b/829bd3f6-b232-40c5-9042-0f413e053971/19winegrapessjvsouthchardonnay.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1011,6 +1011,79 @@
   "page": 20,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE WINEGRAPES"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 15901,
+    "returns": null,
+    "netCost": 15901,
+    "accumulated": 15901,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 15,901 19,227 20,645"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 3326,
+    "returns": null,
+    "netCost": 3326,
+    "accumulated": 19227,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 15,901 19,227 20,645"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 4239,
+    "returns": 2821,
+    "netCost": 1418,
+    "accumulated": 20645,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 15,901 19,227 20,645"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 20645,
+   "page": 11,
+   "quote": "For this study the cost is $20,645 per acre or $825,800 for the 40-acre vineyard."
+  },
+  "annualCharge": {
+   "value": 1615,
+   "page": 17,
+   "quote": "Vineyard Establishment 20,645 1,615 1,615"
+  },
+  "productionYears": {
+   "value": 22,
+   "page": 12,
+   "quote": "amortized over the remaining 22 years of the 25 years the vineyard is in production."
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 12,
+   "quote": "amortized over the remaining 22 years of the 25 years the vineyard is in production."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 1200,
+   "page": 14,
+   "quote": "Vineyard Removal 1,200",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 825800,
+   "yearsLife": 25,
+   "salvageValue": 0,
+   "capitalRecovery": 64600,
+   "page": 22,
+   "line": "Vineyard Establishment 825,800 25 0 64,600 3,658 4,129 4,129 76,516"
+  },
+  "method": {
+   "page": 12,
+   "quote": "amortized over the remaining 22 years of the 25 years the vineyard is in production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1035,7 +1108,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborOverheadPct",

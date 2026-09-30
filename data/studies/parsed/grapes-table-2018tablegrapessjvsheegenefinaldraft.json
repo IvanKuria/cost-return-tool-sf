@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/0f/72/0f72d185-bf9d-4952-b9d7-f8c122ce5d13/2018tablegrapessjvsheegenefinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1232,6 +1232,75 @@
   "page": 21,
   "quote": "monthly table without a heading"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 8032,
+    "returns": 0,
+    "netCost": 8032,
+    "accumulated": 8032,
+    "page": 16,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,032 17,347 18,399"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 9315,
+    "returns": 0,
+    "netCost": 9315,
+    "accumulated": 17347,
+    "page": 16,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,032 17,347 18,399"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 11252,
+    "returns": 10200,
+    "netCost": 1052,
+    "accumulated": 18399,
+    "page": 16,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,032 17,347 18,399"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 18399,
+   "page": 12,
+   "quote": "The total cost is $18,399 per acre or $735,960 for the 40 producing acres."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 22,
+   "page": 12,
+   "quote": "The establishment cost is amortized over the remaining 22 years of the 25 year vineyard."
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 12,
+   "quote": "The establishment cost is amortized over the remaining 22 years of the 25 year vineyard."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 443,
+   "page": 15,
+   "quote": "Vineyard Removal (50%) 443",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 735960,
+   "yearsLife": 22,
+   "salvageValue": 0,
+   "capitalRecovery": 58488,
+   "page": 24,
+   "line": "Establishment: Sheegene 21 735,960 22 0 58,488 311 3,680 0 62,479"
+  },
+  "method": {
+   "page": 12,
+   "quote": "The establishment cost is amortized over the remaining 22 years of the 25 year vineyard."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1254,14 +1323,17 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
    "landRentPerAcre",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 found but no GROSS RETURNS block",

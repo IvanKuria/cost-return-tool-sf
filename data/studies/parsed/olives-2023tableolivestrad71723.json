@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/07/24/2023tableolivestrad71723.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -813,6 +813,40 @@
   "page": 12,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE TABLE OLIVES"
  },
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 5000,
+   "page": 7,
+   "quote": "For this study, the 2016 establishment cost of $5,000 per acre or $175,000 for the 35-acre orchard is used."
+  },
+  "annualCharge": {
+   "value": 381,
+   "page": 10,
+   "quote": "Orchard Establishment 5,000 381 381"
+  },
+  "productionYears": {
+   "value": 37,
+   "page": 14,
+   "quote": "Orchard Establishment 175,000 37 0 13,341 62 875 0 14,279 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 40,
+   "page": 3,
+   "quote": "In this study, orchard life is estimated to be 40 years."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 175000,
+   "yearsLife": 37,
+   "salvageValue": 0,
+   "capitalRecovery": 13341,
+   "page": 14,
+   "line": "Orchard Establishment 175,000 37 0 13,341 62 875 0 14,279"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -837,7 +871,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborOverheadPct",

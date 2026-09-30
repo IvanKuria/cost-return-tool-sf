@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c4/36/c436fc40-8c6b-4ebb-97f6-e407160608bc/2020alfalfascottvalley-mixed_irrigation-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -926,6 +926,100 @@
   "page": 15,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ALFALFA"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 589,
+    "returns": null,
+    "netCost": 589,
+    "accumulated": null,
+    "page": 10,
+    "quote": "TOTAL CASH COSTS/ACRE 589"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 248,
+    "returns": null,
+    "netCost": 248,
+    "accumulated": null,
+    "page": 12,
+    "quote": "TOTAL CASH COSTS/ACRE 248 140 81 87 589"
+   },
+   {
+    "year": 2,
+    "label": "2",
+    "totalCost": 140,
+    "returns": null,
+    "netCost": 140,
+    "accumulated": null,
+    "page": 12,
+    "quote": "TOTAL CASH COSTS/ACRE 248 140 81 87 589"
+   },
+   {
+    "year": 3,
+    "label": "3",
+    "totalCost": 81,
+    "returns": null,
+    "netCost": 81,
+    "accumulated": null,
+    "page": 12,
+    "quote": "TOTAL CASH COSTS/ACRE 248 140 81 87 589"
+   },
+   {
+    "year": 4,
+    "label": "4",
+    "totalCost": 87,
+    "returns": null,
+    "netCost": 87,
+    "accumulated": null,
+    "page": 12,
+    "quote": "TOTAL CASH COSTS/ACRE 248 140 81 87 589"
+   },
+   {
+    "year": 5,
+    "label": "5",
+    "totalCost": 589,
+    "returns": null,
+    "netCost": 589,
+    "accumulated": null,
+    "page": 12,
+    "quote": "TOTAL CASH COSTS/ACRE 248 140 81 87 589"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 589,
+   "page": 8,
+   "quote": "For this study, the cost is $589 per acre, or $47,120 for the 80 acres."
+  },
+  "annualCharge": {
+   "value": 118,
+   "page": 13,
+   "quote": "Establishment Cost 589 118 118"
+  },
+  "productionYears": {
+   "value": 6,
+   "page": 8,
+   "quote": "The establishment cost is amortized over the remaining six years of crop life."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 47120,
+   "yearsLife": 6,
+   "salvageValue": 0,
+   "capitalRecovery": 9432,
+   "page": 17,
+   "line": "Establishment Cost 47,120 6 0 9,432 21 236 0 9,689"
+  },
+  "method": {
+   "page": 8,
+   "quote": "The establishment cost is amortized over the remaining six years of crop life."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -951,7 +1045,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "landRentPerAcre",

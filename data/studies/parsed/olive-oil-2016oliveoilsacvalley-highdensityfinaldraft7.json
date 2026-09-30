@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/08/4a/084a8c93-1e36-496e-ad76-bd984109834e/2016oliveoilsacvalley-highdensityfinaldraft7.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olive-oil",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -751,6 +751,84 @@
   "page": 16,
   "quote": "MONTHLY CASH COSTS – SUPER-HIGH DENSITY OLIVES"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 4121,
+    "returns": null,
+    "netCost": 4121,
+    "accumulated": 4121,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,121 4,943 4,403 3,040"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 822,
+    "returns": null,
+    "netCost": 822,
+    "accumulated": 4943,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,121 4,943 4,403 3,040"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 1274,
+    "returns": 1814,
+    "netCost": 4121,
+    "accumulated": 4403,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,121 4,943 4,403 3,040"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 1325,
+    "returns": 2688,
+    "netCost": 822,
+    "accumulated": 3040,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,121 4,943 4,403 3,040"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 4403,
+   "page": 10,
+   "quote": "For this study, the cost is $4,403 per acre or $484,330 for the 110 acres planted to olives."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 22,
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 3,
+   "quote": "The economic productive life of the orchard at the time of planting in this study is estimated to be 25 years before removal."
+  },
+  "amortizedFromYear": {
+   "value": 4,
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
+  },
+  "removalCost": null,
+  "asset": {
+   "price": 484330,
+   "yearsLife": 22,
+   "salvageValue": 0,
+   "capitalRecovery": 32719,
+   "page": 18,
+   "line": "Establishment SHDO 484,330 22 0 32,719 204 2,422 0 35,345"
+  },
+  "method": {
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -775,12 +853,15 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

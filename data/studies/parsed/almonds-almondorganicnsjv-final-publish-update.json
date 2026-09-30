@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2025/07/18/AlmondOrganicNSJV%20Final%20Publish_Update.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -994,6 +994,7 @@
   "page": 17,
   "quote": "MONTHLY PER ACRE CASH COSTS TO PRODUCE ORGANIC ALMONDS"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1023,7 +1024,10 @@
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "used an earlier equipment table; the last one had no parsable rows"

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/38/fa/38fa8f9c-c93b-4c62-9740-a850bbc40df9/2020lemonsventuracounty.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -648,6 +648,89 @@
   "page": 20,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE EUREKA LEMONS"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "6,932",
+    "totalCost": 6932,
+    "returns": null,
+    "netCost": 6932,
+    "accumulated": 6932,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,932 10,321 11,623 11,693 10,107 6,511"
+   },
+   {
+    "year": 2,
+    "label": "3,389",
+    "totalCost": 3389,
+    "returns": null,
+    "netCost": 3389,
+    "accumulated": 10321,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,932 10,321 11,623 11,693 10,107 6,511"
+   },
+   {
+    "year": 3,
+    "label": "1,302",
+    "totalCost": 5325,
+    "returns": 4023,
+    "netCost": 6932,
+    "accumulated": 11623,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,932 10,321 11,623 11,693 10,107 6,511"
+   },
+   {
+    "year": 4,
+    "label": "70",
+    "totalCost": 6769,
+    "returns": 6699,
+    "netCost": 3389,
+    "accumulated": 11693,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,932 10,321 11,623 11,693 10,107 6,511"
+   },
+   {
+    "year": 5,
+    "label": "5",
+    "totalCost": 9054,
+    "returns": 10640,
+    "netCost": 1302,
+    "accumulated": 10107,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,932 10,321 11,623 11,693 10,107 6,511"
+   },
+   {
+    "year": 6,
+    "label": "6",
+    "totalCost": 11100,
+    "returns": 14696,
+    "netCost": 70,
+    "accumulated": 6511,
+    "page": 14,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,932 10,321 11,623 11,693 10,107 6,511"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": {
+   "value": 37,
+   "page": 22,
+   "quote": "Grove Establishment (48 Acres) 557,904 37 0 35,594 247 2,790 0 38,631 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 557904,
+   "yearsLife": 37,
+   "salvageValue": 0,
+   "capitalRecovery": 35594,
+   "page": 22,
+   "line": "Grove Establishment (48 Acres) 557,904 37 0 35,594 247 2,790 0 38,631"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -664,7 +747,8 @@
    "equipment",
    "investments",
    "businessOverhead",
-   "monthly"
+   "monthly",
+   "establishment"
   ],
   "fieldsMissing": [
    "interestRatePct",
@@ -677,7 +761,9 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

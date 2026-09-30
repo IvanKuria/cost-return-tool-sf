@@ -66,7 +66,19 @@ export interface MachineUse { equipmentId: string; hoursPerAcre: number }
 /** A job hired out to someone else with their equipment, priced per acre per planting. */
 export interface CustomHire { id: string; name: string; costPerAcre: number }
 
-export type CropCitedField = 'yieldPerAcre' | 'price' | 'operatingCostPerAcre' | 'months' | 'plantingsPerYear';
+export type CropCitedField = 'yieldPerAcre' | 'price' | 'operatingCostPerAcre' | 'months' | 'plantingsPerYear' | 'establishment';
+
+/**
+ * A perennial planting carried as an investment, the way the UC studies do it: the accumulated net
+ * cash cost of the establishment years (costs less any early returns) is recovered over the remaining
+ * production years with the capital recovery formula, salvage zero. Removal is not a negative salvage;
+ * the studies only ever count removing the previous planting as a pre-plant cost of the next one.
+ */
+export interface Establishment {
+  accumulatedNetCostPerAcre: number;   // per acre, through the last establishment year
+  productionYears: number;             // years the planting produces after establishment
+  removalCostPerAcre: number;          // optional, farmer-entered, added to the accumulated cost as a pre-plant cost
+}
 
 export type OperationCategory = 'cultural' | 'harvest' | 'assessment' | 'postharvest' | 'other';
 
@@ -81,10 +93,12 @@ export interface CropOperation {
   name: string;
   category: OperationCategory;
   enabled: boolean;
-  machineHoursPerAcre: number;     // machine time, from the study's Time column
+  machineHoursPerAcre: number;     // machine time, from the study's Time column; 1 / this is the capacity in acres per hour
   operatorHoursPerAcre: number;    // operator labor hours; the study's machine time times its labor factor
-  equipmentId: string | null;      // owned machine doing it, or null when hired out
-  hiredMachinePerAcre: number;     // fuel, lube, repairs and operator labor the study priced for this work
+  mode: 'own' | 'rent' | 'hire';   // own: a machine you own; rent: a machine you rent and run; hire: someone else does the job
+  equipmentId: string | null;      // owned machine doing it when mode is 'own'
+  rentPerHour: number;             // rent, fuel and oil per machine hour when mode is 'rent'; operator time is added at your wage
+  hiredMachinePerAcre: number;     // the study's fuel, lube, repairs and operator labor for this work when mode is 'hire' (not a custom rate)
   handHoursPerAcre: number;        // hand labor hours, repriced at the farm's hired rate
   otherLaborPerAcre: number;       // labor dollars the study gave that could not be turned into hours
   materialsPerAcre: number;
@@ -110,6 +124,7 @@ export interface Crop {
   machineHours: MachineUse[];   // owned machine hours typed directly; used only when operations is empty
   operations: CropOperation[];  // the crop's work, line by line; when present it replaces operatingCostPerAcre and machineHours
   customHire: CustomHire[];     // work hired out, like custom seeding or mowing
+  establishment?: Establishment | null; // set for perennials; null or absent for annual crops
   timingSource?: 'custom' | 'study';
   costMonths: number[] | null;    // 12 weights summing to 1, only when a study gives a monthly table
   revenueMonths: number[] | null; // 12 weights summing to 1, only when a study gives harvest months
@@ -118,7 +133,7 @@ export interface Crop {
 
 export type Condition = 'new' | 'used';
 
-export type EquipmentCitedField = 'pricePaid' | 'keepYears' | 'salvageValue' | 'fuelLubePerHour' | 'repairsPerHour';
+export type EquipmentCitedField = 'pricePaid' | 'keepYears' | 'salvageValue' | 'fuelLubePerHour' | 'repairsPctPerYear';
 
 export interface Equipment {
   missingFields?: NumericField<Equipment>[];
@@ -129,17 +144,21 @@ export interface Equipment {
   pricePaid: number;           // what the farmer actually paid
   yearBought: number;
   keepYears: number;           // years from now they expect to keep it
-  hoursPerYear: number;
   salvageValue: number;        // what they expect to sell it for at the end
   fuelLubePerHour: number;     // fuel and lube per hour of use
-  repairsPerHour: number;      // repairs per hour of use
+  repairsPctPerYear: number;   // 0.03 means repairs cost 3 percent of the price paid each year, however much it runs
+  // hours per year are not an input: they are the sum of every crop's operation hours on the machine plus custom work hours
   citations: Partial<Record<EquipmentCitedField, Citation>>;
 }
+
+/** Work the farmer does for other people with their own machine, paid by the customer. Hours add to the machine's year. */
+export interface CustomWorkJob { id: string; name: string; equipmentId: string; hoursPerYear: number; incomePerYear: number }
 
 export interface Plan {
   farm: Farm;
   crops: Crop[];
   equipment: Equipment[];
+  customWork: CustomWorkJob[];
   example?: boolean;           // true while the plan is the loaded example, so the UI can offer to clear it
 }
 
@@ -151,10 +170,18 @@ export interface OwnershipBreakdown {
   insurance: number;           // insuranceRate x average value
   taxes: number;               // propertyTaxRate x average value
   insuranceAndTax: number;     // the two above
-  totalPerYear: number;
-  ownPerHour: number;
-  runPerHour: number;
-  allInPerHour: number;
+  totalPerYear: number;        // what it costs to own, however much it runs
+  repairsPerYear: number;      // pricePaid x repairsPctPerYear, also fixed for the year
+}
+
+/** Per-hour rates for one machine at the hours it actually runs in this plan. */
+export interface MachineRates {
+  hoursPerYear: number;        // crop hours plus custom work hours
+  ownPerHour: number;          // ownership / hours, 0 when it has no hours
+  fuelLubePerHour: number;
+  repairsPerHour: number;      // repairsPerYear / hours, 0 when it has no hours
+  runPerHour: number;          // fuel and lube plus repairs
+  allInPerHour: number;        // own plus run
 }
 
 export interface CropResult {
@@ -174,35 +201,53 @@ export interface CropResult {
   breakEvenPrice: number;      // total cost / units
   breakEvenYieldPerAcre: number;
   hasMonths: boolean;          // whether this crop is in the monthly cash view
-  costParts: { materials: number; handLabor: number; operatorLabor: number; machineRunning: number; hiredMachine: number; custom: number; otherLabor: number; ownLabor: number; hiredJobs: number; lump: number; interest: number }; // what operating is made of; lump is the typed per-acre cost when no operations exist
+  costParts: { materials: number; handLabor: number; operatorLabor: number; machineRunning: number; rent: number; hiredMachine: number; custom: number; otherLabor: number; ownLabor: number; hiredJobs: number; lump: number; interest: number }; // what operating is made of; lump is the typed per-acre cost when no operations exist
   operationRows: { id: string; name: string; category: OperationCategory; cost: number; assigned: string | null }[]; // per enabled operation, for the year
   overheadItems: { id: string; name: string; amount: number; basis: AllocationBasis }[]; // this crop's share of each whole-farm cost, land rent first
-  machines: { equipmentId: string; name: string; share: number; ownership: number; capitalRecovery: number; interestOnSalvage: number; insurance: number; taxes: number; running: number; hours: number }[];
+  machines: { equipmentId: string; name: string; share: number; ownership: number; capitalRecovery: number; interestOnSalvage: number; insurance: number; taxes: number; running: number; fuelLube: number; repairs: number; hours: number }[];
   monthly: { revenue: number[]; costs: number[] } | null; // 12 entries each, dollars, when the crop has month data
+  establishment: { capitalRecovery: number; insurance: number; taxes: number; total: number; perAcre: number } | null; // yearly charge for a perennial planting, inside totalCost as non-cash overhead
 }
 
 export interface MachineResult {
   equipmentId: string;
   name: string;
-  hoursPerYear: number;        // what the farmer said they use it
-  hoursAssigned: number;       // hours the crops account for
+  hoursPerYear: number;        // derived: crop hours plus custom work hours
+  cropHours: number;
+  customHours: number;
   ownPerYear: number;
+  repairsPerYear: number;
   ownPerHour: number;
+  fuelLubePerHour: number;
+  repairsPerHour: number;
   runPerHour: number;
   allInPerHour: number;
-  byCrop: { cropId: string; name: string; hours: number; share: number }[]; // share of ownership cost, sums to 1
+  byCrop: { cropId: string; name: string; hours: number; share: number }[]; // share of ownership and repairs, with customShare sums to 1
+  customShare: number;         // share carried by custom work for others
+}
+
+export interface CustomWorkResult {
+  income: number;
+  fuelLube: number;
+  repairs: number;
+  operatorLabor: number;       // the farmer's own time at what they pay themself
+  ownership: number;           // the machines' ownership share for those hours
+  cost: number;
+  net: number;
+  jobs: { id: string; name: string; equipmentId: string; machineName: string; hours: number; income: number; cost: number; net: number }[];
 }
 
 export interface FarmResult {
   totalAcres: number;
   revenue: number;
   totalCost: number;
-  net: number;
+  net: number;                 // crop nets plus custom work net
   overhead: number;            // whole farm overhead including land rent
   equipmentOwnership: number;  // sum of ownership totals
   ownLaborPaid: number;        // what the farmer paid themself, already inside totalCost
   crops: CropResult[];
   machines: MachineResult[];
+  customWork: CustomWorkResult; // net is included in the farm net
   monthlyCash: number[];       // 12 entries, Jan..Dec, revenue minus cash costs, crops with month data only
   monthlyOverhead: number[];   // 12 entries, the overhead charged in the cash view each month
   runningCash: number[];       // 12 entries, cumulative monthlyCash

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/be/c7/bec790f2-3cb8-4a07-ac0d-ccfdcb067bb8/2018tablegrapessjvautumnkingfinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1284,6 +1284,75 @@
   "page": 20,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE TABLE GRAPES-Autumn King"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 6141,
+    "returns": 0,
+    "netCost": 6141,
+    "accumulated": 6141,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,141 15,562 17,133"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 9421,
+    "returns": 0,
+    "netCost": 9421,
+    "accumulated": 15562,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,141 15,562 17,133"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 11771,
+    "returns": 10200,
+    "netCost": 0,
+    "accumulated": 17133,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,141 15,562 17,133"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 17133,
+   "page": 12,
+   "quote": "The Total Accumulated Net Cash Cost on Table 1, in the third year represents the establishment cost which is; $17,133 per acre or $685,320 for the 40 producing acres."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 22,
+   "page": 12,
+   "quote": "The establishment cost is amortized over the remaining 22 years of the 25 year vineyard."
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 12,
+   "quote": "The establishment cost is amortized over the remaining 22 years of the 25 year vineyard."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 443,
+   "page": 14,
+   "quote": "Vineyard Removal (50%) 443",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 685320,
+   "yearsLife": 22,
+   "salvageValue": 0,
+   "capitalRecovery": 54463,
+   "page": 23,
+   "line": "Establishment: AK 685,320 22 0 54,463 290 3,427 0 58,180"
+  },
+  "method": {
+   "page": 12,
+   "quote": "The establishment cost is amortized over the remaining 22 years of the 25 year vineyard."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1306,17 +1375,21 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
    "landRentPerAcre",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block"
+   "Table 2 found but no GROSS RETURNS block",
+   "establishment year 3: running net 15562 differs from printed accumulated 17133"
   ]
  }
 }

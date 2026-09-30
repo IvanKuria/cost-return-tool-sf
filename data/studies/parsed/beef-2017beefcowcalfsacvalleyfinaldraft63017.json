@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/de/53/de53ea90-7d03-4df0-9d02-11cdeb024a00/2017beefcowcalfsacvalleyfinaldraft63017.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beef",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -71,6 +71,7 @@
   "machineLaborFactor": null
  },
  "monthly": null,
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -100,7 +101,10 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "no costs-per-acre table found",

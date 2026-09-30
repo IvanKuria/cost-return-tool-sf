@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/65/6c/656ce5fa-f4f9-4e95-99fe-a01c1ea8a7a4/2017peachsvsjv-ecling-final_draft2.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/peaches",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -947,6 +947,39 @@
   }
  },
  "monthly": null,
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 7939,
+   "page": 8,
+   "quote": "For this study, the cost is $7,939 per acre or $317,560 for the 40 acres planted to processing peaches."
+  },
+  "annualCharge": {
+   "value": 765,
+   "page": 11,
+   "quote": "Orchard Establishment Cost 7,939 765 765"
+  },
+  "productionYears": {
+   "value": 15,
+   "page": 8,
+   "quote": "Establishment cost is amortized over the remaining 15 years that the orchard is assumed to be in production."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 317560,
+   "yearsLife": 15,
+   "salvageValue": 0,
+   "capitalRecovery": 30594,
+   "page": 16,
+   "line": "Orchard Establishment Cost 317,560 15 0 30,594 134 1,588 1,588 33,905"
+  },
+  "method": {
+   "page": 8,
+   "quote": "Establishment cost is amortized over the remaining 15 years that the orchard is assumed to be in production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -970,7 +1003,10 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborOverheadPct",

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/08/21/amended_82123_2023processtomatosacramentovalleysdifinal.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/tomatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -2217,6 +2217,7 @@
   "page": 16,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE PROCESSING TOMATOES (SDI)"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -2246,7 +2247,10 @@
    "landRentPerAcre",
    "cashOverheadTotal",
    "grossReturns",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

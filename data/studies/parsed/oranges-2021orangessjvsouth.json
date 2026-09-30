@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/08/12/2021orangessjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/oranges",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -840,6 +840,40 @@
   "page": 24,
   "quote": "MONTHLY PER ACRE CASH COSTS TO PRODUCE ORANGES"
  },
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 10407,
+   "page": 14,
+   "quote": "The cost is $10,407 per acre or $104,070 for the 10-acre orchard."
+  },
+  "annualCharge": {
+   "value": 603,
+   "page": 21,
+   "quote": "Establishment Cost 10,407 603 603"
+  },
+  "productionYears": {
+   "value": 37,
+   "page": 26,
+   "quote": "Establishment Cost 104,070 37 0 6,025 46 520 520 7,112 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 40,
+   "page": 14,
+   "quote": "The establishment cost is spread over the remaining 37 years of the 40 years the orchard is in production."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 104070,
+   "yearsLife": 37,
+   "salvageValue": 0,
+   "capitalRecovery": 6025,
+   "page": 26,
+   "line": "Establishment Cost 104,070 37 0 6,025 46 520 520 7,112"
+  },
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -862,7 +896,10 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "yieldPerAcre",

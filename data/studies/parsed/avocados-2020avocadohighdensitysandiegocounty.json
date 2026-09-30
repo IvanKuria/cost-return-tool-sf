@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b4/3d/b43d58d9-1e91-4a3e-80f9-a2edb14958b0/2020avocadohighdensitysandiegocounty.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/avocados",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -692,6 +692,100 @@
   "page": 21,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AVOCADOS"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "28,070",
+    "totalCost": 28070,
+    "returns": null,
+    "netCost": 28070,
+    "accumulated": 28070,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880"
+   },
+   {
+    "year": 2,
+    "label": "8,199",
+    "totalCost": 8199,
+    "returns": null,
+    "netCost": 8199,
+    "accumulated": 36269,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880"
+   },
+   {
+    "year": 3,
+    "label": "1,488",
+    "totalCost": 9327,
+    "returns": 17187,
+    "netCost": -7860,
+    "accumulated": 28409,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880"
+   },
+   {
+    "year": 4,
+    "label": "4",
+    "totalCost": 15036,
+    "returns": 29191,
+    "netCost": 28070,
+    "accumulated": 14254,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880"
+   },
+   {
+    "year": 5,
+    "label": "5",
+    "totalCost": 11298,
+    "returns": 9810,
+    "netCost": 8199,
+    "accumulated": 15742,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880"
+   },
+   {
+    "year": 6,
+    "label": "6",
+    "totalCost": 13207,
+    "returns": 27069,
+    "netCost": 1488,
+    "accumulated": 1880,
+    "page": 15,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 17597,
+   "page": 3,
+   "quote": "Our estimate of establishment cost is $17,597 per acre and production cost is at $16,233 per acre."
+  },
+  "annualCharge": {
+   "value": 1955,
+   "page": 18,
+   "quote": "Establishment Costs 28,409 1,955 1,955"
+  },
+  "productionYears": {
+   "value": 30,
+   "page": 23,
+   "quote": "Establishment Costs 568,180 30 0 39,094 252 2,841 0 42,186 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 568180,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 39094,
+   "page": 23,
+   "line": "Establishment Costs 568,180 30 0 39,094 252 2,841 0 42,186"
+  },
+  "method": {
+   "page": 11,
+   "quote": "Amortized Establishment Cost: The cumulative establishment costs (accumulated costs of establishment less the gross income for years 1-6) is the establishment cost."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -711,7 +805,10 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "interestRatePct",
@@ -723,6 +820,9 @@
    "propertyTaxRatePct",
    "machineLaborFactor"
   ],
-  "warnings": []
+  "warnings": [
+   "establishment per producing acre 28409 differs from prose 17597",
+   "prose establishment cost 17597 matches no column of the accumulated row [28070, 36269, 28409, 14254, 15742, 1880]"
+  ]
  }
 }

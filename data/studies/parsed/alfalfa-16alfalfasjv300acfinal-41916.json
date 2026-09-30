@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/1c/e2/1ce256d0-957e-4bd4-b17e-18fef4efcedd/16alfalfasjv300acfinal_41916.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -580,6 +580,50 @@
   "page": 15,
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ALFALFA (300 Acres)"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 888,
+    "returns": null,
+    "netCost": 888,
+    "accumulated": null,
+    "page": 11,
+    "quote": "TOTAL CASH COSTS/ACRE 888"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 888,
+   "page": 8,
+   "quote": "For this study, the cost is $888 per acre or $266,400 for the 300 acres."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 3,
+   "page": 8,
+   "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
+  },
+  "plantingLife": {
+   "value": 3,
+   "page": 8,
+   "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 266400,
+   "yearsLife": 3,
+   "salvageValue": 0,
+   "capitalRecovery": 94634,
+   "page": 17,
+   "line": "Establishment (300 Acres) 266,400 3 0 94,634 112 1,332 0 96,087"
+  },
+  "method": {
+   "page": 8,
+   "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -606,10 +650,13 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "yieldPerAcre"
+   "yieldPerAcre",
+   "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",

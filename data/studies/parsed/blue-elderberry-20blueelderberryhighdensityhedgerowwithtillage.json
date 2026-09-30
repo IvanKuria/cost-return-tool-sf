@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/72/72/7272112b-2dec-4cb4-95ed-b4253dd5e981/20blueelderberryhighdensityhedgerowwithtillage.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blue-elderberry",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -164,6 +164,7 @@
   }
  },
  "monthly": null,
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -193,7 +194,10 @@
    "investments",
    "businessOverhead",
    "insuranceRatePct",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "no costs-per-acre table found",

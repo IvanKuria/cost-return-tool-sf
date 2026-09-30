@@ -7,7 +7,7 @@ import type { Key } from '../i18n/en';
 
 const LABELS: Record<string, Key> = {
   area: 'crops.area', plantingsPerYear: 'crops.plantings', yieldPerAcre: 'crops.yield', price: 'crops.price', operatingCostPerAcre: 'crops.operating', ownLaborHoursPerAcre: 'crops.ownHours',
-  pricePaid: 'equip.paid', keepYears: 'equip.keep', salvageValue: 'equip.salvage', fuelLubePerHour: 'equip.fuel', repairsPerHour: 'equip.repairs', hoursPerYear: 'equip.use', yearBought: 'equip.year',
+  pricePaid: 'equip.paid', keepYears: 'equip.keep', salvageValue: 'equip.salvage', fuelLubePerHour: 'equip.fuel', repairsPctPerYear: 'equip.repairsPct', yearBought: 'equip.year',
   landRentPerAcre: 'farm.rent', ownLaborRate: 'farm.ownRate', hiredLaborRate: 'farm.hiredRate', interestRate: 'farm.interest', payrollOverhead: 'farm.payroll', bedLengthFt: 'farm.bedLength', bedWidthIn: 'farm.bedWidth',
 };
 

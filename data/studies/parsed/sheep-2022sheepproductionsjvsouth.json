@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/07/07/2022sheepproductionsjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sheep",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": null,
@@ -79,6 +79,7 @@
   "machineLaborFactor": null
  },
  "monthly": null,
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -108,7 +109,10 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 found but no GROSS RETURNS block",

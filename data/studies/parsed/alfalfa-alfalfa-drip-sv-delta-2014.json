@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/69/ed/69ed1c05-999e-4c06-b59f-ebe6dbcecc8a/alfalfa-drip-sv-delta-2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -682,6 +682,39 @@
   "page": 16,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ALFALFA"
  },
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 1158,
+   "page": 9,
+   "quote": "For this study, the cost is $1,158 per acre or $185,280 for the 160 acres."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 4,
+   "page": 9,
+   "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
+  },
+  "plantingLife": {
+   "value": 6,
+   "page": 5,
+   "quote": "Drip system and drip line maintenance is lower in the first year and increase over the 6 year life expectancy of the stand."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 185280,
+   "yearsLife": 6,
+   "salvageValue": 0,
+   "capitalRecovery": 36212,
+   "page": 19,
+   "line": "Establishment Costs 160 Ac 185,280 6 0 36,212 768 926 0 37,906"
+  },
+  "method": {
+   "page": 9,
+   "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -698,7 +731,9 @@
    "hourlyEquipment",
    "capitalRecoveryFormula",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -711,7 +746,8 @@
    "operations",
    "businessOverhead",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 found but no GROSS RETURNS block"

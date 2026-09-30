@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/08/04/2023-broccrowncut-full-final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/broccoli",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1211,6 +1211,7 @@
   "page": 14,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE AND HARVEST BROCCOLI – CROWN CUT"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1240,7 +1241,10 @@
   ],
   "fieldsMissing": [
    "laborMachineRate",
-   "laborNonMachineRate"
+   "laborNonMachineRate",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }

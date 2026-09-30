@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/ec/ba/ecba9b89-f1e9-401c-9044-4afa2c060093/2016dovraisinsohtsjvfinaldraft111716.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–raisins",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -676,6 +676,61 @@
   "page": 19,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE DOV RAISINS"
  },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 7895,
+    "returns": 0,
+    "netCost": 7895,
+    "accumulated": 7895,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,895 15,377 13,994"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 7482,
+    "returns": 0,
+    "netCost": 7482,
+    "accumulated": 15377,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,895 15,377 13,994"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 2617,
+    "returns": 4000,
+    "netCost": 0,
+    "accumulated": 13994,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,895 15,377 13,994"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 13994,
+   "page": 10,
+   "quote": "For this study the cost is $13,994 per acre or $1,119,520 for the 80-acre vineyard."
+  },
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": {
+   "value": 30,
+   "page": 10,
+   "quote": "The establishment cost is spread over the remaining 27 years of the 30 years the vineyard is in production."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 400,
+   "page": 13,
+   "quote": "Remove Spare Shoots/Re-Tie-Positioning 400 133",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": null,
+  "method": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -696,7 +751,9 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
@@ -705,11 +762,13 @@
    "equipment",
    "investments",
    "businessOverhead",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishmentAnnual"
   ],
   "warnings": [
    "2 annual equipment blocks (establishment and production); using the last",
-   "equipment table present but no equipment rows parsed"
+   "equipment table present but no equipment rows parsed",
+   "establishment year 3: running net 15377 differs from printed accumulated 13994"
   ]
  }
 }

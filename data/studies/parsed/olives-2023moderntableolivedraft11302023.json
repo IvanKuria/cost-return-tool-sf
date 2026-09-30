@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/11/30/2023moderntableolivedraft11302023.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -753,6 +753,109 @@
   }
  },
  "monthly": null,
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 8728,
+    "returns": null,
+    "netCost": 8728,
+    "accumulated": 8728,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1585,
+    "returns": null,
+    "netCost": 1585,
+    "accumulated": 10313,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 3134,
+    "returns": 2300,
+    "netCost": 8728,
+    "accumulated": 11147,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 4484,
+    "returns": 4025,
+    "netCost": 1585,
+    "accumulated": 11606,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 4375,
+    "returns": 5175,
+    "netCost": 834,
+    "accumulated": 10806,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
+   },
+   {
+    "year": 6,
+    "label": "6th",
+    "totalCost": 4240,
+    "returns": 6325,
+    "netCost": 459,
+    "accumulated": 8721,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 11147,
+   "page": 10,
+   "quote": "For this study, the cost is $11,147 per acre or $445,880 for the 40 acres planted to olives."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 40,
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 40 years that the orchard is assumed to be in production."
+  },
+  "plantingLife": {
+   "value": 40,
+   "page": 3,
+   "quote": "In this study, the economic productive life of the orchard at the time of planting is estimated to be 40 years before removal."
+  },
+  "amortizedFromYear": {
+   "value": 4,
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 40 years that the orchard is assumed to be in production."
+  },
+  "removalCost": {
+   "value": 300,
+   "page": 12,
+   "quote": "Trellis Removal 300",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 445880,
+   "yearsLife": 40,
+   "salvageValue": 0,
+   "capitalRecovery": 33445,
+   "page": 18,
+   "line": "Orchard Establishment- Modern 445,880 40 0 33,445 158 2,229 2,229 38,062"
+  },
+  "method": {
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 40 years that the orchard is assumed to be in production."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -776,13 +879,16 @@
    "businessOverhead",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
    "insuranceRatePct",
-   "monthly"
+   "monthly",
+   "establishmentAnnual"
   ],
   "warnings": [
    "monthly table not used: MONTHLY CASH COSTS – TABLE OLIVES: TOTAL CASH COSTS row: months sum to 4787 but the Total column says 4941"

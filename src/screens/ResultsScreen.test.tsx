@@ -17,7 +17,7 @@ function enteredCrop(): Crop {
   };
 }
 function render(crops: Crop[]) {
-  const plan: Plan = { farm: { ...DEFAULT_FARM, operatingInterestRate: 0 }, crops, equipment: [] };
+  const plan: Plan = { farm: { ...DEFAULT_FARM, operatingInterestRate: 0 }, crops, equipment: [], customWork: [] };
   return renderToStaticMarkup(<I18nProvider><ResultsScreen plan={plan} result={computePlan(plan)} dispatch={() => {}} /></I18nProvider>);
 }
 function chart(html: string) {
@@ -39,7 +39,11 @@ describe('farmer-facing results', () => {
     expect(html.indexOf('Cash through the year')).toBeLessThan(html.indexOf('Which crops carry the farm'));
     const disclosures = [...html.matchAll(/<details([^>]*)>/g)];
     expect(disclosures.length).toBeGreaterThan(0);
-    expect(disclosures.every(match => !/\bopen\b/.test(match[1]))).toBe(true);
+    // Only the first crop's Table 1, nested inside the collapsed tables section, starts open.
+    const open = [...html.matchAll(/<details[^>]*\bopen\b[^>]*><summary[^>]*>([^<]*)<\/summary>/g)].map(m => m[1]);
+    expect(open.length).toBeLessThanOrEqual(1);
+    expect(open.every(text => text.startsWith('Table 1.'))).toBe(true);
+    expect(html).toContain('Tables in the UC study format');
   });
 
   it('offers a labeled month selector without selecting January for the user', () => {

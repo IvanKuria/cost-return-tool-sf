@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/2e/7a/2e7a8cf0-b7fd-4207-b945-7b4b8a82625c/17processtomatofresnosdi-final_draft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/tomatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-22"
+  "fetchedAt": "2026-09-30"
  },
  "assumptions": {
   "acresFarmed": {
@@ -1849,6 +1849,7 @@
   "page": 16,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE PROCESS TOMATOES"
  },
+ "establishment": null,
  "parse": {
   "fieldsFound": [
    "year",
@@ -1878,7 +1879,10 @@
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct"
+   "insuranceRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "warnings": []
  }
