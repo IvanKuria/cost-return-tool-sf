@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/07/24/2023tableolivestrad71723.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2023,
+  "priceYear": {
+   "value": 2023,
+   "month": 1,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on January 2023 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {
@@ -45,45 +53,15 @@
     "quote": "Olives 5 Ton 1250.00 6,250"
    }
   ],
-  "interestRatePct": {
-   "value": 7,
-   "unit": "%",
-   "page": 7,
-   "quote": "An interest rate of 7.00 percent is used to calculate capital recovery."
-  },
-  "operatingInterestRatePct": {
-   "value": 8.5,
-   "unit": "%",
-   "page": 5,
-   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 8.50 percent per year."
-  },
-  "laborMachineRate": {
-   "value": 20,
-   "unit": "$/hr",
-   "page": 5,
-   "quote": "Hourly wages for workers are $20.00 for machine operators and $18.00 per hour non-machine labor."
-  },
-  "laborNonMachineRate": {
-   "value": 18,
-   "unit": "$/hr",
-   "page": 5,
-   "quote": "Hourly wages for workers are $20.00 for machine operators and $18.00 per hour non-machine labor."
-  },
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
   "laborOverheadPct": null,
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": {
-   "value": 3.7,
-   "unit": "$/gal",
-   "page": 5,
-   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.10 and $3.70 per gallon, respectively."
-  },
-  "fuelPriceGas": {
-   "value": 3.7,
-   "unit": "$/gal",
-   "page": 5,
-   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.10 and $3.70 per gallon, respectively."
-  },
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
   "yieldStatement": {
    "page": 4,
    "quote": "A well-managed orchard can yield an annual average of 6 tons per acre compared to other orchards that may average 3 tons per acre."
@@ -727,27 +705,11 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 7,
-   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
-  },
-  "salvageMethod": {
-   "page": 7,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": {
-   "value": 1,
-   "unit": "%",
-   "page": 6,
-   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
-  },
-  "machineLaborFactor": {
-   "value": 1.2,
-   "unit": "x",
-   "page": 5,
-   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
-  }
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -815,11 +777,7 @@
  },
  "establishment": {
   "years": [],
-  "accumulatedNetCost": {
-   "value": 5000,
-   "page": 7,
-   "quote": "For this study, the 2016 establishment cost of $5,000 per acre or $175,000 for the 35-acre orchard is used."
-  },
+  "accumulatedNetCost": null,
   "annualCharge": {
    "value": 381,
    "page": 10,
@@ -854,9 +812,6 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -868,18 +823,21 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula",
-   "propertyTaxRatePct",
-   "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct"
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "establishmentAccumulated"
   ],
   "warnings": [
    "1 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)"

@@ -1,0 +1,112 @@
+{
+ "source": {
+  "id": "beef-beefyearling-stockersv2010",
+  "commodity": "beef",
+  "title": "SAMPLE COSTS FOR BEEF CATTLE",
+  "year": 2010,
+  "region": "Sacramento Valley",
+  "counties": null,
+  "description": "Yearling/Stocker Production (purchased, gain, natural)",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/d5/be/d5be04c3-4432-4384-9d9e-b643e73bb0c4/beefyearling_stockersv2010.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/beef",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2010,
+  "priceYear": {
+   "value": 2010,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2010 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": null,
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "capitalRecoveryFormula"
+  ],
+  "fieldsMissing": [
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "no whole-farm equipment table"
+  ]
+ }
+}

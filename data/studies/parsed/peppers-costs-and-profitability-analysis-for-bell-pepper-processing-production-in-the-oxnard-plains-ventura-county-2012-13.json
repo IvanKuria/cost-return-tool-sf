@@ -1,0 +1,651 @@
+{
+ "source": {
+  "id": "peppers-costs-and-profitability-analysis-for-bell-pepper-processing-production-in-the-oxnard-plains-ventura-county-2012-13",
+  "commodity": "peppers",
+  "title": "Peppers",
+  "year": 2013,
+  "region": "South Coast Ventura",
+  "counties": "Strawberries, UCCE Ventura",
+  "description": "bell pepper production for processing",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/46/60/4660dc98-ea9e-4946-a96c-9b073321194e/costs-and-profitability-analysis-for-bell-pepper-processing-production-in-the-oxnard-plains-ventura-county-2012-13.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peppers",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2013,
+  "priceYear": {
+   "value": 2013,
+   "month": null,
+   "page": 3,
+   "quote": "Input costs, contract fees and service expenses are based on 2012/2013 prices."
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 500,
+   "unit": "acres",
+   "page": 3,
+   "quote": "We based the study on a 50-acre bell pepper operation for processing on a 500-acre farm with 1.5 cropping (750 acres farmed per year)."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": {
+   "value": 30,
+   "unit": "ton",
+   "page": 12,
+   "quote": "TOTAL GROSS RETURNS 30 ton $8,400"
+  },
+  "yieldUnit": "ton",
+  "pricePerUnit": {
+   "value": 280,
+   "unit": "$/ton",
+   "page": 12,
+   "quote": "Bell Pepper - Processing 30 ton $280 $8,400"
+  },
+  "returns": [
+   {
+    "name": "Bell Pepper - Processing",
+    "quantity": 30,
+    "unit": "ton",
+    "price": 280,
+    "value": 8400,
+    "page": 12,
+    "quote": "Bell Pepper - Processing 30 ton $280 $8,400"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": {
+   "value": 1400,
+   "unit": "$/acre/yr",
+   "page": 11,
+   "quote": "Land Rent 1,400"
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 4.08,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "We used average fuel prices of $3.84 per gallon for diesel and $4.08 per gallon for gasoline, obtained from the U.S."
+  },
+  "fuelPriceGas": {
+   "value": 4.08,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "We used average fuel prices of $3.84 per gallon for diesel and $4.08 per gallon for gasoline, obtained from the U.S."
+  },
+  "yieldStatement": {
+   "page": 7,
+   "quote": "Based on interview data, the average bell pepper yield for processing is about 30 tons per acre per crop and we estimated gross returns at $280 per ton."
+  },
+  "priceStatement": {
+   "page": 9,
+   "quote": "Given the assumptions upon which we based this study, the break-even price for the average yield of 30 tons per acre is estimated at about $218 per ton to cover all cash costs and $222 per ton to cover total costs."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 4726,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL OPERATING COSTS/ACRE 14.74 210 223 78 1,931 2,208 4,726"
+  },
+  "cashOverheadTotal": {
+   "value": 1824,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 1,824"
+  },
+  "nonCashOverheadTotal": {
+   "value": 100,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 1,020 100 100"
+  },
+  "totalCost": {
+   "value": 6650,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL COSTS/ACRE 6,650"
+  },
+  "grossReturns": {
+   "value": 8400,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL GROSS RETURNS 30 ton $8,400"
+  },
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": {
+   "value": 1750,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "NET RETURNS ABOVE TOTAL COST 1,750"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Land Rent",
+    "value": 1400,
+    "page": 11,
+    "quote": "Land Rent 1,400"
+   },
+   {
+    "description": "Office Expenses",
+    "value": 250,
+    "page": 11,
+    "quote": "Office Expenses 250"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 1.19,
+    "page": 11,
+    "quote": "Liability Insurance 1.19"
+   },
+   {
+    "description": "Drip Tapes",
+    "value": 160,
+    "page": 11,
+    "quote": "Drip Tapes 160"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 6.16,
+    "page": 11,
+    "quote": "Property Taxes 6.16"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 5.03,
+    "page": 11,
+    "quote": "Property Insurance 5.03"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 1.74,
+    "page": 11,
+    "quote": "Investment Repairs 1.74"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Disc (4x)",
+    "category": "other",
+    "timeHrsPerAcre": 0.41,
+    "labor": 7.54,
+    "fuel": 33.32,
+    "lubeRepairs": 10.94,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 51.8,
+    "page": 11,
+    "quote": "Disc (4x) 0.41 7.54 33.32 10.94 0 0 51.8"
+   },
+   {
+    "name": "Subsoil (2x)",
+    "category": "other",
+    "timeHrsPerAcre": 0.65,
+    "labor": 11.88,
+    "fuel": 52.52,
+    "lubeRepairs": 16.96,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 81.36,
+    "page": 11,
+    "quote": "Subsoil (2x) 0.65 11.88 52.52 16.96 0 0 81.36"
+   },
+   {
+    "name": "Land Level (3x)",
+    "category": "other",
+    "timeHrsPerAcre": 0.36,
+    "labor": 6.68,
+    "fuel": 29.54,
+    "lubeRepairs": 9.97,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 46.2,
+    "page": 11,
+    "quote": "Land Level (3x) 0.36 6.68 29.54 9.97 0 0 46.20"
+   },
+   {
+    "name": "Broadcast Fertilizer",
+    "category": "other",
+    "timeHrsPerAcre": 0.34,
+    "labor": 6.18,
+    "fuel": 27.32,
+    "lubeRepairs": 7.99,
+    "materials": 137.2,
+    "customRent": 0,
+    "totalCost": 178.69,
+    "page": 11,
+    "quote": "Broadcast Fertilizer 0.34 6.18 27.32 7.99 137.2 0 178.69"
+   },
+   {
+    "name": "Chisel Plow",
+    "category": "other",
+    "timeHrsPerAcre": 0.12,
+    "labor": 2.23,
+    "fuel": 9.85,
+    "lubeRepairs": 3.12,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 15.2,
+    "page": 11,
+    "quote": "Chisel Plow 0.12 2.23 9.85 3.12 0 0 15.2"
+   },
+   {
+    "name": "List Beds",
+    "category": "other",
+    "timeHrsPerAcre": 0.08,
+    "labor": 1.41,
+    "fuel": 6.25,
+    "lubeRepairs": 1.82,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 9.48,
+    "page": 11,
+    "quote": "List Beds 0.08 1.41 6.25 1.82 0 0 9.48"
+   },
+   {
+    "name": "Shape Beds",
+    "category": "other",
+    "timeHrsPerAcre": 0.15,
+    "labor": 2.83,
+    "fuel": 12.5,
+    "lubeRepairs": 3.9,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 19.23,
+    "page": 11,
+    "quote": "Shape Beds 0.15 2.83 12.5 3.9 0 0 19.23"
+   },
+   {
+    "name": "Herbicide Treatment",
+    "category": "other",
+    "timeHrsPerAcre": 0.12,
+    "labor": 2.26,
+    "fuel": 10.01,
+    "lubeRepairs": 2.93,
+    "materials": 25.37,
+    "customRent": 0,
+    "totalCost": 40.57,
+    "page": 11,
+    "quote": "Herbicide Treatment 0.12 2.26 10.01 2.93 25.37 0 40.57"
+   },
+   {
+    "name": "Drip Irrigation Setup (Machine)",
+    "category": "other",
+    "timeHrsPerAcre": 0.17,
+    "labor": 3.18,
+    "fuel": 2.7,
+    "lubeRepairs": 1.18,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 7.06,
+    "page": 11,
+    "quote": "Drip Irrigation Setup (Machine) 0.17 3.18 2.7 1.18 0 0 7.06"
+   },
+   {
+    "name": "Drip Irrigation Setup (Labor)",
+    "category": "other",
+    "timeHrsPerAcre": 0.25,
+    "labor": 3,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 3,
+    "page": 11,
+    "quote": "Drip Irrigation Setup (Labor) 0.25 3 0 0 0 0 3"
+   },
+   {
+    "name": "Transplanting",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 1205.8,
+    "customRent": 300,
+    "totalCost": 1505.8,
+    "page": 11,
+    "quote": "Transplanting 0 0 0 0 1,205.80 300 1,505.80"
+   },
+   {
+    "name": "Fertilization - UAN32% (6x)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 76.28,
+    "customRent": 0,
+    "totalCost": 76.28,
+    "page": 11,
+    "quote": "Fertilization - UAN32% (6x) 0 0 0 0 76.28 0 76.28"
+   },
+   {
+    "name": "Fertilization - CAN17% (10x)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 167.92,
+    "customRent": 0,
+    "totalCost": 167.92,
+    "page": 11,
+    "quote": "Fertilization - CAN17% (10x) 0 0 0 0 167.92 0 167.92"
+   },
+   {
+    "name": "Fertilization - KTS (2x)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 63.45,
+    "customRent": 0,
+    "totalCost": 63.45,
+    "page": 11,
+    "quote": "Fertilization - KTS (2x) 0 0 0 0 63.45 0 63.45"
+   },
+   {
+    "name": "Pest Control Advisor",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 44,
+    "totalCost": 44,
+    "page": 11,
+    "quote": "Pest Control Advisor 0 0 0 0 0 44 44.00"
+   },
+   {
+    "name": "Pesticide Management (5x)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 310,
+    "totalCost": 310,
+    "page": 11,
+    "quote": "Pesticide Management (5x) 0 0 0 0 0 310 310.00"
+   },
+   {
+    "name": "Hand Weeding (3x)",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 240,
+    "totalCost": 240,
+    "page": 11,
+    "quote": "Hand Weeding (3x) 0 0 0 0 0 240 240.00"
+   },
+   {
+    "name": "Irrigation & System Inspection (18x)",
+    "category": "other",
+    "timeHrsPerAcre": 9,
+    "labor": 107.82,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 255.06,
+    "customRent": 0,
+    "totalCost": 362.88,
+    "page": 11,
+    "quote": "Irrigation & System Inspection (18x) 9 107.82 0 0 255.06 0 362.88"
+   },
+   {
+    "name": "Conditional Waiver Program",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 11.5,
+    "totalCost": 11.5,
+    "page": 11,
+    "quote": "Conditional Waiver Program 0 0 0 0 0 11.5 11.50"
+   },
+   {
+    "name": "Food Safety Program",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 1.33,
+    "totalCost": 1.33,
+    "page": 11,
+    "quote": "Food Safety Program 0 0 0 0 0 1.33 1.33"
+   },
+   {
+    "name": "Microbial Water Test",
+    "category": "other",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0.82,
+    "totalCost": 0.82,
+    "page": 11,
+    "quote": "Microbial Water Test 0 0 0 0 0 0.82 0.82"
+   },
+   {
+    "name": "Truck Use",
+    "category": "other",
+    "timeHrsPerAcre": 2,
+    "labor": 36.72,
+    "fuel": 12.24,
+    "lubeRepairs": 7.77,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 56.73,
+    "page": 11,
+    "quote": "Truck Use 2 36.72 12.24 7.77 0 0 56.73"
+   },
+   {
+    "name": "Pick, Haul, Sell,",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 1290,
+    "totalCost": 1290,
+    "page": 11,
+    "quote": "Pick, Haul, Sell, 0 0 0 0 0 1290 1,290"
+   },
+   {
+    "name": "California Pepper Commission Assessment",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 10.5,
+    "totalCost": 10.5,
+    "page": 11,
+    "quote": "California Pepper Commission Assessment 0 0 0 0 0 10.5 10.50"
+   },
+   {
+    "name": "Mow Plant",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.34,
+    "labor": 6.31,
+    "fuel": 5.35,
+    "lubeRepairs": 3.13,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 14.79,
+    "page": 11,
+    "quote": "Mow Plant 0.34 6.31 5.35 3.13 0 0 14.79"
+   },
+   {
+    "name": "Drip Irrigation Removal (Machine)",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.29,
+    "labor": 5.42,
+    "fuel": 4.59,
+    "lubeRepairs": 2.33,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 12.33,
+    "page": 11,
+    "quote": "Drip Irrigation Removal (Machine) 0.29 5.42 4.59 2.33 0 0 12.33"
+   },
+   {
+    "name": "Drip Irrigation Removal (Labor)",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.25,
+    "labor": 3,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 3,
+    "page": 11,
+    "quote": "Drip Irrigation Removal (Labor) 0.25 3 0 0 0 0 3.00"
+   },
+   {
+    "name": "Disc (2x)",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.21,
+    "labor": 3.77,
+    "fuel": 16.66,
+    "lubeRepairs": 5.47,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 25.9,
+    "page": 11,
+    "quote": "Disc (2x) 0.21 3.77 16.66 5.47 0 0 25.90"
+   }
+  ]
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "Counties charge a base property tax rate of 1 percent on the assessed value of the property, including equipment, buildings, and improvements."
+  },
+  "machineLaborFactor": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   0,
+   0,
+   735,
+   2197,
+   612,
+   584,
+   653,
+   1769,
+   0,
+   0,
+   0,
+   0
+  ],
+  "operatingPerAcre": [
+   0,
+   0,
+   460,
+   1762,
+   337,
+   309,
+   366,
+   1494,
+   0,
+   0,
+   0,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 6550,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG"
+  ],
+  "spansTwoYears": false,
+  "page": 13,
+  "quote": "Monthly Cash Costs per Acre to Produce Bell Pepper for Processing in Ventura County, 2012/2013"
+ },
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "propertyTaxRatePct",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "machineLaborFactor",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "no whole-farm equipment table"
+  ]
+ }
+}

@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/03/dc/03dc4496-32af-47c6-b479-38e1d27c134e/15cornsacramentovalleyfinaldraftjuly20.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/corn",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2015,
+  "priceYear": {
+   "value": 2015,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on current figures. (Current at the time of the study, so the study year 2015 is used.)"
+  }
  },
  "assumptions": {
   "acresFarmed": null,

@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/69/ed/69ed1c05-999e-4c06-b59f-ebe6dbcecc8a/alfalfa-drip-sv-delta-2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2014,
+  "priceYear": {
+   "value": 2014,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. “Your Costs” columns in Tables 1, 2, 4 and 5 are provided for entering your farm costs. (Current at the time of the study, so the study year 2014 is used.)"
+  }
  },
  "assumptions": {
   "acresFarmed": {

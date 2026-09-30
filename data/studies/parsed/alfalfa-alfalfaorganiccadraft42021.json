@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/04/20/alfalfaorganiccadraft42021.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2020,
+  "priceYear": {
+   "value": 2020,
+   "month": 11,
+   "page": 3,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on November 2020 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": null,
@@ -42,24 +50,14 @@
   ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
-  "laborMachineRate": {
-   "value": 16,
-   "unit": "$/hr",
-   "page": 7,
-   "quote": "Hourly wages for workers are $16.00 per hour for machine operators and $13.50 per hour non-machine labor."
-  },
-  "laborNonMachineRate": {
-   "value": 13.5,
-   "unit": "$/hr",
-   "page": 7,
-   "quote": "Hourly wages for workers are $16.00 per hour for machine operators and $13.50 per hour non-machine labor."
-  },
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
   "laborOverheadPct": null,
   "landRentPerAcre": {
    "value": 345,
    "unit": "$/acre/yr",
-   "page": 10,
-   "quote": "As noted, land in this study is rented by the grower for $345 per acre."
+   "page": 15,
+   "quote": "Land Rent 345"
   },
   "cropsPerAcrePerYear": null,
   "fuelPriceDiesel": null,
@@ -547,27 +545,11 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 9,
-   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
-  },
-  "salvageMethod": {
-   "page": 9,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": {
-   "value": 1,
-   "unit": "%",
-   "page": 8,
-   "quote": "County taxes are calculated as 1 percent of the average value of the property."
-  },
-  "machineLaborFactor": {
-   "value": 1.2,
-   "unit": "x",
-   "page": 7,
-   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
-  }
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -643,11 +625,7 @@
     "quote": "TOTAL CASH COSTS/ACRE 879"
    }
   ],
-  "accumulatedNetCost": {
-   "value": 879,
-   "page": 10,
-   "quote": "For this study, the cost is $879 per acre or $87,900 for the 100 acres."
-  },
+  "accumulatedNetCost": null,
   "annualCharge": {
    "value": 251,
    "page": 15,
@@ -655,8 +633,8 @@
   },
   "productionYears": {
    "value": 4,
-   "page": 10,
-   "quote": "The establishment cost is amortized over the remaining four years of stand life."
+   "page": 19,
+   "quote": "Establishment Cost 87,900 4 0 25,077 0 0 0 25,077 (years of life of the establishment row in the investment table)"
   },
   "plantingLife": null,
   "amortizedFromYear": null,
@@ -669,10 +647,7 @@
    "page": 19,
    "line": "Establishment Cost 87,900 4 0 25,077 0 0 0 25,077"
   },
-  "method": {
-   "page": 10,
-   "quote": "The establishment cost is amortized over the remaining four years of stand life."
-  }
+  "method": null
  },
  "parse": {
   "fieldsFound": [
@@ -681,8 +656,6 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
-   "laborMachineRate",
-   "laborNonMachineRate",
    "landRentPerAcre",
    "operatingTotal",
    "cashOverheadTotal",
@@ -694,19 +667,21 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula",
-   "propertyTaxRatePct",
-   "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
    "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
    "laborOverheadPct",
    "acresFarmed",
-   "insuranceRatePct"
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "establishmentAccumulated"
   ],
   "warnings": []
  }

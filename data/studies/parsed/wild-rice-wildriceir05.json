@@ -1,0 +1,894 @@
+{
+ "source": {
+  "id": "wild-rice-wildriceir05",
+  "commodity": "wild-rice",
+  "title": "SAMPLE COSTS TO ESTABLISH AND PRODUCE",
+  "year": 2005,
+  "region": "Intermountain Lassen, Shasta",
+  "counties": "Lassen",
+  "description": "Wild Rice, Establishment and production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e2/52/e2525250-9c1e-4279-b0c9-4b182f6f5c4b/wildriceir05.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/wild-rice",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2005,
+  "priceYear": {
+   "value": 2005,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on current figures. “Your Costs” columns in Table 1 Costs Per Acre To Establish Wild Rice, Table 2 Costs and Returns Per Acre to Establish Wild Rice, Table 3 Costs Per Acre to Produce Wild Rice, and Table 4 Costs And Returns Per Acre to Produce Wild Rice. (Current at the time of the study, so the study year 2005 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 9,
+   "unit": "$/hr",
+   "page": 3,
+   "quote": "Basic hourly wages for workers are $9.00 per hour for machine and $7.50 per hour for non- machine (field workers) labor."
+  },
+  "laborNonMachineRate": {
+   "value": 7.5,
+   "unit": "$/hr",
+   "page": 3,
+   "quote": "Basic hourly wages for workers are $9.00 per hour for machine and $7.50 per hour for non- machine (field workers) labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": {
+   "value": 150,
+   "unit": "$/acre/yr",
+   "page": 12,
+   "quote": "Land Rent 150"
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 2.05,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.51 and $2.05 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.05,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.51 and $2.05 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 5,
+   "quote": "The crop yield used in this study is a green weight of 1,400 pounds per acre for the establishment year and 1,600 pounds per acre in the production year."
+  },
+  "priceStatement": {
+   "page": 5,
+   "quote": "An estimated return price of $0.48 per pound of green grain at 50% recovery is used."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 422,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL OPERATING COSTS/ACRE 61 22 212 122 422"
+  },
+  "cashOverheadTotal": {
+   "value": 287,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL CASH OVERHEAD COSTS 287"
+  },
+  "nonCashOverheadTotal": {
+   "value": 97,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 537 97 97"
+  },
+  "totalCost": {
+   "value": 805,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL COSTS/ACRE 805"
+  },
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 33,
+    "page": 12,
+    "quote": "Office Expense 33"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 2,
+    "page": 12,
+    "quote": "Liability Insurance 2"
+   },
+   {
+    "description": "Land Rent",
+    "value": 150,
+    "page": 12,
+    "quote": "Land Rent 150"
+   },
+   {
+    "description": "Farm Manager",
+    "value": 95,
+    "page": 12,
+    "quote": "Farm Manager 95"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 2,
+    "page": 12,
+    "quote": "Property Taxes 2"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 1,
+    "page": 12,
+    "quote": "Property Insurance 1"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 5,
+    "page": 12,
+    "quote": "Investment Repairs 5"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Weed Control - Borders 10% Acres",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 54,
+    "customRent": 16,
+    "totalCost": 70,
+    "page": 12,
+    "quote": "Weed Control - Borders 10% Acres 0.00 0 0 54 16 70"
+   },
+   {
+    "name": "Border Maintenance/Repairs",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.01,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 3,
+    "customRent": 0,
+    "totalCost": 4,
+    "page": 12,
+    "quote": "Border Maintenance/Repairs 0.01 0 0 3 0 4"
+   },
+   {
+    "name": "Fertilize - Urea @ 68 Lbs of N/Acre 2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.1,
+    "labor": 2,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 2,
+    "page": 12,
+    "quote": "Fertilize - Urea @ 68 Lbs of N/Acre 2X 0.10 2 0 0 0 2"
+   },
+   {
+    "name": "Flood & Maintain Water",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.75,
+    "labor": 8,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 91,
+    "customRent": 0,
+    "totalCost": 99,
+    "page": 12,
+    "quote": "Flood & Maintain Water 0.75 8 0 91 0 99"
+   },
+   {
+    "name": "Bird Control - Zon Guns",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.1,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 1,
+    "page": 12,
+    "quote": "Bird Control - Zon Guns 0.10 1 0 0 0 1"
+   },
+   {
+    "name": "Bird Control",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.5,
+    "labor": 17,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 34,
+    "customRent": 0,
+    "totalCost": 50,
+    "page": 12,
+    "quote": "Bird Control 1.50 17 0 34 0 50"
+   },
+   {
+    "name": "Algae Control - 50% of Acres",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 5,
+    "customRent": 3,
+    "totalCost": 8,
+    "page": 12,
+    "quote": "Algae Control - 50% of Acres 0.00 0 0 5 3 8"
+   },
+   {
+    "name": "Tissue Samples",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.1,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 3,
+    "totalCost": 4,
+    "page": 12,
+    "quote": "Tissue Samples 0.10 1 0 0 3 4"
+   },
+   {
+    "name": "Pickup Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.45,
+    "labor": 7,
+    "fuel": 4,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 11,
+    "page": 12,
+    "quote": "Pickup Use 0.45 7 4 0 0 11"
+   },
+   {
+    "name": "ATV Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.45,
+    "labor": 7,
+    "fuel": 1,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 8,
+    "page": 12,
+    "quote": "ATV Use 0.45 7 1 0 0 8"
+   },
+   {
+    "name": "Combine Rice",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 100,
+    "totalCost": 100,
+    "page": 12,
+    "quote": "Combine Rice 0.00 0 0 0 100 100"
+   },
+   {
+    "name": "Haul To Coop",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.25,
+    "labor": 4,
+    "fuel": 2,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 6,
+    "page": 12,
+    "quote": "Haul To Coop 0.25 4 2 0 0 6"
+   },
+   {
+    "name": "Wild Rice Marketing Order",
+    "category": "assessment",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 8,
+    "customRent": 0,
+    "totalCost": 8,
+    "page": 12,
+    "quote": "Wild Rice Marketing Order 0.00 0 0 8 0 8"
+   },
+   {
+    "name": "Fall River Wild Rice Cooperative Annual Fee",
+    "category": "assessment",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 1,
+    "customRent": 0,
+    "totalCost": 1,
+    "page": 12,
+    "quote": "Fall River Wild Rice Cooperative Annual Fee 0.00 0 0 1 0 1"
+   },
+   {
+    "name": "Disc Stubble 2X",
+    "category": "postharvest",
+    "timeHrsPerAcre": 0.66,
+    "labor": 11,
+    "fuel": 15,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 26,
+    "page": 12,
+    "quote": "Disc Stubble 2X 0.66 11 15 0 0 26"
+   },
+   {
+    "name": "Weed Control - Borders 10% Acres",
+    "category": "postharvest",
+    "timeHrsPerAcre": 0.01,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 3,
+    "customRent": 0,
+    "totalCost": 4,
+    "page": 12,
+    "quote": "Weed Control - Borders 10% Acres 0.01 0 0 3 0 4"
+   },
+   {
+    "name": "Flood Wet/Seal Field",
+    "category": "postharvest",
+    "timeHrsPerAcre": 0.25,
+    "labor": 3,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 12,
+    "customRent": 0,
+    "totalCost": 15,
+    "page": 12,
+    "quote": "Flood Wet/Seal Field 0.25 3 0 12 0 15"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "165 HP 4WD Tractor",
+   "yearCode": "05",
+   "price": 114512,
+   "yearsLife": 12,
+   "salvageValue": 28630,
+   "capitalRecovery": 11970,
+   "insurance": 494,
+   "taxes": 716,
+   "repairs": null,
+   "total": 13180,
+   "page": 15,
+   "line": "05 165 HP 4WD Tractor 114,512 12 28,630 11,970 494 716 13,180"
+  },
+  {
+   "description": "ATV",
+   "yearCode": "05",
+   "price": 6459,
+   "yearsLife": 7,
+   "salvageValue": 2450,
+   "capitalRecovery": 866,
+   "insurance": 31,
+   "taxes": 45,
+   "repairs": null,
+   "total": 941,
+   "page": 15,
+   "line": "05 ATV 6,459 7 2,450 866 31 45 941"
+  },
+  {
+   "description": "100 Gal ATV Sprayer with Boom",
+   "yearCode": "05",
+   "price": 5218,
+   "yearsLife": 10,
+   "salvageValue": 923,
+   "capitalRecovery": 639,
+   "insurance": 21,
+   "taxes": 31,
+   "repairs": null,
+   "total": 691,
+   "page": 15,
+   "line": "05 100 Gal ATV Sprayer with Boom 5,218 10 923 639 21 31 691"
+  },
+  {
+   "description": "Backhoe",
+   "yearCode": "05",
+   "price": 28958,
+   "yearsLife": 10,
+   "salvageValue": 5121,
+   "capitalRecovery": 3548,
+   "insurance": 118,
+   "taxes": 170,
+   "repairs": null,
+   "total": 3836,
+   "page": 15,
+   "line": "05 Backhoe 28,958 10 5,121 3,548 118 170 3,836"
+  },
+  {
+   "description": "Disc Stubble 14'",
+   "yearCode": "05",
+   "price": 20849,
+   "yearsLife": 12,
+   "salvageValue": 2888,
+   "capitalRecovery": 2317,
+   "insurance": 82,
+   "taxes": 119,
+   "repairs": null,
+   "total": 2518,
+   "page": 15,
+   "line": "05 Disc Stubble 14' 20,849 12 2,888 2,317 82 119 2,518"
+  },
+  {
+   "description": "Pickup - 3/4 Ton 4WD",
+   "yearCode": "05",
+   "price": 35600,
+   "yearsLife": 7,
+   "salvageValue": 13504,
+   "capitalRecovery": 4771,
+   "insurance": 169,
+   "taxes": 246,
+   "repairs": null,
+   "total": 5186,
+   "page": 15,
+   "line": "05 Pickup - 3/4 Ton 4WD 35,600 7 13,504 4,771 169 246 5,186"
+  },
+  {
+   "description": "Truck - 2.5 Ton 2WD",
+   "yearCode": "05",
+   "price": 27465,
+   "yearsLife": 15,
+   "salvageValue": 5347,
+   "capitalRecovery": 2600,
+   "insurance": 113,
+   "taxes": 164,
+   "repairs": null,
+   "total": 2877,
+   "page": 15,
+   "line": "05 Truck - 2.5 Ton 2WD 27,465 15 5,347 2,600 113 164 2,877"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Bird Traps (2)",
+   "yearCode": null,
+   "price": 400,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 54,
+   "insurance": 1,
+   "taxes": 2,
+   "repairs": 40,
+   "total": 98,
+   "page": 15,
+   "line": "Bird Traps (2) 400 10 54 1 2 40 98"
+  },
+  {
+   "description": "Establishment Cost",
+   "yearCode": null,
+   "price": 17360,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 5011,
+   "insurance": 0,
+   "taxes": 0,
+   "repairs": 0,
+   "total": 5011,
+   "page": 15,
+   "line": "Establishment Cost 17,360 4 5,011 0 0 0 5,011"
+  },
+  {
+   "description": "Fuel Tanks & Pumps",
+   "yearCode": null,
+   "price": 9315,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 813,
+   "insurance": 32,
+   "taxes": 47,
+   "repairs": 280,
+   "total": 1172,
+   "page": 15,
+   "line": "Fuel Tanks & Pumps 9,315 20 813 32 47 280 1,172"
+  },
+  {
+   "description": "Fuel Wagon",
+   "yearCode": null,
+   "price": 2000,
+   "yearsLife": 10,
+   "salvageValue": 200,
+   "capitalRecovery": 257,
+   "insurance": 8,
+   "taxes": 11,
+   "repairs": 60,
+   "total": 335,
+   "page": 15,
+   "line": "Fuel Wagon 2,000 10 200 257 8 11 60 335"
+  },
+  {
+   "description": "Rice Bins (8)",
+   "yearCode": null,
+   "price": 4000,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 544,
+   "insurance": 14,
+   "taxes": 20,
+   "repairs": 0,
+   "total": 578,
+   "page": 15,
+   "line": "Rice Bins (8) 4,000 10 544 14 20 0 578"
+  },
+  {
+   "description": "Shop Building",
+   "yearCode": null,
+   "price": 46332,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 3370,
+   "insurance": 160,
+   "taxes": 232,
+   "repairs": 450,
+   "total": 4211,
+   "page": 15,
+   "line": "Shop Building 46,332 30 3,370 160 232 450 4,211"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 11583,
+   "yearsLife": 10,
+   "salvageValue": 1158,
+   "capitalRecovery": 1487,
+   "insurance": 44,
+   "taxes": 64,
+   "repairs": 1158,
+   "total": 2752,
+   "page": 15,
+   "line": "Shop Tools 11,583 10 1,158 1,487 44 64 1,158 2,752"
+  },
+  {
+   "description": "Zon Guns (4)",
+   "yearCode": null,
+   "price": 1625,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 221,
+   "insurance": 6,
+   "taxes": 8,
+   "repairs": 16,
+   "total": 251,
+   "page": 15,
+   "line": "Zon Guns (4) 1,625 10 221 6 8 16 251"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "165 HP 4WD Tractor",
+   "hoursUsedOnCrop": 1361.4,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 3.52,
+   "insurancePerHr": 0.15,
+   "taxesPerHr": 0.21,
+   "repairsPerHr": 1.94,
+   "fuelPerHr": 16.63,
+   "totalOperatingPerHr": 18.57,
+   "totalCostPerHr": 22.45,
+   "page": 16,
+   "line": "05 165 HP 4WD Tractor 1,361.4 3.52 0.15 0.21 1.94 16.63 18.57 22.45"
+  },
+  {
+   "description": "ATV",
+   "hoursUsedOnCrop": 282.7,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.22,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.06,
+   "repairsPerHr": 0.32,
+   "fuelPerHr": 1.57,
+   "totalOperatingPerHr": 1.89,
+   "totalCostPerHr": 3.22,
+   "page": 16,
+   "line": "05 ATV 282.7 1.22 0.04 0.06 0.32 1.57 1.89 3.22"
+  },
+  {
+   "description": "100 Gal ATV Sprayer with Boom",
+   "hoursUsedOnCrop": 149.7,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.71,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.08,
+   "repairsPerHr": 0.93,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.93,
+   "totalCostPerHr": 2.77,
+   "page": 16,
+   "line": "05 100 Gal ATV Sprayer with Boom 149.7 1.71 0.06 0.08 0.93 0.00 0.93 2.77"
+  },
+  {
+   "description": "Backhoe",
+   "hoursUsedOnCrop": 260,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 5.46,
+   "insurancePerHr": 0.18,
+   "taxesPerHr": 0.26,
+   "repairsPerHr": 2.94,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.94,
+   "totalCostPerHr": 8.85,
+   "page": 16,
+   "line": "05 Backhoe 260.0 5.46 0.18 0.26 2.94 0.00 2.94 8.85"
+  },
+  {
+   "description": "Disc Stubble 14'",
+   "hoursUsedOnCrop": 192.1,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 4.82,
+   "insurancePerHr": 0.17,
+   "taxesPerHr": 0.25,
+   "repairsPerHr": 2.21,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.21,
+   "totalCostPerHr": 7.45,
+   "page": 16,
+   "line": "05 Disc Stubble 14' 192.1 4.82 0.17 0.25 2.21 0.00 2.21 7.45"
+  },
+  {
+   "description": "Pickup - 3/4 Ton 4WD",
+   "hoursUsedOnCrop": 285,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 6.7,
+   "insurancePerHr": 0.24,
+   "taxesPerHr": 0.34,
+   "repairsPerHr": 1.74,
+   "fuelPerHr": 7.07,
+   "totalOperatingPerHr": 8.81,
+   "totalCostPerHr": 16.09,
+   "page": 16,
+   "line": "05 Pickup - 3/4 Ton 4WD 285.0 6.70 0.24 0.34 1.74 7.07 8.81 16.09"
+  },
+  {
+   "description": "Truck - 2.5 Ton 2WD",
+   "hoursUsedOnCrop": 133,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 7.82,
+   "insurancePerHr": 0.34,
+   "taxesPerHr": 0.49,
+   "repairsPerHr": 1.7,
+   "fuelPerHr": 5.21,
+   "totalOperatingPerHr": 6.91,
+   "totalCostPerHr": 15.57,
+   "page": 16,
+   "line": "05 Truck - 2.5 Ton 2WD 133.0 7.82 0.34 0.49 1.70 5.21 6.91 15.57"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Farm Manager Salary",
+   "unitsPerFarm": 500,
+   "unit": "Acre",
+   "pricePerUnit": 93.13,
+   "totalCost": 46565,
+   "page": 15,
+   "line": "Farm Manager Salary 500 Acre 93.13 46,565"
+  },
+  {
+   "description": "Land Rent",
+   "unitsPerFarm": 80,
+   "unit": "Acre",
+   "pricePerUnit": 150,
+   "totalCost": 12000,
+   "page": 15,
+   "line": "Land Rent 80 Acre 150.00 12,000"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 500,
+   "unit": "Acre",
+   "pricePerUnit": 1.83,
+   "totalCost": 915,
+   "page": 15,
+   "line": "Liability Insurance 500 Acre 1.83 915"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 490,
+   "unit": "Acre",
+   "pricePerUnit": 32.5,
+   "totalCost": 15925,
+   "page": 15,
+   "line": "Office Expense 490 Acre 32.50 15,925"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 3,
+   "quote": "The labor for operations involving machinery are 20% higher than the operation time to account for the extra labor involved in equipment set up, moving, maintenance and repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   12,
+   8,
+   8,
+   23,
+   95,
+   88,
+   70,
+   169,
+   211,
+   8,
+   8,
+   8
+  ],
+  "operatingPerAcre": [
+   0,
+   0,
+   0,
+   9,
+   81,
+   75,
+   55,
+   155,
+   47,
+   0,
+   0,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 709,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 14,
+  "quote": "MONTHLY CAST COSTS PER ACRE TO PRODUCE WILD RICE"
+ },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 889,
+    "returns": null,
+    "netCost": 889,
+    "accumulated": null,
+    "page": 9,
+    "quote": "TOTAL CASH COSTS/ACRE 889"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 889,
+    "returns": null,
+    "netCost": 889,
+    "accumulated": null,
+    "page": 10,
+    "quote": "TOTAL CASH COSTS/ACRE 889"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 217,
+   "page": 5,
+   "quote": "For this study, the cost is $217 per acre or $17,360 for the 80 acre field."
+  },
+  "annualCharge": {
+   "value": 63,
+   "page": 12,
+   "quote": "Establishment Cost 217 63 63"
+  },
+  "productionYears": {
+   "value": 4,
+   "page": 5,
+   "quote": "The establishment cost is amortized over the remaining four years of crop life."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 17360,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 5011,
+   "page": 15,
+   "line": "Establishment Cost 17,360 4 5,011 0 0 0 5,011"
+  },
+  "method": {
+   "page": 5,
+   "quote": "The establishment cost is amortized over the remaining four years of crop life."
+  }
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "landRentPerAcre",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborOverheadPct",
+   "acresFarmed",
+   "grossReturns",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct"
+  ],
+  "warnings": [
+   "Table 2 found but no GROSS RETURNS block",
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+  ]
+ }
+}

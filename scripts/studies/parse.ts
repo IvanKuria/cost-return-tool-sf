@@ -53,7 +53,7 @@ function kindOf(title: string): TableKind {
 
 /** Body table headings (the table of contents repeats them, so a heading followed closely by another heading is TOC). */
 function findTables(lines: Line[]): TableHeading[] {
-  const re = /^\s*TABL[EA]\s*(\d+)(?:[-\s]?[A-Z])?\.\s*(\S.*?)\s*$/i;
+  const re = /^\s*TABL[EA]\s*(\d+)(?:[-\s]?[A-Z])?\.?\s+(\S.*?)\s*$/i;
   const cands: { n: number; title: string; index: number; page: number }[] = [];
   for (const l of lines) {
     const m = l.text.match(re);
@@ -125,7 +125,7 @@ function parseSource(e: ManifestEntry, lines: Line[], language: 'en' | 'es'): St
   else if (ctx.startsWith(e.title)) ctx = ctx.slice(e.title.length);
   ctx = ctx.trim();
   const ym = ctx.match(/\b(19|20)\d{2}\b/);
-  let year: number | null = ym ? Number(ym[0]) : null;
+  let year: number | null = ym ? Number(ym[0]) : (e.year ?? null);
   let region: string | null = null; let description: string | null = null;
   if (ym && ym.index != null) {
     region = clean(ctx.slice(0, ym.index)) || null;
@@ -143,7 +143,46 @@ function parseSource(e: ManifestEntry, lines: Line[], language: 'en' | 'es'): St
   return {
     id: slugOf(e), commodity: e.commodity, title, year, region, counties: counties && counties.length < 120 ? counties : null,
     description, language, url: e.url, indexPage: e.indexPage, publisher: PUBLISHER, fetchedAt: new Date().toISOString().slice(0, 10),
+    archived: Boolean(e.archived), indexYear: e.year ?? (ym ? Number(ym[0]) : null),
+    priceYear: parsePriceYear(lines, year),
   };
+}
+
+const MONTHS: Record<string, number> = { january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+  enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6, julio: 7, agosto: 8, septiembre: 9, octubre: 10, noviembre: 11, diciembre: 12 };
+const MONTH_RE = Object.keys(MONTHS).join('|');
+
+/**
+ * The year the study says its prices are for. Read from the prose only; the common forms are
+ * "based on January 2024 figures", "based on 2019-2020 prices", "based on April 2017 prices",
+ * "Total operating costs based on 2017 data", or "based on current figures" (then the study year).
+ * Never guessed: no sentence, no priceYear.
+ */
+function parsePriceYear(lines: Line[], studyYear: number | null): StudySource['priceYear'] {
+  const S = proseSentences(lines);
+  const yr = String.raw`((?:19|20)\d{2})`;
+  const tries: { re: RegExp; month?: number; year?: number }[] = [
+    { re: new RegExp(String.raw`(?:costs?|figures|prices|precios|costos)[^.]{0,120}?(?:based on|basados? en|a partir de)\s+(?:the\s+)?(${MONTH_RE})\s+(?:of\s+)?${yr}\s*(?:figures|prices|data|costs|dollars|price levels)?`, 'i'), month: 1, year: 2 },
+    { re: new RegExp(String.raw`(?:costs?|figures|prices|precios|costos)[^.]{0,120}?(?:based on|basados? en)\s+(?:the\s+)?${yr}(?:\s*[-/–]\s*${yr})?\s*(?:figures|prices|data|costs|dollars|price levels|season|crop year)`, 'i'), year: 1 },
+    { re: new RegExp(String.raw`(?:prices|costs|figures)\s+(?:are|were)\s+(?:for|from|as of)\s+(?:the\s+)?(${MONTH_RE})?\s*${yr}`, 'i'), month: 1, year: 2 },
+    { re: new RegExp(String.raw`total operating costs based on ${yr} data`, 'i'), year: 1 },
+  ];
+  for (const t of tries) {
+    for (const sent of S) {
+      const m = sent.text.match(t.re);
+      if (!m) continue;
+      const year = Number(m[t.year!]);
+      if (!Number.isFinite(year) || year < 1990 || year > 2035) continue;
+      const monthName = t.month != null ? m[t.month]?.toLowerCase() : undefined;
+      // A range like 2019-2020 takes the later year: prices as of the study's release.
+      const range = sent.text.match(new RegExp(String.raw`${year}\s*[-/–]\s*((?:19|20)\d{2})`));
+      const value = range ? Math.max(year, Number(range[1])) : year;
+      return { value, month: monthName ? MONTHS[monthName] ?? null : null, page: sent.page, quote: sent.text };
+    }
+  }
+  const cur = S.find(sent => /(?:costs?|figures|prices|precios|costos)[^.]{0,120}?(?:based on|basados? en)\s+current\s+(?:figures|prices|costs|data)/i.test(sent.text) || /precios (?:actuales|corrientes)/i.test(sent.text));
+  if (cur && studyYear) return { value: studyYear, month: null, page: cur.page, quote: `${cur.text} (Current at the time of the study, so the study year ${studyYear} is used.)` };
+  return null;
 }
 
 // ---------------------------------------------------------------- assumptions
@@ -330,6 +369,9 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
       return x.startsWith('harvest') ? 'harvest' : x.startsWith('assess') ? 'assessment' : x.startsWith('post') ? 'postharvest' : x === 'cultural' ? 'cultural' : 'other';
     };
     const rowRe = new RegExp(String.raw`^\s*(\S.*?)\s{2,}(${NUM})\s+(${NUM})\s+(${NUM})\s+(${NUM})\s+(${NUM})\s+(${NUM})\s+(${NUM})\s*$`);
+    // Studies through about 2015 print one "Fuel, Lube & Repairs" column: six numbers, not seven.
+    const rowRe6 = new RegExp(String.raw`^\s*(\S.*?)\s{2,}(${NUM})\s+(${NUM})\s+(${NUM})\s+(${NUM})\s+(${NUM})\s+(${NUM})\s*$`);
+    let sixColumn = false;
     // start after the last column-header line ("Operation ... Cost") before opEnd, else at the table start
     let from = s;
     for (let i = opEnd.line.index - 1; i > s; i--) if (/^\s*Operation\s+\(?Hrs/i.test(lines[i].text) || /^\s*Operation\s{2,}/i.test(lines[i].text)) { from = i + 1; break; }
@@ -343,13 +385,25 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
       if (tot) { const k = catOf(tot[1]); for (const r of pending) if (cat == null) r.category = k; pending = []; continue; }
       if (/^\s*(TOTAL|Interest on operating)/i.test(t)) continue;
       const m = t.match(rowRe);
-      if (!m) continue;
-      const row: OperationRow = {
-        name: clean(m[1]), category: cat ?? 'cultural', timeHrsPerAcre: toNum(m[2]), labor: zeroDash(m[3]), fuel: zeroDash(m[4]), lubeRepairs: zeroDash(m[5]),
-        materials: zeroDash(m[6]), customRent: zeroDash(m[7]), totalCost: toNum(m[8]), page: lines[i].page, quote: clean(lines[i].text),
-      };
+      let row: OperationRow | null = null;
+      if (m) {
+        row = {
+          name: clean(m[1]), category: cat ?? 'cultural', timeHrsPerAcre: toNum(m[2]), labor: zeroDash(m[3]), fuel: zeroDash(m[4]), lubeRepairs: zeroDash(m[5]),
+          materials: zeroDash(m[6]), customRent: zeroDash(m[7]), totalCost: toNum(m[8]), page: lines[i].page, quote: clean(lines[i].text),
+        };
+      } else {
+        const m6 = t.match(rowRe6);
+        if (!m6) continue;
+        // combined fuel, lube and repairs goes under fuel; lubeRepairs is null so nothing is double counted
+        row = {
+          name: clean(m6[1]), category: cat ?? 'cultural', timeHrsPerAcre: toNum(m6[2]), labor: zeroDash(m6[3]), fuel: zeroDash(m6[4]), lubeRepairs: null,
+          materials: zeroDash(m6[5]), customRent: zeroDash(m6[6]), totalCost: toNum(m6[7]), page: lines[i].page, quote: clean(lines[i].text),
+        };
+        sixColumn = true;
+      }
       c.operations.push(row); pending.push(row);
     }
+    if (sixColumn) warn('Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null');
   }
 
   // Table 2 returns
@@ -428,10 +482,21 @@ function parseEquipmentSpan(lines: Line[], t5: [number, number] | null, warn: (s
       const t = lines[i].text;
       if (/^\s*(TOTAL|INVESTMENT\s*$)/i.test(t)) continue;
       let m = t.match(inv9); let repairs: number | null = null; let total: number | null = null;
-      if (m) { repairs = toNum(m[8]); total = toNum(m[9]); }
-      else { m = t.match(inv8); if (m) total = toNum(m[8]); }
-      if (!m) continue;
-      const price = toNum(m[2]), life = toNum(m[3]), salvage = toNum(m[4]), cr = toNum(m[5]), ins = toNum(m[6]), tax = toNum(m[7]);
+      let price: number | null, life: number | null, salvage: number | null, cr: number | null, ins: number | null, tax: number | null;
+      if (m) { repairs = toNum(m[8]); total = toNum(m[9]); price = toNum(m[2]); life = toNum(m[3]); salvage = toNum(m[4]); cr = toNum(m[5]); ins = toNum(m[6]); tax = toNum(m[7]); }
+      else {
+        m = t.match(inv8);
+        if (!m) continue;
+        // Eight numbers is ambiguous: either the salvage cell is blank (price life CR ins taxes repairs total,
+        // the usual case for an orchard establishment row) or the table has no repairs column
+        // (price life salvage CR ins taxes total). The reading whose parts add up to the total wins.
+        const n = [2, 3, 4, 5, 6, 7, 8].map(k => toNum(m![k]));
+        const close = (a: number, b: number) => Math.abs(a - b) <= Math.max(2, 0.01 * Math.abs(b));
+        const blankSalvage = n.every(v => v != null) && close(n[2]! + n[3]! + n[4]! + n[5]!, n[6]!);
+        const noRepairs = n.every(v => v != null) && close(n[3]! + n[4]! + n[5]!, n[6]!);
+        if (blankSalvage && !noRepairs) { price = n[0]; life = n[1]; salvage = 0; cr = n[2]; ins = n[3]; tax = n[4]; repairs = n[5]; total = n[6]; }
+        else { price = n[0]; life = n[1]; salvage = n[2]; cr = n[3]; ins = n[4]; tax = n[5]; total = n[6]; }
+      }
       if ([price, life, salvage, cr, ins, tax, total].some(v => v == null)) continue;
       if (!sane(price!, life!, salvage!, cr!)) { dropped++; continue; }
       investments.push({ description: clean(m[1]), yearCode: null, price: price!, yearsLife: life!, salvageValue: salvage!, capitalRecovery: cr!, insurance: ins!, taxes: tax!, repairs, total, page: lines[i].page, line: clean(t) });

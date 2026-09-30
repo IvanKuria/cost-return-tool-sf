@@ -1,0 +1,112 @@
+{
+ "source": {
+  "id": "lettuce-2010lettuce-wrap-cc",
+  "commodity": "lettuce",
+  "title": "production in Monterey, Santa Cruz, and San Benito Counties. Sample costs are given for tractor, fuel,",
+  "year": 2010,
+  "region": "Central Coast San Benito, Monterey, Santa Cruz",
+  "counties": "Beds Central Coast Monterey, Santa Cruz, and San Benito",
+  "description": "Iceberg (wrapped), 40-inch beds",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a4/bb/a4bb20f0-4bfe-404e-b47e-b7a634ca80b5/2010lettuce_wrap_cc.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lettuce",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2010,
+  "priceYear": {
+   "value": 2010,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs are given for tractor, fuel, repairs, labor, materials, and custom services, and are based on current figures. (Current at the time of the study, so the study year 2010 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": {
+   "page": 5,
+   "quote": "Tractor labor is $13.40 per hour including 34% benefits/overhead. ‡ Hand labor is $11.40 per hour including 34% benefits/overhead. ¶ Costs per acre can vary considerably depending on many variables including production location and weather conditions, land rent and taxes, soil type, water costs, material inputs, and energy costs. § May include gypsum, compost, water-run fertilizer, and/or soil anti-crustant. * Includes interest on operating capital. †† Assuming a yield of 800 cartons per acre."
+  },
+  "priceStatement": {
+   "page": 2,
+   "quote": "The price range is shown to be from $9 to $13 per carton; actual price will depend on market conditions."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": null,
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "no whole-farm equipment table"
+  ]
+ }
+}

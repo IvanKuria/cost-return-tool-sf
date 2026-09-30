@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/08/12/2021orangessjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/oranges",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2021,
+  "priceYear": {
+   "value": 2021,
+   "month": 1,
+   "page": 2,
+   "quote": "The sample costs for labor, materials, equipment and custom services are based on January 2021 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

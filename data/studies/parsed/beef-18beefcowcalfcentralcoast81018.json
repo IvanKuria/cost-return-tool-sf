@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/4c/e1/4ce1d18c-9b26-4bed-995d-94bc3d8a7d86/18beefcowcalfcentralcoast81018.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beef",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2018,
+  "priceYear": {
+   "value": 2018,
+   "month": 1,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on January 2018 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": null,

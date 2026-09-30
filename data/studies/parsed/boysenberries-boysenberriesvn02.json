@@ -1,0 +1,1062 @@
+{
+ "source": {
+  "id": "boysenberries-boysenberriesvn02",
+  "commodity": "boysenberries",
+  "title": "TO ESTABLISH AND PRODUCE",
+  "year": 2002,
+  "region": "San Joaquin Valley North Stanislaus",
+  "counties": "Northern Stanislaus County Edward J. Perry UC Cooperative Extension Farm Advisor, Stanislaus",
+  "description": "Stanislaus County; Establishment and production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/7f/02/7f02fe7a-64c0-4991-b809-dfbbd3f01cfb/boysenberriesvn02.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/boysenberries",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2002,
+  "priceYear": {
+   "value": 2002,
+   "month": null,
+   "page": 2,
+   "quote": "The sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2002 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 15,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The 40 contiguous acre farm consists of 15 acres of boysenberries, 15 acres of fruit trees, and 5 acres of strawberries and fresh market tomatoes."
+  },
+  "acresCrop": {
+   "value": 5,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The 40 contiguous acre farm consists of 15 acres of boysenberries, 15 acres of fruit trees, and 5 acres of strawberries and fresh market tomatoes."
+  },
+  "yieldPerAcre": null,
+  "yieldUnit": "ton",
+  "pricePerUnit": {
+   "value": 3900,
+   "unit": "$/ton",
+   "page": 6,
+   "quote": "An average price of $3,900 per ton for boysenberries is used in this study."
+  },
+  "returns": [
+   {
+    "name": "Retail-Fresh Market",
+    "quantity": 6,
+    "unit": "ton",
+    "price": 4600,
+    "value": 27600,
+    "page": 13,
+    "quote": "Retail-Fresh Market 6.00 ton 4,600.00 27,600"
+   },
+   {
+    "name": "Process-Frozen",
+    "quantity": 6,
+    "unit": "ton",
+    "price": 3200,
+    "value": 19200,
+    "page": 13,
+    "quote": "Process-Frozen 6.00 ton 3,200.00 19,200"
+   },
+   {
+    "name": "Devrinol 50 DF",
+    "quantity": 2,
+    "unit": "lb",
+    "price": 10.02,
+    "value": 20,
+    "page": 13,
+    "quote": "Devrinol 50 DF 2.00 lb 10.02 20"
+   },
+   {
+    "name": "Water-Drip Irrigation",
+    "quantity": 3.36,
+    "unit": "acft",
+    "price": 39,
+    "value": 131,
+    "page": 13,
+    "quote": "Water-Drip Irrigation 3.36 acft 39.00 131"
+   },
+   {
+    "name": "Water-Flood Irrigation",
+    "quantity": 0.22,
+    "unit": "acft",
+    "price": 5,
+    "value": 1,
+    "page": 13,
+    "quote": "Water-Flood Irrigation 0.22 acft 5.00 1"
+   },
+   {
+    "name": "Liquid Lime Sulfur",
+    "quantity": 15,
+    "unit": "gal",
+    "price": 1.25,
+    "value": 19,
+    "page": 13,
+    "quote": "Liquid Lime Sulfur 15.00 gal 1.25 19"
+   },
+   {
+    "name": "UN 32",
+    "quantity": 69.8,
+    "unit": "gal",
+    "price": 0.92,
+    "value": 64,
+    "page": 13,
+    "quote": "UN 32 69.80 gal 0.92 64"
+   },
+   {
+    "name": "Aliette WDG",
+    "quantity": 5,
+    "unit": "lb",
+    "price": 13.11,
+    "value": 66,
+    "page": 13,
+    "quote": "Aliette WDG 5.00 lb 13.11 66"
+   },
+   {
+    "name": "Kocide 101",
+    "quantity": 4,
+    "unit": "lb",
+    "price": 2.59,
+    "value": 10,
+    "page": 13,
+    "quote": "Kocide 101 4.00 lb 2.59 10"
+   },
+   {
+    "name": "Tray w/12 shells",
+    "quantity": 1848,
+    "unit": "flat",
+    "price": 0.9,
+    "value": 1663,
+    "page": 13,
+    "quote": "Tray w/12 shells 1,848.00 flat 0.90 1,663"
+   },
+   {
+    "name": "Plastic Crate:Processing",
+    "quantity": 858,
+    "unit": "crate",
+    "price": 1.25,
+    "value": 1073,
+    "page": 13,
+    "quote": "Plastic Crate:Processing 858.00 crate 1.25 1,073"
+   },
+   {
+    "name": "Process:Freezing",
+    "quantity": 12000,
+    "unit": "lb",
+    "price": 0.25,
+    "value": 3000,
+    "page": 13,
+    "quote": "Process:Freezing 12,000.00 lb 0.25 3,000"
+   },
+   {
+    "name": "Labor (machine)",
+    "quantity": 6.59,
+    "unit": "hrs",
+    "price": 14.07,
+    "value": 93,
+    "page": 13,
+    "quote": "Labor (machine) 6.59 hrs 14.07 93"
+   },
+   {
+    "name": "Labor (non-machine)",
+    "quantity": 634.52,
+    "unit": "hrs",
+    "price": 9.05,
+    "value": 5742,
+    "page": 13,
+    "quote": "Labor (non-machine) 634.52 hrs 9.05 5,742"
+   },
+   {
+    "name": "Fuel - Gas",
+    "quantity": 5.17,
+    "unit": "gal",
+    "price": 1.51,
+    "value": 8,
+    "page": 13,
+    "quote": "Fuel - Gas 5.17 gal 1.51 8"
+   },
+   {
+    "name": "Fuel - Diesel",
+    "quantity": 9.37,
+    "unit": "gal",
+    "price": 1.26,
+    "value": 12,
+    "page": 13,
+    "quote": "Fuel - Diesel 9.37 gal 1.26 12"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 10.5,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Hourly wages for workers are $10.50 for machine operators and $6.75 per hour non-machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 6.75,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Hourly wages for workers are $10.50 for machine operators and $6.75 per hour non-machine labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 1.51,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.26 and $1.51 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 1.51,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.26 and $1.51 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 6,
+   "quote": "An assumed yield of 12 tons per acre is used to calculate returns in the production years."
+  },
+  "priceStatement": {
+   "page": 6,
+   "quote": "Return prices per pound for boysenberries are $1.60 per pound processed (frozen) and $2.30 per pound retail."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 12203,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL OPERATING COSTS/ACRE 5,835 36 6,051 0 12,203"
+  },
+  "cashOverheadTotal": {
+   "value": 614,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL CASH OVERHEAD COSTS 614"
+  },
+  "nonCashOverheadTotal": {
+   "value": 418,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 4,510 418 418"
+  },
+  "totalCost": {
+   "value": 13235,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL COSTS/ACRE 13,235"
+  },
+  "grossReturns": {
+   "value": 46800,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL GROSS RETURNS FOR BOYSENBERRY 46,800"
+  },
+  "netReturnsAboveOperating": {
+   "value": 34597,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 34,597"
+  },
+  "netReturnsAboveTotal": {
+   "value": 33565,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "NET RETURNS ABOVE TOTAL COSTS 33,565"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 13,
+    "page": 12,
+    "quote": "Liability Insurance 13"
+   },
+   {
+    "description": "Office Expense",
+    "value": 300,
+    "page": 12,
+    "quote": "Office Expense 300"
+   },
+   {
+    "description": "Sanitation Facility",
+    "value": 90,
+    "page": 12,
+    "quote": "Sanitation Facility 90"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 25,
+    "page": 12,
+    "quote": "Property Taxes 25"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 15,
+    "page": 12,
+    "quote": "Property Insurance 15"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 172,
+    "page": 12,
+    "quote": "Investment Repairs 172"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Roto-till Alley way",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.4,
+    "labor": 7,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 10,
+    "page": 12,
+    "quote": "Roto-till Alley way 0.40 7 3 0 0 10"
+   },
+   {
+    "name": "Weed Control-Herbicide",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.39,
+    "labor": 7,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 20,
+    "customRent": 0,
+    "totalCost": 29,
+    "page": 12,
+    "quote": "Weed Control-Herbicide 0.39 7 3 20 0 29"
+   },
+   {
+    "name": "Irrigate-Drip",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 66,
+    "customRent": 0,
+    "totalCost": 66,
+    "page": 12,
+    "quote": "Irrigate-Drip 0.00 0 0 66 0 66"
+   },
+   {
+    "name": "Hand Weeding",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.53,
+    "labor": 5,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 5,
+    "page": 12,
+    "quote": "Hand Weeding 0.53 5 0 0 0 5"
+   },
+   {
+    "name": "Insect Control-Miticide",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.78,
+    "labor": 13,
+    "fuel": 5,
+    "lubeRepairs": null,
+    "materials": 19,
+    "customRent": 0,
+    "totalCost": 37,
+    "page": 12,
+    "quote": "Insect Control-Miticide 0.78 13 5 19 0 37"
+   },
+   {
+    "name": "Fertilize/Drip Irrigate",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 99,
+    "customRent": 0,
+    "totalCost": 99,
+    "page": 12,
+    "quote": "Fertilize/Drip Irrigate 0.00 0 0 99 0 99"
+   },
+   {
+    "name": "Disease Control-Fungicide",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.39,
+    "labor": 7,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 66,
+    "customRent": 0,
+    "totalCost": 75,
+    "page": 12,
+    "quote": "Disease Control-Fungicide 0.39 7 3 66 0 75"
+   },
+   {
+    "name": "Irrigate-Flood",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 1,
+    "customRent": 0,
+    "totalCost": 1,
+    "page": 12,
+    "quote": "Irrigate-Flood 0.00 0 0 1 0 1"
+   },
+   {
+    "name": "Prune/Tip/Wrap",
+    "category": "cultural",
+    "timeHrsPerAcre": 266,
+    "labor": 2407,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 2407,
+    "page": 12,
+    "quote": "Prune/Tip/Wrap 266.00 2,407 0 0 0 2,407"
+   },
+   {
+    "name": "Shred Prunings",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.37,
+    "labor": 6,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 9,
+    "page": 12,
+    "quote": "Shred Prunings 0.37 6 3 0 0 9"
+   },
+   {
+    "name": "Disk-1X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.43,
+    "labor": 7,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 10,
+    "page": 12,
+    "quote": "Disk-1X 0.43 7 3 0 0 10"
+   },
+   {
+    "name": "Winter pruning",
+    "category": "cultural",
+    "timeHrsPerAcre": 79.99,
+    "labor": 724,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 724,
+    "page": 12,
+    "quote": "Winter pruning 79.99 724 0 0 0 724"
+   },
+   {
+    "name": "Drip Irrigation/Fertilize UN32",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 35,
+    "customRent": 0,
+    "totalCost": 35,
+    "page": 12,
+    "quote": "Drip Irrigation/Fertilize UN32 0.00 0 0 35 0 35"
+   },
+   {
+    "name": "Disease Control-Copper Spray",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.39,
+    "labor": 7,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 10,
+    "customRent": 0,
+    "totalCost": 20,
+    "page": 12,
+    "quote": "Disease Control-Copper Spray 0.39 7 3 10 0 20"
+   },
+   {
+    "name": "Pickup Truck Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.33,
+    "labor": 23,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 29,
+    "page": 12,
+    "quote": "Pickup Truck Use 1.33 23 7 0 0 29"
+   },
+   {
+    "name": "Pick Berries by Hand-Retail",
+    "category": "harvest",
+    "timeHrsPerAcre": 144,
+    "labor": 1303,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 1663,
+    "customRent": 0,
+    "totalCost": 2966,
+    "page": 12,
+    "quote": "Pick Berries by Hand-Retail 144.00 1,303 0 1,663 0 2,966"
+   },
+   {
+    "name": "Pick Berries by Hand-Process",
+    "category": "harvest",
+    "timeHrsPerAcre": 144,
+    "labor": 1303,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 1073,
+    "customRent": 0,
+    "totalCost": 2376,
+    "page": 12,
+    "quote": "Pick Berries by Hand-Process 144.00 1,303 0 1,073 0 2,376"
+   },
+   {
+    "name": "Haul Berries to Market/Process",
+    "category": "harvest",
+    "timeHrsPerAcre": 1,
+    "labor": 17,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 24,
+    "page": 12,
+    "quote": "Haul Berries to Market/Process 1.00 17 7 0 0 24"
+   },
+   {
+    "name": "Processing:Freezing (IQF)",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 3000,
+    "customRent": 0,
+    "totalCost": 3000,
+    "page": 12,
+    "quote": "Processing:Freezing (IQF) 0.00 0 0 3,000 0 3,000"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "1/2 Ton Pickup",
+   "yearCode": "02",
+   "price": 20565,
+   "yearsLife": 5,
+   "salvageValue": 9217,
+   "capitalRecovery": 3315,
+   "insurance": 98,
+   "taxes": 149,
+   "repairs": null,
+   "total": 3562,
+   "page": 15,
+   "line": "02 1/2 Ton Pickup 20,565 5 9,217 3,315 98 149 3,562"
+  },
+  {
+   "description": "1 Ton Pickup",
+   "yearCode": "02",
+   "price": 30000,
+   "yearsLife": 7,
+   "salvageValue": 11380,
+   "capitalRecovery": 4114,
+   "insurance": 137,
+   "taxes": 207,
+   "repairs": null,
+   "total": 4457,
+   "page": 15,
+   "line": "02 1 Ton Pickup 30,000 7 11,380 4,114 137 207 4,457"
+  },
+  {
+   "description": "Disk-5 ft",
+   "yearCode": "02",
+   "price": 2500,
+   "yearsLife": 10,
+   "salvageValue": 442,
+   "capitalRecovery": 313,
+   "insurance": 10,
+   "taxes": 15,
+   "repairs": null,
+   "total": 338,
+   "page": 15,
+   "line": "02 Disk-5 ft 2,500 10 442 313 10 15 338"
+  },
+  {
+   "description": "JD 5320N Tractor",
+   "yearCode": "02",
+   "price": 28000,
+   "yearsLife": 10,
+   "salvageValue": 8271,
+   "capitalRecovery": 3263,
+   "insurance": 120,
+   "taxes": 181,
+   "repairs": null,
+   "total": 3564,
+   "page": 15,
+   "line": "02 JD 5320N Tractor 28,000 10 8,271 3,263 120 181 3,564"
+  },
+  {
+   "description": "Rotavator-5 ft",
+   "yearCode": "02",
+   "price": 3719,
+   "yearsLife": 10,
+   "salvageValue": 658,
+   "capitalRecovery": 466,
+   "insurance": 14,
+   "taxes": 22,
+   "repairs": null,
+   "total": 503,
+   "page": 15,
+   "line": "02 Rotavator-5 ft 3,719 10 658 466 14 22 503"
+  },
+  {
+   "description": "Shredder-5 ft",
+   "yearCode": "02",
+   "price": 3837,
+   "yearsLife": 10,
+   "salvageValue": 679,
+   "capitalRecovery": 481,
+   "insurance": 15,
+   "taxes": 23,
+   "repairs": null,
+   "total": 518,
+   "page": 15,
+   "line": "02 Shredder-5 ft 3,837 10 679 481 15 23 518"
+  },
+  {
+   "description": "Sprayer-Pull 300gl",
+   "yearCode": "02",
+   "price": 4900,
+   "yearsLife": 10,
+   "salvageValue": 867,
+   "capitalRecovery": 614,
+   "insurance": 19,
+   "taxes": 29,
+   "repairs": null,
+   "total": 662,
+   "page": 15,
+   "line": "02 Sprayer-Pull 300gl 4,900 10 867 614 19 29 662"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Berry Crop Establishment",
+   "yearCode": null,
+   "price": 7524,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 1042,
+   "insurance": 25,
+   "taxes": 38,
+   "repairs": 0,
+   "total": 1105,
+   "page": 15,
+   "line": "Berry Crop Establishment 7,524 10 1,042 25 38 0 1,105"
+  },
+  {
+   "description": "Drip Irrigation System",
+   "yearCode": null,
+   "price": 19880,
+   "yearsLife": 25,
+   "salvageValue": 0,
+   "capitalRecovery": 1616,
+   "insurance": 66,
+   "taxes": 99,
+   "repairs": 2035,
+   "total": 3816,
+   "page": 15,
+   "line": "Drip Irrigation System 19,880 25 1,616 66 99 2,035 3,816"
+  },
+  {
+   "description": "Fuel Tanks & Pumps",
+   "yearCode": null,
+   "price": 19835,
+   "yearsLife": 20,
+   "salvageValue": 1984,
+   "capitalRecovery": 1736,
+   "insurance": 72,
+   "taxes": 109,
+   "repairs": 397,
+   "total": 2314,
+   "page": 15,
+   "line": "Fuel Tanks & Pumps 19,835 20 1,984 1,736 72 109 397 2,314"
+  },
+  {
+   "description": "Land",
+   "yearCode": null,
+   "price": 8000,
+   "yearsLife": 25,
+   "salvageValue": 8000,
+   "capitalRecovery": 513,
+   "insurance": 0,
+   "taxes": 80,
+   "repairs": 0,
+   "total": 593,
+   "page": 15,
+   "line": "Land 8,000 25 8,000 513 0 80 0 593"
+  },
+  {
+   "description": "Shop Building",
+   "yearCode": null,
+   "price": 60000,
+   "yearsLife": 20,
+   "salvageValue": 6000,
+   "capitalRecovery": 5250,
+   "insurance": 218,
+   "taxes": 330,
+   "repairs": 1200,
+   "total": 6998,
+   "page": 15,
+   "line": "Shop Building 60,000 20 6,000 5,250 218 330 1,200 6,998"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 13072,
+   "yearsLife": 20,
+   "salvageValue": 1307,
+   "capitalRecovery": 1144,
+   "insurance": 47,
+   "taxes": 72,
+   "repairs": 131,
+   "total": 1394,
+   "page": 15,
+   "line": "Shop Tools 13,072 20 1,307 1,144 47 72 131 1,394"
+  },
+  {
+   "description": "Well w/20 hp Pump",
+   "yearCode": null,
+   "price": 31000,
+   "yearsLife": 25,
+   "salvageValue": 0,
+   "capitalRecovery": 2520,
+   "insurance": 102,
+   "taxes": 155,
+   "repairs": 3100,
+   "total": 5878,
+   "page": 15,
+   "line": "Well w/20 hp Pump 31,000 25 2,520 102 155 3,100 5,878"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "1/2 Ton Pickup",
+   "hoursUsedOnCrop": 380,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 5.23,
+   "insurancePerHr": 0.16,
+   "taxesPerHr": 0.24,
+   "repairsPerHr": 1.52,
+   "fuelPerHr": 3.47,
+   "totalOperatingPerHr": 4.99,
+   "totalCostPerHr": 10.62,
+   "page": 16,
+   "line": "02 1/2 Ton Pickup 380.00 5.23 0.16 0.24 1.52 3.47 4.99 10.62"
+  },
+  {
+   "description": "1 Ton Pickup",
+   "hoursUsedOnCrop": 250,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 9.87,
+   "insurancePerHr": 0.33,
+   "taxesPerHr": 0.5,
+   "repairsPerHr": 2.76,
+   "fuelPerHr": 4.34,
+   "totalOperatingPerHr": 7.1,
+   "totalCostPerHr": 17.8,
+   "page": 16,
+   "line": "02 1 Ton Pickup 250.00 9.87 0.33 0.50 2.76 4.34 7.10 17.80"
+  },
+  {
+   "description": "Disk-5 ft",
+   "hoursUsedOnCrop": 189.4,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.99,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.05,
+   "repairsPerHr": 0.4,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.4,
+   "totalCostPerHr": 1.47,
+   "page": 16,
+   "line": "02 Disk-5 ft 189.40 0.99 0.03 0.05 0.4 0.00 0.40 1.47"
+  },
+  {
+   "description": "JD 5320N",
+   "hoursUsedOnCrop": 1168.1,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.68,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.09,
+   "repairsPerHr": 1.27,
+   "fuelPerHr": 3.91,
+   "totalOperatingPerHr": 5.18,
+   "totalCostPerHr": 7.01,
+   "page": 16,
+   "line": "02 JD 5320N 1,168.10 1.68 0.06 0.09 1.27 3.91 5.18 7.01"
+  },
+  {
+   "description": "Rotavator-5 ft",
+   "hoursUsedOnCrop": 140.1,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 2,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.09,
+   "repairsPerHr": 1.08,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 1.08,
+   "totalCostPerHr": 3.23,
+   "page": 16,
+   "line": "02 Rotavator-5 ft 140.10 2.00 0.06 0.09 1.08 0.00 1.08 3.23"
+  },
+  {
+   "description": "Shredder-5 ft",
+   "hoursUsedOnCrop": 190.5,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.51,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.07,
+   "repairsPerHr": 1.82,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 1.82,
+   "totalCostPerHr": 3.45,
+   "page": 16,
+   "line": "02 Shredder-5 ft 190.50 1.51 0.05 0.07 1.82 0.00 1.82 3.45"
+  },
+  {
+   "description": "Sprayer-Pull 300gl",
+   "hoursUsedOnCrop": 149.3,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 2.47,
+   "insurancePerHr": 0.08,
+   "taxesPerHr": 0.12,
+   "repairsPerHr": 1.31,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 1.31,
+   "totalCostPerHr": 3.97,
+   "page": 16,
+   "line": "02 Sprayer-Pull 300gl 149.30 2.47 0.08 0.12 1.31 0.00 1.31 3.97"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 40,
+   "unit": "acre",
+   "pricePerUnit": 12.6,
+   "totalCost": 504,
+   "page": 15,
+   "line": "Liability Insurance 40 acre 12.60 504"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 40,
+   "unit": "acre",
+   "pricePerUnit": 300,
+   "totalCost": 12000,
+   "page": 15,
+   "line": "Office Expense 40 acre 300.00 12,000"
+  },
+  {
+   "description": "Sanitation Facility",
+   "unitsPerFarm": 40,
+   "unit": "acre",
+   "pricePerUnit": 90,
+   "totalCost": 3600,
+   "page": 15,
+   "line": "Sanitation Facility 40 acre 90.00 3,600"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   134,
+   79,
+   103,
+   199,
+   89,
+   8515,
+   2517,
+   91,
+   82,
+   82,
+   838,
+   89
+  ],
+  "operatingPerAcre": [
+   62,
+   32,
+   56,
+   144,
+   42,
+   8468,
+   2458,
+   44,
+   35,
+   27,
+   791,
+   42
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 12817,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC",
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN"
+  ],
+  "spansTwoYears": false,
+  "page": 14,
+  "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE BOYSENBERRY"
+ },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 7521,
+    "returns": null,
+    "netCost": 7521,
+    "accumulated": 7521,
+    "page": 11,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,521 7,345"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 9445,
+    "returns": 9621,
+    "netCost": 9445,
+    "accumulated": 7345,
+    "page": 11,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,521 7,345"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 7345,
+   "page": 8,
+   "quote": "For this study the cost is $7,345 per acre or $110,1756/7/2002 for the 15-acre boysenberry patch."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 10,
+   "page": 15,
+   "quote": "Berry Crop Establishment 7,524 10 1,042 25 38 0 1,105 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 8,
+   "quote": "The irrigation system is considered an improvement to the property and has a 25-year life."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 7524,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 1042,
+   "page": 15,
+   "line": "Berry Crop Establishment 7,524 10 1,042 25 38 0 1,105"
+  },
+  "method": null
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "interestRatePct",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "establishment year 2: running net 16966 differs from printed accumulated 7345"
+  ]
+ }
+}

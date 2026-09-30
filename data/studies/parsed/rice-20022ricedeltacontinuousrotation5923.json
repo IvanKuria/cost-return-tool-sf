@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/05/11/20022ricedeltacontinuousrotation5923.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/rice",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2022,
+  "priceYear": {
+   "value": 2022,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2022 is used.)"
+  }
  },
  "assumptions": {
   "acresFarmed": {

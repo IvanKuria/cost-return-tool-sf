@@ -3,6 +3,7 @@
 // Nothing in this file estimates a number. If a study does not give it, the answer is null.
 
 import bundle from './studies.generated.json';
+import studyIndex from './studies/index.json';
 import type { Cited, EquipmentRow, HourlyEquipmentRow, ParsedStudy } from './studySchema';
 import type { Citation, CropOperation, Establishment } from '../lib/types';
 
@@ -13,9 +14,26 @@ interface Bundle {
   studies: ParsedStudy[];
   equipmentSalvage: { description: string; price: number; salvageValue: number; yearsLife: number; fraction: number; studyId: string; year: number | null; page: number }[];
   operationsIncluded: boolean;
+  operationsDroppedFor?: string[];
 }
 
 const DATA = bundle as unknown as Bundle;
+
+/** One light row per parsed study, current and archived, for pickers and for tools that load studies one at a time. */
+export interface StudyIndexRow {
+  id: string; commodity: string; title: string; year: number | null; priceYear: number | null; region: string | null; description: string | null;
+  archived: boolean; url: string; language: 'en' | 'es'; operatingTotal: number | null; totalCost: number | null;
+  operations: number; equipment: number; hasMonthly: boolean; hasEstablishment: boolean;
+}
+export const STUDY_INDEX: StudyIndexRow[] = studyIndex as StudyIndexRow[];
+
+const FULL = import.meta.glob<{ default: ParsedStudy }>('/data/studies/parsed/*.json');
+
+/** The complete parsed study, operation rows and parse report included, loaded on demand from data/studies/parsed. */
+export async function loadFullStudy(id: string): Promise<ParsedStudy | undefined> {
+  const loader = FULL[`/data/studies/parsed/${id}.json`];
+  return loader ? (await loader()).default : undefined;
+}
 
 export const STUDIES: ParsedStudy[] = DATA.studies;
 const BY_ID = new Map(STUDIES.map(s => [s.source.id, s]));

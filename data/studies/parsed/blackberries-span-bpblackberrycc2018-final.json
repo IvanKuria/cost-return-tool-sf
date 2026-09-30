@@ -11,7 +11,10 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/3e/6e/3e6e2dd9-a6c7-4272-84b4-f5eaaddcdb1c/span_bpblackberrycc2018-final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2018,
+  "priceYear": null
  },
  "assumptions": {
   "acresFarmed": null,
@@ -52,12 +55,7 @@
   "salvageMethod": null,
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
-  "machineLaborFactor": {
-   "value": 1.2,
-   "unit": "x",
-   "page": 8,
-   "quote": "La mano de obra para las operaciones con maquinaria es 20 por ciento más alta que el tiempo de operación indicado en las Tabla 1 para compensar la mano de obra extra involucrada en la instalación del equipo, movimiento, mantenimiento, descansos y reparación en el campo."
-  }
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -116,7 +114,6 @@
    "year",
    "region",
    "counties",
-   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [
@@ -141,6 +138,7 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
+   "machineLaborFactor",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

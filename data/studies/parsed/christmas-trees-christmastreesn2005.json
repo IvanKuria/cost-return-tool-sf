@@ -1,0 +1,698 @@
+{
+ "source": {
+  "id": "christmas-trees-christmastreesn2005",
+  "commodity": "christmas-trees",
+  "title": "SAMPLE COSTS TO PRODUCE",
+  "year": 2005,
+  "region": "Intermountain El Dorado, Nevada, Placer",
+  "counties": "Amador",
+  "description": "White Fir/Doug Fir, Choose and Cut",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f5/c0/f5c0ebbd-292b-4bc2-b5c0-bf8d85915c9b/christmastreesn2005.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/christmas-trees",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2005,
+  "priceYear": {
+   "value": 2005,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on current figures. (Current at the time of the study, so the study year 2005 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 20,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The contiguous 20-acre farm consist of a choose and cut tree plantation of which 16 acres are planted to Christmas trees."
+  },
+  "acresCrop": {
+   "value": 16,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The contiguous 20-acre farm consist of a choose and cut tree plantation of which 16 acres are planted to Christmas trees."
+  },
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": {
+   "value": 37,
+   "unit": "%",
+   "page": 7,
+   "quote": "Labor rates are $10.96 for general and machine labor and includes payroll overhead of 37%."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 2.05,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.51 and $2.05 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.05,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.51 and $2.05 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 10.01,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "TOTAL OPERATING COSTS/ACRE 2,243 497 252 1,291 236 298 298 974 9,545 1,795 17,429 10.01"
+  },
+  "cashOverheadTotal": {
+   "value": 2.45,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "TOTAL CASH OVERHEAD COSTS 366 366 366 365 365 483 483 487 492 492 4,266 2.45"
+  },
+  "nonCashOverheadTotal": {
+   "value": 6.53,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "TOTAL NON-CASH OVERHEAD COST/ACRE 1,133 1,131 1,131 1,118 1,118 1,115 1,115 1,142 1,181 1,183 11,367 6.53"
+  },
+  "totalCost": {
+   "value": 17.72,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "TOTAL COST/ACRE FOR THE YEAR 3,742 1,993 1,749 2,775 1,713 1,893 1,893 2,606 11,216 3,463 30,862 17.72"
+  },
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": [
+   {
+    "name": "Fertilize: Urea",
+    "category": "cultural",
+    "timeHrsPerAcre": 48,
+    "labor": 48,
+    "fuel": 48,
+    "lubeRepairs": 48,
+    "materials": 11,
+    "customRent": 203,
+    "totalCost": 0.12,
+    "page": 20,
+    "quote": "Fertilize: Urea 48 48 48 48 11 203 0.12"
+   },
+   {
+    "name": "Insect: Aphid (Asana) 7 12 25 25 25",
+    "category": "cultural",
+    "timeHrsPerAcre": 25,
+    "labor": 25,
+    "fuel": 50,
+    "lubeRepairs": 50,
+    "materials": 14,
+    "customRent": 257,
+    "totalCost": 0.15,
+    "page": 20,
+    "quote": "Insect: Aphid (Asana) 7 12 25 25 25 25 25 50 50 14 257 0.15"
+   },
+   {
+    "name": "Weed: Spot Spray (Roundup) (Yrs 1-3, 2X. Yrs 4+, 1X) 22 22 22 11 11",
+    "category": "cultural",
+    "timeHrsPerAcre": 11,
+    "labor": 11,
+    "fuel": 11,
+    "lubeRepairs": 11,
+    "materials": 11,
+    "customRent": 143,
+    "totalCost": 0.08,
+    "page": 20,
+    "quote": "Weed: Spot Spray (Roundup) (Yrs 1-3, 2X. Yrs 4+, 1X) 22 22 22 11 11 11 11 11 11 11 143 0.08"
+   },
+   {
+    "name": "Vertebrate: Gopher (Bait) (Yrs 1-3, 2X.) Yrs 4+, 1X) 26 26 26 13 13",
+    "category": "cultural",
+    "timeHrsPerAcre": 13,
+    "labor": 13,
+    "fuel": 13,
+    "lubeRepairs": 13,
+    "materials": 13,
+    "customRent": 167,
+    "totalCost": 0.1,
+    "page": 20,
+    "quote": "Vertebrate: Gopher (Bait) (Yrs 1-3, 2X.) Yrs 4+, 1X) 26 26 26 13 13 13 13 13 13 13 167 0.10"
+   },
+   {
+    "name": "Prune: Keep leader in check 52",
+    "category": "cultural",
+    "timeHrsPerAcre": 49,
+    "labor": 49,
+    "fuel": 49,
+    "lubeRepairs": 49,
+    "materials": 7,
+    "customRent": 257,
+    "totalCost": 0.15,
+    "page": 20,
+    "quote": "Prune: Keep leader in check 52 49 49 49 49 7 257 0.15"
+   },
+   {
+    "name": "Shear: Some trimming with clippers to shape 55",
+    "category": "cultural",
+    "timeHrsPerAcre": 55,
+    "labor": 55,
+    "fuel": 55,
+    "lubeRepairs": 55,
+    "materials": 8,
+    "customRent": 282,
+    "totalCost": 0.16,
+    "page": 20,
+    "quote": "Shear: Some trimming with clippers to shape 55 55 55 55 55 8 282 0.16"
+   },
+   {
+    "name": "Irrigate: Drip 29 29 32 32 37",
+    "category": "cultural",
+    "timeHrsPerAcre": 54,
+    "labor": 54,
+    "fuel": 76,
+    "lubeRepairs": 76,
+    "materials": 34,
+    "customRent": 453,
+    "totalCost": 0.26,
+    "page": 20,
+    "quote": "Irrigate: Drip 29 29 32 32 37 54 54 76 76 34 453 0.26"
+   },
+   {
+    "name": "Insect: Mites (Floramite) 15 28 28 28",
+    "category": "cultural",
+    "timeHrsPerAcre": 28,
+    "labor": 28,
+    "fuel": 28,
+    "lubeRepairs": 28,
+    "materials": 7,
+    "customRent": 217,
+    "totalCost": 0.12,
+    "page": 20,
+    "quote": "Insect: Mites (Floramite) 15 28 28 28 28 28 28 28 7 217 0.12"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "23 HP 4WD Tractor",
+   "yearCode": "05",
+   "price": 17000,
+   "yearsLife": 20,
+   "salvageValue": 2181,
+   "capitalRecovery": 1424,
+   "insurance": 66,
+   "taxes": 96,
+   "repairs": null,
+   "total": 1586,
+   "page": 31,
+   "line": "05 23 HP 4WD Tractor 17,000 20 2,181 1,424 66 96 1,586"
+  },
+  {
+   "description": "Disk 5 ft. 3 pt.",
+   "yearCode": "05",
+   "price": 850,
+   "yearsLife": 20,
+   "salvageValue": 44,
+   "capitalRecovery": 73,
+   "insurance": 3,
+   "taxes": 4,
+   "repairs": null,
+   "total": 81,
+   "page": 31,
+   "line": "05 Disk 5 ft. 3 pt. 850 20 44 73 3 4 81"
+  },
+  {
+   "description": "Harrow 5 ft",
+   "yearCode": "05",
+   "price": 500,
+   "yearsLife": 20,
+   "salvageValue": 26,
+   "capitalRecovery": 43,
+   "insurance": 2,
+   "taxes": 3,
+   "repairs": null,
+   "total": 47,
+   "page": 31,
+   "line": "05 Harrow 5 ft 500 20 26 43 2 3 47"
+  },
+  {
+   "description": "Spray Boom 10'",
+   "yearCode": "05",
+   "price": 350,
+   "yearsLife": 20,
+   "salvageValue": 18,
+   "capitalRecovery": 30,
+   "insurance": 1,
+   "taxes": 2,
+   "repairs": null,
+   "total": 33,
+   "page": 31,
+   "line": "05 Spray Boom 10' 350 20 18 30 1 2 33"
+  },
+  {
+   "description": "Sprayer Pull 50 gal",
+   "yearCode": "05",
+   "price": 2000,
+   "yearsLife": 20,
+   "salvageValue": 104,
+   "capitalRecovery": 172,
+   "insurance": 7,
+   "taxes": 11,
+   "repairs": null,
+   "total": 189,
+   "page": 31,
+   "line": "05 Sprayer Pull 50 gal 2,000 20 104 172 7 11 189"
+  },
+  {
+   "description": "Trailer – 1 axle",
+   "yearCode": "05",
+   "price": 1500,
+   "yearsLife": 20,
+   "salvageValue": 78,
+   "capitalRecovery": 128,
+   "insurance": 5,
+   "taxes": 8,
+   "repairs": null,
+   "total": 142,
+   "page": 31,
+   "line": "05 Trailer – 1 axle 1,500 20 78 128 5 8 142"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Balers & Tables (3)",
+   "yearCode": null,
+   "price": 900,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 122,
+   "insurance": 3,
+   "taxes": 5,
+   "repairs": 18,
+   "total": 148,
+   "page": 31,
+   "line": "Balers & Tables (3) 900 10 122 3 5 18 148"
+  },
+  {
+   "description": "Building 480 sqft",
+   "yearCode": null,
+   "price": 12000,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 873,
+   "insurance": 41,
+   "taxes": 60,
+   "repairs": 240,
+   "total": 1214,
+   "page": 31,
+   "line": "Building 480 sqft 12,000 30 873 41 60 240 1,214"
+  },
+  {
+   "description": "Drip Irrigation System (16 acres)",
+   "yearCode": null,
+   "price": 19200,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 2610,
+   "insurance": 66,
+   "taxes": 96,
+   "repairs": 384,
+   "total": 3156,
+   "page": 31,
+   "line": "Drip Irrigation System (16 acres) 19,200 10 2,610 66 96 384 3,156"
+  },
+  {
+   "description": "Land (Agricultural - 18 acres)",
+   "yearCode": null,
+   "price": 216000,
+   "yearsLife": 30,
+   "salvageValue": 216000,
+   "capitalRecovery": 12982,
+   "insurance": 0,
+   "taxes": 2160,
+   "repairs": 0,
+   "total": 15142,
+   "page": 31,
+   "line": "Land (Agricultural - 18 acres) 216,000 30 216,000 12,982 0 2,160 0 15,142"
+  },
+  {
+   "description": "Field Equipment/Tools",
+   "yearCode": null,
+   "price": 2000,
+   "yearsLife": 7,
+   "salvageValue": 0,
+   "capitalRecovery": 358,
+   "insurance": 7,
+   "taxes": 10,
+   "repairs": 40,
+   "total": 415,
+   "page": 31,
+   "line": "Field Equipment/Tools 2,000 7 358 7 10 40 415"
+  },
+  {
+   "description": "Tree Shades (3,500)",
+   "yearCode": null,
+   "price": 1225,
+   "yearsLife": 5,
+   "salvageValue": 0,
+   "capitalRecovery": 291,
+   "insurance": 4,
+   "taxes": 6,
+   "repairs": 25,
+   "total": 326,
+   "page": 31,
+   "line": "Tree Shades (3,500) 1,225 5 291 4 6 25 326"
+  }
+ ],
+ "hourlyEquipment": [],
+ "businessOverhead": [
+  {
+   "description": "Advertising",
+   "unitsPerFarm": 16,
+   "unit": "acre",
+   "pricePerUnit": 30,
+   "totalCost": 480,
+   "page": 31,
+   "line": "Advertising 16 acre 30.00 480"
+  },
+  {
+   "description": "Liability Insurance - Customer",
+   "unitsPerFarm": 16,
+   "unit": "acre",
+   "pricePerUnit": 62.5,
+   "totalCost": 1000,
+   "page": 31,
+   "line": "Liability Insurance - Customer 16 acre 62.50 1000"
+  },
+  {
+   "description": "Liability Insurance - Farm",
+   "unitsPerFarm": 16,
+   "unit": "acre",
+   "pricePerUnit": 26.81,
+   "totalCost": 429,
+   "page": 31,
+   "line": "Liability Insurance - Farm 16 acre 26.81 429"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 16,
+   "unit": "acre",
+   "pricePerUnit": 120,
+   "totalCost": 1920,
+   "page": 31,
+   "line": "Office Expense 16 acre 120.00 1,920"
+  },
+  {
+   "description": "Water-Base Charge",
+   "unitsPerFarm": 16,
+   "unit": "acre",
+   "pricePerUnit": 16.27,
+   "totalCost": 260,
+   "page": 31,
+   "line": "Water-Base Charge 16 acre 16.27 260"
+  },
+  {
+   "description": "Sanitation Fees",
+   "unitsPerFarm": 16,
+   "unit": "acre",
+   "pricePerUnit": 26.56,
+   "totalCost": 425,
+   "page": 31,
+   "line": "Sanitation Fees 16 acre 26.56 425"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 9,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 9,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 7,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": null,
+  "operatingPerAcre": [
+   0,
+   0,
+   0,
+   7,
+   42,
+   16,
+   104,
+   10,
+   10,
+   8,
+   40,
+   1641
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true
+  ],
+  "totalCheck": 1879,
+  "checkedRow": "TOTAL OPERATING COSTS (table has no cash overhead rows)",
+  "columns": [
+   "Jan",
+   "Feb",
+   "Mar",
+   "Apr",
+   "May",
+   "Jun",
+   "Jul",
+   "Aug",
+   "Sep",
+   "Oct",
+   "Nov",
+   "Dec"
+  ],
+  "spansTwoYears": false,
+  "page": 15,
+  "quote": "MONTHLY CASH COSTS BY YEAR TO PRODUCE CHRISTMA TREES – DOUGLAS FIR"
+ },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 2609,
+    "returns": null,
+    "netCost": 2609,
+    "accumulated": null,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 863,
+    "returns": null,
+    "netCost": 863,
+    "accumulated": null,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 621,
+    "returns": null,
+    "netCost": 621,
+    "accumulated": null,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 1704,
+    "returns": null,
+    "netCost": 1704,
+    "accumulated": null,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 949,
+    "returns": null,
+    "netCost": 949,
+    "accumulated": null,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 6,
+    "label": "6th",
+    "totalCost": 1407,
+    "returns": null,
+    "netCost": 1407,
+    "accumulated": null,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 7,
+    "label": "7th",
+    "totalCost": 5691,
+    "returns": null,
+    "netCost": 5691,
+    "accumulated": 2609,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 8,
+    "label": "8th",
+    "totalCost": 1916,
+    "returns": 1479,
+    "netCost": 2609,
+    "accumulated": 3472,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 9,
+    "label": "9th",
+    "totalCost": 6382,
+    "returns": 19244,
+    "netCost": 863,
+    "accumulated": 4093,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 10,
+    "label": "10th",
+    "totalCost": 1631,
+    "returns": 4454,
+    "netCost": 621,
+    "accumulated": 5796,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 11,
+    "label": "11th",
+    "totalCost": 869,
+    "returns": 19244,
+    "netCost": 1704,
+    "accumulated": 6746,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 12,
+    "label": "12th",
+    "totalCost": 1413,
+    "returns": 2975,
+    "netCost": 949,
+    "accumulated": 6674,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 13,
+    "label": "TOTAL *$/Tree",
+    "totalCost": 22661,
+    "returns": 47396,
+    "netCost": 869,
+    "accumulated": 869,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   },
+   {
+    "year": 14,
+    "label": "14",
+    "totalCost": 13.01,
+    "returns": 27.21,
+    "netCost": 1413,
+    "accumulated": 2281,
+    "page": 29,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,609 3,472 4,093 5,796 6,746 6,674 869 2,281"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 208,
+   "page": 28,
+   "quote": "Plant: Install & Remove Shades 208 104 104 416 0.24",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": null,
+  "method": null
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "laborOverheadPct",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "operations",
+   "equipment",
+   "investments",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly",
+   "establishment"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "landRentPerAcre",
+   "grossReturns",
+   "hourlyEquipment",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "several costs-per-acre tables (establishment and production); using the production one",
+   "monthly table gives operating costs by month only; cash overhead is not spread by month in this study"
+  ]
+ }
+}

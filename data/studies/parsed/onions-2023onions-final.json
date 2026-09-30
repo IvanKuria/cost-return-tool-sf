@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/05/10/2023Onions-Final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/onions",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2023,
+  "priceYear": {
+   "value": 2023,
+   "month": 5,
+   "page": 5,
+   "quote": "The costs are based on May 2023 average prices from the Energy Information Administration, Department of Energy (DOE) weekly data."
+  }
  },
  "assumptions": {
   "acresFarmed": {

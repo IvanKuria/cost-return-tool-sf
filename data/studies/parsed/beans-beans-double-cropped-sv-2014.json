@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a2/fe/a2fec200-2ff7-4166-9ff9-59b47bb28a70/beans_double-cropped_sv_2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2014,
+  "priceYear": {
+   "value": 2014,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on current figures. (Current at the time of the study, so the study year 2014 is used.)"
+  }
  },
  "assumptions": {
   "acresFarmed": null,
@@ -57,18 +65,8 @@
   "laborOverheadPct": null,
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": {
-   "value": 3.9,
-   "unit": "$/gal",
-   "page": 5,
-   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.12 and $3.90 per gallon, respectively."
-  },
-  "fuelPriceGas": {
-   "value": 3.9,
-   "unit": "$/gal",
-   "page": 5,
-   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.12 and $3.90 per gallon, respectively."
-  },
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
   "yieldStatement": null,
   "priceStatement": {
    "page": 5,
@@ -1109,14 +1107,8 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 6,
-   "quote": "[(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)"
-  },
-  "salvageMethod": {
-   "page": 6,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
   "machineLaborFactor": {
@@ -1203,7 +1195,6 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula",
    "machineLaborFactor",
    "monthly"
   ],
@@ -1212,6 +1203,7 @@
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
+   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",

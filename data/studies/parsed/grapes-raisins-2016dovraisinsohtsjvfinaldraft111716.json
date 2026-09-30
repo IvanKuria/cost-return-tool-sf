@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/ec/ba/ecba9b89-f1e9-401c-9044-4afa2c060093/2016dovraisinsohtsjvfinaldraft111716.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–raisins",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2016,
+  "priceYear": {
+   "value": 2016,
+   "month": 7,
+   "page": 2,
+   "quote": "Sample costs given for labor, materials, equipment and contract services are based on July 2016 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

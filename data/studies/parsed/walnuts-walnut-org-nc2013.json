@@ -1,0 +1,948 @@
+{
+ "source": {
+  "id": "walnuts-walnut-org-nc2013",
+  "commodity": "walnuts",
+  "title": "SAMPLE COSTS TO PRODUCE\u0003\u0003",
+  "year": 2013,
+  "region": "North Coast Lake",
+  "counties": "Lake County Sprinkler Irrigation Rachel B. Elkins UC Cooperative Extension Farm Advisor, Lake and Mendocino",
+  "description": "Organic",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f1/ce/f1ce757f-c350-482c-a4fb-89657da2b07a/walnut_org_nc2013.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2013,
+  "priceYear": {
+   "value": 2013,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2013 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 10,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The farm consists of 10 contiguous acres – 9 acres of walnuts and 1 acre of roads, irrigation system and homestead – purchased as a mature orchard and farmed by the owner."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": "lb",
+  "pricePerUnit": {
+   "value": 1.2,
+   "unit": "$/pound",
+   "page": 5,
+   "quote": "This study uses an estimated market price of $1.10 per pound plus an average annual premium for organic at 10% per pound, resulting in an average price of $1.20 per pound ($1.10 + $0.10)."
+  },
+  "returns": [
+   {
+    "name": "Organic Walnuts (price includes premium)",
+    "quantity": 1000,
+    "unit": "lb",
+    "price": 1.2,
+    "value": 1200,
+    "page": 11,
+    "quote": "Organic Walnuts (price includes premium) 1,000.00 lb 1.20 1,200"
+   },
+   {
+    "name": "GF-120 Fruit Fly Bait",
+    "quantity": 80,
+    "unit": "floz",
+    "price": 1.39,
+    "value": 111,
+    "page": 11,
+    "quote": "GF-120 Fruit Fly Bait 80.00 floz 1.39 111"
+   },
+   {
+    "name": "Prune & Stack",
+    "quantity": 0.8,
+    "unit": "hour",
+    "price": 55,
+    "value": 44,
+    "page": 11,
+    "quote": "Prune & Stack 0.80 hour 55.00 44"
+   },
+   {
+    "name": "Leaf Analysis",
+    "quantity": 0.07,
+    "unit": "each",
+    "price": 35,
+    "value": 2,
+    "page": 11,
+    "quote": "Leaf Analysis 0.07 each 35.00 2"
+   },
+   {
+    "name": "Shake, Sweep, Pickup",
+    "quantity": 1,
+    "unit": "acre",
+    "price": 160,
+    "value": 160,
+    "page": 11,
+    "quote": "Shake, Sweep, Pickup 1.00 acre 160.00 160"
+   },
+   {
+    "name": "Haul Nuts",
+    "quantity": 0.5,
+    "unit": "ton",
+    "price": 15,
+    "value": 8,
+    "page": 11,
+    "quote": "Haul Nuts 0.50 ton 15.00 8"
+   },
+   {
+    "name": "Hull/Dry Walnuts",
+    "quantity": 1000,
+    "unit": "lb",
+    "price": 0.1,
+    "value": 100,
+    "page": 11,
+    "quote": "Hull/Dry Walnuts 1,000.00 lb 0.10 100"
+   },
+   {
+    "name": "Water - Pump",
+    "quantity": 24,
+    "unit": "AcIn",
+    "price": 5.27,
+    "value": 126,
+    "page": 11,
+    "quote": "Water - Pump 24.00 AcIn 5.27 126"
+   },
+   {
+    "name": "Chicken Manure (Pelleted)",
+    "quantity": 1000,
+    "unit": "lb",
+    "price": 0.16,
+    "value": 160,
+    "page": 11,
+    "quote": "Chicken Manure (Pelleted) 1,000.00 lb 0.16 160"
+   },
+   {
+    "name": "Spreader (loaned)",
+    "quantity": 2,
+    "unit": "acre",
+    "price": 0,
+    "value": 0,
+    "page": 11,
+    "quote": "Spreader (loaned) 2.00 acre 0.00 0"
+   },
+   {
+    "name": "Compost/Gypsum 50/50",
+    "quantity": 3,
+    "unit": "ton",
+    "price": 40,
+    "value": 120,
+    "page": 11,
+    "quote": "Compost/Gypsum 50/50 3.00 ton 40.00 120"
+   },
+   {
+    "name": "Forklift Rental",
+    "quantity": 0.12,
+    "unit": "day",
+    "price": 160,
+    "value": 19,
+    "page": 11,
+    "quote": "Forklift Rental 0.12 day 160.00 19"
+   },
+   {
+    "name": "Burn Permit",
+    "quantity": 0.02,
+    "unit": "each",
+    "price": 25,
+    "value": 1,
+    "page": 11,
+    "quote": "Burn Permit 0.02 each 25.00 1"
+   },
+   {
+    "name": "CA Walnut Commission",
+    "quantity": 1000,
+    "unit": "lb",
+    "price": 0.01,
+    "value": 9,
+    "page": 11,
+    "quote": "CA Walnut Commission 1,000.00 lb 0.01 9"
+   },
+   {
+    "name": "Equipment Operator Labor",
+    "quantity": 8.4,
+    "unit": "hrs",
+    "price": 20.4,
+    "value": 171,
+    "page": 11,
+    "quote": "Equipment Operator Labor 8.40 hrs 20.40 171"
+   },
+   {
+    "name": "Non-Machine Labor",
+    "quantity": 3.48,
+    "unit": "hrs",
+    "price": 13.6,
+    "value": 44,
+    "page": 11,
+    "quote": "Non-Machine Labor 3.48 hrs 13.60 44"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 15,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Hourly wages for workers are $15.00 for machine operators and $10.00 per hour non-machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 10,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Hourly wages for workers are $15.00 for machine operators and $10.00 per hour non-machine labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 4.07,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.84 and $4.07 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 4.07,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.84 and $4.07 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 5,
+   "quote": "In this study, the average yield based on grower information is 1,000 pounds (one-half ton) per acre."
+  },
+  "priceStatement": {
+   "page": 5,
+   "quote": "This study uses an estimated market price of $1.10 per pound plus an average annual premium for organic at 10% per pound, resulting in an average price of $1.20 per pound ($1.10 + $0.10)."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 1118,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "TOTAL OPERATING COSTS/ACRE 9.77 207 86 22 444 333 1,118"
+  },
+  "cashOverheadTotal": {
+   "value": 635,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 635"
+  },
+  "nonCashOverheadTotal": {
+   "value": 1190,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 20,103 1,190 1,190"
+  },
+  "totalCost": {
+   "value": 3043,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "TOTAL COSTS/ACRE 3,043"
+  },
+  "grossReturns": null,
+  "netReturnsAboveOperating": {
+   "value": -17,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS -17"
+  },
+  "netReturnsAboveTotal": {
+   "value": -1843,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "NET RETURNS ABOVE TOTAL COST -1,843"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Organic Certification (annual)",
+    "value": 78,
+    "page": 10,
+    "quote": "Organic Certification (annual) 78"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 56,
+    "page": 10,
+    "quote": "Liability Insurance 56"
+   },
+   {
+    "description": "Office Expense",
+    "value": 125,
+    "page": 10,
+    "quote": "Office Expense 125"
+   },
+   {
+    "description": "Sanitation Fee",
+    "value": 37,
+    "page": 10,
+    "quote": "Sanitation Fee 37"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 158,
+    "page": 10,
+    "quote": "Property Taxes 158"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 38,
+    "page": 10,
+    "quote": "Property Insurance 38"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 143,
+    "page": 10,
+    "quote": "Investment Repairs 143"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Fertilize: Chicken Manure",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.1,
+    "labor": 2,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 160,
+    "customRent": 10,
+    "totalCost": 174,
+    "page": 10,
+    "quote": "Fertilize: Chicken Manure 0.10 2 1 0 160 10 174"
+   },
+   {
+    "name": "Fertilize: Compost/Gypsum",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.1,
+    "labor": 2,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 120,
+    "customRent": 10,
+    "totalCost": 134,
+    "page": 10,
+    "quote": "Fertilize: Compost/Gypsum 0.10 2 1 0 120 10 134"
+   },
+   {
+    "name": "Prune: Custom 1X/5yr",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 44,
+    "totalCost": 44,
+    "page": 10,
+    "quote": "Prune: Custom 1X/5yr 0.00 0 0 0 0 44 44"
+   },
+   {
+    "name": "Prune-Brush Disposal 1X/5yr",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.25,
+    "labor": 10,
+    "fuel": 3,
+    "lubeRepairs": 1,
+    "materials": 1,
+    "customRent": 0,
+    "totalCost": 15,
+    "page": 10,
+    "quote": "Prune-Brush Disposal 1X/5yr 0.25 10 3 1 1 0 15"
+   },
+   {
+    "name": "Rodent: Squirrel (Tractor,Traps)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.53,
+    "labor": 13,
+    "fuel": 7,
+    "lubeRepairs": 2,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 21,
+    "page": 10,
+    "quote": "Rodent: Squirrel (Tractor,Traps) 0.53 13 7 2 0 0 21"
+   },
+   {
+    "name": "Weed-Mow Middles 5X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.86,
+    "labor": 21,
+    "fuel": 11,
+    "lubeRepairs": 5,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 37,
+    "page": 10,
+    "quote": "Weed-Mow Middles 5X 0.86 21 11 5 0 0 37"
+   },
+   {
+    "name": "Weed: Hand (Weed Eater) Tree Row",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.05,
+    "labor": 26,
+    "fuel": 2,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 27,
+    "page": 10,
+    "quote": "Weed: Hand (Weed Eater) Tree Row 1.05 26 2 0 0 0 27"
+   },
+   {
+    "name": "Irrigate 1X/month 4X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.12,
+    "labor": 2,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 126,
+    "customRent": 0,
+    "totalCost": 128,
+    "page": 10,
+    "quote": "Irrigate 1X/month 4X 0.12 2 0 0 126 0 128"
+   },
+   {
+    "name": "Prune: Hand (Sucker)",
+    "category": "cultural",
+    "timeHrsPerAcre": 1,
+    "labor": 11,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 11,
+    "page": 10,
+    "quote": "Prune: Hand (Sucker) 1.00 11 0 0 0 0 11"
+   },
+   {
+    "name": "Insect: Husk Fly (GF120)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.75,
+    "labor": 18,
+    "fuel": 9,
+    "lubeRepairs": 3,
+    "materials": 111,
+    "customRent": 0,
+    "totalCost": 142,
+    "page": 10,
+    "quote": "Insect: Husk Fly (GF120) 0.75 18 9 3 111 0 142"
+   },
+   {
+    "name": "Leaf Analysis 1X/3yr",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.11,
+    "labor": 4,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 2,
+    "totalCost": 8,
+    "page": 10,
+    "quote": "Leaf Analysis 1X/3yr 0.11 4 1 0 0 2 8"
+   },
+   {
+    "name": "Pickup",
+    "category": "cultural",
+    "timeHrsPerAcre": 3.25,
+    "labor": 80,
+    "fuel": 55,
+    "lubeRepairs": 11,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 145,
+    "page": 10,
+    "quote": "Pickup 3.25 80 55 11 0 0 145"
+   },
+   {
+    "name": "Harvest-Shake, Pickup, Rake",
+    "category": "harvest",
+    "timeHrsPerAcre": 2,
+    "labor": 27,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 160,
+    "totalCost": 187,
+    "page": 10,
+    "quote": "Harvest-Shake, Pickup, Rake 2.00 27 0 0 0 160 187"
+   },
+   {
+    "name": "Haul",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 8,
+    "totalCost": 8,
+    "page": 10,
+    "quote": "Haul 0.00 0 0 0 0 8 8"
+   },
+   {
+    "name": "Harvest-Hull, Dry",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 100,
+    "totalCost": 100,
+    "page": 10,
+    "quote": "Harvest-Hull, Dry 0.00 0 0 0 0 100 100"
+   },
+   {
+    "name": "CWC Assessment Fee",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 9,
+    "customRent": 0,
+    "totalCost": 9,
+    "page": 10,
+    "quote": "CWC Assessment Fee 0.00 0 0 0 9 0 9"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "60HP MFWD Tractor",
+   "yearCode": "13",
+   "price": 45000,
+   "yearsLife": 20,
+   "salvageValue": 6151,
+   "capitalRecovery": 3344,
+   "insurance": 209,
+   "taxes": 256,
+   "repairs": null,
+   "total": 3808,
+   "page": 14,
+   "line": "13 60HP MFWD Tractor 45,000 20 6,151 3,344 209 256 3,808"
+  },
+  {
+   "description": "Brush Rake",
+   "yearCode": "13",
+   "price": 20000,
+   "yearsLife": 25,
+   "salvageValue": 317,
+   "capitalRecovery": 1377,
+   "insurance": 83,
+   "taxes": 102,
+   "repairs": null,
+   "total": 1561,
+   "page": 14,
+   "line": "13 Brush Rake 20,000 25 317 1,377 83 102 1,561"
+  },
+  {
+   "description": "Loader Forks",
+   "yearCode": "13",
+   "price": 810,
+   "yearsLife": 30,
+   "salvageValue": 162,
+   "capitalRecovery": 49,
+   "insurance": 4,
+   "taxes": 5,
+   "repairs": null,
+   "total": 57,
+   "page": 14,
+   "line": "13 Loader Forks 810 30 162 49 4 5 57"
+  },
+  {
+   "description": "Mower/Flail 10 ft",
+   "yearCode": "13",
+   "price": 10000,
+   "yearsLife": 20,
+   "salvageValue": 521,
+   "capitalRecovery": 769,
+   "insurance": 43,
+   "taxes": 53,
+   "repairs": null,
+   "total": 865,
+   "page": 14,
+   "line": "13 Mower/Flail 10 ft 10,000 20 521 769 43 53 865"
+  },
+  {
+   "description": "Pickup Truck 1/2 T",
+   "yearCode": "13",
+   "price": 31730,
+   "yearsLife": 10,
+   "salvageValue": 9373,
+   "capitalRecovery": 3306,
+   "insurance": 168,
+   "taxes": 206,
+   "repairs": null,
+   "total": 3679,
+   "page": 14,
+   "line": "13 Pickup Truck 1/2 T 31,730 10 9,373 3,306 168 206 3,679"
+  },
+  {
+   "description": "Sprayer 3pt 50 gal",
+   "yearCode": "13",
+   "price": 1600,
+   "yearsLife": 10,
+   "salvageValue": 283,
+   "capitalRecovery": 182,
+   "insurance": 8,
+   "taxes": 9,
+   "repairs": null,
+   "total": 199,
+   "page": 14,
+   "line": "13 Sprayer 3pt 50 gal 1,600 10 283 182 8 9 199"
+  },
+  {
+   "description": "Weed Eater",
+   "yearCode": "13",
+   "price": 450,
+   "yearsLife": 5,
+   "salvageValue": 147,
+   "capitalRecovery": 77,
+   "insurance": 2,
+   "taxes": 3,
+   "repairs": null,
+   "total": 82,
+   "page": 14,
+   "line": "13 Weed Eater 450 5 147 77 2 3 82"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Buildings 1,200 sqft",
+   "yearCode": null,
+   "price": 40000,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 2528,
+   "insurance": 163,
+   "taxes": 200,
+   "repairs": 800,
+   "total": 3692,
+   "page": 14,
+   "line": "Buildings 1,200 sqft 40,000 30 0 2,528 163 200 800 3,692"
+  },
+  {
+   "description": "Land with trees (10 acres)",
+   "yearCode": null,
+   "price": 100000,
+   "yearsLife": 30,
+   "salvageValue": 100000,
+   "capitalRecovery": 4750,
+   "insurance": 0,
+   "taxes": 1000,
+   "repairs": 0,
+   "total": 5750,
+   "page": 14,
+   "line": "Land with trees (10 acres) 100,000 30 100,000 4,750 0 1,000 0 5,750"
+  },
+  {
+   "description": "Pull Hose Irrigation",
+   "yearCode": null,
+   "price": 9000,
+   "yearsLife": 35,
+   "salvageValue": 0,
+   "capitalRecovery": 532,
+   "insurance": 37,
+   "taxes": 45,
+   "repairs": 126,
+   "total": 740,
+   "page": 14,
+   "line": "Pull Hose Irrigation 9,000 35 0 532 37 45 126 740"
+  },
+  {
+   "description": "Pump 10HP & Well",
+   "yearCode": null,
+   "price": 12000,
+   "yearsLife": 35,
+   "salvageValue": 0,
+   "capitalRecovery": 710,
+   "insurance": 49,
+   "taxes": 60,
+   "repairs": 240,
+   "total": 1059,
+   "page": 14,
+   "line": "Pump 10HP & Well 12,000 35 0 710 49 60 240 1,059"
+  },
+  {
+   "description": "Shop/Field Tools",
+   "yearCode": null,
+   "price": 6000,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 768,
+   "insurance": 25,
+   "taxes": 30,
+   "repairs": 120,
+   "total": 942,
+   "page": 14,
+   "line": "Shop/Field Tools 6,000 10 0 768 25 30 120 942"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "60HP MFWD Tractor",
+   "hoursUsedOnCrop": 27,
+   "totalHours": 605,
+   "capitalRecoveryPerHr": 2.21,
+   "insurancePerHr": 0.14,
+   "taxesPerHr": 0.17,
+   "repairsPerHr": 2.97,
+   "fuelPerHr": 11.31,
+   "totalOperatingPerHr": 14.28,
+   "totalCostPerHr": 16.8,
+   "page": 14,
+   "line": "13 60HP MFWD Tractor 27 605 2.21 0.14 0.17 2.97 11.31 14.28 16.80"
+  },
+  {
+   "description": "Brush Rake",
+   "hoursUsedOnCrop": 2,
+   "totalHours": 79,
+   "capitalRecoveryPerHr": 7.02,
+   "insurancePerHr": 0.42,
+   "taxesPerHr": 0.52,
+   "repairsPerHr": 2.51,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.51,
+   "totalCostPerHr": 10.47,
+   "page": 14,
+   "line": "13 Brush Rake 2 79 7.02 0.42 0.52 2.51 0.00 2.51 10.47"
+  },
+  {
+   "description": "Loader Forks",
+   "hoursUsedOnCrop": 2,
+   "totalHours": 65,
+   "capitalRecoveryPerHr": 0.3,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.03,
+   "repairsPerHr": 0.1,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.1,
+   "totalCostPerHr": 0.45,
+   "page": 14,
+   "line": "13 Loader Forks 2 65 0.30 0.02 0.03 0.10 0.00 0.10 0.45"
+  },
+  {
+   "description": "Mower/Flail 10 ft",
+   "hoursUsedOnCrop": 8,
+   "totalHours": 102,
+   "capitalRecoveryPerHr": 3.03,
+   "insurancePerHr": 0.17,
+   "taxesPerHr": 0.21,
+   "repairsPerHr": 2.94,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.94,
+   "totalCostPerHr": 6.35,
+   "page": 14,
+   "line": "13 Mower/Flail 10 ft 8 102 3.03 0.17 0.21 2.94 0.00 2.94 6.35"
+  },
+  {
+   "description": "Pickup Truck 1/2 T",
+   "hoursUsedOnCrop": 29,
+   "totalHours": 30,
+   "capitalRecoveryPerHr": 44.07,
+   "insurancePerHr": 2.24,
+   "taxesPerHr": 2.74,
+   "repairsPerHr": 3.27,
+   "fuelPerHr": 16.96,
+   "totalOperatingPerHr": 20.23,
+   "totalCostPerHr": 69.28,
+   "page": 14,
+   "line": "13 Pickup Truck 1/2 T 29 30 44.07 2.24 2.74 3.27 16.96 20.23 69.28"
+  },
+  {
+   "description": "Sprayer 3pt 50 gal",
+   "hoursUsedOnCrop": 7,
+   "totalHours": 154,
+   "capitalRecoveryPerHr": 0.47,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.02,
+   "repairsPerHr": 0.28,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.28,
+   "totalCostPerHr": 0.8,
+   "page": 14,
+   "line": "13 Sprayer 3pt 50 gal 7 154 0.47 0.02 0.02 0.28 0.00 0.28 0.80"
+  },
+  {
+   "description": "Weed Eater",
+   "hoursUsedOnCrop": 10,
+   "totalHours": 10,
+   "capitalRecoveryPerHr": 2.95,
+   "insurancePerHr": 0.09,
+   "taxesPerHr": 0.11,
+   "repairsPerHr": 0.2,
+   "fuelPerHr": 1.33,
+   "totalOperatingPerHr": 1.53,
+   "totalCostPerHr": 4.69,
+   "page": 14,
+   "line": "13 Weed Eater 10 10 2.95 0.09 0.11 0.20 1.33 1.53 4.69"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Organic Certification (annual)",
+   "unitsPerFarm": 9,
+   "unit": "acre",
+   "pricePerUnit": 77.78,
+   "totalCost": 700,
+   "page": 14,
+   "line": "Organic Certification (annual) 9.00 acre 77.78 700"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 9,
+   "unit": "acre",
+   "pricePerUnit": 55.78,
+   "totalCost": 502,
+   "page": 14,
+   "line": "Liability Insurance 9.00 acre 55.78 502"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 9,
+   "unit": "acre",
+   "pricePerUnit": 125,
+   "totalCost": 1125,
+   "page": 14,
+   "line": "Office Expense 9.00 acre 125.00 1,125"
+  },
+  {
+   "description": "Sanitation Fee",
+   "unitsPerFarm": 9,
+   "unit": "acre",
+   "pricePerUnit": 37.11,
+   "totalCost": 334,
+   "page": 14,
+   "line": "Sanitation Fee 9.00 acre 37.11 334"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 5,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   440,
+   95,
+   94,
+   118,
+   46,
+   111,
+   133,
+   164,
+   115,
+   383,
+   36,
+   116
+  ],
+  "operatingPerAcre": [
+   321,
+   73,
+   16,
+   16,
+   24,
+   70,
+   111,
+   142,
+   93,
+   323,
+   14,
+   14
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false
+  ],
+  "totalCheck": 1853,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 12,
+  "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ORGANIC WALNUTS"
+ },
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "interestRatePct",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "grossReturns",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]"
+  ]
+ }
+}

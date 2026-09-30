@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e5/1b/e51bb4b8-4469-4dc0-bfbf-81e34fadfdea/2016largelimabeansjvfinaldraftaug15.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2016,
+  "priceYear": {
+   "value": 2016,
+   "month": 4,
+   "page": 2,
+   "quote": "Sample costs given for labor, materials, equipment and custom services are based on April 2016 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {
@@ -20,12 +28,7 @@
    "page": 3,
    "quote": "This report is based on a 1,500 non-contiguous acre farm on which 200 acres of rented land are producing large lima beans."
   },
-  "acresCrop": {
-   "value": 200,
-   "unit": "acres",
-   "page": 6,
-   "quote": "The total cost is $15,000 for the 200 acres of large lima bean production."
-  },
+  "acresCrop": null,
   "yieldPerAcre": {
    "value": 25,
    "unit": "Cwt",
@@ -50,18 +53,8 @@
     "quote": "Large Lima 25.00 Cwt 75.00 1,875"
    }
   ],
-  "interestRatePct": {
-   "value": 3.75,
-   "unit": "%",
-   "page": 7,
-   "quote": "An interest rate of 3.75 percent is used to calculate capital recovery."
-  },
-  "operatingInterestRatePct": {
-   "value": 4.25,
-   "unit": "%",
-   "page": 6,
-   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 4.25 percent per year."
-  },
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 16,
    "unit": "$/hr",
@@ -1057,26 +1050,15 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 7,
-   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
-  },
-  "salvageMethod": {
-   "page": 7,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": {
-   "value": 1,
-   "unit": "%",
-   "page": 6,
-   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
-  },
+  "propertyTaxRatePct": null,
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 5,
-   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in"
   }
  },
  "monthly": {
@@ -1151,7 +1133,6 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -1166,14 +1147,15 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [
+   "interestRatePct",
    "laborOverheadPct",
+   "capitalRecoveryFormula",
    "insuranceRatePct",
+   "propertyTaxRatePct",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

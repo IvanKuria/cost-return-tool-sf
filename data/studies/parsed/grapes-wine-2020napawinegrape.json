@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/fe/24/fe24e27a-5c29-4cc3-a83c-63a31cd0c767/2020napawinegrape.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2020,
+  "priceYear": {
+   "value": 2020,
+   "month": 6,
+   "page": 2,
+   "quote": "The sample costs for labor, materials, equipment and custom services are based on June 2020 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

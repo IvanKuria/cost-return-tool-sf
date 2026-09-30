@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/08/4a/084a8c93-1e36-496e-ad76-bd984109834e/2016oliveoilsacvalley-highdensityfinaldraft7.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olive-oil",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2016,
+  "priceYear": {
+   "value": 2016,
+   "month": 4,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and contract services are based on April 2016 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {
@@ -50,18 +58,8 @@
     "quote": "Olive Oil 210 Gal 16.00 3,360"
    }
   ],
-  "interestRatePct": {
-   "value": 3.75,
-   "unit": "%",
-   "page": 9,
-   "quote": "An interest rate of 3.75 percent is used to calculate capital recovery."
-  },
-  "operatingInterestRatePct": {
-   "value": 4.25,
-   "unit": "%",
-   "page": 8,
-   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 4.25 percent per year."
-  },
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 13,
    "unit": "$/hr",
@@ -665,26 +663,15 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 9,
-   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
-  },
-  "salvageMethod": {
-   "page": 9,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": {
-   "value": 1,
-   "unit": "%",
-   "page": 8,
-   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
-  },
+  "propertyTaxRatePct": null,
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 7,
-   "quote": "Labor hours for operations involving machinery are 20 percent higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+   "quote": "Labor hours for operations involving machinery are 20 percent higher than the operation time given in"
   }
  },
  "monthly": {
@@ -794,27 +781,19 @@
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,121 4,943 4,403 3,040"
    }
   ],
-  "accumulatedNetCost": {
-   "value": 4403,
-   "page": 10,
-   "quote": "For this study, the cost is $4,403 per acre or $484,330 for the 110 acres planted to olives."
-  },
+  "accumulatedNetCost": null,
   "annualCharge": null,
   "productionYears": {
    "value": 22,
-   "page": 10,
-   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
+   "page": 18,
+   "quote": "Establishment SHDO 484,330 22 0 32,719 204 2,422 0 35,345 (years of life of the establishment row in the investment table)"
   },
   "plantingLife": {
    "value": 25,
    "page": 3,
    "quote": "The economic productive life of the orchard at the time of planting in this study is estimated to be 25 years before removal."
   },
-  "amortizedFromYear": {
-   "value": 4,
-   "page": 10,
-   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
-  },
+  "amortizedFromYear": null,
   "removalCost": null,
   "asset": {
    "price": 484330,
@@ -824,10 +803,7 @@
    "page": 18,
    "line": "Establishment SHDO 484,330 22 0 32,719 204 2,422 0 35,345"
   },
-  "method": {
-   "page": 10,
-   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
-  }
+  "method": null
  },
  "parse": {
   "fieldsFound": [
@@ -836,7 +812,6 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -850,17 +825,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
-   "establishment",
-   "establishmentAccumulated"
+   "establishment"
   ],
   "fieldsMissing": [
+   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
+   "capitalRecoveryFormula",
    "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": []

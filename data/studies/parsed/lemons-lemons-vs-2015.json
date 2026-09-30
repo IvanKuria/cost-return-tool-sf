@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a1/39/a139af36-5c70-48ec-8367-bc534c314eb3/lemons-vs-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2015,
+  "priceYear": {
+   "value": 2015,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2015 is used.)"
+  }
  },
  "assumptions": {
   "acresFarmed": {
@@ -172,43 +180,15 @@
   ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
-  "laborMachineRate": {
-   "value": 16.92,
-   "unit": "$/hr",
-   "page": 9,
-   "quote": "Labor rates of $16.92 per hour for machine operators and $13.75 for general labor includes payroll overhead of 41%."
-  },
-  "laborNonMachineRate": {
-   "value": 13.75,
-   "unit": "$/hr",
-   "page": 9,
-   "quote": "Labor rates of $16.92 per hour for machine operators and $13.75 for general labor includes payroll overhead of 41%."
-  },
-  "laborOverheadPct": {
-   "value": 41,
-   "unit": "%",
-   "page": 9,
-   "quote": "Labor rates of $16.92 per hour for machine operators and $13.75 for general labor includes payroll overhead of 41%."
-  },
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": {
-   "value": 3.79,
-   "unit": "$/gal",
-   "page": 9,
-   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.88 (excludes excise tax) and $3.79 per gallon, respectively."
-  },
-  "fuelPriceGas": {
-   "value": 3.79,
-   "unit": "$/gal",
-   "page": 9,
-   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.88 (excludes excise tax) and $3.79 per gallon, respectively."
-  },
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
   "yieldStatement": null,
-  "priceStatement": {
-   "page": 8,
-   "quote": "An estimated price based on industry feedback of $20.00 per carton fresh market, fob packinghouse, and $135 per ton, or $2.70 per carton juice, is used in this study."
-  }
+  "priceStatement": null
  },
  "costsPerAcre": {
   "operatingTotal": {
@@ -794,31 +774,16 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 10,
-   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
-  },
-  "salvageMethod": {
-   "page": 11,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
-  "machineLaborFactor": {
-   "value": 1.2,
-   "unit": "x",
-   "page": 9,
-   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 3 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
-  }
+  "machineLaborFactor": null
  },
  "monthly": null,
  "establishment": {
   "years": [],
-  "accumulatedNetCost": {
-   "value": 6453,
-   "page": 11,
-   "quote": "For this study the cost is $6,453 per acre or $64,530 for the 10-acre orchard."
-  },
+  "accumulatedNetCost": null,
   "annualCharge": {
    "value": 374,
    "page": 18,
@@ -831,8 +796,8 @@
   },
   "plantingLife": {
    "value": 40,
-   "page": 11,
-   "quote": "The establishment cost is spread over the remaining 37 years of the 40 years the orchard is in production."
+   "page": 3,
+   "quote": "The life of the orchard is assumed to be 40 years."
   },
   "amortizedFromYear": null,
   "removalCost": null,
@@ -850,9 +815,6 @@
   "fieldsFound": [
    "year",
    "region",
-   "laborMachineRate",
-   "laborNonMachineRate",
-   "laborOverheadPct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -863,10 +825,7 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula",
-   "machineLaborFactor",
    "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
@@ -874,11 +833,17 @@
    "yieldPerAcre",
    "pricePerUnit",
    "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
    "landRentPerAcre",
    "grossReturns",
+   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "monthly"
+   "machineLaborFactor",
+   "monthly",
+   "establishmentAccumulated"
   ],
   "warnings": [
    "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",

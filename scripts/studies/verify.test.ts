@@ -118,4 +118,26 @@ describe('all studies', () => {
     const pct = (k: (s: ParsedStudy) => unknown) => Math.round(100 * all.filter(s => k(s) != null && k(s) !== 0).length / all.length);
     console.log(`coverage: yield ${pct(s => s.assumptions.yieldPerAcre)}%, price ${pct(s => s.assumptions.pricePerUnit)}%, operating ${pct(s => s.costsPerAcre.operatingTotal)}%, cash OH ${pct(s => s.costsPerAcre.cashOverheadTotal)}%, non-cash OH ${pct(s => s.costsPerAcre.nonCashOverheadTotal)}%, equipment ${pct(s => s.equipment.length)}%, hourly ${pct(s => s.hourlyEquipment.length)}%, interest ${pct(s => s.assumptions.interestRatePct)}%, land rent ${pct(s => s.assumptions.landRentPerAcre)}%`);
   });
+
+  it('coverage by year band, and priceYear stays within two years of the title year', () => {
+    const band = (y: number | null) => (y == null ? 'no year' : y < 2010 ? '2000-2009' : y < 2016 ? '2010-2015' : y < 2021 ? '2016-2020' : '2021+');
+    const rows: Record<string, Record<string, number>> = {};
+    for (const s of all) {
+      const r = (rows[band(s.source.year)] ??= { studies: 0, operations: 0, equipment: 0, monthly: 0, establishment: 0, priceYear: 0 });
+      r.studies++;
+      if (s.costsPerAcre.operations.length) r.operations++;
+      if (s.equipment.length) r.equipment++;
+      if (s.monthly) r.monthly++;
+      if (s.establishment) r.establishment++;
+      if (s.source.priceYear) r.priceYear++;
+      if (s.source.priceYear && s.source.year) expect(Math.abs(s.source.priceYear.value - s.source.year)).toBeLessThanOrEqual(2);
+    }
+    console.table(rows);
+    expect(all.length).toBeGreaterThan(200);
+  });
+  it('archived studies are marked and carry an index year', () => {
+    const archived = all.filter(s => s.source.archived);
+    expect(archived.length).toBeGreaterThan(100);
+    for (const s of archived) expect(s.source.indexYear).not.toBeNull();
+  });
 });

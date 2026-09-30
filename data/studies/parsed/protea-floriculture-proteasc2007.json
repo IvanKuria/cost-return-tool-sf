@@ -1,0 +1,939 @@
+{
+ "source": {
+  "id": "protea-floriculture-proteasc2007",
+  "commodity": "protea–floriculture",
+  "title": "SAMPLE COSTS TO",
+  "year": 2007,
+  "region": "South Coast San Diego",
+  "counties": null,
+  "description": "Flower production, Establishment and production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f3/08/f308b1f6-83b1-4a64-b2a2-c9c6615a395e/proteasc2007.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/protea–floriculture",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2007,
+  "priceYear": {
+   "value": 2007,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2007 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": {
+   "value": 10,
+   "unit": "acres",
+   "page": 3,
+   "quote": "Protea is planted on 10 acres, other crops are on eight acres and, roads or open space and buildings are on the remaining two acres."
+  },
+  "yieldPerAcre": null,
+  "yieldUnit": "each",
+  "pricePerUnit": null,
+  "returns": [
+   {
+    "name": "Protea: flowers and/or bunches",
+    "quantity": 25000,
+    "unit": "each",
+    "price": 1.2,
+    "value": 30000,
+    "page": 14,
+    "quote": "Protea: flowers and/or bunches 25,000.00 each 1.20 30,000"
+   },
+   {
+    "name": "Protea",
+    "quantity": 28,
+    "unit": "each",
+    "price": 6,
+    "value": 168,
+    "page": 14,
+    "quote": "Protea 28.00 each 6.00 168"
+   },
+   {
+    "name": "Subdue Maxx",
+    "quantity": 87.06,
+    "unit": "floz",
+    "price": 5.03,
+    "value": 438,
+    "page": 14,
+    "quote": "Subdue Maxx 87.06 floz 5.03 438"
+   },
+   {
+    "name": "Heritage",
+    "quantity": 3.5,
+    "unit": "oz",
+    "price": 24.62,
+    "value": 86,
+    "page": 14,
+    "quote": "Heritage 3.50 oz 24.62 86"
+   },
+   {
+    "name": "Wilco Gopher Bait",
+    "quantity": 12,
+    "unit": "lb",
+    "price": 5.4,
+    "value": 65,
+    "page": 14,
+    "quote": "Wilco Gopher Bait 12.00 lb 5.40 65"
+   },
+   {
+    "name": "Metaldehyde 3.5G (snails)",
+    "quantity": 142.5,
+    "unit": "lb",
+    "price": 1.62,
+    "value": 231,
+    "page": 14,
+    "quote": "Metaldehyde 3.5G (snails) 142.50 lb 1.62 231"
+   },
+   {
+    "name": "Malathion 5",
+    "quantity": 0.75,
+    "unit": "pint",
+    "price": 4.27,
+    "value": 3,
+    "page": 14,
+    "quote": "Malathion 5 0.75 pint 4.27 3"
+   },
+   {
+    "name": "Amdro Pro Fire Ant Bait",
+    "quantity": 1,
+    "unit": "lb",
+    "price": 8.65,
+    "value": 9,
+    "page": 14,
+    "quote": "Amdro Pro Fire Ant Bait 1.00 lb 8.65 9"
+   },
+   {
+    "name": "Water",
+    "quantity": 18,
+    "unit": "acin",
+    "price": 54.17,
+    "value": 975,
+    "page": 14,
+    "quote": "Water 18.00 acin 54.17 975"
+   },
+   {
+    "name": "Roundup Pro",
+    "quantity": 2,
+    "unit": "pint",
+    "price": 6.24,
+    "value": 12,
+    "page": 14,
+    "quote": "Roundup Pro 2.00 pint 6.24 12"
+   },
+   {
+    "name": "Ronstar WSP",
+    "quantity": 5,
+    "unit": "lb",
+    "price": 38.2,
+    "value": 191,
+    "page": 14,
+    "quote": "Ronstar WSP 5.00 lb 38.20 191"
+   },
+   {
+    "name": "Ammonium Sulfate (21-0-0)",
+    "quantity": 300,
+    "unit": "lb",
+    "price": 0.14,
+    "value": 43,
+    "page": 14,
+    "quote": "Ammonium Sulfate (21-0-0) 300.00 lb 0.14 43"
+   },
+   {
+    "name": "Labor (non-machine)",
+    "quantity": 597.62,
+    "unit": "hrs",
+    "price": 11.99,
+    "value": 7165,
+    "page": 14,
+    "quote": "Labor (non-machine) 597.62 hrs 11.99 7,165"
+   },
+   {
+    "name": "Fuel - Gas",
+    "quantity": 23.03,
+    "unit": "gal",
+    "price": 2.8,
+    "value": 64,
+    "page": 14,
+    "quote": "Fuel - Gas 23.03 gal 2.80 64"
+   },
+   {
+    "name": "Fuel - Diesel",
+    "quantity": 2.08,
+    "unit": "gal",
+    "price": 2.9,
+    "value": 6,
+    "page": 14,
+    "quote": "Fuel - Diesel 2.08 gal 2.90 6"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 16.22,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Labor rates of $16.22 per hour for machine operators and $11.99 for general labor includes payroll overhead of 41%."
+  },
+  "laborNonMachineRate": {
+   "value": 11.99,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Labor rates of $16.22 per hour for machine operators and $11.99 for general labor includes payroll overhead of 41%."
+  },
+  "laborOverheadPct": {
+   "value": 41,
+   "unit": "%",
+   "page": 6,
+   "quote": "Labor rates of $16.22 per hour for machine operators and $11.99 for general labor includes payroll overhead of 41%."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 2.8,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for delivery of diesel and gasoline are $2.90 and $2.80 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.8,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for delivery of diesel and gasoline are $2.90 and $2.80 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 10159,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL OPERATING COSTS/ACRE 7,166 223 2,220 0 10,159"
+  },
+  "cashOverheadTotal": {
+   "value": 1331,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL CASH OVERHEAD COSTS 1,331"
+  },
+  "nonCashOverheadTotal": {
+   "value": 5995,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 56,235 5,995 5,995"
+  },
+  "totalCost": {
+   "value": 17486,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL COSTS/ACRE 17,486"
+  },
+  "grossReturns": null,
+  "netReturnsAboveOperating": {
+   "value": 19840,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 19,840"
+  },
+  "netReturnsAboveTotal": {
+   "value": 12514,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "NET RETURNS ABOVE TOTAL COSTS 12,514"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 550,
+    "page": 13,
+    "quote": "Office Expense 550"
+   },
+   {
+    "description": "Sanitation Service",
+    "value": 174,
+    "page": 13,
+    "quote": "Sanitation Service 174"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 24,
+    "page": 13,
+    "quote": "Liability Insurance 24"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 396,
+    "page": 13,
+    "quote": "Property Taxes 396"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 121,
+    "page": 13,
+    "quote": "Property Insurance 121"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 66,
+    "page": 13,
+    "quote": "Investment Repairs 66"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Plant: Replant 2%",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.5,
+    "labor": 6,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 168,
+    "customRent": 0,
+    "totalCost": 174,
+    "page": 13,
+    "quote": "Plant: Replant 2% 0.50 6 0 168 0 174"
+   },
+   {
+    "name": "Disease: Phytopthora (Subdue) applied through drip",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.06,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 219,
+    "customRent": 0,
+    "totalCost": 220,
+    "page": 13,
+    "quote": "Disease: Phytopthora (Subdue) applied through drip 0.06 1 0 219 0 220"
+   },
+   {
+    "name": "Rodent: Squirrel (bait)/Gopher (trap)",
+    "category": "cultural",
+    "timeHrsPerAcre": 6,
+    "labor": 72,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 65,
+    "customRent": 0,
+    "totalCost": 137,
+    "page": 13,
+    "quote": "Rodent: Squirrel (bait)/Gopher (trap) 6.00 72 0 65 0 137"
+   },
+   {
+    "name": "Mollusk: Snails (Metaldehyde)",
+    "category": "cultural",
+    "timeHrsPerAcre": 5.2,
+    "labor": 62,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 231,
+    "customRent": 0,
+    "totalCost": 293,
+    "page": 13,
+    "quote": "Mollusk: Snails (Metaldehyde) 5.20 62 0 231 0 293"
+   },
+   {
+    "name": "Irrigate: Water & Labor",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.68,
+    "labor": 20,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 975,
+    "customRent": 0,
+    "totalCost": 994,
+    "page": 13,
+    "quote": "Irrigate: Water & Labor 1.68 20 0 975 0 994"
+   },
+   {
+    "name": "Weed: Hand with Weedwhacker",
+    "category": "cultural",
+    "timeHrsPerAcre": 24,
+    "labor": 288,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 288,
+    "page": 13,
+    "quote": "Weed: Hand with Weedwhacker 24.00 288 0 0 0 288"
+   },
+   {
+    "name": "Prune: Hand 2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 232,
+    "labor": 2782,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 2782,
+    "page": 13,
+    "quote": "Prune: Hand 2X 232.00 2,782 0 0 0 2,782"
+   },
+   {
+    "name": "Insect: Mealy bug (Malathion)",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.5,
+    "labor": 18,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 3,
+    "customRent": 0,
+    "totalCost": 21,
+    "page": 13,
+    "quote": "Insect: Mealy bug (Malathion) 1.50 18 0 3 0 21"
+   },
+   {
+    "name": "Weed: (Roundup)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.5,
+    "labor": 6,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 12,
+    "customRent": 0,
+    "totalCost": 18,
+    "page": 13,
+    "quote": "Weed: (Roundup) 0.50 6 0 12 0 18"
+   },
+   {
+    "name": "Fertilize: (Ammonium Sulfate) applied through drip",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 43,
+    "customRent": 0,
+    "totalCost": 43,
+    "page": 13,
+    "quote": "Fertilize: (Ammonium Sulfate) applied through drip 0.00 0 0 43 0 43"
+   },
+   {
+    "name": "Disease: Botrytis (Subdue)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.5,
+    "labor": 6,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 219,
+    "customRent": 0,
+    "totalCost": 225,
+    "page": 13,
+    "quote": "Disease: Botrytis (Subdue) 0.50 6 0 219 0 225"
+   },
+   {
+    "name": "Insect: Ants (Amdro)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.4,
+    "labor": 5,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 9,
+    "customRent": 0,
+    "totalCost": 13,
+    "page": 13,
+    "quote": "Insect: Ants (Amdro) 0.40 5 0 9 0 13"
+   },
+   {
+    "name": "Weed: (Ronstar)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.5,
+    "labor": 6,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 191,
+    "customRent": 0,
+    "totalCost": 197,
+    "page": 13,
+    "quote": "Weed: (Ronstar) 0.50 6 0 191 0 197"
+   },
+   {
+    "name": "ATV & Trailer",
+    "category": "cultural",
+    "timeHrsPerAcre": 2,
+    "labor": 29,
+    "fuel": 6,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 35,
+    "page": 13,
+    "quote": "ATV & Trailer 2.00 29 6 0 0 35"
+   },
+   {
+    "name": "Pickup",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.5,
+    "labor": 7,
+    "fuel": 8,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 16,
+    "page": 13,
+    "quote": "Pickup 0.50 7 8 0 0 16"
+   },
+   {
+    "name": "Haul to Cooler and/or Market",
+    "category": "cultural",
+    "timeHrsPerAcre": 59.4,
+    "labor": 855,
+    "fuel": 208,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 1063,
+    "page": 13,
+    "quote": "Haul to Cooler and/or Market 59.40 855 208 0 0 1,063"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "All Terrain Vehicle (ATV)",
+   "yearCode": "07",
+   "price": 10000,
+   "yearsLife": 5,
+   "salvageValue": 4482,
+   "capitalRecovery": 1680,
+   "insurance": 51,
+   "taxes": 72,
+   "repairs": null,
+   "total": 1803,
+   "page": 17,
+   "line": "07 All Terrain Vehicle (ATV) 10,000 5 4,482 1,680 51 72 1,803"
+  },
+  {
+   "description": "Trailer for ATV",
+   "yearCode": "07",
+   "price": 1500,
+   "yearsLife": 3,
+   "salvageValue": 624,
+   "capitalRecovery": 381,
+   "insurance": 7,
+   "taxes": 11,
+   "repairs": null,
+   "total": 399,
+   "page": 17,
+   "line": "07 Trailer for ATV 1,500 3 624 381 7 11 399"
+  },
+  {
+   "description": "Pickup 1/2 ton",
+   "yearCode": "07",
+   "price": 25000,
+   "yearsLife": 5,
+   "salvageValue": 11204,
+   "capitalRecovery": 4200,
+   "insurance": 127,
+   "taxes": 181,
+   "repairs": null,
+   "total": 4507,
+   "page": 17,
+   "line": "07 Pickup 1/2 ton 25,000 5 11,204 4,200 127 181 4,507"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Buildings (may include cooler)",
+   "yearCode": null,
+   "price": 25000,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 2065,
+   "insurance": 88,
+   "taxes": 125,
+   "repairs": 500,
+   "total": 2778,
+   "page": 17,
+   "line": "Buildings (may include cooler) 25,000 30 2,065 88 125 500 2,778"
+  },
+  {
+   "description": "Protea Establishment (10 acres)",
+   "yearCode": null,
+   "price": 269150,
+   "yearsLife": 12,
+   "salvageValue": 0,
+   "capitalRecovery": 34339,
+   "insurance": 942,
+   "taxes": 1346,
+   "repairs": 0,
+   "total": 36627,
+   "page": 17,
+   "line": "Protea Establishment (10 acres) 269,150 12 34,339 942 1,346 0 36,627"
+  },
+  {
+   "description": "Field/Shop Tools",
+   "yearCode": null,
+   "price": 3000,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 432,
+   "insurance": 0,
+   "taxes": 0,
+   "repairs": 60,
+   "total": 492,
+   "page": 17,
+   "line": "Field/Shop Tools 3,000 10 432 0 0 60 492"
+  },
+  {
+   "description": "Irrigation: Filters (10 acres)",
+   "yearCode": null,
+   "price": 1000,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 96,
+   "insurance": 4,
+   "taxes": 5,
+   "repairs": 20,
+   "total": 125,
+   "page": 17,
+   "line": "Irrigation: Filters (10 acres) 1,000 20 96 4 5 20 125"
+  },
+  {
+   "description": "Irrigation: Drip System (10 acres)",
+   "yearCode": null,
+   "price": 15000,
+   "yearsLife": 15,
+   "salvageValue": 0,
+   "capitalRecovery": 1673,
+   "insurance": 53,
+   "taxes": 75,
+   "repairs": 300,
+   "total": 2101,
+   "page": 17,
+   "line": "Irrigation: Drip System (10 acres) 15,000 15 1,673 53 75 300 2,101"
+  },
+  {
+   "description": "Land (20 acres)",
+   "yearCode": null,
+   "price": 400000,
+   "yearsLife": 30,
+   "salvageValue": 400000,
+   "capitalRecovery": 29000,
+   "insurance": 0,
+   "taxes": 4000,
+   "repairs": 0,
+   "total": 33000,
+   "page": 17,
+   "line": "Land (20 acres) 400,000 30 400,000 29,000 0 4,000 0 33,000"
+  },
+  {
+   "description": "Water Meter 1-inch (18 acres)",
+   "yearCode": null,
+   "price": 300,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 29,
+   "insurance": 1,
+   "taxes": 2,
+   "repairs": 60,
+   "total": 92,
+   "page": 17,
+   "line": "Water Meter 1-inch (18 acres) 300 20 29 1 2 60 92"
+  },
+  {
+   "description": "Water Meter Fee (Farm)",
+   "yearCode": null,
+   "price": 12500,
+   "yearsLife": 15,
+   "salvageValue": 0,
+   "capitalRecovery": 1394,
+   "insurance": 0,
+   "taxes": 0,
+   "repairs": 0,
+   "total": 1394,
+   "page": 17,
+   "line": "Water Meter Fee (Farm) 12,500 15 1,394 0 0 0 1,394"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "All Terrain Vehicle (ATV)",
+   "hoursUsedOnCrop": 615,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 2.73,
+   "insurancePerHr": 0.08,
+   "taxesPerHr": 0.12,
+   "repairsPerHr": 1.91,
+   "fuelPerHr": 1.21,
+   "totalOperatingPerHr": 4.22,
+   "totalCostPerHr": 7.15,
+   "page": 17,
+   "line": "07 All Terrain Vehicle (ATV) 615 2.73 0.08 0.12 1.91 1.21 4.22 7.15"
+  },
+  {
+   "description": "Trailer for ATV",
+   "hoursUsedOnCrop": 595,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.64,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.02,
+   "repairsPerHr": 0.39,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.39,
+   "totalCostPerHr": 1.06,
+   "page": 17,
+   "line": "07 Trailer for ATV 595 0.64 0.01 0.02 0.39 0.00 0.39 1.06"
+  },
+  {
+   "description": "Pickup 1/2 ton",
+   "hoursUsedOnCrop": 6,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 699.93,
+   "insurancePerHr": 21.12,
+   "taxesPerHr": 30.17,
+   "repairsPerHr": 3.08,
+   "fuelPerHr": 13.9,
+   "totalOperatingPerHr": 16.98,
+   "totalCostPerHr": 768.2,
+   "page": 17,
+   "line": "07 Pickup 1/2 ton 6 699.93 21.12 30.17 3.08 13.90 16.98 768.20"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 18,
+   "unit": "acre",
+   "pricePerUnit": 24.28,
+   "totalCost": 437,
+   "page": 17,
+   "line": "Liability Insurance 18 acre 24.28 437"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 18,
+   "unit": "acre",
+   "pricePerUnit": 550,
+   "totalCost": 9900,
+   "page": 17,
+   "line": "Office Expense 18 acre 550.00 9,900"
+  },
+  {
+   "description": "Sanitation Facilities",
+   "unitsPerFarm": 10,
+   "unit": "acre",
+   "pricePerUnit": 174,
+   "totalCost": 1740,
+   "page": 17,
+   "line": "Sanitation Facilities 10 acre 174.00 1,740"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 3 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   856,
+   2127,
+   585,
+   1103,
+   755,
+   723,
+   524,
+   599,
+   575,
+   1925,
+   668,
+   1051
+  ],
+  "operatingPerAcre": [
+   729,
+   2037,
+   519,
+   839,
+   689,
+   657,
+   398,
+   533,
+   509,
+   1859,
+   602,
+   788
+  ],
+  "harvestMonths": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "totalCheck": 11490,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 15,
+  "quote": "MONTHLY CASH PER ACRE to PRODUCE PROTEA"
+ },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 17605,
+    "returns": null,
+    "netCost": 17605,
+    "accumulated": 17605,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 6101,
+    "returns": null,
+    "netCost": 6101,
+    "accumulated": 23706,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 7409,
+    "returns": 4200,
+    "netCost": 3209,
+    "accumulated": 26915,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 8157,
+    "returns": 10800,
+    "netCost": 17605,
+    "accumulated": 24272,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 9342,
+    "returns": 18000,
+    "netCost": 6101,
+    "accumulated": 18257,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
+   },
+   {
+    "year": 6,
+    "label": "6th",
+    "totalCost": 11356,
+    "returns": 30000,
+    "netCost": 3209,
+    "accumulated": 5628,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 26915,
+   "page": 8,
+   "quote": "For this study the cost is $26,915 per acre or $269,150 for the 10-acre planting."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 12,
+   "page": 17,
+   "quote": "Protea Establishment (10 acres) 269,150 12 34,339 942 1,346 0 36,627 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 15,
+   "page": 3,
+   "quote": "The plants are expected to have a 15 year life, bloom in the third year, produce a commercial crop in the fourth year and reach production maturity in the sixth year."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 269150,
+   "yearsLife": 12,
+   "salvageValue": 0,
+   "capitalRecovery": 34339,
+   "page": 17,
+   "line": "Protea Establishment (10 acres) 269,150 12 34,339 942 1,346 0 36,627"
+  },
+  "method": null
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
+  ],
+  "fieldsMissing": [
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "grossReturns",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]",
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+  ]
+ }
+}

@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/1d/05/1d05d59d-706e-4937-8e05-5563b7468e23/2017-walnutssjvn-final_draft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2017,
+  "priceYear": {
+   "value": 2017,
+   "month": 7,
+   "page": 2,
+   "quote": "Sample costs given for labor, materials, equipment and contract services are based on July 2017 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/be/c7/bec790f2-3cb8-4a07-ac0d-ccfdcb067bb8/2018tablegrapessjvautumnkingfinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2018,
+  "priceYear": {
+   "value": 2018,
+   "month": 1,
+   "page": 2,
+   "quote": "The sample costs for labor, materials, equipment and custom services are based on January 2018 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

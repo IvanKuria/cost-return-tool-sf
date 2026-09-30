@@ -1,0 +1,1293 @@
+{
+ "source": {
+  "id": "asparagus-asparagusvn2013",
+  "commodity": "asparagus",
+  "title": "SAMPLE COSTS TO ESTABLISH AND PRODUCE\u0003\u0003",
+  "year": 2013,
+  "region": "San Joaquin Valley North San Joaquin",
+  "counties": "Brenna Aegerter UC Cooperative Extension Farm Advisor, San Joaquin",
+  "description": "Fresh Market, Establishment and Production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/91/0b/910b6b2a-1f01-4697-be7f-0ae88f5ee11b/asparagusvn2013.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/asparagus",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2013,
+  "priceYear": {
+   "value": 2013,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2013 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 600,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The hypothetical farm consists of 600 non-contiguous acres farmed by the owner."
+  },
+  "acresCrop": {
+   "value": 200,
+   "unit": "acres",
+   "page": 3,
+   "quote": "Asparagus is being established on 200 acres, other vegetable crops are on 380 acres and roads, irrigation systems and farmstead occupy 20 acres."
+  },
+  "yieldPerAcre": null,
+  "yieldUnit": "lb",
+  "pricePerUnit": null,
+  "returns": [
+   {
+    "name": "Asparagus",
+    "quantity": 4000,
+    "unit": "lb",
+    "price": 1.33,
+    "value": 5320,
+    "page": 13,
+    "quote": "Asparagus 4,000.00 lb 1.33 5,320"
+   },
+   {
+    "name": "Ridomil Gold EC",
+    "quantity": 4,
+    "unit": "floz",
+    "price": 6.71,
+    "value": 27,
+    "page": 13,
+    "quote": "Ridomil Gold EC 4.00 floz 6.71 27"
+   },
+   {
+    "name": "Rally 40 WSP",
+    "quantity": 5,
+    "unit": "oz",
+    "price": 5.5,
+    "value": 28,
+    "page": 13,
+    "quote": "Rally 40 WSP 5.00 oz 5.50 28"
+   },
+   {
+    "name": "Karmex DF",
+    "quantity": 2,
+    "unit": "lb",
+    "price": 9.98,
+    "value": 20,
+    "page": 13,
+    "quote": "Karmex DF 2.00 lb 9.98 20"
+   },
+   {
+    "name": "Roundup Ultra",
+    "quantity": 2,
+    "unit": "pt",
+    "price": 6.19,
+    "value": 12,
+    "page": 13,
+    "quote": "Roundup Ultra 2.00 pt 6.19 12"
+   },
+   {
+    "name": "Harvest Piece Rate ($11.50+OH)",
+    "quantity": 143,
+    "unit": "crt",
+    "price": 15.53,
+    "value": 2221,
+    "page": 13,
+    "quote": "Harvest Piece Rate ($11.50+OH) 143.00 crt 15.53 2,221"
+   },
+   {
+    "name": "Fulfill",
+    "quantity": 2.75,
+    "unit": "oz",
+    "price": 7.8,
+    "value": 21,
+    "page": 13,
+    "quote": "Fulfill 2.75 oz 7.80 21"
+   },
+   {
+    "name": "Lorsban Advanced",
+    "quantity": 2,
+    "unit": "pt",
+    "price": 8.65,
+    "value": 17,
+    "page": 13,
+    "quote": "Lorsban Advanced 2.00 pt 8.65 17"
+   },
+   {
+    "name": "Water",
+    "quantity": 1,
+    "unit": "acre",
+    "price": 90,
+    "value": 90,
+    "page": 13,
+    "quote": "Water 1.00 acre 90.00 90"
+   },
+   {
+    "name": "California Asparagus Commission",
+    "quantity": 143,
+    "unit": "crt",
+    "price": 0.22,
+    "value": 32,
+    "page": 13,
+    "quote": "California Asparagus Commission 143.00 crt 0.22 32"
+   },
+   {
+    "name": "Packing",
+    "quantity": 143,
+    "unit": "crt",
+    "price": 16,
+    "value": 2288,
+    "page": 13,
+    "quote": "Packing 143.00 crt 16.00 2,288"
+   },
+   {
+    "name": "Labor (machine)",
+    "quantity": 20.34,
+    "unit": "hrs",
+    "price": 17.55,
+    "value": 357,
+    "page": 13,
+    "quote": "Labor (machine) 20.34 hrs 17.55 357"
+   },
+   {
+    "name": "Labor (non-machine)",
+    "quantity": 12.14,
+    "unit": "hrs",
+    "price": 12.15,
+    "value": 148,
+    "page": 13,
+    "quote": "Labor (non-machine) 12.14 hrs 12.15 148"
+   },
+   {
+    "name": "Fuel - Gas",
+    "quantity": 0,
+    "unit": "gal",
+    "price": 4.07,
+    "value": 0,
+    "page": 13,
+    "quote": "Fuel - Gas 0.00 gal 4.07 0"
+   },
+   {
+    "name": "Fuel - Diesel",
+    "quantity": 55.21,
+    "unit": "gal",
+    "price": 3.84,
+    "value": 212,
+    "page": 13,
+    "quote": "Fuel - Diesel 55.21 gal 3.84 212"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 13,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Hourly wages for workers are $13.00 for machine operators and $9.00 per hour non-machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 9,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Hourly wages for workers are $13.00 for machine operators and $9.00 per hour non-machine labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 4.07,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.84 and $4.07 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 4.07,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.84 and $4.07 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 5,
+   "quote": "Based on grower information, annual yields over the remaining life of the planting ranges from 4,000 to 5,600 pounds per acre."
+  },
+  "priceStatement": {
+   "page": 5,
+   "quote": "Based on the San Joaquin County Crop Report and current year’s grower information, the average price over the last five years (2008-2012) is $1.33 per pound."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 5676,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL OPERATING COSTS/ACRE 20.09 505 212 73 2,544 2,288 5,676"
+  },
+  "cashOverheadTotal": {
+   "value": 238,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL CASH OVERHEAD COSTS 238"
+  },
+  "nonCashOverheadTotal": {
+   "value": 808,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 10,982 808 808"
+  },
+  "totalCost": {
+   "value": 6722,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL COSTS/ACRE 6,722"
+  },
+  "grossReturns": null,
+  "netReturnsAboveOperating": {
+   "value": -356,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS -356"
+  },
+  "netReturnsAboveTotal": {
+   "value": -1402,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "NET RETURNS ABOVE TOTAL COSTS -1,402"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Office",
+    "value": 125,
+    "page": 12,
+    "quote": "Office 125"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 2,
+    "page": 12,
+    "quote": "Liability Insurance 2"
+   },
+   {
+    "description": "Sanitation Service",
+    "value": 4,
+    "page": 12,
+    "quote": "Sanitation Service 4"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 92,
+    "page": 12,
+    "quote": "Property Taxes 92"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 11,
+    "page": 12,
+    "quote": "Property Insurance 11"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 4,
+    "page": 12,
+    "quote": "Investment Repairs 4"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Reestablish Beds",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.11,
+    "labor": 2,
+    "fuel": 4,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 8,
+    "page": 12,
+    "quote": "Reestablish Beds 0.11 2 4 1 0 0 8"
+   },
+   {
+    "name": "Reestablish/Clean Furrows",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.09,
+    "labor": 2,
+    "fuel": 3,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 6,
+    "page": 12,
+    "quote": "Reestablish/Clean Furrows 0.09 2 3 1 0 0 6"
+   },
+   {
+    "name": "Disease: Phytophtora (Ridomil)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.05,
+    "labor": 1,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 27,
+    "customRent": 0,
+    "totalCost": 29,
+    "page": 12,
+    "quote": "Disease: Phytophtora (Ridomil) 0.05 1 1 0 27 0 29"
+   },
+   {
+    "name": "Weed: Spray (Karmex)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.05,
+    "labor": 1,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 20,
+    "customRent": 0,
+    "totalCost": 22,
+    "page": 12,
+    "quote": "Weed: Spray (Karmex) 0.05 1 1 0 20 0 22"
+   },
+   {
+    "name": "Cultivate & Furrow",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.41,
+    "labor": 9,
+    "fuel": 8,
+    "lubeRepairs": 3,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 19,
+    "page": 12,
+    "quote": "Cultivate & Furrow 0.41 9 8 3 0 0 19"
+   },
+   {
+    "name": "Cultivate/Furrow/Fertilize (UN32)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.14,
+    "labor": 3,
+    "fuel": 3,
+    "lubeRepairs": 1,
+    "materials": 76,
+    "customRent": 0,
+    "totalCost": 82,
+    "page": 12,
+    "quote": "Cultivate/Furrow/Fertilize (UN32) 0.14 3 3 1 76 0 82"
+   },
+   {
+    "name": "Weed: Spray (Roundup)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.05,
+    "labor": 1,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 12,
+    "customRent": 0,
+    "totalCost": 15,
+    "page": 12,
+    "quote": "Weed: Spray (Roundup) 0.05 1 1 0 12 0 15"
+   },
+   {
+    "name": "Irrigate: 3X (water & labor)",
+    "category": "cultural",
+    "timeHrsPerAcre": 3.14,
+    "labor": 38,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 90,
+    "customRent": 0,
+    "totalCost": 128,
+    "page": 12,
+    "quote": "Irrigate: 3X (water & labor) 3.14 38 0 0 90 0 128"
+   },
+   {
+    "name": "Insect/Disease: Aphid/Rust (Fulfill/Rally)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.05,
+    "labor": 1,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 49,
+    "customRent": 0,
+    "totalCost": 51,
+    "page": 12,
+    "quote": "Insect/Disease: Aphid/Rust (Fulfill/Rally) 0.05 1 1 0 49 0 51"
+   },
+   {
+    "name": "Insect: Aphid (Lorsban)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.05,
+    "labor": 1,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 17,
+    "customRent": 0,
+    "totalCost": 20,
+    "page": 12,
+    "quote": "Insect: Aphid (Lorsban) 0.05 1 1 0 17 0 20"
+   },
+   {
+    "name": "Chop Ferns",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.22,
+    "labor": 5,
+    "fuel": 8,
+    "lubeRepairs": 3,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 15,
+    "page": 12,
+    "quote": "Chop Ferns 0.22 5 8 3 0 0 15"
+   },
+   {
+    "name": "Flatten Beds",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.23,
+    "labor": 5,
+    "fuel": 11,
+    "lubeRepairs": 4,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 20,
+    "page": 12,
+    "quote": "Flatten Beds 0.23 5 11 4 0 0 20"
+   },
+   {
+    "name": "Irrigate: Make ridges for flooding",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.02,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 1,
+    "page": 12,
+    "quote": "Irrigate: Make ridges for flooding 0.02 0 0 0 0 0 1"
+   },
+   {
+    "name": "Pickup",
+    "category": "cultural",
+    "timeHrsPerAcre": 1,
+    "labor": 21,
+    "fuel": 12,
+    "lubeRepairs": 4,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 37,
+    "page": 12,
+    "quote": "Pickup 1.00 21 12 4 0 0 37"
+   },
+   {
+    "name": "Harvest: (cut, equipment, forklift)",
+    "category": "harvest",
+    "timeHrsPerAcre": 13.5,
+    "labor": 394,
+    "fuel": 140,
+    "lubeRepairs": 47,
+    "materials": 2221,
+    "customRent": 0,
+    "totalCost": 2801,
+    "page": 12,
+    "quote": "Harvest: (cut, equipment, forklift) 13.50 394 140 47 2,221 0 2,801"
+   },
+   {
+    "name": "Haul to Packer",
+    "category": "harvest",
+    "timeHrsPerAcre": 0.99,
+    "labor": 21,
+    "fuel": 19,
+    "lubeRepairs": 8,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 48,
+    "page": 12,
+    "quote": "Haul to Packer 0.99 21 19 8 0 0 48"
+   },
+   {
+    "name": "Pack",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 2288,
+    "totalCost": 2288,
+    "page": 12,
+    "quote": "Pack 0.00 0 0 0 0 2,288 2,288"
+   },
+   {
+    "name": "Assessment",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 32,
+    "customRent": 0,
+    "totalCost": 32,
+    "page": 12,
+    "quote": "Assessment 0.00 0 0 0 32 0 32"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "145HP 4WD Tractor",
+   "yearCode": "13",
+   "price": 153548,
+   "yearsLife": 15,
+   "salvageValue": 29893,
+   "capitalRecovery": 13133,
+   "insurance": 749,
+   "taxes": 917,
+   "repairs": null,
+   "total": 14799,
+   "page": 16,
+   "line": "13 145HP 4WD Tractor 153,548 15 29,893 13,133 749 917 14,799"
+  },
+  {
+   "description": "200HP Trac Tractor",
+   "yearCode": "13",
+   "price": 206951,
+   "yearsLife": 15,
+   "salvageValue": 40290,
+   "capitalRecovery": 17700,
+   "insurance": 1010,
+   "taxes": 1236,
+   "repairs": null,
+   "total": 19946,
+   "page": 16,
+   "line": "13 200HP Trac Tractor 206,951 15 40,290 17,700 1,010 1,236 19,946"
+  },
+  {
+   "description": "50HP 2WD Tractor #1",
+   "yearCode": "13",
+   "price": 36692,
+   "yearsLife": 12,
+   "salvageValue": 9173,
+   "capitalRecovery": 3497,
+   "insurance": 187,
+   "taxes": 229,
+   "repairs": null,
+   "total": 3914,
+   "page": 16,
+   "line": "13 50HP 2WD Tractor #1 36,692 12 9,173 3,497 187 229 3,914"
+  },
+  {
+   "description": "50HP 2WD Tractor #2",
+   "yearCode": "13",
+   "price": 36692,
+   "yearsLife": 12,
+   "salvageValue": 9173,
+   "capitalRecovery": 3497,
+   "insurance": 187,
+   "taxes": 229,
+   "repairs": null,
+   "total": 3914,
+   "page": 16,
+   "line": "13 50HP 2WD Tractor #2 36,692 12 9,173 3,497 187 229 3,914"
+  },
+  {
+   "description": "50HP Field Forklift",
+   "yearCode": "13",
+   "price": 25000,
+   "yearsLife": 15,
+   "salvageValue": 7385,
+   "capitalRecovery": 2604,
+   "insurance": 132,
+   "taxes": 162,
+   "repairs": null,
+   "total": 2899,
+   "page": 16,
+   "line": "13 50HP Field Forklift 25,000 15 7,385 2,604 132 162 2,899"
+  },
+  {
+   "description": "91HP Hi Clearance Tractor",
+   "yearCode": "13",
+   "price": 60367,
+   "yearsLife": 15,
+   "salvageValue": 11752,
+   "capitalRecovery": 5163,
+   "insurance": 295,
+   "taxes": 361,
+   "repairs": null,
+   "total": 5818,
+   "page": 16,
+   "line": "13 91HP Hi Clearance Tractor 60,367 15 11,752 5,163 295 361 5,818"
+  },
+  {
+   "description": "Bin Trailer #1",
+   "yearCode": "13",
+   "price": 2200,
+   "yearsLife": 3,
+   "salvageValue": 915,
+   "capitalRecovery": 513,
+   "insurance": 13,
+   "taxes": 16,
+   "repairs": null,
+   "total": 541,
+   "page": 16,
+   "line": "13 Bin Trailer #1 2,200 3 915 513 13 16 541"
+  },
+  {
+   "description": "Bin Trailer #2",
+   "yearCode": "13",
+   "price": 2200,
+   "yearsLife": 3,
+   "salvageValue": 915,
+   "capitalRecovery": 513,
+   "insurance": 13,
+   "taxes": 16,
+   "repairs": null,
+   "total": 541,
+   "page": 16,
+   "line": "13 Bin Trailer #2 2,200 3 915 513 13 16 541"
+  },
+  {
+   "description": "Boom Sprayer 40 ft",
+   "yearCode": "13",
+   "price": 7000,
+   "yearsLife": 15,
+   "salvageValue": 672,
+   "capitalRecovery": 631,
+   "insurance": 31,
+   "taxes": 38,
+   "repairs": null,
+   "total": 701,
+   "page": 16,
+   "line": "13 Boom Sprayer 40 ft 7,000 15 672 631 31 38 701"
+  },
+  {
+   "description": "Cultivator Rolling 15 ft",
+   "yearCode": "13",
+   "price": 12000,
+   "yearsLife": 10,
+   "salvageValue": 2122,
+   "capitalRecovery": 1365,
+   "insurance": 58,
+   "taxes": 71,
+   "repairs": null,
+   "total": 1493,
+   "page": 16,
+   "line": "13 Cultivator Rolling 15 ft 12,000 10 2,122 1,365 58 71 1,493"
+  },
+  {
+   "description": "Disk Asparagus 15 ft",
+   "yearCode": "13",
+   "price": 21000,
+   "yearsLife": 20,
+   "salvageValue": 1095,
+   "capitalRecovery": 1616,
+   "insurance": 90,
+   "taxes": 110,
+   "repairs": null,
+   "total": 1816,
+   "page": 16,
+   "line": "13 Disk Asparagus 15 ft 21,000 20 1,095 1,616 90 110 1,816"
+  },
+  {
+   "description": "Disk Ridger 5 ft",
+   "yearCode": "13",
+   "price": 2500,
+   "yearsLife": 15,
+   "salvageValue": 240,
+   "capitalRecovery": 225,
+   "insurance": 11,
+   "taxes": 14,
+   "repairs": null,
+   "total": 250,
+   "page": 16,
+   "line": "13 Disk Ridger 5 ft 2,500 15 240 225 11 14 250"
+  },
+  {
+   "description": "Flail Shredder 15 ft",
+   "yearCode": "13",
+   "price": 18537,
+   "yearsLife": 15,
+   "salvageValue": 1780,
+   "capitalRecovery": 1672,
+   "insurance": 83,
+   "taxes": 102,
+   "repairs": null,
+   "total": 1856,
+   "page": 16,
+   "line": "13 Flail Shredder 15 ft 18,537 15 1,780 1,672 83 102 1,856"
+  },
+  {
+   "description": "Furrow Bar 15 ft",
+   "yearCode": "13",
+   "price": 2500,
+   "yearsLife": 20,
+   "salvageValue": 130,
+   "capitalRecovery": 192,
+   "insurance": 11,
+   "taxes": 13,
+   "repairs": null,
+   "total": 216,
+   "page": 16,
+   "line": "13 Furrow Bar 15 ft 2,500 20 130 192 11 13 216"
+  },
+  {
+   "description": "Pickup 1/2 ton",
+   "yearCode": "13",
+   "price": 32000,
+   "yearsLife": 10,
+   "salvageValue": 9452,
+   "capitalRecovery": 3334,
+   "insurance": 169,
+   "taxes": 207,
+   "repairs": null,
+   "total": 3710,
+   "page": 16,
+   "line": "13 Pickup 1/2 ton 32,000 10 9,452 3,334 169 207 3,710"
+  },
+  {
+   "description": "Truck 16 ft bed, 16 bin",
+   "yearCode": "13",
+   "price": 52000,
+   "yearsLife": 10,
+   "salvageValue": 15360,
+   "capitalRecovery": 5417,
+   "insurance": 275,
+   "taxes": 337,
+   "repairs": null,
+   "total": 6029,
+   "page": 16,
+   "line": "13 Truck 16 ft bed, 16 bin 52,000 10 15,360 5,417 275 337 6,029"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Buildings 2400 sqft",
+   "yearCode": null,
+   "price": 80000,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 5057,
+   "insurance": 327,
+   "taxes": 400,
+   "repairs": 1600,
+   "total": 7384,
+   "page": 16,
+   "line": "Buildings 2400 sqft 80,000 30 5,057 327 400 1,600 7,384"
+  },
+  {
+   "description": "Bins (25)",
+   "yearCode": null,
+   "price": 6500,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 832,
+   "insurance": 27,
+   "taxes": 33,
+   "repairs": 130,
+   "total": 1021,
+   "page": 16,
+   "line": "Bins (25) 6,500 10 832 27 33 130 1,021"
+  },
+  {
+   "description": "Establishment-Asparagus",
+   "yearCode": null,
+   "price": 453200,
+   "yearsLife": 8,
+   "salvageValue": 0,
+   "capitalRecovery": 69413,
+   "insurance": 1851,
+   "taxes": 2266,
+   "repairs": 0,
+   "total": 73530,
+   "page": 16,
+   "line": "Establishment-Asparagus 453,200 8 69,413 1,851 2,266 0 73,530"
+  },
+  {
+   "description": "Land",
+   "yearCode": null,
+   "price": 4500000,
+   "yearsLife": 30,
+   "salvageValue": 4500000,
+   "capitalRecovery": 213750,
+   "insurance": 0,
+   "taxes": 45000,
+   "repairs": 0,
+   "total": 258750,
+   "page": 16,
+   "line": "Land 4,500,000 30 4,500,000 213,750 0 45,000 0 258,750"
+  },
+  {
+   "description": "Fuel Tanks (2-550 gal)",
+   "yearCode": null,
+   "price": 6500,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 832,
+   "insurance": 27,
+   "taxes": 33,
+   "repairs": 130,
+   "total": 1021,
+   "page": 16,
+   "line": "Fuel Tanks (2-550 gal) 6,500 10 832 27 33 130 1,021"
+  },
+  {
+   "description": "Tools - Shop/Field",
+   "yearCode": null,
+   "price": 20000,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 2559,
+   "insurance": 82,
+   "taxes": 100,
+   "repairs": 400,
+   "total": 3140,
+   "page": 16,
+   "line": "Tools - Shop/Field 20,000 10 2,559 82 100 400 3,140"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "145HP 4WD Tractor",
+   "hoursUsedOnCrop": 93,
+   "totalHours": 1066,
+   "capitalRecoveryPerHr": 7.39,
+   "insurancePerHr": 0.42,
+   "taxesPerHr": 0.52,
+   "repairsPerHr": 8.76,
+   "fuelPerHr": 32.31,
+   "totalOperatingPerHr": 41.07,
+   "totalCostPerHr": 49.4,
+   "page": 17,
+   "line": "13 145HP 4WD Tractor 93 1,066 7.39 0.42 0.52 8.76 32.31 41.07 49.40"
+  },
+  {
+   "description": "200HP Trac Tractor",
+   "hoursUsedOnCrop": 51,
+   "totalHours": 1066,
+   "capitalRecoveryPerHr": 9.96,
+   "insurancePerHr": 0.57,
+   "taxesPerHr": 0.7,
+   "repairsPerHr": 11.96,
+   "fuelPerHr": 44.57,
+   "totalOperatingPerHr": 56.53,
+   "totalCostPerHr": 67.76,
+   "page": 17,
+   "line": "13 200HP Trac Tractor 51 1,066 9.96 0.57 0.70 11.96 44.57 56.53 67.76"
+  },
+  {
+   "description": "50HP 2WD Tractor #1",
+   "hoursUsedOnCrop": 994,
+   "totalHours": 1000,
+   "capitalRecoveryPerHr": 2.1,
+   "insurancePerHr": 0.11,
+   "taxesPerHr": 0.14,
+   "repairsPerHr": 3.09,
+   "fuelPerHr": 9.43,
+   "totalOperatingPerHr": 12.52,
+   "totalCostPerHr": 14.87,
+   "page": 17,
+   "line": "13 50HP 2WD Tractor #1 994 1,000 2.10 0.11 0.14 3.09 9.43 12.52 14.87"
+  },
+  {
+   "description": "50HP 2WD Tractor #2",
+   "hoursUsedOnCrop": 990,
+   "totalHours": 1000,
+   "capitalRecoveryPerHr": 2.1,
+   "insurancePerHr": 0.11,
+   "taxesPerHr": 0.14,
+   "repairsPerHr": 3.09,
+   "fuelPerHr": 9.43,
+   "totalOperatingPerHr": 12.52,
+   "totalCostPerHr": 14.87,
+   "page": 17,
+   "line": "13 50HP 2WD Tractor #2 990 1,000 2.10 0.11 0.14 3.09 9.43 12.52 14.87"
+  },
+  {
+   "description": "50HP Field Forklift",
+   "hoursUsedOnCrop": 990,
+   "totalHours": 1200,
+   "capitalRecoveryPerHr": 1.3,
+   "insurancePerHr": 0.07,
+   "taxesPerHr": 0.08,
+   "repairsPerHr": 2.58,
+   "fuelPerHr": 9.43,
+   "totalOperatingPerHr": 12.01,
+   "totalCostPerHr": 13.46,
+   "page": 17,
+   "line": "13 50HP Field Forklift 990 1,200 1.30 0.07 0.08 2.58 9.43 12.01 13.46"
+  },
+  {
+   "description": "91HP Hi Clearance Tractor",
+   "hoursUsedOnCrop": 175,
+   "totalHours": 1066,
+   "capitalRecoveryPerHr": 2.91,
+   "insurancePerHr": 0.17,
+   "taxesPerHr": 0.2,
+   "repairsPerHr": 4.11,
+   "fuelPerHr": 17.16,
+   "totalOperatingPerHr": 21.27,
+   "totalCostPerHr": 24.55,
+   "page": 17,
+   "line": "13 91HP Hi Clearance Tractor 175 1,066 2.91 0.17 0.20 4.11 17.16 21.27 24.55"
+  },
+  {
+   "description": "Bin Trailer #1",
+   "hoursUsedOnCrop": 900,
+   "totalHours": 1000,
+   "capitalRecoveryPerHr": 0.31,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.01,
+   "repairsPerHr": 0.35,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.35,
+   "totalCostPerHr": 0.68,
+   "page": 17,
+   "line": "13 Bin Trailer #1 900 1,000 0.31 0.01 0.01 0.35 0.00 0.35 0.68"
+  },
+  {
+   "description": "Bin Trailer #2",
+   "hoursUsedOnCrop": 900,
+   "totalHours": 1000,
+   "capitalRecoveryPerHr": 0.31,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.01,
+   "repairsPerHr": 0.35,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.35,
+   "totalCostPerHr": 0.68,
+   "page": 17,
+   "line": "13 Bin Trailer #2 900 1,000 0.31 0.01 0.01 0.35 0.00 0.35 0.68"
+  },
+  {
+   "description": "Boom Sprayer 40 ft",
+   "hoursUsedOnCrop": 49,
+   "totalHours": 100,
+   "capitalRecoveryPerHr": 3.79,
+   "insurancePerHr": 0.19,
+   "taxesPerHr": 0.23,
+   "repairsPerHr": 1.86,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 1.86,
+   "totalCostPerHr": 6.07,
+   "page": 17,
+   "line": "13 Boom Sprayer 40 ft 49 100 3.79 0.19 0.23 1.86 0.00 1.86 6.07"
+  },
+  {
+   "description": "Cultivator Rolling 15 ft",
+   "hoursUsedOnCrop": 110,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 4.09,
+   "insurancePerHr": 0.17,
+   "taxesPerHr": 0.21,
+   "repairsPerHr": 2.57,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.57,
+   "totalCostPerHr": 7.04,
+   "page": 17,
+   "line": "13 Cultivator Rolling 15 ft 110 200 4.09 0.17 0.21 2.57 0.00 2.57 7.04"
+  },
+  {
+   "description": "Disk Asparagus 15 ft",
+   "hoursUsedOnCrop": 69,
+   "totalHours": 100,
+   "capitalRecoveryPerHr": 9.69,
+   "insurancePerHr": 0.54,
+   "taxesPerHr": 0.66,
+   "repairsPerHr": 3.24,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 3.24,
+   "totalCostPerHr": 14.13,
+   "page": 17,
+   "line": "13 Disk Asparagus 15 ft 69 100 9.69 0.54 0.66 3.24 0.00 3.24 14.13"
+  },
+  {
+   "description": "Disk Ridger 5 ft",
+   "hoursUsedOnCrop": 3,
+   "totalHours": 133,
+   "capitalRecoveryPerHr": 1.02,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.06,
+   "repairsPerHr": 0.4,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.4,
+   "totalCostPerHr": 1.53,
+   "page": 17,
+   "line": "13 Disk Ridger 5 ft 3 133 1.02 0.05 0.06 0.4 0.00 0.40 1.53"
+  },
+  {
+   "description": "Flail Shredder 15 ft",
+   "hoursUsedOnCrop": 43,
+   "totalHours": 100,
+   "capitalRecoveryPerHr": 10.03,
+   "insurancePerHr": 0.5,
+   "taxesPerHr": 0.61,
+   "repairsPerHr": 5.32,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 5.32,
+   "totalCostPerHr": 16.46,
+   "page": 17,
+   "line": "13 Flail Shredder 15 ft 43 100 10.03 0.50 0.61 5.32 0.00 5.32 16.46"
+  },
+  {
+   "description": "Furrow Bar 15 ft",
+   "hoursUsedOnCrop": 18,
+   "totalHours": 100,
+   "capitalRecoveryPerHr": 1.15,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.08,
+   "repairsPerHr": 0.49,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.49,
+   "totalCostPerHr": 1.78,
+   "page": 17,
+   "line": "13 Furrow Bar 15 ft 18 100 1.15 0.06 0.08 0.49 0.00 0.49 1.78"
+  },
+  {
+   "description": "Pickup 1/2 ton",
+   "hoursUsedOnCrop": 200,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 10,
+   "insurancePerHr": 0.51,
+   "taxesPerHr": 0.62,
+   "repairsPerHr": 4.07,
+   "fuelPerHr": 11.52,
+   "totalOperatingPerHr": 15.59,
+   "totalCostPerHr": 26.72,
+   "page": 17,
+   "line": "13 Pickup 1/2 ton 200 200 10.00 0.51 0.62 4.07 11.52 15.59 26.72"
+  },
+  {
+   "description": "Truck 16 ft bed, 16 bin",
+   "hoursUsedOnCrop": 198,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 16.25,
+   "insurancePerHr": 0.83,
+   "taxesPerHr": 1.01,
+   "repairsPerHr": 7.91,
+   "fuelPerHr": 19.2,
+   "totalOperatingPerHr": 27.11,
+   "totalCostPerHr": 45.2,
+   "page": 17,
+   "line": "13 Truck 16 ft bed, 16 bin 198 200 16.25 0.83 1.01 7.91 19.20 27.11 45.20"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 580,
+   "unit": "acre",
+   "pricePerUnit": 2.04,
+   "totalCost": 1183,
+   "page": 16,
+   "line": "Liability Insurance 580 acre 2.04 1,183"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 580,
+   "unit": "acre",
+   "pricePerUnit": 125,
+   "totalCost": 72500,
+   "page": 16,
+   "line": "Office Expense 580 acre 125.00 72,500"
+  },
+  {
+   "description": "Sanitation Service (3 months)",
+   "unitsPerFarm": 200,
+   "unit": "acre",
+   "pricePerUnit": 3.75,
+   "totalCost": 750,
+   "page": 16,
+   "line": "Sanitation Service (3 months) 200 acre 3.75 750"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   34,
+   684,
+   1759,
+   1781,
+   1169,
+   142,
+   53,
+   76,
+   33,
+   13,
+   13,
+   156
+  ],
+  "operatingPerAcre": [
+   17,
+   667,
+   1748,
+   1725,
+   1159,
+   132,
+   42,
+   60,
+   22,
+   3,
+   3,
+   99
+  ],
+  "harvestMonths": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 5914,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 14,
+  "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ASPARAGUS"
+ },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 1745,
+    "returns": 0,
+    "netCost": 1745,
+    "accumulated": 1745,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 1,745 2,266 2,896 3,491"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1452,
+    "returns": 931,
+    "netCost": 521,
+    "accumulated": 2266,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 1,745 2,266 2,896 3,491"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 3290,
+    "returns": 2660,
+    "netCost": 630,
+    "accumulated": 2896,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 1,745 2,266 2,896 3,491"
+   },
+   {
+    "year": 4,
+    "label": "*4th",
+    "totalCost": 5914,
+    "returns": 5320,
+    "netCost": 594,
+    "accumulated": 3491,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 1,745 2,266 2,896 3,491"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 2266,
+   "page": 8,
+   "quote": "For this study, this cost is $2,266 per acre or $453,200 for the 200-acres."
+  },
+  "annualCharge": {
+   "value": 347,
+   "page": 12,
+   "quote": "Establishment 2,266 347 347"
+  },
+  "productionYears": {
+   "value": 8,
+   "page": 8,
+   "quote": "Establishment cost is amortized beginning in the third year over the remaining 8 years of production."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": {
+   "value": 3,
+   "page": 8,
+   "quote": "Establishment cost is amortized beginning in the third year over the remaining 8 years of production."
+  },
+  "removalCost": null,
+  "asset": {
+   "price": 453200,
+   "yearsLife": 8,
+   "salvageValue": 0,
+   "capitalRecovery": 69413,
+   "page": 16,
+   "line": "Establishment-Asparagus 453,200 8 69,413 1,851 2,266 0 73,530"
+  },
+  "method": {
+   "page": 8,
+   "quote": "Establishment cost is amortized beginning in the third year over the remaining 8 years of production."
+  }
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "grossReturns",
+   "insuranceRatePct",
+   "propertyTaxRatePct"
+  ],
+  "warnings": [
+   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]"
+  ]
+ }
+}

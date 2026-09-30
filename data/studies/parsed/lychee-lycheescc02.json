@@ -1,0 +1,114 @@
+{
+ "source": {
+  "id": "lychee-lycheescc02",
+  "commodity": "lychee",
+  "title": "ORCHARD AND PRODUCE LYCHEES",
+  "year": 2002,
+  "region": "South Coast",
+  "counties": "Property Taxes.",
+  "description": "Establishment and production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/4b/ac/4baca531-5bd2-4877-8179-63d706657905/lycheescc02.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lychee",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2002,
+  "priceYear": {
+   "value": 2002,
+   "month": null,
+   "page": 3,
+   "quote": "Costs for labor, materials, equipments and custom services are based on 2002 figures."
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": {
+   "value": 37.5,
+   "unit": "%",
+   "page": 8,
+   "quote": "10.2% Cash 37.5% Overhead Harvest Costs Costs"
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 5,
+   "quote": "Whole sale prices at Los Angeles market range from $1/lb to $4/lb depending on the season."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": null,
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "laborOverheadPct"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "no whole-farm equipment table"
+  ]
+ }
+}

@@ -1,0 +1,725 @@
+{
+ "source": {
+  "id": "avocados-avocadoconventionalsdr2011",
+  "commodity": "avocados",
+  "title": "Avocados",
+  "year": 2011,
+  "region": "South Coast, Southeast Interior Riverside, San Diego",
+  "counties": "Water, Subtropical Horticulture, UCCE San Diego",
+  "description": "Establishment and Production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/5a/87/5a87bb11-59b3-4056-a2d6-a6e14507dd84/avocadoconventionalsdr2011.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/avocados",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2011,
+  "priceYear": {
+   "value": 2011,
+   "month": null,
+   "page": 4,
+   "quote": "Input prices, contract fees and service expenses are based on 2011 prices."
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": {
+   "value": 2.5,
+   "unit": "$/cubic",
+   "page": 5,
+   "quote": "Each time, it is applied at 200 cubic yards per acre at a price of $2.50 per cubic yard."
+  },
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.44,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "For this study, we used average fuel prices of $3.85 per gallon for gasoline and $3.44 per gallon for diesel, obtained from the U.S."
+  },
+  "fuelPriceGas": {
+   "value": 3.44,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "For this study, we used average fuel prices of $3.85 per gallon for gasoline and $3.44 per gallon for diesel, obtained from the U.S."
+  },
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 11,
+   "quote": "Given the five year CAC average price of $1.07 per pound, the profit margin (return to management above total costs) therefore equals about -$0.37 per pound (-$3,350 per acre) for San Diego County and equals about -$0.11 per pound (-$983 per acre) for Riverside County."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 6174,
+   "unit": "$/acre",
+   "page": 19,
+   "quote": "TOTAL OPERATING COSTS/ACRE 81.66 1,314.24 122.56 66.79 6,247.23 199 6,174"
+  },
+  "cashOverheadTotal": {
+   "value": 913,
+   "unit": "$/acre",
+   "page": 19,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 913"
+  },
+  "nonCashOverheadTotal": {
+   "value": 3526,
+   "unit": "$/acre",
+   "page": 19,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 59,897 3,526 3,526"
+  },
+  "totalCost": {
+   "value": 10613,
+   "unit": "$/acre",
+   "page": 19,
+   "quote": "TOTAL COSTS/ACRE 10,613"
+  },
+  "grossReturns": {
+   "value": 9630,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "TOTAL GROSS RETURNS 9,000 lb $9,630 TOTAL GROSS RETURNS 9,000 lb $9,630"
+  },
+  "netReturnsAboveOperating": {
+   "value": 3456,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 1,509 NET RETURNS ABOVE OPERATING COSTS 3,456"
+  },
+  "netReturnsAboveTotal": {
+   "value": -983,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "NET RETURNS ABOVE TOTAL COST -3,350 NET RETURNS ABOVE TOTAL COST -983"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 23.85,
+    "page": 19,
+    "quote": "Liability Insurance 23.85"
+   },
+   {
+    "description": "Interest on Operating Capital - cash overhead",
+    "value": 23.35,
+    "page": 19,
+    "quote": "Interest on Operating Capital - cash overhead 23.35"
+   },
+   {
+    "description": "Leaf Analysis",
+    "value": 4,
+    "page": 19,
+    "quote": "Leaf Analysis 4"
+   },
+   {
+    "description": "Soil Analysis",
+    "value": 5,
+    "page": 19,
+    "quote": "Soil Analysis 5"
+   },
+   {
+    "description": "Office Expenses",
+    "value": 120,
+    "page": 19,
+    "quote": "Office Expenses 120"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 414,
+    "page": 19,
+    "quote": "Property Taxes 414"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 242,
+    "page": 19,
+    "quote": "Property Insurance 242"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 81,
+    "page": 19,
+    "quote": "Investment Repairs 81"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Erosion Control (2x/yr.)",
+    "category": "cultural",
+    "timeHrsPerAcre": 3,
+    "labor": 42,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 42,
+    "page": 19,
+    "quote": "Erosion Control (2x/yr.) 3 42 0 0 0 0 42"
+   },
+   {
+    "name": "Weed Control - glyphosate herbicide (3x/yr.)",
+    "category": "cultural",
+    "timeHrsPerAcre": 4.5,
+    "labor": 63,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 3.3,
+    "customRent": 0,
+    "totalCost": 66.3,
+    "page": 19,
+    "quote": "Weed Control - glyphosate herbicide (3x/yr.) 4.5 63 0 0 3.3 0 66.3"
+   },
+   {
+    "name": "Weed Control - weed whipping",
+    "category": "cultural",
+    "timeHrsPerAcre": 1,
+    "labor": 14,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 14,
+    "page": 19,
+    "quote": "Weed Control - weed whipping 1 14 0 0 0 0 14"
+   },
+   {
+    "name": "Rodent Control for Squirrels - trap, bait station, baits, labor (12x/yr.)",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.5,
+    "labor": 21,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 9.15,
+    "customRent": 0,
+    "totalCost": 30.15,
+    "page": 19,
+    "quote": "Rodent Control for Squirrels - trap, bait station, baits, labor (12x/yr.) 1.5 21 0 0 9.15 0 30.15"
+   },
+   {
+    "name": "Fertilizer - CAN 17% (9x/yr.)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 194.73,
+    "customRent": 0,
+    "totalCost": 194.73,
+    "page": 19,
+    "quote": "Fertilizer - CAN 17% (9x/yr.) 0 0 0 0 194.73 0 194.73"
+   },
+   {
+    "name": "Root Rot Treatment - potassium phosphite (2x/yr.)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 60,
+    "customRent": 0,
+    "totalCost": 60,
+    "page": 19,
+    "quote": "Root Rot Treatment - potassium phosphite (2x/yr.) 0 0 0 0 60 0 60"
+   },
+   {
+    "name": "Irrigation & Walk Lines (58 irrigations/yr.)",
+    "category": "cultural",
+    "timeHrsPerAcre": 14.5,
+    "labor": 203,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 2268,
+    "customRent": 0,
+    "totalCost": 2471,
+    "page": 19,
+    "quote": "Irrigation & Walk Lines (58 irrigations/yr.) 14.5 203 0 0 2,268 0 2,471"
+   },
+   {
+    "name": "Pest Control - abamectin (Agri-Mek), NR-415 oil, helicopter rental",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 25,
+    "customRent": 125,
+    "totalCost": 150,
+    "page": 19,
+    "quote": "Pest Control - abamectin (Agri-Mek), NR-415 oil, helicopter rental 0 0 0 0 25 125 150"
+   },
+   {
+    "name": "Pest Control Advisor",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 36,
+    "totalCost": 36,
+    "page": 19,
+    "quote": "Pest Control Advisor 0 0 0 0 0 36 36"
+   },
+   {
+    "name": "Orchard Pruning",
+    "category": "cultural",
+    "timeHrsPerAcre": 38.66,
+    "labor": 541.24,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 541.24,
+    "page": 19,
+    "quote": "Orchard Pruning 38.66 541.24 0 0 0 0 541.24"
+   },
+   {
+    "name": "Misc. Pickup truck (labor, fuel, lube & repairs)",
+    "category": "cultural",
+    "timeHrsPerAcre": 7.5,
+    "labor": 162,
+    "fuel": 39.38,
+    "lubeRepairs": 21.83,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 223,
+    "page": 19,
+    "quote": "Misc. Pickup truck (labor, fuel, lube & repairs) 7.5 162 39.38 21.83 0 0 223"
+   },
+   {
+    "name": "Misc. ATV (labor, fuel, lube, & repairs)",
+    "category": "cultural",
+    "timeHrsPerAcre": 15,
+    "labor": 324,
+    "fuel": 83.19,
+    "lubeRepairs": 43.98,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 451,
+    "page": 19,
+    "quote": "Misc. ATV (labor, fuel, lube, & repairs) 15 324 83.19 43.98 0 0 451"
+   },
+   {
+    "name": "Misc. Road Repairs",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 38,
+    "totalCost": 38,
+    "page": 19,
+    "quote": "Misc. Road Repairs 0 0 0 0 0 38 38"
+   },
+   {
+    "name": "Picking - $0.18/lb.",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 1620,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 1620,
+    "page": 19,
+    "quote": "Picking - $0.18/lb. 0 1620 0 0 0 0 1,620"
+   },
+   {
+    "name": "Hauling - $0.004/lb.",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 36,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 36,
+    "page": 19,
+    "quote": "Hauling - $0.004/lb. 0 36 0 0 0 0 36"
+   },
+   {
+    "name": "CAC Assessment fee - $0.011 x production value",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 105.93,
+    "totalCost": 105.93,
+    "page": 19,
+    "quote": "CAC Assessment fee - $0.011 x production value 0 0 0 0 0 105.93 105.93"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "Truck",
+   "yearCode": null,
+   "price": 23600,
+   "yearsLife": 6,
+   "salvageValue": 9730.79,
+   "capitalRecovery": 3172.88,
+   "insurance": 129.16,
+   "taxes": 166.65,
+   "repairs": null,
+   "total": 3468.69,
+   "page": 25,
+   "line": "Truck 23,600 6 9,730.79 3,172.88 129.16 166.65 3,468.69"
+  },
+  {
+   "description": "ATV",
+   "yearCode": null,
+   "price": 5000,
+   "yearsLife": 6,
+   "salvageValue": 1345.3,
+   "capitalRecovery": 778.2,
+   "insurance": 24.59,
+   "taxes": 31.73,
+   "repairs": null,
+   "total": 834.51,
+   "page": 25,
+   "line": "ATV 5,000 6 1,345.30 778.2 24.59 31.73 834.51"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Land",
+   "yearCode": null,
+   "price": 440000,
+   "yearsLife": 36,
+   "salvageValue": 440000,
+   "capitalRecovery": 20900,
+   "insurance": 1906.5,
+   "taxes": 4400,
+   "repairs": 0,
+   "total": 27206.5,
+   "page": 25,
+   "line": "Land 440,000 36 440,000 20,900 1,906.50 4,400 0 27,206.50"
+  },
+  {
+   "description": "Building",
+   "yearCode": null,
+   "price": 20000,
+   "yearsLife": 36,
+   "salvageValue": 2000,
+   "capitalRecovery": 1148.12,
+   "insurance": 63.94,
+   "taxes": 110,
+   "repairs": 400,
+   "total": 1722.06,
+   "page": 25,
+   "line": "Building 20,000 36 2,000 1,148.12 63.94 110 400 1,722.06"
+  },
+  {
+   "description": "Tools",
+   "yearCode": null,
+   "price": 8000,
+   "yearsLife": 30,
+   "salvageValue": 800,
+   "capitalRecovery": 493.11,
+   "insurance": 25.57,
+   "taxes": 44,
+   "repairs": 160,
+   "total": 722.68,
+   "page": 25,
+   "line": "Tools 8,000 30 800 493.11 25.57 44 160 722.68"
+  },
+  {
+   "description": "Irrigation System",
+   "yearCode": null,
+   "price": 53200,
+   "yearsLife": 36,
+   "salvageValue": 5320,
+   "capitalRecovery": 3054.01,
+   "insurance": 170.07,
+   "taxes": 292.6,
+   "repairs": 1064,
+   "total": 4580.68,
+   "page": 25,
+   "line": "Irrigation System 53,200 36 5,320 3,054.01 170.07 292.6 1,064 4,580.68"
+  },
+  {
+   "description": "Amortized Establishment Cost",
+   "yearCode": null,
+   "price": 764700,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 48336.27,
+   "insurance": 2963.21,
+   "taxes": 3823.5,
+   "repairs": 0,
+   "total": 55122.98,
+   "page": 25,
+   "line": "Amortized Establishment Cost 764,700 30 0 48,336.27 2,963.21 3,823.50 0 55,122.98"
+  },
+  {
+   "description": "Land",
+   "yearCode": null,
+   "price": 440000,
+   "yearsLife": 36,
+   "salvageValue": 440000,
+   "capitalRecovery": 20900,
+   "insurance": 1906.5,
+   "taxes": 4400,
+   "repairs": 0,
+   "total": 27206.5,
+   "page": 25,
+   "line": "Land 440,000 36 440,000 20,900 1,906.50 4,400 0 27,206.50"
+  },
+  {
+   "description": "Building",
+   "yearCode": null,
+   "price": 20000,
+   "yearsLife": 36,
+   "salvageValue": 2000,
+   "capitalRecovery": 1148.12,
+   "insurance": 63.94,
+   "taxes": 110,
+   "repairs": 400,
+   "total": 1722.06,
+   "page": 25,
+   "line": "Building 20,000 36 2,000 1,148.12 63.94 110 400 1,722.06"
+  },
+  {
+   "description": "Tools",
+   "yearCode": null,
+   "price": 8000,
+   "yearsLife": 30,
+   "salvageValue": 800,
+   "capitalRecovery": 493.11,
+   "insurance": 25.57,
+   "taxes": 44,
+   "repairs": 160,
+   "total": 722.68,
+   "page": 25,
+   "line": "Tools 8,000 30 800 493.11 25.57 44 160 722.68"
+  },
+  {
+   "description": "Irrigation System",
+   "yearCode": null,
+   "price": 53200,
+   "yearsLife": 36,
+   "salvageValue": 5320,
+   "capitalRecovery": 3054.01,
+   "insurance": 170.07,
+   "taxes": 292.6,
+   "repairs": 1064,
+   "total": 4580.68,
+   "page": 25,
+   "line": "Irrigation System 53,200 36 5,320 3,054.01 170.07 292.6 1,064 4,580.68"
+  },
+  {
+   "description": "Amortized Establishment Cost",
+   "yearCode": null,
+   "price": 648140,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 40968.58,
+   "insurance": 2511.54,
+   "taxes": 3240.7,
+   "repairs": 0,
+   "total": 46720.82,
+   "page": 25,
+   "line": "Amortized Establishment Cost 648,140 30 0 40,968.58 2,511.54 3,240.70 0 46,720.82"
+  }
+ ],
+ "hourlyEquipment": [],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 20,
+   "unit": "acre",
+   "pricePerUnit": 23.85,
+   "totalCost": 477,
+   "page": 25,
+   "line": "Liability Insurance 20 acre 23.85 477"
+  },
+  {
+   "description": "Interest on Operating Capital",
+   "unitsPerFarm": 20,
+   "unit": "acre",
+   "pricePerUnit": 23.35,
+   "totalCost": 467,
+   "page": 25,
+   "line": "Interest on Operating Capital 20 acre 23.35 467"
+  },
+  {
+   "description": "Leaf Analysis",
+   "unitsPerFarm": 20,
+   "unit": "acre",
+   "pricePerUnit": 4,
+   "totalCost": 80,
+   "page": 25,
+   "line": "Leaf Analysis 20 acre 4 80"
+  },
+  {
+   "description": "Soil Analysis",
+   "unitsPerFarm": 20,
+   "unit": "acre",
+   "pricePerUnit": 5,
+   "totalCost": 100,
+   "page": 25,
+   "line": "Soil Analysis 20 acre 5 100"
+  },
+  {
+   "description": "Office Expenses",
+   "unitsPerFarm": 20,
+   "unit": "acre",
+   "pricePerUnit": 120,
+   "totalCost": 2400,
+   "page": 25,
+   "line": "Office Expenses 20 acre 120 2400"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   702.41,
+   674.25,
+   692.1,
+   755.07,
+   655.64,
+   798.33,
+   930.65,
+   625.64,
+   418.05,
+   379.05,
+   357.07,
+   99.56
+  ],
+  "operatingPerAcre": [
+   683.7,
+   327.62,
+   673.39,
+   736.35,
+   636.93,
+   755.77,
+   584.01,
+   606.93,
+   390.34,
+   360.34,
+   338.36,
+   80.85
+  ],
+  "harvestMonths": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 7088,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "DEC",
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": true,
+  "page": 22,
+  "quote": "Monthly Cash Costs per Acre to Produce Avocados in Riverside County using Conventional Production Practices in 2011"
+ },
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 2660,
+   "page": 5,
+   "quote": "We used $2,660 per acre including 1 6 1124 installation for an irrigation system (drippers and micro sprinklers 2 11 2060 included). 3 16 2996 4 21 3933 5 26 The irrigation system is installed before planting in the first year of 4869 6 32 establishment."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 30,
+   "page": 25,
+   "quote": "Amortized Establishment Cost 764,700 30 0 48,336.27 2,963.21 3,823.50 0 55,122.98 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 764700,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 48336.27,
+   "page": 25,
+   "line": "Amortized Establishment Cost 764,700 30 0 48,336.27 2,963.21 3,823.50 0 55,122.98"
+  },
+  "method": {
+   "page": 10,
+   "quote": "Amortized Establishment Cost."
+  }
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "pricePerUnit",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "businessOverhead",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "hourlyEquipment",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "Table 2 found but no GROSS RETURNS block",
+   "several costs-per-acre tables (establishment and production); using the production one"
+  ]
+ }
+}

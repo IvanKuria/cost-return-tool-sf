@@ -1,0 +1,117 @@
+{
+ "source": {
+  "id": "beef-beefsv2012",
+  "commodity": "beef",
+  "title": "SAMPLE COSTS FOR FINISHING BEEF",
+  "year": 2012,
+  "region": "Sacramento Valley",
+  "counties": "Larry C. Forero UC Cooperative Extension Farm Advisor, Shasta",
+  "description": "Finishing beef cattle on grass.",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b9/19/b919d2bc-ea8f-4705-a8b5-1d50a5d98429/beefsv2012.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/beef",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2012,
+  "priceYear": {
+   "value": 2012,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2012 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 7,
+   "quote": "The price is $7 per pound or about $350 per box."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": null,
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "capitalRecoveryFormula"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "no whole-farm equipment table",
+   "monthly table has no TABLE heading; parsed from the month header line",
+   "monthly table not used: monthly table without a heading: month header has no Total column, so rows cannot be checked"
+  ]
+ }
+}

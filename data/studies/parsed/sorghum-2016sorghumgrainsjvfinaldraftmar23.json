@@ -11,7 +11,10 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/cb/2c/cb2c22b4-04b7-45fb-a29b-7a5babe95776/2016sorghumgrainsjvfinaldraftmar23.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sorghum",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2016,
+  "priceYear": null
  },
  "assumptions": {
   "acresFarmed": {

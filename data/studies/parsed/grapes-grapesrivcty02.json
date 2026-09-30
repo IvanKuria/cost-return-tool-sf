@@ -1,0 +1,178 @@
+{
+ "source": {
+  "id": "grapes-grapesrivcty02",
+  "commodity": "grapes",
+  "title": "Grapes",
+  "year": 2002,
+  "region": "Southeast Interior Riverside",
+  "counties": "Riverside",
+  "description": "Wine, Establishment and production, Temecula Valley",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e0/33/e033f051-c4b5-4907-bb08-eed0a1a40026/grapesrivcty02.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2002,
+  "priceYear": null
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": {
+   "page": 8,
+   "quote": "Yield estimates include 2.5 tons per acre in the third year of establishment and an average of 6 tons per acre (~15 lbs/vine) in production years."
+  },
+  "priceStatement": {
+   "page": 8,
+   "quote": "We used the county five-year (1997-2001) weighted average price of $1,025/ton for Chardonnay, Cabernet Sauvignon, and Merlot varieties as a basis to estimate returns."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": []
+ },
+ "equipment": [],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The various parts of the capital recovery calculation include a10% salvage value and a capital recovery factor calculated at 6.5% interest rate-- (California’s long-term rate of return of agricultural production assets from current income) and the number of years service of equipments and investments."
+  },
+  "salvageMethod": null,
+  "insuranceRatePct": {
+   "value": 0.66,
+   "unit": "%",
+   "page": 7,
+   "quote": "Growers also carry insurance for property protection, which is typically calculated at 0.66 percent of the average value of assets."
+  },
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   306,
+   552,
+   177,
+   414,
+   726,
+   438,
+   229,
+   375,
+   571,
+   615,
+   50,
+   23
+  ],
+  "operatingPerAcre": [
+   6,
+   502,
+   152,
+   358,
+   679,
+   143,
+   207,
+   352,
+   548,
+   596,
+   31,
+   6
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 4477,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "Nov",
+   "Dec",
+   "Jan",
+   "Feb",
+   "Mar",
+   "Apr",
+   "May",
+   "Jun",
+   "Jul",
+   "Aug",
+   "Sep",
+   "Oct"
+  ],
+  "spansTwoYears": false,
+  "page": 13,
+  "quote": "Monthly cash costs per acre to produce wine grapes in Temecula, 2002"
+ },
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "no costs-per-acre table found",
+   "no whole-farm equipment table"
+  ]
+ }
+}

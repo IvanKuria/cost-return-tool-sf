@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/05/10/23PotatoFreshMktKlamath-Final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/potatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2023,
+  "priceYear": {
+   "value": 2023,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on current figures. (Current at the time of the study, so the study year 2023 is used.)"
+  }
  },
  "assumptions": {
   "acresFarmed": {
@@ -47,18 +55,8 @@
   },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": {
-   "value": 3.7,
-   "unit": "$/gal",
-   "page": 6,
-   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.10 and $3.70 per gallon, respectively."
-  },
-  "fuelPriceGas": {
-   "value": 3.7,
-   "unit": "$/gal",
-   "page": 6,
-   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.10 and $3.70 per gallon, respectively."
-  },
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
   "yieldStatement": {
    "page": 5,
    "quote": "This study assumes a yield of 490 cwt per acre for fresh market potatoes, which is the 2023 average yield for Modoc and Siskiyou counties."
@@ -1160,21 +1158,15 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 8,
-   "quote": "The calculation for the annual capital recovery costs is as follows: ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
-  },
-  "salvageMethod": {
-   "page": 8,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 6,
-   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in"
   }
  },
  "monthly": {
@@ -1260,7 +1252,6 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula",
    "machineLaborFactor",
    "monthly"
   ],
@@ -1270,6 +1261,7 @@
    "interestRatePct",
    "landRentPerAcre",
    "grossReturns",
+   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",

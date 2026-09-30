@@ -11,15 +11,18 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/0e/23/0e230982-8610-42a4-8a26-32a0b10a4c5c/pasture_sv_2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2015,
+  "priceYear": {
+   "value": 2015,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. “Your Costs” columns in Tables 1 and 2 are provided for entering your farm costs. (Current at the time of the study, so the study year 2015 is used.)"
+  }
  },
  "assumptions": {
-  "acresFarmed": {
-   "value": 40,
-   "unit": "acres",
-   "page": 5,
-   "quote": "On a 40 acre operation, the labor is provided by the owner/operator and will not be a cash cost in this study."
-  },
+  "acresFarmed": null,
   "acresCrop": null,
   "yieldPerAcre": null,
   "yieldUnit": "Ton",
@@ -51,18 +54,8 @@
   "laborOverheadPct": null,
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": {
-   "value": 3.39,
-   "unit": "$/gal",
-   "page": 7,
-   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.88 and $3.39 per gallon, respectively."
-  },
-  "fuelPriceGas": {
-   "value": 3.39,
-   "unit": "$/gal",
-   "page": 7,
-   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.88 and $3.39 per gallon, respectively."
-  },
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
   "yieldStatement": null,
   "priceStatement": {
    "page": 4,
@@ -307,14 +300,8 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 6,
-   "quote": "[(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)."
-  },
-  "salvageMethod": {
-   "page": 6,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
   "machineLaborFactor": null
@@ -384,7 +371,6 @@
   "fieldsFound": [
    "year",
    "region",
-   "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -393,7 +379,6 @@
    "operations",
    "investments",
    "businessOverhead",
-   "capitalRecoveryFormula",
    "monthly"
   ],
   "fieldsMissing": [
@@ -405,8 +390,10 @@
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
+   "acresFarmed",
    "equipment",
    "hourlyEquipment",
+   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",

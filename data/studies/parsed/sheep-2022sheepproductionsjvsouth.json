@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/07/07/2022sheepproductionsjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/sheep",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2022,
+  "priceYear": {
+   "value": 2022,
+   "month": 4,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on April 2022 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": null,

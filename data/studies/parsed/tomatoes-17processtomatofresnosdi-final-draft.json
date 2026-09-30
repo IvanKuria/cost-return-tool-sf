@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/2e/7a/2e7a8cf0-b7fd-4207-b945-7b4b8a82625c/17processtomatofresnosdi-final_draft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/tomatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2018,
+  "priceYear": {
+   "value": 2018,
+   "month": 1,
+   "page": 2,
+   "quote": "Sample costs given for labor, materials, equipment and contract services are based on January 2018 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

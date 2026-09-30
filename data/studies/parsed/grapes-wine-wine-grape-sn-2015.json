@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/df/68/df68d252-a08d-49d1-8eb6-965637c0b615/wine-grape-sn-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2015,
+  "priceYear": {
+   "value": 2015,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs given for labor, materials, equipment and contract services are based on current figures. (Current at the time of the study, so the study year 2015 is used.)"
+  }
  },
  "assumptions": {
   "acresFarmed": {

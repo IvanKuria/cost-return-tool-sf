@@ -1,0 +1,1190 @@
+{
+ "source": {
+  "id": "nectarines-nectarinevs09",
+  "commodity": "nectarines",
+  "title": "SAMPLE COSTS TO",
+  "year": 2009,
+  "region": "San Joaquin Valley South",
+  "counties": "SOUTH Kevin R. Day UC Cooperative Extension Farm Advisor, Tulare",
+  "description": "Jul-Aug Harvest, Fresh Market, Furrow Irrigation, Establishment and Production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/39/b6/39b6cb12-0c79-4b66-bb92-b1012bdbbfd2/nectarinevs09.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/nectarines",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2009,
+  "priceYear": {
+   "value": 2009,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2009 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 100,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The farm consists of 100 contiguous acres."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": {
+   "value": 1200,
+   "unit": "box",
+   "page": 14,
+   "quote": "TOTAL GROSS RETURNS 1,200.00 box 12.00 14,400"
+  },
+  "yieldUnit": "box",
+  "pricePerUnit": {
+   "value": 12,
+   "unit": "$/box",
+   "page": 14,
+   "quote": "Fresh Nectarines 1,200.00 box 12.00 14,400"
+  },
+  "returns": [
+   {
+    "name": "Fresh Nectarines",
+    "quantity": 1200,
+    "unit": "box",
+    "price": 12,
+    "value": 14400,
+    "page": 14,
+    "quote": "Fresh Nectarines 1,200.00 box 12.00 14,400"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 20.7,
+   "unit": "$/hr",
+   "page": 7,
+   "quote": "Labor rates of $20.70 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
+  "laborNonMachineRate": {
+   "value": 11.04,
+   "unit": "$/hr",
+   "page": 7,
+   "quote": "Labor rates of $20.70 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
+  "laborOverheadPct": {
+   "value": 38,
+   "unit": "%",
+   "page": 7,
+   "quote": "Labor rates of $20.70 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.36,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.70 (excludes excise taxes) and $3.36 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.36,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.70 (excludes excise taxes) and $3.36 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 7,
+   "quote": "An estimated average price over the last few years of $12.00 per box based on grower and marketer input is used to determine income over a range of prices and yields."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 12778,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL OPERATING COSTS/ACRE 4,578 342 957 6,746 12,778"
+  },
+  "cashOverheadTotal": {
+   "value": 308,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL CASH OVERHEAD COSTS 308"
+  },
+  "nonCashOverheadTotal": {
+   "value": 1413,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 18,544 1,413 1,413"
+  },
+  "totalCost": {
+   "value": 14499,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL COSTS/ACRE 14,499"
+  },
+  "grossReturns": {
+   "value": 14400,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL GROSS RETURNS 1,200.00 box 12.00 14,400"
+  },
+  "netReturnsAboveOperating": {
+   "value": 1622,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 1,622"
+  },
+  "netReturnsAboveTotal": {
+   "value": -99,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "NET RETURNS ABOVE TOTAL COSTS -99"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 75,
+    "page": 13,
+    "quote": "Office Expense 75"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 7,
+    "page": 13,
+    "quote": "Liability Insurance 7"
+   },
+   {
+    "description": "Sanitation Fees",
+    "value": 12,
+    "page": 13,
+    "quote": "Sanitation Fees 12"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 139,
+    "page": 13,
+    "quote": "Property Taxes 139"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 40,
+    "page": 13,
+    "quote": "Property Insurance 40"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 35,
+    "page": 13,
+    "quote": "Investment Repairs 35"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Weed: Dormant Strip (Surflan, Goal)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.28,
+    "labor": 7,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 64,
+    "customRent": 0,
+    "totalCost": 74,
+    "page": 13,
+    "quote": "Weed: Dormant Strip (Surflan, Goal) 0.28 7 3 64 0 74"
+   },
+   {
+    "name": "Prune: Trees",
+    "category": "cultural",
+    "timeHrsPerAcre": 64,
+    "labor": 707,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 707,
+    "page": 13,
+    "quote": "Prune: Trees 64.00 707 0 0 0 707"
+   },
+   {
+    "name": "Prune: Shred Brush & Furrow Cleanings",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.86,
+    "labor": 21,
+    "fuel": 20,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 41,
+    "page": 13,
+    "quote": "Prune: Shred Brush & Furrow Cleanings 0.86 21 20 0 0 41"
+   },
+   {
+    "name": "Insect: Dormant (Oil, Diazinon). Disease: (Ziram). Fertilizer: (zinc)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.31,
+    "labor": 8,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 170,
+    "customRent": 0,
+    "totalCost": 185,
+    "page": 13,
+    "quote": "Insect: Dormant (Oil, Diazinon). Disease: (Ziram). Fertilizer: (zinc) 0.31 8 7 170 0 185"
+   },
+   {
+    "name": "Rope Trees 1X/2Yr (1/2 cost)",
+    "category": "cultural",
+    "timeHrsPerAcre": 4,
+    "labor": 44,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 44,
+    "page": 13,
+    "quote": "Rope Trees 1X/2Yr (1/2 cost) 4.00 44 0 0 0 44"
+   },
+   {
+    "name": "Disease: Blossom Blight, Bloom @ 20 – 40% (Orbit)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.31,
+    "labor": 8,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 20,
+    "customRent": 0,
+    "totalCost": 34,
+    "page": 13,
+    "quote": "Disease: Blossom Blight, Bloom @ 20 – 40% (Orbit) 0.31 8 7 20 0 34"
+   },
+   {
+    "name": "Disease: Blossom Blight, Bloom @ 80 - 100% (Rally)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.31,
+    "labor": 8,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 23,
+    "customRent": 0,
+    "totalCost": 38,
+    "page": 13,
+    "quote": "Disease: Blossom Blight, Bloom @ 80 - 100% (Rally) 0.31 8 7 23 0 38"
+   },
+   {
+    "name": "Weed: Spray Middles 5X (Roundup)",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.41,
+    "labor": 35,
+    "fuel": 15,
+    "lubeRepairs": null,
+    "materials": 48,
+    "customRent": 0,
+    "totalCost": 98,
+    "page": 13,
+    "quote": "Weed: Spray Middles 5X (Roundup) 1.41 35 15 48 0 98"
+   },
+   {
+    "name": "Insect: Thrips @ Petal Fall (Success)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.33,
+    "labor": 8,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 45,
+    "customRent": 0,
+    "totalCost": 60,
+    "page": 13,
+    "quote": "Insect: Thrips @ Petal Fall (Success) 0.33 8 7 45 0 60"
+   },
+   {
+    "name": "Irrigate: 12X (water & labor)",
+    "category": "cultural",
+    "timeHrsPerAcre": 11.27,
+    "labor": 124,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 176,
+    "customRent": 0,
+    "totalCost": 300,
+    "page": 13,
+    "quote": "Irrigate: 12X (water & labor) 11.27 124 0 176 0 300"
+   },
+   {
+    "name": "Insect: Worms (Imidan)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.31,
+    "labor": 8,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 53,
+    "customRent": 0,
+    "totalCost": 67,
+    "page": 13,
+    "quote": "Insect: Worms (Imidan) 0.31 8 7 53 0 67"
+   },
+   {
+    "name": "Thin: Fruit by Hand",
+    "category": "cultural",
+    "timeHrsPerAcre": 103,
+    "labor": 1137,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 1137,
+    "page": 13,
+    "quote": "Thin: Fruit by Hand 103.00 1,137 0 0 0 1,137"
+   },
+   {
+    "name": "Weed: Rake (clean) Furrows",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.11,
+    "labor": 3,
+    "fuel": 2,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 5,
+    "page": 13,
+    "quote": "Weed: Rake (clean) Furrows 0.11 3 2 0 0 5"
+   },
+   {
+    "name": "Fertilize: N (split application) (UN32)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.26,
+    "labor": 6,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 97,
+    "customRent": 0,
+    "totalCost": 106,
+    "page": 13,
+    "quote": "Fertilize: N (split application) (UN32) 0.26 6 3 97 0 106"
+   },
+   {
+    "name": "Insect: Mites (Apollo)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.31,
+    "labor": 8,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 51,
+    "customRent": 0,
+    "totalCost": 66,
+    "page": 13,
+    "quote": "Insect: Mites (Apollo) 0.31 8 7 51 0 66"
+   },
+   {
+    "name": "Weed: Spot Spray 2X (Roundup) ATV",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.4,
+    "labor": 10,
+    "fuel": 1,
+    "lubeRepairs": null,
+    "materials": 2,
+    "customRent": 0,
+    "totalCost": 13,
+    "page": 13,
+    "quote": "Weed: Spot Spray 2X (Roundup) ATV 0.40 10 1 2 0 13"
+   },
+   {
+    "name": "Prune: Summer Pruning",
+    "category": "cultural",
+    "timeHrsPerAcre": 9.32,
+    "labor": 103,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 103,
+    "page": 13,
+    "quote": "Prune: Summer Pruning 9.32 103 0 0 0 103"
+   },
+   {
+    "name": "Prune: Leaf Removal",
+    "category": "cultural",
+    "timeHrsPerAcre": 30,
+    "labor": 331,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 331,
+    "page": 13,
+    "quote": "Prune: Leaf Removal 30.00 331 0 0 0 331"
+   },
+   {
+    "name": "Fertilize: Leaf Samples & Nutrition Analysis",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 8,
+    "totalCost": 8,
+    "page": 13,
+    "quote": "Fertilize: Leaf Samples & Nutrition Analysis 0.00 0 0 0 8 8"
+   },
+   {
+    "name": "Prop Limbs & Remove Props",
+    "category": "cultural",
+    "timeHrsPerAcre": 1,
+    "labor": 113,
+    "fuel": 10,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 123,
+    "page": 13,
+    "quote": "Prop Limbs & Remove Props 1.00 113 10 0 0 123"
+   },
+   {
+    "name": "Insect: Worms (Imidan) Thrips (Success). Disease: Brown Rot (Adament)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.31,
+    "labor": 8,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 149,
+    "customRent": 0,
+    "totalCost": 164,
+    "page": 13,
+    "quote": "Insect: Worms (Imidan) Thrips (Success). Disease: Brown Rot (Adament) 0.31 8 7 149 0 164"
+   },
+   {
+    "name": "Fertilize: Fall (zinc)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.31,
+    "labor": 8,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 9,
+    "customRent": 0,
+    "totalCost": 24,
+    "page": 13,
+    "quote": "Fertilize: Fall (zinc) 0.31 8 7 9 0 24"
+   },
+   {
+    "name": "Pickup: Farm Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 3,
+    "labor": 75,
+    "fuel": 45,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 120,
+    "page": 13,
+    "quote": "Pickup: Farm Use 3.00 75 45 0 0 120"
+   },
+   {
+    "name": "ATV: Irrigation & General Field Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 2.7,
+    "labor": 67,
+    "fuel": 4,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 72,
+    "page": 13,
+    "quote": "ATV: Irrigation & General Field Use 2.70 67 4 0 0 72"
+   },
+   {
+    "name": "Pick Fruit",
+    "category": "harvest",
+    "timeHrsPerAcre": 6,
+    "labor": 1733,
+    "fuel": 180,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 1914,
+    "page": 13,
+    "quote": "Pick Fruit 6.00 1,733 180 0 0 1,914"
+   },
+   {
+    "name": "Haul To Shed",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 198,
+    "totalCost": 198,
+    "page": 13,
+    "quote": "Haul To Shed 0.00 0 0 0 198 198"
+   },
+   {
+    "name": "Pack Fruit",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 5100,
+    "totalCost": 5100,
+    "page": 13,
+    "quote": "Pack Fruit 0.00 0 0 0 5,100 5,100"
+   },
+   {
+    "name": "Sell",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 1440,
+    "totalCost": 1440,
+    "page": 13,
+    "quote": "Sell 0.00 0 0 0 1,440 1,440"
+   },
+   {
+    "name": "CTFA Assessment",
+    "category": "assessment",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 52,
+    "customRent": 0,
+    "totalCost": 52,
+    "page": 13,
+    "quote": "CTFA Assessment 0 0 0 52 0 52"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "40 HP 2WD Tractor",
+   "yearCode": "09",
+   "price": 14941,
+   "yearsLife": 15,
+   "salvageValue": 2909,
+   "capitalRecovery": 1278,
+   "insurance": 73,
+   "taxes": 89,
+   "repairs": null,
+   "total": 1440,
+   "page": 19,
+   "line": "09 40 HP 2WD Tractor 14,941 15 2,909 1,278 73 89 1,440"
+  },
+  {
+   "description": "80 HP 4WD Tractor",
+   "yearCode": "09",
+   "price": 55307,
+   "yearsLife": 15,
+   "salvageValue": 10767,
+   "capitalRecovery": 4730,
+   "insurance": 271,
+   "taxes": 330,
+   "repairs": null,
+   "total": 5332,
+   "page": 19,
+   "line": "09 80 HP 4WD Tractor 55,307 15 10,767 4,730 271 330 5,332"
+  },
+  {
+   "description": "All Terrain Vehicle",
+   "yearCode": "09",
+   "price": 6500,
+   "yearsLife": 7,
+   "salvageValue": 2466,
+   "capitalRecovery": 808,
+   "insurance": 37,
+   "taxes": 45,
+   "repairs": null,
+   "total": 890,
+   "page": 19,
+   "line": "09 All Terrain Vehicle 6,500 7 2,466 808 37 45 890"
+  },
+  {
+   "description": "Bin Trailers #1",
+   "yearCode": "09",
+   "price": 1970,
+   "yearsLife": 15,
+   "salvageValue": 189,
+   "capitalRecovery": 178,
+   "insurance": 9,
+   "taxes": 11,
+   "repairs": null,
+   "total": 197,
+   "page": 19,
+   "line": "09 Bin Trailers #1 1,970 15 189 178 9 11 197"
+  },
+  {
+   "description": "Bin Trailers #2",
+   "yearCode": "09",
+   "price": 1970,
+   "yearsLife": 15,
+   "salvageValue": 189,
+   "capitalRecovery": 178,
+   "insurance": 9,
+   "taxes": 11,
+   "repairs": null,
+   "total": 197,
+   "page": 19,
+   "line": "09 Bin Trailers #2 1,970 15 189 178 9 11 197"
+  },
+  {
+   "description": "Brush Rake 18'",
+   "yearCode": "09",
+   "price": 6175,
+   "yearsLife": 20,
+   "salvageValue": 322,
+   "capitalRecovery": 475,
+   "insurance": 27,
+   "taxes": 32,
+   "repairs": null,
+   "total": 534,
+   "page": 19,
+   "line": "09 Brush Rake 18' 6,175 20 322 475 27 32 534"
+  },
+  {
+   "description": "Mower/Chopper - 8'",
+   "yearCode": "09",
+   "price": 8200,
+   "yearsLife": 10,
+   "salvageValue": 1450,
+   "capitalRecovery": 932,
+   "insurance": 40,
+   "taxes": 48,
+   "repairs": null,
+   "total": 1020,
+   "page": 19,
+   "line": "09 Mower/Chopper - 8' 8,200 10 1,450 932 40 48 1,020"
+  },
+  {
+   "description": "Orchard Sprayer 500 G",
+   "yearCode": "09",
+   "price": 22800,
+   "yearsLife": 10,
+   "salvageValue": 4032,
+   "capitalRecovery": 2593,
+   "insurance": 110,
+   "taxes": 134,
+   "repairs": null,
+   "total": 2837,
+   "page": 19,
+   "line": "09 Orchard Sprayer 500 G 22,800 10 4,032 2,593 110 134 2,837"
+  },
+  {
+   "description": "Pickup Truck - 3/4 ton",
+   "yearCode": "09",
+   "price": 32000,
+   "yearsLife": 7,
+   "salvageValue": 12139,
+   "capitalRecovery": 3978,
+   "insurance": 181,
+   "taxes": 221,
+   "repairs": null,
+   "total": 4380,
+   "page": 19,
+   "line": "09 Pickup Truck - 3/4 ton 32,000 7 12,139 3,978 181 221 4,380"
+  },
+  {
+   "description": "Spot Sprayer ATV 20 gal",
+   "yearCode": "09",
+   "price": 511,
+   "yearsLife": 10,
+   "salvageValue": 90,
+   "capitalRecovery": 58,
+   "insurance": 2,
+   "taxes": 3,
+   "repairs": null,
+   "total": 64,
+   "page": 19,
+   "line": "09 Spot Sprayer ATV 20 gal 511 10 90 58 2 3 64"
+  },
+  {
+   "description": "Weed Sprayer 100 G",
+   "yearCode": "09",
+   "price": 3424,
+   "yearsLife": 10,
+   "salvageValue": 606,
+   "capitalRecovery": 389,
+   "insurance": 17,
+   "taxes": 20,
+   "repairs": null,
+   "total": 426,
+   "page": 19,
+   "line": "09 Weed Sprayer 100 G 3,424 10 606 389 17 20 426"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Buildings 1,800 sqft",
+   "yearCode": null,
+   "price": 60000,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 4713,
+   "insurance": 246,
+   "taxes": 300,
+   "repairs": 1200,
+   "total": 6459,
+   "page": 19,
+   "line": "Buildings 1,800 sqft 60,000 20 4,713 246 300 1,200 6,459"
+  },
+  {
+   "description": "Fuel Tanks 2-500 gal",
+   "yearCode": null,
+   "price": 4500,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 353,
+   "insurance": 18,
+   "taxes": 23,
+   "repairs": 90,
+   "total": 484,
+   "page": 19,
+   "line": "Fuel Tanks 2-500 gal 4,500 20 353 18 23 90 484"
+  },
+  {
+   "description": "Irrigation System",
+   "yearCode": null,
+   "price": 85500,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 5404,
+   "insurance": 351,
+   "taxes": 428,
+   "repairs": 1710,
+   "total": 7892,
+   "page": 19,
+   "line": "Irrigation System 85,500 30 5,404 351 428 1,710 7,892"
+  },
+  {
+   "description": "Land",
+   "yearCode": null,
+   "price": 850000,
+   "yearsLife": 20,
+   "salvageValue": 850000,
+   "capitalRecovery": 40375,
+   "insurance": 0,
+   "taxes": 8500,
+   "repairs": 0,
+   "total": 48875,
+   "page": 19,
+   "line": "Land 850,000 20 850,000 40,375 0 8,500 0 48,875"
+  },
+  {
+   "description": "Orchard Establishment",
+   "yearCode": null,
+   "price": 68090,
+   "yearsLife": 12,
+   "salvageValue": 0,
+   "capitalRecovery": 7574,
+   "insurance": 279,
+   "taxes": 340,
+   "repairs": 0,
+   "total": 8194,
+   "page": 19,
+   "line": "Orchard Establishment 68,090 12 7,574 279 340 0 8,194"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 15000,
+   "yearsLife": 15,
+   "salvageValue": 1200,
+   "capitalRecovery": 1364,
+   "insurance": 66,
+   "taxes": 81,
+   "repairs": 300,
+   "total": 1812,
+   "page": 19,
+   "line": "Shop Tools 15,000 15 1,200 1,364 66 81 300 1,812"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "40 HP 2WD Tractor",
+   "hoursUsedOnCrop": 801,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.96,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.07,
+   "repairsPerHr": 0.67,
+   "fuelPerHr": 8.36,
+   "totalOperatingPerHr": 9.03,
+   "totalCostPerHr": 10.11,
+   "page": 20,
+   "line": "09 40 HP 2WD Tractor 801 0.96 0.05 0.07 0.67 8.36 9.03 10.11"
+  },
+  {
+   "description": "80 HP 4WD Tractor",
+   "hoursUsedOnCrop": 800,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 3.55,
+   "insurancePerHr": 0.2,
+   "taxesPerHr": 0.25,
+   "repairsPerHr": 1.06,
+   "fuelPerHr": 16.72,
+   "totalOperatingPerHr": 17.78,
+   "totalCostPerHr": 21.78,
+   "page": 20,
+   "line": "09 80 HP 4WD Tractor 800 3.55 0.20 0.25 1.06 16.72 17.78 21.78"
+  },
+  {
+   "description": "All Terrain Vehicle",
+   "hoursUsedOnCrop": 285,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.7,
+   "insurancePerHr": 0.08,
+   "taxesPerHr": 0.09,
+   "repairsPerHr": 0.48,
+   "fuelPerHr": 1.16,
+   "totalOperatingPerHr": 1.64,
+   "totalCostPerHr": 3.51,
+   "page": 20,
+   "line": "09 All Terrain Vehicle 285 1.70 0.08 0.09 0.48 1.16 1.64 3.51"
+  },
+  {
+   "description": "Bin Trailers #1",
+   "hoursUsedOnCrop": 166,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.64,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.04,
+   "repairsPerHr": 0.28,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.28,
+   "totalCostPerHr": 0.99,
+   "page": 20,
+   "line": "09 Bin Trailers #1 166 0.64 0.03 0.04 0.28 0.00 0.28 0.99"
+  },
+  {
+   "description": "Bin Trailers #2",
+   "hoursUsedOnCrop": 166,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.64,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.04,
+   "repairsPerHr": 0.28,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.28,
+   "totalCostPerHr": 0.99,
+   "page": 20,
+   "line": "09 Bin Trailers #2 166 0.64 0.03 0.04 0.28 0.00 0.28 0.99"
+  },
+  {
+   "description": "Brush Rake 18'",
+   "hoursUsedOnCrop": 125,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 2.28,
+   "insurancePerHr": 0.13,
+   "taxesPerHr": 0.16,
+   "repairsPerHr": 0.84,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.84,
+   "totalCostPerHr": 3.41,
+   "page": 20,
+   "line": "09 Brush Rake 18' 125 2.28 0.13 0.16 0.84 0.00 0.84 3.41"
+  },
+  {
+   "description": "Mower/Chopper - 8'",
+   "hoursUsedOnCrop": 200,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 2.8,
+   "insurancePerHr": 0.12,
+   "taxesPerHr": 0.12,
+   "repairsPerHr": 3.46,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 3.46,
+   "totalCostPerHr": 6.5,
+   "page": 20,
+   "line": "09 Mower/Chopper - 8' 200 2.80 0.12 0.12 3.46 0.00 3.46 6.50"
+  },
+  {
+   "description": "Orchard Sprayer 500 G",
+   "hoursUsedOnCrop": 200,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 7.76,
+   "insurancePerHr": 0.33,
+   "taxesPerHr": 0.4,
+   "repairsPerHr": 3.92,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 3.92,
+   "totalCostPerHr": 12.41,
+   "page": 20,
+   "line": "09 Orchard Sprayer 500 G 200 7.76 0.33 0.40 3.92 0.00 3.92 12.41"
+  },
+  {
+   "description": "Pickup Truck - 3/4 ton",
+   "hoursUsedOnCrop": 285,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 8.37,
+   "insurancePerHr": 0.38,
+   "taxesPerHr": 0.46,
+   "repairsPerHr": 2.36,
+   "fuelPerHr": 12.76,
+   "totalOperatingPerHr": 15.12,
+   "totalCostPerHr": 24.33,
+   "page": 20,
+   "line": "09 Pickup Truck - 3/4 ton 285 8.37 0.38 0.46 2.36 12.76 15.12 24.33"
+  },
+  {
+   "description": "Spot Sprayer ATV 20 gal",
+   "hoursUsedOnCrop": 150,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.23,
+   "insurancePerHr": 0.01,
+   "taxesPerHr": 0.01,
+   "repairsPerHr": 0.14,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.14,
+   "totalCostPerHr": 0.39,
+   "page": 20,
+   "line": "09 Spot Sprayer ATV 20 gal 150 0.23 0.01 0.01 0.14 0.00 0.14 0.39"
+  },
+  {
+   "description": "Weed Sprayer 100 G",
+   "hoursUsedOnCrop": 150,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.56,
+   "insurancePerHr": 0.07,
+   "taxesPerHr": 0.08,
+   "repairsPerHr": 0.92,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.92,
+   "totalCostPerHr": 2.63,
+   "page": 20,
+   "line": "09 Weed Sprayer 100 G 150 1.56 0.07 0.08 0.92 0.00 0.92 2.63"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 95,
+   "unit": "acre",
+   "pricePerUnit": 6.54,
+   "totalCost": 621,
+   "page": 19,
+   "line": "Liability Insurance 95 acre 6.54 621"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 95,
+   "unit": "acre",
+   "pricePerUnit": 75,
+   "totalCost": 7125,
+   "page": 19,
+   "line": "Office Expense 95 acre 75.00 7,125"
+  },
+  {
+   "description": "Sanitation Fees",
+   "unitsPerFarm": 95,
+   "unit": "acre",
+   "pricePerUnit": 12.36,
+   "totalCost": 1174,
+   "page": 19,
+   "line": "Sanitation Fees 95 acre 12.36 1,174"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 7,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   680,
+   175,
+   117,
+   1367,
+   142,
+   566,
+   4826,
+   4538,
+   124,
+   75,
+   19,
+   456
+  ],
+  "operatingPerAcre": [
+   580,
+   158,
+   107,
+   1357,
+   132,
+   556,
+   4727,
+   4528,
+   113,
+   65,
+   10,
+   445
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 13086,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "DEC",
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV"
+  ],
+  "spansTwoYears": false,
+  "page": 16,
+  "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE NECTARINES"
+ },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 4882,
+    "returns": null,
+    "netCost": 4882,
+    "accumulated": 4882,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,882 6,186 6,809 6,482 4,280"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1304,
+    "returns": null,
+    "netCost": 1304,
+    "accumulated": 6186,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,882 6,186 6,809 6,482 4,280"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 4223,
+    "returns": 3600,
+    "netCost": 4882,
+    "accumulated": 6809,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,882 6,186 6,809 6,482 4,280"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 6873,
+    "returns": 7200,
+    "netCost": 1304,
+    "accumulated": 6482,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,882 6,186 6,809 6,482 4,280"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 9798,
+    "returns": 12000,
+    "netCost": 623,
+    "accumulated": 4280,
+    "page": 12,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,882 6,186 6,809 6,482 4,280"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": {
+   "value": 757,
+   "page": 13,
+   "quote": "Orchard Establishment 6,809 757 757"
+  },
+  "productionYears": {
+   "value": 12,
+   "page": 19,
+   "quote": "Orchard Establishment 68,090 12 7,574 279 340 0 8,194 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 15,
+   "page": 3,
+   "quote": "The life of the orchard at the time of planting is estimated to be 15 years."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 144,
+   "page": 11,
+   "quote": "Prune: Leaf Removal 144 243 331",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 68090,
+   "yearsLife": 12,
+   "salvageValue": 0,
+   "capitalRecovery": 7574,
+   "page": 19,
+   "line": "Orchard Establishment 68,090 12 7,574 279 340 0 8,194"
+  },
+  "method": null
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly",
+   "establishment",
+   "establishmentAnnual"
+  ],
+  "fieldsMissing": [
+   "interestRatePct",
+   "landRentPerAcre",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishmentAccumulated"
+  ],
+  "warnings": [
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+  ]
+ }
+}

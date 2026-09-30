@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/04/04/2024Strawberry-FULL-FINAL-March2024.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/strawberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2024,
+  "priceYear": {
+   "value": 2024,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on current figures. (Current at the time of the study, so the study year 2024 is used.)"
+  }
  },
  "assumptions": {
   "acresFarmed": {

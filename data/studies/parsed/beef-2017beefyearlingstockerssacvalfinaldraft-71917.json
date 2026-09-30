@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/28/34/2834f4a4-c487-4359-bea0-4e891a8b6639/2017beefyearlingstockerssacvalfinaldraft_71917.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beef",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2017,
+  "priceYear": {
+   "value": 2017,
+   "month": 4,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on April 2017 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": null,

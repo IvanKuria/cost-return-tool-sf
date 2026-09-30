@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/dc/15/dc158210-055c-494c-9c2f-54083fbf0323/2016wheatsacvalleyfinaldraft122116.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/wheat",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2016,
+  "priceYear": {
+   "value": 2016,
+   "month": 8,
+   "page": 2,
+   "quote": "Sample costs given for labor, materials, equipment and contract services are based on August 2016 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": null,
@@ -1182,7 +1190,7 @@
   ],
   "spansTwoYears": false,
   "page": 14,
-  "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE WHEAT"
+  "quote": "monthly table without a heading"
  },
  "establishment": null,
  "parse": {
@@ -1220,7 +1228,8 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]"
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
+   "monthly table has no TABLE heading; parsed from the month header line"
   ]
  }
 }

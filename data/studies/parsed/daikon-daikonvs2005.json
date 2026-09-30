@@ -1,0 +1,469 @@
+{
+ "source": {
+  "id": "daikon-daikonvs2005",
+  "commodity": "daikon",
+  "title": "SAMPLE COSTS TO PRODUCE",
+  "year": 2005,
+  "region": "San Joaquin Valley South",
+  "counties": "Richard H. Molinar UC Cooperative Extension Farm Advisor, Fresno County Michael Yang UC Agricultural Assistant, Fresno",
+  "description": "Oriental radish, small farm",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/d8/a3/d8a3d951-3251-4142-9fad-55e505e04c07/daikonvs2005.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/daikon",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2005,
+  "priceYear": {
+   "value": 2005,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. “Your Costs” columns in Tables 1 and 2 are provided for entering your farm costs. (Current at the time of the study, so the study year 2005 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 12.42,
+   "unit": "$/hr",
+   "page": 4,
+   "quote": "Labor rates of $12.42 per hour for machine operators and $9.32 for general labor includes payroll overhead of 38%."
+  },
+  "laborNonMachineRate": {
+   "value": 9.32,
+   "unit": "$/hr",
+   "page": 4,
+   "quote": "Labor rates of $12.42 per hour for machine operators and $9.32 for general labor includes payroll overhead of 38%."
+  },
+  "laborOverheadPct": {
+   "value": 38,
+   "unit": "%",
+   "page": 4,
+   "quote": "Labor rates of $12.42 per hour for machine operators and $9.32 for general labor includes payroll overhead of 38%."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 2.05,
+   "unit": "$/gal",
+   "page": 4,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.51 and $2.05 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.05,
+   "unit": "$/gal",
+   "page": 4,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.51 and $2.05 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": null
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 2529,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "TOTAL OPERATING COSTS/ACRE 22 191 210 112 1,347 647 0 0 0 0 0 0 2,529"
+  },
+  "cashOverheadTotal": {
+   "value": 364,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "TOTAL CASH OVERHEAD COSTS 52 2 2 2 302 2 0 0 0 0 0 0 364"
+  },
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": [
+   {
+    "name": "Ending DEC 05 05 05 05 05 05",
+    "category": "cultural",
+    "timeHrsPerAcre": 5,
+    "labor": 5,
+    "fuel": 5,
+    "lubeRepairs": 5,
+    "materials": 5,
+    "customRent": 5,
+    "totalCost": 5,
+    "page": 10,
+    "quote": "Ending DEC 05 05 05 05 05 05 05 05 05 05 05 05 05"
+   },
+   {
+    "name": "Miscellaneous Pickup Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 22,
+    "labor": 22,
+    "fuel": 22,
+    "lubeRepairs": 22,
+    "materials": 22,
+    "customRent": 22,
+    "totalCost": 134,
+    "page": 10,
+    "quote": "Miscellaneous Pickup Use 22 22 22 22 22 22 134"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "35HP 2WD Tractor",
+   "yearCode": "05",
+   "price": 15265,
+   "yearsLife": 20,
+   "salvageValue": 1959,
+   "capitalRecovery": 1279,
+   "insurance": 59,
+   "taxes": 86,
+   "repairs": null,
+   "total": 1424,
+   "page": 12,
+   "line": "05 35HP 2WD Tractor 15,265 20 1,959 1,279 59 86 1,424"
+  },
+  {
+   "description": "Bed Shaper Pipe 9'",
+   "yearCode": "05",
+   "price": 150,
+   "yearsLife": 10,
+   "salvageValue": 27,
+   "capitalRecovery": 18,
+   "insurance": 1,
+   "taxes": 1,
+   "repairs": null,
+   "total": 20,
+   "page": 12,
+   "line": "05 Bed Shaper Pipe 9' 150 10 27 18 1 1 20"
+  },
+  {
+   "description": "Fertilizer Applicator",
+   "yearCode": "05",
+   "price": 850,
+   "yearsLife": 20,
+   "salvageValue": 44,
+   "capitalRecovery": 73,
+   "insurance": 3,
+   "taxes": 4,
+   "repairs": null,
+   "total": 82,
+   "page": 12,
+   "line": "05 Fertilizer Applicator 850 20 44 73 3 4 82"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "yearCode": "05",
+   "price": 28000,
+   "yearsLife": 5,
+   "salvageValue": 12549,
+   "capitalRecovery": 4423,
+   "insurance": 140,
+   "taxes": 203,
+   "repairs": null,
+   "total": 4766,
+   "page": 12,
+   "line": "05 Pickup 1/2 Ton 28,000 5 12,549 4,423 140 203 4,766"
+  },
+  {
+   "description": "Planter Jr 1-Bed, 2-Row",
+   "yearCode": "05",
+   "price": 1100,
+   "yearsLife": 10,
+   "salvageValue": 195,
+   "capitalRecovery": 135,
+   "insurance": 4,
+   "taxes": 6,
+   "repairs": null,
+   "total": 146,
+   "page": 12,
+   "line": "05 Planter Jr 1-Bed, 2-Row 1,100 10 195 135 4 6 146"
+  },
+  {
+   "description": "Trailer 12x16",
+   "yearCode": "05",
+   "price": 4500,
+   "yearsLife": 20,
+   "salvageValue": 235,
+   "capitalRecovery": 386,
+   "insurance": 16,
+   "taxes": 24,
+   "repairs": null,
+   "total": 426,
+   "page": 12,
+   "line": "05 Trailer 12x16 4,500 20 235 386 16 24 426"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Irrigation Flat Pipe",
+   "yearCode": null,
+   "price": 455,
+   "yearsLife": 2,
+   "salvageValue": 0,
+   "capitalRecovery": 248,
+   "insurance": 0,
+   "taxes": 0,
+   "repairs": 9,
+   "total": 257,
+   "page": 12,
+   "line": "Irrigation Flat Pipe 455 2 248 0 0 9 257"
+  },
+  {
+   "description": "Miscellaneous Field Tools",
+   "yearCode": null,
+   "price": 1000,
+   "yearsLife": 5,
+   "salvageValue": 0,
+   "capitalRecovery": 237,
+   "insurance": 3,
+   "taxes": 0,
+   "repairs": 20,
+   "total": 261,
+   "page": 12,
+   "line": "Miscellaneous Field Tools 1,000 5 237 3 0 20 261"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "35HP 2WD Tractor",
+   "hoursUsedOnCrop": 100,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 7.66,
+   "insurancePerHr": 0.36,
+   "taxesPerHr": 0.52,
+   "repairsPerHr": 0.62,
+   "fuelPerHr": 2.98,
+   "totalOperatingPerHr": 3.6,
+   "totalCostPerHr": 12.14,
+   "page": 13,
+   "line": "05 35HP 2WD Tractor 100 7.66 0.36 0.52 0.62 2.98 3.60 12.14"
+  },
+  {
+   "description": "Bed Shaper Pipe 9'",
+   "hoursUsedOnCrop": 100,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.11,
+   "insurancePerHr": 0,
+   "taxesPerHr": 0.01,
+   "repairsPerHr": 0.01,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.01,
+   "totalCostPerHr": 0.13,
+   "page": 13,
+   "line": "05 Bed Shaper Pipe 9' 100 0.11 0.00 0.01 0.01 0.00 0.01 0.13"
+  },
+  {
+   "description": "Fertilizer Applicator",
+   "hoursUsedOnCrop": 60,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.74,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.05,
+   "repairsPerHr": 0.31,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.31,
+   "totalCostPerHr": 1.13,
+   "page": 13,
+   "line": "05 Fertilizer Applicator 60 0.74 0.03 0.05 0.31 0.00 0.31 1.13"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "hoursUsedOnCrop": 400,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 6.63,
+   "insurancePerHr": 0.21,
+   "taxesPerHr": 0.3,
+   "repairsPerHr": 2.08,
+   "fuelPerHr": 9.82,
+   "totalOperatingPerHr": 11.9,
+   "totalCostPerHr": 19.04,
+   "page": 13,
+   "line": "05 Pickup 1/2 Ton 400 6.63 0.21 0.30 2.08 9.82 11.90 19.04"
+  },
+  {
+   "description": "Planter Jr, 1-Bed, 2-Row",
+   "hoursUsedOnCrop": 150,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.54,
+   "insurancePerHr": 0.02,
+   "taxesPerHr": 0.03,
+   "repairsPerHr": 0.29,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.29,
+   "totalCostPerHr": 0.88,
+   "page": 13,
+   "line": "05 Planter Jr, 1-Bed, 2-Row 150 0.54 0.02 0.03 0.29 0.00 0.29 0.88"
+  },
+  {
+   "description": "Trailer 12x16",
+   "hoursUsedOnCrop": 150,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.55,
+   "insurancePerHr": 0.07,
+   "taxesPerHr": 0.09,
+   "repairsPerHr": 0.66,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.66,
+   "totalCostPerHr": 2.37,
+   "page": 13,
+   "line": "05 Trailer 12x16 150 1.55 0.07 0.09 0.66 0.00 0.66 2.37"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Land Rent",
+   "unitsPerFarm": 10,
+   "unit": "acre",
+   "pricePerUnit": 300,
+   "totalCost": 3000,
+   "page": 12,
+   "line": "Land Rent 10 acre 300.00 3,000"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 10,
+   "unit": "acre",
+   "pricePerUnit": 42.9,
+   "totalCost": 429,
+   "page": 12,
+   "line": "Liability Insurance 10 acre 42.90 429"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 10,
+   "unit": "acre",
+   "pricePerUnit": 10,
+   "totalCost": 100,
+   "page": 12,
+   "line": "Office Expense 10 acre 10.00 100"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 5,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 6,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 4,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   75,
+   193,
+   212,
+   113,
+   1648,
+   648,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "operatingPerAcre": [
+   22,
+   191,
+   210,
+   112,
+   1347,
+   647,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 2893,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 10,
+  "quote": "monthly table without a heading"
+ },
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "several costs-per-acre tables (establishment and production); using the production one",
+   "monthly table has no TABLE heading; parsed from the month header line"
+  ]
+ }
+}

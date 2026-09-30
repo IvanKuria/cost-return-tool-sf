@@ -16,6 +16,10 @@ export interface StudySource {
   indexPage: string;
   publisher: string;
   fetchedAt: string;
+  archived: boolean;          // listed on the archived index rather than the current one
+  indexYear: number | null;   // year as listed on the index page
+  /** The year (and month when stated) the study says its prices are for: "based on January 2024 figures". Null when not stated. */
+  priceYear: { value: number; month: number | null; page: number; quote: string } | null;
 }
 
 export interface Assumptions {

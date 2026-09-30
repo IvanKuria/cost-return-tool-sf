@@ -1,0 +1,536 @@
+{
+ "source": {
+  "id": "dates-dates-si-2005",
+  "commodity": "dates",
+  "title": "SAMPLE COSTS TO ESTABLISH A DATE PALM ORCHARD AND",
+  "year": 2005,
+  "region": "Southeast Interior",
+  "counties": "Farm Management, Southern California Peggy Mauk, UCCE Horticulture Farm Advisor, Riverside",
+  "description": "Coachella Valley",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b5/55/b5553ac8-9aaa-49e1-b617-8e87f0e55bf0/dates_si_2005.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/dates",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2005,
+  "priceYear": null
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 25,
+   "unit": "acres",
+   "page": 14,
+   "quote": "In this study, the cost of the farm shed/ building is approximated at $25,000 for a 25-acre farm."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": null,
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 10.5,
+   "unit": "$/hr",
+   "page": 11,
+   "quote": "Labor Costs: Wage rates for both owned and hired labor are estimated as $10.50 per hour for machine operator and $8.80 per hour for non-machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 8.8,
+   "unit": "$/hr",
+   "page": 11,
+   "quote": "Labor Costs: Wage rates for both owned and hired labor are estimated as $10.50 per hour for machine operator and $8.80 per hour for non-machine labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 2.55,
+   "unit": "$/gal",
+   "page": 11,
+   "quote": "According to the data from USDA- NASS, Prices for on-farm delivery of diesel and gasoline are $2.00 and $2.55 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.55,
+   "unit": "$/gal",
+   "page": 11,
+   "quote": "According to the data from USDA- NASS, Prices for on-farm delivery of diesel and gasoline are $2.00 and $2.55 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 16,
+   "quote": "The break-even price (Table 9) using the yield assumption of 13,056 pounds per acre in this study includes $0.36 for cash costs and $0.71 per pound for total costs (not including management)."
+  },
+  "priceStatement": {
+   "page": 14,
+   "quote": "Crop Returns: Our analysis is based upon the Deglet Noor variety in which case crop returns for establishment and production are estimated based on our yield estimate given on Table D and prices at $0.65 per pound for Grade A and B and $0.27 for Grade C."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": null,
+  "cashOverheadTotal": {
+   "value": 1185,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "TOTAL CASH OVERHEAD COSTS 1185"
+  },
+  "nonCashOverheadTotal": {
+   "value": 4565,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 4565"
+  },
+  "totalCost": null,
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [
+   {
+    "description": "Office Expenses",
+    "value": 200,
+    "page": 18,
+    "quote": "Office Expenses 200"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 17,
+    "page": 18,
+    "quote": "Liability Insurance 17"
+   },
+   {
+    "description": "Leaf Analysis",
+    "value": 10,
+    "page": 18,
+    "quote": "Leaf Analysis 10"
+   },
+   {
+    "description": "Field Sanitation",
+    "value": 17,
+    "page": 18,
+    "quote": "Field Sanitation 17"
+   },
+   {
+    "description": "Property Tax",
+    "value": 492,
+    "page": 18,
+    "quote": "Property Tax 492"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 344,
+    "page": 18,
+    "quote": "Property Insurance 344"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 52,
+    "page": 18,
+    "quote": "Investment Repairs 52"
+   },
+   {
+    "description": "Interest-Cash Overhead Costs",
+    "value": 53,
+    "page": 18,
+    "quote": "Interest-Cash Overhead Costs 53"
+   }
+  ],
+  "operations": []
+ },
+ "equipment": [
+  {
+   "description": "2005-2006 70 HP 4WD Tractor",
+   "yearCode": null,
+   "price": 36800,
+   "yearsLife": 15,
+   "salvageValue": 3696,
+   "capitalRecovery": 142,
+   "insurance": 202,
+   "taxes": 4040,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2005-2006 70 HP 4WD Tractor 36,800 15 3696 142 202 4040"
+  },
+  {
+   "description": "2005-2006 ATV 4WD",
+   "yearCode": null,
+   "price": 4500,
+   "yearsLife": 7,
+   "salvageValue": 760,
+   "capitalRecovery": 17,
+   "insurance": 25,
+   "taxes": 802,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2005-2006 ATV 4WD 4,500 7 760 17 25 802"
+  },
+  {
+   "description": "2005-2006 Disc-Offset 11'",
+   "yearCode": null,
+   "price": 10000,
+   "yearsLife": 10,
+   "salvageValue": 1300,
+   "capitalRecovery": 38,
+   "insurance": 55,
+   "taxes": 1393,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2005-2006 Disc-Offset 11' 10,000 10 1300 38 55 1393"
+  },
+  {
+   "description": "2005-2006 Herbie Sprayer",
+   "yearCode": null,
+   "price": 2000,
+   "yearsLife": 10,
+   "salvageValue": 260,
+   "capitalRecovery": 8,
+   "insurance": 11,
+   "taxes": 279,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2005-2006 Herbie Sprayer 2,000 10 260 8 11 279"
+  },
+  {
+   "description": "2005-2006 Seed Drill",
+   "yearCode": null,
+   "price": 7490,
+   "yearsLife": 10,
+   "salvageValue": 974,
+   "capitalRecovery": 29,
+   "insurance": 41,
+   "taxes": 1044,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2005-2006 Seed Drill 7,490 10 974 29 41 1044"
+  },
+  {
+   "description": "2005-2006 Spreader",
+   "yearCode": null,
+   "price": 569,
+   "yearsLife": 10,
+   "salvageValue": 74,
+   "capitalRecovery": 2,
+   "insurance": 3,
+   "taxes": 79,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2005-2006 Spreader 569 10 74 2 3 79"
+  },
+  {
+   "description": "2005-2006 Duster Sprayer",
+   "yearCode": null,
+   "price": 18000,
+   "yearsLife": 10,
+   "salvageValue": 2340,
+   "capitalRecovery": 69,
+   "insurance": 99,
+   "taxes": 2508,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2005-2006 Duster Sprayer 18,000 10 2340 69 99 2508"
+  },
+  {
+   "description": "Shop Buildings",
+   "yearCode": null,
+   "price": 25000,
+   "yearsLife": 50,
+   "salvageValue": 1642,
+   "capitalRecovery": 88,
+   "insurance": 125,
+   "taxes": 500,
+   "repairs": null,
+   "total": 2355,
+   "page": 22,
+   "line": "Shop Buildings 25,000 50 1642 88 125 500 2355"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 2000,
+   "yearsLife": 25,
+   "salvageValue": 160,
+   "capitalRecovery": 7,
+   "insurance": 10,
+   "taxes": 40,
+   "repairs": null,
+   "total": 217,
+   "page": 22,
+   "line": "Shop Tools 2,000 25 160 7 10 40 217"
+  },
+  {
+   "description": "Irrigation System",
+   "yearCode": null,
+   "price": 37500,
+   "yearsLife": 50,
+   "salvageValue": 2463,
+   "capitalRecovery": 131,
+   "insurance": 188,
+   "taxes": 750,
+   "repairs": null,
+   "total": 3532,
+   "page": 22,
+   "line": "Irrigation System 37,500 50 2463 131 188 750 3532"
+  },
+  {
+   "description": "Land Value",
+   "yearCode": null,
+   "price": 750000,
+   "yearsLife": 50,
+   "salvageValue": 46875,
+   "capitalRecovery": 5250,
+   "insurance": 7500,
+   "taxes": 0,
+   "repairs": null,
+   "total": 59625,
+   "page": 22,
+   "line": "Land Value 750,000 50 46875 5250 7500 0 59625"
+  },
+  {
+   "description": "Establishment (Trees)",
+   "yearCode": null,
+   "price": 840925,
+   "yearsLife": 41,
+   "salvageValue": 57332,
+   "capitalRecovery": 2943,
+   "insurance": 4205,
+   "taxes": 0,
+   "repairs": null,
+   "total": 64480,
+   "page": 22,
+   "line": "Establishment (Trees) 840,925 41 57332 2943 4205 0 64480"
+  }
+ ],
+ "investments": [],
+ "hourlyEquipment": [
+  {
+   "description": "2005-2006 70 HP 4WD Tractor 148.2",
+   "hoursUsedOnCrop": 14.96,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.57,
+   "insurancePerHr": 0.82,
+   "taxesPerHr": 1.39,
+   "repairsPerHr": 1.58,
+   "fuelPerHr": 7.91,
+   "totalOperatingPerHr": 9.49,
+   "totalCostPerHr": 25.84,
+   "page": 23,
+   "line": "2005-2006 70 HP 4WD Tractor 148.2 14.96 0.57 0.82 1.39 1.58 7.91 9.49 25.84"
+  },
+  {
+   "description": "2005-2006 ATV 4WD 68.3",
+   "hoursUsedOnCrop": 6.67,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.15,
+   "insurancePerHr": 0.22,
+   "taxesPerHr": 0.37,
+   "repairsPerHr": 0.34,
+   "fuelPerHr": 2.93,
+   "totalOperatingPerHr": 3.27,
+   "totalCostPerHr": 10.31,
+   "page": 23,
+   "line": "2005-2006 ATV 4WD 68.3 6.67 0.15 0.22 0.37 0.34 2.93 3.27 10.31"
+  },
+  {
+   "description": "2005-2006 Disc-Offset 11' 22.2",
+   "hoursUsedOnCrop": 35.05,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.04,
+   "insurancePerHr": 1.48,
+   "taxesPerHr": 2.52,
+   "repairsPerHr": 1.62,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 1.62,
+   "totalCostPerHr": 39.19,
+   "page": 23,
+   "line": "2005-2006 Disc-Offset 11' 22.2 35.05 1.04 1.48 2.52 1.62 0.00 1.62 39.19"
+  },
+  {
+   "description": "2005-2006 Herbie Sprayer 12.5",
+   "hoursUsedOnCrop": 12.48,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.37,
+   "insurancePerHr": 0.53,
+   "taxesPerHr": 0.9,
+   "repairsPerHr": 0.5,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.5,
+   "totalCostPerHr": 13.88,
+   "page": 23,
+   "line": "2005-2006 Herbie Sprayer 12.5 12.48 0.37 0.53 0.90 0.5 0.00 0.5 13.88"
+  },
+  {
+   "description": "2005-2006 Seed Drill 3.5",
+   "hoursUsedOnCrop": 166.9,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 4.94,
+   "insurancePerHr": 7.06,
+   "taxesPerHr": 12,
+   "repairsPerHr": 0.85,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.85,
+   "totalCostPerHr": 179.75,
+   "page": 23,
+   "line": "2005-2006 Seed Drill 3.5 166.90 4.94 7.06 12.00 0.85 0.00 0.85 179.75"
+  },
+  {
+   "description": "2005-2006 Spreader 37.5",
+   "hoursUsedOnCrop": 1.18,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.04,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.09,
+   "repairsPerHr": 0.22,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.22,
+   "totalCostPerHr": 1.49,
+   "page": 23,
+   "line": "2005-2006 Spreader 37.5 1.18 0.04 0.05 0.09 0.22 0.00 0.22 1.49"
+  },
+  {
+   "description": "2005-2006 Duster Sprayer 62.5",
+   "hoursUsedOnCrop": 22.46,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 0.67,
+   "insurancePerHr": 0.95,
+   "taxesPerHr": 1.62,
+   "repairsPerHr": 4.8,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 4.8,
+   "totalCostPerHr": 28.88,
+   "page": 23,
+   "line": "2005-2006 Duster Sprayer 62.5 22.46 0.67 0.95 1.62 4.8 0.00 4.8 28.88"
+  }
+ ],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 13,
+   "quote": "[(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)"
+  },
+  "salvageMethod": {
+   "page": 13,
+   "quote": "Salvage Value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   4,
+   360,
+   580,
+   490,
+   101,
+   447,
+   74,
+   943,
+   442,
+   283,
+   683,
+   264
+  ],
+  "operatingPerAcre": [
+   273,
+   356,
+   576,
+   0,
+   68,
+   0,
+   97,
+   443,
+   0,
+   70,
+   939,
+   168
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 4670,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC",
+   "JAN"
+  ],
+  "spansTwoYears": false,
+  "page": 21,
+  "quote": "Monthly Cash Costs Per Acre to Produce Dates in the Coachella Valley, Riverside County, 2005-2006"
+ },
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "acresFarmed",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "equipment",
+   "hourlyEquipment",
+   "capitalRecoveryFormula",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "operatingTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "investments",
+   "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "Table 2 found but no GROSS RETURNS block",
+   "a later costs table had no totals; used an earlier one",
+   "several costs-per-acre tables (establishment and production); using the production one",
+   "equipment row without a Total column: 2005-2006 70 HP 4WD Tractor",
+   "equipment row without a Total column: 2005-2006 ATV 4WD",
+   "equipment row without a Total column: 2005-2006 Disc-Offset 11'",
+   "equipment row without a Total column: 2005-2006 Herbie Sprayer",
+   "equipment row without a Total column: 2005-2006 Seed Drill",
+   "equipment row without a Total column: 2005-2006 Spreader",
+   "equipment row without a Total column: 2005-2006 Duster Sprayer"
+  ]
+ }
+}

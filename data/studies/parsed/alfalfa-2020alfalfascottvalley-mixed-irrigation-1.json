@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c4/36/c436fc40-8c6b-4ebb-97f6-e407160608bc/2020alfalfascottvalley-mixed_irrigation-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2020,
+  "priceYear": {
+   "value": 2020,
+   "month": 6,
+   "page": 2,
+   "quote": "Sample costs given for labor, materials, equipment and contract services are based on June 2020 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

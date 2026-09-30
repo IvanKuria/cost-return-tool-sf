@@ -1,0 +1,1210 @@
+{
+ "source": {
+  "id": "peppermint-oil-peppermintim2011",
+  "commodity": "peppermint-oil",
+  "title": "TO ESTABLISH A MINT STAND AND PRODUCE",
+  "year": 2011,
+  "region": "Intermountain",
+  "counties": "Siskiyou",
+  "description": "Establishment & Production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/98/24/9824704c-852f-49e2-9f0c-fc78c330d0d3/peppermintim2011.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peppermint-oil",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2011,
+  "priceYear": {
+   "value": 2011,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2011 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 140,
+   "unit": "acres",
+   "page": 8,
+   "quote": "The grower in this study rents 140 acres of which 135.4 are producing or planted acres and the grower pays $300 per rented acre to the landlord."
+  },
+  "acresCrop": {
+   "value": 60,
+   "unit": "acres",
+   "page": 9,
+   "quote": "Total land value shown in Table 7 is only for the 60 acres of owned land producing peppermint."
+  },
+  "yieldPerAcre": {
+   "value": 80,
+   "unit": "lb",
+   "page": 15,
+   "quote": "TOTAL GROSS RETURNS 80.00 lb 2,000"
+  },
+  "yieldUnit": "lb",
+  "pricePerUnit": {
+   "value": 25,
+   "unit": "$/lb",
+   "page": 15,
+   "quote": "Mint Oil 80.00 lb 25.00 2,000"
+  },
+  "returns": [
+   {
+    "name": "Mint Oil",
+    "quantity": 80,
+    "unit": "lb",
+    "price": 25,
+    "value": 2000,
+    "page": 15,
+    "quote": "Mint Oil 80.00 lb 25.00 2,000"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 15,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $15.00 for machine operators and $10.00 for non-machine field labor."
+  },
+  "laborNonMachineRate": {
+   "value": 10,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "The basic hourly wages are $15.00 for machine operators and $10.00 for non-machine field labor."
+  },
+  "laborOverheadPct": {
+   "value": 37,
+   "unit": "%",
+   "page": 6,
+   "quote": "Labor rates of $20.55 and $13.70 per hour for skilled machine operators and non-machine field labor respectively include payroll overhead of 37%."
+  },
+  "landRentPerAcre": {
+   "value": 300,
+   "unit": "$/acre/yr",
+   "page": 4,
+   "quote": "A rental price of $300 per acre is used in this study."
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.82,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.43 and $3.82 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.82,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $3.43 and $3.82 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 6,
+   "quote": "An estimated price of $25.00 per pound of peppermint oil is used in this study to determine potential profits/losses."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 1672,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL OPERATING COSTS/ACRE 17.10 272 90 26 794 475 1,672"
+  },
+  "cashOverheadTotal": {
+   "value": 355,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 355"
+  },
+  "nonCashOverheadTotal": {
+   "value": 563,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 3,210 563 563"
+  },
+  "totalCost": {
+   "value": 2590,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL COSTS/ACRE 2,590"
+  },
+  "grossReturns": {
+   "value": 2000,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "TOTAL GROSS RETURNS 80.00 lb 2,000"
+  },
+  "netReturnsAboveOperating": {
+   "value": 328,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 328"
+  },
+  "netReturnsAboveTotal": {
+   "value": -590,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "NET RETURNS ABOVE TOTAL COST -590"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Field Supervisor",
+    "value": 56,
+    "page": 14,
+    "quote": "Field Supervisor 56"
+   },
+   {
+    "description": "Office Expense",
+    "value": 12,
+    "page": 14,
+    "quote": "Office Expense 12"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 1,
+    "page": 14,
+    "quote": "Liability Insurance 1"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 12,
+    "page": 14,
+    "quote": "Property Taxes 12"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 10,
+    "page": 14,
+    "quote": "Property Insurance 10"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 5,
+    "page": 14,
+    "quote": "Investment Repairs 5"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Weed: Dormant (Diuron, Gramoxone, Goal)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 44,
+    "customRent": 9,
+    "totalCost": 53,
+    "page": 14,
+    "quote": "Weed: Dormant (Diuron, Gramoxone, Goal) 0.00 0 0 0 44 9 53"
+   },
+   {
+    "name": "Fertilize: Soil & Tissue Analysis",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 2,
+    "totalCost": 2,
+    "page": 14,
+    "quote": "Fertilize: Soil & Tissue Analysis 0.00 0 0 0 0 2 2"
+   },
+   {
+    "name": "Roll Plants/Field 2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.27,
+    "labor": 7,
+    "fuel": 7,
+    "lubeRepairs": 2,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 16,
+    "page": 14,
+    "quote": "Roll Plants/Field 2X 0.27 7 7 2 0 0 16"
+   },
+   {
+    "name": "Insect: Insect Scouting (6 months)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 8,
+    "totalCost": 8,
+    "page": 14,
+    "quote": "Insect: Insect Scouting (6 months) 0.00 0 0 0 0 8 8"
+   },
+   {
+    "name": "Irrigate: Water & Labor",
+    "category": "cultural",
+    "timeHrsPerAcre": 8.96,
+    "labor": 123,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 198,
+    "customRent": 0,
+    "totalCost": 321,
+    "page": 14,
+    "quote": "Irrigate: Water & Labor 8.96 123 0 0 198 0 321"
+   },
+   {
+    "name": "Fertilize: Grnd (21-0-0,46-0-0,16-20-0)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 104,
+    "customRent": 9,
+    "totalCost": 113,
+    "page": 14,
+    "quote": "Fertilize: Grnd (21-0-0,46-0-0,16-20-0) 0.00 0 0 0 104 9 113"
+   },
+   {
+    "name": "Fertilize: Chemigate (UN32,ThioSul) 3X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 129,
+    "customRent": 0,
+    "totalCost": 129,
+    "page": 14,
+    "quote": "Fertilize: Chemigate (UN32,ThioSul) 3X 0.00 0 0 0 129 0 129"
+   },
+   {
+    "name": "Weed: Air (Basagran, Stinger)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 61,
+    "customRent": 9,
+    "totalCost": 70,
+    "page": 14,
+    "quote": "Weed: Air (Basagran, Stinger) 0.00 0 0 0 61 9 70"
+   },
+   {
+    "name": "Insect: Mites (AgriMek) Air",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 94,
+    "customRent": 9,
+    "totalCost": 103,
+    "page": 14,
+    "quote": "Insect: Mites (AgriMek) Air 0.00 0 0 0 94 9 103"
+   },
+   {
+    "name": "Weed: Hand",
+    "category": "cultural",
+    "timeHrsPerAcre": 4,
+    "labor": 55,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 55,
+    "page": 14,
+    "quote": "Weed: Hand 4.00 55 0 0 0 0 55"
+   },
+   {
+    "name": "Insect: Mite (Acramite) Air",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 107,
+    "customRent": 9,
+    "totalCost": 116,
+    "page": 14,
+    "quote": "Insect: Mite (Acramite) Air 0.00 0 0 0 107 9 116"
+   },
+   {
+    "name": "Insect: Mint Root Borer (Coragen) Air",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 47,
+    "customRent": 9,
+    "totalCost": 56,
+    "page": 14,
+    "quote": "Insect: Mint Root Borer (Coragen) Air 0.00 0 0 0 47 9 56"
+   },
+   {
+    "name": "Recondition Stand 1X/4yr",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.17,
+    "labor": 11,
+    "fuel": 8,
+    "lubeRepairs": 3,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 22,
+    "page": 14,
+    "quote": "Recondition Stand 1X/4yr 0.17 11 8 3 0 0 22"
+   },
+   {
+    "name": "Pickup",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.8,
+    "labor": 20,
+    "fuel": 6,
+    "lubeRepairs": 2,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 28,
+    "page": 14,
+    "quote": "Pickup 0.80 20 6 2 0 0 28"
+   },
+   {
+    "name": "Remove and Reset Sprinklers",
+    "category": "harvest",
+    "timeHrsPerAcre": 1.28,
+    "labor": 18,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 18,
+    "page": 14,
+    "quote": "Remove and Reset Sprinklers 1.28 18 0 0 0 0 18"
+   },
+   {
+    "name": "Harvest & Distill Mint",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 404,
+    "totalCost": 404,
+    "page": 14,
+    "quote": "Harvest & Distill Mint 0.00 0 0 0 0 404 404"
+   },
+   {
+    "name": "Voluntary Assessments",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 10,
+    "customRent": 0,
+    "totalCost": 10,
+    "page": 14,
+    "quote": "Voluntary Assessments 0.00 0 0 0 10 0 10"
+   },
+   {
+    "name": "Mint Slug Disposal",
+    "category": "harvest",
+    "timeHrsPerAcre": 1.62,
+    "labor": 40,
+    "fuel": 69,
+    "lubeRepairs": 18,
+    "materials": 0,
+    "customRent": 7,
+    "totalCost": 134,
+    "page": 14,
+    "quote": "Mint Slug Disposal 1.62 40 69 18 0 7 134"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "120HP 4WD Tractor",
+   "yearCode": "11",
+   "price": 121658,
+   "yearsLife": 10,
+   "salvageValue": 35936,
+   "capitalRecovery": 12674,
+   "insurance": 611,
+   "taxes": 788,
+   "repairs": null,
+   "total": 14073,
+   "page": 19,
+   "line": "11 120HP 4WD Tractor 121,658 10 35,936 12,674 611 788 14,073"
+  },
+  {
+   "description": "185HP 4WD Tractor",
+   "yearCode": "11",
+   "price": 145586,
+   "yearsLife": 10,
+   "salvageValue": 43004,
+   "capitalRecovery": 15167,
+   "insurance": 731,
+   "taxes": 943,
+   "repairs": null,
+   "total": 16840,
+   "page": 19,
+   "line": "11 185HP 4WD Tractor 145,586 10 43,004 15,167 731 943 16,840"
+  },
+  {
+   "description": "240HP 4WD Tractor",
+   "yearCode": "11",
+   "price": 209983,
+   "yearsLife": 10,
+   "salvageValue": 62026,
+   "capitalRecovery": 21875,
+   "insurance": 1054,
+   "taxes": 1360,
+   "repairs": null,
+   "total": 24290,
+   "page": 19,
+   "line": "11 240HP 4WD Tractor 209,983 10 62,026 21,875 1,054 1,360 24,290"
+  },
+  {
+   "description": "Disc 22'",
+   "yearCode": "11",
+   "price": 44743,
+   "yearsLife": 10,
+   "salvageValue": 7912,
+   "capitalRecovery": 5088,
+   "insurance": 204,
+   "taxes": 263,
+   "repairs": null,
+   "total": 5555,
+   "page": 19,
+   "line": "11 Disc 22' 44,743 10 7,912 5,088 204 263 5,555"
+  },
+  {
+   "description": "Packer 23'",
+   "yearCode": "11",
+   "price": 5100,
+   "yearsLife": 10,
+   "salvageValue": 902,
+   "capitalRecovery": 580,
+   "insurance": 23,
+   "taxes": 30,
+   "repairs": null,
+   "total": 633,
+   "page": 19,
+   "line": "11 Packer 23' 5,100 10 902 580 23 30 633"
+  },
+  {
+   "description": "Pickup 1/2 ton",
+   "yearCode": "11",
+   "price": 28000,
+   "yearsLife": 5,
+   "salvageValue": 12549,
+   "capitalRecovery": 4140,
+   "insurance": 157,
+   "taxes": 203,
+   "repairs": null,
+   "total": 4500,
+   "page": 19,
+   "line": "11 Pickup 1/2 ton 28,000 5 12,549 4,140 157 203 4,500"
+  },
+  {
+   "description": "Ripper (Shank) 13'",
+   "yearCode": "11",
+   "price": 30411,
+   "yearsLife": 10,
+   "salvageValue": 5378,
+   "capitalRecovery": 3458,
+   "insurance": 139,
+   "taxes": 179,
+   "repairs": null,
+   "total": 3776,
+   "page": 19,
+   "line": "11 Ripper (Shank) 13' 30,411 10 5,378 3,458 139 179 3,776"
+  },
+  {
+   "description": "Roller(H20Fill)12'",
+   "yearCode": "11",
+   "price": 4000,
+   "yearsLife": 10,
+   "salvageValue": 707,
+   "capitalRecovery": 455,
+   "insurance": 18,
+   "taxes": 24,
+   "repairs": null,
+   "total": 497,
+   "page": 19,
+   "line": "11 Roller(H20Fill)12' 4,000 10 707 455 18 24 497"
+  },
+  {
+   "description": "Rototiller",
+   "yearCode": "11",
+   "price": 20000,
+   "yearsLife": 10,
+   "salvageValue": 3537,
+   "capitalRecovery": 2274,
+   "insurance": 91,
+   "taxes": 118,
+   "repairs": null,
+   "total": 2483,
+   "page": 19,
+   "line": "11 Rototiller 20,000 10 3,537 2,274 91 118 2,483"
+  },
+  {
+   "description": "Roller-packer 13'",
+   "yearCode": "11",
+   "price": 7640,
+   "yearsLife": 10,
+   "salvageValue": 1351,
+   "capitalRecovery": 869,
+   "insurance": 35,
+   "taxes": 45,
+   "repairs": null,
+   "total": 949,
+   "page": 19,
+   "line": "11 Roller-packer 13' 7,640 10 1,351 869 35 45 949"
+  },
+  {
+   "description": "Roller-packer 14'",
+   "yearCode": "11",
+   "price": 8228,
+   "yearsLife": 10,
+   "salvageValue": 1455,
+   "capitalRecovery": 936,
+   "insurance": 38,
+   "taxes": 48,
+   "repairs": null,
+   "total": 1022,
+   "page": 19,
+   "line": "11 Roller-packer 14' 8,228 10 1,455 936 38 48 1,022"
+  },
+  {
+   "description": "140HP 4WD Tractor",
+   "yearCode": "11",
+   "price": 139582,
+   "yearsLife": 10,
+   "salvageValue": 41230,
+   "capitalRecovery": 14541,
+   "insurance": 701,
+   "taxes": 904,
+   "repairs": null,
+   "total": 16146,
+   "page": 19,
+   "line": "11 140HP 4WD Tractor 139,582 10 41,230 14,541 701 904 16,146"
+  },
+  {
+   "description": "250HP Cat 966 Loader",
+   "yearCode": "11",
+   "price": 195000,
+   "yearsLife": 10,
+   "salvageValue": 57600,
+   "capitalRecovery": 20315,
+   "insurance": 979,
+   "taxes": 1263,
+   "repairs": null,
+   "total": 22556,
+   "page": 19,
+   "line": "11 250HP Cat 966 Loader 195,000 10 57,600 20,315 979 1,263 22,556"
+  },
+  {
+   "description": "Grain Drill 11'",
+   "yearCode": "11",
+   "price": 17285,
+   "yearsLife": 10,
+   "salvageValue": 3057,
+   "capitalRecovery": 1966,
+   "insurance": 79,
+   "taxes": 102,
+   "repairs": null,
+   "total": 2146,
+   "page": 19,
+   "line": "11 Grain Drill 11' 17,285 10 3,057 1,966 79 102 2,146"
+  },
+  {
+   "description": "Planter-Mint 9'",
+   "yearCode": "11",
+   "price": 29900,
+   "yearsLife": 10,
+   "salvageValue": 5288,
+   "capitalRecovery": 3400,
+   "insurance": 136,
+   "taxes": 176,
+   "repairs": null,
+   "total": 3712,
+   "page": 19,
+   "line": "11 Planter-Mint 9' 29,900 10 5,288 3,400 136 176 3,712"
+  },
+  {
+   "description": "Water Wagon",
+   "yearCode": "11",
+   "price": 7050,
+   "yearsLife": 15,
+   "salvageValue": 677,
+   "capitalRecovery": 636,
+   "insurance": 30,
+   "taxes": 39,
+   "repairs": null,
+   "total": 704,
+   "page": 19,
+   "line": "11 Water Wagon 7,050 15 677 636 30 39 704"
+  },
+  {
+   "description": "Loader: front end",
+   "yearCode": "11",
+   "price": 5000,
+   "yearsLife": 20,
+   "salvageValue": 261,
+   "capitalRecovery": 385,
+   "insurance": 20,
+   "taxes": 26,
+   "repairs": null,
+   "total": 431,
+   "page": 19,
+   "line": "11 Loader: front end 5,000 20 261 385 20 26 431"
+  },
+  {
+   "description": "Truck: Dump",
+   "yearCode": "11",
+   "price": 53000,
+   "yearsLife": 10,
+   "salvageValue": 15655,
+   "capitalRecovery": 5521,
+   "insurance": 266,
+   "taxes": 343,
+   "repairs": null,
+   "total": 6131,
+   "page": 19,
+   "line": "11 Truck: Dump 53,000 10 15,655 5,521 266 343 6,131"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Buildings",
+   "yearCode": null,
+   "price": 85052,
+   "yearsLife": 25,
+   "salvageValue": 8505,
+   "capitalRecovery": 5700,
+   "insurance": 363,
+   "taxes": 468,
+   "repairs": 1707,
+   "total": 8237,
+   "page": 19,
+   "line": "Buildings 85,052 25 8,505 5,700 363 468 1,707 8,237"
+  },
+  {
+   "description": "Establishment Mint",
+   "yearCode": null,
+   "price": 318308,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 89246,
+   "insurance": 0,
+   "taxes": 0,
+   "repairs": 0,
+   "total": 89246,
+   "page": 19,
+   "line": "Establishment Mint 318,308 4 0 89,246 0 0 0 89,246"
+  },
+  {
+   "description": "Fuel Tanks & Pumps",
+   "yearCode": null,
+   "price": 25867,
+   "yearsLife": 20,
+   "salvageValue": 2587,
+   "capitalRecovery": 1952,
+   "insurance": 110,
+   "taxes": 142,
+   "repairs": 517,
+   "total": 2721,
+   "page": 19,
+   "line": "Fuel Tanks & Pumps 25,867 20 2,587 1,952 110 142 517 2,721"
+  },
+  {
+   "description": "Fuel Wagon",
+   "yearCode": null,
+   "price": 2840,
+   "yearsLife": 10,
+   "salvageValue": 284,
+   "capitalRecovery": 341,
+   "insurance": 12,
+   "taxes": 16,
+   "repairs": 56,
+   "total": 424,
+   "page": 19,
+   "line": "Fuel Wagon 2,840 10 284 341 12 16 56 424"
+  },
+  {
+   "description": "Land (60 ac)",
+   "yearCode": null,
+   "price": 210000,
+   "yearsLife": 20,
+   "salvageValue": 210000,
+   "capitalRecovery": 9975,
+   "insurance": 1628,
+   "taxes": 2100,
+   "repairs": 0,
+   "total": 13703,
+   "page": 19,
+   "line": "Land (60 ac) 210,000 20 210,000 9,975 1,628 2,100 0 13,703"
+  },
+  {
+   "description": "Pipe Trailers(5)",
+   "yearCode": null,
+   "price": 21500,
+   "yearsLife": 10,
+   "salvageValue": 2150,
+   "capitalRecovery": 2578,
+   "insurance": 92,
+   "taxes": 118,
+   "repairs": 430,
+   "total": 3218,
+   "page": 19,
+   "line": "Pipe Trailers(5) 21,500 10 2,150 2,578 92 118 430 3,218"
+  },
+  {
+   "description": "Portable Pumps (2)",
+   "yearCode": null,
+   "price": 22010,
+   "yearsLife": 20,
+   "salvageValue": 2201,
+   "capitalRecovery": 1661,
+   "insurance": 94,
+   "taxes": 121,
+   "repairs": 440,
+   "total": 2315,
+   "page": 19,
+   "line": "Portable Pumps (2) 22,010 20 2,201 1,661 94 121 440 2,315"
+  },
+  {
+   "description": "Shop/Field Tools",
+   "yearCode": null,
+   "price": 17047,
+   "yearsLife": 20,
+   "salvageValue": 1704,
+   "capitalRecovery": 1286,
+   "insurance": 73,
+   "taxes": 94,
+   "repairs": 340,
+   "total": 1793,
+   "page": 19,
+   "line": "Shop/Field Tools 17,047 20 1,704 1,286 73 94 340 1,793"
+  },
+  {
+   "description": "Wheel Lines (146ac)",
+   "yearCode": null,
+   "price": 25550,
+   "yearsLife": 10,
+   "salvageValue": 0,
+   "capitalRecovery": 3269,
+   "insurance": 102,
+   "taxes": 128,
+   "repairs": 511,
+   "total": 4010,
+   "page": 19,
+   "line": "Wheel Lines (146ac) 25,550 10 0 3,269 102 128 511 4,010"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "120HP 4WD Tractor",
+   "hoursUsedOnCrop": 58,
+   "totalHours": 1600,
+   "capitalRecoveryPerHr": 4.75,
+   "insurancePerHr": 0.23,
+   "taxesPerHr": 0.3,
+   "repairsPerHr": 6.82,
+   "fuelPerHr": 23.89,
+   "totalOperatingPerHr": 30.71,
+   "totalCostPerHr": 35.98,
+   "page": 20,
+   "line": "11 120HP 4WD Tractor 58.00 1,600.00 4.75 0.23 0.30 6.82 23.89 30.71 35.98"
+  },
+  {
+   "description": "185HP 4WD Tractor",
+   "hoursUsedOnCrop": 20,
+   "totalHours": 1600,
+   "capitalRecoveryPerHr": 5.69,
+   "insurancePerHr": 0.27,
+   "taxesPerHr": 0.35,
+   "repairsPerHr": 9.4,
+   "fuelPerHr": 36.83,
+   "totalOperatingPerHr": 46.22,
+   "totalCostPerHr": 52.54,
+   "page": 20,
+   "line": "11 185HP 4WD Tractor 20.00 1,600.00 5.69 0.27 0.35 9.40 36.83 46.22 52.54"
+  },
+  {
+   "description": "240HP 4WD Tractor",
+   "hoursUsedOnCrop": 16,
+   "totalHours": 174,
+   "capitalRecoveryPerHr": 75.42,
+   "insurancePerHr": 3.63,
+   "taxesPerHr": 4.69,
+   "repairsPerHr": 58.52,
+   "fuelPerHr": 47.78,
+   "totalOperatingPerHr": 106.3,
+   "totalCostPerHr": 190.04,
+   "page": 20,
+   "line": "11 240HP 4WD Tractor 16.00 174.00 75.42 3.63 4.69 58.52 47.78 106.30 190.04"
+  },
+  {
+   "description": "Disc 22'",
+   "hoursUsedOnCrop": 5,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 15.28,
+   "insurancePerHr": 0.61,
+   "taxesPerHr": 0.79,
+   "repairsPerHr": 7.39,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 7.39,
+   "totalCostPerHr": 24.07,
+   "page": 20,
+   "line": "11 Disc 22' 5.00 200.00 15.28 0.61 0.79 7.39 0.00 7.39 24.07"
+  },
+  {
+   "description": "Packer 23'",
+   "hoursUsedOnCrop": 5,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 1.74,
+   "insurancePerHr": 0.07,
+   "taxesPerHr": 0.09,
+   "repairsPerHr": 0.59,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.59,
+   "totalCostPerHr": 2.49,
+   "page": 20,
+   "line": "11 Packer 23' 5.00 200.00 1.74 0.07 0.09 0.59 0.00 0.59 2.49"
+  },
+  {
+   "description": "Pickup 1/2 ton",
+   "hoursUsedOnCrop": 156,
+   "totalHours": 333,
+   "capitalRecoveryPerHr": 7.46,
+   "insurancePerHr": 0.28,
+   "taxesPerHr": 0.37,
+   "repairsPerHr": 3.09,
+   "fuelPerHr": 7.64,
+   "totalOperatingPerHr": 10.73,
+   "totalCostPerHr": 18.84,
+   "page": 20,
+   "line": "11 Pickup 1/2 ton 156.00 333.00 7.46 0.28 0.37 3.09 7.64 10.73 18.84"
+  },
+  {
+   "description": "Ripper (Shank) 13'",
+   "hoursUsedOnCrop": 15,
+   "totalHours": 201,
+   "capitalRecoveryPerHr": 10.34,
+   "insurancePerHr": 0.41,
+   "taxesPerHr": 0.54,
+   "repairsPerHr": 6.92,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 6.92,
+   "totalCostPerHr": 18.22,
+   "page": 20,
+   "line": "11 Ripper (Shank) 13' 15.00 201.00 10.34 0.41 0.54 6.92 0.00 6.92 18.22"
+  },
+  {
+   "description": "Roller(H20Fill)12'",
+   "hoursUsedOnCrop": 53,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 1.37,
+   "insurancePerHr": 0.05,
+   "taxesPerHr": 0.07,
+   "repairsPerHr": 0.46,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.46,
+   "totalCostPerHr": 1.95,
+   "page": 20,
+   "line": "11 Roller(H20Fill)12' 53.00 200.00 1.37 0.05 0.07 0.46 0.00 0.46 1.95"
+  },
+  {
+   "description": "Rototiller",
+   "hoursUsedOnCrop": 13,
+   "totalHours": 150,
+   "capitalRecoveryPerHr": 9.09,
+   "insurancePerHr": 0.36,
+   "taxesPerHr": 0.47,
+   "repairsPerHr": 5.98,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 5.98,
+   "totalCostPerHr": 15.9,
+   "page": 20,
+   "line": "11 Rototiller 13.00 150.00 9.09 0.36 0.47 5.98 0.00 5.98 15.90"
+  },
+  {
+   "description": "Roller-packer 13'",
+   "hoursUsedOnCrop": 15,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 2.61,
+   "insurancePerHr": 0.1,
+   "taxesPerHr": 0.13,
+   "repairsPerHr": 0.88,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.88,
+   "totalCostPerHr": 3.72,
+   "page": 20,
+   "line": "11 Roller-packer 13' 15.00 200.00 2.61 0.10 0.13 0.88 0.00 0.88 3.72"
+  },
+  {
+   "description": "Roller-packer 14'",
+   "hoursUsedOnCrop": 13,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 2.81,
+   "insurancePerHr": 0.11,
+   "taxesPerHr": 0.15,
+   "repairsPerHr": 0.94,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.94,
+   "totalCostPerHr": 4.01,
+   "page": 20,
+   "line": "11 Roller-packer 14' 13.00 200.00 2.81 0.11 0.15 0.94 0.00 0.94 4.01"
+  },
+  {
+   "description": "140HP 4WD Tractor",
+   "hoursUsedOnCrop": 174,
+   "totalHours": 1600,
+   "capitalRecoveryPerHr": 5.45,
+   "insurancePerHr": 0.26,
+   "taxesPerHr": 0.34,
+   "repairsPerHr": 7.89,
+   "fuelPerHr": 27.87,
+   "totalOperatingPerHr": 35.76,
+   "totalCostPerHr": 41.82,
+   "page": 20,
+   "line": "11 140HP 4WD Tractor 174.00 1,600.00 5.45 0.26 0.34 7.89 27.87 35.76 41.82"
+  },
+  {
+   "description": "250HP Cat 966 Loader",
+   "hoursUsedOnCrop": 174,
+   "totalHours": 1600,
+   "capitalRecoveryPerHr": 7.62,
+   "insurancePerHr": 0.37,
+   "taxesPerHr": 0.47,
+   "repairsPerHr": 12.65,
+   "fuelPerHr": 49.7,
+   "totalOperatingPerHr": 62.42,
+   "totalCostPerHr": 70.88,
+   "page": 20,
+   "line": "11 250HP Cat 966 Loader 174.00 1,600.00 7.62 0.37 0.47 12.65 49.70 62.42 70.88"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Field Supervisor",
+   "unitsPerFarm": 1500,
+   "unit": "acre",
+   "pricePerUnit": 55.44,
+   "totalCost": 83160,
+   "page": 19,
+   "line": "Field Supervisor 1,500.00 acre 55.44 83,160"
+  },
+  {
+   "description": "Land Rent 140ac",
+   "unitsPerFarm": 140,
+   "unit": "acre",
+   "pricePerUnit": 300,
+   "totalCost": 42000,
+   "page": 19,
+   "line": "Land Rent 140ac 140.00 acre 300.00 42,000"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 1500,
+   "unit": "acre",
+   "pricePerUnit": 12,
+   "totalCost": 18000,
+   "page": 19,
+   "line": "Office Expense 1,500.00 acre 12.00 18,000"
+  },
+  {
+   "description": "Pipe Rent 49ac Solid Set",
+   "unitsPerFarm": 49,
+   "unit": "acre",
+   "pricePerUnit": 175,
+   "totalCost": 8575,
+   "page": 19,
+   "line": "Pipe Rent 49ac Solid Set 49.00 acre 175.00 8,575"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 1500,
+   "unit": "acre",
+   "pricePerUnit": 0.95,
+   "totalCost": 1425,
+   "page": 19,
+   "line": "Liability Insurance 1,500.00 acre 0.95 1,425"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 1 and 3 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair. 2011 Peppermint Costs and Returns Study Intermountain Region UC Cooperative Extension 6"
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   12,
+   14,
+   17,
+   83,
+   174,
+   278,
+   277,
+   554,
+   256,
+   273,
+   71,
+   19
+  ],
+  "operatingPerAcre": [
+   3,
+   5,
+   3,
+   66,
+   164,
+   268,
+   267,
+   544,
+   246,
+   48,
+   56,
+   3
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 2027,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "NOV",
+   "DEC",
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT"
+  ],
+  "spansTwoYears": false,
+  "page": 17,
+  "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE PEPPERMINT"
+ },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 3132,
+    "returns": null,
+    "netCost": 3132,
+    "accumulated": null,
+    "page": 11,
+    "quote": "TOTAL CASH COSTS/ACRE 3,132"
+   },
+   {
+    "year": 1,
+    "label": "1",
+    "totalCost": 3132,
+    "returns": null,
+    "netCost": 3132,
+    "accumulated": null,
+    "page": 13,
+    "quote": "TOTAL CASH COSTS/ACRE 3,132"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": {
+   "value": 4,
+   "page": 9,
+   "quote": "Establishment cost is amortized over the remaining 4 years that the mint stand is assumed to be in production."
+  },
+  "plantingLife": {
+   "value": 5,
+   "page": 4,
+   "quote": "The peppermint stand life is assumed to be 5 years including the establishment year."
+  },
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 1.35,
+   "page": 11,
+   "quote": "Irrigate: Remove Sprinklers 1.35 19 0 0 0 0 19",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 318308,
+   "yearsLife": 4,
+   "salvageValue": 0,
+   "capitalRecovery": 89246,
+   "page": 19,
+   "line": "Establishment Mint 318,308 4 0 89,246 0 0 0 89,246"
+  },
+  "method": {
+   "page": 9,
+   "quote": "Establishment cost is amortized over the remaining 4 years that the mint stand is assumed to be in production."
+  }
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly",
+   "establishment"
+  ],
+  "fieldsMissing": [
+   "interestRatePct",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": []
+ }
+}

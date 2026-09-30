@@ -1,0 +1,1064 @@
+{
+ "source": {
+  "id": "grapes-wine-grapewinesv2013",
+  "commodity": "grapes–wine",
+  "title": "SAMPLE COSTS\u0003\u0003",
+  "year": 2013,
+  "region": "Sacramento Valley Yolo, Sacramento",
+  "counties": "Chardonnay Variety Sacramento Valley SACRAMENTO RIVER DELTA Sacramento and Yolo",
+  "description": "Sacramento River Delta, District 17, Chardonnay, Establish and production",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/42/a7/42a7ee28-6775-426d-9e93-e621128aeb5d/grapewinesv2013.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–wine",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2013,
+  "priceYear": {
+   "value": 2013,
+   "month": null,
+   "page": 2,
+   "quote": "The sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2013 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 135,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The 200 contiguous acre farm consists of 135 acres of producing vineyards, 60 acres of wine grapes being established that are the basis of this study, and five acres occupied by roads, irrigation systems, and farmstead."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": {
+   "value": 7,
+   "unit": "ton",
+   "page": 15,
+   "quote": "TOTAL GROSS RETURNS 7.00 ton 3,850"
+  },
+  "yieldUnit": "ton",
+  "pricePerUnit": {
+   "value": 550,
+   "unit": "$/ton",
+   "page": 15,
+   "quote": "WINE GRAPES 7.00 ton 550.00 3,850"
+  },
+  "returns": [
+   {
+    "name": "WINE GRAPES",
+    "quantity": 7,
+    "unit": "ton",
+    "price": 550,
+    "value": 3850,
+    "page": 15,
+    "quote": "WINE GRAPES 7.00 ton 550.00 3,850"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": null,
+  "fuelPriceGas": null,
+  "yieldStatement": {
+   "page": 7,
+   "quote": "Annual Returns for Chardonnay, District 17 An assumed average yield of 7 tons per acre over the $/Ton Base Price* remaining life of the vineyard is used to calculate returns in Range Weighted the production years."
+  },
+  "priceStatement": {
+   "page": 7,
+   "quote": "The lowest price in the last *Final Grape Crush Report 2008-2011 **Preliminary Report five years is $150 per ton while the high is $5,000; the average weighted price for Chardonnay is $553 per ton."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 2428,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL OPERATING COSTS/ACRE 89.00 1,123 120 48 588 501 2,428"
+  },
+  "cashOverheadTotal": {
+   "value": 650,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 650"
+  },
+  "nonCashOverheadTotal": {
+   "value": 1809,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 27,463 1,809 1,809"
+  },
+  "totalCost": {
+   "value": 4887,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL COSTS/ACRE 4,887"
+  },
+  "grossReturns": {
+   "value": 3850,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "TOTAL GROSS RETURNS 7.00 ton 3,850"
+  },
+  "netReturnsAboveOperating": {
+   "value": 1422,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 1,422"
+  },
+  "netReturnsAboveTotal": {
+   "value": -1037,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "NET RETURNS ABOVE TOTAL COST -1,037"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Crop Insurance",
+    "value": 81,
+    "page": 14,
+    "quote": "Crop Insurance 81"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 4,
+    "page": 14,
+    "quote": "Liability Insurance 4"
+   },
+   {
+    "description": "Office Expense",
+    "value": 155,
+    "page": 14,
+    "quote": "Office Expense 155"
+   },
+   {
+    "description": "Reclamation Fee",
+    "value": 20,
+    "page": 14,
+    "quote": "Reclamation Fee 20"
+   },
+   {
+    "description": "Sanitation Fees",
+    "value": 71,
+    "page": 14,
+    "quote": "Sanitation Fees 71"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 191,
+    "page": 14,
+    "quote": "Property Taxes 191"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 64,
+    "page": 14,
+    "quote": "Property Insurance 64"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 63,
+    "page": 14,
+    "quote": "Investment Repairs 63"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Weed-Winter Strip (Surflan)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.47,
+    "labor": 9,
+    "fuel": 1,
+    "lubeRepairs": 1,
+    "materials": 33,
+    "customRent": 0,
+    "totalCost": 44,
+    "page": 14,
+    "quote": "Weed-Winter Strip (Surflan) 0.47 9 1 1 33 0 44"
+   },
+   {
+    "name": "Prune",
+    "category": "cultural",
+    "timeHrsPerAcre": 16.58,
+    "labor": 200,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 200,
+    "page": 14,
+    "quote": "Prune 16.58 200 0 0 0 0 200"
+   },
+   {
+    "name": "Weed - Disc 4X",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.59,
+    "labor": 29,
+    "fuel": 23,
+    "lubeRepairs": 10,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 62,
+    "page": 14,
+    "quote": "Weed - Disc 4X 1.59 29 23 10 0 0 62"
+   },
+   {
+    "name": "Winter Tie",
+    "category": "cultural",
+    "timeHrsPerAcre": 8.83,
+    "labor": 106,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 45,
+    "customRent": 0,
+    "totalCost": 151,
+    "page": 14,
+    "quote": "Winter Tie 8.83 106 0 0 45 0 151"
+   },
+   {
+    "name": "Disease-Mildew/Phomopsis (Thiolux Champ)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.39,
+    "labor": 7,
+    "fuel": 7,
+    "lubeRepairs": 3,
+    "materials": 21,
+    "customRent": 0,
+    "totalCost": 38,
+    "page": 14,
+    "quote": "Disease-Mildew/Phomopsis (Thiolux Champ) 0.39 7 7 3 21 0 38"
+   },
+   {
+    "name": "Disease-Mildew Sulfur 10X",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.47,
+    "labor": 27,
+    "fuel": 21,
+    "lubeRepairs": 6,
+    "materials": 39,
+    "customRent": 0,
+    "totalCost": 94,
+    "page": 14,
+    "quote": "Disease-Mildew Sulfur 10X 1.47 27 21 6 39 0 94"
+   },
+   {
+    "name": "Disease-Mildew (Quintec) 2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.78,
+    "labor": 15,
+    "fuel": 13,
+    "lubeRepairs": 6,
+    "materials": 62,
+    "customRent": 0,
+    "totalCost": 95,
+    "page": 14,
+    "quote": "Disease-Mildew (Quintec) 2X 0.78 15 13 6 62 0 95"
+   },
+   {
+    "name": "Trunk Suckering",
+    "category": "cultural",
+    "timeHrsPerAcre": 5.5,
+    "labor": 66,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 66,
+    "page": 14,
+    "quote": "Trunk Suckering 5.50 66 0 0 0 0 66"
+   },
+   {
+    "name": "Shoot Removal/Positioning",
+    "category": "cultural",
+    "timeHrsPerAcre": 16.5,
+    "labor": 199,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 199,
+    "page": 14,
+    "quote": "Shoot Removal/Positioning 16.50 199 0 0 0 0 199"
+   },
+   {
+    "name": "Irrigate",
+    "category": "cultural",
+    "timeHrsPerAcre": 5.5,
+    "labor": 66,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 34,
+    "customRent": 0,
+    "totalCost": 101,
+    "page": 14,
+    "quote": "Irrigate 5.50 66 0 0 34 0 101"
+   },
+   {
+    "name": "Fertilize N w/irrigation 5X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 32,
+    "customRent": 0,
+    "totalCost": 32,
+    "page": 14,
+    "quote": "Fertilize N w/irrigation 5X 0.00 0 0 0 32 0 32"
+   },
+   {
+    "name": "Weed-Spray25%VineRows3X Rndup",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.42,
+    "labor": 26,
+    "fuel": 4,
+    "lubeRepairs": 2,
+    "materials": 19,
+    "customRent": 0,
+    "totalCost": 51,
+    "page": 14,
+    "quote": "Weed-Spray25%VineRows3X Rndup 1.42 26 4 2 19 0 51"
+   },
+   {
+    "name": "Fertilize K w/irrigation 4X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 90,
+    "customRent": 0,
+    "totalCost": 90,
+    "page": 14,
+    "quote": "Fertilize K w/irrigation 4X 0.00 0 0 0 90 0 90"
+   },
+   {
+    "name": "Disease-Mildew (Sovran) 2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.78,
+    "labor": 15,
+    "fuel": 13,
+    "lubeRepairs": 6,
+    "materials": 48,
+    "customRent": 0,
+    "totalCost": 81,
+    "page": 14,
+    "quote": "Disease-Mildew (Sovran) 2X 0.78 15 13 6 48 0 81"
+   },
+   {
+    "name": "Green Tie(Sucker Tie Train)2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 8,
+    "labor": 96,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 90,
+    "customRent": 0,
+    "totalCost": 186,
+    "page": 14,
+    "quote": "Green Tie(Sucker Tie Train)2X 8.00 96 0 0 90 0 186"
+   },
+   {
+    "name": "Leaf Removal (hand)",
+    "category": "cultural",
+    "timeHrsPerAcre": 16.5,
+    "labor": 176,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 176,
+    "page": 14,
+    "quote": "Leaf Removal (hand) 16.50 176 0 0 0 0 176"
+   },
+   {
+    "name": "Trim Vines (mechanical)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.69,
+    "labor": 13,
+    "fuel": 10,
+    "lubeRepairs": 6,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 28,
+    "page": 14,
+    "quote": "Trim Vines (mechanical) 0.69 13 10 6 0 0 28"
+   },
+   {
+    "name": "Pest - Mites (AgriMek)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.29,
+    "labor": 5,
+    "fuel": 5,
+    "lubeRepairs": 2,
+    "materials": 24,
+    "customRent": 0,
+    "totalCost": 36,
+    "page": 14,
+    "quote": "Pest - Mites (AgriMek) 0.29 5 5 2 24 0 36"
+   },
+   {
+    "name": "Irrigate",
+    "category": "cultural",
+    "timeHrsPerAcre": 1.1,
+    "labor": 13,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 8,
+    "customRent": 0,
+    "totalCost": 21,
+    "page": 14,
+    "quote": "Irrigate 1.10 13 0 0 8 0 21"
+   },
+   {
+    "name": "PCA/Irrigation Monitoring Fees",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 55,
+    "totalCost": 55,
+    "page": 14,
+    "quote": "PCA/Irrigation Monitoring Fees 0.00 0 0 0 0 55 55"
+   },
+   {
+    "name": "Fertilize - Gypsum",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 33,
+    "customRent": 0,
+    "totalCost": 33,
+    "page": 14,
+    "quote": "Fertilize - Gypsum 0.00 0 0 0 33 0 33"
+   },
+   {
+    "name": "Pickup Truck Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 2.05,
+    "labor": 38,
+    "fuel": 21,
+    "lubeRepairs": 7,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 66,
+    "page": 14,
+    "quote": "Pickup Truck Use 2.05 38 21 7 0 0 66"
+   },
+   {
+    "name": "ATV Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.86,
+    "labor": 16,
+    "fuel": 2,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 19,
+    "page": 14,
+    "quote": "ATV Use 0.86 16 2 1 0 0 19"
+   },
+   {
+    "name": "Machine Harvest Fruit",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 320,
+    "totalCost": 320,
+    "page": 14,
+    "quote": "Machine Harvest Fruit 0.00 0 0 0 0 320 320"
+   },
+   {
+    "name": "Haul To Crusher",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 126,
+    "totalCost": 126,
+    "page": 14,
+    "quote": "Haul To Crusher 0.00 0 0 0 0 126 126"
+   },
+   {
+    "name": "Assessments",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 10,
+    "customRent": 0,
+    "totalCost": 10,
+    "page": 14,
+    "quote": "Assessments 0.00 0 0 0 10 0 10"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "ATV 4WD",
+   "yearCode": "13",
+   "price": 7700,
+   "yearsLife": 5,
+   "salvageValue": 3451,
+   "capitalRecovery": 1139,
+   "insurance": 46,
+   "taxes": 56,
+   "repairs": null,
+   "total": 1240,
+   "page": 19,
+   "line": "13 ATV 4WD 7,700 5 3,451 1,139 46 56 1,240"
+  },
+  {
+   "description": "Disc - Tandem 7'",
+   "yearCode": "13",
+   "price": 8500,
+   "yearsLife": 8,
+   "salvageValue": 1919,
+   "capitalRecovery": 1099,
+   "insurance": 43,
+   "taxes": 52,
+   "repairs": null,
+   "total": 1194,
+   "page": 19,
+   "line": "13 Disc - Tandem 7' 8,500 8 1,919 1,099 43 52 1,194"
+  },
+  {
+   "description": "Duster - 3 Pt",
+   "yearCode": "13",
+   "price": 6000,
+   "yearsLife": 10,
+   "salvageValue": 1061,
+   "capitalRecovery": 682,
+   "insurance": 29,
+   "taxes": 35,
+   "repairs": null,
+   "total": 746,
+   "page": 19,
+   "line": "13 Duster - 3 Pt 6,000 10 1,061 682 29 35 746"
+  },
+  {
+   "description": "Orchard/Vine Sprayer 500 gal",
+   "yearCode": "13",
+   "price": 24000,
+   "yearsLife": 10,
+   "salvageValue": 4244,
+   "capitalRecovery": 2729,
+   "insurance": 115,
+   "taxes": 141,
+   "repairs": null,
+   "total": 2986,
+   "page": 19,
+   "line": "13 Orchard/Vine Sprayer 500 gal 24,000 10 4,244 2,729 115 141 2,986"
+  },
+  {
+   "description": "Pickup Truck 1/2 T",
+   "yearCode": "13",
+   "price": 28000,
+   "yearsLife": 7,
+   "salvageValue": 10621,
+   "capitalRecovery": 3481,
+   "insurance": 158,
+   "taxes": 193,
+   "repairs": null,
+   "total": 3832,
+   "page": 19,
+   "line": "13 Pickup Truck 1/2 T 28,000 7 10,621 3,481 158 193 3,832"
+  },
+  {
+   "description": "Vine Trimmer -",
+   "yearCode": "13",
+   "price": 12000,
+   "yearsLife": 10,
+   "salvageValue": 228,
+   "capitalRecovery": 1517,
+   "insurance": 50,
+   "taxes": 61,
+   "repairs": null,
+   "total": 1628,
+   "page": 19,
+   "line": "13 Vine Trimmer - 12,000 10 228 1,517 50 61 1,628"
+  },
+  {
+   "description": "Weed Sprayer 200 gal",
+   "yearCode": "13",
+   "price": 5000,
+   "yearsLife": 10,
+   "salvageValue": 884,
+   "capitalRecovery": 569,
+   "insurance": 24,
+   "taxes": 29,
+   "repairs": null,
+   "total": 622,
+   "page": 19,
+   "line": "13 Weed Sprayer 200 gal 5,000 10 884 569 24 29 622"
+  },
+  {
+   "description": "70HP Vineyard Tractor 4WD",
+   "yearCode": "13",
+   "price": 45446,
+   "yearsLife": 20,
+   "salvageValue": 5831,
+   "capitalRecovery": 3389,
+   "insurance": 209,
+   "taxes": 256,
+   "repairs": null,
+   "total": 3855,
+   "page": 19,
+   "line": "13 70HP Vineyard Tractor 4WD 45,446 20 5,831 3,389 209 256 3,855"
+  },
+  {
+   "description": "80HP Vineyard Trac 4WD",
+   "yearCode": "13",
+   "price": 48191,
+   "yearsLife": 20,
+   "salvageValue": 6183,
+   "capitalRecovery": 3593,
+   "insurance": 222,
+   "taxes": 272,
+   "repairs": null,
+   "total": 4087,
+   "page": 19,
+   "line": "13 80HP Vineyard Trac 4WD 48,191 20 6,183 3,593 222 272 4,087"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Building 2,400 sqft",
+   "yearCode": null,
+   "price": 84000,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 6598,
+   "insurance": 343,
+   "taxes": 420,
+   "repairs": 1680,
+   "total": 9041,
+   "page": 19,
+   "line": "Building 2,400 sqft 84,000 20 6,598 343 420 1,680 9,041"
+  },
+  {
+   "description": "Drip Irrigation System (60 acres)",
+   "yearCode": null,
+   "price": 120000,
+   "yearsLife": 25,
+   "salvageValue": 0,
+   "capitalRecovery": 8302,
+   "insurance": 490,
+   "taxes": 600,
+   "repairs": 2400,
+   "total": 11792,
+   "page": 19,
+   "line": "Drip Irrigation System (60 acres) 120,000 25 8,302 490 600 2,400 11,792"
+  },
+  {
+   "description": "Fuel Tanks 2-500 gallon",
+   "yearCode": null,
+   "price": 4500,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 353,
+   "insurance": 18,
+   "taxes": 23,
+   "repairs": 90,
+   "total": 484,
+   "page": 19,
+   "line": "Fuel Tanks 2-500 gallon 4,500 20 353 18 23 90 484"
+  },
+  {
+   "description": "Land",
+   "yearCode": null,
+   "price": 2200000,
+   "yearsLife": 20,
+   "salvageValue": 2200000,
+   "capitalRecovery": 104500,
+   "insurance": 0,
+   "taxes": 22000,
+   "repairs": 0,
+   "total": 126500,
+   "page": 19,
+   "line": "Land 2,200,000 20 2,200,000 104,500 0 22,000 0 126,500"
+  },
+  {
+   "description": "Tools-Shop/Field",
+   "yearCode": null,
+   "price": 15000,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 1178,
+   "insurance": 61,
+   "taxes": 75,
+   "repairs": 300,
+   "total": 1614,
+   "page": 19,
+   "line": "Tools-Shop/Field 15,000 20 1,178 61 75 300 1,614"
+  },
+  {
+   "description": "Vineyard Establishment",
+   "yearCode": null,
+   "price": 768439,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 60361,
+   "insurance": 3139,
+   "taxes": 3842,
+   "repairs": 768,
+   "total": 68110,
+   "page": 19,
+   "line": "Vineyard Establishment 768,439 20 60,361 3,139 3,842 768 68,110"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "ATV 4WD",
+   "hoursUsedOnCrop": 165,
+   "totalHours": 430,
+   "capitalRecoveryPerHr": 1.59,
+   "insurancePerHr": 0.06,
+   "taxesPerHr": 0.08,
+   "repairsPerHr": 0.94,
+   "fuelPerHr": 2.71,
+   "totalOperatingPerHr": 3.65,
+   "totalCostPerHr": 5.38,
+   "page": 19,
+   "line": "13 ATV 4WD 165.00 430.00 1.59 0.06 0.08 0.94 2.71 3.65 5.38"
+  },
+  {
+   "description": "Disc - Tandem 7'",
+   "hoursUsedOnCrop": 95,
+   "totalHours": 309,
+   "capitalRecoveryPerHr": 2.13,
+   "insurancePerHr": 0.08,
+   "taxesPerHr": 0.1,
+   "repairsPerHr": 2.94,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 2.94,
+   "totalCostPerHr": 5.26,
+   "page": 19,
+   "line": "13 Disc - Tandem 7' 95.00 309.00 2.13 0.08 0.10 2.94 0.00 2.94 5.26"
+  },
+  {
+   "description": "Duster - 3 Pt",
+   "hoursUsedOnCrop": 88,
+   "totalHours": 120,
+   "capitalRecoveryPerHr": 3.41,
+   "insurancePerHr": 0.14,
+   "taxesPerHr": 0.18,
+   "repairsPerHr": 0.85,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.85,
+   "totalCostPerHr": 4.58,
+   "page": 19,
+   "line": "13 Duster - 3 Pt 88.00 120.00 3.41 0.14 0.18 0.85 0.00 0.85 4.58"
+  },
+  {
+   "description": "Orch/VineSpray500G",
+   "hoursUsedOnCrop": 135,
+   "totalHours": 135,
+   "capitalRecoveryPerHr": 12.15,
+   "insurancePerHr": 0.51,
+   "taxesPerHr": 0.63,
+   "repairsPerHr": 3.05,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 3.05,
+   "totalCostPerHr": 16.34,
+   "page": 19,
+   "line": "13 Orch/VineSpray500G 135.00 135.00 12.15 0.51 0.63 3.05 0.00 3.05 16.34"
+  },
+  {
+   "description": "Pickup Truck 1/2 T",
+   "hoursUsedOnCrop": 123,
+   "totalHours": 275,
+   "capitalRecoveryPerHr": 7.59,
+   "insurancePerHr": 0.34,
+   "taxesPerHr": 0.42,
+   "repairsPerHr": 3.67,
+   "fuelPerHr": 10.18,
+   "totalOperatingPerHr": 13.85,
+   "totalCostPerHr": 22.21,
+   "page": 19,
+   "line": "13 Pickup Truck 1/2 T 123.00 275.00 7.59 0.34 0.42 3.67 10.18 13.85 22.21"
+  },
+  {
+   "description": "Vine Trimmer -",
+   "hoursUsedOnCrop": 41,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 4.55,
+   "insurancePerHr": 0.15,
+   "taxesPerHr": 0.18,
+   "repairsPerHr": 5.05,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 5.05,
+   "totalCostPerHr": 9.93,
+   "page": 19,
+   "line": "13 Vine Trimmer - 41.00 200.00 4.55 0.15 0.18 5.05 0.00 5.05 9.93"
+  },
+  {
+   "description": "Weed Sprayer 200 G",
+   "hoursUsedOnCrop": 113,
+   "totalHours": 120,
+   "capitalRecoveryPerHr": 2.84,
+   "insurancePerHr": 0.12,
+   "taxesPerHr": 0.15,
+   "repairsPerHr": 0.71,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.71,
+   "totalCostPerHr": 3.82,
+   "page": 19,
+   "line": "13 Weed Sprayer 200 G 113.00 120.00 2.84 0.12 0.15 0.71 0.00 0.71 3.82"
+  },
+  {
+   "description": "70HP Vineyard Tract 4WD",
+   "hoursUsedOnCrop": 247,
+   "totalHours": 600,
+   "capitalRecoveryPerHr": 3.39,
+   "insurancePerHr": 0.21,
+   "taxesPerHr": 0.26,
+   "repairsPerHr": 2.81,
+   "fuelPerHr": 13.2,
+   "totalOperatingPerHr": 16.01,
+   "totalCostPerHr": 19.87,
+   "page": 19,
+   "line": "13 70HP Vineyard Tract 4WD 247.00 600.00 3.39 0.21 0.26 2.81 13.20 16.01 19.87"
+  },
+  {
+   "description": "80HP Vineyard Trac 4WD",
+   "hoursUsedOnCrop": 148,
+   "totalHours": 600,
+   "capitalRecoveryPerHr": 3.59,
+   "insurancePerHr": 0.22,
+   "taxesPerHr": 0.27,
+   "repairsPerHr": 3.15,
+   "fuelPerHr": 15.09,
+   "totalOperatingPerHr": 18.23,
+   "totalCostPerHr": 22.32,
+   "page": 19,
+   "line": "13 80HP Vineyard Trac 4WD 148.00 600.00 3.59 0.22 0.27 3.15 15.09 18.23 22.32"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Crop Insurance",
+   "unitsPerFarm": 195,
+   "unit": "acre",
+   "pricePerUnit": 25,
+   "totalCost": 4875,
+   "page": 19,
+   "line": "Crop Insurance 195 acre 25.00 4,875"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 195,
+   "unit": "acre",
+   "pricePerUnit": 4.39,
+   "totalCost": 856,
+   "page": 19,
+   "line": "Liability Insurance 195 acre 4.39 856"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 195,
+   "unit": "acre",
+   "pricePerUnit": 155,
+   "totalCost": 30225,
+   "page": 19,
+   "line": "Office Expense 195 acre 155.00 30,225"
+  },
+  {
+   "description": "Reclamation Fee",
+   "unitsPerFarm": 195,
+   "unit": "acre",
+   "pricePerUnit": 20,
+   "totalCost": 3900,
+   "page": 19,
+   "line": "Reclamation Fee 195 acre 20.00 3,900"
+  },
+  {
+   "description": "Sanitation Fees",
+   "unitsPerFarm": 195,
+   "unit": "acre",
+   "pricePerUnit": 21.78,
+   "totalCost": 4247,
+   "page": 19,
+   "line": "Sanitation Fees 195 acre 21.78 4,247"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   360,
+   194,
+   241,
+   185,
+   559,
+   506,
+   263,
+   112,
+   535,
+   97,
+   0,
+   0
+  ],
+  "operatingPerAcre": [
+   259,
+   15,
+   221,
+   165,
+   449,
+   486,
+   148,
+   92,
+   515,
+   77,
+   0,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 3078,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT"
+  ],
+  "spansTwoYears": false,
+  "page": 17,
+  "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE WINE GRAPES"
+ },
+ "establishment": {
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 4645,
+    "returns": null,
+    "netCost": 4645,
+    "accumulated": 4645,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,645 12,471 12,807"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 7827,
+    "returns": null,
+    "netCost": 7827,
+    "accumulated": 12471,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,645 12,471 12,807"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 2536,
+    "returns": 2200,
+    "netCost": 336,
+    "accumulated": 12807,
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,645 12,471 12,807"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": {
+   "value": 1006,
+   "page": 14,
+   "quote": "Vineyard Establishment 12,807 1,006 1,006"
+  },
+  "productionYears": {
+   "value": 20,
+   "page": 19,
+   "quote": "Vineyard Establishment 768,439 20 60,361 3,139 3,842 768 68,110 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": {
+   "value": 750,
+   "page": 12,
+   "quote": "Land Prep: Vineyard Removal 750",
+   "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
+  },
+  "asset": {
+   "price": 768439,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 60361,
+   "page": 19,
+   "line": "Vineyard Establishment 768,439 20 60,361 3,139 3,842 768 68,110"
+  },
+  "method": null
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "monthly",
+   "establishment",
+   "establishmentAnnual"
+  ],
+  "fieldsMissing": [
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "establishmentAccumulated"
+  ],
+  "warnings": []
+ }
+}

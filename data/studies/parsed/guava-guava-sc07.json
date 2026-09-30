@@ -1,0 +1,326 @@
+{
+ "source": {
+  "id": "guava-guava-sc07",
+  "commodity": "guava",
+  "title": "SAMPLE COSTS TO ESTABLISH AN ORCHARD AND PRODUCE",
+  "year": 2007,
+  "region": "South Coast San Diego",
+  "counties": "Agricultural Economics Advisor, San Diego",
+  "description": null,
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/07/d6/07d6b068-6b6b-4f8d-9e49-91cd39b1dd39/guava_sc07.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/guava",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2007,
+  "priceYear": null
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 5,
+   "unit": "acres",
+   "page": 11,
+   "quote": "The cost of the irrigation system including installation is estimated at $1,200 per acre ($6,000, for a 5 acre farm)."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": null,
+  "pricePerUnit": {
+   "value": 1.93,
+   "unit": "$/pound",
+   "page": 11,
+   "quote": "For this study, crop value is estimated at a grower price of $1.93 per pound or $48.25 per carton--Los Angeles Terminal Market weighted average price for guavas from January to March for the 2005 to 2007 seasons (Table D)."
+  },
+  "returns": [],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 14.3,
+   "unit": "$/hr",
+   "page": 8,
+   "quote": "Labor Costs: Wage rates for both the owner and hired labor are estimated at $14.30 per hour for machine operator and $13.30 per hour for non-machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 13.3,
+   "unit": "$/hr",
+   "page": 8,
+   "quote": "Labor Costs: Wage rates for both the owner and hired labor are estimated at $14.30 per hour for machine operator and $13.30 per hour for non-machine labor."
+  },
+  "laborOverheadPct": null,
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 2.8,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "According to the data from the USDA-NASS, the average prices for on-farm delivery of diesel and gasoline were $2.30 and $2.80 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.8,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "According to the data from the USDA-NASS, the average prices for on-farm delivery of diesel and gasoline were $2.30 and $2.80 per gallon, respectively."
+  },
+  "yieldStatement": null,
+  "priceStatement": {
+   "page": 11,
+   "quote": "For this study, crop value is estimated at a grower price of $1.93 per pound or $48.25 per carton--Los Angeles Terminal Market weighted average price for guavas from January to March for the 2005 to 2007 seasons (Table D)."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 6150,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "TOTAL OPERATING COSTS/ACRE ($) 4670 4917 5164 5410 5657 5903 6150"
+  },
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": {
+   "value": 11860,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "TOTAL COSTS/ACRE ($) 10381 10627 10874 11121 11367 11614 11860"
+  },
+  "grossReturns": null,
+  "netReturnsAboveOperating": null,
+  "netReturnsAboveTotal": null,
+  "cashOverheadItems": [],
+  "operations": [
+   {
+    "name": "407",
+    "category": "cultural",
+    "timeHrsPerAcre": 466,
+    "labor": 524,
+    "fuel": 582,
+    "lubeRepairs": null,
+    "materials": 640,
+    "customRent": 698,
+    "totalCost": 757,
+    "page": 21,
+    "quote": "407 466 524 582 640 698 757"
+   },
+   {
+    "name": "Cultural Costs ($)",
+    "category": "cultural",
+    "timeHrsPerAcre": 2849,
+    "labor": 2849,
+    "fuel": 2849,
+    "lubeRepairs": 2849,
+    "materials": 2849,
+    "customRent": 2849,
+    "totalCost": 2849,
+    "page": 21,
+    "quote": "Cultural Costs ($) 2849 2849 2849 2849 2849 2849 2849"
+   },
+   {
+    "name": "Harvest Cost ($)",
+    "category": "cultural",
+    "timeHrsPerAcre": 1670,
+    "labor": 1909,
+    "fuel": 2148,
+    "lubeRepairs": 2386,
+    "materials": 2625,
+    "customRent": 2863,
+    "totalCost": 3102,
+    "page": 21,
+    "quote": "Harvest Cost ($) 1670 1909 2148 2386 2625 2863 3102"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "2007 A TV 4WD",
+   "yearCode": null,
+   "price": 4500,
+   "yearsLife": 7,
+   "salvageValue": 791,
+   "capitalRecovery": 18,
+   "insurance": 25,
+   "taxes": 834,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2007 A TV 4WD 4500 7 791 18 25 834"
+  },
+  {
+   "description": "2007 Weed Wacker",
+   "yearCode": null,
+   "price": 760,
+   "yearsLife": 5,
+   "salvageValue": 173,
+   "capitalRecovery": 3,
+   "insurance": 4,
+   "taxes": 180,
+   "repairs": null,
+   "total": null,
+   "page": 22,
+   "line": "2007 Weed Wacker 760 5 173 3 4 180"
+  },
+  {
+   "description": "Es tablis hment Cos ts",
+   "yearCode": null,
+   "price": 42545,
+   "yearsLife": 26,
+   "salvageValue": 3681,
+   "capitalRecovery": 152,
+   "insurance": 213,
+   "taxes": 0,
+   "repairs": null,
+   "total": 4046,
+   "page": 22,
+   "line": "Es tablis hment Cos ts 42545 26 3681 152 213 0 4046"
+  },
+  {
+   "description": "Fuel Tanks & Pumps",
+   "yearCode": null,
+   "price": 1000,
+   "yearsLife": 30,
+   "salvageValue": 83,
+   "capitalRecovery": 4,
+   "insurance": 5,
+   "taxes": 20,
+   "repairs": null,
+   "total": 112,
+   "page": 22,
+   "line": "Fuel Tanks & Pumps 1000 30 83 4 5 20 112"
+  },
+  {
+   "description": "Irrigation Sys tem",
+   "yearCode": null,
+   "price": 6000,
+   "yearsLife": 30,
+   "salvageValue": 496,
+   "capitalRecovery": 21,
+   "insurance": 30,
+   "taxes": 300,
+   "repairs": null,
+   "total": 847,
+   "page": 22,
+   "line": "Irrigation Sys tem 6000 30 496 21 30 300 847"
+  },
+  {
+   "description": "Land",
+   "yearCode": null,
+   "price": 200000,
+   "yearsLife": 30,
+   "salvageValue": 14500,
+   "capitalRecovery": 1428,
+   "insurance": 2000,
+   "taxes": 0,
+   "repairs": null,
+   "total": 17928,
+   "page": 22,
+   "line": "Land 200000 30 14500 1428 2000 0 17928"
+  },
+  {
+   "description": "Shop Buildings",
+   "yearCode": null,
+   "price": 10000,
+   "yearsLife": 30,
+   "salvageValue": 826,
+   "capitalRecovery": 36,
+   "insurance": 50,
+   "taxes": 200,
+   "repairs": null,
+   "total": 1112,
+   "page": 22,
+   "line": "Shop Buildings 10000 30 826 36 50 200 1112"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 600,
+   "yearsLife": 30,
+   "salvageValue": 50,
+   "capitalRecovery": 2,
+   "insurance": 3,
+   "taxes": 12,
+   "repairs": null,
+   "total": 67,
+   "page": 22,
+   "line": "Shop Tools 600 30 50 2 3 12 67"
+  }
+ ],
+ "investments": [],
+ "hourlyEquipment": [],
+ "businessOverhead": [],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 10,
+   "quote": "The formula for calculating the annual capital recovery is: [(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 10,
+   "quote": "Where: Salvage Value is an estimate of the remaining value of the investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
+ },
+ "monthly": null,
+ "establishment": {
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 8509,
+   "page": 11,
+   "quote": "The establishment cost estimate in this study is $8,509 per acre or $42,545 for five acres."
+  },
+  "annualCharge": {
+   "value": 736,
+   "page": 17,
+   "quote": "Establishment Cost 8509 736 736"
+  },
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": {
+   "page": 11,
+   "quote": "The establishment cost is amortized over 26 years (the expected useful life of the orchard) to determine an annual capital recovery charge (opportunity cost of the investment plus depreciation of trees)."
+  }
+ },
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "acresFarmed",
+   "operatingTotal",
+   "totalCost",
+   "operations",
+   "equipment",
+   "capitalRecoveryFormula",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "interestRatePct",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "grossReturns",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "monthly"
+  ],
+  "warnings": [
+   "Table 2 found but no GROSS RETURNS block",
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "equipment row without a Total column: 2007 A TV 4WD",
+   "equipment row without a Total column: 2007 Weed Wacker"
+  ]
+ }
+}

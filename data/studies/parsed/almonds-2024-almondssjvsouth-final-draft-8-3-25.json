@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/2025/08/11/2024%20AlmondsSJVsouth.Final%20Draft.8.3.25.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2024,
+  "priceYear": {
+   "value": 2024,
+   "month": 8,
+   "page": 2,
+   "quote": "Sample costs given for labor, materials, equipment and contract services are based on August 2024 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

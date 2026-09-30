@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e4/bd/e4bd9353-25a1-4258-b5b1-42a203bc09ad/2020pistachiosjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pistachios",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2020,
+  "priceYear": {
+   "value": 2020,
+   "month": 6,
+   "page": 3,
+   "quote": "Sample costs given for labor, materials, equipment and contract services are based on June 2020 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {

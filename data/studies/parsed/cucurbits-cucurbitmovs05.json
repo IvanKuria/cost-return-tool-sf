@@ -1,0 +1,799 @@
+{
+ "source": {
+  "id": "cucurbits-cucurbitmovs05",
+  "commodity": "cucurbits",
+  "title": "SAMPLE COSTS TO PRODUCE",
+  "year": 2005,
+  "region": "San Joaquin Valley North",
+  "counties": "Richard H. Molinar UC Cooperative Extension Farm Advisor, Fresno County Michael Yang UC Agricultural Assistant, Fresno",
+  "description": "Asian Vegetable: Moqua/Opo",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/61/f3/61f39345-0ee2-43cf-872b-755fee442f54/cucurbitmovs05.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/cucurbits",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2005,
+  "priceYear": {
+   "value": 2005,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. “Your Costs” columns in Tables 1 and 2 are provided for entering your farm costs. (Current at the time of the study, so the study year 2005 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": null,
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": "each",
+  "pricePerUnit": {
+   "value": 6,
+   "unit": "$/box",
+   "page": 4,
+   "quote": "A price of $6.00 per box is used in this study to show various prices over a range of yields."
+  },
+  "returns": [
+   {
+    "name": "Trays - Planting 50 Cell",
+    "quantity": 25,
+    "unit": "each",
+    "price": 1,
+    "value": 25,
+    "page": 9,
+    "quote": "Trays - Planting 50 Cell 25.00 each 1.00 25"
+   },
+   {
+    "name": "Boxes 40 lb",
+    "quantity": 1250,
+    "unit": "each",
+    "price": 1.1,
+    "value": 1375,
+    "page": 9,
+    "quote": "Boxes 40 lb 1,250.00 each 1.10 1,375"
+   },
+   {
+    "name": "Land Preparation",
+    "quantity": 1,
+    "unit": "acre",
+    "price": 100,
+    "value": 100,
+    "page": 9,
+    "quote": "Land Preparation 1.00 acre 100.00 100"
+   },
+   {
+    "name": "Landfill Fee",
+    "quantity": 325,
+    "unit": "lb",
+    "price": 0.02,
+    "value": 7,
+    "page": 9,
+    "quote": "Landfill Fee 325.00 lb 0.02 7"
+   },
+   {
+    "name": "Plastic Black 3 ft x 2000 ft/roll. 1mil",
+    "quantity": 7250,
+    "unit": "foot",
+    "price": 0.02,
+    "value": 116,
+    "page": 9,
+    "quote": "Plastic Black 3 ft x 2000 ft/roll. 1mil 7,250.00 foot 0.02 116"
+   },
+   {
+    "name": "Stakes - 6 ft",
+    "quantity": 1200,
+    "unit": "each",
+    "price": 0.99,
+    "value": 1188,
+    "page": 9,
+    "quote": "Stakes - 6 ft 1,200.00 each 0.99 1,188"
+   },
+   {
+    "name": "Netting for Trellis 320 ft/roll",
+    "quantity": 7250,
+    "unit": "foot",
+    "price": 0.02,
+    "value": 138,
+    "page": 9,
+    "quote": "Netting for Trellis 320 ft/roll 7,250.00 foot 0.02 138"
+   },
+   {
+    "name": "20-20-20",
+    "quantity": 10,
+    "unit": "lb",
+    "price": 0.57,
+    "value": 6,
+    "page": 9,
+    "quote": "20-20-20 10.00 lb 0.57 6"
+   },
+   {
+    "name": "UN32 (11 lbs/gal)",
+    "quantity": 110,
+    "unit": "lb",
+    "price": 0.13,
+    "value": 14,
+    "page": 9,
+    "quote": "UN32 (11 lbs/gal) 110.00 lb 0.13 14"
+   },
+   {
+    "name": "Water",
+    "quantity": 54,
+    "unit": "each",
+    "price": 2.5,
+    "value": 135,
+    "page": 9,
+    "quote": "Water 54.00 each 2.50 135"
+   },
+   {
+    "name": "Roundup Ultra Max",
+    "quantity": 32,
+    "unit": "floz",
+    "price": 0.49,
+    "value": 16,
+    "page": 9,
+    "quote": "Roundup Ultra Max 32.00 floz 0.49 16"
+   },
+   {
+    "name": "Lannate LV",
+    "quantity": 4.5,
+    "unit": "pint",
+    "price": 9.72,
+    "value": 44,
+    "page": 9,
+    "quote": "Lannate LV 4.50 pint 9.72 44"
+   },
+   {
+    "name": "M-Pede",
+    "quantity": 1.6,
+    "unit": "pint",
+    "price": 2.95,
+    "value": 5,
+    "page": 9,
+    "quote": "M-Pede 1.60 pint 2.95 5"
+   },
+   {
+    "name": "Labor (machine)",
+    "quantity": 28.6,
+    "unit": "hrs",
+    "price": 12.42,
+    "value": 355,
+    "page": 9,
+    "quote": "Labor (machine) 28.60 hrs 12.42 355"
+   },
+   {
+    "name": "Labor (non-machine)",
+    "quantity": 683.3,
+    "unit": "hrs",
+    "price": 9.32,
+    "value": 6368,
+    "page": 9,
+    "quote": "Labor (non-machine) 683.30 hrs 9.32 6,368"
+   },
+   {
+    "name": "Fuel - Gas",
+    "quantity": 97.9,
+    "unit": "gal",
+    "price": 2.05,
+    "value": 201,
+    "page": 9,
+    "quote": "Fuel - Gas 97.90 gal 2.05 201"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 12.42,
+   "unit": "$/hr",
+   "page": 4,
+   "quote": "Labor rates of $12.42 per hour for machine operators and $9.32 for general labor includes payroll overhead of 38%."
+  },
+  "laborNonMachineRate": {
+   "value": 9.32,
+   "unit": "$/hr",
+   "page": 4,
+   "quote": "Labor rates of $12.42 per hour for machine operators and $9.32 for general labor includes payroll overhead of 38%."
+  },
+  "laborOverheadPct": {
+   "value": 38,
+   "unit": "%",
+   "page": 4,
+   "quote": "Labor rates of $12.42 per hour for machine operators and $9.32 for general labor includes payroll overhead of 38%."
+  },
+  "landRentPerAcre": {
+   "value": 300,
+   "unit": "$/acre/yr",
+   "page": 8,
+   "quote": "Land Rent 300"
+  },
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 2.05,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.51 and $2.05 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.05,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $1.51 and $2.05 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 4,
+   "quote": "The crop yields an average of 2.4 boxes per week per row or 69 boxes per acre per week per row."
+  },
+  "priceStatement": {
+   "page": 4,
+   "quote": "A price of $6.00 per box is used in this study to show various prices over a range of yields."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 10430,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL OPERATING COSTS/ACRE 6,724 293 3,061 107 10,430"
+  },
+  "cashOverheadTotal": {
+   "value": 382,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL CASH OVERHEAD COSTS 382"
+  },
+  "nonCashOverheadTotal": {
+   "value": 292,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 1,840 292 292"
+  },
+  "totalCost": {
+   "value": 11104,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL COSTS/ACRE 11,104"
+  },
+  "grossReturns": null,
+  "netReturnsAboveOperating": {
+   "value": -430,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS -430"
+  },
+  "netReturnsAboveTotal": {
+   "value": -1104,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "NET RETURNS ABOVE TOTAL COSTS -1,104"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 42,
+    "page": 8,
+    "quote": "Liability Insurance 42"
+   },
+   {
+    "description": "Office Expense",
+    "value": 10,
+    "page": 8,
+    "quote": "Office Expense 10"
+   },
+   {
+    "description": "Land Rent",
+    "value": 300,
+    "page": 8,
+    "quote": "Land Rent 300"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 12,
+    "page": 8,
+    "quote": "Property Taxes 12"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 8,
+    "page": 8,
+    "quote": "Property Insurance 8"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 10,
+    "page": 8,
+    "quote": "Investment Repairs 10"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Plant: Greenhouse",
+    "category": "cultural",
+    "timeHrsPerAcre": 8.3,
+    "labor": 77,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 25,
+    "customRent": 0,
+    "totalCost": 102,
+    "page": 8,
+    "quote": "Plant: Greenhouse 8.30 77 0 25 0 102"
+   },
+   {
+    "name": "Land Prep: Plow, Disc, List",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 100,
+    "totalCost": 100,
+    "page": 8,
+    "quote": "Land Prep: Plow, Disc, List 0.00 0 0 0 100 100"
+   },
+   {
+    "name": "Land Prep: Flatten Bed Tops",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.33,
+    "labor": 5,
+    "fuel": 1,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 6,
+    "page": 8,
+    "quote": "Land Prep: Flatten Bed Tops 0.33 5 1 0 0 6"
+   },
+   {
+    "name": "Land Prep: Lay Black Plastic on Beds. Alternate Rows",
+    "category": "cultural",
+    "timeHrsPerAcre": 8,
+    "labor": 75,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 116,
+    "customRent": 0,
+    "totalCost": 191,
+    "page": 8,
+    "quote": "Land Prep: Lay Black Plastic on Beds. Alternate Rows 8.00 75 0 116 0 191"
+   },
+   {
+    "name": "Plant: Transplants. Fertilize: (20-20-20)",
+    "category": "cultural",
+    "timeHrsPerAcre": 16,
+    "labor": 149,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 6,
+    "customRent": 0,
+    "totalCost": 155,
+    "page": 8,
+    "quote": "Plant: Transplants. Fertilize: (20-20-20) 16.00 149 0 6 0 155"
+   },
+   {
+    "name": "Irrigate: (water & labor)",
+    "category": "cultural",
+    "timeHrsPerAcre": 27,
+    "labor": 252,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 135,
+    "customRent": 0,
+    "totalCost": 387,
+    "page": 8,
+    "quote": "Irrigate: (water & labor) 27.00 252 0 135 0 387"
+   },
+   {
+    "name": "Trellis: Install",
+    "category": "cultural",
+    "timeHrsPerAcre": 32,
+    "labor": 298,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 1326,
+    "customRent": 0,
+    "totalCost": 1624,
+    "page": 8,
+    "quote": "Trellis: Install 32.00 298 0 1,326 0 1,624"
+   },
+   {
+    "name": "Weed: Hand",
+    "category": "cultural",
+    "timeHrsPerAcre": 3,
+    "labor": 28,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 28,
+    "page": 8,
+    "quote": "Weed: Hand 3.00 28 0 0 0 28"
+   },
+   {
+    "name": "Weed: Hand Spray Furrow (Roundup)",
+    "category": "cultural",
+    "timeHrsPerAcre": 3,
+    "labor": 28,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 16,
+    "customRent": 0,
+    "totalCost": 44,
+    "page": 8,
+    "quote": "Weed: Hand Spray Furrow (Roundup) 3.00 28 0 16 0 44"
+   },
+   {
+    "name": "Fertilize: UN32",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 14,
+    "customRent": 0,
+    "totalCost": 14,
+    "page": 8,
+    "quote": "Fertilize: UN32 0.00 0 0 14 0 14"
+   },
+   {
+    "name": "Insect: Worm/Aphid (Lannate)",
+    "category": "cultural",
+    "timeHrsPerAcre": 4,
+    "labor": 37,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 44,
+    "customRent": 0,
+    "totalCost": 81,
+    "page": 8,
+    "quote": "Insect: Worm/Aphid (Lannate) 4.00 37 0 44 0 81"
+   },
+   {
+    "name": "Insect: Mites (M-Pede)",
+    "category": "cultural",
+    "timeHrsPerAcre": 2,
+    "labor": 19,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 5,
+    "customRent": 0,
+    "totalCost": 23,
+    "page": 8,
+    "quote": "Insect: Mites (M-Pede) 2.00 19 0 5 0 23"
+   },
+   {
+    "name": "Field Cleanup: Remove Trellis, Netting, Mulch",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.5,
+    "labor": 753,
+    "fuel": 6,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 7,
+    "totalCost": 766,
+    "page": 8,
+    "quote": "Field Cleanup: Remove Trellis, Netting, Mulch 0.50 753 6 0 7 766"
+   },
+   {
+    "name": "Miscellaneous Pickup Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 5,
+    "labor": 75,
+    "fuel": 59,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 134,
+    "page": 8,
+    "quote": "Miscellaneous Pickup Use 5.00 75 59 0 0 134"
+   },
+   {
+    "name": "Harvest: Hand Pick",
+    "category": "harvest",
+    "timeHrsPerAcre": 500,
+    "labor": 4660,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 1375,
+    "customRent": 0,
+    "totalCost": 6035,
+    "page": 8,
+    "quote": "Harvest: Hand Pick 500.00 4,660 0 1,375 0 6,035"
+   },
+   {
+    "name": "Haul",
+    "category": "harvest",
+    "timeHrsPerAcre": 18,
+    "labor": 268,
+    "fuel": 226,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 494,
+    "page": 8,
+    "quote": "Haul 18.00 268 226 0 0 494"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "35HP 2WD Tractor",
+   "yearCode": "05",
+   "price": 15265,
+   "yearsLife": 20,
+   "salvageValue": 1959,
+   "capitalRecovery": 1279,
+   "insurance": 58,
+   "taxes": 86,
+   "repairs": null,
+   "total": 1423,
+   "page": 12,
+   "line": "05 35HP 2WD Tractor 15,265 20 1,959 1,279 58 86 1,423"
+  },
+  {
+   "description": "Bed Shaper Pipe 9'",
+   "yearCode": "05",
+   "price": 150,
+   "yearsLife": 10,
+   "salvageValue": 27,
+   "capitalRecovery": 18,
+   "insurance": 1,
+   "taxes": 1,
+   "repairs": null,
+   "total": 20,
+   "page": 12,
+   "line": "05 Bed Shaper Pipe 9' 150 10 27 18 1 1 20"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "yearCode": "05",
+   "price": 28000,
+   "yearsLife": 5,
+   "salvageValue": 12549,
+   "capitalRecovery": 4423,
+   "insurance": 140,
+   "taxes": 203,
+   "repairs": null,
+   "total": 4766,
+   "page": 12,
+   "line": "05 Pickup 1/2 Ton 28,000 5 12,549 4,423 140 203 4,766"
+  },
+  {
+   "description": "Trailer 12x16",
+   "yearCode": "05",
+   "price": 4500,
+   "yearsLife": 20,
+   "salvageValue": 235,
+   "capitalRecovery": 386,
+   "insurance": 16,
+   "taxes": 24,
+   "repairs": null,
+   "total": 426,
+   "page": 12,
+   "line": "05 Trailer 12x16 4,500 20 235 386 16 24 426"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Irrigation Flat Pipe",
+   "yearCode": null,
+   "price": 455,
+   "yearsLife": 2,
+   "salvageValue": 0,
+   "capitalRecovery": 248,
+   "insurance": 0,
+   "taxes": 0,
+   "repairs": 9,
+   "total": 257,
+   "page": 12,
+   "line": "Irrigation Flat Pipe 455 2 248 0 0 9 257"
+  },
+  {
+   "description": "Miscellaneous Field Tools",
+   "yearCode": null,
+   "price": 1000,
+   "yearsLife": 5,
+   "salvageValue": 0,
+   "capitalRecovery": 237,
+   "insurance": 3,
+   "taxes": 0,
+   "repairs": 20,
+   "total": 261,
+   "page": 12,
+   "line": "Miscellaneous Field Tools 1,000 5 237 3 0 20 261"
+  },
+  {
+   "description": "Plastic Greenhouse 20' x 20'",
+   "yearCode": null,
+   "price": 350,
+   "yearsLife": 5,
+   "salvageValue": 0,
+   "capitalRecovery": 83,
+   "insurance": 1,
+   "taxes": 2,
+   "repairs": 70,
+   "total": 156,
+   "page": 12,
+   "line": "Plastic Greenhouse 20' x 20' 350 5 83 1 2 70 156"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "35HP 2WD Tractor",
+   "hoursUsedOnCrop": 100,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 7.69,
+   "insurancePerHr": 0.36,
+   "taxesPerHr": 0.52,
+   "repairsPerHr": 0.62,
+   "fuelPerHr": 2.98,
+   "totalOperatingPerHr": 3.6,
+   "totalCostPerHr": 12.17,
+   "page": 12,
+   "line": "05 35HP 2WD Tractor 100 7.69 0.36 0.52 0.62 2.98 3.60 12.17"
+  },
+  {
+   "description": "Bed Shaper Pipe 9'",
+   "hoursUsedOnCrop": 10,
+   "totalHours": null,
+   "capitalRecoveryPerHr": 1.14,
+   "insurancePerHr": 0.04,
+   "taxesPerHr": 0.05,
+   "repairsPerHr": 0.01,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.01,
+   "totalCostPerHr": 1.24,
+   "page": 12,
+   "line": "05 Bed Shaper Pipe 9' 10 1.14 0.04 0.05 0.01 0.00 0.01 1.24"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Land Rent",
+   "unitsPerFarm": 10,
+   "unit": "acre",
+   "pricePerUnit": 300,
+   "totalCost": 3000,
+   "page": 12,
+   "line": "Land Rent 10 acre 300.00 3,000"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 10,
+   "unit": "acre",
+   "pricePerUnit": 41.9,
+   "totalCost": 419,
+   "page": 12,
+   "line": "Liability Insurance 10 acre 41.90 419"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 10,
+   "unit": "acre",
+   "pricePerUnit": 10,
+   "totalCost": 100,
+   "page": 12,
+   "line": "Office Expense 10 acre 10.00 100"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 6,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 6,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 5,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   237,
+   213,
+   1877,
+   79,
+   120,
+   825,
+   1584,
+   1686,
+   1573,
+   1540,
+   775,
+   301
+  ],
+  "operatingPerAcre": [
+   216,
+   212,
+   1834,
+   77,
+   118,
+   824,
+   1582,
+   1684,
+   1572,
+   1538,
+   773,
+   0
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false
+  ],
+  "totalCheck": 10811,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT",
+   "NOV",
+   "DEC"
+  ],
+  "spansTwoYears": false,
+  "page": 10,
+  "quote": "MONTHLY CASH COST PER ACRE TO PRODUCE CUCURBITS - MOQUA / OPO"
+ },
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "landRentPerAcre",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "interestRatePct",
+   "acresFarmed",
+   "grossReturns",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+  ]
+ }
+}

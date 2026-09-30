@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/09/28/2022covercropsbenefits.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/cover-crops",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2022,
+  "priceYear": {
+   "value": 2022,
+   "month": 9,
+   "page": 5,
+   "quote": "Average prices for on-farm delivery of gasoline and red-dyed diesel, based on September 2022 data from the Energy Information Administration, are $4.10 and $5.00 per gallon, respectively."
+  }
  },
  "assumptions": {
   "acresFarmed": null,

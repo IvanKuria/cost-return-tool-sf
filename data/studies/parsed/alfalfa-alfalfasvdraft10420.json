@@ -11,7 +11,15 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/02/ee/02ee0710-8c2c-41ea-8b25-736d1854b737/alfalfasvdraft10420.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30"
+  "fetchedAt": "2026-09-30",
+  "archived": false,
+  "indexYear": 2020,
+  "priceYear": {
+   "value": 2020,
+   "month": 1,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment, and custom services are based on January 2020 figures."
+  }
  },
  "assumptions": {
   "acresFarmed": {
@@ -50,48 +58,22 @@
     "quote": "Hay 7 Ton 225.00 1,575"
    }
   ],
-  "interestRatePct": {
-   "value": 5.5,
-   "unit": "%",
-   "page": 9,
-   "quote": "An interest rate of 5.50 percent is used to calculate capital recovery."
-  },
-  "operatingInterestRatePct": {
-   "value": 5.25,
-   "unit": "%",
-   "page": 7,
-   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 5.25 percent per year."
-  },
-  "laborMachineRate": {
-   "value": 16,
-   "unit": "$/hr",
-   "page": 6,
-   "quote": "Hourly wages for workers are $16.00 per hour for machine operators and $13.50 per hour non- machine labor."
-  },
-  "laborNonMachineRate": {
-   "value": 13.5,
-   "unit": "$/hr",
-   "page": 6,
-   "quote": "Hourly wages for workers are $16.00 per hour for machine operators and $13.50 per hour non- machine labor."
-  },
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": null,
+  "laborNonMachineRate": null,
   "laborOverheadPct": null,
   "landRentPerAcre": {
    "value": 300,
    "unit": "$/acre/yr",
-   "page": 9,
-   "quote": "As noted, land in this study is rented by the grower for $300 per acre."
+   "page": 15,
+   "quote": "Land Rent 300"
   },
   "cropsPerAcrePerYear": null,
   "fuelPriceDiesel": null,
   "fuelPriceGas": null,
-  "yieldStatement": {
-   "page": 6,
-   "quote": "The crop is assumed to yield 7.0 tons of hay per acre at 90% dry matter (DM)."
-  },
-  "priceStatement": {
-   "page": 6,
-   "quote": "Current prices are $40/ton in the Central Valley for this service."
-  }
+  "yieldStatement": null,
+  "priceStatement": null
  },
  "costsPerAcre": {
   "operatingTotal": {
@@ -994,27 +976,11 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": {
-   "page": 8,
-   "quote": "The formula for the calculation of the annual capital recovery costs is: ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
-  },
-  "salvageMethod": {
-   "page": 8,
-   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
-  },
+  "capitalRecoveryFormula": null,
+  "salvageMethod": null,
   "insuranceRatePct": null,
-  "propertyTaxRatePct": {
-   "value": 1,
-   "unit": "%",
-   "page": 7,
-   "quote": "Counties charge a base property tax rate of 1 percent on the assessed value of the property."
-  },
-  "machineLaborFactor": {
-   "value": 1.2,
-   "unit": "x",
-   "page": 6,
-   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
-  }
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": null
  },
  "monthly": {
   "basis": "per acre",
@@ -1091,22 +1057,14 @@
     "quote": "TOTAL CASH COSTS/ACRE 721"
    }
   ],
-  "accumulatedNetCost": {
-   "value": 721,
-   "page": 9,
-   "quote": "For this study, the cost is $721 per acre or $57,680 for the 80 acres."
-  },
+  "accumulatedNetCost": null,
   "annualCharge": null,
   "productionYears": {
    "value": 4,
-   "page": 9,
-   "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
+   "page": 19,
+   "quote": "Establishment- Alfalfa 57,680 4 0 16,456 26 288 0 16,770 (years of life of the establishment row in the investment table)"
   },
-  "plantingLife": {
-   "value": 4,
-   "page": 4,
-   "quote": "In this cost study the pre-plant fertilizer costs are charged to the establishment year and amortized over the 4 year life of the stand."
-  },
+  "plantingLife": null,
   "amortizedFromYear": null,
   "removalCost": null,
   "asset": {
@@ -1117,10 +1075,7 @@
    "page": 19,
    "line": "Establishment- Alfalfa 57,680 4 0 16,456 26 288 0 16,770"
   },
-  "method": {
-   "page": 9,
-   "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
-  }
+  "method": null
  },
  "parse": {
   "fieldsFound": [
@@ -1129,9 +1084,6 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
    "landRentPerAcre",
    "acresFarmed",
    "operatingTotal",
@@ -1144,16 +1096,19 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "capitalRecoveryFormula",
-   "propertyTaxRatePct",
-   "machineLaborFactor",
    "monthly",
-   "establishment",
-   "establishmentAccumulated"
+   "establishment"
   ],
   "fieldsMissing": [
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
    "laborOverheadPct",
+   "capitalRecoveryFormula",
    "insuranceRatePct",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": []

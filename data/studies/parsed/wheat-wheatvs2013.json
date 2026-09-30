@@ -1,0 +1,710 @@
+{
+ "source": {
+  "id": "wheat-wheatvs2013",
+  "commodity": "wheat",
+  "title": "SAMPLE COSTS TO PRODUCE\u0003\u0003",
+  "year": 2013,
+  "region": "San Joaquin Valley South",
+  "counties": "Steven D. Wright UC Cooperative Extension Farm Advisor, Tulare",
+  "description": "Small Grain, Irrigated",
+  "language": "en",
+  "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a3/e8/a3e8ade8-082c-4b49-9095-a21569cc85a7/wheatvs2013.pdf",
+  "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/wheat",
+  "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
+  "fetchedAt": "2026-09-30",
+  "archived": true,
+  "indexYear": 2013,
+  "priceYear": {
+   "value": 2013,
+   "month": null,
+   "page": 2,
+   "quote": "Sample costs for labor, materials, equipment and custom services are based on current figures. “Your Costs” columns in Tables 1 and 2 are provided for entering your farm costs. (Current at the time of the study, so the study year 2013 is used.)"
+  }
+ },
+ "assumptions": {
+  "acresFarmed": {
+   "value": 3000,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The hypothetical farm consists of 3,000 non-contiguous acres of which 1,500 acres are rented and 1,500 owned by the grower."
+  },
+  "acresCrop": null,
+  "yieldPerAcre": null,
+  "yieldUnit": "ton",
+  "pricePerUnit": null,
+  "returns": [
+   {
+    "name": "Grain",
+    "quantity": 4,
+    "unit": "ton",
+    "price": 220,
+    "value": 880,
+    "page": 9,
+    "quote": "Grain 4.00 ton 220.00 880"
+   },
+   {
+    "name": "Straw",
+    "quantity": 2,
+    "unit": "ton",
+    "price": 35,
+    "value": 70,
+    "page": 9,
+    "quote": "Straw 2.00 ton 35.00 70"
+   }
+  ],
+  "interestRatePct": null,
+  "operatingInterestRatePct": null,
+  "laborMachineRate": {
+   "value": 13.8,
+   "unit": "$/hr",
+   "page": 4,
+   "quote": "Labor rates of $13.80 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
+  "laborNonMachineRate": {
+   "value": 11.04,
+   "unit": "$/hr",
+   "page": 4,
+   "quote": "Labor rates of $13.80 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
+  "laborOverheadPct": {
+   "value": 38,
+   "unit": "%",
+   "page": 4,
+   "quote": "Labor rates of $13.80 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
+  "landRentPerAcre": null,
+  "cropsPerAcrePerYear": null,
+  "fuelPriceDiesel": {
+   "value": 3.84,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $4.07 (excludes excise taxes) and $3.84 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.84,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $4.07 (excludes excise taxes) and $3.84 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 4,
+   "quote": "The crop is assumed to yield 4.00 tons per acre of grain at 9 to 10% moisture."
+  },
+  "priceStatement": {
+   "page": 4,
+   "quote": "A price of a $220 per ton based on growers’ current preselling price is used to calculate returns over a range of yields."
+  }
+ },
+ "costsPerAcre": {
+  "operatingTotal": {
+   "value": 586,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL OPERATING COSTS/ACRE 1.44 20 21 9 465 58 586"
+  },
+  "cashOverheadTotal": {
+   "value": 302,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 302"
+  },
+  "nonCashOverheadTotal": {
+   "value": 13,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 126 13 13"
+  },
+  "totalCost": {
+   "value": 902,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL COSTS/ACRE 902"
+  },
+  "grossReturns": {
+   "value": 950,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL GROSS RETURNS 6.00 ton 950"
+  },
+  "netReturnsAboveOperating": {
+   "value": 364,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "NET RETURNS ABOVE OPERATING COSTS 364"
+  },
+  "netReturnsAboveTotal": {
+   "value": 48,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "NET RETURNS ABOVE TOTAL COST 48"
+  },
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 1,
+    "page": 8,
+    "quote": "Liability Insurance 1"
+   },
+   {
+    "description": "Office Expense:",
+    "value": 50,
+    "page": 8,
+    "quote": "Office Expense: 50"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 0,
+    "page": 8,
+    "quote": "Property Taxes 0"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 0,
+    "page": 8,
+    "quote": "Property Insurance 0"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 1,
+    "page": 8,
+    "quote": "Investment Repairs 1"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Fertilize: Preplant (Anhydrous Ammonia)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.07,
+    "labor": 1,
+    "fuel": 2,
+    "lubeRepairs": 1,
+    "materials": 83,
+    "customRent": 0,
+    "totalCost": 87,
+    "page": 8,
+    "quote": "Fertilize: Preplant (Anhydrous Ammonia) 0.07 1 2 1 83 0 87"
+   },
+   {
+    "name": "Land Prep: Finish Disc 2X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.22,
+    "labor": 4,
+    "fuel": 11,
+    "lubeRepairs": 5,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 20,
+    "page": 8,
+    "quote": "Land Prep: Finish Disc 2X 0.22 4 11 5 0 0 20"
+   },
+   {
+    "name": "Land Prep: Pull Borders",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.04,
+    "labor": 1,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 2,
+    "page": 8,
+    "quote": "Land Prep: Pull Borders 0.04 1 1 0 0 0 2"
+   },
+   {
+    "name": "Plant: (wheat)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.12,
+    "labor": 2,
+    "fuel": 4,
+    "lubeRepairs": 2,
+    "materials": 56,
+    "customRent": 0,
+    "totalCost": 63,
+    "page": 8,
+    "quote": "Plant: (wheat) 0.12 2 4 2 56 0 63"
+   },
+   {
+    "name": "Weed: Post-emergent (Express MCPA Axial)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 54,
+    "customRent": 8,
+    "totalCost": 62,
+    "page": 8,
+    "quote": "Weed: Post-emergent (Express MCPA Axial) 0.00 0 0 0 54 8 62"
+   },
+   {
+    "name": "Irrigate: (water & labor) 5X",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.75,
+    "labor": 8,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 167,
+    "customRent": 0,
+    "totalCost": 175,
+    "page": 8,
+    "quote": "Irrigate: (water & labor) 5X 0.75 8 0 0 167 0 175"
+   },
+   {
+    "name": "Fertilize: Topdress (Urea)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 38,
+    "customRent": 8,
+    "totalCost": 46,
+    "page": 8,
+    "quote": "Fertilize: Topdress (Urea) 0.00 0 0 0 38 8 46"
+   },
+   {
+    "name": "Fertilize: Water Run (UN32)",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 65,
+    "customRent": 0,
+    "totalCost": 65,
+    "page": 8,
+    "quote": "Fertilize: Water Run (UN32) 0.00 0 0 0 65 0 65"
+   },
+   {
+    "name": "PCA",
+    "category": "cultural",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 10,
+    "totalCost": 10,
+    "page": 8,
+    "quote": "PCA 0.00 0 0 0 0 10 10"
+   },
+   {
+    "name": "Pickup Truck Use",
+    "category": "cultural",
+    "timeHrsPerAcre": 0.24,
+    "labor": 4,
+    "fuel": 2,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 7,
+    "page": 8,
+    "quote": "Pickup Truck Use 0.24 4 2 1 0 0 7"
+   },
+   {
+    "name": "Combine Wheat",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 32,
+    "totalCost": 32,
+    "page": 8,
+    "quote": "Combine Wheat 0.00 0 0 0 0 32 32"
+   },
+   {
+    "name": "Assessment (CWC)",
+    "category": "harvest",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 4,
+    "customRent": 0,
+    "totalCost": 4,
+    "page": 8,
+    "quote": "Assessment (CWC) 0.00 0 0 0 4 0 4"
+   }
+  ]
+ },
+ "equipment": [
+  {
+   "description": "125 HP MFWD Tracto",
+   "yearCode": "13",
+   "price": 114269,
+   "yearsLife": 10,
+   "salvageValue": 33753,
+   "capitalRecovery": 11904,
+   "insurance": 605,
+   "taxes": 740,
+   "repairs": null,
+   "total": 13249,
+   "page": 12,
+   "line": "13 125 HP MFWD Tracto 114,269 10 33,753 11,904 605 740 13,249"
+  },
+  {
+   "description": "215 HP Trac Tracto",
+   "yearCode": "13",
+   "price": 287000,
+   "yearsLife": 10,
+   "salvageValue": 84775,
+   "capitalRecovery": 29899,
+   "insurance": 1519,
+   "taxes": 1859,
+   "repairs": null,
+   "total": 33276,
+   "page": 12,
+   "line": "13 215 HP Trac Tracto 287,000 10 84,775 29,899 1,519 1,859 33,276"
+  },
+  {
+   "description": "Disc - Border",
+   "yearCode": "13",
+   "price": 2150,
+   "yearsLife": 10,
+   "salvageValue": 380,
+   "capitalRecovery": 244,
+   "insurance": 10,
+   "taxes": 13,
+   "repairs": null,
+   "total": 267,
+   "page": 12,
+   "line": "13 Disc - Border 2,150 10 380 244 10 13 267"
+  },
+  {
+   "description": "Disc - Finish 21'",
+   "yearCode": "13",
+   "price": 43177,
+   "yearsLife": 8,
+   "salvageValue": 9749,
+   "capitalRecovery": 5583,
+   "insurance": 216,
+   "taxes": 265,
+   "repairs": null,
+   "total": 6064,
+   "page": 12,
+   "line": "13 Disc - Finish 21' 43,177 8 9,749 5,583 216 265 6,064"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "yearCode": "13",
+   "price": 32000,
+   "yearsLife": 5,
+   "salvageValue": 14342,
+   "capitalRecovery": 4732,
+   "insurance": 189,
+   "taxes": 232,
+   "repairs": null,
+   "total": 5153,
+   "page": 12,
+   "line": "13 Pickup 1/2 Ton 32,000 5 14,342 4,732 189 232 5,153"
+  },
+  {
+   "description": "Planter Drill 20'",
+   "yearCode": "13",
+   "price": 27301,
+   "yearsLife": 10,
+   "salvageValue": 4828,
+   "capitalRecovery": 3104,
+   "insurance": 131,
+   "taxes": 161,
+   "repairs": null,
+   "total": 3396,
+   "page": 12,
+   "line": "13 Planter Drill 20' 27,301 10 4,828 3,104 131 161 3,396"
+  }
+ ],
+ "investments": [
+  {
+   "description": "Building 2400 sqft",
+   "yearCode": null,
+   "price": 80000,
+   "yearsLife": 25,
+   "salvageValue": 0,
+   "capitalRecovery": 5535,
+   "insurance": 327,
+   "taxes": 400,
+   "repairs": 1600,
+   "total": 7862,
+   "page": 12,
+   "line": "Building 2400 sqft 80,000 25 0 5,535 327 400 1,600 7,862"
+  },
+  {
+   "description": "Fuel Tanks 2-300G",
+   "yearCode": null,
+   "price": 6514,
+   "yearsLife": 20,
+   "salvageValue": 0,
+   "capitalRecovery": 512,
+   "insurance": 27,
+   "taxes": 33,
+   "repairs": 130,
+   "total": 701,
+   "page": 12,
+   "line": "Fuel Tanks 2-300G 6,514 20 0 512 27 33 130 701"
+  },
+  {
+   "description": "Shop Tools",
+   "yearCode": null,
+   "price": 15000,
+   "yearsLife": 20,
+   "salvageValue": 1200,
+   "capitalRecovery": 1141,
+   "insurance": 66,
+   "taxes": 81,
+   "repairs": 300,
+   "total": 1588,
+   "page": 12,
+   "line": "Shop Tools 15,000 20 1,200 1,141 66 81 300 1,588"
+  }
+ ],
+ "hourlyEquipment": [
+  {
+   "description": "125 HP MFWD Tracto",
+   "hoursUsedOnCrop": 152,
+   "totalHours": 1200,
+   "capitalRecoveryPerHr": 5.95,
+   "insurancePerHr": 0.3,
+   "taxesPerHr": 0.37,
+   "repairsPerHr": 6.46,
+   "fuelPerHr": 27.86,
+   "totalOperatingPerHr": 34.32,
+   "totalCostPerHr": 40.94,
+   "page": 13,
+   "line": "13 125 HP MFWD Tracto 152 1,200.00 5.95 0.30 0.37 6.46 27.86 34.32 40.94"
+  },
+  {
+   "description": "215 HP Trac Tracto",
+   "hoursUsedOnCrop": 144,
+   "totalHours": 1600,
+   "capitalRecoveryPerHr": 11.21,
+   "insurancePerHr": 0.57,
+   "taxesPerHr": 0.7,
+   "repairsPerHr": 14.82,
+   "fuelPerHr": 47.91,
+   "totalOperatingPerHr": 62.74,
+   "totalCostPerHr": 75.22,
+   "page": 13,
+   "line": "13 215 HP Trac Tracto 144 1,600.00 11.21 0.57 0.70 14.82 47.91 62.74 75.22"
+  },
+  {
+   "description": "Anhydrous Rig 30'",
+   "hoursUsedOnCrop": 43,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 0,
+   "insurancePerHr": 0,
+   "taxesPerHr": 0,
+   "repairsPerHr": 0,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0,
+   "totalCostPerHr": 0,
+   "page": 13,
+   "line": "13 Anhydrous Rig 30' 43 200.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00"
+  },
+  {
+   "description": "Disc - Border",
+   "hoursUsedOnCrop": 24,
+   "totalHours": 200,
+   "capitalRecoveryPerHr": 0.73,
+   "insurancePerHr": 0.03,
+   "taxesPerHr": 0.04,
+   "repairsPerHr": 0.35,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 0.35,
+   "totalCostPerHr": 1.16,
+   "page": 13,
+   "line": "13 Disc - Border 24 200.00 0.73 0.03 0.04 0.35 0.00 0.35 1.16"
+  },
+  {
+   "description": "Disc - Finish 21'",
+   "hoursUsedOnCrop": 131,
+   "totalHours": 250,
+   "capitalRecoveryPerHr": 13.4,
+   "insurancePerHr": 0.52,
+   "taxesPerHr": 0.64,
+   "repairsPerHr": 7.22,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 7.22,
+   "totalCostPerHr": 21.77,
+   "page": 13,
+   "line": "13 Disc - Finish 21' 131 250.00 13.40 0.52 0.64 7.22 0.00 7.22 21.77"
+  },
+  {
+   "description": "Pickup 1/2 Ton",
+   "hoursUsedOnCrop": 144,
+   "totalHours": 285,
+   "capitalRecoveryPerHr": 9.96,
+   "insurancePerHr": 0.4,
+   "taxesPerHr": 0.49,
+   "repairsPerHr": 3.52,
+   "fuelPerHr": 9.6,
+   "totalOperatingPerHr": 13.12,
+   "totalCostPerHr": 23.97,
+   "page": 13,
+   "line": "13 Pickup 1/2 Ton 144 285.00 9.96 0.40 0.49 3.52 9.60 13.12 23.97"
+  },
+  {
+   "description": "Planter Drill 20'",
+   "hoursUsedOnCrop": 71,
+   "totalHours": 150,
+   "capitalRecoveryPerHr": 12.42,
+   "insurancePerHr": 0.52,
+   "taxesPerHr": 0.64,
+   "repairsPerHr": 7.52,
+   "fuelPerHr": 0,
+   "totalOperatingPerHr": 7.52,
+   "totalCostPerHr": 21.11,
+   "page": 13,
+   "line": "13 Planter Drill 20' 71 150.00 12.42 0.52 0.64 7.52 0.00 7.52 21.11"
+  }
+ ],
+ "businessOverhead": [
+  {
+   "description": "Land Rent (600 acres)",
+   "unitsPerFarm": 600,
+   "unit": "acre",
+   "pricePerUnit": 250,
+   "totalCost": 150000,
+   "page": 12,
+   "line": "Land Rent (600 acres) 600.00 acre 250.00 150,000"
+  },
+  {
+   "description": "Liability Insurance",
+   "unitsPerFarm": 3000,
+   "unit": "acre",
+   "pricePerUnit": 0.57,
+   "totalCost": 1698,
+   "page": 12,
+   "line": "Liability Insurance 3,000.00 acre 0.57 1,698"
+  },
+  {
+   "description": "Office Expense",
+   "unitsPerFarm": 3000,
+   "unit": "acre",
+   "pricePerUnit": 50,
+   "totalCost": 150000,
+   "page": 12,
+   "line": "Office Expense 3,000.00 acre 50.00 150,000"
+  }
+ ],
+ "method": {
+  "capitalRecoveryFormula": {
+   "page": 6,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": null,
+  "insuranceRatePct": null,
+  "propertyTaxRatePct": null,
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 4,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
+ },
+ "monthly": {
+  "basis": "per acre",
+  "cashCostsPerAcre": [
+   107,
+   55,
+   77,
+   113,
+   46,
+   47,
+   251,
+   1,
+   1,
+   1,
+   181,
+   9
+  ],
+  "operatingPerAcre": [
+   100,
+   49,
+   71,
+   107,
+   39,
+   41,
+   1,
+   1,
+   1,
+   1,
+   175,
+   3
+  ],
+  "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "totalCheck": 888,
+  "checkedRow": "TOTAL CASH COSTS",
+  "columns": [
+   "NOV",
+   "DEC",
+   "JAN",
+   "FEB",
+   "MAR",
+   "APR",
+   "MAY",
+   "JUN",
+   "JUL",
+   "AUG",
+   "SEP",
+   "OCT"
+  ],
+  "spansTwoYears": false,
+  "page": 10,
+  "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE WHEAT FOR GRAIN"
+ },
+ "establishment": null,
+ "parse": {
+  "fieldsFound": [
+   "year",
+   "region",
+   "counties",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
+   "equipment",
+   "investments",
+   "hourlyEquipment",
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
+   "monthly"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "interestRatePct",
+   "landRentPerAcre",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
+  ],
+  "warnings": [
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
+   "1 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)"
+  ]
+ }
+}
