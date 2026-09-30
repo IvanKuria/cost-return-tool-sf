@@ -113,6 +113,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS AND RETURNS PER ACRE TO PRODUCE ONIONS-",
   "operatingTotal": {
    "value": 3615.29,
    "unit": "$/acre",

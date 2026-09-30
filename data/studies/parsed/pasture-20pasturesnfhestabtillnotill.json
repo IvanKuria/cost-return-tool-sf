@@ -82,6 +82,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE FOR FIRST YEAR PRODUCTION-PASTURE",
   "operatingTotal": {
    "value": 515,
    "unit": "$/acre",
@@ -148,6 +149,7 @@
    {
     "name": "Weeds: Spot Spray 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -161,6 +163,7 @@
    {
     "name": "Irrigate: Flood 7x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -174,6 +177,7 @@
    {
     "name": "Fertilizer: 46-0-0",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -187,6 +191,7 @@
    {
     "name": "Harvest: Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -266,6 +271,7 @@
  },
  "monthly": null,
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

@@ -87,6 +87,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "Costs per Acre to Produce Fresh Bell Peppers in Ventura County, 2012/2013",
   "operatingTotal": {
    "value": 10866,
    "unit": "$/acre",
@@ -178,6 +179,7 @@
    {
     "name": "Disc (4x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.41,
     "labor": 7.54,
     "fuel": 33.32,
@@ -191,6 +193,7 @@
    {
     "name": "Subsoil (2x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.65,
     "labor": 11.88,
     "fuel": 52.52,
@@ -204,6 +207,7 @@
    {
     "name": "Land Level (3x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.36,
     "labor": 6.68,
     "fuel": 29.54,
@@ -217,6 +221,7 @@
    {
     "name": "Broadcast Fertilizer",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 6.18,
     "fuel": 27.32,
@@ -230,6 +235,7 @@
    {
     "name": "Chisel Plow",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 2.23,
     "fuel": 9.85,
@@ -243,6 +249,7 @@
    {
     "name": "List Beds",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 1.41,
     "fuel": 6.25,
@@ -256,6 +263,7 @@
    {
     "name": "Shape Beds",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.36,
     "labor": 6.6,
     "fuel": 29.19,
@@ -269,6 +277,7 @@
    {
     "name": "Herbicide Treatment",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 2.26,
     "fuel": 10.01,
@@ -282,6 +291,7 @@
    {
     "name": "Install Drip Tape & Mulch (machine)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 7.43,
     "fuel": 6.3,
@@ -295,6 +305,7 @@
    {
     "name": "Install Drip Tape & Mulch (labor)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 5.99,
     "fuel": 0,
@@ -308,6 +319,7 @@
    {
     "name": "Transplanting",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -321,6 +333,7 @@
    {
     "name": "Fertilizer - UAN32% (11x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -334,6 +347,7 @@
    {
     "name": "Fertilizer - CAN17% (8x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -347,6 +361,7 @@
    {
     "name": "Fertilizer - KTS (2x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -360,6 +375,7 @@
    {
     "name": "Stakes & Twine Installation",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 62.6,
     "labor": 749.95,
     "fuel": 0,
@@ -373,6 +389,7 @@
    {
     "name": "Hand Weeding (5x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -386,6 +403,7 @@
    {
     "name": "Irrigation & System Inspection (24x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 12,
     "labor": 143.76,
     "fuel": 0,
@@ -399,6 +417,7 @@
    {
     "name": "Pest Control Advisor",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -412,6 +431,7 @@
    {
     "name": "Pest Management (7x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -425,6 +445,7 @@
    {
     "name": "Conditional Waiver Program",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -438,6 +459,7 @@
    {
     "name": "Food Safety Program",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -451,6 +473,7 @@
    {
     "name": "Microbial Water Test",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -464,6 +487,7 @@
    {
     "name": "Truck Use",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 36.72,
     "fuel": 12.24,
@@ -477,6 +501,7 @@
    {
     "name": "Pick, Grade, Pack, Haul, Sell",
     "category": "harvest",
+    "section": "Harvest and Marketing",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -490,6 +515,7 @@
    {
     "name": "California Pepper Commission Assessment",
     "category": "harvest",
+    "section": "Harvest and Marketing",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -503,6 +529,7 @@
    {
     "name": "Stakes & Twine Removal",
     "category": "harvest",
+    "section": "Harvest and Marketing",
     "timeHrsPerAcre": 31.3,
     "labor": 374.97,
     "fuel": 0,
@@ -516,6 +543,7 @@
    {
     "name": "Mow Plant",
     "category": "harvest",
+    "section": "Harvest and Marketing",
     "timeHrsPerAcre": 0.34,
     "labor": 6.31,
     "fuel": 5.35,
@@ -529,6 +557,7 @@
    {
     "name": "Remove Drip & Mulch (labor)",
     "category": "harvest",
+    "section": "Harvest and Marketing",
     "timeHrsPerAcre": 0.5,
     "labor": 5.99,
     "fuel": 0,
@@ -542,6 +571,7 @@
    {
     "name": "Remove Drip Tape (machine)",
     "category": "harvest",
+    "section": "Harvest and Marketing",
     "timeHrsPerAcre": 0.18,
     "labor": 3.38,
     "fuel": 2.87,
@@ -555,6 +585,7 @@
    {
     "name": "Remove Plastic Mulch (machine)",
     "category": "harvest",
+    "section": "Harvest and Marketing",
     "timeHrsPerAcre": 0.29,
     "labor": 5.42,
     "fuel": 4.59,
@@ -568,6 +599,7 @@
    {
     "name": "Disc (2x)",
     "category": "harvest",
+    "section": "Harvest and Marketing",
     "timeHrsPerAcre": 0.21,
     "labor": 3.77,
     "fuel": 16.66,

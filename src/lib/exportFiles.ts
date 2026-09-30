@@ -286,309 +286,376 @@ export async function buildWorkbook(snapshot: ExportSnapshot): Promise<Uint8Arra
 }
 
 // ---------------------------------------------------------------------------
-// PDF: a short report. Letter, portrait; landscape only for the month table and equipment.
+// PDF: consistent portrait US Letter pages, with wide tables split into readable sections.
 // ---------------------------------------------------------------------------
 
 type Doc = import('jspdf').jsPDF;
 
-export async function buildPdf(snapshot: ExportSnapshot): Promise<Uint8Array<ArrayBuffer>> {
+export async function buildPdf(snapshot: ExportSnapshot, options: { includeDetails?: boolean; sourcesUrl?: string } = {}): Promise<Uint8Array<ArrayBuffer>> {
   const [{ jsPDF }, { autoTable }] = await Promise.all([import('jspdf'), import('jspdf-autotable')]);
   const L = snapshot.labels;
   const doc: Doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'letter' });
-  doc.setProperties({ title: `${snapshot.title}, ${snapshot.dateText}`, creator: 'Farm Cost Planner' });
+  doc.setProperties({ title: `${snapshot.title}, ${snapshot.dateText}`, creator: L.publisher });
 
-  const ink: [number, number, number] = [20, 22, 25];
-  const grey: [number, number, number] = [98, 104, 114];
-  const rule: [number, number, number] = [200, 204, 210];
-  const red: [number, number, number] = [160, 40, 40];
-  const green: [number, number, number] = [26, 127, 75];
-  const text = (v: string) => v.replace(/−/g, '-').replace(/[  ]/g, ' ').replace(/[‘’]/g, "'").replace(/[“”]/g, '"');
+  const ink: [number, number, number] = [0, 0, 0];
+  const FONT = 'times';
+  const locale = snapshot.lang === 'es' ? 'es-US' : 'en-US';
+  const year = new Date(snapshot.created).getFullYear();
+  const place = [snapshot.county, String(year)].filter(Boolean).join(' - ');
+  const text = (v: string) => v.replace(/−/g, '-').replace(/[  ]/g, ' ').replace(/[‘’]/g, "'").replace(/[“”]/g, '"');
+  const upper = (v: string) => v.toLocaleUpperCase(locale);
+  const cap = (v: string) => v.charAt(0).toLocaleUpperCase(locale) + v.slice(1);
   const money = (n: number) => `${n < 0 ? '-' : ''}$${Math.abs(Math.round(n)).toLocaleString('en-US')}`;
-  const cents = (n: number) => `${n < 0 ? '-' : ''}$${Math.abs(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  // UC tables print whole dollars with no sign or symbol for costs; only a loss carries a minus.
+  const whole = (n: number) => `${Math.round(n) < 0 ? '-' : ''}${Math.abs(Math.round(n)).toLocaleString('en-US')}`;
+  const cents = (n: number) => `${n < 0 ? '-' : ''}${Math.abs(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   const num = (n: number) => n.toLocaleString('en-US', { maximumFractionDigits: 2 });
   const M = 16; // margin
-  const TOP = 22;
-  const BOTTOM = 16;
-  const sectionOfPage: string[] = [];
-  let section = L.summary;
+  const TOP = 16;
+  const BOTTOM = 18;
+  const HEAD_END = 33; // where the body starts under a table header block
   let y = TOP;
   const pageWidth = () => doc.internal.pageSize.getWidth();
   const pageHeight = () => doc.internal.pageSize.getHeight();
-  const noteSection = () => { sectionOfPage[doc.getCurrentPageInfo().pageNumber] = section; };
-  const newPage = (orientation: 'portrait' | 'landscape' = 'portrait') => { doc.addPage('letter', orientation); y = TOP; noteSection(); };
+  const center = () => pageWidth() / 2;
+  const newPage = () => { doc.addPage('letter', 'portrait'); y = TOP; };
+  // Every continuation uses the same portrait Letter dimensions.
   const ensure = (needed: number) => { if (y + needed > pageHeight() - BOTTOM) newPage(); };
-  const sectionTitle = (title: string, orientation: 'portrait' | 'landscape' = 'portrait', forceNew = true) => {
-    section = title;
-    if (forceNew) newPage(orientation); else { ensure(24); noteSection(); }
-    doc.setFont('helvetica', 'bold'); doc.setFontSize(14); doc.setTextColor(...ink);
-    doc.text(text(title), M, y); y += 8;
-  };
-  const para = (s: string, size = 10, color: [number, number, number] = ink, style: 'normal' | 'bold' = 'normal') => {
-    doc.setFont('helvetica', style); doc.setFontSize(size); doc.setTextColor(...color);
-    const lines: string[] = doc.splitTextToSize(text(s), pageWidth() - 2 * M);
-    ensure(lines.length * size * 0.45 + 2);
-    doc.text(lines, M, y); y += lines.length * size * 0.45 + 2;
-  };
-  const subhead = (s: string) => { ensure(30); y += 2; para(s, 11, ink, 'bold'); };
-  const kindColor = (kind: ValueKind, n: number): [number, number, number] => kind === 'expense' ? red : kind === 'net' ? (n < 0 ? red : green) : ink;
+  const rule = (y0: number, width = 0.2, x0 = M, x1 = pageWidth() - M) => { doc.setDrawColor(...ink); doc.setLineWidth(width); doc.line(x0, y0, x1, y0); };
+  const font = (size: number, style: 'normal' | 'bold' | 'italic' = 'normal') => { doc.setFont(FONT, style); doc.setFontSize(size); doc.setTextColor(...ink); };
 
-  type Cell = { text: string; color?: [number, number, number]; bold?: boolean; align?: 'left' | 'right' };
-  const table = (head: string[], body: Cell[][], opts: { fontSize?: number; widths?: (number | 'auto')[]; rightFrom?: number; startY?: number } = {}) => {
+  // "Table 1. Costs per acre to produce beans" -> "Table 1." + "COSTS PER ACRE TO PRODUCE BEANS"
+  const splitTitle = (title: string) => {
+    const m = /^(\S+ \d+\.)\s*(.*)$/.exec(title);
+    return m ? { prefix: m[1], rest: m[2] } : { prefix: '', rest: title };
+  };
+  const ucTitle = (title: string) => { const { prefix, rest } = splitTitle(title); return [prefix, upper(rest)].filter(Boolean).join(' '); };
+  // The centered block every UC table opens with: publisher, bold table title, region and year.
+  let currentTitle = '';
+  const headerBlock = (title: string, continued = false) => {
+    let y0 = 15;
+    font(10.5); doc.text(text(upper(L.publisher)), center(), y0, { align: 'center' }); y0 += 4.8;
+    font(11, 'bold');
+    const { prefix } = splitTitle(title);
+    const shown = continued ? `${prefix || ucTitle(title)} ${upper(L.continued)}`.trim() : ucTitle(title);
+    const lines: string[] = doc.splitTextToSize(text(shown), pageWidth() - 2 * M);
+    doc.text(lines, center(), y0, { align: 'center' }); y0 += lines.length * 4.8;
+    font(10.5); doc.text(text(place), center(), y0, { align: 'center' }); y0 += 6;
+    y = Math.max(y0, HEAD_END - 2);
+  };
+  const tablePage = (title: string) => { newPage(); currentTitle = title; headerBlock(title); };
+  // A table that starts part way down a page, under its own smaller heading.
+  const inlineTitle = (title: string) => {
+    ensure(40); currentTitle = title; y += 4;
+    font(11, 'bold'); doc.text(text(ucTitle(title)), center(), y, { align: 'center' }); y += 6;
+  };
+  // Narrative pages: a centered bold capital heading, as in the ASSUMPTIONS section of a study.
+  const heading = (s: string, forceNew = false) => {
+    currentTitle = '';
+    if (forceNew) newPage(); else { ensure(30); y += 5; }
+    font(11.5, 'bold'); doc.text(text(upper(s)), center(), y, { align: 'center' }); y += 7;
+  };
+  const para = (s: string, size = 10.5, style: 'normal' | 'bold' | 'italic' = 'normal', justify = false) => {
+    font(size, style);
+    const width = pageWidth() - 2 * M;
+    const lines: string[] = doc.splitTextToSize(text(s), width);
+    const lh = size * 0.42;
+    ensure(lines.length * lh + 2);
+    if (justify && lines.length > 1) {
+      doc.text(lines.slice(0, -1), M, y, { align: 'justify', maxWidth: width });
+      doc.text(lines[lines.length - 1], M, y + (lines.length - 1) * lh);
+    } else doc.text(lines, M, y);
+    y += lines.length * lh + 2;
+  };
+  const note = (s: string) => para(s, 8.5, 'italic');
+  // Run-in head, as UC writes "Farm. The hypothetical farm consists of ..."
+  const runIn = (head: string, body: string) => {
+    font(10.5, 'bold');
+    const headText = `${text(head)}. `;
+    const headW = doc.getTextWidth(headText);
+    font(10.5);
+    const width = pageWidth() - 2 * M;
+    const first: string[] = doc.splitTextToSize(text(body), width - headW);
+    const firstLine = first[0] ?? '';
+    const rest: string[] = first.length > 1 ? doc.splitTextToSize(text(body).slice(firstLine.length).trim(), width) : [];
+    const lh = 10.5 * 0.42;
+    ensure((1 + rest.length) * lh + 3);
+    font(10.5, 'bold'); doc.text(headText, M, y);
+    font(10.5); doc.text(firstLine, M + headW, y);
+    if (rest.length) doc.text(rest, M, y + lh);
+    y += (1 + rest.length) * lh + 3;
+  };
+
+  type Cell = { text: string; bold?: boolean; italic?: boolean; align?: 'left' | 'right' | 'center' };
+  type Row = Cell[] & { ruled?: boolean };
+  const cell = (t: string, extra: Partial<Cell> = {}): Cell => ({ text: t, ...extra });
+  const amt = (n: number, bold = false): Cell => ({ text: whole(n), bold });
+  const blank = (n: number) => Array.from({ length: n }, () => cell(''));
+  // A TOTAL row: capital label, set between thin rules.
+  const total = (label: string, cells: Cell[]): Row => Object.assign([cell(upper(label)), ...cells], { ruled: true });
+  const plain = (cells: Cell[]): Row => cells as Row;
+  const table = (head: string[] | string[][] | null, body: Row[], opts: { fontSize?: number; widths?: (number | 'auto')[]; rightFrom?: number; closeRule?: boolean; tableWidth?: number } = {}) => {
     const rightFrom = opts.rightFrom ?? 1;
+    const heads = head == null ? [] : Array.isArray(head[0]) ? (head as string[][]) : [head as string[]];
+    const cols = heads[heads.length - 1]?.length ?? body[0]?.length ?? 0;
     const columnStyles: Record<number, { halign?: 'left' | 'right'; cellWidth?: number | 'auto' }> = {};
-    head.forEach((_, i) => { columnStyles[i] = { halign: i >= rightFrom ? 'right' : 'left', cellWidth: opts.widths?.[i] ?? 'auto' }; });
+    for (let i = 0; i < cols; i++) columnStyles[i] = { halign: i >= rightFrom ? 'right' : 'left', cellWidth: opts.widths?.[i] ?? 'auto' };
+    const titleForTable = currentTitle;
+    const left = opts.tableWidth ? (pageWidth() - opts.tableWidth) / 2 : M;
     autoTable(doc, {
-      startY: opts.startY ?? y,
-      head: [head.map(text)],
+      startY: y,
+      head: heads.map(h => h.map(text)),
       body: body.map(r => r.map(c => text(c.text))),
-      margin: { top: TOP, bottom: BOTTOM, left: M, right: M },
-      styles: { font: 'helvetica', fontSize: opts.fontSize ?? 9, cellPadding: 1.6, textColor: ink, lineColor: rule, lineWidth: 0, overflow: 'linebreak' },
-      headStyles: { fillColor: [255, 255, 255], textColor: grey, fontStyle: 'normal', lineWidth: { bottom: 0.4 }, lineColor: ink },
-      bodyStyles: { lineWidth: { bottom: 0.15 }, lineColor: rule },
-      alternateRowStyles: { fillColor: [255, 255, 255] },
+      showHead: head == null ? 'never' : 'everyPage',
+      margin: { top: titleForTable ? HEAD_END : TOP, bottom: BOTTOM, left, right: left },
+      tableWidth: opts.tableWidth ?? 'auto',
+      styles: { font: FONT, fontSize: opts.fontSize ?? 9, cellPadding: { top: 0.5, bottom: 0.5, left: 1.2, right: 1.2 }, textColor: ink, lineColor: ink, lineWidth: 0, overflow: 'linebreak', valign: 'top' },
+      headStyles: { fillColor: false, textColor: ink, fontStyle: 'normal', valign: 'bottom', lineWidth: { top: 0, bottom: 0 }, cellPadding: { top: 1, bottom: 1, left: 1.2, right: 1.2 } },
+      bodyStyles: { fillColor: false },
+      alternateRowStyles: { fillColor: false },
       columnStyles,
       theme: 'plain',
       didParseCell: d => {
-        if (d.section !== 'body') return;
-        const c = body[d.row.index]?.[d.column.index];
+        if (d.section === 'head') {
+          // A heavy rule over the column headings and a thin one under them.
+          const first = d.row.index === 0, last = d.row.index === heads.length - 1;
+          d.cell.styles.lineWidth = { top: first ? 0.5 : 0, bottom: last ? 0.2 : 0 };
+          // A heading sits over its column's text: right for numbers, or whatever the first row asks for.
+          d.cell.styles.halign = body[0]?.[d.column.index]?.align ?? (d.column.index >= rightFrom ? 'right' : 'left');
+          return;
+        }
+        const row = body[d.row.index];
+        const c = row?.[d.column.index];
         if (!c) return;
-        if (c.color) d.cell.styles.textColor = c.color;
+        if (row.ruled) d.cell.styles.lineWidth = { top: 0.2, bottom: 0.2 };
         if (c.bold) d.cell.styles.fontStyle = 'bold';
+        if (c.italic) d.cell.styles.fontStyle = 'italic';
         if (c.align) d.cell.styles.halign = c.align;
       },
-      didDrawPage: () => noteSection(),
+      didDrawPage: d => {
+        // pageNumber counts pages of this table, so anything past 1 is a continuation.
+        if (titleForTable && d.pageNumber > 1) headerBlock(titleForTable, true);
+      },
     });
-    y = (doc as Doc & { lastAutoTable: { finalY: number } }).lastAutoTable.finalY + 6;
+    const at = (doc as Doc & { lastAutoTable: { finalY: number } }).lastAutoTable;
+    if (opts.closeRule !== false && head != null) rule(at.finalY, 0.2, left, pageWidth() - left);
+    y = at.finalY + 5;
   };
-  const cell = (t: string, extra: Partial<Cell> = {}): Cell => ({ text: t, ...extra });
-  const moneyCell = (n: number, kind: ValueKind, bold = false): Cell => ({ text: money(kind === 'expense' ? -Math.abs(n) : n), color: kindColor(kind, n), bold });
 
-  // ---- 1. Summary ----
-  noteSection();
-  doc.setFont('helvetica', 'bold'); doc.setFontSize(22); doc.setTextColor(...ink);
-  const titleLines: string[] = doc.splitTextToSize(text(snapshot.title), pageWidth() - 2 * M);
-  doc.text(titleLines.slice(0, 2), M, y); y += Math.min(titleLines.length, 2) * 9;
-  para([snapshot.county, snapshot.dateText].filter(Boolean).join(', '), 10, grey);
-  y += 4;
-  para(snapshot.headline, 15, ink, 'bold');
-  if (snapshot.draftNote) para(snapshot.draftNote, 9.5, grey);
-  y += 3;
-  // facts row
+  // ---- Cover: the title page of a study, then the whole-farm summary ----
   {
-    const facts = snapshot.facts;
-    const colW = (pageWidth() - 2 * M) / Math.max(facts.length, 1);
-    ensure(20);
-    doc.setDrawColor(...rule); doc.setLineWidth(0.2); doc.line(M, y, pageWidth() - M, y); y += 5;
-    facts.forEach((f, i) => {
-      const x0 = M + i * colW;
-      doc.setFont('helvetica', 'normal'); doc.setFontSize(8.5); doc.setTextColor(...grey);
-      doc.text(doc.splitTextToSize(text(f.label), colW - 4)[0] ?? '', x0, y);
-      doc.setFont('helvetica', 'bold'); doc.setFontSize(13);
-      const v = typeof f.value === 'number' ? (f.kind === 'number' ? num(f.value) : money(f.kind === 'expense' ? -Math.abs(f.value) : f.value)) : f.value;
-      doc.setTextColor(...(typeof f.value === 'number' ? kindColor(f.kind, f.value) : ink));
-      doc.text(text(v), x0, y + 6.5);
-    });
-    y += 12;
-    doc.setDrawColor(...rule); doc.line(M, y, pageWidth() - M, y); y += 8;
-  }
-  {
-    const rows = [...snapshot.cropTable.rows, snapshot.cropTable.total];
-    const body = rows.map((r, i) => {
-      const isTotal = i === rows.length - 1;
-      return [cell(`${r.name}\n${num(r.acres)} ${L.acres}`, { bold: isTotal }), moneyCell(r.sales, 'money', isTotal), moneyCell(r.costs, 'expense', isTotal), moneyCell(r.net, 'net', true), moneyCell(r.perAcre, 'net', isTotal)];
-    });
-    table([L.crop, L.sales, L.costs, L.left, L.perAcre], body, { widths: [60, 'auto', 'auto', 'auto', 'auto'] });
-  }
-  if (snapshot.paperLoser) para(snapshot.paperLoser, 9.5, grey);
+    rule(18, 0.5);
+    y = 25;
+    font(12);
+    doc.text(text(upper(L.publisher)), center(), y, { align: 'center' }); y += 5.2;
+    font(15, 'bold'); doc.text(String(year), center(), y, { align: 'center' }); y += 6.5;
+    doc.text(text(upper(L.costsAndReturns)), center(), y, { align: 'center' }); y += 9.5;
+    font(22, 'bold');
+    const titleLines: string[] = doc.splitTextToSize(text(upper(snapshot.title)), pageWidth() - 2 * M);
+    doc.text(titleLines.slice(0, 2), center(), y, { align: 'center' }); y += Math.min(titleLines.length, 2) * 9;
+    if (snapshot.county) { font(14, 'bold'); doc.text(text(upper(snapshot.county)), center(), y, { align: 'center' }); y += 6; }
+    font(11); doc.text(text(snapshot.dateText), center(), y, { align: 'center' }); y += 12;
 
-  // ---- 2. Cash flow by month (landscape) ----
-  if (snapshot.cashFlow.rows.length) {
-    sectionTitle(`${L.t3Title}: ${L.cashFlow}`, 'landscape');
-    para(`${L.t3Caption} ${snapshot.cashFlow.intro}`, 9, grey);
-    const head = ['', ...snapshot.cashFlow.months, L.total];
-    const rowCells = (r: CashRow): Cell[] => {
-      const strong = r.kind === 'net' || r.kind === 'balance';
-      const color = (n: number): [number, number, number] | undefined => r.kind === 'out' || r.kind === 'fixed' ? red : r.kind === 'balance' || r.kind === 'net' ? (n < 0 ? red : n > 0 ? green : grey) : n === 0 ? grey : ink;
-      return [cell(r.label, { bold: strong }), ...r.values.map(v => cell(money(v), { color: color(v), bold: strong })), cell(money(r.total), { color: color(r.total), bold: true })];
-    };
-    const monthW = (pageWidth() - 2 * M - 52) / 13;
-    table(head, snapshot.cashFlow.rows.map(rowCells), { fontSize: 7.5, widths: [52, ...Array<number>(13).fill(monthW)] });
-    if (snapshot.cashFlow.excluded.length) para(`${L.notInView}: ${snapshot.cashFlow.excluded.join(', ')}.`, 9, grey);
-    // bar chart of monthly net
-    const net = snapshot.cashFlow.rows.find(r => r.kind === 'net');
-    if (net) {
-      const h = 52; ensure(h + 14);
-      para(L.chart, 10, ink, 'bold');
-      const x0 = M + 18, w = pageWidth() - 2 * M - 18, top = y, mid = y + h / 2;
-      const max = Math.max(1, ...net.values.map(Math.abs));
-      const scale = (h / 2 - 4) / max;
-      doc.setDrawColor(...rule); doc.setLineWidth(0.2); doc.line(x0, mid, x0 + w, mid);
-      doc.setFontSize(7.5); doc.setTextColor(...grey); doc.setFont('helvetica', 'normal');
-      doc.text(money(max), x0 - 2, top + 4, { align: 'right' }); doc.text('$0', x0 - 2, mid + 1, { align: 'right' }); doc.text(money(-max), x0 - 2, top + h - 1, { align: 'right' });
-      const bw = w / 12;
-      net.values.forEach((v, i) => {
-        const bh = Math.abs(v) * scale;
-        doc.setFillColor(...(v < 0 ? red : green));
-        if (bh > 0) doc.rect(x0 + i * bw + bw * 0.2, v >= 0 ? mid - bh : mid, bw * 0.6, bh, 'F');
-        doc.setTextColor(...grey); doc.text(text(snapshot.cashFlow.months[i]), x0 + i * bw + bw / 2, top + h + 4, { align: 'center' });
-      });
-      y = top + h + 10;
+    heading(L.farmSummary);
+    para(snapshot.headline, 11, 'bold', true);
+    if (snapshot.draftNote) note(snapshot.draftNote);
+    y += 2;
+    // Key figures as a two column list, the way a study lists its assumptions.
+    const factValue = (f: typeof snapshot.facts[number]) => typeof f.value === 'number' ? (f.kind === 'number' ? num(f.value) : money(f.value)) : f.value;
+    table(null, snapshot.facts.map(f => plain([cell(cap(f.label)), cell(factValue(f), { align: 'right' })])), { fontSize: 10.5, rightFrom: 1, tableWidth: 120 });
+    y += 2;
+    const rows = snapshot.cropTable.rows;
+    const t = snapshot.cropTable.total;
+    const body: Row[] = rows.map(r => plain([cell(r.name), cell(num(r.acres)), amt(r.sales), amt(r.costs), amt(r.net), amt(r.perAcre)]));
+    body.push(total(t.name, [cell(num(t.acres)), amt(t.sales), amt(t.costs), amt(t.net), amt(t.perAcre)]));
+    table([L.crop, cap(L.acres), L.sales, L.costs, L.left, L.perAcre], body, { fontSize: 9.5, widths: [56, 'auto', 'auto', 'auto', 'auto', 'auto'] });
+    if (snapshot.paperLoser) note(snapshot.paperLoser);
+
+    const footY = pageHeight() - 34;
+    if (y < footY - 4) {
+      rule(footY, 0.3);
+      font(10, 'italic'); doc.text(text(L.prepared), M, footY + 6);
+      font(10); doc.text(doc.splitTextToSize(text(L.preparedWith.replace('{date}', snapshot.dateText)), pageWidth() - 2 * M - 42), M + 42, footY + 6);
     }
   }
 
-  // ---- 3. Table 1 per crop (landscape) ----
+  // Monthly cash flow: two six-month sections, with full-year totals on the second.
+  if (snapshot.cashFlow.rows.length) {
+    tablePage(`${L.t3Title}: ${L.cashFlow}`);
+    for (const start of [0, 6]) {
+      const months = snapshot.cashFlow.months.slice(start, start + 6);
+      ensure(35);
+      font(10, 'bold'); doc.text(`${months[0]} - ${months[5]}`, M, y); y += 5;
+      const lastHalf = start === 6;
+      const head = ['', ...months.map(upper), ...(lastHalf ? [L.total] : [])];
+      const rowCells = (r: CashRow): Row => {
+        const cells = [...r.values.slice(start, start + 6).map(v => amt(v)), ...(lastHalf ? [amt(r.total)] : [])];
+        return r.kind === 'net' || r.kind === 'balance' ? total(r.label, cells) : plain([cell(r.label), ...cells]);
+      };
+      const numericCols = lastHalf ? 7 : 6;
+      const monthW = (pageWidth() - 2 * M - 44) / numericCols;
+      table(head, snapshot.cashFlow.rows.map(rowCells), { fontSize: 8.5, widths: [44, ...Array<number>(numericCols).fill(monthW)] });
+    }
+    note(snapshot.cashFlow.intro);
+    if (snapshot.cashFlow.excluded.length) note(`${L.notInView}: ${snapshot.cashFlow.excluded.join(', ')}.`);
+  }
+
+  // ---- Costs per acre, per crop ----
   const groupLabel: Record<string, string> = { cultural: L.t1Cultural, harvest: L.t1Harvest, assessment: L.t1Assessment, postharvest: L.t1Postharvest, other: L.t1Other };
   const extraLabel: Record<string, string> = { ownLabor: L.t1OwnLabor, hiredJobs: L.t1HiredJobs, lump: L.t1Lump, repairPool: L.t1RepairPool, interest: L.t1Interest };
-  const empty = (n: number) => Array.from({ length: n }, () => cell(''));
   for (const tb of snapshot.table1) {
     const detail = snapshot.cropDetails.find(c => c.id === tb.cropId);
-    sectionTitle(L.t1Title.replace('{crop}', tb.name), 'landscape');
-    para(`${L.t1Caption} ${L.t1PerAcreNote.replace('{acres}', num(tb.acres)).replace('{plantings}', num(tb.plantings))}`, 8.5, grey);
+    tablePage(L.t1Title.replace('{crop}', tb.name));
     const w = pageWidth() - 2 * M;
     if (detail) {
-      const pairs: Cell[][] = [];
+      const trios: Row[] = [];
       for (let i = 0; i < detail.inputs.length; i += 3) {
         const trio = [detail.inputs[i], detail.inputs[i + 1], detail.inputs[i + 2]];
-        pairs.push(trio.flatMap(v => [cell(v?.label ?? '', { color: grey }), cell(v?.value ?? '', { align: 'left' })]));
+        trios.push(plain(trio.flatMap(v => [cell(v ? `${v.label}:` : '', { italic: true }), cell(v?.value ?? '')])));
       }
-      table(['', '', '', '', '', ''], pairs, { fontSize: 8, rightFrom: 99, widths: [w * 0.12, w * 0.21, w * 0.12, w * 0.21, w * 0.12, w * 0.22] });
-      y -= 3;
+      table(null, trios, { fontSize: 8.5, rightFrom: 99, widths: [w * 0.12, w * 0.21, w * 0.12, w * 0.21, w * 0.12, w * 0.22] });
+      y -= 1;
     }
-    const body: Cell[][] = [];
+    const body: Row[] = [];
+    const sub = (c: { labor: number; flr: number; materials: number; custom: number; total: number }, time = '') => [cell(time), amt(c.labor), amt(c.flr), amt(c.materials), amt(c.custom), amt(c.total), cell('')];
     for (const g of tb.groups) {
-      body.push([cell(groupLabel[g.category], { bold: true }), ...empty(6)]);
-      for (const r of g.rows) body.push([cell(`   ${r.name}`), cell(r.time > 0 ? num(r.time) : '', { color: grey }), moneyCell(r.labor, 'expense'), moneyCell(r.flr, 'expense'), moneyCell(r.materials, 'expense'), moneyCell(r.custom, 'expense'), moneyCell(r.total, 'expense', true)]);
-      body.push([cell(L.t1Subtotal.replace('{group}', groupLabel[g.category].toLowerCase()), { bold: true }), cell(''), moneyCell(g.subtotal.labor, 'expense', true), moneyCell(g.subtotal.flr, 'expense', true), moneyCell(g.subtotal.materials, 'expense', true), moneyCell(g.subtotal.custom, 'expense', true), moneyCell(g.subtotal.total, 'expense', true)]);
+      body.push(plain([cell(`${groupLabel[g.category]}:`), ...blank(7)]));
+      for (const r of g.rows) body.push(plain([cell(r.name), cell(r.time > 0 ? r.time.toFixed(2) : '0.00'), ...sub(r).slice(1)]));
+      const hours = g.rows.reduce((a, r) => a + (r.time > 0 ? r.time : 0), 0);
+      body.push(total(L.t1Subtotal.replace('{group}', groupLabel[g.category]), sub(g.subtotal, hours.toFixed(2))));
     }
-    for (const e of tb.extra) body.push([cell(extraLabel[e.key]), ...empty(5), moneyCell(e.amount, 'expense')]);
-    body.push([cell(L.t1TotalOperating, { bold: true }), ...empty(5), moneyCell(tb.totalOperating, 'expense', true)]);
-    if (tb.cashOverhead.length) body.push([cell(L.t1CashOverhead, { bold: true }), ...empty(6)]);
-    for (const o of tb.cashOverhead) body.push([cell(`   ${o.id === 'land-rent' ? L.t1LandRent : o.name}`), ...empty(5), moneyCell(o.amount, 'expense')]);
-    body.push([cell(L.t1TotalCashOverhead, { bold: true }), ...empty(5), moneyCell(tb.totalCashOverhead, 'expense', true)]);
-    if (tb.nonCash.length || tb.establishment) body.push([cell(L.t1NonCash, { bold: true }), ...empty(6)]);
-    for (const m of tb.nonCash) body.push([cell(`   ${m.name}`), ...empty(5), moneyCell(m.amount, 'expense')]);
-    if (tb.establishment) body.push([cell(`   ${L.t1Establishment}`), ...empty(5), moneyCell(tb.establishment.total, 'expense')]);
-    body.push([cell(L.t1TotalNonCash, { bold: true }), ...empty(5), moneyCell(tb.totalNonCash, 'expense', true)]);
-    body.push([cell(L.t1TotalCosts, { bold: true }), ...empty(5), moneyCell(tb.totalCosts, 'expense', true)]);
-    body.push([cell(L.t1Gross, { bold: true }), ...empty(5), moneyCell(tb.grossReturns, 'money', true)]);
-    body.push([cell(L.t1NetOperating, { bold: true }), ...empty(5), moneyCell(tb.netAboveOperating, 'net', true)]);
-    body.push([cell(L.t1NetTotal, { bold: true }), ...empty(5), moneyCell(tb.netAboveTotal, 'net', true)]);
-    table([L.t1Operation, L.t1Time, L.t1Labor, L.t1Flr, L.t1Materials, L.t1Custom, L.t1Total], body, { fontSize: 7.5, widths: [w * 0.34, w * 0.09, w * 0.11, w * 0.13, w * 0.11, w * 0.11, w * 0.11] });
-    if (detail) {
-      const pct = (wts: number[] | null) => wts ? wts.map(v => cell(`${Math.round(v * 100)}%`, { color: v > 0 ? ink : grey })) : Array.from({ length: 12 }, () => cell(''));
-      const lw = 44, mw = (w - lw) / 12;
-      ensure(24);
-      table(['%', ...snapshot.cashFlow.months], [[cell(L.timingCosts.replace(/, .*$/, ''), { color: grey }), ...pct(detail.timing.costs)], [cell(L.timingSales.replace(/, .*$/, ''), { color: grey }), ...pct(detail.timing.sales)]], { fontSize: 7.5, widths: [lw, ...Array<number>(12).fill(mw)] });
+    for (const e of tb.extra) body.push(plain([cell(extraLabel[e.key]), ...blank(5), amt(e.amount), cell('')]));
+    body.push(total(L.t1TotalOperating, [...blank(5), amt(tb.totalOperating), cell('')]));
+    if (tb.cashOverhead.length) body.push(plain([cell(`${L.t1CashOverhead}:`), ...blank(7)]));
+    for (const o of tb.cashOverhead) body.push(plain([cell(o.id === 'land-rent' ? L.t1LandRent : o.name), ...blank(5), amt(o.amount), cell('')]));
+    body.push(total(L.t1TotalCashOverhead, [...blank(5), amt(tb.totalCashOverhead), cell('')]));
+    if (tb.nonCash.length || tb.establishment) body.push(plain([cell(`${L.t1NonCash}:`), ...blank(7)]));
+    for (const m of tb.nonCash) body.push(plain([cell(m.name), ...blank(5), amt(m.amount), cell('')]));
+    if (tb.establishment) body.push(plain([cell(L.t1Establishment), ...blank(5), amt(tb.establishment.total), cell('')]));
+    body.push(total(L.t1TotalNonCash, [...blank(5), amt(tb.totalNonCash), cell('')]));
+    body.push(total(L.t1TotalCosts, [...blank(5), amt(tb.totalCosts), cell('')]));
+    body.push(total(L.t1Gross, [...blank(5), amt(tb.grossReturns), cell('')]));
+    body.push(total(L.t1NetOperating, [...blank(5), amt(tb.netAboveOperating), cell('')]));
+    body.push(total(L.t1NetTotal, [...blank(5), amt(tb.netAboveTotal), cell('')]));
+    table([L.t1Operation, L.t1Time, L.t1Labor, L.t1Flr, L.t1Materials, L.t1Custom, L.t1Total], body.map(r => Object.assign(r.slice(0, -1), { ruled: r.ruled })),
+      { fontSize: 8.5, widths: [w * 0.34, w * 0.09, w * 0.11, w * 0.12, w * 0.11, w * 0.11, w * 0.12] });
+    note(`${L.t1Caption} ${L.t1PerAcreNote.replace('{acres}', num(tb.acres)).replace('{plantings}', num(tb.plantings))}`);
+    if (detail && (detail.timing.costs || detail.timing.sales)) {
+      for (const start of [0, 6]) {
+        const pct = (wts: number[] | null) => wts ? wts.slice(start, start + 6).map(v => cell(v > 0 ? `${Math.round(v * 100)}%` : '')) : blank(6);
+        const lw = 44, mw = (w - lw) / 6;
+        ensure(24); y += 2;
+        table(['%', ...snapshot.cashFlow.months.slice(start, start + 6).map(upper)], [plain([cell(L.timingCosts.replace(/, .*$/, '')), ...pct(detail.timing.costs)]), plain([cell(L.timingSales.replace(/, .*$/, '')), ...pct(detail.timing.sales)])], { fontSize: 8.5, widths: [lw, ...Array<number>(6).fill(mw)] });
+      }
     }
   }
 
-  // ---- 4. Table 4 ranging (portrait) ----
+  // ---- Table 4: ranging analysis (portrait) ----
   if (snapshot.ranging.length) {
-    sectionTitle(L.t4Title.replace(/ ?(for|para) \{crop\}/, '').replace('{crop}', '').trim(), 'portrait');
-    para(L.t4Caption, 8.5, grey);
+    tablePage(L.t4Title.replace(/ ?(for|para) \{crop\}/, '').replace('{crop}', '').trim());
     for (const rg of snapshot.ranging) {
-      ensure(60);
-      para(L.t4Title.replace('{crop}', rg.name), 11, ink, 'bold');
-      const head = [L.t4Yield.replace('{unit}', rg.unit), ...rg.prices.map(p => `${cents(p)} / ${rg.unit}`)];
-      const body = rg.yields.map((yv, i) => [cell(num(yv), { bold: i === 2 }), ...rg.net[i].map((n, j) => moneyCell(n, 'net', i === 2 && j === 2))]);
-      table(head, body, { fontSize: 8.5 });
-      para(L.t4Net, 8, grey);
+      ensure(56);
+      font(10); doc.text(text(`${L.t4Net}: ${rg.name}`), center(), y, { align: 'center' });
+      const tw = doc.getTextWidth(text(`${L.t4Net}: ${rg.name}`));
+      rule(y + 0.8, 0.15, center() - tw / 2, center() + tw / 2); y += 4;
+      const head = [[L.t4Yield.replace('{unit}', rg.unit), ...rg.prices.map(p => `$${cents(p)}`)]];
+      const body = rg.yields.map((yv, i) => plain([cell(num(yv), { bold: i === 2 }), ...rg.net[i].map((n, j) => amt(n, i === 2 && j === 2))]));
+      table(head, body, { fontSize: 9 });
+      y += 2;
     }
+    note(L.t4Caption);
   }
 
-  // ---- 5. Table 5 whole farm equipment, investments, business overhead (landscape) ----
+  // ---- Whole farm equipment, investment and business overhead ----
   if (snapshot.table5.machines.length || snapshot.table5.investments.length || snapshot.table5.overhead.length) {
-    sectionTitle(L.t5Title, 'landscape');
-    para(L.t5Caption, 8.5, grey);
+    tablePage(L.t5Title);
     const t5 = snapshot.table5;
-    const t5row = (m: typeof t5.machines[number]): Cell[] => [cell(m.name), cell(money(m.price)), cell(num(m.years)), cell(money(m.salvage)), moneyCell(m.capitalRecovery, 'expense'), moneyCell(m.insurance, 'expense'), moneyCell(m.taxes, 'expense'), moneyCell(m.repairs, 'expense'), moneyCell(m.total, 'expense', true)];
-    const body: Cell[][] = t5.machines.map(t5row);
-    if (t5.investments.length) { body.push([cell(L.t5Investments, { bold: true }), ...empty(8)]); for (const m of t5.investments) body.push(t5row(m)); }
-    body.push([cell(L.t5EquipmentTotal, { bold: true }), cell(money(t5.totals.price), { bold: true }), cell(''), cell(money(t5.totals.salvage), { bold: true }), moneyCell(t5.totals.capitalRecovery, 'expense', true), moneyCell(t5.totals.insurance, 'expense', true), moneyCell(t5.totals.taxes, 'expense', true), moneyCell(t5.totals.repairs, 'expense', true), moneyCell(t5.totals.total, 'expense', true)]);
+    const t5row = (m: typeof t5.machines[number]): Row => plain([cell(m.name), amt(m.price), cell(num(m.years)), amt(m.salvage), amt(m.capitalRecovery), amt(m.insurance), amt(m.taxes), amt(m.repairs), amt(m.total)]);
+    const body: Row[] = t5.machines.map(t5row);
+    if (t5.investments.length) { body.push(plain([cell(upper(L.t5Investments)), ...blank(8)])); for (const m of t5.investments) body.push(t5row(m)); }
+    body.push(total(L.t5EquipmentTotal, [amt(t5.totals.price), cell('-'), amt(t5.totals.salvage), amt(t5.totals.capitalRecovery), amt(t5.totals.insurance), amt(t5.totals.taxes), amt(t5.totals.repairs), amt(t5.totals.total)]));
     const t5w = pageWidth() - 2 * M;
-    table([L.t5Description, L.t5Price, L.t5Years, L.t5Salvage, L.t5CapitalRecovery, L.t5Insurance, L.t5Taxes, L.t5Repairs, L.t5Total], body, { fontSize: 8, widths: [t5w * 0.28, ...Array<number>(8).fill(t5w * 0.09)] });
+    table([L.t5Description, L.t5Price, L.t5Years, L.t5Salvage, L.t5CapitalRecovery, L.t5Insurance, L.t5Taxes, L.t5Repairs, L.t5Total], body, { fontSize: 8.5, widths: [t5w * 0.28, ...Array<number>(8).fill(t5w * 0.09)] });
+    note(L.t5Caption);
     if (t5.overhead.length) {
-      subhead(L.t5Overhead);
-      const ob: Cell[][] = t5.overhead.map(o => [cell(o.name), moneyCell(o.amount, 'expense')]);
-      ob.push([cell(L.t5OverheadTotal, { bold: true }), moneyCell(t5.overheadTotal, 'expense', true)]);
-      table([L.item, L.amount], ob, { fontSize: 8.5, widths: [pageWidth() - 2 * M - 40, 40] });
+      ensure(30); y += 3;
+      font(10); doc.text(text(upper(L.t5Overhead)), center(), y, { align: 'center' }); y += 4;
+      const ob: Row[] = t5.overhead.map(o => plain([cell(o.name), amt(o.amount)]));
+      ob.push(total(L.t5OverheadTotal, [amt(t5.overheadTotal)]));
+      table([L.item, L.amount], ob, { fontSize: 8.5, tableWidth: 150, widths: [110, 40] });
     }
   }
 
-  // ---- 6. Table 6 hourly equipment (landscape) ----
+  // ---- Hourly equipment costs ----
   if (snapshot.table6.length) {
-    sectionTitle(L.t6Title, 'landscape');
-    para(L.t6Caption, 8.5, grey);
-    const body: Cell[][] = snapshot.table6.map(m => {
+    tablePage(L.t6Title);
+    const body: Row[] = snapshot.table6.map(m => {
       const carried = [...m.carriedBy.map(b => `${b.name} ${Math.round(b.share * 100)}%`), ...(m.customShare > 0 ? [`${L.t6Custom} ${Math.round(m.customShare * 100)}%`] : [])].join(', ');
-      if (m.hours <= 0) return [cell(m.name), cell('0'), cell(L.t6None, { color: grey, align: 'left' }), ...empty(6), cell(carried, { color: grey, align: 'left' })];
-      return [cell(m.name), cell(`${num(m.hours)}\n${L.t6HoursSplit.replace('{crop}', num(m.cropHours)).replace('{custom}', num(m.customHours))}`), cell(cents(-m.capitalRecovery), { color: red }), cell(cents(-m.insurance), { color: red }), cell(cents(-m.taxes), { color: red }), cell(cents(-m.repairs), { color: red }), cell(cents(-m.fuelLube), { color: red }), cell(cents(-m.totalOperating), { color: red }), cell(cents(-m.totalCost), { color: red, bold: true }), cell(carried, { color: grey, align: 'left' })];
+      if (m.hours <= 0) return plain([cell(m.name), cell('0'), cell(L.t6None, { italic: true, align: 'left' }), ...blank(6), cell(carried, { align: 'left' })]);
+      return plain([cell(m.name), cell(`${num(m.hours)}\n${L.t6HoursSplit.replace('{crop}', num(m.cropHours)).replace('{custom}', num(m.customHours))}`), cell(cents(m.capitalRecovery)), cell(cents(m.insurance)), cell(cents(m.taxes)), cell(cents(m.repairs)), cell(cents(m.fuelLube)), cell(cents(m.totalOperating)), cell(cents(m.totalCost)), cell(carried, { align: 'left' })]);
     });
-    table([L.t6Machine, L.t6Hours, L.t6CapitalRecovery, L.t6Insurance, L.t6Taxes, L.t6Repairs, L.t6FuelLube, L.t6TotalOperating, L.t6TotalCost, L.t6CarriedBy], body, { fontSize: 7, widths: [40, 24, 'auto', 'auto', 'auto', 'auto', 'auto', 'auto', 'auto', 48] });
+    table([L.t6Machine, L.t6Hours, L.t6CapitalRecovery, L.t6Insurance, L.t6Taxes, L.t6Repairs, L.t6FuelLube, L.t6TotalOperating, L.t6TotalCost], body.map(r => r.slice(0, -1) as Row), { fontSize: 8, widths: [34, 18, ...Array<number>(7).fill((pageWidth() - 2 * M - 52) / 7)] });
+    ensure(25);
+    table([L.t6Machine, L.t6CarriedBy], body.map(r => plain([r[0], r[r.length - 1]])), { fontSize: 9, rightFrom: 2, widths: [52, 'auto'] });
+    note(L.t6Caption);
   }
 
-  // ---- 7. Custom work ----
+  // ---- Custom work ----
   if (snapshot.customWork.jobs.length) {
-    sectionTitle(L.cwTitle, 'portrait', false);
-    para(L.cwCaption, 8.5, grey);
+    inlineTitle(L.cwTitle);
     const cw = snapshot.customWork;
-    const body: Cell[][] = cw.jobs.map(j => [cell(j.name), cell(j.machineName, { color: grey, align: 'left' }), cell(num(j.hours)), cell(money(j.income)), moneyCell(j.cost, 'expense'), moneyCell(j.net, 'net', true)]);
-    body.push([cell(L.cwTotal, { bold: true }), cell(''), cell(num(cw.jobs.reduce((a, j) => a + j.hours, 0)), { bold: true }), cell(money(cw.income), { bold: true }), moneyCell(cw.cost, 'expense', true), moneyCell(cw.net, 'net', true)]);
+    const body: Row[] = cw.jobs.map(j => plain([cell(j.name), cell(j.machineName, { align: 'left' }), cell(num(j.hours)), amt(j.income), amt(j.cost), amt(j.net)]));
+    body.push(total(L.cwTotal, [cell(''), cell(num(cw.jobs.reduce((a, j) => a + j.hours, 0))), amt(cw.income), amt(cw.cost), amt(cw.net)]));
     table([L.cwJob, L.cwMachine, L.cwHours, L.cwPaid, `${L.cwCost} (${L.cwCostNote})`, L.cwNet], body, { fontSize: 8.5, rightFrom: 2 });
+    note(L.cwCaption);
   }
 
-  // ---- 5. Farm inputs and rules ----
-  sectionTitle(L.farm, 'portrait', false);
-  table([L.inputs, ''], snapshot.farm.fields.map(f => [cell(f.label, { color: grey }), cell(f.value, { align: 'left' })]), { rightFrom: 99, widths: [80, 'auto'] });
-  subhead(L.rates);
-  table(['', ''], snapshot.farm.rates.map(r => [cell(r.label, { color: grey }), cell(r.value, { align: 'left' })]), { rightFrom: 99, widths: [80, 'auto'] });
+  // ---- Farm inputs and rules: the ASSUMPTIONS section ----
+  heading(L.farm, true);
+  table(null, snapshot.farm.fields.map(f => plain([cell(`${f.label}:`, { italic: true }), cell(f.value)])), { fontSize: 10, rightFrom: 99, widths: [80, 'auto'] });
+  heading(L.rates);
+  table(null, snapshot.farm.rates.map(r => plain([cell(`${r.label}:`, { italic: true }), cell(r.value)])), { fontSize: 10, rightFrom: 99, widths: [80, 'auto'] });
   if (snapshot.farm.overheadItems.length) {
-    subhead(L.overheadItems);
-    table([L.item, L.amount, L.basis], snapshot.farm.overheadItems.map(o => [cell(o.name), moneyCell(o.amount, 'expense'), cell(o.basis, { align: 'left', color: grey })]), { widths: [80, 40, 'auto'] });
+    heading(L.overheadItems);
+    table([L.item, L.amount, L.basis], snapshot.farm.overheadItems.map(o => plain([cell(o.name), amt(o.amount), cell(o.basis, { align: 'left' })])), { fontSize: 9.5, widths: [80, 30, 'auto'] });
   }
-  subhead(L.rules);
-  for (const r of snapshot.farm.rules) para(r, 10);
+  heading(L.rules);
+  for (const r of snapshot.farm.rules) para(r, 10.5, 'normal', true);
 
-  // ---- 6. Sources ----
-  sectionTitle(L.sources, 'portrait', false);
+  // ---- Optional sources appendix ----
+  if (options.includeDetails) {
+  heading(L.sources, true);
   for (const s of snapshot.sources.studies) {
     ensure(40);
-    para([s.title, s.year, s.region].filter(v => v != null).join(', '), 10.5, ink, 'bold');
-    para(s.url, 8, grey);
-    const body = s.items.map(it => [cell(it.owner, { color: grey }), cell(it.what), cell(it.value, { align: 'right' }), cell(String(it.page), { align: 'right' }), cell(it.quote, { color: grey, align: 'left' })]);
-    table([L.owner, L.field, L.citedValue, L.page, L.quote], body, { fontSize: 7.5, rightFrom: 2, widths: [30, 42, 22, 12, 'auto'] });
+    para([s.title, s.year, s.region].filter(v => v != null).join(', '), 10.5, 'bold');
+    para(s.url, 8.5, 'italic');
+    const body = s.items.map(it => plain([cell(it.owner), cell(it.what), cell(it.value, { align: 'right' }), cell(String(it.page), { align: 'right' }), cell(it.quote, { italic: true, align: 'left' })]));
+    table([L.owner, L.field, L.citedValue, L.page, L.quote], body, { fontSize: 8, rightFrom: 2, widths: [30, 42, 22, 12, 'auto'] });
   }
   if (snapshot.sources.methods.length) {
-    subhead(L.methods);
-    for (const m of snapshot.sources.methods) {
-      ensure(16);
-      para(`${m.name} (${m.studyTitle}, ${L.page.toLowerCase()} ${m.page})`, 9.5, ink, 'bold');
-      para(m.quote, 8.5, grey);
-    }
+    heading(L.methods);
+    for (const m of snapshot.sources.methods) runIn(m.name, `${m.quote} (${m.studyTitle}, ${L.page.toLowerCase()} ${m.page})`);
   }
   if (snapshot.sources.ours.length) {
-    subhead(snapshot.sources.oursTitle);
-    para(snapshot.sources.oursIntro, 8.5, grey);
-    for (const m of snapshot.sources.ours) {
-      ensure(14);
-      para(`${m.name} (${m.kind})`, 9.5, ink, 'bold');
-      para(m.formula, 8.5, grey);
-    }
+    heading(snapshot.sources.oursTitle);
+    para(snapshot.sources.oursIntro, 10.5, 'normal', true);
+    y += 1;
+    for (const m of snapshot.sources.ours) runIn(`${m.name} (${m.kind})`, m.formula);
   }
 
-  // running header and footer on every page
-  const total = doc.getNumberOfPages();
-  for (let p = 1; p <= total; p++) {
+  }
+
+  // The footer every study page carries: a centered citation line and the page number.
+  const pages = doc.getNumberOfPages();
+  const footLine = text([snapshot.title, place, L.publisher].filter(Boolean).join('    '));
+  for (let p = 1; p <= pages; p++) {
     doc.setPage(p);
-    const w = doc.internal.pageSize.getWidth(), h = doc.internal.pageSize.getHeight();
-    doc.setFont('helvetica', 'normal'); doc.setFontSize(8); doc.setTextColor(...grey);
-    if (p > 1) {
-      doc.text(text(snapshot.title), M, 12);
-      doc.text(text(sectionOfPage[p] ?? ''), w - M, 12, { align: 'right' });
-      doc.setDrawColor(...rule); doc.setLineWidth(0.2); doc.line(M, 14.5, w - M, 14.5);
-    }
-    doc.text(text(L.footer), M, h - 8);
-    doc.text(text(L.pageOf.replace('{page}', String(p)).replace('{total}', String(total))), w - M, h - 8, { align: 'right' });
+    const h = doc.internal.pageSize.getHeight();
+    font(8);
+    const sourcesUrl = options.sourcesUrl ?? (typeof window !== 'undefined' ? new URL('#sources', window.location.href).href : undefined);
+    if (sourcesUrl) doc.textWithLink(snapshot.lang === 'es' ? 'Fuentes y cálculos' : 'Sources and calculations', 14, h - 15, { url: sourcesUrl });
+    font(8.5);
+    doc.text(`${footLine}    ${p}`, doc.internal.pageSize.getWidth() / 2, h - 9, { align: 'center' });
   }
   return new Uint8Array(doc.output('arraybuffer'));
 }

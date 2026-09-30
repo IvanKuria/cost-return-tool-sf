@@ -107,6 +107,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ORGANIC STRAWBERRIES",
   "operatingTotal": {
    "value": 42482,
    "unit": "$/acre",
@@ -221,6 +222,7 @@
    {
     "name": "Soil Samples (2 per 27 Acre Farm)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -234,6 +236,7 @@
    {
     "name": "Disk 2X (Cover Crop)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 11,
     "fuel": 9,
@@ -247,6 +250,7 @@
    {
     "name": "Compost + Spread",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -260,6 +264,7 @@
    {
     "name": "Sprinklers: Setup and Removal",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3,
     "labor": 106,
     "fuel": 32,
@@ -273,6 +278,7 @@
    {
     "name": "Irrigate: Sprinkler",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 46,
     "fuel": 0,
@@ -286,6 +292,7 @@
    {
     "name": "Subsoil 5X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.8,
     "labor": 41,
     "fuel": 31,
@@ -299,6 +306,7 @@
    {
     "name": "Level (Triplane)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 23,
     "fuel": 17,
@@ -312,6 +320,7 @@
    {
     "name": "Disk 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 23,
     "fuel": 17,
@@ -325,6 +334,7 @@
    {
     "name": "Chisel 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.54,
     "labor": 12,
     "fuel": 8,
@@ -338,6 +348,7 @@
    {
     "name": "Blood Meal + Gypsum Spread",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -351,6 +362,7 @@
    {
     "name": "Beds List/Shape",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 23,
     "fuel": 17,
@@ -364,6 +376,7 @@
    {
     "name": "Beds Re-List/Re-Shape (Post irrigation)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 23,
     "fuel": 17,
@@ -377,6 +390,7 @@
    {
     "name": "Install Drip System, Tape & Laterals",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3,
     "labor": 82,
     "fuel": 32,
@@ -390,6 +404,7 @@
    {
     "name": "Plant: Lay Mulch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 34,
     "fuel": 16,
@@ -403,6 +418,7 @@
    {
     "name": "Plant: Punch Planting Holes",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 17,
     "fuel": 8,
@@ -416,6 +432,7 @@
    {
     "name": "Plant: Strawberries (Includes 5% Replant)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 649,
     "fuel": 0,
@@ -429,6 +446,7 @@
    {
     "name": "Weed: Hand",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 2474,
     "fuel": 0,
@@ -442,6 +460,7 @@
    {
     "name": "Insect: Mites (Predatory)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 49,
     "fuel": 0,
@@ -455,6 +474,7 @@
    {
     "name": "Weed: Cultivate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 17,
     "fuel": 11,
@@ -468,6 +488,7 @@
    {
     "name": "Fertilize: Foliar (Biomin)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.78,
     "labor": 18,
     "fuel": 11,
@@ -481,6 +502,7 @@
    {
     "name": "Fertilize: Foliar (Maxi Crop)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.78,
     "labor": 18,
     "fuel": 11,
@@ -494,6 +516,7 @@
    {
     "name": "Vertebrate Trapping",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 25,
     "fuel": 0,
@@ -507,6 +530,7 @@
    {
     "name": "Pest Control Adviser (PCA)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -520,6 +544,7 @@
    {
     "name": "Irrigate: Drip",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 148,
     "fuel": 0,
@@ -533,6 +558,7 @@
    {
     "name": "Fertilize: Soil (Agrothrive)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 37,
     "fuel": 0,
@@ -546,6 +572,7 @@
    {
     "name": "Insect: Vacuum Lygus 8X/month",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 23.73,
     "labor": 544,
     "fuel": 251,
@@ -559,6 +586,7 @@
    {
     "name": "Disease: Powdery Mildew (Kumulus)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.98,
     "labor": 22,
     "fuel": 14,
@@ -572,6 +600,7 @@
    {
     "name": "Insect: LBAM (Entrust)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.29,
     "labor": 7,
     "fuel": 4,
@@ -585,6 +614,7 @@
    {
     "name": "Worms: (Dipel)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 3,
@@ -598,6 +628,7 @@
    {
     "name": "Post Harvest Cleanup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3,
     "labor": 372,
     "fuel": 20,
@@ -611,6 +642,7 @@
    {
     "name": "Pickup: Business Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.71,
     "labor": 39,
     "fuel": 17,
@@ -624,6 +656,7 @@
    {
     "name": "ATV",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.59,
     "labor": 14,
     "fuel": 2,
@@ -637,6 +670,7 @@
    {
     "name": "Harvest: Regular and Peak Production",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 11732,
     "fuel": 0,
@@ -650,6 +684,7 @@
    {
     "name": "Harvest: Load & Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 50,
     "labor": 1351,
     "fuel": 246,
@@ -663,6 +698,7 @@
    {
     "name": "Harvest: Cooler",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -676,6 +712,7 @@
    {
     "name": "CSC Assessment",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -689,6 +726,7 @@
    {
     "name": "Sales/Marketing",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

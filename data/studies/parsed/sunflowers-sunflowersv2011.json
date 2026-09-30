@@ -77,6 +77,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE SUNFLOWER SEED",
   "operatingTotal": {
    "value": 447,
    "unit": "$/acre",
@@ -152,6 +153,7 @@
    {
     "name": "Stubble Disc",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 5,
     "fuel": 9,
@@ -165,6 +167,7 @@
    {
     "name": "Chisel",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.16,
     "labor": 3,
     "fuel": 6,
@@ -178,6 +181,7 @@
    {
     "name": "Landplane Fields - 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.3,
     "labor": 6,
     "fuel": 12,
@@ -191,6 +195,7 @@
    {
     "name": "Laser Level (1 In 10 Years)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -204,6 +209,7 @@
    {
     "name": "List Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 7,
@@ -217,6 +223,7 @@
    {
     "name": "Weed Control - Fallow Herbicide",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 3,
@@ -230,6 +237,7 @@
    {
     "name": "Weed Control - Preplant Herbicide",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 3,
@@ -243,6 +251,7 @@
    {
     "name": "Plant & Starter Fertilizer",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 7,
@@ -256,6 +265,7 @@
    {
     "name": "Make Ditches - 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 1,
@@ -269,6 +279,7 @@
    {
     "name": "Irrigate - 6X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.2,
     "labor": 15,
     "fuel": 0,
@@ -282,6 +293,7 @@
    {
     "name": "Close Ditches - 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 0,
@@ -295,6 +307,7 @@
    {
     "name": "Cultivate & Apply 80 Lbs N",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 3,
@@ -308,6 +321,7 @@
    {
     "name": "Pollinate Sunflowers",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -321,6 +335,7 @@
    {
     "name": "Insect Control - Moths 75% of Acres",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -334,6 +349,7 @@
    {
     "name": "Knock Down Males - 25% of Acres",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 2,
@@ -347,6 +363,7 @@
    {
     "name": "Defoliate - 75% of Acres",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -360,6 +377,7 @@
    {
     "name": "Pickup Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 7,
     "fuel": 4,
@@ -373,6 +391,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 3,
     "fuel": 1,
@@ -386,6 +405,7 @@
    {
     "name": "Harvest",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 18,
@@ -399,6 +419,7 @@
    {
     "name": "Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -412,6 +433,7 @@
    {
     "name": "Stubble Disc",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 8,

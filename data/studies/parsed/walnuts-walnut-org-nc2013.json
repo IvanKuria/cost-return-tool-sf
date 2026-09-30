@@ -222,6 +222,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ORGANIC WALNUTS",
   "operatingTotal": {
    "value": 1118,
    "unit": "$/acre",
@@ -307,6 +308,7 @@
    {
     "name": "Fertilize: Chicken Manure",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
@@ -320,6 +322,7 @@
    {
     "name": "Fertilize: Compost/Gypsum",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
@@ -333,6 +336,7 @@
    {
     "name": "Prune: Custom 1X/5yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -346,6 +350,7 @@
    {
     "name": "Prune-Brush Disposal 1X/5yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 10,
     "fuel": 3,
@@ -359,6 +364,7 @@
    {
     "name": "Rodent: Squirrel (Tractor,Traps)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.53,
     "labor": 13,
     "fuel": 7,
@@ -372,6 +378,7 @@
    {
     "name": "Weed-Mow Middles 5X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.86,
     "labor": 21,
     "fuel": 11,
@@ -385,6 +392,7 @@
    {
     "name": "Weed: Hand (Weed Eater) Tree Row",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.05,
     "labor": 26,
     "fuel": 2,
@@ -398,6 +406,7 @@
    {
     "name": "Irrigate 1X/month 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 0,
@@ -411,6 +420,7 @@
    {
     "name": "Prune: Hand (Sucker)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 11,
     "fuel": 0,
@@ -424,6 +434,7 @@
    {
     "name": "Insect: Husk Fly (GF120)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 18,
     "fuel": 9,
@@ -437,6 +448,7 @@
    {
     "name": "Leaf Analysis 1X/3yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.11,
     "labor": 4,
     "fuel": 1,
@@ -450,6 +462,7 @@
    {
     "name": "Pickup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.25,
     "labor": 80,
     "fuel": 55,
@@ -463,6 +476,7 @@
    {
     "name": "Harvest-Shake, Pickup, Rake",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 2,
     "labor": 27,
     "fuel": 0,
@@ -476,6 +490,7 @@
    {
     "name": "Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -489,6 +504,7 @@
    {
     "name": "Harvest-Hull, Dry",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -502,6 +518,7 @@
    {
     "name": "CWC Assessment Fee",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

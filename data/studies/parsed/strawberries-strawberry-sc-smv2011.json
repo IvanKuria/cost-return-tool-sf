@@ -100,6 +100,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE STRAWBERRIES",
   "operatingTotal": {
    "value": 36264,
    "unit": "$/acre",
@@ -202,6 +203,7 @@
    {
     "name": "Land Prep: Disc/Roll 5X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 8,
     "fuel": 26,
@@ -215,6 +217,7 @@
    {
     "name": "Land Prep: Subsoil 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.9,
     "labor": 15,
     "fuel": 47,
@@ -228,6 +231,7 @@
    {
     "name": "Land Prep: Plow 1X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.27,
     "labor": 4,
     "fuel": 14,
@@ -241,6 +245,7 @@
    {
     "name": "Land Prep: Level/Smooth Field 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 8,
     "fuel": 20,
@@ -254,6 +259,7 @@
    {
     "name": "Fertilize: Custom (0-0-52)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -267,6 +273,7 @@
    {
     "name": "Land Prep: Chisel",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.3,
     "labor": 5,
     "fuel": 16,
@@ -280,6 +287,7 @@
    {
     "name": "Irrigate: Sprinkle/Layout/Pickup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4,
     "labor": 308,
     "fuel": 31,
@@ -293,6 +301,7 @@
    {
     "name": "List/Shape Beds.",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.9,
     "labor": 15,
     "fuel": 47,
@@ -306,6 +315,7 @@
    {
     "name": "Fertilize: Preplant (17-17-17)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 4,
     "fuel": 4,
@@ -319,6 +329,7 @@
    {
     "name": "Irrigate: Install Drip Tape 2 line/bed",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 2,
     "fuel": 2,
@@ -332,6 +343,7 @@
    {
     "name": "Weed: Bed Tops (Goal Tender)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -345,6 +357,7 @@
    {
     "name": "Land Prep: Lay Mulch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.41,
     "labor": 12,
     "fuel": 6,
@@ -358,6 +371,7 @@
    {
     "name": "Land Prep: Cut/Grade Roads",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.62,
     "labor": 123,
     "fuel": 14,
@@ -371,6 +385,7 @@
    {
     "name": "Irrigate: Lay Laterals/Connect Drip",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 18,
     "labor": 202,
     "fuel": 0,
@@ -384,6 +399,7 @@
    {
     "name": "Weed: Cultivate Furrows",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.69,
     "labor": 11,
     "fuel": 12,
@@ -397,6 +413,7 @@
    {
     "name": "Weed: Furrows (Goal Tender)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -410,6 +427,7 @@
    {
     "name": "Irrigate: Drip",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 29,
     "labor": 325,
     "fuel": 0,
@@ -423,6 +441,7 @@
    {
     "name": "Fumigate: Drip (custom)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -436,6 +455,7 @@
    {
     "name": "Plant: Punch Holes",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.69,
     "labor": 11,
     "fuel": 5,
@@ -449,6 +469,7 @@
    {
     "name": "Plant: Transplant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 42,
     "labor": 471,
     "fuel": 0,
@@ -462,6 +483,7 @@
    {
     "name": "Weed: Hand",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 76,
     "labor": 853,
     "fuel": 0,
@@ -475,6 +497,7 @@
    {
     "name": "Insect: Worms",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -488,6 +511,7 @@
    {
     "name": "Fertilize: through drip (CAN17)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -501,6 +525,7 @@
    {
     "name": "Fertilize: through drip (Thiocal)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -514,6 +539,7 @@
    {
     "name": "Disease: Botrytis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.17,
     "labor": 19,
     "fuel": 12,
@@ -527,6 +553,7 @@
    {
     "name": "Insect: Mite (Persimilis)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.4,
     "labor": 27,
     "fuel": 0,
@@ -540,6 +567,7 @@
    {
     "name": "Disease: Botrytis/Mildew",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.17,
     "labor": 19,
     "fuel": 12,
@@ -553,6 +581,7 @@
    {
     "name": "Disease/Insect: Mildew/Mite",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -566,6 +595,7 @@
    {
     "name": "Disease: Mildew",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -579,6 +609,7 @@
    {
     "name": "Disease/Insect: Botrytis/Mildew/Mite",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -592,6 +623,7 @@
    {
     "name": "Disease/Insect: Botrytis/Lygus/Mite",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -605,6 +637,7 @@
    {
     "name": "Disease/Insect: Mildew/Lygus/Mite",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -618,6 +651,7 @@
    {
     "name": "Field Cleanup: (mow, remove mulch, disc)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.94,
     "labor": 245,
     "fuel": 30,
@@ -631,6 +665,7 @@
    {
     "name": "Harvest/Record, Fresh",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 699.98,
     "labor": 7854,
     "fuel": 0,
@@ -644,6 +679,7 @@
    {
     "name": "Haul/Load, Fresh",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 2.58,
     "labor": 126,
     "fuel": 20,
@@ -657,6 +693,7 @@
    {
     "name": "Harvest/Record/Haul, Freezer",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.66,
     "labor": 4079,
     "fuel": 13,
@@ -670,6 +707,7 @@
    {
     "name": "Strawberry Commission Assessment",
     "category": "other",
+    "section": "Other*",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -683,6 +721,7 @@
    {
     "name": "Cooler (Fresh)",
     "category": "other",
+    "section": "Other*",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -696,6 +735,7 @@
    {
     "name": "Selling Cost (Fresh)",
     "category": "other",
+    "section": "Other*",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

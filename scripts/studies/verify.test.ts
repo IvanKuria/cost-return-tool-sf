@@ -86,6 +86,73 @@ describe('establishment cost in perennial studies', () => {
   });
 });
 
+describe('establishment table, row by row', () => {
+  const all = load();
+  it('recognizes income labels without /ACRE instead of treating revenue as overhead', () => {
+    const s = all.find(x => x.source.id === 'oranges-2021orangessjvsouth')!;
+    const income = s.establishment!.table!.rows.filter(r => r.label === 'INCOME FROM PRODUCTION');
+    expect(income).toHaveLength(2);
+    for (const row of income) {
+      expect(row.kind).toBe('income');
+      expect(row.values[4]).toBe(4343);
+    }
+  });
+  const sumOps = (t: NonNullable<NonNullable<ParsedStudy['establishment']>['table']>, subtotalLabel: RegExp) => {
+    const i = t.rows.findIndex(r => r.kind === 'subtotal' && subtotalLabel.test(r.label));
+    expect(i).toBeGreaterThan(0);
+    const ops: typeof t.rows = [];
+    for (let j = i - 1; j >= 0 && t.rows[j].kind !== 'heading'; j--) if (t.rows[j].kind === 'operation') ops.push(t.rows[j]);
+    return { row: t.rows[i], sums: t.years.map((_, c) => ops.reduce((s, o) => s + (o.values[c] ?? 0), 0)) };
+  };
+  it('2024 almonds, San Joaquin Valley South: three establishment years plus two early production years, cultural rows add up', () => {
+    const s = all.find(x => x.source.id === 'almonds-2024-almondssjvsouth-final-draft-8-3-25')!;
+    const t = s.establishment!.table!;
+    expect(t.title).toMatch(/TO ESTABLISH AN ALMOND ORCHARD/);
+    expect(t.years).toEqual(['1st', '2nd', '3rd', '4th', '5th']);
+    const acc = t.rows.find(r => r.kind === 'accumulated' && /^ACCUMULATED NET CASH/.test(r.label))!;
+    expect(acc.values[2]).toBe(16758);
+    expect(acc.values[4]).toBe(21454);
+    const { row, sums } = sumOps(t, /CULTURAL/);
+    // Columns 1, 3 and 5 add up within rounding. The study's own printed 2nd-year cultural total (1,830) is 183 more
+    // than its 36 rows (1,647), and the 4th year is 9 less; the parser keeps the printed figures and warns.
+    for (const c of [0, 2, 4]) expect(Math.abs(sums[c] - (row.values[c] ?? 0))).toBeLessThanOrEqual(3);
+    expect(t.yieldRow?.values).toEqual([null, null, 600, 1200, 2400]);
+    expect(t.rows.find(r => r.label === 'Replant 1% of Trees')?.values).toEqual([null, 51, 51, 51, 51]);
+    expect(t.rows.find(r => r.label === 'Tree Tying: Ropes & Labor')?.values).toEqual([null, 140, null, 124, null]);
+    expect(s.parse.warnings.filter(w => /establishment table: TOTAL CULTURAL COSTS column 2nd/.test(w)).length).toBe(1);
+  });
+  it('2021 Lodi wine grapes: accumulated net cash cost ends at the establishment cost', () => {
+    const s = all.find(x => x.source.id === 'grapes-wine-2021-grapewinelodi-22522')!;
+    const t = s.establishment!.table!;
+    expect(t.years).toEqual(['1st', '2nd', '3rd']);
+    const acc = t.rows.find(r => r.kind === 'accumulated' && /^ACCUMULATED NET CASH/.test(r.label))!;
+    expect(acc.values[2]).toBe(s.establishment!.accumulatedNetCost!.value);
+    const { row, sums } = sumOps(t, /CULTURAL/);
+    row.values.forEach((v, c) => { if (v != null) expect(Math.abs(sums[c] - v)).toBeLessThanOrEqual(3); }); // the studies print rounded rows, so subtotals can differ by a dollar or two
+    expect(s.parse.warnings.filter(w => /establishment table/.test(w))).toEqual([]);
+  });
+  it('2023 walnuts, San Joaquin Valley: five year columns, harvest starts in the fifth', () => {
+    const s = all.find(x => x.source.id === 'walnuts-23walnutssacval-final-3-26-24')!;
+    const t = s.establishment!.table!;
+    expect(t.years).toEqual(['Est/1st', '2nd', '3rd', '4th', '5th']);
+    const acc = t.rows.find(r => r.kind === 'accumulated' && /^ACCUMULATED NET CASH/.test(r.label))!;
+    expect(acc.values[4]).toBe(19064);
+    expect(t.rows.find(r => r.label === 'Shake/Sweep/Pickup/Load')?.values).toEqual([null, null, null, null, 200]);
+    const { row, sums } = sumOps(t, /CULTURAL/);
+    row.values.forEach((v, c) => { if (v != null) expect(Math.abs(sums[c] - v)).toBeLessThanOrEqual(3); }); // the studies print rounded rows, so subtotals can differ by a dollar or two
+    expect(s.parse.warnings.filter(w => /establishment table/.test(w))).toEqual([]);
+  });
+  it('production table rows carry a section and the table a title; coverage is printed', () => {
+    const withOps = all.filter(s => s.costsPerAcre.operations.length);
+    for (const s of withOps) { expect(s.costsPerAcre.title).toBeTruthy(); for (const o of s.costsPerAcre.operations) expect(typeof o.section).toBe('string'); }
+    const est = all.filter(s => s.establishment);
+    const withTable = est.filter(s => s.establishment!.table);
+    const warned = withTable.filter(s => s.parse.warnings.some(w => /establishment table/.test(w)));
+    console.log(`establishment table: ${withTable.length} of ${est.length} studies with an establishment block have a row-by-row table; ${warned.length} carry reconciliation warnings; without table: ${est.filter(s => !s.establishment!.table).map(s => s.source.id).join(', ')}`);
+    console.log(`with warnings: ${warned.map(s => s.source.id).join(', ')}`);
+  });
+});
+
 describe('all studies', () => {
   const all = load();
   it('operation rows carry numeric or null cost columns', () => {

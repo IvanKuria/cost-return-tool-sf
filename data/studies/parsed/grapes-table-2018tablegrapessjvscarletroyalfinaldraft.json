@@ -52,6 +52,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE TABLE GRAPES-Scarlet Royal",
   "operatingTotal": {
    "value": 21804,
    "unit": "$/acre",
@@ -137,6 +138,7 @@
    {
     "name": "Well Test/Water Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -150,6 +152,7 @@
    {
     "name": "Vines: Dormant (Spur Pruned)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 1546,
     "fuel": 0,
@@ -163,6 +166,7 @@
    {
     "name": "Shred Prunings (All Middles)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 11,
     "fuel": 5,
@@ -176,6 +180,7 @@
    {
     "name": "Vine Re-Planting/Trellis Repair",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 46,
     "fuel": 0,
@@ -189,6 +194,7 @@
    {
     "name": "Weeds: Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 7,
     "fuel": 2,
@@ -202,6 +208,7 @@
    {
     "name": "Pests: Vertebrate 8x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 27,
     "fuel": 0,
@@ -215,6 +222,7 @@
    {
     "name": "Disease: Mildew Phomopsis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 10,
     "fuel": 5,
@@ -228,6 +236,7 @@
    {
     "name": "Weeds: Mow Middles 3x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.77,
     "labor": 17,
     "fuel": 8,
@@ -241,6 +250,7 @@
    {
     "name": "Vines: Sucker",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 186,
     "fuel": 0,
@@ -254,6 +264,7 @@
    {
     "name": "Disease: Mildew (SI) 4x, Fertilizer: (Zn)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 11,
     "fuel": 5,
@@ -267,6 +278,7 @@
    {
     "name": "Fertigate: UAN32",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -280,6 +292,7 @@
    {
     "name": "Irrigation: (Water & Labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 93,
     "fuel": 0,
@@ -293,6 +306,7 @@
    {
     "name": "Insects: Mealybugs (Systemic)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -306,6 +320,7 @@
    {
     "name": "CM: Shoot Position/Remove Late Spurs",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 1469,
     "fuel": 0,
@@ -319,6 +334,7 @@
    {
     "name": "FM: Bloom Thin (GA)/Disease/Insects",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 11,
     "fuel": 5,
@@ -332,6 +348,7 @@
    {
     "name": "Disease: Mildew (Sulfur Dust) 8x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.14,
     "labor": 69,
     "fuel": 32,
@@ -345,6 +362,7 @@
    {
     "name": "Petiole Sampling",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -358,6 +376,7 @@
    {
     "name": "Disease: Mildew (SI) 4x, Mites",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 22,
     "fuel": 10,
@@ -371,6 +390,7 @@
    {
     "name": "CM: Hedging",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 7,
     "fuel": 3,
@@ -384,6 +404,7 @@
    {
     "name": "FM: Cluster Tipping/Thinning",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 1082,
     "fuel": 0,
@@ -397,6 +418,7 @@
    {
     "name": "FM: Berry Size (GA)/Disease (SI) 4x , Insects",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 11,
     "fuel": 5,
@@ -410,6 +432,7 @@
    {
     "name": "Weeds: Spot Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 7,
     "fuel": 0,
@@ -423,6 +446,7 @@
    {
     "name": "FM: Fruit Exposure/Leaf Removal",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 1546,
     "fuel": 0,
@@ -436,6 +460,7 @@
    {
     "name": "FM: Berry Color (Ethrel)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 11,
     "fuel": 5,
@@ -449,6 +474,7 @@
    {
     "name": "Irrigation: Acid Flush",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 39,
     "fuel": 0,
@@ -462,6 +488,7 @@
    {
     "name": "Fertilizer: (Banded) K2SO4",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 2,
@@ -475,6 +502,7 @@
    {
     "name": "PCA/CCA",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -488,6 +516,7 @@
    {
     "name": "Mealy Bug Trapping Fee",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -501,6 +530,7 @@
    {
     "name": "Pickup Truck 1/2 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.33,
     "labor": 29,
     "fuel": 20,
@@ -514,6 +544,7 @@
    {
     "name": "ATV-4WD",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.17,
     "labor": 26,
     "fuel": 1,
@@ -527,6 +558,7 @@
    {
     "name": "Pick & Field Pack (Labor)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 5906,
     "fuel": 0,
@@ -540,6 +572,7 @@
    {
     "name": "Spread/Swamp/Haul (Bags/Boxes/Labor)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.5,
     "labor": 729,
     "fuel": 20,
@@ -553,6 +586,7 @@
    {
     "name": "Water Truck",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.33,
     "labor": 29,
     "fuel": 18,
@@ -566,6 +600,7 @@
    {
     "name": "Commission: 9% Sales & Marketing",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -579,6 +614,7 @@
    {
     "name": "Assessment & Inspection Fees",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1195,6 +1231,1021 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE TABLE GRAPES-Scarlet Royal"
  },
  "establishment": {
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH TABLE GRAPES-Scarlet Royal",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Planting Costs",
+     "kind": "heading",
+     "section": "Pre-Planting Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Pre-Planting Costs:"
+    },
+    {
+     "label": "Vineyard Removal (50%)",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      443,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Vineyard Removal (50%) 443"
+    },
+    {
+     "label": "Chisel/Subsoil 2x, 5’ Depth",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      400,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Chisel/Subsoil 2x, 5’ Depth 400"
+    },
+    {
+     "label": "Laser Level",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      150,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Laser Level 150"
+    },
+    {
+     "label": "Weeds: Apply/Incorperate Herbicide",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      36,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Weeds: Apply/Incorperate Herbicide 36"
+    },
+    {
+     "label": "Survey, Mark, Layout Vineyard",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      284,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Survey, Mark, Layout Vineyard 284"
+    },
+    {
+     "label": "Install Irrigation System (Labor), Hang Line/Yr. 2",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      309,
+      247,
+      null
+     ],
+     "page": 14,
+     "quote": "Install Irrigation System (Labor), Hang Line/Yr. 2 309 247"
+    },
+    {
+     "label": "Install Trellis System (Materials & Labor)",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      0,
+      6025,
+      null
+     ],
+     "page": 14,
+     "quote": "Install Trellis System (Materials & Labor) 0 6,025"
+    },
+    {
+     "label": "TOTAL PRE-PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Pre-Planting Costs",
+     "values": [
+      1622,
+      6272,
+      null
+     ],
+     "page": 14,
+     "quote": "TOTAL PRE-PLANTING COSTS 1,622 6,272"
+    },
+    {
+     "label": "Planting Costs",
+     "kind": "heading",
+     "section": "Planting Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Planting Costs:"
+    },
+    {
+     "label": "Dig, Plant, Wrap Vines",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      450,
+      36,
+      null
+     ],
+     "page": 14,
+     "quote": "Dig, Plant, Wrap Vines 450 36"
+    },
+    {
+     "label": "Vines: 605 Per Acre, Replant; (Yr2-12)",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      2571,
+      51,
+      null
+     ],
+     "page": 14,
+     "quote": "Vines: 605 Per Acre, Replant; (Yr2-12) 2,571 51"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Planting Costs",
+     "values": [
+      3021,
+      87,
+      null
+     ],
+     "page": 14,
+     "quote": "TOTAL PLANTING COSTS 3,021 87"
+    },
+    {
+     "label": "Cultural Costs",
+     "kind": "heading",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Cultural Costs:"
+    },
+    {
+     "label": "Well Test/Water Analysis",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      2,
+      2,
+      2
+     ],
+     "page": 14,
+     "quote": "Well Test/Water Analysis 2 2 2"
+    },
+    {
+     "label": "Trellis Repair/Vine Re-plant",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      115
+     ],
+     "page": 14,
+     "quote": "Trellis Repair/Vine Re-plant 115"
+    },
+    {
+     "label": "Pests: Vertebrate",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      50,
+      27,
+      25
+     ],
+     "page": 14,
+     "quote": "Pests: Vertebrate 50 27 25"
+    },
+    {
+     "label": "Fertigate: UAN32",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      3,
+      23,
+      29
+     ],
+     "page": 14,
+     "quote": "Fertigate: UAN32 3 23 29"
+    },
+    {
+     "label": "Fertilizer: (Banded) K2SO4",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      35,
+      42
+     ],
+     "page": 14,
+     "quote": "Fertilizer: (Banded) K2SO4 35 42"
+    },
+    {
+     "label": "Petiole Sampling",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      4
+     ],
+     "page": 14,
+     "quote": "Petiole Sampling 4"
+    },
+    {
+     "label": "Irrigation: (Water & Labor)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      181,
+      309,
+      517
+     ],
+     "page": 14,
+     "quote": "Irrigation: (Water & Labor) 181 309 517"
+    },
+    {
+     "label": "Irrigation: Acid Flush",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      46,
+      46,
+      46
+     ],
+     "page": 14,
+     "quote": "Irrigation: Acid Flush 46 46 46"
+    },
+    {
+     "label": "Weeds: Disc Middles – 2x/Yr 1",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      32,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Weeds: Disc Middles – 2x/Yr 1 32"
+    },
+    {
+     "label": "Weeds: Mow Middles – 2x/Yr 1, 4x/Yr 2, 3x/Yr 3",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      21,
+      32,
+      31
+     ],
+     "page": 14,
+     "quote": "Weeds: Mow Middles – 2x/Yr 1, 4x/Yr 2, 3x/Yr 3 21 32 31"
+    },
+    {
+     "label": "Weeds: Hand Hoe",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      46,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Weeds: Hand Hoe 46"
+    },
+    {
+     "label": "Weeds: Spot Spray",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      40,
+      37
+     ],
+     "page": 14,
+     "quote": "Weeds: Spot Spray 40 37"
+    },
+    {
+     "label": "Weeds: Winter Strip Spray",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      43,
+      42
+     ],
+     "page": 14,
+     "quote": "Weeds: Winter Strip Spray 43 42"
+    },
+    {
+     "label": "Vines: Dormant (Spur Pruned)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      191,
+      1133
+     ],
+     "page": 14,
+     "quote": "Vines: Dormant (Spur Pruned) 191 1,133"
+    },
+    {
+     "label": "Vine Training: Yr2/Sucker: Yr3",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      798,
+      155
+     ],
+     "page": 14,
+     "quote": "Vine Training: Yr2/Sucker: Yr3 798 155"
+    },
+    {
+     "label": "Shred Prunings: (All Middles)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      15,
+      19
+     ],
+     "page": 14,
+     "quote": "Shred Prunings: (All Middles) 15 19"
+    },
+    {
+     "label": "Insects: Skeletonizer/Disease: Mildew/Fertilizer: Zinc",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      43
+     ],
+     "page": 14,
+     "quote": "Insects: Skeletonizer/Disease: Mildew/Fertilizer: Zinc 43"
+    },
+    {
+     "label": "Insects: Mealybugs (Systemic)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      24,
+      24
+     ],
+     "page": 14,
+     "quote": "Insects: Mealybugs (Systemic) 24 24"
+    },
+    {
+     "label": "Disease: Phomopsis",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      47,
+      70
+     ],
+     "page": 14,
+     "quote": "Disease: Phomopsis 47 70"
+    },
+    {
+     "label": "Disease: Mildew Control (SI) 3x",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      108
+     ],
+     "page": 14,
+     "quote": "Disease: Mildew Control (SI) 3x 108"
+    },
+    {
+     "label": "FM: Bloom Thin (GA)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      20
+     ],
+     "page": 14,
+     "quote": "FM: Bloom Thin (GA) 20"
+    },
+    {
+     "label": "FM: Berry Size (GA), Insects: Leafhoppers",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      67,
+      92
+     ],
+     "page": 14,
+     "quote": "FM: Berry Size (GA), Insects: Leafhoppers 67 92"
+    },
+    {
+     "label": "FM: Berry Color (Ethrel)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      27
+     ],
+     "page": 14,
+     "quote": "FM: Berry Color (Ethrel) 27"
+    },
+    {
+     "label": "Disease: Mildew (Sulfur Dust) 8x",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      132
+     ],
+     "page": 14,
+     "quote": "Disease: Mildew (Sulfur Dust) 8x 132"
+    },
+    {
+     "label": "CM: Shoot Position/Remove Late Spurs",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      897
+     ],
+     "page": 14,
+     "quote": "CM: Shoot Position/Remove Late Spurs 897"
+    },
+    {
+     "label": "FM: Fruit Exposure/Leaf Removal",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      850
+     ],
+     "page": 14,
+     "quote": "FM: Fruit Exposure/Leaf Removal 850"
+    },
+    {
+     "label": "CM: Hedging (Mechanical)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      12
+     ],
+     "page": 14,
+     "quote": "CM: Hedging (Mechanical) 12"
+    },
+    {
+     "label": "FM: Cluster Tipping/Thinning",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      618
+     ],
+     "page": 14,
+     "quote": "FM: Cluster Tipping/Thinning 618"
+    },
+    {
+     "label": "PCA/CCA",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      30
+     ],
+     "page": 14,
+     "quote": "PCA/CCA 30"
+    },
+    {
+     "label": "Pickup Truck Use",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      41,
+      41,
+      41
+     ],
+     "page": 14,
+     "quote": "Pickup Truck Use 41 41 41"
+    },
+    {
+     "label": "ATV Use",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      18,
+      18,
+      18
+     ],
+     "page": 14,
+     "quote": "ATV Use 18 18 18"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural Costs",
+     "values": [
+      440,
+      1758,
+      5180
+     ],
+     "page": 14,
+     "quote": "TOTAL CULTURAL COSTS 440 1,758 5,180"
+    },
+    {
+     "label": "Harvest Costs",
+     "kind": "heading",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Harvest Costs:"
+    },
+    {
+     "label": "Pick & Field Pack (Labor)",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      2226
+     ],
+     "page": 14,
+     "quote": "Pick & Field Pack (Labor) 2,226"
+    },
+    {
+     "label": "Spread/Swamp/Haul (Bags/Boxes/Labor)",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      1706
+     ],
+     "page": 14,
+     "quote": "Spread/Swamp/Haul (Bags/Boxes/Labor) 1,706"
+    },
+    {
+     "label": "Water Truck",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      24
+     ],
+     "page": 14,
+     "quote": "Water Truck 24"
+    },
+    {
+     "label": "Commission: 9% Brokerage Fee",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      1026
+     ],
+     "page": 14,
+     "quote": "Commission: 9% Brokerage Fee 1,026"
+    },
+    {
+     "label": "Assessment & Inspection Fees",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      225
+     ],
+     "page": 14,
+     "quote": "Assessment & Inspection Fees 225"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      5207
+     ],
+     "page": 14,
+     "quote": "TOTAL HARVEST COSTS 5,207"
+    },
+    {
+     "label": "Interest On Operating Capital @ 5.0%",
+     "kind": "interest",
+     "section": "Harvest Costs",
+     "values": [
+      190,
+      280,
+      124
+     ],
+     "page": 15,
+     "quote": "Interest On Operating Capital @ 5.0% 190 280 124"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvest Costs",
+     "values": [
+      5273,
+      8396,
+      10511
+     ],
+     "page": 15,
+     "quote": "TOTAL OPERATING COSTS/ACRE 5,273 8,396 10,511"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      80,
+      80,
+      80
+     ],
+     "page": 15,
+     "quote": "Office Expense 80 80 80"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      2,
+      2,
+      2
+     ],
+     "page": 15,
+     "quote": "Liability Insurance 2 2 2"
+    },
+    {
+     "label": "Sanitation Service",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      4,
+      4,
+      4
+     ],
+     "page": 15,
+     "quote": "Sanitation Service 4 4 4"
+    },
+    {
+     "label": "Farm Management",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      500,
+      500,
+      500
+     ],
+     "page": 15,
+     "quote": "Farm Management 500 500 500"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      235,
+      235,
+      236
+     ],
+     "page": 15,
+     "quote": "Property Taxes 235 235 236"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      20,
+      20,
+      20
+     ],
+     "page": 15,
+     "quote": "Property Insurance 20 20 20"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      41,
+      41,
+      41
+     ],
+     "page": 15,
+     "quote": "Investment Repairs 41 41 41"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      882,
+      882,
+      883
+     ],
+     "page": 15,
+     "quote": "TOTAL CASH OVERHEAD COSTS 882 882 883"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      6155,
+      9278,
+      11394
+     ],
+     "page": 15,
+     "quote": "TOTAL CASH COSTS/ACRE 6,155 9,278 11,394"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      11400
+     ],
+     "page": 15,
+     "quote": "INCOME/ACRE FROM PRODUCTION 0 0 11,400"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      6155,
+      9.278,
+      0
+     ],
+     "page": 15,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 6,155 9.278 0"
+    },
+    {
+     "label": "PROFIT/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      6
+     ],
+     "page": 15,
+     "quote": "PROFIT/ACRE ABOVE CASH COSTS 0 0 6"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      6155,
+      15433,
+      15427
+     ],
+     "page": 15,
+     "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,155 15,433 15,427"
+    },
+    {
+     "label": "Non-Cash Overhead Cost: (Capital Recovery)",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Non-Cash Overhead Cost: (Capital Recovery)"
+    },
+    {
+     "label": "Land: Table Grapes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      1238,
+      1238,
+      1238
+     ],
+     "page": 15,
+     "quote": "Land: Table Grapes 1,238 1,238 1,238"
+    },
+    {
+     "label": "Irrigation System: Single Line Drip",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      138,
+      138,
+      138
+     ],
+     "page": 15,
+     "quote": "Irrigation System: Single Line Drip 138 138 138"
+    },
+    {
+     "label": "Building Pole Barn",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      8,
+      8,
+      8
+     ],
+     "page": 15,
+     "quote": "Building Pole Barn 8 8 8"
+    },
+    {
+     "label": "Tools: Shop/Field",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      2,
+      2,
+      2
+     ],
+     "page": 15,
+     "quote": "Tools: Shop/Field 2 2 2"
+    },
+    {
+     "label": "Fuel Storage Tanks & Pumps",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      2,
+      2,
+      2
+     ],
+     "page": 15,
+     "quote": "Fuel Storage Tanks & Pumps 2 2 2"
+    },
+    {
+     "label": "Bait Stations",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      0
+     ],
+     "page": 15,
+     "quote": "Bait Stations 0 0 0"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      32,
+      44,
+      166
+     ],
+     "page": 15,
+     "quote": "Equipment 32 44 166"
+    },
+    {
+     "label": "TOTAL CAPITAL RECOVERY COST",
+     "kind": "subtotal",
+     "section": "Cash Overhead Costs",
+     "values": [
+      1420,
+      1432,
+      1544
+     ],
+     "page": 15,
+     "quote": "TOTAL CAPITAL RECOVERY COST 1,420 1,432 1,544"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7575,
+      10711,
+      12948
+     ],
+     "page": 15,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 7,575 10,711 12,948"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      11400
+     ],
+     "page": 15,
+     "quote": "INCOME/ACRE FROM PRODUCTION 0 0 11,400"
+    },
+    {
+     "label": "NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7575,
+      10.711,
+      1548
+     ],
+     "page": 15,
+     "quote": "NET COST/ACRE FOR THE YEAR 7,575 10.711 1,548"
+    },
+    {
+     "label": "NET PROFIT/ACRE ABOVE TOTAL COST",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      0
+     ],
+     "page": 15,
+     "quote": "NET PROFIT/ACRE ABOVE TOTAL COST 0 0 0"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7575,
+      18286,
+      19834
+     ],
+     "page": 15,
+     "quote": "TOTAL ACCUMULATED NET COST/ACRE 7,575 18,286 19,834"
+    }
+   ],
+   "yieldRow": {
+    "label": "s: $19/Box, Boxes Per Acre:",
+    "values": [
+     0,
+     0,
+     600
+    ],
+    "quote": "Operations: $19/Box, Boxes Per Acre: 0 0 600"
+   }
+  },
   "years": [
    {
     "year": 1,
@@ -1288,7 +2339,10 @@
   ],
   "warnings": [
    "Table 2 found but no GROSS RETURNS block",
-   "establishment year 2: running net 6164.278 differs from printed accumulated 15433"
+   "establishment year 2: running net 6164.278 differs from printed accumulated 15433",
+   "establishment table: TOTAL CAPITAL RECOVERY COST column 1st prints 1420 but its rows sum to 2302",
+   "establishment table: TOTAL CAPITAL RECOVERY COST column 2nd prints 1432 but its rows sum to 2314",
+   "establishment table: TOTAL CAPITAL RECOVERY COST column 3rd prints 1544 but its rows sum to 2437"
   ]
  }
 }

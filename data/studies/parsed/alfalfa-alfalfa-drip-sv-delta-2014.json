@@ -87,6 +87,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS AND RETURNS PER ACRE TO PRODUCE ALFALFA",
   "operatingTotal": null,
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
@@ -691,6 +692,7 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ALFALFA"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 1158,

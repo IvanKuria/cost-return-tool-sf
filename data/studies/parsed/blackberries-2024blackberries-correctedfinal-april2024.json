@@ -117,6 +117,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE AND HARVEST BLACKBERRIES – PRODUCTION YEARS 2-5",
   "operatingTotal": {
    "value": 63724,
    "unit": "$/acre",
@@ -225,6 +226,7 @@
    {
     "name": "Sample Soil (1 per 15 Acres)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 0,
@@ -238,6 +240,7 @@
    {
     "name": "Fertilize (21-0-0-24)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 12,
     "fuel": 5,
@@ -251,6 +254,7 @@
    {
     "name": "Disease Management 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.71,
     "labor": 61,
     "fuel": 26,
@@ -264,6 +268,7 @@
    {
     "name": "Flush and Repair Drip System",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 10,
     "fuel": 0,
@@ -277,6 +282,7 @@
    {
     "name": "Mow Cover Crop",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.26,
     "labor": 9,
     "fuel": 4,
@@ -290,6 +296,7 @@
    {
     "name": "Fertilize (17-0-0)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.48,
     "labor": 12,
     "fuel": 0,
@@ -303,6 +310,7 @@
    {
     "name": "Tunnel Management",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 38,
     "labor": 928,
     "fuel": 0,
@@ -316,6 +324,7 @@
    {
     "name": "Drip Irrigate-Season",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.1,
     "labor": 51,
     "fuel": 0,
@@ -329,6 +338,7 @@
    {
     "name": "Fertilize (3-18-18)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.48,
     "labor": 12,
     "fuel": 0,
@@ -342,6 +352,7 @@
    {
     "name": "Cane Management",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 131,
     "labor": 3199,
     "fuel": 0,
@@ -355,6 +366,7 @@
    {
     "name": "Pollinate Crop (3 Hives per Acre)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -368,6 +380,7 @@
    {
     "name": "Hand Weed",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 36,
     "labor": 879,
     "fuel": 0,
@@ -381,6 +394,7 @@
    {
     "name": "Sample Leaves (3 per 15 Acres)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 0,
@@ -394,6 +408,7 @@
    {
     "name": "Disc Row Middles 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.69,
     "labor": 24,
     "fuel": 11,
@@ -407,6 +422,7 @@
    {
     "name": "Insect Management 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.71,
     "labor": 61,
     "fuel": 26,
@@ -420,6 +436,7 @@
    {
     "name": "PCA",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -433,6 +450,7 @@
    {
     "name": "ATV",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.38,
     "labor": 13,
     "fuel": 1,
@@ -446,6 +464,7 @@
    {
     "name": "Pickup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.33,
     "labor": 83,
     "fuel": 21,
@@ -459,6 +478,7 @@
    {
     "name": "Harvest Blackberries",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 126,
     "labor": 3077,
     "fuel": 0,
@@ -472,6 +492,7 @@
    {
     "name": "Load/Haul Blackberries",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 23.4,
     "labor": 831,
     "fuel": 323,
@@ -485,6 +506,7 @@
    {
     "name": "Cool Blackberries",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -498,6 +520,7 @@
    {
     "name": "Market/Sales Fee",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -511,6 +534,7 @@
    {
     "name": "Mow Canes",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 41,
     "labor": 1001,
     "fuel": 0,
@@ -524,6 +548,7 @@
    {
     "name": "Shred Canes",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 0.26,
     "labor": 9,
     "fuel": 4,
@@ -537,6 +562,7 @@
    {
     "name": "Disc Canes",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 0.3,
     "labor": 11,
     "fuel": 5,
@@ -550,6 +576,7 @@
    {
     "name": "Plant Cover Crop",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 0.22,
     "labor": 8,
     "fuel": 3,
@@ -1104,6 +1131,349 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AND HARVEST BLACKBERRIES – PRODUCTION YEARS 2-5"
  },
  "establishment": {
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH, PRODUCE, AND HARVEST BLACKBERRIES - SUMMARY",
+   "years": [
+    "Year 1",
+    "2",
+    "5"
+   ],
+   "rows": [
+    {
+     "label": "Cultural Costs",
+     "kind": "heading",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Cultural Costs:"
+    },
+    {
+     "label": "Cultural Costs",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      28557,
+      7598,
+      null
+     ],
+     "page": 13,
+     "quote": "Cultural Costs 28,557 7,598"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural Costs",
+     "values": [
+      28557,
+      7598,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL CULTURAL COSTS 28,557 7,598"
+    },
+    {
+     "label": "Harvest Costs",
+     "kind": "heading",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Harvest Costs:"
+    },
+    {
+     "label": "Harvest/Pack/Haul/Cool/Market",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      53766,
+      53766,
+      null
+     ],
+     "page": 13,
+     "quote": "Harvest/Pack/Haul/Cool/Market 53,766 53,766"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest Costs",
+     "values": [
+      53766,
+      53766,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL HARVEST COSTS 53,766 53,766"
+    },
+    {
+     "label": "Post Harvest",
+     "kind": "heading",
+     "section": "Post Harvest",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Post Harvest:"
+    },
+    {
+     "label": "Post Harvest Operations",
+     "kind": "operation",
+     "section": "Post Harvest",
+     "values": [
+      1059,
+      1059,
+      null
+     ],
+     "page": 13,
+     "quote": "Post Harvest Operations 1,059 1,059"
+    },
+    {
+     "label": "TOTAL POSTHARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Post Harvest",
+     "values": [
+      1059,
+      1059,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL POSTHARVEST COSTS 1,059 1,059"
+    },
+    {
+     "label": "Interest On Operating Capital @ 9.00%",
+     "kind": "interest",
+     "section": "Post Harvest",
+     "values": [
+      2121,
+      1302,
+      null
+     ],
+     "page": 13,
+     "quote": "Interest On Operating Capital @ 9.00% 2,121 1,302"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Post Harvest",
+     "values": [
+      85503,
+      63724,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL OPERATING COSTS/ACRE 85,503 63,724"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Rent, Insurance, Taxes, etc.",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      6788,
+      6871,
+      null
+     ],
+     "page": 13,
+     "quote": "Rent, Insurance, Taxes, etc. 6,788 6,871"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      6788,
+      6871,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL CASH OVERHEAD COSTS 6,788 6,871"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      92291,
+      70596,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL CASH COSTS/ACRE 92,291 70,596"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      76500,
+      76500,
+      null
+     ],
+     "page": 13,
+     "quote": "INCOME/ACRE FROM PRODUCTION 76,500 76,500"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      15791,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 15,791"
+    },
+    {
+     "label": "PROFIT/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      5904,
+      null
+     ],
+     "page": 13,
+     "quote": "PROFIT/ACRE ABOVE CASH COSTS 5,904"
+    },
+    {
+     "label": "Non-Cash Overhead (Capital Recovery Cost)",
+     "kind": "heading",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Non-Cash Overhead (Capital Recovery Cost):"
+    },
+    {
+     "label": "Equipment/Investments",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      5278,
+      10030,
+      null
+     ],
+     "page": 13,
+     "quote": "Equipment/Investments 5,278 10,030"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COST/ACRE",
+     "kind": "total",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      5278,
+      10030,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL NON-CASH OVERHEAD COST/ACRE 5,278 10,030"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      97569,
+      80626,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 97,569 80,626"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      76500,
+      76500,
+      null
+     ],
+     "page": 13,
+     "quote": "INCOME/ACRE FROM PRODUCTION 76,500 76,500"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      21069,
+      4126,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 21,069 4,126"
+    },
+    {
+     "label": "NET PROFIT/ACRE ABOVE TOTAL COST",
+     "kind": "net",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "NET PROFIT/ACRE ABOVE TOTAL COST"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET/ACRE",
+     "kind": "accumulated",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      -21069,
+      -25195,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL ACCUMULATED NET/ACRE -21,069 -25,195"
+    },
+    {
+     "label": "Final - Blackberries – Central Coast – Cost and Return Study – April 2024",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Final - Blackberries – Central Coast – Cost and Return Study – April 2024"
+    }
+   ],
+   "yieldRow": {
+    "label": "4.5- Pound Trays Per Acre:",
+    "values": [
+     4500,
+     4500,
+     null
+    ],
+    "quote": "4.5- Pound Trays Per Acre: 4,500 4,500"
+   }
+  },
   "years": [
    {
     "year": 1,

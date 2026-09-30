@@ -69,6 +69,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE TIMOTHYGRASS HAY",
   "operatingTotal": {
    "value": 730,
    "unit": "$/acre",
@@ -150,6 +151,7 @@
    {
     "name": "Weed Control - Dormant Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
@@ -163,6 +165,7 @@
    {
     "name": "Fertilize 4X - 46-0-0 (Urea)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -176,6 +179,7 @@
    {
     "name": "Weed Control - Spot Spray 2X on 10% of Acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 0,
@@ -189,6 +193,7 @@
    {
     "name": "Insect Control - Supracide",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -202,6 +207,7 @@
    {
     "name": "Irrigate 8X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.6,
     "labor": 7,
     "fuel": 0,
@@ -215,6 +221,7 @@
    {
     "name": "Insect Control - Baythroid",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -228,6 +235,7 @@
    {
     "name": "Make Electric Fence",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
@@ -241,6 +249,7 @@
    {
     "name": "Remove Electric Fence",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
@@ -254,6 +263,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.48,
     "labor": 7,
     "fuel": 7,
@@ -267,6 +277,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.48,
     "labor": 7,
     "fuel": 1,
@@ -280,6 +291,7 @@
    {
     "name": "Harvest Hay 2X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -293,6 +305,7 @@
    {
     "name": "Graze Field - October",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -634,6 +647,7 @@
   "quote": "MONTHLY CAST COSTS PER ACRE TO PRODUCE TIMOTHYGRASS HAY"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

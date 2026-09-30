@@ -91,6 +91,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE RICE",
   "operatingTotal": {
    "value": 1122,
    "unit": "$/acre",
@@ -187,6 +188,7 @@
    {
     "name": "Drain Field (Winter Flooding)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -200,6 +202,7 @@
    {
     "name": "Weed: Mow Levees 2X & Levee Repair",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 1,
@@ -213,6 +216,7 @@
    {
     "name": "Rice Box & levee Repair",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 6,
     "fuel": 0,
@@ -226,6 +230,7 @@
    {
     "name": "Soil Sampling (PCA)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -239,6 +244,7 @@
    {
     "name": "Disk 2X (Stubble Disk)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.11,
     "labor": 3,
     "fuel": 12,
@@ -252,6 +258,7 @@
    {
     "name": "Disk 1X (Finish Disk)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.16,
     "labor": 5,
     "fuel": 17,
@@ -265,6 +272,7 @@
    {
     "name": "Roll 1X (Clod Roller)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.09,
     "labor": 3,
     "fuel": 10,
@@ -278,6 +286,7 @@
    {
     "name": "Roll 2X (Brillion Roller)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 7,
@@ -291,6 +300,7 @@
    {
     "name": "Plant Seed & Fertilize 11-52-0",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.28,
     "labor": 12,
     "fuel": 11,
@@ -304,6 +314,7 @@
    {
     "name": "Flat Roll",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 7,
@@ -317,6 +328,7 @@
    {
     "name": "Weed: (Roundup) 25% of Acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 4,
     "fuel": 2,
@@ -330,6 +342,7 @@
    {
     "name": "Weed: (Regiment, Sandea, Prowl, Super Wham)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 6,
     "fuel": 4,
@@ -343,6 +356,7 @@
    {
     "name": "Fertilize 20-0-20: Broadcast @ 4th leaf",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 1,
@@ -356,6 +370,7 @@
    {
     "name": "Flood",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.27,
     "labor": 8,
     "fuel": 3,
@@ -369,6 +384,7 @@
    {
     "name": "Fertilize Leaf Analysis (PCA)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -382,6 +398,7 @@
    {
     "name": "Fertilize: Topdress 40-0-0-5S by air",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -395,6 +412,7 @@
    {
     "name": "Insect: Worms (Intrepid) 20% of Acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -408,6 +426,7 @@
    {
     "name": "Flood & Drain",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 4,
     "fuel": 2,
@@ -421,6 +440,7 @@
    {
     "name": "Pickup ½ ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 3,
     "fuel": 1,
@@ -434,6 +454,7 @@
    {
     "name": "Pickup ¾ ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 3,
     "fuel": 1,
@@ -447,6 +468,7 @@
    {
     "name": "Combine Rice",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 22,
@@ -460,6 +482,7 @@
    {
     "name": "Bankout Rice",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.19,
     "labor": 5,
     "fuel": 5,
@@ -473,6 +496,7 @@
    {
     "name": "Transport/Shipping Cost",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -486,6 +510,7 @@
    {
     "name": "Dry & Store Rice",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -499,6 +524,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -512,6 +538,7 @@
    {
     "name": "Weed: Mow Levees 2X & Levee Repair",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 1,
@@ -525,6 +552,7 @@
    {
     "name": "Flail Mow & Roll",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.2,
     "labor": 6,
     "fuel": 21,
@@ -538,6 +566,7 @@
    {
     "name": "Flood for Winter",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1381,6 +1410,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE RICE"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

@@ -92,6 +92,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE SUNFLOWERS",
   "operatingTotal": {
    "value": 1005,
    "unit": "$/acre",
@@ -177,6 +178,7 @@
    {
     "name": "Chisel Furrows to 12-inches (85% of acreage)",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.11,
     "labor": 3,
     "fuel": 5,
@@ -190,6 +192,7 @@
    {
     "name": "Rip to 18-inches (15% of acreage)",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 1,
@@ -203,6 +206,7 @@
    {
     "name": "Stubble Disc and Ring-Roll 2X",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.3,
     "labor": 9,
     "fuel": 14,
@@ -216,6 +220,7 @@
    {
     "name": "Finish Disc and Ring-Roll 1X",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.13,
     "labor": 4,
     "fuel": 6,
@@ -229,6 +234,7 @@
    {
     "name": "Drag Scraper (GPS, level & smooth)",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.15,
     "labor": 4,
     "fuel": 7,
@@ -242,6 +248,7 @@
    {
     "name": "List Beds, 5-bed lister",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.17,
     "labor": 5,
     "fuel": 13,
@@ -255,6 +262,7 @@
    {
     "name": "Attach Mainlines to Drip Tape",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 53,
     "fuel": 0,
@@ -268,6 +276,7 @@
    {
     "name": "Water Test/Water Analysis",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -281,6 +290,7 @@
    {
     "name": "Weeds- Fallow Herbicide",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -294,6 +304,7 @@
    {
     "name": "Weeds- Preplant Herbicide/Cultivate",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.22,
     "labor": 6,
     "fuel": 4,
@@ -307,6 +318,7 @@
    {
     "name": "Plant & Starter Fertilizer",
     "category": "other",
+    "section": "Planting",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 6,
@@ -320,6 +332,7 @@
    {
     "name": "Sprinkler Irrigate & Setup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 42,
     "fuel": 5,
@@ -333,6 +346,7 @@
    {
     "name": "Subsurface Drip Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 61,
     "fuel": 0,
@@ -346,6 +360,7 @@
    {
     "name": "Fertigate- UAN-32 (100 lbs N/acre)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -359,6 +374,7 @@
    {
     "name": "Soil Test (NPK)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -372,6 +388,7 @@
    {
     "name": "Weeds- Cultivate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 5,
     "fuel": 7,
@@ -385,6 +402,7 @@
    {
     "name": "Pollination- 2 Hives/Acre",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -398,6 +416,7 @@
    {
     "name": "Insects- Moths (75% of acreage) 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -411,6 +430,7 @@
    {
     "name": "Knock Down Males (25% of acreage)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 3,
     "fuel": 2,
@@ -424,6 +444,7 @@
    {
     "name": "Defoliate (75% of acreage)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.11,
     "labor": 3,
     "fuel": 2,
@@ -437,6 +458,7 @@
    {
     "name": "Pickup Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.25,
     "labor": 35,
     "fuel": 11,
@@ -450,6 +472,7 @@
    {
     "name": "ATV",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 21,
     "fuel": 1,
@@ -463,6 +486,7 @@
    {
     "name": "Irrigate: Drip Acid Flush",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 9,
     "fuel": 0,
@@ -476,6 +500,7 @@
    {
     "name": "Harvest",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 3,
@@ -489,6 +514,7 @@
    {
     "name": "Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

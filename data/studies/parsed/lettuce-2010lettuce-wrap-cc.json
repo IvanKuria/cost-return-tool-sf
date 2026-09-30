@@ -47,6 +47,7 @@
   }
  },
  "costsPerAcre": {
+  "title": null,
   "operatingTotal": null,
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,

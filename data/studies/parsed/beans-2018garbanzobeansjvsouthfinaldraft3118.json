@@ -97,6 +97,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE GARBANZO BEANS (Chickpeas)",
   "operatingTotal": {
    "value": 943,
    "unit": "$/acre",
@@ -187,6 +188,7 @@
    {
     "name": "Well Test/Water Analysis",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -200,6 +202,7 @@
    {
     "name": "Soil Test: (NPK)",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -213,6 +216,7 @@
    {
     "name": "Condition Beds: Performer 2x",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.32,
     "labor": 9,
     "fuel": 26,
@@ -226,6 +230,7 @@
    {
     "name": "Attach Mainlines to Drip Tape",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 53,
     "fuel": 0,
@@ -239,6 +244,7 @@
    {
     "name": "Plant Beans: (85lbs/ac)",
     "category": "other",
+    "section": "Planting",
     "timeHrsPerAcre": 0.2,
     "labor": 6,
     "fuel": 8,
@@ -252,6 +258,7 @@
    {
     "name": "Shape Beds/Apply Herbicides",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 6,
     "fuel": 8,
@@ -265,6 +272,7 @@
    {
     "name": "Irrigate: Post-Planting-Sprinklers",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 20,
     "fuel": 0,
@@ -278,6 +286,7 @@
    {
     "name": "Irrigate: Drip 5x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 44,
     "fuel": 0,
@@ -291,6 +300,7 @@
    {
     "name": "Fertigate: UAN32 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -304,6 +314,7 @@
    {
     "name": "Disease: Blight/Weeds: Cultivate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.28,
     "labor": 8,
     "fuel": 6,
@@ -317,6 +328,7 @@
    {
     "name": "Pickup 1/2 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.25,
     "labor": 35,
     "fuel": 11,
@@ -330,6 +342,7 @@
    {
     "name": "ATV",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 21,
     "fuel": 1,
@@ -343,6 +356,7 @@
    {
     "name": "Harvest: Combine/30' Header",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.2,
     "labor": 6,
     "fuel": 8,
@@ -356,6 +370,7 @@
    {
     "name": "Roadside: Bankout",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 3,
@@ -369,6 +384,7 @@
    {
     "name": "Hauling/Transporting",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -382,6 +398,7 @@
    {
     "name": "Clean/Bag/Store/Insurance",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -395,6 +412,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -408,6 +426,7 @@
    {
     "name": "Irrigate: Drip Acid Flush",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 9,
     "fuel": 0,

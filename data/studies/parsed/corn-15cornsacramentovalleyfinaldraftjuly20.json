@@ -92,6 +92,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE FIELD CORN",
   "operatingTotal": {
    "value": 1117,
    "unit": "$/acre",
@@ -188,6 +189,7 @@
    {
     "name": "Chisel 18\" Depth 25% of Ac",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 2,
@@ -201,6 +203,7 @@
    {
     "name": "Stubble Disc & Roll 25% of Ac",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 2,
@@ -214,6 +217,7 @@
    {
     "name": "Finish Disc & Roll",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 5,
@@ -227,6 +231,7 @@
    {
     "name": "Tri-plane 75% of Ac",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 5,
@@ -240,6 +245,7 @@
    {
     "name": "Laser Level 25% of Ac",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -253,6 +259,7 @@
    {
     "name": "List-Shape Beds",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 4,
@@ -266,6 +273,7 @@
    {
     "name": "Weeds-Fallow Beds Roundup PowerMax",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -279,6 +287,7 @@
    {
     "name": "Open-Fallow Beds",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 4,
@@ -292,6 +301,7 @@
    {
     "name": "Open Ditch",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 2,
@@ -305,6 +315,7 @@
    {
     "name": "Pre-irrigate 20% of Ac",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0,
     "labor": 3,
     "fuel": 0,
@@ -318,6 +329,7 @@
    {
     "name": "Close Ditch",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 1,
@@ -331,6 +343,7 @@
    {
     "name": "Plant Corn-Starter Fertilizer",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.25,
     "labor": 5,
     "fuel": 7,
@@ -344,6 +357,7 @@
    {
     "name": "Break Crust 10% of Ac",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 1,
@@ -357,6 +371,7 @@
    {
     "name": "Open Ditch 2X",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 5,
@@ -370,6 +385,7 @@
    {
     "name": "Irrigate 6X",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0,
     "labor": 103,
     "fuel": 0,
@@ -383,6 +399,7 @@
    {
     "name": "Close Ditch 2X",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 3,
@@ -396,6 +413,7 @@
    {
     "name": "Insects-Cutworms 20% of Ac",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 0,
@@ -409,6 +427,7 @@
    {
     "name": "Cultivate-Sidedress Fertilizer",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 3,
@@ -422,6 +441,7 @@
    {
     "name": "Weeds-Post Plant Roundup PowerMax",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 4,
@@ -435,6 +455,7 @@
    {
     "name": "Weeds-Post Plant-Broadleaf 25% of Ac",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 1,
@@ -448,6 +469,7 @@
    {
     "name": "Insects-Mites 60% of Ac",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -461,6 +483,7 @@
    {
     "name": "Service Truck",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 2,
@@ -474,6 +497,7 @@
    {
     "name": "Pickup Trucks",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.42,
     "labor": 17,
     "fuel": 6,
@@ -487,6 +511,7 @@
    {
     "name": "Harvest-Combine Corn",
     "category": "harvest",
+    "section": "Harvest ",
     "timeHrsPerAcre": 0.25,
     "labor": 5,
     "fuel": 18,
@@ -500,6 +525,7 @@
    {
     "name": "Bank Out Grain",
     "category": "harvest",
+    "section": "Harvest ",
     "timeHrsPerAcre": 0.23,
     "labor": 5,
     "fuel": 6,
@@ -513,6 +539,7 @@
    {
     "name": "Land Rent (18% of Return/Ac)",
     "category": "harvest",
+    "section": "Harvest ",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -526,6 +553,7 @@
    {
     "name": "Chop Stubble 50% of Ac",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 1,
@@ -539,6 +567,7 @@
    {
     "name": "Disc Stubble 50% of Ac",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 4,

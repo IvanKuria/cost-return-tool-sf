@@ -72,6 +72,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE TOMATOES (FURROW)",
   "operatingTotal": {
    "value": 2859,
    "unit": "$/acre",

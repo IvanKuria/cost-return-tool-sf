@@ -99,6 +99,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE POTATOES-CHIPPERS",
   "operatingTotal": {
    "value": 2528,
    "unit": "$/acre",
@@ -201,6 +202,7 @@
    {
     "name": "Chop Residue 80% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.12,
     "labor": 3,
     "fuel": 3,
@@ -214,6 +216,7 @@
    {
     "name": "Stubble Disc & Roll",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 6,
@@ -227,6 +230,7 @@
    {
     "name": "Sub-Soil 50% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.15,
     "labor": 4,
     "fuel": 7,
@@ -240,6 +244,7 @@
    {
     "name": "Pre-Irrigate/Sprinklers 25% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -253,6 +258,7 @@
    {
     "name": "Roto-Spike/Fall-Fumigate 25% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 2,
@@ -266,6 +272,7 @@
    {
     "name": "Gypsum 25% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -279,6 +286,7 @@
    {
     "name": "Chisel & Roll",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.12,
     "labor": 3,
     "fuel": 6,
@@ -292,6 +300,7 @@
    {
     "name": "Roto-Spike/Spring-Fumigation 75% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.16,
     "labor": 4,
     "fuel": 6,
@@ -305,6 +314,7 @@
    {
     "name": "Fertilize-Pre-Plant (Mixture)",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -318,6 +328,7 @@
    {
     "name": "Pull Beds/(Pre-Plant Herbicide)-25% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.2,
     "labor": 5,
     "fuel": 7,
@@ -331,6 +342,7 @@
    {
     "name": "Plant Potatoes (cut/treated/haul)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 11,
@@ -344,6 +356,7 @@
    {
     "name": "At Planting-Fungicide/Nematicide",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -357,6 +370,7 @@
    {
     "name": "Irrigation Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 140,
     "fuel": 0,
@@ -370,6 +384,7 @@
    {
     "name": "Irrigate/Sprinklers",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -383,6 +398,7 @@
    {
     "name": "Chemigation-Fertilizer-UAN 32",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -396,6 +412,7 @@
    {
     "name": "Cultivate/Hilling-Herb 75% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 4,
     "fuel": 5,
@@ -409,6 +426,7 @@
    {
     "name": "Chemigation-Disease 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -422,6 +440,7 @@
    {
     "name": "Herbicides-Post Emergence",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 4,
@@ -435,6 +454,7 @@
    {
     "name": "Chemigation-Insects",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -448,6 +468,7 @@
    {
     "name": "Insects-Broadcast/Air",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -461,6 +482,7 @@
    {
     "name": "Disease-Broadcast/Air",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -474,6 +496,7 @@
    {
     "name": "Growth Regulator-Broadcast/Air 50% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -487,6 +510,7 @@
    {
     "name": "Petiole Samples-Nutrients",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -500,6 +524,7 @@
    {
     "name": "1/2 Ton Pickup Trucks (4)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 19,
     "fuel": 5,
@@ -513,6 +538,7 @@
    {
     "name": "3/4 Ton Pickup Trucks (2)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 10,
     "fuel": 3,
@@ -526,6 +552,7 @@
    {
     "name": "ATV4WD (2)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 10,
     "fuel": 1,
@@ -539,6 +566,7 @@
    {
     "name": "Service Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 4,
     "fuel": 2,
@@ -552,6 +580,7 @@
    {
     "name": "Desiccant Application/Air 50% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -565,6 +594,7 @@
    {
     "name": "Cut Vines/Roll Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 4,
     "fuel": 4,
@@ -578,6 +608,7 @@
    {
     "name": "Dig/Harvest Potatoes-4 Rows",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.67,
     "labor": 16,
     "fuel": 30,
@@ -591,6 +622,7 @@
    {
     "name": "Bulk Potatoes",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 28,
     "fuel": 0,
@@ -604,6 +636,7 @@
    {
     "name": "Haul Potatoes to Storage",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.5,
     "labor": 48,
     "fuel": 18,
@@ -617,6 +650,7 @@
    {
     "name": "Assessments/Fees",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -630,6 +664,7 @@
    {
     "name": "Elevate/Holding Tub/Remove Dirt",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.4,
     "labor": 24,
     "fuel": 10,
@@ -643,6 +678,7 @@
    {
     "name": "Shed-Store Potatoes",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -656,6 +692,7 @@
    {
     "name": "Treat for Sprouts (50%)",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

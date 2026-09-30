@@ -107,6 +107,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE AND HARVEST BROCCOLI – CROWN CUT",
   "operatingTotal": {
    "value": 9865,
    "unit": "$/acre",
@@ -199,6 +200,7 @@
    {
     "name": "Soil Samples (25 per 500 Acres)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -212,6 +214,7 @@
    {
     "name": "Disc & Roll 6X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.73,
     "labor": 61,
     "fuel": 122,
@@ -225,6 +228,7 @@
    {
     "name": "Sub-Soil 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.02,
     "labor": 36,
     "fuel": 72,
@@ -238,6 +242,7 @@
    {
     "name": "Land Plane (1X per 2 Crops)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 7,
     "fuel": 13,
@@ -251,6 +256,7 @@
    {
     "name": "Laser Level (1X per 2 Crops)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -264,6 +270,7 @@
    {
     "name": "Chisel 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.42,
     "labor": 50,
     "fuel": 100,
@@ -277,6 +284,7 @@
    {
     "name": "List Beds 3-Row",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -290,6 +298,7 @@
    {
     "name": "Cultivate-Lilliston 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 14,
     "fuel": 17,
@@ -303,6 +312,7 @@
    {
     "name": "Power Mulch/Shape Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.48,
     "labor": 17,
     "fuel": 25,
@@ -316,6 +326,7 @@
    {
     "name": "Plant/Fertilize (7-7-0-7)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.57,
     "labor": 25,
     "fuel": 30,
@@ -329,6 +340,7 @@
    {
     "name": "Herbicide Application",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -342,6 +354,7 @@
    {
     "name": "Sprinkler Setup/Irrigate - Establish",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.75,
     "labor": 94,
     "fuel": 0,
@@ -355,6 +368,7 @@
    {
     "name": "Disease/Insect Management",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -368,6 +382,7 @@
    {
     "name": "Fertilize-Sidedress 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.57,
     "labor": 20,
     "fuel": 29,
@@ -381,6 +396,7 @@
    {
     "name": "Cultivate-Break Bottoms",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.95,
     "labor": 34,
     "fuel": 39,
@@ -394,6 +410,7 @@
    {
     "name": "Sprinkler Irrigate - Season",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 6,
     "labor": 150,
     "fuel": 0,
@@ -407,6 +424,7 @@
    {
     "name": "Vertebrate Pest Management",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.85,
     "labor": 20,
     "fuel": 0,
@@ -420,6 +438,7 @@
    {
     "name": "Hand Weed",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 8.9,
     "labor": 211,
     "fuel": 0,
@@ -433,6 +452,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 36,
     "fuel": 9,
@@ -446,6 +466,7 @@
    {
     "name": "PCA/CCA Fee",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -459,6 +480,7 @@
    {
     "name": "Harvest/Field Pack",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -472,6 +494,7 @@
    {
     "name": "Cool/Palletize",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -485,6 +508,7 @@
    {
     "name": "Market/Sales Fee",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

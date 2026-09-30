@@ -94,6 +94,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COST PER ACRE TO PRODUCE ORGANIC ALMONDS",
   "operatingTotal": {
    "value": 2971,
    "unit": "$/acre",
@@ -174,6 +175,7 @@
    {
     "name": "Pump Test",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -187,6 +189,7 @@
    {
     "name": "Pest: Dormant (Oil Spray)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 2,
@@ -200,6 +203,7 @@
    {
     "name": "Disease: Brown Rot (Regalia)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 2,
@@ -213,6 +217,7 @@
    {
     "name": "Irrigate: Frost Protection",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 3,
     "fuel": 0,
@@ -226,6 +231,7 @@
    {
     "name": "Pollination: Hive Rental",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -239,6 +245,7 @@
    {
     "name": "Pest: Weed Mow Middles",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.19,
     "labor": 4,
     "fuel": 1,
@@ -252,6 +259,7 @@
    {
     "name": "Disease: Brown Rot (Kumulus)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 2,
@@ -265,6 +273,7 @@
    {
     "name": "Insect; Peach Twig Borer (Dipel)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 2,
@@ -278,6 +287,7 @@
    {
     "name": "Pest: Gopher Traps 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -291,6 +301,7 @@
    {
     "name": "Pest: Squirrel Traps 6x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 4,
     "fuel": 0,
@@ -304,6 +315,7 @@
    {
     "name": "Pest: Weed Flame Middles (2x)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -317,6 +329,7 @@
    {
     "name": "Water Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
@@ -330,6 +343,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 52,
     "fuel": 0,
@@ -343,6 +357,7 @@
    {
     "name": "Fertilize: Manure Compost",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -356,6 +371,7 @@
    {
     "name": "Compost Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 5,
     "fuel": 0,
@@ -369,6 +385,7 @@
    {
     "name": "Disease: Scab (Sulfur) 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 12,
     "fuel": 5,
@@ -382,6 +399,7 @@
    {
     "name": "Insect: NOW (Entrust)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 2,
@@ -395,6 +413,7 @@
    {
     "name": "Leaf Analysis Fee",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 0,
@@ -408,6 +427,7 @@
    {
     "name": "Insect: Mite (Oil Spray)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 12,
     "fuel": 5,
@@ -421,6 +441,7 @@
    {
     "name": "Hull Samples",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 0,
@@ -434,6 +455,7 @@
    {
     "name": "Soil Analysis (50% of cost)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 0,
@@ -447,6 +469,7 @@
    {
     "name": "Fertilize: Boron & Zinc Foliar",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 2,
@@ -460,6 +483,7 @@
    {
     "name": "Plant Cover Crop",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -473,6 +497,7 @@
    {
     "name": "Fertigate: Boron",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 6,
     "fuel": 0,
@@ -486,6 +511,7 @@
    {
     "name": "Pruning (50% of cost)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 67,
     "fuel": 0,
@@ -499,6 +525,7 @@
    {
     "name": "Stack Brush (50% of cost)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 8,
     "fuel": 0,
@@ -512,6 +539,7 @@
    {
     "name": "Shred Prunings (50% of cost)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -525,6 +553,7 @@
    {
     "name": "Winter Sanitation",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.09,
     "labor": 2,
     "fuel": 1,
@@ -538,6 +567,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.67,
     "labor": 39,
     "fuel": 10,
@@ -551,6 +581,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.25,
     "labor": 29,
     "fuel": 1,
@@ -564,6 +595,7 @@
    {
     "name": "Shake Trees",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -577,6 +609,7 @@
    {
     "name": "Sweep Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -590,6 +623,7 @@
    {
     "name": "Hand Rake Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 8,
     "fuel": 0,
@@ -603,6 +637,7 @@
    {
     "name": "Pickup and Haul Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -616,6 +651,7 @@
    {
     "name": "Hull and Shell Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

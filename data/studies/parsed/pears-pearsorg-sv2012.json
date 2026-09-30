@@ -82,6 +82,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ORGANIC PEARS",
   "operatingTotal": {
    "value": 5999,
    "unit": "$/acre",
@@ -184,6 +185,7 @@
    {
     "name": "Pest:Mites, Psylla",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 1.22,
     "labor": 24,
     "fuel": 18,
@@ -197,6 +199,7 @@
    {
     "name": "Pest: Scab and mite",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 5,
@@ -210,6 +213,7 @@
    {
     "name": "Pest: Pear Saw Fly",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 5,
@@ -223,6 +227,7 @@
    {
     "name": "Fertilize: Potash",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.09,
     "labor": 3,
     "fuel": 1,
@@ -236,6 +241,7 @@
    {
     "name": "Fertilize: Feathermeal",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.19,
     "labor": 4,
     "fuel": 3,
@@ -249,6 +255,7 @@
    {
     "name": "Weed control - Tree Row",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 2.62,
     "labor": 52,
     "fuel": 39,
@@ -262,6 +269,7 @@
    {
     "name": "Prune",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -275,6 +283,7 @@
    {
     "name": "Weed:Mow Middles",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 1.51,
     "labor": 30,
     "fuel": 22,
@@ -288,6 +297,7 @@
    {
     "name": "Weed: Hand Weed",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 5,
     "labor": 62,
     "fuel": 0,
@@ -301,6 +311,7 @@
    {
     "name": "Replant Trees (1/acre)",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.26,
     "labor": 3,
     "fuel": 0,
@@ -314,6 +325,7 @@
    {
     "name": "Disease: Scab 6X",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 2.14,
     "labor": 43,
     "fuel": 32,
@@ -327,6 +339,7 @@
    {
     "name": "Disease: Blight 10X",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 3.06,
     "labor": 61,
     "fuel": 45,
@@ -340,6 +353,7 @@
    {
     "name": "Pest: Codling Moth",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 1.4,
     "labor": 17,
     "fuel": 0,
@@ -353,6 +367,7 @@
    {
     "name": "Fruit Thinning (By Hand, Every Other Year)",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -366,6 +381,7 @@
    {
     "name": "Disease: Blight Cutting",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -379,6 +395,7 @@
    {
     "name": "Irrigate 9X",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 5.5,
     "labor": 68,
     "fuel": 0,
@@ -392,6 +409,7 @@
    {
     "name": "Leaf Sampling 1/20 Acre",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
@@ -405,6 +423,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 3.33,
     "labor": 67,
     "fuel": 32,
@@ -418,6 +437,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.57,
     "labor": 11,
     "fuel": 1,
@@ -431,6 +451,7 @@
    {
     "name": "Miscellaneous Labor",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 1,
     "labor": 9,
     "fuel": 0,
@@ -444,6 +465,7 @@
    {
     "name": "Pick Fruit",
     "category": "harvest",
+    "section": "Harvest ",
     "timeHrsPerAcre": 1.25,
     "labor": 48,
     "fuel": 12,
@@ -457,6 +479,7 @@
    {
     "name": "Haul Fruit",
     "category": "harvest",
+    "section": "Harvest ",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -470,6 +493,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest ",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

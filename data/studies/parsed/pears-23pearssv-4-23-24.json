@@ -97,6 +97,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE PEARS",
   "operatingTotal": {
    "value": 9314,
    "unit": "$/acre",
@@ -199,6 +200,7 @@
    {
     "name": "Weeds- Fall Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 6,
     "fuel": 1,
@@ -212,6 +214,7 @@
    {
     "name": "Insects- Dormant Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 16,
     "fuel": 10,
@@ -225,6 +228,7 @@
    {
     "name": "Prune",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -238,6 +242,7 @@
    {
     "name": "Weeds- Mow Middles (Shred Prunings)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 11,
     "fuel": 7,
@@ -251,6 +256,7 @@
    {
     "name": "Disease- Fire Blight (Copper)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.38,
     "labor": 13,
     "fuel": 8,
@@ -264,6 +270,7 @@
    {
     "name": "Weeds- Chemical Mow",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 6,
     "fuel": 1,
@@ -277,6 +284,7 @@
    {
     "name": "Insects- Delayed Dormant Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.38,
     "labor": 13,
     "fuel": 8,
@@ -290,6 +298,7 @@
    {
     "name": "Disease- Fire Blight (Antibiotic) 11X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.84,
     "labor": 93,
     "fuel": 59,
@@ -303,6 +312,7 @@
    {
     "name": "Disease- Fire Blight (Kasumin) 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.51,
     "labor": 17,
     "fuel": 11,
@@ -316,6 +326,7 @@
    {
     "name": "Disease- Scab (Manzate Pro Stik) 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -329,6 +340,7 @@
    {
     "name": "Insects- Psylla @ Cluster Bud",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -342,6 +354,7 @@
    {
     "name": "Replant Trees (1/acre)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 6,
     "fuel": 0,
@@ -355,6 +368,7 @@
    {
     "name": "Weeds- Mow Middles 6x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.38,
     "labor": 45,
     "fuel": 29,
@@ -368,6 +382,7 @@
    {
     "name": "Irrigate 9X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 134,
     "fuel": 0,
@@ -381,6 +396,7 @@
    {
     "name": "Insects- Mites",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -394,6 +410,7 @@
    {
     "name": "Rodent Control (Wilco Bait)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 7,
     "fuel": 1,
@@ -407,6 +424,7 @@
    {
     "name": "Disease- Cut Blighted Limbs",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -420,6 +438,7 @@
    {
     "name": "Pests- Codling Moth (Pheremones)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 31,
     "fuel": 0,
@@ -433,6 +452,7 @@
    {
     "name": "PCA Fee (includes monitoring traps)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -446,6 +466,7 @@
    {
     "name": "Disease- Scab (Narvos)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -459,6 +480,7 @@
    {
     "name": "Insects- Codling Moth",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -472,6 +494,7 @@
    {
     "name": "Insects- OFM",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -485,6 +508,7 @@
    {
     "name": "Fertilize- Calcium Nitrate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 3,
     "fuel": 2,
@@ -498,6 +522,7 @@
    {
     "name": "Growth Regulator (Refine)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.38,
     "labor": 13,
     "fuel": 8,
@@ -511,6 +536,7 @@
    {
     "name": "Weeds- Pre-Harvest Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 6,
     "fuel": 1,
@@ -524,6 +550,7 @@
    {
     "name": "Leaf Sampling 1/20 acre",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -537,6 +564,7 @@
    {
     "name": "Fertilize- Potash",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 3,
     "fuel": 2,
@@ -550,6 +578,7 @@
    {
     "name": "Fertilize- Urea",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 3,
     "fuel": 2,
@@ -563,6 +592,7 @@
    {
     "name": "Insects- Cleanup Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 16,
     "fuel": 10,
@@ -576,6 +606,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3,
     "labor": 99,
     "fuel": 33,
@@ -589,6 +620,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.57,
     "labor": 19,
     "fuel": 2,
@@ -602,6 +634,7 @@
    {
     "name": "Extra Labor- Cutting Blighted Limbs",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 24,
     "fuel": 0,
@@ -615,6 +648,7 @@
    {
     "name": "Pick Fruit",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.25,
     "labor": 270,
     "fuel": 13,
@@ -628,6 +662,7 @@
    {
     "name": "Haul Fruit: Fresh Market Only",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -641,6 +676,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1503,6 +1539,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE PEARS"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 12500,

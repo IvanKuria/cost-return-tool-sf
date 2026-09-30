@@ -97,6 +97,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "SAMPLE COSTS PER ACRE TO PRODUCE PROCESSING TOMATOES",
   "operatingTotal": {
    "value": 3345,
    "unit": "$/acre",
@@ -205,6 +206,7 @@
    {
     "name": "Drip Tape System Maintenance",
     "category": "postharvest",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 64,
     "fuel": 1,
@@ -218,6 +220,7 @@
    {
     "name": "Drip Tape Extraction 33% Ac",
     "category": "postharvest",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 21,
     "fuel": 11,
@@ -231,6 +234,7 @@
    {
     "name": "PTAB CTGA CDFA-CTVP CTRI",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

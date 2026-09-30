@@ -78,6 +78,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE SECOND YEAR STRAWBERRIES*",
   "operatingTotal": {
    "value": 27576,
    "unit": "$/acre",
@@ -180,6 +181,7 @@
    {
     "name": "Fertilize (CAN17)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 6,
     "fuel": 0,
@@ -193,6 +195,7 @@
    {
     "name": "Grade Field Roads 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -206,6 +209,7 @@
    {
     "name": "Weed-hand",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 102,
     "labor": 1212,
     "fuel": 0,
@@ -219,6 +223,7 @@
    {
     "name": "Prune Leaves",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.41,
     "labor": 7,
     "fuel": 4,
@@ -232,6 +237,7 @@
    {
     "name": "Clean Bed Tops (hand)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 25,
     "labor": 297,
     "fuel": 0,
@@ -245,6 +251,7 @@
    {
     "name": "Irrigate: Drip Line Repair",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 24,
     "fuel": 0,
@@ -258,6 +265,7 @@
    {
     "name": "Plant (replants)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 24,
     "fuel": 0,
@@ -271,6 +279,7 @@
    {
     "name": "Irrigate: established and replants (drip)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 2,
     "fuel": 0,
@@ -284,6 +293,7 @@
    {
     "name": "Whitefly/Aphid (drip)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 3,
     "fuel": 0,
@@ -297,6 +307,7 @@
    {
     "name": "Whitefly/Aphid/Worm/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -310,6 +321,7 @@
    {
     "name": "Fertilize: (drip) 20-20-20",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 6,
     "fuel": 0,
@@ -323,6 +335,7 @@
    {
     "name": "Whitefly/Aphid/Worm/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -336,6 +349,7 @@
    {
     "name": "Break Bottoms - furrows",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4.91,
     "labor": 85,
     "fuel": 50,
@@ -349,6 +363,7 @@
    {
     "name": "Botrytis/Mildew/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.56,
     "labor": 15,
     "fuel": 6,
@@ -362,6 +377,7 @@
    {
     "name": "Irrigate: production season (drip)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.1,
     "labor": 23,
     "fuel": 0,
@@ -375,6 +391,7 @@
    {
     "name": "Mildew",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -388,6 +405,7 @@
    {
     "name": "Mildew/Anthr/Worm/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -401,6 +419,7 @@
    {
     "name": "Botrytis/Mildew/Worm",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.28,
     "labor": 7,
     "fuel": 3,
@@ -414,6 +433,7 @@
    {
     "name": "Mildew/Anthr/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -427,6 +447,7 @@
    {
     "name": "Botrytis/Worm",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -440,6 +461,7 @@
    {
     "name": "Mildew/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -453,6 +475,7 @@
    {
     "name": "Worm/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -466,6 +489,7 @@
    {
     "name": "Botrytis/Mildew",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 1,
@@ -479,6 +503,7 @@
    {
     "name": "Year End Cleanup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -492,6 +517,7 @@
    {
     "name": "PCA",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -505,6 +531,7 @@
    {
     "name": "Harvest Fresh",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 671,
     "labor": 7971,
     "fuel": 0,
@@ -518,6 +545,7 @@
    {
     "name": "Load/Haul Fresh",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 11,
     "labor": 434,
     "fuel": 187,
@@ -531,6 +559,7 @@
    {
     "name": "Cooling Fresh",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -544,6 +573,7 @@
    {
     "name": "Harvest Freezer",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 286,
     "labor": 3398,
     "fuel": 0,
@@ -557,6 +587,7 @@
    {
     "name": "Load/Haul Freezer",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 4,
     "labor": 181,
     "fuel": 76,
@@ -570,6 +601,7 @@
    {
     "name": "Assessments Cal Strawberry",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

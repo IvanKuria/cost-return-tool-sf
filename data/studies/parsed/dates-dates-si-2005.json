@@ -67,6 +67,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "Costs Per Acre by Category to Produce Dates in the Coachella Valley, Riverside County, 2005-2006",
   "operatingTotal": null,
   "cashOverheadTotal": {
    "value": 1185,

@@ -216,6 +216,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE GRAPES FOR CONCENTRATE – Thompson Seedless",
   "operatingTotal": {
    "value": 1264,
    "unit": "$/acre",
@@ -295,6 +296,7 @@
    {
     "name": "Prune: (hand)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 11,
     "labor": 122,
     "fuel": 0,
@@ -308,6 +310,7 @@
    {
     "name": "Prune: Tie Vines",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5,
     "labor": 55,
     "fuel": 0,
@@ -321,6 +324,7 @@
    {
     "name": "Vines: Layer to replace missing vines",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 11,
     "fuel": 0,
@@ -334,6 +338,7 @@
    {
     "name": "Trellis: Repair (labor only, see text)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 22,
     "fuel": 0,
@@ -347,6 +352,7 @@
    {
     "name": "Weed: Winter Strip Spray (Roundup, Goal, Surflan)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.54,
     "labor": 8,
     "fuel": 4,
@@ -360,6 +366,7 @@
    {
     "name": "Irrigate: (water & labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.05,
     "labor": 34,
     "fuel": 0,
@@ -373,6 +380,7 @@
    {
     "name": "Weed: Mow 4X (includes shred prunings)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.96,
     "labor": 15,
     "fuel": 10,
@@ -386,6 +394,7 @@
    {
     "name": "Prune: Sucker Trunks",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.25,
     "labor": 14,
     "fuel": 0,
@@ -399,6 +408,7 @@
    {
     "name": "Weed: Spot Spray 20% acres 3X (Roundup)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.59,
     "labor": 24,
     "fuel": 2,
@@ -412,6 +422,7 @@
    {
     "name": "Weed: Disc",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.29,
     "labor": 4,
     "fuel": 2,
@@ -425,6 +436,7 @@
    {
     "name": "Disease: Mildew (Wettable Sulfur)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.53,
     "labor": 23,
     "fuel": 15,
@@ -438,6 +450,7 @@
    {
     "name": "Disease: Mildew (Dusting Sulfur)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.92,
     "labor": 14,
     "fuel": 7,
@@ -451,6 +464,7 @@
    {
     "name": "Fertilize: through drip (UN32)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
@@ -464,6 +478,7 @@
    {
     "name": "Insect: Skeletonizer (Kryocide). Disease: Mildew (Rubigan). Fertilizer: (Zn)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.76,
     "labor": 12,
     "fuel": 8,
@@ -477,6 +492,7 @@
    {
     "name": "Disease: Mildew (Flint)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.76,
     "labor": 12,
     "fuel": 8,
@@ -490,6 +506,7 @@
    {
     "name": "Insect: Leaf Hopper (Provado)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.76,
     "labor": 12,
     "fuel": 8,
@@ -503,6 +520,7 @@
    {
     "name": "Pickup: Business use for vineyard",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 23,
     "fuel": 18,
@@ -516,6 +534,7 @@
    {
     "name": "ATV 4WD: Miscellaneous vineyard use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 31,
     "fuel": 2,
@@ -529,6 +548,7 @@
    {
     "name": "Harvest: Machine Harvest & Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -995,6 +1015,7 @@
   "quote": "MONTHLY CASH to PRODUCE GRAPES FOR CONCENTRATE – Thompson Seedless"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 6956,

@@ -59,6 +59,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "Costs per Acre to Produce Avocados in Riverside County using Conventional Production Practices in 2011",
   "operatingTotal": {
    "value": 6174,
    "unit": "$/acre",
@@ -155,6 +156,7 @@
    {
     "name": "Erosion Control (2x/yr.)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3,
     "labor": 42,
     "fuel": 0,
@@ -168,6 +170,7 @@
    {
     "name": "Weed Control - glyphosate herbicide (3x/yr.)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4.5,
     "labor": 63,
     "fuel": 0,
@@ -181,6 +184,7 @@
    {
     "name": "Weed Control - weed whipping",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 14,
     "fuel": 0,
@@ -194,6 +198,7 @@
    {
     "name": "Rodent Control for Squirrels - trap, bait station, baits, labor (12x/yr.)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 21,
     "fuel": 0,
@@ -207,6 +212,7 @@
    {
     "name": "Fertilizer - CAN 17% (9x/yr.)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -220,6 +226,7 @@
    {
     "name": "Root Rot Treatment - potassium phosphite (2x/yr.)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -233,6 +240,7 @@
    {
     "name": "Irrigation & Walk Lines (58 irrigations/yr.)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 14.5,
     "labor": 203,
     "fuel": 0,
@@ -246,6 +254,7 @@
    {
     "name": "Pest Control - abamectin (Agri-Mek), NR-415 oil, helicopter rental",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -259,6 +268,7 @@
    {
     "name": "Pest Control Advisor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -272,6 +282,7 @@
    {
     "name": "Orchard Pruning",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 38.66,
     "labor": 541.24,
     "fuel": 0,
@@ -285,6 +296,7 @@
    {
     "name": "Misc. Pickup truck (labor, fuel, lube & repairs)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 7.5,
     "labor": 162,
     "fuel": 39.38,
@@ -298,6 +310,7 @@
    {
     "name": "Misc. ATV (labor, fuel, lube, & repairs)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 15,
     "labor": 324,
     "fuel": 83.19,
@@ -311,6 +324,7 @@
    {
     "name": "Misc. Road Repairs",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -324,6 +338,7 @@
    {
     "name": "Picking - $0.18/lb.",
     "category": "harvest",
+    "section": "Harvesting and Marketing Costs",
     "timeHrsPerAcre": 0,
     "labor": 1620,
     "fuel": 0,
@@ -337,6 +352,7 @@
    {
     "name": "Hauling - $0.004/lb.",
     "category": "harvest",
+    "section": "Harvesting and Marketing Costs",
     "timeHrsPerAcre": 0,
     "labor": 36,
     "fuel": 0,
@@ -350,6 +366,7 @@
    {
     "name": "CAC Assessment fee - $0.011 x production value",
     "category": "harvest",
+    "section": "Harvesting and Marketing Costs",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -655,6 +672,7 @@
   "quote": "Monthly Cash Costs per Acre to Produce Avocados in Riverside County using Conventional Production Practices in 2011"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 2660,

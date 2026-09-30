@@ -105,6 +105,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE to PRODUCE ORCHARDGRASS",
   "operatingTotal": {
    "value": 699,
    "unit": "$/acre",
@@ -183,6 +184,7 @@
    {
     "name": "Weed Control - In-Field Application",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -196,6 +198,7 @@
    {
     "name": "Fertilize",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -209,6 +212,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 32,
     "fuel": 0,
@@ -222,6 +226,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 28,
     "fuel": 4,
@@ -235,6 +240,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 14,
     "fuel": 1,
@@ -248,6 +254,7 @@
    {
     "name": "Soil Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -261,6 +268,7 @@
    {
     "name": "Cut Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.39,
     "labor": 11,
     "fuel": 9,
@@ -274,6 +282,7 @@
    {
     "name": "Rake Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.31,
     "labor": 9,
     "fuel": 5,
@@ -287,6 +296,7 @@
    {
     "name": "Bale Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.09,
     "labor": 31,
     "fuel": 17,
@@ -300,6 +310,7 @@
    {
     "name": "Roadside, Store & Load Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -790,6 +801,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ORCHARDGRASS"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

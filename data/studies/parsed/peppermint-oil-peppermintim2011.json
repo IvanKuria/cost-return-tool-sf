@@ -104,6 +104,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE PEPPERMINT",
   "operatingTotal": {
    "value": 1672,
    "unit": "$/acre",
@@ -188,6 +189,7 @@
    {
     "name": "Weed: Dormant (Diuron, Gramoxone, Goal)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -201,6 +203,7 @@
    {
     "name": "Fertilize: Soil & Tissue Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -214,6 +217,7 @@
    {
     "name": "Roll Plants/Field 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.27,
     "labor": 7,
     "fuel": 7,
@@ -227,6 +231,7 @@
    {
     "name": "Insect: Insect Scouting (6 months)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -240,6 +245,7 @@
    {
     "name": "Irrigate: Water & Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 8.96,
     "labor": 123,
     "fuel": 0,
@@ -253,6 +259,7 @@
    {
     "name": "Fertilize: Grnd (21-0-0,46-0-0,16-20-0)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -266,6 +273,7 @@
    {
     "name": "Fertilize: Chemigate (UN32,ThioSul) 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -279,6 +287,7 @@
    {
     "name": "Weed: Air (Basagran, Stinger)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -292,6 +301,7 @@
    {
     "name": "Insect: Mites (AgriMek) Air",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -305,6 +315,7 @@
    {
     "name": "Weed: Hand",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4,
     "labor": 55,
     "fuel": 0,
@@ -318,6 +329,7 @@
    {
     "name": "Insect: Mite (Acramite) Air",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -331,6 +343,7 @@
    {
     "name": "Insect: Mint Root Borer (Coragen) Air",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -344,6 +357,7 @@
    {
     "name": "Recondition Stand 1X/4yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 11,
     "fuel": 8,
@@ -357,6 +371,7 @@
    {
     "name": "Pickup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.8,
     "labor": 20,
     "fuel": 6,
@@ -370,6 +385,7 @@
    {
     "name": "Remove and Reset Sprinklers",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.28,
     "labor": 18,
     "fuel": 0,
@@ -383,6 +399,7 @@
    {
     "name": "Harvest & Distill Mint",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -396,6 +413,7 @@
    {
     "name": "Voluntary Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -409,6 +427,7 @@
    {
     "name": "Mint Slug Disposal",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.62,
     "labor": 40,
     "fuel": 69,
@@ -1117,6 +1136,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE PEPPERMINT"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

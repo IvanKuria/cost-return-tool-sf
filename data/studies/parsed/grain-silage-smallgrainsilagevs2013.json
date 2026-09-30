@@ -209,6 +209,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE to PRODUCE SMALL GRAIN SILAGE",
   "operatingTotal": {
    "value": 489,
    "unit": "$/acre",
@@ -251,6 +252,7 @@
    {
     "name": "Fertilize: Preplant (Manure)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -264,6 +266,7 @@
    {
     "name": "Land Prep: Disk 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.22,
     "labor": 4,
     "fuel": 11,
@@ -277,6 +280,7 @@
    {
     "name": "Land Prep: Pull Borders",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 1,
@@ -290,6 +294,7 @@
    {
     "name": "Fertilize: Preplant (Urea)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 2,
     "fuel": 4,
@@ -303,6 +308,7 @@
    {
     "name": "Plant: Small Grains Mixture",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 4,
@@ -316,6 +322,7 @@
    {
     "name": "Weed: Postemergent (Express, MCPA, Axial)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -329,6 +336,7 @@
    {
     "name": "Irrigate: Water & Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.6,
     "labor": 7,
     "fuel": 0,
@@ -342,6 +350,7 @@
    {
     "name": "Fertilize: Top Dress (Urea)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -355,6 +364,7 @@
    {
     "name": "Pest Control Adviser/Consultant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -368,6 +378,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.24,
     "labor": 4,
     "fuel": 2,
@@ -381,6 +392,7 @@
    {
     "name": "Harvest: Paid by Buyer",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

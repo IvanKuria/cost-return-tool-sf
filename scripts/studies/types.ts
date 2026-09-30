@@ -46,11 +46,13 @@ export type OperationCategory = 'cultural' | 'harvest' | 'assessment' | 'posthar
 
 export interface OperationRow {
   name: string; category: OperationCategory;
+  section: string;            // the section heading as printed above the row: 'Cultural', 'Harvest', 'Assessment', 'Postharvest', ...
   timeHrsPerAcre: number | null; labor: number | null; fuel: number | null; lubeRepairs: number | null;
   materials: number | null; customRent: number | null; totalCost: number | null; page: number; quote: string;
 }
 
 export interface CostsPerAcre {
+  title: string | null;       // the production costs table heading as printed, e.g. 'COSTS PER ACRE TO PRODUCE ALMONDS'
   operatingTotal: Cited | null;
   cashOverheadTotal: Cited | null;
   nonCashOverheadTotal: Cited | null;
@@ -102,7 +104,17 @@ export interface MonthlyCosts {
 
 /** How a perennial study turns its establishment years into a yearly charge during production. Only what the study prints. */
 export interface EstablishmentYear { year: number; label: string; totalCost: number | null; returns: number | null; netCost: number | null; accumulated: number | null; page: number; quote: string }
+export type EstablishmentRowKind = 'operation' | 'subtotal' | 'total' | 'overheadItem' | 'interest' | 'income' | 'net' | 'accumulated' | 'heading';
+export interface EstablishmentTableRow { label: string; kind: EstablishmentRowKind; section: string; values: (number | null)[]; page: number; quote: string }
+/** The establishment table row by row, in the study's order and wording, one value per year column. Blanks are null. */
+export interface EstablishmentTable {
+  title: string;                              // as printed
+  years: string[];                            // column labels as printed, e.g. ['1st', '2nd', '3rd']
+  rows: EstablishmentTableRow[];
+  yieldRow: { label: string; values: (number | null)[]; quote: string } | null; // the yield or price-and-yield line under the header, when printed
+}
 export interface Establishment {
+  table: EstablishmentTable | null;           // the full table; null when the study prints one table per year or none
   years: EstablishmentYear[];                 // one entry per column of the establishment table
   accumulatedNetCost: Quote & { value: number } | null; // per acre, as the prose states it (accumulated net cash cost at the end of establishment)
   annualCharge: Quote & { value: number } | null;       // per acre per production year, the "establishment" line in the production year's non-cash overhead

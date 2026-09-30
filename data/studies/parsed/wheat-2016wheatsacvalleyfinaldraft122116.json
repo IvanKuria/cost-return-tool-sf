@@ -91,6 +91,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE WHEAT",
   "operatingTotal": {
    "value": 534,
    "unit": "$/acre",
@@ -181,6 +182,7 @@
    {
     "name": "Stubble Disc 50% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 5,
@@ -194,6 +196,7 @@
    {
     "name": "Finish Disc 50% Ac 2x",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 5,
@@ -207,6 +210,7 @@
    {
     "name": "Condition Beds 50% Ac 2x",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 11,
@@ -220,6 +224,7 @@
    {
     "name": "Fertilize/Pre-Plant",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.17,
     "labor": 5,
     "fuel": 4,
@@ -233,6 +238,7 @@
    {
     "name": "Ridge Borders 50% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 2,
@@ -246,6 +252,7 @@
    {
     "name": "Roll/Firm Soil",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 1,
@@ -259,6 +266,7 @@
    {
     "name": "Wheat Seed-125lbs./Ac, Starter Fertilizer-50% Ac",
     "category": "other",
+    "section": "Plant",
     "timeHrsPerAcre": 0.12,
     "labor": 3,
     "fuel": 3,
@@ -272,6 +280,7 @@
    {
     "name": "Well Test/Water Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -285,6 +294,7 @@
    {
     "name": "Pests-Weeds ATV Sprayer 50% Ac 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -298,6 +308,7 @@
    {
     "name": "Fertilize-Top Dress 50% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -311,6 +322,7 @@
    {
     "name": "Pests-Disease Rust 25% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -324,6 +336,7 @@
    {
     "name": "Open Ditch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 1,
@@ -337,6 +350,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 22,
     "fuel": 0,
@@ -350,6 +364,7 @@
    {
     "name": "Close Ditch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 1,
@@ -363,6 +378,7 @@
    {
     "name": "Pickup Truck 3/4 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.42,
     "labor": 12,
     "fuel": 4,
@@ -376,6 +392,7 @@
    {
     "name": "Pickup Truck 1/2 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 9,
     "fuel": 2,
@@ -389,6 +406,7 @@
    {
     "name": "ATV-4WD",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.3,
     "labor": 8,
     "fuel": 1,
@@ -402,6 +420,7 @@
    {
     "name": "Harvest Grain",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.2,
     "labor": 6,
     "fuel": 8,
@@ -415,6 +434,7 @@
    {
     "name": "Bank Out Grain",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.13,
     "labor": 4,
     "fuel": 3,
@@ -428,6 +448,7 @@
    {
     "name": "Haul Grain To Storage",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -441,6 +462,7 @@
    {
     "name": "Land/Share Rent-20% of Revenue on 1/2 Ac",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -454,6 +476,7 @@
    {
     "name": "Assessment (CWC)",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -467,6 +490,7 @@
    {
     "name": "Stubble Management",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

@@ -87,6 +87,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE WINEGRAPES- CABERNET SAUVIGNON",
   "operatingTotal": {
    "value": 3961,
    "unit": "$/acre",
@@ -183,6 +184,7 @@
    {
     "name": "Weeds: Winter Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -196,6 +198,7 @@
    {
     "name": "Prune: Mechanical Precision",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -209,6 +212,7 @@
    {
     "name": "Hand Prune",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 228,
     "fuel": 0,
@@ -222,6 +226,7 @@
    {
     "name": "Disease: Eutypa (Rally)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -235,6 +240,7 @@
    {
     "name": "Tie Canes (every other year)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 160,
     "fuel": 0,
@@ -248,6 +254,7 @@
    {
     "name": "Fertigate 8-8-8 (3X)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 55,
     "fuel": 0,
@@ -261,6 +268,7 @@
    {
     "name": "Weeds: Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -274,6 +282,7 @@
    {
     "name": "Trunk Suckering",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 91,
     "fuel": 0,
@@ -287,6 +296,7 @@
    {
     "name": "Shoot Thinning 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 320,
     "fuel": 0,
@@ -300,6 +310,7 @@
    {
     "name": "Shoot Positioning/Move Wires 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 480,
     "fuel": 0,
@@ -313,6 +324,7 @@
    {
     "name": "Petiole Sample/Analysis 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -326,6 +338,7 @@
    {
     "name": "Disease: Mildew (Sulfur) 6X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -339,6 +352,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 73,
     "fuel": 0,
@@ -352,6 +366,7 @@
    {
     "name": "Mow Middles: Volunteer C.C. 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -365,6 +380,7 @@
    {
     "name": "Disease: Mildew (Stylet Oil)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -378,6 +394,7 @@
    {
     "name": "Insects: EGVM",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -391,6 +408,7 @@
    {
     "name": "Disease: Mildew (Rally)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -404,6 +422,7 @@
    {
     "name": "Mechanical Leaf Removal",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -417,6 +436,7 @@
    {
     "name": "Insects: VMB/EGVM",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -430,6 +450,7 @@
    {
     "name": "Insects: Leafhopper",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -443,6 +464,7 @@
    {
     "name": "Weeds: Summer Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -456,6 +478,7 @@
    {
     "name": "Insects: Mites",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -469,6 +492,7 @@
    {
     "name": "Disease: Mildew (Flint)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -482,6 +506,7 @@
    {
     "name": "Irrigation Acid Flush",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 23,
     "fuel": 0,
@@ -495,6 +520,7 @@
    {
     "name": "VMC Management Fee",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -508,6 +534,7 @@
    {
     "name": "Machine Harvest Fruit",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -521,6 +548,7 @@
    {
     "name": "Haul Fruit to Crusher",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -534,6 +562,7 @@
    {
     "name": "Assessments",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -755,6 +784,949 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE WINEGRAPES"
  },
  "establishment": {
+  "table": {
+   "title": "SAMPLE COSTS PER ACRE TO ESTABLISH A VINEYARD",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Planting Costs",
+     "kind": "heading",
+     "section": "Pre-Planting Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Pre-Planting Costs:"
+    },
+    {
+     "label": "Vineyard Removal",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      2225,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Vineyard Removal 2,225"
+    },
+    {
+     "label": "Compost/Soil Amendments",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      1325,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Compost/Soil Amendments 1,325"
+    },
+    {
+     "label": "Disc 3X",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      450,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Disc 3X 450"
+    },
+    {
+     "label": "Rip/Slip Plow 2X",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      1700,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Rip/Slip Plow 2X 1,700"
+    },
+    {
+     "label": "Disc & Roll 3X",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      750,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Disc & Roll 3X 750"
+    },
+    {
+     "label": "Land Level",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      200,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Land Level 200"
+    },
+    {
+     "label": "Weeds: Pre-plant Strip Spray",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      40,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Weeds: Pre-plant Strip Spray 40"
+    },
+    {
+     "label": "Trellis Install (materials & labor)",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      6948,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Trellis Install (materials & labor) 6,948"
+    },
+    {
+     "label": "Drip Irrigation Install (materials & labor)",
+     "kind": "operation",
+     "section": "Pre-Planting Costs",
+     "values": [
+      1650,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Drip Irrigation Install (materials & labor) 1,650"
+    },
+    {
+     "label": "TOTAL PRE-PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Pre-Planting Costs",
+     "values": [
+      15288,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "TOTAL PRE-PLANTING COSTS 15,288"
+    },
+    {
+     "label": "Planting Costs",
+     "kind": "heading",
+     "section": "Planting Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Planting Costs:"
+    },
+    {
+     "label": "Mark & Layout Vineyard",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      327,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Mark & Layout Vineyard 327"
+    },
+    {
+     "label": "Plant, Place Cartons, & Wrap Vines",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      2124,
+      105,
+      43
+     ],
+     "page": 14,
+     "quote": "Plant, Place Cartons, & Wrap Vines 2,124 105 43"
+    },
+    {
+     "label": "Vines: 1089 Per Acre (5% Replant in 2nd Yr., 2% in 3rd Yr.)",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      3866,
+      192,
+      78
+     ],
+     "page": 14,
+     "quote": "Vines: 1089 Per Acre (5% Replant in 2nd Yr., 2% in 3rd Yr.) 3,866 192 78"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Planting Costs",
+     "values": [
+      6316,
+      297,
+      121
+     ],
+     "page": 14,
+     "quote": "TOTAL PLANTING COSTS 6,316 297 121"
+    },
+    {
+     "label": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "kind": "heading",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Cultural Costs (All Operations are Conducted by a VMC):"
+    },
+    {
+     "label": "Prune: Prune Vines by Hand",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      137,
+      525
+     ],
+     "page": 14,
+     "quote": "Prune: Prune Vines by Hand 137 525"
+    },
+    {
+     "label": "Irrigation: Canal Water & Labor",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      175,
+      207,
+      310
+     ],
+     "page": 14,
+     "quote": "Irrigation: Canal Water & Labor 175 207 310"
+    },
+    {
+     "label": "Irrigation: Acid Flush",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      30,
+      30,
+      30
+     ],
+     "page": 14,
+     "quote": "Irrigation: Acid Flush 30 30 30"
+    },
+    {
+     "label": "Fertilizer: 8-8-8",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      5,
+      13,
+      13
+     ],
+     "page": 14,
+     "quote": "Fertilizer: 8-8-8 5 13 13"
+    },
+    {
+     "label": "Train/Sucker (Year 2)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      1370,
+      null
+     ],
+     "page": 14,
+     "quote": "Train/Sucker (Year 2) 1,370"
+    },
+    {
+     "label": "Tie & Train (Year 3)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      411
+     ],
+     "page": 14,
+     "quote": "Tie & Train (Year 3) 411"
+    },
+    {
+     "label": "Sucker",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      91
+     ],
+     "page": 14,
+     "quote": "Sucker 91"
+    },
+    {
+     "label": "Shoot Positioning/Move Wires 3X",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      480
+     ],
+     "page": 14,
+     "quote": "Shoot Positioning/Move Wires 3X 480"
+    },
+    {
+     "label": "Shoot Thinning 2X",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      228
+     ],
+     "page": 14,
+     "quote": "Shoot Thinning 2X 228"
+    },
+    {
+     "label": "Weeds: Winter Strip Spray (Yrs 1-3, Prowl, Goal, Roundup)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      68,
+      68
+     ],
+     "page": 14,
+     "quote": "Weeds: Winter Strip Spray (Yrs 1-3, Prowl, Goal, Roundup) 68 68"
+    },
+    {
+     "label": "Weeds: Hand Weed/Misc. Labor",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      91,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Weeds: Hand Weed/Misc. Labor 91"
+    },
+    {
+     "label": "Mow Middles: Native Cover Crop 2X",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      18,
+      18,
+      18
+     ],
+     "page": 14,
+     "quote": "Mow Middles: Native Cover Crop 2X 18 18 18"
+    },
+    {
+     "label": "Weeds: Summer Strip Spray (Rely) Yr. 1 (1X), Yr. 2 & 3 (2X)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      40,
+      80,
+      80
+     ],
+     "page": 14,
+     "quote": "Weeds: Summer Strip Spray (Rely) Yr. 1 (1X), Yr. 2 & 3 (2X) 40 80 80"
+    },
+    {
+     "label": "Weeds: Spot Spray RU",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      4,
+      4,
+      null
+     ],
+     "page": 14,
+     "quote": "Weeds: Spot Spray RU 4 4"
+    },
+    {
+     "label": "Disease: Eutypa (Rally)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      56,
+      56
+     ],
+     "page": 14,
+     "quote": "Disease: Eutypa (Rally) 56 56"
+    },
+    {
+     "label": "Insects: EGVM (Intrepid)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      64
+     ],
+     "page": 14,
+     "quote": "Insects: EGVM (Intrepid) 64"
+    },
+    {
+     "label": "Insects: EGVM & VMB (Altacor & Movento)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      132
+     ],
+     "page": 14,
+     "quote": "Insects: EGVM & VMB (Altacor & Movento) 132"
+    },
+    {
+     "label": "Insects: Leafhoppers (Platinum)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      69
+     ],
+     "page": 14,
+     "quote": "Insects: Leafhoppers (Platinum) 69"
+    },
+    {
+     "label": "Insects: Mites (Acramite)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      109
+     ],
+     "page": 14,
+     "quote": "Insects: Mites (Acramite) 109"
+    },
+    {
+     "label": "Disease: Mildew 6X (Dusting Sulfur)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      null,
+      113
+     ],
+     "page": 14,
+     "quote": "Disease: Mildew 6X (Dusting Sulfur) 113"
+    },
+    {
+     "label": "Disease: Mildew (Stylet Oil)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      45,
+      45
+     ],
+     "page": 14,
+     "quote": "Disease: Mildew (Stylet Oil) 45 45"
+    },
+    {
+     "label": "Disease: Mildew 1X (Rally)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      56,
+      56
+     ],
+     "page": 14,
+     "quote": "Disease: Mildew 1X (Rally) 56 56"
+    },
+    {
+     "label": "Disease: Mildew 1X (Flint)",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      null,
+      68,
+      68
+     ],
+     "page": 14,
+     "quote": "Disease: Mildew 1X (Flint) 68 68"
+    },
+    {
+     "label": "VMC Management Fee",
+     "kind": "operation",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      771,
+      771,
+      771
+     ],
+     "page": 14,
+     "quote": "VMC Management Fee 771 771 771"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural Costs (All Operations are Conducted by a VMC)",
+     "values": [
+      1135,
+      2923,
+      3737
+     ],
+     "page": 14,
+     "quote": "TOTAL CULTURAL COSTS 1135 2,923 3,737"
+    },
+    {
+     "label": "Harvest Costs",
+     "kind": "heading",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Harvest Costs:"
+    },
+    {
+     "label": "Mechanical Harvest Fruit",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      250
+     ],
+     "page": 14,
+     "quote": "Mechanical Harvest Fruit 250"
+    },
+    {
+     "label": "Haul Fruit to Crusher",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      54
+     ],
+     "page": 14,
+     "quote": "Haul Fruit to Crusher 54"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      304
+     ],
+     "page": 14,
+     "quote": "TOTAL HARVEST COSTS 304"
+    },
+    {
+     "label": "Assessments",
+     "kind": "heading",
+     "section": "Assessments",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Assessments:"
+    },
+    {
+     "label": "PD/GWSS, AVF, State Acre Survey, State Inspection, & State Crush Report",
+     "kind": "operation",
+     "section": "Assessments",
+     "values": [
+      null,
+      null,
+      12
+     ],
+     "page": 14,
+     "quote": "PD/GWSS, AVF, State Acre Survey, State Inspection, & State Crush Report 12"
+    },
+    {
+     "label": "TOTAL ASSESSMENT COSTS",
+     "kind": "subtotal",
+     "section": "Assessments",
+     "values": [
+      null,
+      null,
+      12
+     ],
+     "page": 14,
+     "quote": "TOTAL ASSESSMENT COSTS 12"
+    },
+    {
+     "label": "Interest On Operating Capital @ 5.25%",
+     "kind": "interest",
+     "section": "Assessments",
+     "values": [
+      874,
+      48,
+      74
+     ],
+     "page": 14,
+     "quote": "Interest On Operating Capital @ 5.25% 874 48 74"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Assessments",
+     "values": [
+      23614,
+      3268,
+      4248
+     ],
+     "page": 14,
+     "quote": "TOTAL OPERATING COSTS/ACRE 23,614 3,268 4,248"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      156,
+      156,
+      156
+     ],
+     "page": 15,
+     "quote": "Office Expense 156 156 156"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      16,
+      16,
+      16
+     ],
+     "page": 15,
+     "quote": "Liability Insurance 16 16 16"
+    },
+    {
+     "label": "Sanitation Fees",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      40,
+      40,
+      40
+     ],
+     "page": 15,
+     "quote": "Sanitation Fees 40 40 40"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      264,
+      265,
+      267
+     ],
+     "page": 15,
+     "quote": "Property Taxes 264 265 267"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      23,
+      24,
+      24
+     ],
+     "page": 15,
+     "quote": "Property Insurance 23 24 24"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      52,
+      53,
+      53
+     ],
+     "page": 15,
+     "quote": "Investment Repairs 52 53 53"
+    },
+    {
+     "label": "Safety Training",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      12,
+      12,
+      12
+     ],
+     "page": 15,
+     "quote": "Safety Training 12 12 12"
+    },
+    {
+     "label": "Misc. Training",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      13,
+      13,
+      13
+     ],
+     "page": 15,
+     "quote": "Misc. Training 13 13 13"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      575,
+      578,
+      580
+     ],
+     "page": 15,
+     "quote": "TOTAL CASH OVERHEAD COSTS 575 578 580"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      24189,
+      3846,
+      4828
+     ],
+     "page": 15,
+     "quote": "TOTAL CASH COSTS/ACRE 24,189 3,846 4,828"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      4800
+     ],
+     "page": 15,
+     "quote": "INCOME/ACRE FROM PRODUCTION 4,800"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      24189,
+      3846,
+      28
+     ],
+     "page": 15,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 24,189 3,846 28"
+    },
+    {
+     "label": "PROFIT/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "PROFIT/ACRE ABOVE CASH COSTS"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      24189,
+      28035,
+      28063
+     ],
+     "page": 15,
+     "quote": "ACCUMULATED NET CASH COSTS/ACRE 24,189 28,035 28,063"
+    },
+    {
+     "label": "Non-Cash Overhead (Capital Recovery)",
+     "kind": "heading",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Non-Cash Overhead (Capital Recovery):"
+    },
+    {
+     "label": "Building- 2400 sq. ft.",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      138,
+      138,
+      138
+     ],
+     "page": 15,
+     "quote": "Building- 2400 sq. ft. 138 138 138"
+    },
+    {
+     "label": "Fuel Tanks- 2, 500 gallon",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      18,
+      18,
+      18
+     ],
+     "page": 15,
+     "quote": "Fuel Tanks- 2, 500 gallon 18 18 18"
+    },
+    {
+     "label": "Shop/Field Tools",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      39,
+      39,
+      39
+     ],
+     "page": 15,
+     "quote": "Shop/Field Tools 39 39 39"
+    },
+    {
+     "label": "Land- Livermore Valley",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      1375,
+      1375,
+      1375
+     ],
+     "page": 15,
+     "quote": "Land- Livermore Valley 1,375 1,375 1,375"
+    },
+    {
+     "label": "TOTAL INTEREST ON INVESTMENT",
+     "kind": "total",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      1570,
+      1570,
+      1570
+     ],
+     "page": 15,
+     "quote": "TOTAL INTEREST ON INVESTMENT 1,570 1,570 1,570"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      25759,
+      5416,
+      6398
+     ],
+     "page": 15,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 25,759 5,416 6,398"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      null,
+      null,
+      4800
+     ],
+     "page": 15,
+     "quote": "INCOME/ACRE FROM PRODUCTION 4,800"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      25759,
+      5416,
+      1598
+     ],
+     "page": 15,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 25,759 5,416 1,598"
+    },
+    {
+     "label": "NET PROFIT/ACRE ABOVE TOTAL COST",
+     "kind": "net",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "NET PROFIT/ACRE ABOVE TOTAL COST"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST/ACRE",
+     "kind": "accumulated",
+     "section": "Non-Cash Overhead (Capital Recovery)",
+     "values": [
+      25759,
+      31175,
+      32773
+     ],
+     "page": 15,
+     "quote": "TOTAL ACCUMULATED NET COST/ACRE 25,759 31,175 32,773"
+    }
+   ],
+   "yieldRow": {
+    "label": "Tons Per Acre:",
+    "values": [
+     null,
+     null,
+     3
+    ],
+    "quote": "Tons Per Acre: 3.0"
+   }
+  },
   "years": [
    {
     "year": 1,

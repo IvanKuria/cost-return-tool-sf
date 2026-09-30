@@ -111,6 +111,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "GROWER COSTS PER ACRE to HARVEST ALFALFA HAY (300 Acres)",
   "operatingTotal": {
    "value": 152,
    "unit": "$/acre",
@@ -148,6 +149,7 @@
    {
     "name": "Harvest - Swathing",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.68,
     "labor": 17,
     "fuel": 13,
@@ -161,6 +163,7 @@
    {
     "name": "Harvest - Raking",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.6,
     "labor": 15,
     "fuel": 7,
@@ -174,6 +177,7 @@
    {
     "name": "Harvest - Baling",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.27,
     "labor": 31,
     "fuel": 17,
@@ -187,6 +191,7 @@
    {
     "name": "Harvest – Road-siding",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.23,
     "labor": 6,
     "fuel": 9,
@@ -584,6 +589,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ALFALFA (300 Acres)"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

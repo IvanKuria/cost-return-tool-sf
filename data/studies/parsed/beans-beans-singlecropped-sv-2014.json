@@ -87,6 +87,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE BEANS (SINGLE CROP)",
   "operatingTotal": {
    "value": 1195,
    "unit": "$/acre",
@@ -171,6 +172,7 @@
    {
     "name": "Laser Level 12% Acreage",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -184,6 +186,7 @@
    {
     "name": "Finish Disc-2X",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.14,
     "labor": 3,
     "fuel": 7,
@@ -197,6 +200,7 @@
    {
     "name": "List Beds-6 Row 30\"",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.16,
     "labor": 3,
     "fuel": 7,
@@ -210,6 +214,7 @@
    {
     "name": "Weed Control-Fallow Beds",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.07,
     "labor": 1,
     "fuel": 0,
@@ -223,6 +228,7 @@
    {
     "name": "Shape Beds-Incorporate Herbicide",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.21,
     "labor": 4,
     "fuel": 8,
@@ -236,6 +242,7 @@
    {
     "name": "Irrigation-Open Ditch 1X",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 4,
@@ -249,6 +256,7 @@
    {
     "name": "Irrigation-Pre-Plant",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.1,
     "labor": 9,
     "fuel": 1,
@@ -262,6 +270,7 @@
    {
     "name": "Irrigation-Close Ditch 1X",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 3,
@@ -275,6 +284,7 @@
    {
     "name": "Plant Beans-Starter Fertilizer",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 4,
@@ -288,6 +298,7 @@
    {
     "name": "Irrigation-Open Ditch 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 9,
@@ -301,6 +312,7 @@
    {
     "name": "Irrigate 6X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.6,
     "labor": 53,
     "fuel": 6,
@@ -314,6 +326,7 @@
    {
     "name": "Irrigation-Close Ditch 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.3,
     "labor": 6,
     "fuel": 6,
@@ -327,6 +340,7 @@
    {
     "name": "Cultivate Side-Dress Fertilizer",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 5,
@@ -340,6 +354,7 @@
    {
     "name": "Insects-Lygus/Mites",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 2,
@@ -353,6 +368,7 @@
    {
     "name": "Insects-Aphids/Lygus/Mites/Worms",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -366,6 +382,7 @@
    {
     "name": "3/4 Ton Pickup Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 1,
     "fuel": 0,
@@ -379,6 +396,7 @@
    {
     "name": "Service Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 1,
     "fuel": 0,
@@ -392,6 +410,7 @@
    {
     "name": "Cut/Rake/Windrow Beans",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -405,6 +424,7 @@
    {
     "name": "Thresh/Harvest Beans",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -418,6 +438,7 @@
    {
     "name": "Haul Beans to Warehouse",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -431,6 +452,7 @@
    {
     "name": "Land Rent 20% SC",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -444,6 +466,7 @@
    {
     "name": "Clean/Bag/Store",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -457,6 +480,7 @@
    {
     "name": "Assessment Fee",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

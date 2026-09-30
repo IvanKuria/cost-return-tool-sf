@@ -127,7 +127,7 @@ export function usePlanStore(initial: State) {
         if (saved.plan && isCurrentPlan(saved.plan)) {
           const plan = hydratePlan(migratePlan(saved.plan));
           const step = saved.step && [...STEPS.map(s => s.id), 'sources'].includes(saved.step) ? saved.step : init.step;
-          return { step: window.location.hash === '#results' ? 'results' as const : step, plan };
+          return { step: window.location.hash === '#sources' ? 'sources' as const : window.location.hash === '#results' ? 'results' as const : step, plan };
         }
       }
     } catch { /* ignore */ }

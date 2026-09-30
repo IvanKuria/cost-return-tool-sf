@@ -102,6 +102,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE to PRODUCE ALFALFA (50 Acres)",
   "operatingTotal": {
    "value": 1441,
    "unit": "$/acre",
@@ -170,6 +171,7 @@
    {
     "name": "Weed: Roundup PowerMax (2x)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 0,
@@ -183,6 +185,7 @@
    {
     "name": "Make Semi-Permanent Drains",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -196,6 +199,7 @@
    {
     "name": "Insect: Aphid/Weevil (Warrior II)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 0,
@@ -209,6 +213,7 @@
    {
     "name": "Irrigate - 10X Flood Irrigation",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 32,
     "fuel": 0,
@@ -222,6 +227,7 @@
    {
     "name": "Insect: Worms (Coragen)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 0,
@@ -235,6 +241,7 @@
    {
     "name": "Tissue Sample (P&K) Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -248,6 +255,7 @@
    {
     "name": "Fertilize (11-52-0)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -261,6 +269,7 @@
    {
     "name": "Weeds: Chateau & Prowl H2O",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 0,
@@ -274,6 +283,7 @@
    {
     "name": "Weeds: Gramoxone",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -287,6 +297,7 @@
    {
     "name": "Pickup Truck 1/2 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 3,
     "fuel": 1,
@@ -300,6 +311,7 @@
    {
     "name": "ATV",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 3,
     "fuel": 0,
@@ -313,6 +325,7 @@
    {
     "name": "Harvest – 9x (Custom harvest)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -570,6 +583,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ALFALFA (50 Acres)"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

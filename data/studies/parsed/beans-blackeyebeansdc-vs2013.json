@@ -89,6 +89,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE BLACKEYE BEANS (double cropped)",
   "operatingTotal": {
    "value": 813,
    "unit": "$/acre",
@@ -136,6 +137,7 @@
    {
     "name": "Stubble Disc 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.27,
     "labor": 6,
     "fuel": 11,
@@ -149,6 +151,7 @@
    {
     "name": "Weed - Preplant (Prowl)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.09,
     "labor": 2,
     "fuel": 2,
@@ -162,6 +165,7 @@
    {
     "name": "Incorporate Herbicides",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 3,
@@ -175,6 +179,7 @@
    {
     "name": "List Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 3,
@@ -188,6 +193,7 @@
    {
     "name": "Make Tail-Ditch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 2,
@@ -201,6 +207,7 @@
    {
     "name": "Pre-irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.21,
     "labor": 3,
     "fuel": 0,
@@ -214,6 +221,7 @@
    {
     "name": "Close Tail-Ditch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 2,
@@ -227,6 +235,7 @@
    {
     "name": "Shape Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 5,
     "fuel": 10,
@@ -240,6 +249,7 @@
    {
     "name": "Plant Bean (Seed+Rhizobium)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.09,
     "labor": 2,
     "fuel": 4,
@@ -253,6 +263,7 @@
    {
     "name": "Cultivate 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 4,
     "fuel": 4,
@@ -266,6 +277,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.2,
     "labor": 17,
     "fuel": 0,
@@ -279,6 +291,7 @@
    {
     "name": "Insect-Lygus (Warrior)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -292,6 +305,7 @@
    {
     "name": "Insect-Lygus (Dimethoate)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -305,6 +319,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.15,
     "labor": 25,
     "fuel": 16,
@@ -318,6 +333,7 @@
    {
     "name": "Cut & Windrow Beans",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -331,6 +347,7 @@
    {
     "name": "Thresh Beans",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -344,6 +361,7 @@
    {
     "name": "Haul Beans To Warehouse",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -357,6 +375,7 @@
    {
     "name": "Clean, Fumigate, Grade",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -370,6 +389,7 @@
    {
     "name": "Insurance, Storage,",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -383,6 +403,7 @@
    {
     "name": "Assessment CDBAB + BE Council",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

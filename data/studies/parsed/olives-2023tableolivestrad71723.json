@@ -72,6 +72,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE TABLE OLIVES",
   "operatingTotal": {
    "value": 5956,
    "unit": "$/acre",
@@ -162,6 +163,7 @@
    {
     "name": "Pruning & Sucker",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -175,6 +177,7 @@
    {
     "name": "Shred Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -188,6 +191,7 @@
    {
     "name": "Disease: Olive Knot 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 17,
     "fuel": 8,
@@ -201,6 +205,7 @@
    {
     "name": "Fertigate: UAN-32",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -214,6 +219,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 18,
     "fuel": 0,
@@ -227,6 +233,7 @@
    {
     "name": "Weeds: Mow Middles 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.8,
     "labor": 28,
     "fuel": 13,
@@ -240,6 +247,7 @@
    {
     "name": "PCA",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -253,6 +261,7 @@
    {
     "name": "Thinning Spray (Alt. Years)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 4,
     "fuel": 2,
@@ -266,6 +275,7 @@
    {
     "name": "Weeds: In Season Strip Spray 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.43,
     "labor": 15,
     "fuel": 7,
@@ -279,6 +289,7 @@
    {
     "name": "Insects: Olive Fly 15X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 14,
     "fuel": 1,
@@ -292,6 +303,7 @@
    {
     "name": "Weeds: Winter Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 9,
     "fuel": 3,
@@ -305,6 +317,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.9,
     "labor": 65,
     "fuel": 14,
@@ -318,6 +331,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.9,
     "labor": 65,
     "fuel": 7,
@@ -331,6 +345,7 @@
    {
     "name": "Hand Pick/Load/Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -776,6 +791,7 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE TABLE OLIVES"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": null,
   "annualCharge": {

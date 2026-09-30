@@ -213,6 +213,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ASPARAGUS",
   "operatingTotal": {
    "value": 5676,
    "unit": "$/acre",
@@ -292,6 +293,7 @@
    {
     "name": "Reestablish Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 4,
@@ -305,6 +307,7 @@
    {
     "name": "Reestablish/Clean Furrows",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.09,
     "labor": 2,
     "fuel": 3,
@@ -318,6 +321,7 @@
    {
     "name": "Disease: Phytophtora (Ridomil)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 1,
@@ -331,6 +335,7 @@
    {
     "name": "Weed: Spray (Karmex)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 1,
@@ -344,6 +349,7 @@
    {
     "name": "Cultivate & Furrow",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.41,
     "labor": 9,
     "fuel": 8,
@@ -357,6 +363,7 @@
    {
     "name": "Cultivate/Furrow/Fertilize (UN32)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 3,
     "fuel": 3,
@@ -370,6 +377,7 @@
    {
     "name": "Weed: Spray (Roundup)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 1,
@@ -383,6 +391,7 @@
    {
     "name": "Irrigate: 3X (water & labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.14,
     "labor": 38,
     "fuel": 0,
@@ -396,6 +405,7 @@
    {
     "name": "Insect/Disease: Aphid/Rust (Fulfill/Rally)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 1,
@@ -409,6 +419,7 @@
    {
     "name": "Insect: Aphid (Lorsban)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 1,
@@ -422,6 +433,7 @@
    {
     "name": "Chop Ferns",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.22,
     "labor": 5,
     "fuel": 8,
@@ -435,6 +447,7 @@
    {
     "name": "Flatten Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.23,
     "labor": 5,
     "fuel": 11,
@@ -448,6 +461,7 @@
    {
     "name": "Irrigate: Make ridges for flooding",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 0,
@@ -461,6 +475,7 @@
    {
     "name": "Pickup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 21,
     "fuel": 12,
@@ -474,6 +489,7 @@
    {
     "name": "Harvest: (cut, equipment, forklift)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 13.5,
     "labor": 394,
     "fuel": 140,
@@ -487,6 +503,7 @@
    {
     "name": "Haul to Packer",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.99,
     "labor": 21,
     "fuel": 19,
@@ -500,6 +517,7 @@
    {
     "name": "Pack",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -513,6 +531,7 @@
    {
     "name": "Assessment",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1175,6 +1194,794 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ASPARAGUS"
  },
  "establishment": {
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH ASPARAGUS",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th"
+   ],
+   "rows": [
+    {
+     "label": "Cultural Costs",
+     "kind": "heading",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Cultural Costs:"
+    },
+    {
+     "label": "Land Prep: Disk 4X",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      31,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Land Prep: Disk 4X 31"
+    },
+    {
+     "label": "Land Prep: Rip 2X",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      68,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Land Prep: Rip 2X 68"
+    },
+    {
+     "label": "Land Prep: Plow",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      19,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Land Prep: Plow 19"
+    },
+    {
+     "label": "Land Prep: Triplane",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      13,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Land Prep: Triplane 13"
+    },
+    {
+     "label": "Land Prep: Furrow",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      8,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Land Prep: Furrow 8"
+    },
+    {
+     "label": "Land Prep: Furrow/Fertilize (Yr 1, 4-10-10. Yr 3+ UN32)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      76,
+      82,
+      82,
+      82
+     ],
+     "page": 10,
+     "quote": "Land Prep: Furrow/Fertilize (Yr 1, 4-10-10. Yr 3+ UN32) 76 82 82 82"
+    },
+    {
+     "label": "Plant: (plants, labor, equipment)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      761,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Plant: (plants, labor, equipment) 761"
+    },
+    {
+     "label": "Plant: Cover Plants (3X)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      27,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Plant: Cover Plants (3X) 27"
+    },
+    {
+     "label": "Weed: Cultivate/Furrow",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      45,
+      19,
+      19,
+      19
+     ],
+     "page": 10,
+     "quote": "Weed: Cultivate/Furrow 45 19 19 19"
+    },
+    {
+     "label": "Irrigate: (Yr 1, 5X. Yr 2+, 3X)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      136,
+      128,
+      128,
+      128
+     ],
+     "page": 10,
+     "quote": "Irrigate: (Yr 1, 5X. Yr 2+, 3X) 136 128 128 128"
+    },
+    {
+     "label": "Weed: Spray (Yr 1, Lorox. Yr 2+, Karmex. Yr 3+ , Karmex & Roundup)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      32,
+      22,
+      22,
+      37
+     ],
+     "page": 10,
+     "quote": "Weed: Spray (Yr 1, Lorox. Yr 2+, Karmex. Yr 3+ , Karmex & Roundup) 32 22 22 37"
+    },
+    {
+     "label": "Weed: Hand",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      170,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Weed: Hand 170"
+    },
+    {
+     "label": "Chop Ferns",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      15,
+      15,
+      15,
+      15
+     ],
+     "page": 10,
+     "quote": "Chop Ferns 15 15 15 15"
+    },
+    {
+     "label": "Flatten Beds (Disk 2X)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      20,
+      20,
+      20,
+      20
+     ],
+     "page": 10,
+     "quote": "Flatten Beds (Disk 2X) 20 20 20 20"
+    },
+    {
+     "label": "Irrigation: Make ridges for flooding",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "page": 10,
+     "quote": "Irrigation: Make ridges for flooding 1 1 1 1"
+    },
+    {
+     "label": "Reestablish Beds",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      8,
+      8,
+      8
+     ],
+     "page": 10,
+     "quote": "Reestablish Beds 8 8 8"
+    },
+    {
+     "label": "Reestablish/Clean Furrows",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      6,
+      6,
+      6
+     ],
+     "page": 10,
+     "quote": "Reestablish/Clean Furrows 6 6 6"
+    },
+    {
+     "label": "Insect/Disease: Aphid/Rust (Fulfill/Rally)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      51,
+      51,
+      51
+     ],
+     "page": 10,
+     "quote": "Insect/Disease: Aphid/Rust (Fulfill/Rally) 51 51 51"
+    },
+    {
+     "label": "Insect: Aphid (Lorsban)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      20,
+      20,
+      20
+     ],
+     "page": 10,
+     "quote": "Insect: Aphid (Lorsban) 20 20 20"
+    },
+    {
+     "label": "Disease: Phytopthora (Ridomil)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      29,
+      29
+     ],
+     "page": 10,
+     "quote": "Disease: Phytopthora (Ridomil) 29 29"
+    },
+    {
+     "label": "Pickup (business use)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      37,
+      37,
+      37,
+      37
+     ],
+     "page": 10,
+     "quote": "Pickup (business use) 37 37 37 37"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural Costs",
+     "values": [
+      1459,
+      409,
+      438,
+      453
+     ],
+     "page": 10,
+     "quote": "TOTAL CULTURAL COSTS 1,459 409 438 453"
+    },
+    {
+     "label": "Harvest Costs",
+     "kind": "heading",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Harvest Costs:"
+    },
+    {
+     "label": "Harvest - Cut Asparagus",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      416,
+      1457,
+      2801
+     ],
+     "page": 10,
+     "quote": "Harvest - Cut Asparagus 416 1,457 2,801"
+    },
+    {
+     "label": "Haul to Packer",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      3,
+      6,
+      48
+     ],
+     "page": 10,
+     "quote": "Haul to Packer 3 6 48"
+    },
+    {
+     "label": "Pack Asparagus",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      400,
+      1143,
+      2288
+     ],
+     "page": 10,
+     "quote": "Pack Asparagus 400 1,143 2,288"
+    },
+    {
+     "label": "Assessment:",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      6,
+      16,
+      32
+     ],
+     "page": 10,
+     "quote": "Assessment: 6 16 32"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest Costs",
+     "values": [
+      0,
+      825,
+      2623,
+      5169
+     ],
+     "page": 10,
+     "quote": "TOTAL HARVEST COSTS 0 825 2,623 5,169"
+    },
+    {
+     "label": "Interest On Operating Capital @ 5.75%",
+     "kind": "interest",
+     "section": "Harvest Costs",
+     "values": [
+      73,
+      7,
+      13,
+      54
+     ],
+     "page": 10,
+     "quote": "Interest On Operating Capital @ 5.75% 73 7 13 54"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvest Costs",
+     "values": [
+      1532,
+      1241,
+      3074,
+      5676
+     ],
+     "page": 10,
+     "quote": "TOTAL OPERATING COSTS/ACRE 1,532 1,241 3,074 5,676"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      125,
+      125,
+      125,
+      125
+     ],
+     "page": 10,
+     "quote": "Office Expense 125 125 125 125"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      2,
+      2,
+      2,
+      2
+     ],
+     "page": 10,
+     "quote": "Liability Insurance 2 2 2 2"
+    },
+    {
+     "label": "Sanitation Costs",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      1,
+      1,
+      4,
+      4
+     ],
+     "page": 10,
+     "quote": "Sanitation Costs 1 1 4 4"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      80,
+      79,
+      80,
+      92
+     ],
+     "page": 10,
+     "quote": "Property Taxes 80 79 80 92"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      2,
+      1,
+      2,
+      11
+     ],
+     "page": 10,
+     "quote": "Property Insurance 2 1 2 11"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      4,
+      4,
+      4,
+      4
+     ],
+     "page": 10,
+     "quote": "Investment Repairs 4 4 4 4"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      213,
+      211,
+      217,
+      238
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH OVERHEAD COSTS 213 211 217 238"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      1745,
+      1452,
+      3290,
+      5914
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH COSTS/ACRE 1,745 1,452 3,290 5,914"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      931,
+      2660,
+      5320
+     ],
+     "page": 10,
+     "quote": "INCOME/ACRE FROM PRODUCTION 0 931 2,660 5,320"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      1745,
+      521,
+      630,
+      594
+     ],
+     "page": 10,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 1,745 521 630 594"
+    },
+    {
+     "label": "PROFIT/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "page": 10,
+     "quote": "PROFIT/ACRE ABOVE CASH COSTS 0 0 0 0"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      1745,
+      2266,
+      2896,
+      3491
+     ],
+     "page": 10,
+     "quote": "ACCUMULATED NET CASH COSTS/ACRE 1,745 2,266 2,896 3,491"
+    },
+    {
+     "label": "Non-Cash Overhead (Capital Recovery Cost)",
+     "kind": "heading",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Non-Cash Overhead (Capital Recovery Cost):"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      369,
+      369,
+      369,
+      369
+     ],
+     "page": 11,
+     "quote": "Land 369 369 369 369"
+    },
+    {
+     "label": "Buildings",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      9,
+      9,
+      9,
+      9
+     ],
+     "page": 11,
+     "quote": "Buildings 9 9 9 9"
+    },
+    {
+     "label": "Bins (25)",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      0,
+      4,
+      4,
+      4
+     ],
+     "page": 11,
+     "quote": "Bins (25) 0 4 4 4"
+    },
+    {
+     "label": "Fuel Tanks",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "page": 11,
+     "quote": "Fuel Tanks 1 1 1 1"
+    },
+    {
+     "label": "Tools-Shop/Field",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      4,
+      4,
+      4,
+      4
+     ],
+     "page": 11,
+     "quote": "Tools-Shop/Field 4 4 4 4"
+    },
+    {
+     "label": "Establishment",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      0,
+      0,
+      0,
+      347
+     ],
+     "page": 11,
+     "quote": "Establishment 0 0 0 347"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      64,
+      29,
+      47,
+      73
+     ],
+     "page": 11,
+     "quote": "Equipment 64 29 47 73"
+    },
+    {
+     "label": "TOTAL CAPITAL RECOVERY COST",
+     "kind": "subtotal",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      447,
+      416,
+      434,
+      808
+     ],
+     "page": 11,
+     "quote": "TOTAL CAPITAL RECOVERY COST 447 416 434 808"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      2192,
+      1868,
+      3724,
+      6722
+     ],
+     "page": 11,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 2,192 1,868 3,724 6,722"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      0,
+      931,
+      2660,
+      5320
+     ],
+     "page": 11,
+     "quote": "INCOME/ACRE FROM PRODUCTION 0 931 2,660 5,320"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      2192,
+      937,
+      1064,
+      1402
+     ],
+     "page": 11,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 2,192 937 1,064 1,402"
+    },
+    {
+     "label": "NET PROFIT/ACRE ABOVE TOTAL COST",
+     "kind": "net",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "page": 11,
+     "quote": "NET PROFIT/ACRE ABOVE TOTAL COST 0 0 0 0"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST/ACRE",
+     "kind": "accumulated",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      2192,
+      3129,
+      4194,
+      5596
+     ],
+     "page": 11,
+     "quote": "TOTAL ACCUMULATED NET COST/ACRE 2,192 3,129 4,194 5,596"
+    },
+    {
+     "label": "*See production year for complete list of operations and costs",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "*See production year for complete list of operations and costs"
+    }
+   ],
+   "yieldRow": {
+    "label": "Pounds Per Acre:",
+    "values": [
+     0,
+     700,
+     2000,
+     4000
+    ],
+    "quote": "Pounds Per Acre: 0 700 2,000 4,000"
+   }
+  },
   "years": [
    {
     "year": 1,

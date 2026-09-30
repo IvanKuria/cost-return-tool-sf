@@ -117,6 +117,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE AND HARVEST RASPBERRIES: PRODUCTION YEAR",
   "operatingTotal": {
    "value": 58287,
    "unit": "$/acre",
@@ -220,6 +221,7 @@
    {
     "name": "Hand Prune & Train Canes",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 70,
     "labor": 1127,
     "fuel": 0,
@@ -233,6 +235,7 @@
    {
     "name": "Hand weed",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -246,6 +249,7 @@
    {
     "name": "Primocane Suppression (Shark)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.65,
     "labor": 17,
     "fuel": 6,
@@ -259,6 +263,7 @@
    {
     "name": "Shred Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.21,
     "labor": 5,
     "fuel": 1,
@@ -272,6 +277,7 @@
    {
     "name": "Fertilize (CN9, CAN17, 21-0-0-24)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 10,
     "fuel": 0,
@@ -285,6 +291,7 @@
    {
     "name": "Soil Test 2/42 Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -298,6 +305,7 @@
    {
     "name": "Drip Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 32,
     "fuel": 0,
@@ -311,6 +319,7 @@
    {
     "name": "Tunnel Management",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 25,
     "labor": 403,
     "fuel": 0,
@@ -324,6 +333,7 @@
    {
     "name": "Weeds- Disc Mow Middles",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 9,
     "fuel": 1,
@@ -337,6 +347,7 @@
    {
     "name": "Isomate Phermones- LBAM",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 16,
     "fuel": 0,
@@ -350,6 +361,7 @@
    {
     "name": "Predatory Mites - Persimilis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 16,
     "fuel": 0,
@@ -363,6 +375,7 @@
    {
     "name": "Pollination - 2 Hives/Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -376,6 +389,7 @@
    {
     "name": "Fertilize (20-20-20, 10-30-30)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 4,
     "fuel": 0,
@@ -389,6 +403,7 @@
    {
     "name": "Hand Clip Canes",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 35,
     "labor": 564,
     "fuel": 0,
@@ -402,6 +417,7 @@
    {
     "name": "Disease, Insect & Mite Management",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.65,
     "labor": 17,
     "fuel": 6,
@@ -415,6 +431,7 @@
    {
     "name": "Leaf Analysis 3/42 Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -428,6 +445,7 @@
    {
     "name": "Tunnel/Trellis: Remove",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 125,
     "labor": 2013,
     "fuel": 0,
@@ -441,6 +459,7 @@
    {
     "name": "Postharvest Cleanup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 18.15,
     "labor": 294,
     "fuel": 4,
@@ -454,6 +473,7 @@
    {
     "name": "PCA",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -467,6 +487,7 @@
    {
     "name": "ATV",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 13,
     "fuel": 1,
@@ -480,6 +501,7 @@
    {
     "name": "Pickup",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3,
     "labor": 78,
     "fuel": 20,
@@ -493,6 +515,7 @@
    {
     "name": "Harvest Raspberries",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 1610,
     "fuel": 0,
@@ -506,6 +529,7 @@
    {
     "name": "Load/Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 23.45,
     "labor": 611,
     "fuel": 229,
@@ -519,6 +543,7 @@
    {
     "name": "Cool",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -532,6 +557,7 @@
    {
     "name": "Market/Sales Fee",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1399,6 +1425,434 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AND HARVEST RASBBERRIES: PRODUCTION YEAR"
  },
  "establishment": {
+  "table": {
+   "title": "COSTS PER ACRE to ESTABLISH, PRODUCE AND HARVEST RASPBERRIES - SUMMARY",
+   "years": [
+    "Establish",
+    "1",
+    "2",
+    "3"
+   ],
+   "rows": [
+    {
+     "label": "4,750 (F)* 4,750 (S) 4,750 (S)",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "4,750 (F)* 4,750 (S) 4,750 (S)"
+    },
+    {
+     "label": "4.5 Pound Trays",
+     "kind": "heading",
+     "section": "4.5 Pound Trays",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "4.5 Pound Trays:"
+    },
+    {
+     "label": "2,850 (F)",
+     "kind": "operation",
+     "section": "4.5 Pound Trays",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "2,850 (F)"
+    },
+    {
+     "label": "Land Prep/Plant Costs",
+     "kind": "heading",
+     "section": "Land Prep/Plant Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Land Prep/Plant Costs:"
+    },
+    {
+     "label": "Land Prep/Plant Costs",
+     "kind": "operation",
+     "section": "Land Prep/Plant Costs",
+     "values": [
+      8437,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Land Prep/Plant Costs 8,437"
+    },
+    {
+     "label": "TOTAL LAND PREP/PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Land Prep/Plant Costs",
+     "values": [
+      8437,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL LAND PREP/PLANTING COSTS 8,437"
+    },
+    {
+     "label": "Cultural Costs",
+     "kind": "heading",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Cultural Costs:"
+    },
+    {
+     "label": "Cultural Costs",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      7900,
+      7779,
+      6506
+     ],
+     "page": 13,
+     "quote": "Cultural Costs 7,900 7,779 6,506"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      7900,
+      7779,
+      6506
+     ],
+     "page": 13,
+     "quote": "TOTAL CULTURAL COSTS 7,900 7,779 6,506"
+    },
+    {
+     "label": "Harvest Costs",
+     "kind": "heading",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Harvest Costs:"
+    },
+    {
+     "label": "Harvest/Load/Haul/Cool/Sell",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      51361,
+      82557,
+      51362
+     ],
+     "page": 13,
+     "quote": "Harvest/Load/Haul/Cool/Sell 51,361 82,557 51,362"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      51361,
+      82557,
+      51362
+     ],
+     "page": 13,
+     "quote": "TOTAL HARVEST COSTS 51,361 82,557 51,362"
+    },
+    {
+     "label": "Interest On Operating Capital @ 4.50%",
+     "kind": "interest",
+     "section": "Harvest Costs",
+     "values": [
+      86,
+      534,
+      1549,
+      419
+     ],
+     "page": 13,
+     "quote": "Interest On Operating Capital @ 4.50% 86 534 1,549 419"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvest Costs",
+     "values": [
+      8523,
+      59795,
+      91885,
+      58287
+     ],
+     "page": 13,
+     "quote": "TOTAL OPERATING COSTS/ACRE 8,523 59,795 91,885 58,287"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Land Rent, Insurance, Taxes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      2697,
+      5978,
+      5983,
+      3415
+     ],
+     "page": 13,
+     "quote": "Land Rent, Insurance, Taxes 2,697 5,978 5,983 3,415"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      2697,
+      5978,
+      5983,
+      3415
+     ],
+     "page": 13,
+     "quote": "TOTAL CASH OVERHEAD COSTS 2,697 5,978 5,983 3,415"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      11219,
+      65773,
+      97869,
+      61702
+     ],
+     "page": 13,
+     "quote": "TOTAL CASH COSTS/ACRE 11,219 65,773 97,869 61,702"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      71250,
+      114000,
+      71250
+     ],
+     "page": 13,
+     "quote": "INCOME/ACRE FROM PRODUCTION 71,250 114,000 71,250"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      11219,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 11,219"
+    },
+    {
+     "label": "NET RETURNS/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      5477,
+      16131,
+      9548
+     ],
+     "page": 13,
+     "quote": "NET RETURNS/ACRE ABOVE CASH COSTS 5,477 16,131 9,548"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      11219,
+      5742,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,219 5,742"
+    },
+    {
+     "label": "Non-Cash Overhead (Capital Recovery Cost)",
+     "kind": "heading",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Non-Cash Overhead (Capital Recovery Cost):"
+    },
+    {
+     "label": "Investments/Equipment",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      413,
+      5190,
+      5308,
+      5185
+     ],
+     "page": 13,
+     "quote": "Investments/Equipment 413 5,190 5,308 5,185"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COST/ACRE",
+     "kind": "total",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      413,
+      5190,
+      5308,
+      5185
+     ],
+     "page": 13,
+     "quote": "TOTAL NON-CASH OVERHEAD COST/ACRE 413 5,190 5,308 5,185"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      11633,
+      70963,
+      103177,
+      66887
+     ],
+     "page": 13,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 11,633 70,963 103,177 66,887"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      71250,
+      114000,
+      71250
+     ],
+     "page": 13,
+     "quote": "INCOME/ACRE FROM PRODUCTION 71,250 114,000 71,250"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      11633,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 11,633"
+    },
+    {
+     "label": "NET RETURNS/ACRE ABOVE TOTAL COST",
+     "kind": "net",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      287,
+      10823,
+      4363
+     ],
+     "page": 13,
+     "quote": "NET RETURNS/ACRE ABOVE TOTAL COST 287 10,823 4,363"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET/ACRE",
+     "kind": "accumulated",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      -11633,
+      -11346,
+      -523,
+      3840
+     ],
+     "page": 13,
+     "quote": "TOTAL ACCUMULATED NET/ACRE -11,633 -11,346 -523 3,840"
+    },
+    {
+     "label": "* F = Fall Crop; S = Spring Crop",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "* F = Fall Crop; S = Spring Crop"
+    },
+    {
+     "label": "Raspberry Cost and Return Study – Central Coast – University of California",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead (Capital Recovery Cost)",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Raspberry Cost and Return Study – Central Coast – University of California"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,

@@ -56,6 +56,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE EUREKA LEMONS",
   "operatingTotal": {
    "value": 10797,
    "unit": "$/acre",
@@ -164,6 +165,7 @@
    {
     "name": "Frost Protection",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -177,6 +179,7 @@
    {
     "name": "Winter Pesticide Application",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -190,6 +193,7 @@
    {
     "name": "Fertilizer: UAN32 3x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -203,6 +207,7 @@
    {
     "name": "Fertilizer: Urea/Potassium",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -216,6 +221,7 @@
    {
     "name": "Prune",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 501,
     "fuel": 0,
@@ -229,6 +235,7 @@
    {
     "name": "Irrigation: Water & labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 143,
     "fuel": 0,
@@ -242,6 +249,7 @@
    {
     "name": "Summer Pesticide Application",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -255,6 +263,7 @@
    {
     "name": "Weeds: Spot Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -268,6 +277,7 @@
    {
     "name": "Fall Pesticide Application",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -281,6 +291,7 @@
    {
     "name": "Weeds: Pre-emergence",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -294,6 +305,7 @@
    {
     "name": "Truck: Pick-Up",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.08,
     "labor": 67,
     "fuel": 17,
@@ -307,6 +319,7 @@
    {
     "name": "UTV",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 32,
     "fuel": 8,
@@ -320,6 +333,7 @@
    {
     "name": "Vertebrate Pests: Gophers",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -333,6 +347,7 @@
    {
     "name": "PCA Services",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -346,6 +361,7 @@
    {
     "name": "Pick and Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -359,6 +375,7 @@
    {
     "name": "Sort and Pack",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -372,6 +389,7 @@
    {
     "name": "Assessments: CPDPP/CRB",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -652,6 +670,7 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE EUREKA LEMONS"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

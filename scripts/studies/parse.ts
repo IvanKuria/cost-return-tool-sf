@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { loadManifest, slugOf, TEXT_DIR, PARSED_DIR, type ManifestEntry } from './manifest';
 import type {
-  Assumptions, BusinessOverheadRow, Cited, CostsPerAcre, EquipmentRow, Establishment, EstablishmentYear, HourlyEquipmentRow, Method, MonthlyCosts,
+  Assumptions, BusinessOverheadRow, Cited, CostsPerAcre, EquipmentRow, Establishment, EstablishmentTable, EstablishmentTableRow, EstablishmentYear, HourlyEquipmentRow, Method, MonthlyCosts,
   OperationCategory, OperationRow, ParsedStudy, Quote, StudySource,
 } from './types';
 
@@ -320,7 +320,7 @@ function lastTotal(lines: Line[], re: RegExp, from: number, to: number, unit: st
 
 function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): CostsPerAcre {
   const c: CostsPerAcre = {
-    operatingTotal: null, cashOverheadTotal: null, nonCashOverheadTotal: null, totalCost: null,
+    title: null, operatingTotal: null, cashOverheadTotal: null, nonCashOverheadTotal: null, totalCost: null,
     grossReturns: (a as unknown as { _gross?: Cited })._gross ?? null, netReturnsAboveOperating: null, netReturnsAboveTotal: null,
     cashOverheadItems: [], operations: [],
   };
@@ -331,9 +331,9 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
   let t1: [number, number] | null = null;
   for (let i = costTables.length - 1; i >= 0; i--) {
     const span = spanOf(lines, all, costTables[i]);
-    if (find(lines, /^\s*TOTAL OPERATING COSTS/i, span[0], span[1])) { t1 = span; if (i !== costTables.length - 1) warn('a later costs table had no totals; used an earlier one'); break; }
+    if (find(lines, /^\s*TOTAL OPERATING COSTS/i, span[0], span[1])) { t1 = span; c.title = costTables[i].title; if (i !== costTables.length - 1) warn('a later costs table had no totals; used an earlier one'); break; }
   }
-  if (!t1) t1 = tableSpan(lines, 'returns');
+  if (!t1) { t1 = tableSpan(lines, 'returns'); const rt = all.filter(t => t.kind === 'returns').pop(); if (t1 && rt) c.title = rt.title; }
   if (!t1) { warn('no costs-per-acre table found'); return c; }
   if (costTables.length > 1) warn('several costs-per-acre tables (establishment and production); using the production one');
   const [s, e] = t1;
@@ -376,11 +376,12 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
     let from = s;
     for (let i = opEnd.line.index - 1; i > s; i--) if (/^\s*Operation\s+\(?Hrs/i.test(lines[i].text) || /^\s*Operation\s{2,}/i.test(lines[i].text)) { from = i + 1; break; }
     let cat: OperationCategory | null = null;
+    let section = 'Cultural';
     let pending: OperationRow[] = [];
     for (let i = from; i < opEnd.line.index; i++) {
       const t = lines[i].text.replace(/[!|]/g, ' ');
       const head = t.match(/^\s*(Cultural|Harvest|Assessment|Post-?harvest|Pre-?plant|Plant|Pest Management|Irrigation|Fertilization|Weed Control|Other|Establishment)[^:]*:\s*$/i);
-      if (head) { cat = catOf(head[1]); continue; }
+      if (head) { cat = catOf(head[1]); section = clean(t).replace(/:\s*$/, ''); continue; }
       const tot = t.match(/^\s*TOTAL\s+([A-Z][A-Z -]+?)\s+COSTS?\b/i);
       if (tot) { const k = catOf(tot[1]); for (const r of pending) if (cat == null) r.category = k; pending = []; continue; }
       if (/^\s*(TOTAL|Interest on operating)/i.test(t)) continue;
@@ -388,7 +389,7 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
       let row: OperationRow | null = null;
       if (m) {
         row = {
-          name: clean(m[1]), category: cat ?? 'cultural', timeHrsPerAcre: toNum(m[2]), labor: zeroDash(m[3]), fuel: zeroDash(m[4]), lubeRepairs: zeroDash(m[5]),
+          name: clean(m[1]), category: cat ?? 'cultural', section, timeHrsPerAcre: toNum(m[2]), labor: zeroDash(m[3]), fuel: zeroDash(m[4]), lubeRepairs: zeroDash(m[5]),
           materials: zeroDash(m[6]), customRent: zeroDash(m[7]), totalCost: toNum(m[8]), page: lines[i].page, quote: clean(lines[i].text),
         };
       } else {
@@ -396,7 +397,7 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
         if (!m6) continue;
         // combined fuel, lube and repairs goes under fuel; lubeRepairs is null so nothing is double counted
         row = {
-          name: clean(m6[1]), category: cat ?? 'cultural', timeHrsPerAcre: toNum(m6[2]), labor: zeroDash(m6[3]), fuel: zeroDash(m6[4]), lubeRepairs: null,
+          name: clean(m6[1]), category: cat ?? 'cultural', section, timeHrsPerAcre: toNum(m6[2]), labor: zeroDash(m6[3]), fuel: zeroDash(m6[4]), lubeRepairs: null,
           materials: zeroDash(m6[5]), customRent: zeroDash(m6[6]), totalCost: toNum(m6[7]), page: lines[i].page, quote: clean(lines[i].text),
         };
         sixColumn = true;
@@ -748,6 +749,142 @@ function tailNumbers(text: string): number[] {
   return m[1].trim().split(/\s+/).map(zeroDash).filter((n): n is number => n != null);
 }
 
+
+// ---------------------------------------------------------------- establishment table, row by row
+
+const EST_FURNITURE = /Costs? (&|and) Returns Study|UC COOPERATIVE EXTENSION|UC DAVIS|^\s*TABLE \d+\.?\s*CONTINUED|^\s*Costs? per Acre\s*$|^\s*Cost Per Acre\s*$|^\s*\(?Continued\)?\s*$/i;
+
+/** Character position where each year header token ends; numbers below are right-aligned to these. */
+function yearColumns(text: string): { labels: string[]; ends: number[]; zoneStart: number } | null {
+  const m = text.match(/\bYear:\s*(\S.*)$/i);
+  if (!m) return null;
+  const rest = m[1];
+  const base = text.length - rest.length;
+  const labels: string[] = []; const ends: number[] = [];
+  const tokRe = /(?:Est(?:ab)?\w*(?:\/\d+(?:st|nd|rd|th))?|\d+(?:st|nd|rd|th)|Year\s*\d+|\b\d{1,2}\b)/gi;
+  let t: RegExpExecArray | null;
+  while ((t = tokRe.exec(rest))) { labels.push(t[0].trim()); ends.push(base + t.index + t[0].length); }
+  if (labels.length < 2 || labels.length > 8) return null;
+  const firstStart = base + rest.search(/\S/);
+  return { labels, ends, zoneStart: firstStart - 9 };
+}
+
+/** The trailing run of numbers (or dashes) on a row, each at or past the numeric zone. Anything before them is the label. */
+function numericTokens(text: string, zoneStart: number): { value: number | null; start: number; end: number; raw: string }[] {
+  const re = new RegExp(String.raw`(${NUM}|[-—])(?=\s|$)`, 'g');
+  const all: { value: number | null; start: number; end: number; raw: string }[] = [];
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text))) {
+    if (m.index > 0 && !/\s/.test(text[m.index - 1])) continue;
+    all.push({ value: zeroDash(m[1]), start: m.index, end: m.index + m[1].length, raw: m[1] });
+  }
+  // keep only the trailing run: tokens after the last non-numeric word
+  const out: typeof all = [];
+  for (let i = all.length - 1; i >= 0; i--) {
+    const tok = all[i];
+    const between = i + 1 < all.length ? text.slice(tok.end, all[i + 1].start) : text.slice(tok.end);
+    if (between.trim() !== '') break;
+    if (tok.start < zoneStart) break;
+    out.unshift(tok);
+  }
+  return out;
+}
+
+/** Place row numbers into year columns by their right edge; when the count matches the columns, in order. */
+function placeValues(tokens: { value: number | null; end: number }[], ends: number[]): (number | null)[] {
+  const values: (number | null)[] = ends.map(() => null);
+  if (tokens.length === 0) return values;
+  if (tokens.length === ends.length) { tokens.forEach((t, i) => { values[i] = t.value; }); return values; }
+  for (const t of tokens) {
+    let best = 0, bestD = Infinity;
+    ends.forEach((e, i) => { const d = Math.abs(e - t.end); if (d < bestD) { bestD = d; best = i; } });
+    if (values[best] == null) values[best] = t.value;
+    else { const alt = ends.findIndex((e, i) => values[i] == null && Math.abs(e - t.end) <= bestD + 6); if (alt >= 0) values[alt] = t.value; }
+  }
+  return values;
+}
+
+function rowKind(label: string, section: string): EstablishmentTableRow['kind'] {
+  const L = label.toUpperCase();
+  if (/^INTEREST ON OPERATING/.test(L)) return 'interest';
+  if (/^(INCOME|RETURNS?|REVENUE)(?:\/ACRE| FROM PRODUCTION| PER ACRE)/.test(L)) return 'income';
+  if (/ACCUMULATED/.test(L)) return 'accumulated';
+  if (/^(TOTAL )?NET\b|^(NET )?PROFIT/.test(L)) return 'net';
+  if (/^TOTAL (OPERATING|CASH OVERHEAD|CASH COSTS?|NON-?CASH|INTEREST ON INVESTMENT|COSTS?\/ACRE|COSTS? PER ACRE)/.test(L)) return 'total';
+  if (/^TOTAL .*(COSTS?|EXPENSES?)\b/.test(L)) return 'subtotal';
+  if (/OVERHEAD/i.test(section)) return 'overheadItem';
+  return 'operation';
+}
+
+function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: string) => void): EstablishmentTable | null {
+  const estTables = all.filter(t => /ESTABLISH|DEVELOP|ESTABLEC/i.test(t.title));
+  if (!estTables.length) return null;
+  let best: EstablishmentTable | null = null;
+  for (const t of estTables) {
+    const [a, b] = spanOf(lines, all, t);
+    let cols: ReturnType<typeof yearColumns> = null;
+    const rows: EstablishmentTableRow[] = [];
+    let yieldRow: EstablishmentTable['yieldRow'] = null;
+    let section = '';
+    let carry: EstablishmentTableRow | null = null; // a heading line that carried numbers belonging to the next label
+    let page = -1;
+    let awaitingHeader = true; // every page opens with furniture (title, region, 'Costs per Acre') until its Year: header
+    let sinceHeader = 0;       // body rows since the last header; the yield line only ever sits right under a header
+    for (let i = a + 1; i < b; i++) {
+      const raw = lines[i].text;
+      if (lines[i].page !== page) { page = lines[i].page; awaitingHeader = true; }
+      if (!raw.trim()) continue;
+      if (EST_FURNITURE.test(raw)) continue;
+      const yc = yearColumns(raw);
+      if (yc) { if (!cols || yc.labels.length === cols.labels.length || yc.labels.length > cols.labels.length) cols = yc; awaitingHeader = false; sinceHeader = 0; continue; }
+      if (!cols || awaitingHeader) continue;
+      const text = raw.replace(/[!|]/g, ' ');
+      const toks = numericTokens(text, cols.zoneStart);
+      const labelEnd = toks.length ? toks[0].start : text.length;
+      const label = clean(text.slice(0, labelEnd));
+      if (!label && !toks.length) continue;
+      if (!label) continue;
+      // yield or price line under the header (repeats on continuation pages)
+      if (sinceHeader === 0 && /(yield|price|\$|per acre|tons? per|lbs? per|pounds per)/i.test(label) && /(per acre|per ton|tons?\b|lbs?\b|pounds|cartons?|boxes|trays?|bins?)/i.test(label) && !/^(total|net|income|accumulated)/i.test(label)) {
+        if (toks.length && !yieldRow) yieldRow = { label: label.replace(/^Operation:?\s*/i, ''), values: placeValues(toks, cols.ends), quote: clean(raw) };
+        continue;
+      }
+      if (/^Operation:?$/i.test(label)) continue;
+      sinceHeader++;
+      const isHeading = /:\s*$/.test(label) && (!toks.length || /costs?:$/i.test(label));
+      if (isHeading) {
+        section = label.replace(/:\s*$/, '');
+        const heading: EstablishmentTableRow = { label: section, kind: 'heading', section, values: cols.labels.map(() => null), page: lines[i].page, quote: clean(raw) };
+        rows.push(heading);
+        carry = toks.length ? { ...heading, values: placeValues(toks, cols.ends) } : null;
+        continue;
+      }
+      let values = placeValues(toks, cols.ends);
+      if (!toks.length && carry) { values = carry.values; carry = null; }
+      else carry = null;
+      const kind = rowKind(label, section);
+      rows.push({ label, kind, section, values, page: lines[i].page, quote: clean(raw) });
+    }
+    if (!cols || rows.filter(r => r.kind !== 'heading').length < 5) continue;
+    const table: EstablishmentTable = { title: t.title, years: cols.labels, rows, yieldRow };
+    if (!best || rows.length > best.rows.length) best = table;
+  }
+  if (!best) return null;
+  // Reconcile: each subtotal equals the sum of the operation rows above it in its section, per column.
+  for (let i = 0; i < best.rows.length; i++) {
+    const r = best.rows[i];
+    if (r.kind !== 'subtotal') continue;
+    const ops: EstablishmentTableRow[] = [];
+    for (let j = i - 1; j >= 0 && best.rows[j].kind !== 'heading'; j--) if (best.rows[j].kind === 'operation' || best.rows[j].kind === 'overheadItem') ops.push(best.rows[j]);
+    r.values.forEach((v, c) => {
+      if (v == null) return;
+      const sum = ops.reduce((s, o) => s + (o.values[c] ?? 0), 0);
+      if (Math.abs(sum - v) > Math.max(2, 0.02 * Math.abs(v))) warn(`establishment table: ${r.label} column ${best!.years[c]} prints ${v} but its rows sum to ${sum}`);
+    });
+  }
+  return best;
+}
+
 function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s: string) => void): Establishment | null {
   const S = proseSentences(lines);
   const all = findTables(lines);
@@ -833,9 +970,10 @@ function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s
     const printed = years.map(y => y.accumulated).filter((v): v is number => v != null);
     if (printed.length && !printed.some(v => Math.abs(v - accumulatedNetCost.value) <= 0.02 * accumulatedNetCost.value)) warn(`prose establishment cost ${accumulatedNetCost.value} matches no column of the accumulated row [${printed.join(', ')}]`);
   }
-  if (!accumulatedNetCost && !years.length && !annualCharge) return null;
+  const table = parseEstablishmentTable(lines, all, warn);
+  if (!accumulatedNetCost && !years.length && !annualCharge && !table) return null;
   return {
-    years, accumulatedNetCost, annualCharge,
+    table, years, accumulatedNetCost, annualCharge,
     productionYears: productionYears ?? (asset ? { value: asset.yearsLife, page: asset.page, quote: `${asset.line} (years of life of the establishment row in the investment table)` } : null),
     plantingLife, amortizedFromYear, removalCost, asset, method: amort ? { page: amort.s.page, quote: amort.s.text } : null,
   };

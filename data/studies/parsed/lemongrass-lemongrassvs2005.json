@@ -66,6 +66,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COST PER ACRE TO PRODUCE LEMONGRASS",
   "operatingTotal": {
    "value": 8656,
    "unit": "$/acre",
@@ -88,6 +89,7 @@
    {
     "name": "Ending MAR 05 04 04 04 04 04 04 04",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4,
     "labor": 4,
     "fuel": 4,
@@ -101,6 +103,7 @@
    {
     "name": "Irrigate 14 29 29",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 72,
     "labor": 72,
     "fuel": 72,
@@ -114,6 +117,7 @@
    {
     "name": "Miscellaneous Pickup Use 9 9 9 9 9 9 9 9",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 9,
     "labor": 9,
     "fuel": 9,

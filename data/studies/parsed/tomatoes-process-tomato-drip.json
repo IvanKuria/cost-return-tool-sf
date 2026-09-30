@@ -97,6 +97,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE PROCESS TOMATOES (SDI)",
   "operatingTotal": {
    "value": 2733,
    "unit": "$/acre",
@@ -144,6 +145,7 @@
    {
     "name": "Laser level 4 % Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -157,6 +159,7 @@
    {
     "name": "Chisel Furrows 80% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 6,
@@ -170,6 +173,7 @@
    {
     "name": "Condition Beds 80% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 5,
@@ -183,6 +187,7 @@
    {
     "name": "Stubble Disc & Roll 20% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 3,
@@ -196,6 +201,7 @@
    {
     "name": "Sub-Soil & Roll 20% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 6,
@@ -209,6 +215,7 @@
    {
     "name": "Finish Disc & Roll 20% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 1,
@@ -222,6 +229,7 @@
    {
     "name": "Land Plane 2X 20% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 3,
@@ -235,6 +243,7 @@
    {
     "name": "Gypsum 20% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -248,6 +257,7 @@
    {
     "name": "List Beds 6-Row 20% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 2,
@@ -261,6 +271,7 @@
    {
     "name": "5-Row Shape/Insert Drip Tape 20% Ac",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.11,
     "labor": 16,
     "fuel": 10,
@@ -274,6 +285,7 @@
    {
     "name": "Pest Control-Weeds Roundup/Goal 2XL",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 0,
@@ -287,6 +299,7 @@
    {
     "name": "Pest Control-Weeds Roundup",
     "category": "other",
+    "section": "Preplant",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 0,
@@ -300,6 +313,7 @@
    {
     "name": "Open Beds-3 Row Alloway",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 3,
     "fuel": 5,
@@ -313,6 +327,7 @@
    {
     "name": "Mulch Beds-Apply Herbicides",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 8,
@@ -326,6 +341,7 @@
    {
     "name": "Fertilize-Starter 8-24-6, 2% Zn",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.23,
     "labor": 5,
     "fuel": 9,
@@ -339,6 +355,7 @@
    {
     "name": "Transplant Tomatoes",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -352,6 +369,7 @@
    {
     "name": "Pest Control-Weeds Post Plant herbicide",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 3,
@@ -365,6 +383,7 @@
    {
     "name": "Irrigate-Sprinklers 50% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 20,
     "fuel": 9,
@@ -378,6 +397,7 @@
    {
     "name": "Irrigate-Drip",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -391,6 +411,7 @@
    {
     "name": "Pest Control-Weeds Close Cultivate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.22,
     "labor": 4,
     "fuel": 7,
@@ -404,6 +425,7 @@
    {
     "name": "Fertigation-UN 32",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -417,6 +439,7 @@
    {
     "name": "Pest Control-Weeds Hand Hoe",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -430,6 +453,7 @@
    {
     "name": "Pest Control-Weeds Herbicide Layby",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.23,
     "labor": 5,
     "fuel": 9,
@@ -443,6 +467,7 @@
    {
     "name": "Pest Control-Bacterial Speck 30% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 1,
@@ -456,6 +481,7 @@
    {
     "name": "Pest Control-Aphids 20% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 1,
@@ -469,6 +495,7 @@
    {
     "name": "Pest Control-Late Blight 5% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -482,6 +509,7 @@
    {
     "name": "Trim Vines",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 4,
     "fuel": 6,
@@ -495,6 +523,7 @@
    {
     "name": "Pest Control-Mites 40% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -508,6 +537,7 @@
    {
     "name": "Irrigation Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 109,
     "fuel": 0,
@@ -521,6 +551,7 @@
    {
     "name": "Pest Control-Fruit Rot 15% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
@@ -534,6 +565,7 @@
    {
     "name": "Pest Control-Worms",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 3,
@@ -547,6 +579,7 @@
    {
     "name": "Fruit Ripener-Ethrel 5% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -560,6 +593,7 @@
    {
     "name": "Service Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 2,
@@ -573,6 +607,7 @@
    {
     "name": "Water Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 7,
     "fuel": 3,
@@ -586,6 +621,7 @@
    {
     "name": "Back Hoe",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 5,
@@ -599,6 +635,7 @@
    {
     "name": "Road Grader",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 5,
@@ -612,6 +649,7 @@
    {
     "name": "Truck-Lowbed Trailer",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 3,
@@ -625,6 +663,7 @@
    {
     "name": "1/2 Ton Pickup (3)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.6,
     "labor": 33,
     "fuel": 6,
@@ -638,6 +677,7 @@
    {
     "name": "3/4 Ton Pickup (2)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 3,
@@ -651,6 +691,7 @@
    {
     "name": "Pest Control-Vertebrate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 7,
     "fuel": 1,
@@ -664,6 +705,7 @@
    {
     "name": "Harvest Custom 50% Ac",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -677,6 +719,7 @@
    {
     "name": "Open Harvest Lanes 4% Ac",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.07,
     "labor": 1,
     "fuel": 2,
@@ -690,6 +733,7 @@
    {
     "name": "Harvest Self 50% Ac",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.44,
     "labor": 29,
     "fuel": 40,
@@ -703,6 +747,7 @@
    {
     "name": "In Field Hauling (2)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.87,
     "labor": 18,
     "fuel": 35,
@@ -716,6 +761,7 @@
    {
     "name": "Share Rent 12.0%",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -729,6 +775,7 @@
    {
     "name": "Irrigation-Drip Chemigation",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -742,6 +789,7 @@
    {
     "name": "Drip Tape System Maintenance",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.2,
     "labor": 52,
     "fuel": 1,
@@ -755,6 +803,7 @@
    {
     "name": "PTAB, CTGA, CTRI, CDFA-CTVP",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

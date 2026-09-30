@@ -84,6 +84,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ORANGES",
   "operatingTotal": {
    "value": 6659,
    "unit": "$/acre",
@@ -163,6 +164,7 @@
    {
     "name": "Frost Protection 3x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 45,
     "fuel": 0,
@@ -176,6 +178,7 @@
    {
     "name": "Fertilize: UAN32 3x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -189,6 +192,7 @@
    {
     "name": "Weeds: Strip Spray 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 16,
     "fuel": 2,
@@ -202,6 +206,7 @@
    {
     "name": "Insects/Fertilizer 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -215,6 +220,7 @@
    {
     "name": "CRS Pheromone Confusion/CheckMate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -228,6 +234,7 @@
    {
     "name": "Insects: Katydids (Micromite)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -241,6 +248,7 @@
    {
     "name": "Prune: Top Trees/Stack/Shred 1x/4yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -254,6 +262,7 @@
    {
     "name": "Hedge: Alt Rows/Shred 2x/4Yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -267,6 +276,7 @@
    {
     "name": "Prune: Hand 1/4Yr/Stack/Shred",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -280,6 +290,7 @@
    {
     "name": "Irrigate: (Water & Labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 115,
     "fuel": 0,
@@ -293,6 +304,7 @@
    {
     "name": "Soil Amendment: Soluble Gypsum",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 182,
     "fuel": 0,
@@ -306,6 +318,7 @@
    {
     "name": "Weeds: Spot Spray 3x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 24,
     "fuel": 3,
@@ -319,6 +332,7 @@
    {
     "name": "Insects: Thrips (Minecto Pro)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -332,6 +346,7 @@
    {
     "name": "Insects: Scale (Actara)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -345,6 +360,7 @@
    {
     "name": "Leaf Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -358,6 +374,7 @@
    {
     "name": "Disease: Brown Rot (Lime Kocide)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -371,6 +388,7 @@
    {
     "name": "Growth Regulator: (GibGro)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -384,6 +402,7 @@
    {
     "name": "Growth Regulator: (Citrus Fix)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -397,6 +416,7 @@
    {
     "name": "Pickup Truck Use ½ Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.77,
     "labor": 57,
     "fuel": 11,
@@ -410,6 +430,7 @@
    {
     "name": "UTV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.33,
     "labor": 43,
     "fuel": 4,
@@ -423,6 +444,7 @@
    {
     "name": "PCA/Consultant Services",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -436,6 +458,7 @@
    {
     "name": "Pick & Haul Fruit",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -449,6 +472,7 @@
    {
     "name": "Pack",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -462,6 +486,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -849,6 +874,967 @@
   "quote": "MONTHLY PER ACRE CASH COSTS TO PRODUCE ORANGES"
  },
  "establishment": {
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH AN ORANGE ORCHARD",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Plant: (Custom)",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Pre-Plant: (Custom)"
+    },
+    {
+     "label": "Remove Trees",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      468,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Remove Trees 468"
+    },
+    {
+     "label": "Sub-soil/Rip 4' - 6'",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      300,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Sub-soil/Rip 4' - 6' 300"
+    },
+    {
+     "label": "Disc 2x",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      100,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Disc 2x 100"
+    },
+    {
+     "label": "Level/Float 2x",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      350,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Level/Float 2x 350"
+    },
+    {
+     "label": "Weeds: Strip Spray",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      23,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Weeds: Strip Spray 23"
+    },
+    {
+     "label": "Layout Irrigation System",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      83,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Layout Irrigation System 83"
+    },
+    {
+     "label": "TOTAL PRE-PLANT COSTS",
+     "kind": "subtotal",
+     "section": "",
+     "values": [
+      1325,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "TOTAL PRE-PLANT COSTS 1,325"
+    },
+    {
+     "label": "Planting: (Contracted)",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Planting: (Contracted)"
+    },
+    {
+     "label": "Layout, Plant, Stake & Wrap Trees (includes labor costs)",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      4197,
+      81,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Layout, Plant, Stake & Wrap Trees (includes labor costs) 4,197 81"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "",
+     "values": [
+      4197,
+      81,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "TOTAL PLANTING COSTS 4,197 81"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Insects/Fertilizer (Yrs. 4 & 5-2x)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      63,
+      64,
+      65,
+      156,
+      210
+     ],
+     "page": 16,
+     "quote": "Insects/Fertilizer (Yrs. 4 & 5-2x) 63 64 65 156 210"
+    },
+    {
+     "label": "Fertilize: UAN32",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      5,
+      11,
+      17,
+      17,
+      18
+     ],
+     "page": 16,
+     "quote": "Fertilize: UAN32 5 11 17 17 18"
+    },
+    {
+     "label": "Soil Amendment: Soluble Gypsum",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      242
+     ],
+     "page": 16,
+     "quote": "Soil Amendment: Soluble Gypsum 242"
+    },
+    {
+     "label": "Irrigate: (Water & labor)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      127,
+      182,
+      237,
+      345,
+      422
+     ],
+     "page": 16,
+     "quote": "Irrigate: (Water & labor) 127 182 237 345 422"
+    },
+    {
+     "label": "Prune And Sucker 2x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      56,
+      89,
+      104,
+      65,
+      125
+     ],
+     "page": 16,
+     "quote": "Prune And Sucker 2x 56 89 104 65 125"
+    },
+    {
+     "label": "Weeds: Strip Spray 2x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      95,
+      95,
+      95,
+      95
+     ],
+     "page": 16,
+     "quote": "Weeds: Strip Spray 2x 95 95 95 95"
+    },
+    {
+     "label": "Weeds: Spot Spray 3x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      42,
+      42,
+      42,
+      42,
+      42
+     ],
+     "page": 16,
+     "quote": "Weeds: Spot Spray 3x 42 42 42 42 42"
+    },
+    {
+     "label": "Weeds: Disc Middles 3x (Custom)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      150,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Weeds: Disc Middles 3x (Custom) 150"
+    },
+    {
+     "label": "Insects: Thrips",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      null,
+      73,
+      107
+     ],
+     "page": 16,
+     "quote": "Insects: Thrips 73 107"
+    },
+    {
+     "label": "Insects: Ants (Clinch)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      7,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Insects: Ants (Clinch) 7"
+    },
+    {
+     "label": "Insects: Fire Ants/Earwigs",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      39,
+      39,
+      39,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Insects: Fire Ants/Earwigs 39 39 39"
+    },
+    {
+     "label": "Insects: Citrus Leaf Miner 3x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      299,
+      299,
+      299,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Insects: Citrus Leaf Miner 3x 299 299 299"
+    },
+    {
+     "label": "Leaf Analysis",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      null,
+      7,
+      7
+     ],
+     "page": 16,
+     "quote": "Leaf Analysis 7 7"
+    },
+    {
+     "label": "Disease: Brown Rot",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      87,
+      111,
+      135
+     ],
+     "page": 16,
+     "quote": "Disease: Brown Rot 87 111 135"
+    },
+    {
+     "label": "Frost Protection (Water & Wind-4th Year+)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      53,
+      80,
+      80,
+      376,
+      388
+     ],
+     "page": 16,
+     "quote": "Frost Protection (Water & Wind-4th Year+) 53 80 80 376 388"
+    },
+    {
+     "label": "Pickup Truck Use",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      76,
+      76,
+      76,
+      76,
+      76
+     ],
+     "page": 16,
+     "quote": "Pickup Truck Use 76 76 76 76 76"
+    },
+    {
+     "label": "UTV Use",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      49,
+      49,
+      49,
+      49,
+      49
+     ],
+     "page": 16,
+     "quote": "UTV Use 49 49 49 49 49"
+    },
+    {
+     "label": "PCA/Consultant Services",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      36,
+      36,
+      36,
+      36,
+      36
+     ],
+     "page": 16,
+     "quote": "PCA/Consultant Services 36 36 36 36 36"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      1000,
+      1060,
+      1224,
+      1445,
+      1951
+     ],
+     "page": 16,
+     "quote": "TOTAL CULTURAL COSTS 1,000 1,060 1,224 1,445 1,951"
+    },
+    {
+     "label": "Harvesting Costs",
+     "kind": "heading",
+     "section": "Harvesting Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Harvesting Costs:"
+    },
+    {
+     "label": "Pick and Haul",
+     "kind": "operation",
+     "section": "Harvesting Costs",
+     "values": [
+      null,
+      null,
+      41,
+      205,
+      400
+     ],
+     "page": 16,
+     "quote": "Pick and Haul 41 205 400"
+    },
+    {
+     "label": "Pack",
+     "kind": "operation",
+     "section": "Harvesting Costs",
+     "values": [
+      null,
+      null,
+      121,
+      606,
+      1183
+     ],
+     "page": 16,
+     "quote": "Pack 121 606 1,183"
+    },
+    {
+     "label": "Assessments",
+     "kind": "operation",
+     "section": "Harvesting Costs",
+     "values": [
+      null,
+      null,
+      13,
+      24,
+      37
+     ],
+     "page": 16,
+     "quote": "Assessments 13 24 37"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvesting Costs",
+     "values": [
+      0,
+      0,
+      175,
+      836,
+      1620
+     ],
+     "page": 16,
+     "quote": "TOTAL HARVEST COSTS 0 0 175 836 1,620"
+    },
+    {
+     "label": "Interest on operating capital @ 4.0%",
+     "kind": "interest",
+     "section": "Harvesting Costs",
+     "values": [
+      223,
+      26,
+      27,
+      22,
+      33
+     ],
+     "page": 16,
+     "quote": "Interest on operating capital @ 4.0% 223 26 27 22 33"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS PER ACRE",
+     "kind": "total",
+     "section": "Harvesting Costs",
+     "values": [
+      6744,
+      1167,
+      1426,
+      2304,
+      3604
+     ],
+     "page": 16,
+     "quote": "TOTAL OPERATING COSTS PER ACRE 6,744 1,167 1,426 2,304 3,604"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 16,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "page": 16,
+     "quote": "Liability Insurance 10 10 10 10 10"
+    },
+    {
+     "label": "Office Expenses",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      100,
+      100,
+      100,
+      100,
+      100
+     ],
+     "page": 16,
+     "quote": "Office Expenses 100 100 100 100 100"
+    },
+    {
+     "label": "Compliance Cost",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      100,
+      100,
+      100,
+      100,
+      100
+     ],
+     "page": 16,
+     "quote": "Compliance Cost 100 100 100 100 100"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      215,
+      215,
+      215,
+      282,
+      282
+     ],
+     "page": 16,
+     "quote": "Property Taxes 215 215 215 282 282"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      19,
+      19,
+      19,
+      25,
+      25
+     ],
+     "page": 16,
+     "quote": "Property Insurance 19 19 19 25 25"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      60,
+      60,
+      60,
+      168,
+      168
+     ],
+     "page": 16,
+     "quote": "Investment Repairs 60 60 60 168 168"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      504,
+      504,
+      504,
+      685,
+      685
+     ],
+     "page": 16,
+     "quote": "TOTAL CASH OVERHEAD COSTS 504 504 504 685 685"
+    },
+    {
+     "label": "TOTAL CASH COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7249,
+      1672,
+      1931,
+      2989,
+      4290
+     ],
+     "page": 16,
+     "quote": "TOTAL CASH COSTS 7,249 1,672 1,931 2,989 4,290"
+    },
+    {
+     "label": "INCOME FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      445,
+      2225,
+      4343
+     ],
+     "page": 16,
+     "quote": "INCOME FROM PRODUCTION 0 0 445 2,225 4,343"
+    },
+    {
+     "label": "NET CASH COSTS FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7249,
+      1672,
+      1486,
+      764,
+      null
+     ],
+     "page": 16,
+     "quote": "NET CASH COSTS FOR THE YEAR 7,249 1,672 1,486 764"
+    },
+    {
+     "label": "PROFIT ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      53
+     ],
+     "page": 16,
+     "quote": "PROFIT ABOVE CASH COSTS 53"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET CASH COSTS",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7249,
+      8921,
+      10407,
+      11171,
+      11118
+     ],
+     "page": 16,
+     "quote": "TOTAL ACCUMULATED NET CASH COSTS 7,249 8,921 10,407 11,171 11,118"
+    },
+    {
+     "label": "Non-Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "Non-Cash Overhead Costs:"
+    },
+    {
+     "label": "Building: 1,800 SqFt",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      61,
+      61,
+      61,
+      61,
+      61
+     ],
+     "page": 17,
+     "quote": "Building: 1,800 SqFt 61 61 61 61 61"
+    },
+    {
+     "label": "Irrigation System: Pumps/Filters",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      68,
+      68,
+      68,
+      68,
+      68
+     ],
+     "page": 17,
+     "quote": "Irrigation System: Pumps/Filters 68 68 68 68 68"
+    },
+    {
+     "label": "Drip Lines (Emitters)",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      27,
+      27,
+      27,
+      27,
+      27
+     ],
+     "page": 17,
+     "quote": "Drip Lines (Emitters) 27 27 27 27 27"
+    },
+    {
+     "label": "Fuel Storage",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      17,
+      17,
+      17,
+      17,
+      17
+     ],
+     "page": 17,
+     "quote": "Fuel Storage 17 17 17 17 17"
+    },
+    {
+     "label": "Wind Machine",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      174,
+      174
+     ],
+     "page": 17,
+     "quote": "Wind Machine 174 174"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      25,
+      25,
+      25,
+      25,
+      25
+     ],
+     "page": 17,
+     "quote": "Shop Tools 25 25 25 25 25"
+    },
+    {
+     "label": "Land SJV",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      950,
+      950,
+      950,
+      950,
+      950
+     ],
+     "page": 17,
+     "quote": "Land SJV 950 950 950 950 950"
+    },
+    {
+     "label": "Establishment Costs",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      603,
+      603
+     ],
+     "page": 17,
+     "quote": "Establishment Costs 603 603"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      22,
+      23,
+      23,
+      22,
+      24
+     ],
+     "page": 17,
+     "quote": "Equipment 22 23 23 22 24"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      1171,
+      1171,
+      1171,
+      1947,
+      1949
+     ],
+     "page": 17,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 1,171 1,171 1,171 1,947 1,949"
+    },
+    {
+     "label": "TOTAL COST FOR THE YEAR",
+     "kind": "subtotal",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      8419,
+      2843,
+      3102,
+      4936,
+      6238
+     ],
+     "page": 17,
+     "quote": "TOTAL COST FOR THE YEAR 8,419 2,843 3,102 4,936 6,238"
+    },
+    {
+     "label": "INCOME FROM PRODUCTION",
+     "kind": "income",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      445,
+      2225,
+      4343
+     ],
+     "page": 17,
+     "quote": "INCOME FROM PRODUCTION 445 2,225 4,343"
+    },
+    {
+     "label": "NET TOTAL COST FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      8419,
+      2843,
+      2657,
+      2711,
+      1895
+     ],
+     "page": 17,
+     "quote": "NET TOTAL COST FOR THE YEAR 8,419 2,843 2,657 2,711 1,895"
+    },
+    {
+     "label": "NET PROFIT FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "NET PROFIT FOR THE YEAR"
+    },
+    {
+     "label": "ACCUMULATED NET TOTAL COST",
+     "kind": "accumulated",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      8419,
+      11262,
+      13919,
+      16630,
+      18525
+     ],
+     "page": 17,
+     "quote": "ACCUMULATED NET TOTAL COST 8,419 11,262 13,919 16,630 18,525"
+    }
+   ],
+   "yieldRow": {
+    "label": "s Packout Yield (37.5 lbs. Cartons/Acre):",
+    "values": [
+     null,
+     null,
+     25,
+     125,
+     244
+    ],
+    "quote": "Operations Packout Yield (37.5 lbs. Cartons/Acre): 25 125 244"
+   }
+  },
   "years": [],
   "accumulatedNetCost": {
    "value": 10407,
@@ -917,7 +1903,13 @@
    "insuranceRatePct"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block"
+   "Table 2 found but no GROSS RETURNS block",
+   "establishment table: TOTAL PLANTING COSTS column 1st prints 4197 but its rows sum to 5521",
+   "establishment table: TOTAL COST FOR THE YEAR column 1st prints 8419 but its rows sum to 1170",
+   "establishment table: TOTAL COST FOR THE YEAR column 2nd prints 2843 but its rows sum to 1171",
+   "establishment table: TOTAL COST FOR THE YEAR column 3rd prints 3102 but its rows sum to 1171",
+   "establishment table: TOTAL COST FOR THE YEAR column 4th prints 4936 but its rows sum to 1947",
+   "establishment table: TOTAL COST FOR THE YEAR column 5th prints 6238 but its rows sum to 1949"
   ]
  }
 }

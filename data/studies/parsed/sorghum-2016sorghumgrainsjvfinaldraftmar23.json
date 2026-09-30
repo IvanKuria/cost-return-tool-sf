@@ -112,6 +112,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE GRAIN SORGHUM",
   "operatingTotal": {
    "value": 886,
    "unit": "$/acre",
@@ -191,6 +192,7 @@
    {
     "name": "Stubble Disc 50% Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.09,
     "labor": 3,
     "fuel": 3,
@@ -204,6 +206,7 @@
    {
     "name": "Pull Borders",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.17,
     "labor": 5,
     "fuel": 2,
@@ -217,6 +220,7 @@
    {
     "name": "Pre-irrigate",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 2,
     "fuel": 0,
@@ -230,6 +234,7 @@
    {
     "name": "Finish Disc & Roll",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.12,
     "labor": 3,
     "fuel": 4,
@@ -243,6 +248,7 @@
    {
     "name": "Plant Sorghum",
     "category": "other",
+    "section": "Planting",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -256,6 +262,7 @@
    {
     "name": "Pests-Weeds Post-Plant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.21,
     "labor": 6,
     "fuel": 3,
@@ -269,6 +276,7 @@
    {
     "name": "Pests-Weeds Layby",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.21,
     "labor": 6,
     "fuel": 3,
@@ -282,6 +290,7 @@
    {
     "name": "Cultivate & Furrow 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.43,
     "labor": 12,
     "fuel": 6,
@@ -295,6 +304,7 @@
    {
     "name": "Pests- Insects Aphids",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.21,
     "labor": 6,
     "fuel": 3,
@@ -308,6 +318,7 @@
    {
     "name": "Fertilize- UAN-32 Sidedress",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -321,6 +332,7 @@
    {
     "name": "Irrigate 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 6,
     "fuel": 0,
@@ -334,6 +346,7 @@
    {
     "name": "Fertigate- UAN-32",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -347,6 +360,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.67,
     "labor": 19,
     "fuel": 3,
@@ -360,6 +374,7 @@
    {
     "name": "Harvest: Combine & Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

@@ -230,6 +230,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE EXTRA EARLY CLING PEACHES",
   "operatingTotal": {
    "value": 4195,
    "unit": "$/acre",
@@ -314,6 +315,7 @@
    {
     "name": "Prune: Trees",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 47,
     "labor": 516,
     "fuel": 0,
@@ -327,6 +329,7 @@
    {
     "name": "Tree: Wire Repair",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 16,
     "fuel": 0,
@@ -340,6 +343,7 @@
    {
     "name": "Disease/Insect: Dormant Spray (Oil, Kocide, Dimilin)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 8,
@@ -353,6 +357,7 @@
    {
     "name": "Prune: Shred Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 8,
     "fuel": 7,
@@ -366,6 +371,7 @@
    {
     "name": "Disease: Brown Rot @ Partial Bloom (Pristine)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 8,
@@ -379,6 +385,7 @@
    {
     "name": "Disease: Brown Rot @ Full Bloom (Indar)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 8,
@@ -392,6 +399,7 @@
    {
     "name": "Disease: Mildew (Quintec)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 8,
@@ -405,6 +413,7 @@
    {
     "name": "Irrigate: (water & labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.56,
     "labor": 28,
     "fuel": 0,
@@ -418,6 +427,7 @@
    {
     "name": "Weed: Spot Spray 2X (Roundup, 1X. Gramoxone 1X)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.66,
     "labor": 14,
     "fuel": 9,
@@ -431,6 +441,7 @@
    {
     "name": "Weed: Mow Middles 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.6,
     "labor": 33,
     "fuel": 27,
@@ -444,6 +455,7 @@
    {
     "name": "Fertilize: N (split application) (UN32)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -457,6 +469,7 @@
    {
     "name": "Disease: Mildew (Sulfur) 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 21,
     "fuel": 16,
@@ -470,6 +483,7 @@
    {
     "name": "Thin: Thin Fruit by hand",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 90,
     "labor": 987,
     "fuel": 0,
@@ -483,6 +497,7 @@
    {
     "name": "Insect: PTB, OFM (Asana, Checkmate)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 8,
@@ -496,6 +511,7 @@
    {
     "name": "Prune: Summer Prune",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 12,
     "labor": 132,
     "fuel": 0,
@@ -509,6 +525,7 @@
    {
     "name": "Insect: PTB, OFM, Mite (Intrepid, Checkmate, AgriMek)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 8,
@@ -522,6 +539,7 @@
    {
     "name": "Prop Limbs & Remove Props",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 43,
     "fuel": 5,
@@ -535,6 +553,7 @@
    {
     "name": "Fertilize: Leaf Samples (nutrition analysis)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -548,6 +567,7 @@
    {
     "name": "Disease: Shothole, PLC (Ziram)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 8,
@@ -561,6 +581,7 @@
    {
     "name": "Weed: Dormant Strip (Roundup, Matrix, Surflan)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 7,
     "fuel": 5,
@@ -574,6 +595,7 @@
    {
     "name": "Pickup: Farm Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.85,
     "labor": 59,
     "fuel": 27,
@@ -587,6 +609,7 @@
    {
     "name": "ATV: Irrigation & General Field Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.85,
     "labor": 59,
     "fuel": 8,
@@ -600,6 +623,7 @@
    {
     "name": "Bins: Field Distribution",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1,
     "labor": 21,
     "fuel": 12,
@@ -613,6 +637,7 @@
    {
     "name": "Hand Pick & Field Sort",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -626,6 +651,7 @@
    {
     "name": "Haul Fruit",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -639,6 +665,7 @@
    {
     "name": "Assessment:",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

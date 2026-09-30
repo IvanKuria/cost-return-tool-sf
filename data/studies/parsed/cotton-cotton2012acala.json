@@ -208,6 +208,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ACALA COTTON",
   "operatingTotal": {
    "value": 1152,
    "unit": "$/acre",
@@ -286,6 +287,7 @@
    {
     "name": "Rip fields 1X/3Yrs",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 9,
@@ -299,6 +301,7 @@
    {
     "name": "Disc 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.27,
     "labor": 5,
     "fuel": 14,
@@ -312,6 +315,7 @@
    {
     "name": "Apply herbicide (Roundup)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 1.69,
     "fuel": 4.23,
@@ -325,6 +329,7 @@
    {
     "name": "Spray Triflurex",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 3,
     "fuel": 9,
@@ -338,6 +343,7 @@
    {
     "name": "Incorporate Triflurex",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 7,
@@ -351,6 +357,7 @@
    {
     "name": "List beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 1,
     "fuel": 2,
@@ -364,6 +371,7 @@
    {
     "name": "Make ditch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 3,
@@ -377,6 +385,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4,
     "labor": 47,
     "fuel": 0,
@@ -390,6 +399,7 @@
    {
     "name": "Close ditch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 3,
@@ -403,6 +413,7 @@
    {
     "name": "Cultivate - Preplant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 3,
@@ -416,6 +427,7 @@
    {
     "name": "Plant & apply seed treatment (Orthene)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 5,
@@ -429,6 +441,7 @@
    {
     "name": "Uncap beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 1,
     "fuel": 3,
@@ -442,6 +455,7 @@
    {
     "name": "Fertilize - Sidedress (UN32)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.14,
     "labor": 2,
     "fuel": 4,
@@ -455,6 +469,7 @@
    {
     "name": "Weed control - Over-the-top (Staple)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 3,
     "fuel": 6,
@@ -468,6 +483,7 @@
    {
     "name": "Cultivate - 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.21,
     "labor": 4,
     "fuel": 7,
@@ -481,6 +497,7 @@
    {
     "name": "Cultivate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 3,
@@ -494,6 +511,7 @@
    {
     "name": "Weed control - Hand hoe",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.5,
     "labor": 29,
     "fuel": 0,
@@ -507,6 +525,7 @@
    {
     "name": "Weed control - Direct/layby (Shark)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 3,
     "fuel": 6,
@@ -520,6 +539,7 @@
    {
     "name": "Insect control - Lygus (Carbine & Zephyr)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -533,6 +553,7 @@
    {
     "name": "Insect control - Lygus (Leverage)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -546,6 +567,7 @@
    {
     "name": "Apply growth regulator & KNO3",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -559,6 +581,7 @@
    {
     "name": "Fertilize - Water run (UN32)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -572,6 +595,7 @@
    {
     "name": "Insect control - Aphid whitefly (Assail)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -585,6 +609,7 @@
    {
     "name": "Defoliate cotton - 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -598,6 +623,7 @@
    {
     "name": "PCA",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -611,6 +637,7 @@
    {
     "name": "Chop stalks (post-harvest)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 5,
@@ -624,6 +651,7 @@
    {
     "name": "Disc residue - 2X (post-harvest)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.24,
     "labor": 4,
     "fuel": 18,
@@ -637,6 +665,7 @@
    {
     "name": "Pickup truck use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.44,
     "labor": 8,
     "fuel": 4,
@@ -650,6 +679,7 @@
    {
     "name": "Harvest",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.3,
     "labor": 5,
     "fuel": 58,
@@ -663,6 +693,7 @@
    {
     "name": "Boll buggy",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.08,
     "labor": 1,
     "fuel": 4,
@@ -676,6 +707,7 @@
    {
     "name": "Build module (tractor #1)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 5,
@@ -689,6 +721,7 @@
    {
     "name": "Build module (machines #1 and #2)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.3,
     "labor": 9,
     "fuel": 5,
@@ -702,6 +735,7 @@
    {
     "name": "Build module (tractor #2)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 4,
@@ -715,6 +749,7 @@
    {
     "name": "Assessments",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

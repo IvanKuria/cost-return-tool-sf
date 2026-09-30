@@ -84,6 +84,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE AVOCADOS",
   "operatingTotal": {
    "value": 11920,
    "unit": "$/acre",
@@ -174,6 +175,7 @@
    {
     "name": "Erosion Control",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 58,
     "fuel": 0,
@@ -187,6 +189,7 @@
    {
     "name": "Weed Control - Glyphosate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 87,
     "fuel": 0,
@@ -200,6 +203,7 @@
    {
     "name": "Weed Control - Weed Whipping",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 39,
     "fuel": 0,
@@ -213,6 +217,7 @@
    {
     "name": "Rodent Control - Gophers",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 39,
     "fuel": 0,
@@ -226,6 +231,7 @@
    {
     "name": "Rodent Control - Squirrels",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 29,
     "fuel": 0,
@@ -239,6 +245,7 @@
    {
     "name": "Fertilizer - CAN17%",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -252,6 +259,7 @@
    {
     "name": "Fertilizer - 15-5-5",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -265,6 +273,7 @@
    {
     "name": "Fertilizer - Zinc Sulfate 12%",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -278,6 +287,7 @@
    {
     "name": "Disease - Root Rot",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -291,6 +301,7 @@
    {
     "name": "Irrigation & Walk Lines",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 251,
     "fuel": 0,
@@ -304,6 +315,7 @@
    {
     "name": "Fertilizer - 21-7-14",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -317,6 +329,7 @@
    {
     "name": "Pest Control Advisor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -330,6 +343,7 @@
    {
     "name": "Insects - Abamectin/NR-415 Oil",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -343,6 +357,7 @@
    {
     "name": "Prune - Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 936,
     "fuel": 0,
@@ -356,6 +371,7 @@
    {
     "name": "Road Repairs",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -369,6 +385,7 @@
    {
     "name": "Clearing Isles - Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 308,
     "fuel": 0,
@@ -382,6 +399,7 @@
    {
     "name": "Pickup Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.67,
     "labor": 53,
     "fuel": 9,
@@ -395,6 +413,7 @@
    {
     "name": "ATV",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 64,
     "fuel": 10,
@@ -408,6 +427,7 @@
    {
     "name": "Picking",
     "category": "harvest",
+    "section": "Harvesting and Marketing Costs",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -421,6 +441,7 @@
    {
     "name": "Hauling",
     "category": "harvest",
+    "section": "Harvesting and Marketing Costs",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -434,6 +455,7 @@
    {
     "name": "CAC Assessment Fee",
     "category": "harvest",
+    "section": "Harvesting and Marketing Costs",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -701,6 +723,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AVOCADOS"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

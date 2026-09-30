@@ -97,6 +97,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE BABY LIMA BEANS",
   "operatingTotal": {
    "value": 1317.17,
    "unit": "$/acre",

@@ -46,11 +46,13 @@ export type OperationCategory = 'cultural' | 'harvest' | 'assessment' | 'posthar
 
 export interface OperationRow {
   name: string; category: OperationCategory;
+  section?: string;           // the section heading as printed above the row
   timeHrsPerAcre: number | null; labor: number | null; fuel: number | null; lubeRepairs: number | null;
   materials: number | null; customRent: number | null; totalCost: number | null; page: number; quote: string;
 }
 
 export interface CostsPerAcre {
+  title?: string | null;      // the production costs table heading as printed
   operatingTotal: Cited | null;
   cashOverheadTotal: Cited | null;
   nonCashOverheadTotal: Cited | null;
@@ -103,7 +105,12 @@ export interface MonthlyCosts {
 
 export interface EstablishmentYear { year: number; label: string; totalCost: number | null; returns: number | null; netCost: number | null; accumulated: number | null; page: number; quote: string }
 /** How a perennial study turns its establishment years into a yearly charge during production. Only what the study prints. */
+export type EstablishmentRowKind = 'operation' | 'subtotal' | 'total' | 'overheadItem' | 'interest' | 'income' | 'net' | 'accumulated' | 'heading';
+export interface EstablishmentTableRow { label: string; kind: EstablishmentRowKind; section: string; values: (number | null)[]; page: number; quote: string }
+/** The establishment table row by row, in the study's order and wording, one value per year column. Blanks are null. */
+export interface EstablishmentTable { title: string; years: string[]; rows: EstablishmentTableRow[]; yieldRow: { label: string; values: (number | null)[]; quote: string } | null }
 export interface Establishment {
+  table?: EstablishmentTable | null;
   years: EstablishmentYear[];
   accumulatedNetCost: { value: number; page: number; quote: string } | null;
   annualCharge: { value: number; page: number; quote: string } | null;

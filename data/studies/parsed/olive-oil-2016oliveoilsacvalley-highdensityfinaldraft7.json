@@ -84,6 +84,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE SUPER-HIGH DENSITY OLIVES FOR OLIVE OIL",
   "operatingTotal": {
    "value": 1115,
    "unit": "$/acre",
@@ -168,6 +169,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 13,
     "fuel": 0,
@@ -181,6 +183,7 @@
    {
     "name": "Fertigate- UAN 32",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 8,
     "fuel": 0,
@@ -194,6 +197,7 @@
    {
     "name": "Fertigate- KCL",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 8,
     "fuel": 0,
@@ -207,6 +211,7 @@
    {
     "name": "Pruning- Mechanical Hedging",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -220,6 +225,7 @@
    {
     "name": "Pests- Weeds/Mow Middles 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 8,
     "fuel": 4,
@@ -233,6 +239,7 @@
    {
     "name": "Pests- Disease/Olive Knot",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.35,
     "labor": 8,
     "fuel": 4,
@@ -246,6 +253,7 @@
    {
     "name": "Pests- Weeds/Strip Spray 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.43,
     "labor": 10,
     "fuel": 5,
@@ -259,6 +267,7 @@
    {
     "name": "Pruning- Mechanical Skirting",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -272,6 +281,7 @@
    {
     "name": "Leaf Tissue Analysis (1/50 acres)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -285,6 +295,7 @@
    {
     "name": "Pruning- Mechanical Topping",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -298,6 +309,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.59,
     "labor": 59,
     "fuel": 12,
@@ -311,6 +323,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.59,
     "labor": 59,
     "fuel": 5,
@@ -324,6 +337,7 @@
    {
     "name": "Harvest",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -337,6 +351,7 @@
    {
     "name": "Haul Fruit to Processor",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -350,6 +365,7 @@
    {
     "name": "Pests- Disease/Olive Knot",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.35,
     "labor": 8,
     "fuel": 4,
@@ -363,6 +379,7 @@
    {
     "name": "Pests- Weeds/Pre-emergent",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.22,
     "labor": 5,
     "fuel": 2,
@@ -739,6 +756,7 @@
   "quote": "MONTHLY CASH COSTS – SUPER-HIGH DENSITY OLIVES"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

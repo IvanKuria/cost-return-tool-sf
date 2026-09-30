@@ -84,6 +84,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE FIGS",
   "operatingTotal": {
    "value": 1346,
    "unit": "$/acre",
@@ -153,6 +154,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 9.6,
     "labor": 134,
     "fuel": 0,
@@ -166,6 +168,7 @@
    {
     "name": "Prune & Train",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 14,
     "labor": 196,
     "fuel": 0,
@@ -179,6 +182,7 @@
    {
     "name": "Mow Tree Row Centers - 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.18,
     "labor": 23,
     "fuel": 21,
@@ -192,6 +196,7 @@
    {
     "name": "Fertilize - Nitrogen",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 3,
     "fuel": 1,
@@ -205,6 +210,7 @@
    {
     "name": "Smooth & Level Orchard Floor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.19,
     "labor": 4,
     "fuel": 2,
@@ -218,6 +224,7 @@
    {
     "name": "Hand Hoe & Remove Suckers",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 28,
     "fuel": 0,
@@ -231,6 +238,7 @@
    {
     "name": "Weed Control - Spot Spray - 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 0,
@@ -244,6 +252,7 @@
    {
     "name": "Pest Control - Rodents",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -257,6 +266,7 @@
    {
     "name": "Caprification",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -270,6 +280,7 @@
    {
     "name": "Weed Control - Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.09,
     "labor": 2,
     "fuel": 0,
@@ -283,6 +294,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.57,
     "labor": 11,
     "fuel": 4,
@@ -296,6 +308,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.44,
     "labor": 9,
     "fuel": 1,
@@ -309,6 +322,7 @@
    {
     "name": "Hand Knock Trees - 6X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1,
     "labor": 14,
     "fuel": 0,
@@ -322,6 +336,7 @@
    {
     "name": "Windrow Fruit - 6X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.38,
     "labor": 31,
     "fuel": 5,
@@ -335,6 +350,7 @@
    {
     "name": "Pickup Fruit - 6X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.4,
     "labor": 54,
     "fuel": 61,
@@ -348,6 +364,7 @@
    {
     "name": "Haul To Shed - 6X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -361,6 +378,7 @@
    {
     "name": "Sort Figs - 6X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -374,6 +392,7 @@
    {
     "name": "Marketing Order",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -387,6 +406,7 @@
    {
     "name": "Research & Administration",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1243,6 +1263,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE FIGS"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

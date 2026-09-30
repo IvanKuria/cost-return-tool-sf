@@ -112,6 +112,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE AND HARVEST APPLES FOR PROCESSING",
   "operatingTotal": {
    "value": 6021,
    "unit": "$/acre",
@@ -208,6 +209,7 @@
    {
     "name": "Orchard Pruning",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 59,
     "labor": 1397,
     "fuel": 0,
@@ -221,6 +223,7 @@
    {
     "name": "Shred/Mow Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 12,
     "fuel": 5,
@@ -234,6 +237,7 @@
    {
     "name": "Disc Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.26,
     "labor": 9,
     "fuel": 3,
@@ -247,6 +251,7 @@
    {
     "name": "Disease/Insect Management-Winter",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 16,
     "fuel": 6,
@@ -260,6 +265,7 @@
    {
     "name": "Disease/Insect Management-Green Tip",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 16,
     "fuel": 6,
@@ -273,6 +279,7 @@
    {
     "name": "Herbicide Application 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.51,
     "labor": 18,
     "fuel": 7,
@@ -286,6 +293,7 @@
    {
     "name": "Vertebrate Pest Management 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 36,
     "fuel": 13,
@@ -299,6 +307,7 @@
    {
     "name": "Pollination (1 Hive per Acre)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -312,6 +321,7 @@
    {
     "name": "Disc/Smooth Orchard Floor 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.03,
     "labor": 37,
     "fuel": 14,
@@ -325,6 +335,7 @@
    {
     "name": "Fertilizer Application 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.53,
     "labor": 19,
     "fuel": 7,
@@ -338,6 +349,7 @@
    {
     "name": "Disease/Insect Management-Pink Bud",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 16,
     "fuel": 6,
@@ -351,6 +363,7 @@
    {
     "name": "Pheromone Application 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5,
     "labor": 118,
     "fuel": 0,
@@ -364,6 +377,7 @@
    {
     "name": "Disease/Insect/Fertilizer-Post Bloom",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 16,
     "fuel": 6,
@@ -377,6 +391,7 @@
    {
     "name": "Snail Bait Application",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.26,
     "labor": 9,
     "fuel": 3,
@@ -390,6 +405,7 @@
    {
     "name": "Thin Apples",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 11,
     "labor": 260,
     "fuel": 0,
@@ -403,6 +419,7 @@
    {
     "name": "Prop/Tie Tree Branches",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 6,
     "labor": 142,
     "fuel": 0,
@@ -416,6 +433,7 @@
    {
     "name": "Soil & Leaf Samples",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -429,6 +447,7 @@
    {
     "name": "Irrigate 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 47,
     "fuel": 0,
@@ -442,6 +461,7 @@
    {
     "name": "Insect Management",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 16,
     "fuel": 6,
@@ -455,6 +475,7 @@
    {
     "name": "Pickup Truck 3/4 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.53,
     "labor": 19,
     "fuel": 6,
@@ -468,6 +489,7 @@
    {
     "name": "Harvest Apples",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -481,6 +503,7 @@
    {
     "name": "Load Apples",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1.1,
     "labor": 39,
     "fuel": 14,
@@ -494,6 +517,7 @@
    {
     "name": "Haul Apples",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.5,
     "labor": 18,
     "fuel": 15,
@@ -507,6 +531,7 @@
    {
     "name": "Orchard Clean Up",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 1.75,
     "labor": 41,
     "fuel": 0,
@@ -520,6 +545,7 @@
    {
     "name": "Herbicide Application",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.25,
     "labor": 9,
     "fuel": 3,
@@ -533,6 +559,7 @@
    {
     "name": "Disc/Smooth Orchard Floor",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.26,
     "labor": 9,
     "fuel": 3,
@@ -546,6 +573,7 @@
    {
     "name": "Irrigation System Maintenance",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 1.5,
     "labor": 36,
     "fuel": 0,
@@ -1151,6 +1179,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AND HARVEST APPLES FOR PROCESSING"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 30000,

@@ -191,6 +191,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE LEMONS",
   "operatingTotal": {
    "value": 10588,
    "unit": "$/acre",
@@ -264,6 +265,7 @@
    {
     "name": "Frost Protection (water & wind machine)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.1,
     "labor": 23,
     "fuel": 0,
@@ -277,6 +279,7 @@
    {
     "name": "Fertilize: N (through drip line)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.1,
     "labor": 12,
     "fuel": 0,
@@ -290,6 +293,7 @@
    {
     "name": "Weed: Orchard Floor (Princep, Karmex) 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 9,
     "fuel": 1,
@@ -303,6 +307,7 @@
    {
     "name": "Fertilize: Foliar (N Mn Zn)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -316,6 +321,7 @@
    {
     "name": "Prune: Top Trees, Stack & Shred Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -329,6 +335,7 @@
    {
     "name": "Prune: Hedge , Stack & Shred Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -342,6 +349,7 @@
    {
     "name": "Prune: Hand Prune & Stack, Shred Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -355,6 +363,7 @@
    {
     "name": "Irrigate: (water & labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5.65,
     "labor": 62,
     "fuel": 0,
@@ -368,6 +377,7 @@
    {
     "name": "Soil Amendment:(Soluble Gypsum) w/irrigation",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.75,
     "labor": 19,
     "fuel": 0,
@@ -381,6 +391,7 @@
    {
     "name": "Weed: Spot Spray (Roundup) 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 13,
     "fuel": 1,
@@ -394,6 +405,7 @@
    {
     "name": "Fertilizer: Foliar N. Insect: Katydid (Success, Oil)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -407,6 +419,7 @@
    {
     "name": "Insect: Scale (Esteem)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -420,6 +433,7 @@
    {
     "name": "Fertilize: Leaf Analysis (1 sample/10 acres)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 0,
     "fuel": 0,
@@ -433,6 +447,7 @@
    {
     "name": "Disease: Brown Rot (Lime, Kocide)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -446,6 +461,7 @@
    {
     "name": "Growth Regulator: (GibGro or GA)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -459,6 +475,7 @@
    {
     "name": "Growth Regulator: (Citrus Fix)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -472,6 +489,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.33,
     "labor": 58,
     "fuel": 33,
@@ -485,6 +503,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.33,
     "labor": 58,
     "fuel": 4,
@@ -498,6 +517,7 @@
    {
     "name": "PCA/Consultant Services",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -511,6 +531,7 @@
    {
     "name": "Pick & Haul Fruit",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -524,6 +545,7 @@
    {
     "name": "Pack Fruit",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -537,6 +559,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -843,6 +866,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE LEMONS"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": null,
   "annualCharge": {

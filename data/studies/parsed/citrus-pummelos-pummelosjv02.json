@@ -214,6 +214,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE PUMMELOS",
   "operatingTotal": {
    "value": 4039,
    "unit": "$/acre",
@@ -287,6 +288,7 @@
    {
     "name": "Frost Protection",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.19,
     "labor": 20,
     "fuel": 0,
@@ -300,6 +302,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5.44,
     "labor": 49,
     "fuel": 0,
@@ -313,6 +316,7 @@
    {
     "name": "Weed - Pre-emergent",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 6,
     "fuel": 2,
@@ -326,6 +330,7 @@
    {
     "name": "Weed - Spot Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 24,
     "fuel": 2,
@@ -339,6 +344,7 @@
    {
     "name": "Top Trees",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -352,6 +358,7 @@
    {
     "name": "Hedge Trees Each Side 1X/2 Yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -365,6 +372,7 @@
    {
     "name": "Prune - Hand 1X/3 Yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -378,6 +386,7 @@
    {
     "name": "Shred Brush",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -391,6 +400,7 @@
    {
     "name": "Fertilize - Nitrogen",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.3,
     "labor": 3,
     "fuel": 0,
@@ -404,6 +414,7 @@
    {
     "name": "Pest/Fertilizer:Worm/N Mn Zn",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -417,6 +428,7 @@
    {
     "name": "Pest/Fertilizer:Thrips Katydid/N",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -430,6 +442,7 @@
    {
     "name": "Pest - Thrips Katydid",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -443,6 +456,7 @@
    {
     "name": "Pest - Scale",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -456,6 +470,7 @@
    {
     "name": "Pest - Brown Rot",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -469,6 +484,7 @@
    {
     "name": "Leaf Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 0,
     "fuel": 0,
@@ -482,6 +498,7 @@
    {
     "name": "Soil Amendment:Gypsum",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -495,6 +512,7 @@
    {
     "name": "Soil Ammendments: Compost",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -508,6 +526,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.33,
     "labor": 45,
     "fuel": 19,
@@ -521,6 +540,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.33,
     "labor": 45,
     "fuel": 4,
@@ -534,6 +554,7 @@
    {
     "name": "PCA/Consultant Services",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -547,6 +568,7 @@
    {
     "name": "Pick & Haul Fruit",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -560,6 +582,7 @@
    {
     "name": "Pack & Assessment",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -573,6 +596,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -876,6 +900,215 @@
   "quote": "MONTHLY CASH COSTS - PUMMELOS"
  },
  "establishment": {
+  "table": {
+   "title": "SAMPLE COSTS PER ACRE TO ESTABLISH A PUMMELO ORCHARD",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th"
+   ],
+   "rows": [
+    {
+     "label": "Non-Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Non-Cash Overhead Costs:"
+    },
+    {
+     "label": "Buildings",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      61,
+      61,
+      61,
+      61,
+      61
+     ],
+     "page": 13,
+     "quote": "Buildings 61 61 61 61 61"
+    },
+    {
+     "label": "Drip Irrigation System",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      84,
+      84,
+      84,
+      84,
+      84
+     ],
+     "page": 13,
+     "quote": "Drip Irrigation System 84 84 84 84 84"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      22,
+      22,
+      22,
+      22,
+      22
+     ],
+     "page": 13,
+     "quote": "Shop Tools 22 22 22 22 22"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      385,
+      385,
+      385,
+      385,
+      385
+     ],
+     "page": 13,
+     "quote": "Land 385 385 385 385 385"
+    },
+    {
+     "label": "Fuel Tanks & Pumps",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     "page": 13,
+     "quote": "Fuel Tanks & Pumps 4 4 4 4 4"
+    },
+    {
+     "label": "Wind Machine",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      148,
+      148,
+      148
+     ],
+     "page": 13,
+     "quote": "Wind Machine 148 148 148"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      36,
+      33,
+      33,
+      32,
+      32
+     ],
+     "page": 13,
+     "quote": "Equipment 36 33 33 32 32"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      592,
+      587,
+      737,
+      736,
+      736
+     ],
+     "page": 13,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 592 587 737 736 736"
+    },
+    {
+     "label": "TOTAL COST FOR THE YEAR",
+     "kind": "subtotal",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      2894,
+      1229,
+      2068,
+      2860,
+      3174
+     ],
+     "page": 13,
+     "quote": "TOTAL COST FOR THE YEAR 2,894 1,229 2,068 2,860 3,174"
+    },
+    {
+     "label": "INCOME FROM PRODUCTION",
+     "kind": "income",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      665,
+      1800,
+      2250
+     ],
+     "page": 13,
+     "quote": "INCOME FROM PRODUCTION 665 1,800 2,250"
+    },
+    {
+     "label": "NET TOTAL COST FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      2894,
+      1229,
+      1403,
+      1060,
+      924
+     ],
+     "page": 13,
+     "quote": "NET TOTAL COST FOR THE YEAR 2,894 1,229 1,403 1,060 924"
+    },
+    {
+     "label": "NET PROFIT FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "NET PROFIT FOR THE YEAR"
+    },
+    {
+     "label": "ACCUMULATED NET TOTAL COST",
+     "kind": "accumulated",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      2894,
+      4123,
+      5526,
+      6586,
+      7510
+     ],
+     "page": 13,
+     "quote": "ACCUMULATED NET TOTAL COST 2,894 4,123 5,526 6,586 7,510"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [],
   "accumulatedNetCost": {
    "value": 3325,
@@ -945,7 +1178,12 @@
   ],
   "warnings": [
    "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "establishment table: TOTAL COST FOR THE YEAR column 1st prints 2894 but its rows sum to 592",
+   "establishment table: TOTAL COST FOR THE YEAR column 2nd prints 1229 but its rows sum to 589",
+   "establishment table: TOTAL COST FOR THE YEAR column 3rd prints 2068 but its rows sum to 737",
+   "establishment table: TOTAL COST FOR THE YEAR column 4th prints 2860 but its rows sum to 736",
+   "establishment table: TOTAL COST FOR THE YEAR column 5th prints 3174 but its rows sum to 736"
   ]
  }
 }

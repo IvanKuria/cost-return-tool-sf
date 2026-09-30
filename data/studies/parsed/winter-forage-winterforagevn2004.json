@@ -102,6 +102,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE to PRODUCE WINTER FORAGE",
   "operatingTotal": {
    "value": 351,
    "unit": "$/acre",
@@ -149,6 +150,7 @@
    {
     "name": "Fertilize: Manure",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -162,6 +164,7 @@
    {
     "name": "Land Prep: Disk 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.22,
     "labor": 3,
     "fuel": 7,
@@ -175,6 +178,7 @@
    {
     "name": "Land Prep: Make Borders",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 1,
@@ -188,6 +192,7 @@
    {
     "name": "Irrigate: Pre-Irrigation",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 1,
     "fuel": 0,
@@ -201,6 +206,7 @@
    {
     "name": "Plant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -214,6 +220,7 @@
    {
     "name": "Fertilize: N Topdress (Urea)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -227,6 +234,7 @@
    {
     "name": "Weed: Post-Emergent (Buctril)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -240,6 +248,7 @@
    {
     "name": "Irrigate 1X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 1,
     "fuel": 0,
@@ -253,6 +262,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.24,
     "labor": 4,
     "fuel": 2,
@@ -266,6 +276,7 @@
    {
     "name": "Harvest: Swath, Chop, Pack, Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

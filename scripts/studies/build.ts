@@ -38,7 +38,8 @@ function main() {
   }
 
   // The parse report (found/missing lists and warnings) stays in data/studies/parsed; the app does not read it.
-  const light = studies.map(s => ({ ...s, parse: { fieldsFound: [], fieldsMissing: [], warnings: [] } }));
+  // The row-by-row establishment table is for the lender tool, which reads the full parsed files; the farmer app bundle keeps only the year totals.
+  const light = studies.map(s => ({ ...s, parse: { fieldsFound: [], fieldsMissing: [], warnings: [] }, establishment: s.establishment ? { ...s.establishment, table: null } : s.establishment }));
   const bundle: StudiesBundle = { generatedAt: new Date().toISOString().slice(0, 10), count: studies.length, byCommodity, studies: light, equipmentSalvage, operationsIncluded: true, operationsDroppedFor: [] };
   const strip = (s: ParsedStudy): ParsedStudy => ({ ...s, costsPerAcre: { ...s.costsPerAcre, operations: [] } });
   let json = JSON.stringify(bundle);
@@ -60,7 +61,7 @@ function main() {
     id: s.source.id, commodity: s.source.commodity, title: s.source.title, year: s.source.year, priceYear: s.source.priceYear?.value ?? null,
     region: s.source.region, description: s.source.description, archived: s.source.archived, url: s.source.url, language: s.source.language,
     operatingTotal: s.costsPerAcre.operatingTotal?.value ?? null, totalCost: s.costsPerAcre.totalCost?.value ?? null,
-    operations: s.costsPerAcre.operations.length, equipment: s.equipment.length, hasMonthly: Boolean(s.monthly), hasEstablishment: Boolean(s.establishment),
+    operations: s.costsPerAcre.operations.length, equipment: s.equipment.length, hasMonthly: Boolean(s.monthly), hasEstablishment: Boolean(s.establishment), hasEstablishmentTable: Boolean(s.establishment?.table), productionTitle: s.costsPerAcre.title ?? null,
   }));
   fs.mkdirSync(path.dirname(INDEX_OUT), { recursive: true });
   fs.writeFileSync(INDEX_OUT, JSON.stringify(index));

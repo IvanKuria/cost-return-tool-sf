@@ -89,6 +89,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE PROCESSING APPLES",
   "operatingTotal": {
    "value": 3461,
    "unit": "$/acre",
@@ -179,6 +180,7 @@
    {
     "name": "Dormant Pruning",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 59,
     "labor": 762,
     "fuel": 0,
@@ -192,6 +194,7 @@
    {
     "name": "Mow Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 7,
     "fuel": 3,
@@ -205,6 +208,7 @@
    {
     "name": "Disc Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.26,
     "labor": 5,
     "fuel": 2,
@@ -218,6 +222,7 @@
    {
     "name": "Dormant Oil Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 9,
     "fuel": 4,
@@ -231,6 +236,7 @@
    {
     "name": "Strip Spray Herbicides 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.51,
     "labor": 10,
     "fuel": 5,
@@ -244,6 +250,7 @@
    {
     "name": "Delayed Dormant Spray-Green Tip",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 9,
     "fuel": 4,
@@ -257,6 +264,7 @@
    {
     "name": "Vertebrate Pest Control 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 20,
     "fuel": 9,
@@ -270,6 +278,7 @@
    {
     "name": "Bee Hives (1)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -283,6 +292,7 @@
    {
     "name": "Mow Orchard 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 20,
     "fuel": 9,
@@ -296,6 +306,7 @@
    {
     "name": "Disc/Smooth Orchard Floor 5X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.03,
     "labor": 20,
     "fuel": 10,
@@ -309,6 +320,7 @@
    {
     "name": "Fertilize-Broadcast (NH4SO4)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.53,
     "labor": 10,
     "fuel": 5,
@@ -322,6 +334,7 @@
    {
     "name": "Disease Control-Pink Bud",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 9,
     "fuel": 4,
@@ -335,6 +348,7 @@
    {
     "name": "Set Pheromone Traps 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.5,
     "labor": 32,
     "fuel": 0,
@@ -348,6 +362,7 @@
    {
     "name": "Disease/Insect/Fertilizer-Post Bloom",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 9,
     "fuel": 4,
@@ -361,6 +376,7 @@
    {
     "name": "Snail Bait Application",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.26,
     "labor": 5,
     "fuel": 2,
@@ -374,6 +390,7 @@
    {
     "name": "Thinning Fruit 50% Ac",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 11,
     "labor": 142,
     "fuel": 0,
@@ -387,6 +404,7 @@
    {
     "name": "Tie/Prop Branches 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 6,
     "labor": 78,
     "fuel": 0,
@@ -400,6 +418,7 @@
    {
     "name": "Irrigate 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 26,
     "fuel": 0,
@@ -413,6 +432,7 @@
    {
     "name": "Insect Control -Worms",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 9,
     "fuel": 4,
@@ -426,6 +446,7 @@
    {
     "name": "Sanitize Field Equipment",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.75,
     "labor": 23,
     "fuel": 0,
@@ -439,6 +460,7 @@
    {
     "name": "1/2 Ton Pickup (2)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.07,
     "labor": 21,
     "fuel": 9,
@@ -452,6 +474,7 @@
    {
     "name": "Bobtail Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 4,
@@ -465,6 +488,7 @@
    {
     "name": "Back Hoe",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 1,
@@ -478,6 +502,7 @@
    {
     "name": "Harvest- Haul Apples",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -491,6 +516,7 @@
    {
     "name": "Disc/Smooth Orchard Floor 5X",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.26,
     "labor": 5,
     "fuel": 2,
@@ -504,6 +530,7 @@
    {
     "name": "Soil Samples (Ph, Calcium)",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -517,6 +544,7 @@
    {
     "name": "Irrigation System Maintenance",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 1.5,
     "labor": 19,
     "fuel": 0,

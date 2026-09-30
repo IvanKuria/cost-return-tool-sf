@@ -69,6 +69,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "RANGE ANALYSIS: ANALYSIS OF COSTS AND RETURNS FOR PRODUCING GUAVAS",
   "operatingTotal": {
    "value": 6150,
    "unit": "$/acre",
@@ -91,6 +92,7 @@
    {
     "name": "407",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 466,
     "labor": 524,
     "fuel": 582,
@@ -104,6 +106,7 @@
    {
     "name": "Cultural Costs ($)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2849,
     "labor": 2849,
     "fuel": 2849,
@@ -117,6 +120,7 @@
    {
     "name": "Harvest Cost ($)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1670,
     "labor": 1909,
     "fuel": 2148,
@@ -261,6 +265,7 @@
  },
  "monthly": null,
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 8509,

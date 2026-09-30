@@ -102,6 +102,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS AND RETURNS PER ACRE TO PRODUCE PEARS",
   "operatingTotal": {
    "value": 6387,
    "unit": "$/acre",
@@ -985,6 +986,7 @@
   "quote": ".MONTHLY CASH COSTS PER ACRE TO PRODUCE PEARS"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 12500,

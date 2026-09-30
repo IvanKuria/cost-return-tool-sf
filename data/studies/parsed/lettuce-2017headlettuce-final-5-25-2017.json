@@ -94,6 +94,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE AND HARVEST ICEBERG LETTUCE",
   "operatingTotal": {
    "value": 9947,
    "unit": "$/acre",
@@ -181,6 +182,7 @@
    {
     "name": "Soil Samples (12 per 250 Ac)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -194,6 +196,7 @@
    {
     "name": "Disc & Roll 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.15,
     "labor": 30,
     "fuel": 40,
@@ -207,6 +210,7 @@
    {
     "name": "Sub-Soil 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.02,
     "labor": 27,
     "fuel": 36,
@@ -220,6 +224,7 @@
    {
     "name": "Land Plane (1X per 2 Crops)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 5,
     "fuel": 6,
@@ -233,6 +238,7 @@
    {
     "name": "Laser Level (1X per 2 Crops)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -246,6 +252,7 @@
    {
     "name": "Compost-Spread (1X per 2 Crops)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -259,6 +266,7 @@
    {
     "name": "Chisel 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.42,
     "labor": 37,
     "fuel": 50,
@@ -272,6 +280,7 @@
    {
     "name": "Disc & Roll 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 15,
     "fuel": 20,
@@ -285,6 +294,7 @@
    {
     "name": "List Beds 3-Row",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -298,6 +308,7 @@
    {
     "name": "Cultivate-Lilliston 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 10,
     "fuel": 8,
@@ -311,6 +322,7 @@
    {
     "name": "Power Mulch/Shape Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.48,
     "labor": 13,
     "fuel": 12,
@@ -324,6 +336,7 @@
    {
     "name": "Fertilizer (Potassium Sulfate)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -337,6 +350,7 @@
    {
     "name": "Plant/Fertilize (7-7-0-7)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.57,
     "labor": 15,
     "fuel": 15,
@@ -350,6 +364,7 @@
    {
     "name": "Herbicide Application",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -363,6 +378,7 @@
    {
     "name": "Sprinkler Setup/Irrigate 3X - Establish",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5,
     "labor": 89,
     "fuel": 0,
@@ -376,6 +392,7 @@
    {
     "name": "Cultivate 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.63,
     "labor": 17,
     "fuel": 13,
@@ -389,6 +406,7 @@
    {
     "name": "Thin Stand-Automated/Fertilize",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -402,6 +420,7 @@
    {
     "name": "Disease/Insect Management",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -415,6 +434,7 @@
    {
     "name": "Drip Setup/Irrigate - Season",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 8,
     "labor": 177,
     "fuel": 34,
@@ -428,6 +448,7 @@
    {
     "name": "Fertigate (20-0-0-5) 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -441,6 +462,7 @@
    {
     "name": "Hand Weed/Remove Doubles 1X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 9.52,
     "labor": 161,
     "fuel": 0,
@@ -454,6 +476,7 @@
    {
     "name": "PCA/CCA Fee",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -467,6 +490,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 26,
     "fuel": 7,
@@ -480,6 +504,7 @@
    {
     "name": "Harvest/Field Pack",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -493,6 +518,7 @@
    {
     "name": "Cool/Palletize",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -506,6 +532,7 @@
    {
     "name": "Marketing/Sales Fee",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

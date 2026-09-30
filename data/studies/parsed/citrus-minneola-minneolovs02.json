@@ -196,6 +196,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE MINNEOLA",
   "operatingTotal": {
    "value": 4830,
    "unit": "$/acre",
@@ -269,6 +270,7 @@
    {
     "name": "Frost Protection",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.19,
     "labor": 20,
     "fuel": 0,
@@ -282,6 +284,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5.52,
     "labor": 49,
     "fuel": 0,
@@ -295,6 +298,7 @@
    {
     "name": "Weed - Pre-emergent",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 3,
     "fuel": 1,
@@ -308,6 +312,7 @@
    {
     "name": "Weed - Spot Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 32,
     "fuel": 2,
@@ -321,6 +326,7 @@
    {
     "name": "Prune - Hand, Top, Shred",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -334,6 +340,7 @@
    {
     "name": "Fertilize - Foliar Fall: N, KNO3, Zn",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -347,6 +354,7 @@
    {
     "name": "Pest/Fertilizer: Worm/N KNO3 Mn Zn",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -360,6 +368,7 @@
    {
     "name": "Pest - Thrips Katydid",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -373,6 +382,7 @@
    {
     "name": "Pest - Scale",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -386,6 +396,7 @@
    {
     "name": "Pest - Brown Rot",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -399,6 +410,7 @@
    {
     "name": "Leaf Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 0,
     "fuel": 0,
@@ -412,6 +424,7 @@
    {
     "name": "Soil Amendment: Soluble Gypsum w/irrigation",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.05,
     "labor": 10,
     "fuel": 0,
@@ -425,6 +438,7 @@
    {
     "name": "Growth Regulators",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -438,6 +452,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.33,
     "labor": 45,
     "fuel": 19,
@@ -451,6 +466,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.33,
     "labor": 45,
     "fuel": 4,
@@ -464,6 +480,7 @@
    {
     "name": "PCA/Consultant Services",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -477,6 +494,7 @@
    {
     "name": "Pick & Haul Fruit",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -490,6 +508,7 @@
    {
     "name": "Pack & Marketing",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -503,6 +522,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -820,6 +840,7 @@
   "quote": "MONTHLY CASH COSTS - MINNEOLA"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 4530,

@@ -228,6 +228,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ALMONDS",
   "operatingTotal": {
    "value": 2151,
    "unit": "$/acre",
@@ -313,6 +314,7 @@
    {
     "name": "Pollination (2 hives)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -326,6 +328,7 @@
    {
     "name": "Disease: Brown Rot (Vangard)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 5,
@@ -339,6 +342,7 @@
    {
     "name": "Irrigate: Frost Protection",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 2,
     "fuel": 0,
@@ -352,6 +356,7 @@
    {
     "name": "Disease: Shothole/Scab/Rust (Abound). Fertilize: (Zn)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 5,
@@ -365,6 +370,7 @@
    {
     "name": "Vertebrate: Gopher & Squirrel (Bait)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.66,
     "labor": 13,
     "fuel": 3,
@@ -378,6 +384,7 @@
    {
     "name": "Fertilize: N @ 200 lb N/acre (UN32)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -391,6 +398,7 @@
    {
     "name": "Weed: Mow 6X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.16,
     "labor": 22,
     "fuel": 19,
@@ -404,6 +412,7 @@
    {
     "name": "Irrigate: (water & labor) 56X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5.04,
     "labor": 54,
     "fuel": 0,
@@ -417,6 +426,7 @@
    {
     "name": "Disease: Shothole/Scab/Anthracnose (Bravo).",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 5,
@@ -430,6 +440,7 @@
    {
     "name": "Weed: Strip Spray (Rely)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.23,
     "labor": 4,
     "fuel": 3,
@@ -443,6 +454,7 @@
    {
     "name": "Insect: Mites (AgriMek)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 5,
@@ -456,6 +468,7 @@
    {
     "name": "Fertilize: Leaf Samples (collect & analysis) NPK",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 0,
@@ -469,6 +482,7 @@
    {
     "name": "Insect: NOW (Intrepid)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 5,
@@ -482,6 +496,7 @@
    {
     "name": "Insect: Ants (Clinch)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 0,
@@ -495,6 +510,7 @@
    {
     "name": "Weed: Preharvest Spray Orchard Floor (Roundup, Goal)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.23,
     "labor": 4,
     "fuel": 3,
@@ -508,6 +524,7 @@
    {
     "name": "Fertilize: Hull Samples (collect & analysis) B",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.03,
     "labor": 1,
     "fuel": 0,
@@ -521,6 +538,7 @@
    {
     "name": "Fertilize: Foliar Spray (Solubor) B",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 5,
@@ -534,6 +552,7 @@
    {
     "name": "Fertilize: Potassium Sulfate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 1,
     "fuel": 1,
@@ -547,6 +566,7 @@
    {
     "name": "Weed: Winter Strip (Roundup, Matrix)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.23,
     "labor": 4,
     "fuel": 3,
@@ -560,6 +580,7 @@
    {
     "name": "Prune: Hand (maintenance pruning)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 13,
     "labor": 138,
     "fuel": 0,
@@ -573,6 +594,7 @@
    {
     "name": "Prune: Stack Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 16,
     "fuel": 0,
@@ -586,6 +608,7 @@
    {
     "name": "Prune: Shred Prunings (brush)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -599,6 +622,7 @@
    {
     "name": "Winter Sanitation: Shake Mummies, Rake, Sweep, Shred",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.09,
     "labor": 4,
     "fuel": 1,
@@ -612,6 +636,7 @@
    {
     "name": "Pickup Truck Ranch Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.33,
     "labor": 64,
     "fuel": 37,
@@ -625,6 +650,7 @@
    {
     "name": "ATV: General Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 19,
     "fuel": 4,
@@ -638,6 +664,7 @@
    {
     "name": "Shake",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -651,6 +678,7 @@
    {
     "name": "Sweep",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -664,6 +692,7 @@
    {
     "name": "Hand Rake Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.25,
     "labor": 3,
     "fuel": 0,
@@ -677,6 +706,7 @@
    {
     "name": "Pickup and Haul Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -690,6 +720,7 @@
    {
     "name": "Hull and Shell Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1123,6 +1154,7 @@
   "quote": "MONTHLY PER ACRE CASH COSTS - ALMONDS"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

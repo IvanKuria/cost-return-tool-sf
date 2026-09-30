@@ -102,6 +102,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE PEARS",
   "operatingTotal": {
    "value": 5250,
    "unit": "$/acre",
@@ -204,6 +205,7 @@
    {
     "name": "Weed: Fall Strip Spray (Goal, Karmex, Roundup)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 7,
     "fuel": 2,
@@ -217,6 +219,7 @@
    {
     "name": "Insect: Dormant-Mites, Psylla (Oil)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 9,
     "fuel": 8,
@@ -230,6 +233,7 @@
    {
     "name": "Prune: (labor, crewboss)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -243,6 +247,7 @@
    {
     "name": "Weed: Mow Middles. Prune: Shred Prunings (Feb)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 14,
     "fuel": 12,
@@ -256,6 +261,7 @@
    {
     "name": "Weed: Spray Middles (Roundup)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.8,
     "labor": 15,
     "fuel": 4,
@@ -269,6 +275,7 @@
    {
     "name": "Insect: Psylla @ Cluster Bud (Asana)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -282,6 +289,7 @@
    {
     "name": "Plant: Replant (1 tree per acre)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.26,
     "labor": 3,
     "fuel": 0,
@@ -295,6 +303,7 @@
    {
     "name": "Disease: Blight (Agrimycin, Blight Ban). Scab (Dithane)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 9,
     "fuel": 8,
@@ -308,6 +317,7 @@
    {
     "name": "Disease: Blight (Mycoshield)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 18,
     "fuel": 15,
@@ -321,6 +331,7 @@
    {
     "name": "Irrigate: (water, labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5.5,
     "labor": 68,
     "fuel": 0,
@@ -334,6 +345,7 @@
    {
     "name": "Weed: Spray Tree Row (Roundup, Shark)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.8,
     "labor": 15,
     "fuel": 4,
@@ -347,6 +359,7 @@
    {
     "name": "Disease: Blight (Agrimycin, Blight Ban)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 3,
@@ -360,6 +373,7 @@
    {
     "name": "Disease: Scab (Sovran)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -373,6 +387,7 @@
    {
     "name": "Disease: Blight (Agrimycin)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -386,6 +401,7 @@
    {
     "name": "Rodent: Voles, Gophers (Bait)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 1,
@@ -399,6 +415,7 @@
    {
     "name": "Disease: Blight (cut out by hand)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -412,6 +429,7 @@
    {
     "name": "Insect: Codling Moth (Isomate, Traps, PCA monitoring)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4.25,
     "labor": 15,
     "fuel": 0,
@@ -425,6 +443,7 @@
    {
     "name": "Insect: Psylla, Mites (AgriMek, Oil)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -438,6 +457,7 @@
    {
     "name": "Insect: Codling Moth (Delegate)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -451,6 +471,7 @@
    {
     "name": "Fertilize: Calcium Nitrate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
@@ -464,6 +485,7 @@
    {
     "name": "Growth Regulator: (Liqui-Stik)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -477,6 +499,7 @@
    {
     "name": "Fertilize: Leaf Sampling & Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
@@ -490,6 +513,7 @@
    {
     "name": "Fertilize: Potash",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
@@ -503,6 +527,7 @@
    {
     "name": "Fertilize: Urea",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
@@ -516,6 +541,7 @@
    {
     "name": "Insect: Psylla, Mites (Sevin, Oil, Klean Aide) \"Cleanup Spray\"",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -529,6 +555,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 61,
     "fuel": 33,
@@ -542,6 +569,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.57,
     "labor": 10,
     "fuel": 1,
@@ -555,6 +583,7 @@
    {
     "name": "Miscellaneous Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 12,
     "fuel": 0,
@@ -568,6 +597,7 @@
    {
     "name": "Pick Fruit 2X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 10,
     "labor": 173,
     "fuel": 15,
@@ -581,6 +611,7 @@
    {
     "name": "Haul Fruit To Shed (Fresh Only)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -594,6 +625,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1395,6 +1427,7 @@
   "quote": ".MONTHLY CASH COSTS PER ACRE TO PRODUCE PEARS"
  },
  "establishment": {
+  "table": null,
   "years": [],
   "accumulatedNetCost": {
    "value": 9500,

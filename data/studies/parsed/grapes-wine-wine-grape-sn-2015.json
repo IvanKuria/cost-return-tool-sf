@@ -79,6 +79,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS AND RETURNS PER ACRE TO PRODUCE WINE GRAPES",
   "operatingTotal": {
    "value": 4491,
    "unit": "$/acre",
@@ -313,6 +314,7 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE WINE GRAPES"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

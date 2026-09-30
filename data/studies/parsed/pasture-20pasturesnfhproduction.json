@@ -81,6 +81,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE PASTURE 40 AC",
   "operatingTotal": {
    "value": 639,
    "unit": "$/acre",
@@ -136,6 +137,7 @@
    {
     "name": "Weeds: Spot Spray 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -149,6 +151,7 @@
    {
     "name": "Fertilizer: 21-0-0-24% Sulfur (50%)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -162,6 +165,7 @@
    {
     "name": "Irrigate: Flood 7x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -175,6 +179,7 @@
    {
     "name": "Fencing: Setup/Moving",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -188,6 +193,7 @@
    {
     "name": "Weeds: Rotary Wiper",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -201,6 +207,7 @@
    {
     "name": "Harvest: Hay 40 Acres",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -214,6 +221,7 @@
    {
     "name": "Graze: 40 Acres 5x",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

@@ -82,6 +82,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE CHANDLER WALNUTS",
   "operatingTotal": {
    "value": 1924,
    "unit": "$/acre",
@@ -161,6 +162,7 @@
    {
     "name": "Weed: Dormant strip (Roundup, Goal)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 4,
     "fuel": 2,
@@ -174,6 +176,7 @@
    {
     "name": "Prune: Dormant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 6,
     "labor": 82,
     "fuel": 0,
@@ -187,6 +190,7 @@
    {
     "name": "Prune: Push & burn prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.42,
     "labor": 16,
     "fuel": 4,
@@ -200,6 +204,7 @@
    {
     "name": "Rodent: Squirrel (bait)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.53,
     "labor": 13,
     "fuel": 1,
@@ -213,6 +218,7 @@
    {
     "name": "Rodent: Gopher (trap)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.1,
     "labor": 51,
     "fuel": 5,
@@ -226,6 +232,7 @@
    {
     "name": "Weed: Mow middles 5X (2 passes/middle)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.92,
     "labor": 22,
     "fuel": 9,
@@ -239,6 +246,7 @@
    {
     "name": "Disease: Walnut blight (Badge X2)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 5,
     "fuel": 2,
@@ -252,6 +260,7 @@
    {
     "name": "Fertilize: Nitrogen (UN32)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 1,
@@ -265,6 +274,7 @@
    {
     "name": "Insect: Walnut husk fly (Traps)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -278,6 +288,7 @@
    {
     "name": "Irrigate: Water & labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.6,
     "labor": 49,
     "fuel": 0,
@@ -291,6 +302,7 @@
    {
     "name": "Insect: Walnut husk fly (Success, NuLure)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.05,
     "labor": 26,
     "fuel": 3,
@@ -304,6 +316,7 @@
    {
     "name": "Weed: In-season spray (Roundup)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.18,
     "labor": 4,
     "fuel": 2,
@@ -317,6 +330,7 @@
    {
     "name": "Fertilize: Leaf analysis 1X/3 years",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 0,
@@ -330,6 +344,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3,
     "labor": 73,
     "fuel": 7,
@@ -343,6 +358,7 @@
    {
     "name": "Pickup Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4.39,
     "labor": 107,
     "fuel": 42,
@@ -356,6 +372,7 @@
    {
     "name": "Harvest: Shake, pickup and hand rake (custom)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -369,6 +386,7 @@
    {
     "name": "Harvest: Haul (custom)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -382,6 +400,7 @@
    {
     "name": "Harvest: Hull, dry (custom)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -395,6 +414,7 @@
    {
     "name": "CWC Assessment fee",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -798,6 +818,1072 @@
  },
  "monthly": null,
  "establishment": {
+  "table": {
+   "title": "SAMPLE COSTS PER ACRE TO ESTABLISH A CHANDLER WALNUT ORCHARD",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th",
+    "6th",
+    "7th",
+    "8th"
+   ],
+   "rows": [
+    {
+     "label": "Planting Costs",
+     "kind": "heading",
+     "section": "Planting Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Planting Costs:"
+    },
+    {
+     "label": "Land preparation: Rip 2X",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      175,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Land preparation: Rip 2X 175"
+    },
+    {
+     "label": "Land preparation: Disc 2X",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      30,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Land preparation: Disc 2X 30"
+    },
+    {
+     "label": "Land preparation: Float 2X",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      22,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Land preparation: Float 2X 22"
+    },
+    {
+     "label": "Survey, mark, dig holes & plant",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      192,
+      7,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Survey, mark, dig holes & plant 192 7"
+    },
+    {
+     "label": "Trees: 65 per acre @ $16.35 ea., (replant 5% in 2nd year)",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      1063,
+      49,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Trees: 65 per acre @ $16.35 ea., (replant 5% in 2nd year) 1,063 49"
+    },
+    {
+     "label": "Stake & paint trees",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      331,
+      9,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Stake & paint trees 331 9"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Planting Costs",
+     "values": [
+      1813,
+      65,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "TOTAL PLANTING COSTS 1,813 65"
+    },
+    {
+     "label": "Cultural Costs",
+     "kind": "heading",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Cultural Costs:"
+    },
+    {
+     "label": "Pruning, training & tying 3X (Grower)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      9,
+      27,
+      41,
+      48,
+      48,
+      48,
+      54,
+      68
+     ],
+     "page": 11,
+     "quote": "Pruning, training & tying 3X (Grower) 9 27 41 48 48 48 54 68"
+    },
+    {
+     "label": "Prune: Brush disposal (push & burn)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      17,
+      21,
+      21,
+      21
+     ],
+     "page": 11,
+     "quote": "Prune: Brush disposal (push & burn) 17 21 21 21"
+    },
+    {
+     "label": "Rodent: Squirrel (bait)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74
+     ],
+     "page": 11,
+     "quote": "Rodent: Squirrel (bait) 74 74 74 74 74 74"
+    },
+    {
+     "label": "Rodent: Gopher (trap)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      65
+     ],
+     "page": 11,
+     "quote": "Rodent: Gopher (trap) 66 66 66 66 66 66 66 65"
+    },
+    {
+     "label": "Fertilizer: Nitrogen (UN32)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      20,
+      20,
+      20,
+      20,
+      25,
+      31,
+      41
+     ],
+     "page": 11,
+     "quote": "Fertilizer: Nitrogen (UN32) 20 20 20 20 25 31 41"
+    },
+    {
+     "label": "Weed: Winter strip spray (Roundup, Goal)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      27,
+      27,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28
+     ],
+     "page": 11,
+     "quote": "Weed: Winter strip spray (Roundup, Goal) 27 27 28 28 28 28 28 28"
+    },
+    {
+     "label": "Weed: Disc middles 5X (years 1-2; 3 passes/middle)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      80,
+      80,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52
+     ],
+     "page": 11,
+     "quote": "Weed: Disc middles 5X (years 1-2; 3 passes/middle) 80 80 52 52 52 52 52 52"
+    },
+    {
+     "label": "Weed: In-season strip spray (Roundup)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      8,
+      8,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+     ],
+     "page": 11,
+     "quote": "Weed: In-season strip spray (Roundup) 8 8 9 9 9 9 9 9"
+    },
+    {
+     "label": "Disease: Walnut blight (Badge X2)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      27,
+      31,
+      37
+     ],
+     "page": 11,
+     "quote": "Disease: Walnut blight (Badge X2) 27 31 37"
+    },
+    {
+     "label": "Irrigate: Water & labor",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      88,
+      88,
+      88,
+      88,
+      110,
+      110,
+      110,
+      110
+     ],
+     "page": 11,
+     "quote": "Irrigate: Water & labor 88 88 88 88 110 110 110 110"
+    },
+    {
+     "label": "Insect: Walnut husk fly (trap)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      16,
+      16,
+      16
+     ],
+     "page": 11,
+     "quote": "Insect: Walnut husk fly (trap) 16 16 16"
+    },
+    {
+     "label": "Insect: Walnut husk fly (Success, Nu Lure bait)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      55,
+      55,
+      55
+     ],
+     "page": 11,
+     "quote": "Insect: Walnut husk fly (Success, Nu Lure bait) 55 55 55"
+    },
+    {
+     "label": "Pickup truck use",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      162,
+      162,
+      162,
+      162,
+      162,
+      162,
+      162,
+      162
+     ],
+     "page": 11,
+     "quote": "Pickup truck use 162 162 162 162 162 162 162 162"
+    },
+    {
+     "label": "ATV use",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      83,
+      83,
+      83,
+      83,
+      83,
+      83,
+      83,
+      83
+     ],
+     "page": 11,
+     "quote": "ATV use 83 83 83 83 83 83 83 83"
+    },
+    {
+     "label": "Leaf analysis",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      1,
+      1,
+      1
+     ],
+     "page": 11,
+     "quote": "Leaf analysis 1 1 1"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural Costs",
+     "values": [
+      522,
+      561,
+      622,
+      630,
+      669,
+      777,
+      794,
+      823
+     ],
+     "page": 11,
+     "quote": "TOTAL CULTURAL COSTS 522 561 622 630 669 777 794 823"
+    },
+    {
+     "label": "Harvest Costs",
+     "kind": "heading",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Harvest Costs:"
+    },
+    {
+     "label": "Shake, pick, sweep, rake",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null,
+      32,
+      32,
+      32,
+      32,
+      64
+     ],
+     "page": 11,
+     "quote": "Shake, pick, sweep, rake 32 32 32 32 64"
+    },
+    {
+     "label": "Haul",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null,
+      1,
+      1,
+      2,
+      3,
+      6
+     ],
+     "page": 11,
+     "quote": "Haul 1 1 2 3 6"
+    },
+    {
+     "label": "Hull & dry",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null,
+      10,
+      15,
+      20,
+      40,
+      80
+     ],
+     "page": 11,
+     "quote": "Hull & dry 10 15 20 40 80"
+    },
+    {
+     "label": "California Walnut Commission assessment fee",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null,
+      1,
+      1,
+      2,
+      4,
+      7
+     ],
+     "page": 11,
+     "quote": "California Walnut Commission assessment fee 1 1 2 4 7"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null,
+      null,
+      44,
+      49,
+      55,
+      79,
+      157
+     ],
+     "page": 11,
+     "quote": "TOTAL HARVEST COSTS 44 49 55 79 157"
+    },
+    {
+     "label": "Interest on operating capital at 5.75%",
+     "kind": "interest",
+     "section": "Harvest Costs",
+     "values": [
+      99,
+      14,
+      12,
+      9,
+      13,
+      14,
+      15,
+      16
+     ],
+     "page": 11,
+     "quote": "Interest on operating capital at 5.75% 99 14 12 9 13 14 15 16"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvest Costs",
+     "values": [
+      2435,
+      640,
+      634,
+      683,
+      731,
+      847,
+      887,
+      996
+     ],
+     "page": 11,
+     "quote": "TOTAL OPERATING COSTS/ACRE 2,435 640 634 683 731 847 887 996"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Liability insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      26,
+      26,
+      26,
+      26,
+      26,
+      26,
+      26,
+      26
+     ],
+     "page": 11,
+     "quote": "Liability insurance 26 26 26 26 26 26 26 26"
+    },
+    {
+     "label": "Office expense",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+     ],
+     "page": 11,
+     "quote": "Office expense 125 125 125 125 125 125 125 125"
+    },
+    {
+     "label": "Sanitation fees",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      81,
+      81,
+      81,
+      81,
+      81,
+      81,
+      81,
+      81
+     ],
+     "page": 11,
+     "quote": "Sanitation fees 81 81 81 81 81 81 81 81"
+    },
+    {
+     "label": "Property taxes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      125,
+      125,
+      125,
+      125,
+      158,
+      165,
+      165,
+      165
+     ],
+     "page": 11,
+     "quote": "Property taxes 125 125 125 125 158 165 165 165"
+    },
+    {
+     "label": "Property insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      101,
+      101,
+      100,
+      100,
+      127,
+      133,
+      133,
+      133
+     ],
+     "page": 11,
+     "quote": "Property insurance 101 101 100 100 127 133 133 133"
+    },
+    {
+     "label": "Investment repairs",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      126,
+      126,
+      126,
+      126,
+      126,
+      126,
+      126,
+      126
+     ],
+     "page": 11,
+     "quote": "Investment repairs 126 126 126 126 126 126 126 126"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      584,
+      584,
+      584,
+      583,
+      643,
+      656,
+      656,
+      656
+     ],
+     "page": 11,
+     "quote": "TOTAL CASH OVERHEAD COSTS 584 584 584 583 643 656 656 656"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      3019,
+      1223,
+      1218,
+      1266,
+      1374,
+      1503,
+      1544,
+      1652
+     ],
+     "page": 11,
+     "quote": "TOTAL CASH COSTS/ACRE 3,019 1,223 1,218 1,266 1,374 1,503 1,544 1,652"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      125,
+      188,
+      250,
+      500,
+      1000
+     ],
+     "page": 11,
+     "quote": "INCOME/ACRE FROM PRODUCTION 125 188 250 500 1,000"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      3019,
+      1223,
+      1218,
+      1141,
+      1187,
+      1253,
+      1044,
+      652
+     ],
+     "page": 11,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 3,019 1,223 1,218 1,141 1,187 1,253 1,044 652"
+    },
+    {
+     "label": "PROFIT/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "PROFIT/ACRE ABOVE CASH COSTS"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      3019,
+      4242,
+      5460,
+      6601,
+      7788,
+      9041,
+      10085,
+      10737
+     ],
+     "page": 11,
+     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,019 4,242 5,460 6,601 7,788 9,041 10,085 10,737"
+    },
+    {
+     "label": "TOTAL DEPRECIATION",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "TOTAL DEPRECIATION"
+    },
+    {
+     "label": "Capital Recovery",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Capital Recovery"
+    },
+    {
+     "label": "Building 2,400 sq. ft.",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      266,
+      266,
+      266,
+      266,
+      266,
+      266,
+      266,
+      266
+     ],
+     "page": 12,
+     "quote": "Building 2,400 sq. ft. 266 266 266 266 266 266 266 266"
+    },
+    {
+     "label": "Fuel tanks",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+     ],
+     "page": 12,
+     "quote": "Fuel tanks 12 12 12 12 12 12 12 12"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404
+     ],
+     "page": 12,
+     "quote": "Land 404 404 404 404 404 404 404 404"
+    },
+    {
+     "label": "Sprinkler irrigation system",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67
+     ],
+     "page": 12,
+     "quote": "Sprinkler irrigation system 67 67 67 67 67 67 67 67"
+    },
+    {
+     "label": "Shop/hand tools",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      71,
+      71,
+      71,
+      71,
+      71,
+      71,
+      71,
+      71
+     ],
+     "page": 12,
+     "quote": "Shop/hand tools 71 71 71 71 71 71 71 71"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      112,
+      112,
+      110,
+      110,
+      111,
+      210,
+      210,
+      210
+     ],
+     "page": 12,
+     "quote": "Equipment 112 112 110 110 111 210 210 210"
+    },
+    {
+     "label": "Establishment Cost",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      411,
+      411,
+      411,
+      411
+     ],
+     "page": 12,
+     "quote": "Establishment Cost 411 411 411 411"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COST PER ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      932,
+      932,
+      930,
+      930,
+      1342,
+      1441,
+      1441,
+      1441
+     ],
+     "page": 12,
+     "quote": "TOTAL NON-CASH OVERHEAD COST PER ACRE 932 932 930 930 1,342 1,441 1,441 1,441"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      3951,
+      2155,
+      2148,
+      2196,
+      2716,
+      2944,
+      2985,
+      3094
+     ],
+     "page": 12,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 3,951 2,155 2,148 2,196 2,716 2,944 2,985 3,094"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      125,
+      188,
+      250,
+      500,
+      1000
+     ],
+     "page": 12,
+     "quote": "INCOME/ACRE FROM PRODUCTION 125 188 250 500 1,000"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      3951,
+      2155,
+      2148,
+      2071,
+      2529,
+      2694,
+      2485,
+      2094
+     ],
+     "page": 12,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 3,951 2,155 2,148 2,071 2,529 2,694 2,485 2,094"
+    },
+    {
+     "label": "NET PROFIT/ACRE ABOVE TOTAL COST",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "page": 12,
+     "quote": "NET PROFIT/ACRE ABOVE TOTAL COST - - - - -"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      3951,
+      6106,
+      8254,
+      10324,
+      12853,
+      15548,
+      18032,
+      20126
+     ],
+     "page": 12,
+     "quote": "TOTAL ACCUMULATED NET COST/ACRE 3,951 6,106 8,254 10,324 12,853 15,548 18,032 20,126"
+    }
+   ],
+   "yieldRow": {
+    "label": "Yield: Dry, In-Shell Pounds Per Acre",
+    "values": [
+     null,
+     null,
+     null,
+     100,
+     150,
+     200,
+     400,
+     800
+    ],
+    "quote": "Yield: Dry, In-Shell Pounds Per Acre 100 150 200 400 800"
+   }
+  },
   "years": [
    {
     "year": 1,

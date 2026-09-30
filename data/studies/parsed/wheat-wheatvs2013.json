@@ -96,6 +96,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE WHEAT FOR GRAIN",
   "operatingTotal": {
    "value": 586,
    "unit": "$/acre",
@@ -174,6 +175,7 @@
    {
     "name": "Fertilize: Preplant (Anhydrous Ammonia)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 1,
     "fuel": 2,
@@ -187,6 +189,7 @@
    {
     "name": "Land Prep: Finish Disc 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.22,
     "labor": 4,
     "fuel": 11,
@@ -200,6 +203,7 @@
    {
     "name": "Land Prep: Pull Borders",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 1,
@@ -213,6 +217,7 @@
    {
     "name": "Plant: (wheat)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 4,
@@ -226,6 +231,7 @@
    {
     "name": "Weed: Post-emergent (Express MCPA Axial)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -239,6 +245,7 @@
    {
     "name": "Irrigate: (water & labor) 5X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 8,
     "fuel": 0,
@@ -252,6 +259,7 @@
    {
     "name": "Fertilize: Topdress (Urea)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -265,6 +273,7 @@
    {
     "name": "Fertilize: Water Run (UN32)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -278,6 +287,7 @@
    {
     "name": "PCA",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -291,6 +301,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.24,
     "labor": 4,
     "fuel": 2,
@@ -304,6 +315,7 @@
    {
     "name": "Combine Wheat",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -317,6 +329,7 @@
    {
     "name": "Assessment (CWC)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

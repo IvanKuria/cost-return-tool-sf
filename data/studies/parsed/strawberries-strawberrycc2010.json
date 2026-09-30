@@ -241,6 +241,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE to PRODUCE STRAWBERRIES",
   "operatingTotal": {
    "value": 42188,
    "unit": "$/acre",
@@ -344,6 +345,7 @@
    {
     "name": "Land Prep: Disc 8X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.33,
     "labor": 23,
     "fuel": 58,
@@ -357,6 +359,7 @@
    {
     "name": "Land Prep: Subsoil 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 26,
     "fuel": 65,
@@ -370,6 +373,7 @@
    {
     "name": "Land Prep: Chisel 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.6,
     "labor": 10,
     "fuel": 26,
@@ -383,6 +387,7 @@
    {
     "name": "Land Prep: Level 2X (Triplane)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 9,
     "fuel": 22,
@@ -396,6 +401,7 @@
    {
     "name": "Fumigate: Flat (tarped)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 2,
     "fuel": 0,
@@ -409,6 +415,7 @@
    {
     "name": "Fumigate: Tarp Retrieval/Discard",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -422,6 +429,7 @@
    {
     "name": "Irrigate: Layout/Pickup Sprinkler Pipe3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3,
     "labor": 88,
     "fuel": 22,
@@ -435,6 +443,7 @@
    {
     "name": "Irrigate: Sprinkle (preplant)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
@@ -448,6 +457,7 @@
    {
     "name": "Land Prep: List/Shape 48\" beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 4,
     "fuel": 11,
@@ -461,6 +471,7 @@
    {
     "name": "Fertilize: Preplant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.3,
     "labor": 5,
     "fuel": 2,
@@ -474,6 +485,7 @@
    {
     "name": "Irrigate: Install Drip Tape 2/bed (tape & labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 59,
     "fuel": 16,
@@ -487,6 +499,7 @@
    {
     "name": "Irrigate: Grade Field Roads 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
@@ -500,6 +513,7 @@
    {
     "name": "Irrigate: Open Trench for laterals/Connect drip",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 8,
     "fuel": 1,
@@ -513,6 +527,7 @@
    {
     "name": "Plant: Lay Mulch",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 130,
     "fuel": 18,
@@ -526,6 +541,7 @@
    {
     "name": "Plant: Punch Holes",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 26,
     "fuel": 12,
@@ -539,6 +555,7 @@
    {
     "name": "Irrigate: Drip (preirrigate)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 0,
@@ -552,6 +569,7 @@
    {
     "name": "Plant: (includes replant labor & plants)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 38,
     "labor": 451,
     "fuel": 0,
@@ -565,6 +583,7 @@
    {
     "name": "Plant: Roll Plants to Pack",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 2,
@@ -578,6 +597,7 @@
    {
     "name": "Irrigate: Sprinkle (transplants)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 3,
     "fuel": 0,
@@ -591,6 +611,7 @@
    {
     "name": "Weed: Hand Weed & Runner Removal",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 102,
     "labor": 1212,
     "fuel": 0,
@@ -604,6 +625,7 @@
    {
     "name": "Disease: Botrytis/Mildew. Insect: Mites",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -617,6 +639,7 @@
    {
     "name": "Insect: Mites 2X (Persimillis) (beneficial insect)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.4,
     "labor": 29,
     "fuel": 0,
@@ -630,6 +653,7 @@
    {
     "name": "Irrigate: Drip (water & labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 12,
     "labor": 143,
     "fuel": 0,
@@ -643,6 +667,7 @@
    {
     "name": "Fertilize; through drip (CAN17)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -656,6 +681,7 @@
    {
     "name": "Disease: Botrytis/Mildew.",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -669,6 +695,7 @@
    {
     "name": "Disease: Mildew",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.16,
     "labor": 20,
     "fuel": 12,
@@ -682,6 +709,7 @@
    {
     "name": "Disease: Botrytis/Mildew/Anthracnose. Insect: Worms",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.17,
     "labor": 20,
     "fuel": 12,
@@ -695,6 +723,7 @@
    {
     "name": "Disease: Botrytis/Mildew/Anthracnose. Insect: Worms/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.17,
     "labor": 20,
     "fuel": 12,
@@ -708,6 +737,7 @@
    {
     "name": "Disease: Botrytis/Mildew. Insect: Mite/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.17,
     "labor": 20,
     "fuel": 12,
@@ -721,6 +751,7 @@
    {
     "name": "Disease: Botrytis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -734,6 +765,7 @@
    {
     "name": "Disease: Mildew. Insect: Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -747,6 +779,7 @@
    {
     "name": "Disease: Mildew. Insect; Mite/Lygus",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.58,
     "labor": 10,
     "fuel": 6,
@@ -760,6 +793,7 @@
    {
     "name": "Year End: Cleanup and Crop Removal",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -773,6 +807,7 @@
    {
     "name": "Pest Control Adviser (PCA)/Crop Consultant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -786,6 +821,7 @@
    {
     "name": "Pick Strawberries",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1074,
     "labor": 12759,
     "fuel": 0,
@@ -799,6 +835,7 @@
    {
     "name": "Load/Haul",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 3.31,
     "labor": 399,
     "fuel": 123,
@@ -812,6 +849,7 @@
    {
     "name": "Cooling",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -825,6 +863,7 @@
    {
     "name": "Assessments",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

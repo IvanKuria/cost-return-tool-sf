@@ -117,20 +117,25 @@ describe('export snapshot', () => {
     const content = new TextDecoder('latin1').decode(bytes);
     expect(content.startsWith('%PDF-')).toBe(true);
     expect(content).toContain('Finca Peña');
-    expect(content).toContain('Flujo de efectivo por mes');
+    expect(content).toContain('FLUJO DE EFECTIVO POR MES'); // table titles are set in capitals, as in the UC studies
     expect(content).toContain('$1,200');
     expect(content).not.toContain('$1,200.00');
     expect(content.match(/\/Type \/Page\b/g)!.length).toBeLessThanOrEqual(9); // summary, cash flow, Table 1, Table 4, Table 5, farm, sources
     expect(content).toContain('%%EOF');
   });
 
-  it('keeps the filled example under twenty pages with every operation listed', async () => {
+  it('uses portrait Letter on every page of the filled example', async () => {
     const plan = filledSample();
     const bytes = await buildPdf(createExportSnapshot(plan, computePlan(plan), 'en'));
     const content = new TextDecoder('latin1').decode(bytes);
     const pages = content.match(/\/Type \/Page\b/g)!.length;
     expect(pages).toBeGreaterThanOrEqual(5);
-    expect(pages).toBeLessThan(28); // five crops, each with a full UC style Table 1, plus ranging, Table 5 and 6
+    expect(pages).toBeLessThan(28);
+    const boxes = [...content.matchAll(/\/MediaBox\s*\[([^\]]+)\]/g)].map(m => m[1].trim().split(/\s+/).map(Number));
+    expect(boxes).toHaveLength(pages);
+    for (const box of boxes) expect(box).toEqual([0, 0, 612, 792]);
+    expect(content).not.toContain('Mirrors UC study');
+    expect(content).not.toContain('format of the UC Davis');
   });
 
   it('builds UC style tables that reconcile with the engine', async () => {
@@ -183,4 +188,16 @@ describe('export snapshot', () => {
     vi.advanceTimersByTime(30_000);
     expect(revokeObjectURL).toHaveBeenCalledWith('blob:test');
   });
+});
+
+it('PDF details are opt-in and the compact version keeps a clickable sources link', async () => {
+  const snapshot = createExportSnapshot(planFixture(), computePlan(planFixture()), 'en');
+  const sourcesUrl = 'https://example.test/planner/#sources';
+  const compact = new TextDecoder().decode(await buildPdf(snapshot, { sourcesUrl }));
+  const full = new TextDecoder().decode(await buildPdf(snapshot, { sourcesUrl, includeDetails: true }));
+  expect(compact).toContain('/Subtype /Link');
+  expect(compact).toContain(sourcesUrl);
+  expect(full.length).toBeGreaterThan(compact.length);
+  expect(compact).not.toContain(snapshot.sources.oursTitle.toUpperCase());
+  expect(full).toContain(snapshot.sources.oursTitle.toUpperCase());
 });

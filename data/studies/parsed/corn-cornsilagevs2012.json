@@ -107,6 +107,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE CORN SILAGE",
   "operatingTotal": {
    "value": 1080,
    "unit": "$/acre",
@@ -154,6 +155,7 @@
    {
     "name": "Disc Stubble 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.35,
     "labor": 7,
     "fuel": 15,
@@ -167,6 +169,7 @@
    {
     "name": "Pull Borders",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 2,
@@ -180,6 +183,7 @@
    {
     "name": "Pre-irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
@@ -193,6 +197,7 @@
    {
     "name": "Knock Down Borders",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 2,
@@ -206,6 +211,7 @@
    {
     "name": "Finish Disc 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 5,
     "fuel": 11,
@@ -219,6 +225,7 @@
    {
     "name": "Plant w/insecticide+fertilizer",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -232,6 +239,7 @@
    {
     "name": "Weed: Post Plant (Roundup)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 2,
@@ -245,6 +253,7 @@
    {
     "name": "Weeds: Prelayby (Clarity)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 2,
@@ -258,6 +267,7 @@
    {
     "name": "Cultivate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 3,
@@ -271,6 +281,7 @@
    {
     "name": "Weeds: Layby (Prowl)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 2,
@@ -284,6 +295,7 @@
    {
     "name": "Insects-Miticide:(Comite)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -297,6 +309,7 @@
    {
     "name": "Irrigate & Fertilize 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.3,
     "labor": 4,
     "fuel": 0,
@@ -310,6 +323,7 @@
    {
     "name": "Irrigate 5X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 7,
     "fuel": 0,
@@ -323,6 +337,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.38,
     "labor": 8,
     "fuel": 4,
@@ -336,6 +351,7 @@
    {
     "name": "Harvest - Cut, Haul & Pack",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

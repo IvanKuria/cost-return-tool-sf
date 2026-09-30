@@ -228,6 +228,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE to PRODUCE SUDAN HAY",
   "operatingTotal": {
    "value": 756,
    "unit": "$/acre",
@@ -307,6 +308,7 @@
    {
     "name": "Land Prep: Disc Stubble",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 11,
@@ -320,6 +322,7 @@
    {
     "name": "Land Prep: Pull Borders",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 2,
@@ -333,6 +336,7 @@
    {
     "name": "Irrigate: Preirrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
@@ -346,6 +350,7 @@
    {
     "name": "Fertilize: Inject (80-0-0)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -359,6 +364,7 @@
    {
     "name": "Land Prep: Finish Disc",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 8,
@@ -372,6 +378,7 @@
    {
     "name": "Plant: Seed",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -385,6 +392,7 @@
    {
     "name": "Weed: Postplant (Clarity, Prowl)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 3,
@@ -398,6 +406,7 @@
    {
     "name": "Irrigate 4X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 4,
     "fuel": 0,
@@ -411,6 +420,7 @@
    {
     "name": "Fertilize: Water Run (80-0-0)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -424,6 +434,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.38,
     "labor": 6,
     "fuel": 4,
@@ -437,6 +448,7 @@
    {
     "name": "Harvest - Swath, Rake, Bale, Roadside 2X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

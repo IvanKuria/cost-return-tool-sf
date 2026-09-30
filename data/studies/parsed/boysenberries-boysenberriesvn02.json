@@ -227,6 +227,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE to PRODUCE BOYSENBERRY",
   "operatingTotal": {
    "value": 12203,
    "unit": "$/acre",
@@ -311,6 +312,7 @@
    {
     "name": "Roto-till Alley way",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 7,
     "fuel": 3,
@@ -324,6 +326,7 @@
    {
     "name": "Weed Control-Herbicide",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.39,
     "labor": 7,
     "fuel": 3,
@@ -337,6 +340,7 @@
    {
     "name": "Irrigate-Drip",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -350,6 +354,7 @@
    {
     "name": "Hand Weeding",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.53,
     "labor": 5,
     "fuel": 0,
@@ -363,6 +368,7 @@
    {
     "name": "Insect Control-Miticide",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.78,
     "labor": 13,
     "fuel": 5,
@@ -376,6 +382,7 @@
    {
     "name": "Fertilize/Drip Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -389,6 +396,7 @@
    {
     "name": "Disease Control-Fungicide",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.39,
     "labor": 7,
     "fuel": 3,
@@ -402,6 +410,7 @@
    {
     "name": "Irrigate-Flood",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -415,6 +424,7 @@
    {
     "name": "Prune/Tip/Wrap",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 266,
     "labor": 2407,
     "fuel": 0,
@@ -428,6 +438,7 @@
    {
     "name": "Shred Prunings",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.37,
     "labor": 6,
     "fuel": 3,
@@ -441,6 +452,7 @@
    {
     "name": "Disk-1X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.43,
     "labor": 7,
     "fuel": 3,
@@ -454,6 +466,7 @@
    {
     "name": "Winter pruning",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 79.99,
     "labor": 724,
     "fuel": 0,
@@ -467,6 +480,7 @@
    {
     "name": "Drip Irrigation/Fertilize UN32",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -480,6 +494,7 @@
    {
     "name": "Disease Control-Copper Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.39,
     "labor": 7,
     "fuel": 3,
@@ -493,6 +508,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.33,
     "labor": 23,
     "fuel": 7,
@@ -506,6 +522,7 @@
    {
     "name": "Pick Berries by Hand-Retail",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 144,
     "labor": 1303,
     "fuel": 0,
@@ -519,6 +536,7 @@
    {
     "name": "Pick Berries by Hand-Process",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 144,
     "labor": 1303,
     "fuel": 0,
@@ -532,6 +550,7 @@
    {
     "name": "Haul Berries to Market/Process",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 1,
     "labor": 17,
     "fuel": 7,
@@ -545,6 +564,7 @@
    {
     "name": "Processing:Freezing (IQF)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -969,6 +989,441 @@
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE BOYSENBERRY"
  },
  "establishment": {
+  "table": {
+   "title": "SAMPLE COSTS PER ACRE TO ESTABLISH BOYSENBERRY",
+   "years": [
+    "1st",
+    "2nd"
+   ],
+   "rows": [
+    {
+     "label": "Planting Costs",
+     "kind": "heading",
+     "section": "Planting Costs",
+     "values": [
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Planting Costs:"
+    },
+    {
+     "label": "Land Preparation - Disc 1X",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      6,
+      0
+     ],
+     "page": 10,
+     "quote": "Land Preparation - Disc 1X 6 0"
+    },
+    {
+     "label": "Land Preparation-Rip 2X:Custom",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      24,
+      0
+     ],
+     "page": 10,
+     "quote": "Land Preparation-Rip 2X:Custom 24 0"
+    },
+    {
+     "label": "Land Preparation - Disc 2X",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      12,
+      0
+     ],
+     "page": 10,
+     "quote": "Land Preparation - Disc 2X 12 0"
+    },
+    {
+     "label": "Land Preparation – Triplane 2X",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      11,
+      0
+     ],
+     "page": 10,
+     "quote": "Land Preparation – Triplane 2X 11 0"
+    },
+    {
+     "label": "Land Preparation – Fumigate",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      2200,
+      0
+     ],
+     "page": 10,
+     "quote": "Land Preparation – Fumigate 2,200 0"
+    },
+    {
+     "label": "Install Trellis System",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      670,
+      0
+     ],
+     "page": 10,
+     "quote": "Install Trellis System 670 0"
+    },
+    {
+     "label": "Install Drip Irrigation System",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      584,
+      0
+     ],
+     "page": 10,
+     "quote": "Install Drip Irrigation System 584 0"
+    },
+    {
+     "label": "Plant boysenberry transplants",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      65,
+      0
+     ],
+     "page": 10,
+     "quote": "Plant boysenberry transplants 65 0"
+    },
+    {
+     "label": "Boysenberry Transplants @ $1.00 each",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      1800,
+      0
+     ],
+     "page": 10,
+     "quote": "Boysenberry Transplants @ $1.00 each 1,800 0"
+    },
+    {
+     "label": "Pre-irrigate",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      14,
+      0
+     ],
+     "page": 10,
+     "quote": "Pre-irrigate 14 0"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Planting Costs",
+     "values": [
+      5386,
+      0
+     ],
+     "page": 10,
+     "quote": "TOTAL PLANTING COSTS 5,386 0"
+    },
+    {
+     "label": "Cultural Costs",
+     "kind": "heading",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Cultural Costs:"
+    },
+    {
+     "label": "Fertilizer",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      59,
+      69
+     ],
+     "page": 10,
+     "quote": "Fertilizer 59 69"
+    },
+    {
+     "label": "Hand Weeding",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      5,
+      5
+     ],
+     "page": 10,
+     "quote": "Hand Weeding 5 5"
+    },
+    {
+     "label": "Roto-till Alley way",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      10,
+      10
+     ],
+     "page": 10,
+     "quote": "Roto-till Alley way 10 10"
+    },
+    {
+     "label": "Weed Control – Herbicide",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      0,
+      29
+     ],
+     "page": 10,
+     "quote": "Weed Control – Herbicide 0 29"
+    },
+    {
+     "label": "Insect Control – Miticide",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      28,
+      37
+     ],
+     "page": 10,
+     "quote": "Insect Control – Miticide 28 37"
+    },
+    {
+     "label": "Disease Control – Fungicide",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      75,
+      75
+     ],
+     "page": 10,
+     "quote": "Disease Control – Fungicide 75 75"
+    },
+    {
+     "label": "Irrigate – Drip",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      137,
+      140
+     ],
+     "page": 10,
+     "quote": "Irrigate – Drip 137 140"
+    },
+    {
+     "label": "Irrigate – Flood",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      0,
+      1
+     ],
+     "page": 10,
+     "quote": "Irrigate – Flood 0 1"
+    },
+    {
+     "label": "Prune/Tip/Wrap Fruiting Canes",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      0,
+      2407
+     ],
+     "page": 10,
+     "quote": "Prune/Tip/Wrap Fruiting Canes 0 2,407"
+    },
+    {
+     "label": "Shred Pruning",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      0,
+      5
+     ],
+     "page": 10,
+     "quote": "Shred Pruning 0 5"
+    },
+    {
+     "label": "Disk – 1X",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      0,
+      5
+     ],
+     "page": 10,
+     "quote": "Disk – 1X 0 5"
+    },
+    {
+     "label": "Winter Pruning",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      724,
+      724
+     ],
+     "page": 10,
+     "quote": "Winter Pruning 724 724"
+    },
+    {
+     "label": "Shred Pruning",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      5,
+      5
+     ],
+     "page": 10,
+     "quote": "Shred Pruning 5 5"
+    },
+    {
+     "label": "Disk – 1X",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      5,
+      5
+     ],
+     "page": 10,
+     "quote": "Disk – 1X 5 5"
+    },
+    {
+     "label": "Disease Control – Copper Spray",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      20,
+      20
+     ],
+     "page": 10,
+     "quote": "Disease Control – Copper Spray 20 20"
+    },
+    {
+     "label": "Pickup Truck Use",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      29,
+      29
+     ],
+     "page": 10,
+     "quote": "Pickup Truck Use 29 29"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural Costs",
+     "values": [
+      1097,
+      3548
+     ],
+     "page": 10,
+     "quote": "TOTAL CULTURAL COSTS 1,097 3,548"
+    },
+    {
+     "label": "Harvest Costs",
+     "kind": "heading",
+     "section": "Harvest Costs",
+     "values": [
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Harvest Costs:"
+    },
+    {
+     "label": "Hand Harvest Berries-Fresh",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      0,
+      1994
+     ],
+     "page": 10,
+     "quote": "Hand Harvest Berries-Fresh 0 1,994"
+    },
+    {
+     "label": "Hand Harvest Berries-Processing (Frozen)",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      0,
+      1753
+     ],
+     "page": 10,
+     "quote": "Hand Harvest Berries-Processing (Frozen) 0 1,753"
+    },
+    {
+     "label": "Haul Berries to Market/Processing",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      0,
+      24
+     ],
+     "page": 10,
+     "quote": "Haul Berries to Market/Processing 0 24"
+    },
+    {
+     "label": "Freezing-Individual Quick Freeze (IQF)",
+     "kind": "operation",
+     "section": "Harvest Costs",
+     "values": [
+      0,
+      1250
+     ],
+     "page": 10,
+     "quote": "Freezing-Individual Quick Freeze (IQF) 0 1,250"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest Costs",
+     "values": [
+      0,
+      5021
+     ],
+     "page": 10,
+     "quote": "TOTAL HARVEST COSTS 0 5,021"
+    },
+    {
+     "label": "Interest On Operating Capital @ 7.40%",
+     "kind": "interest",
+     "section": "Harvest Costs",
+     "values": [
+      413,
+      261
+     ],
+     "page": 10,
+     "quote": "Interest On Operating Capital @ 7.40% 413 261"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvest Costs",
+     "values": [
+      6896,
+      8830
+     ],
+     "page": 10,
+     "quote": "TOTAL OPERATING COSTS/ACRE 6,896 8,830"
+    }
+   ],
+   "yieldRow": {
+    "label": "Tons Per Acre:",
+    "values": [
+     0,
+     5
+    ],
+    "quote": "Tons Per Acre: 0.0 5.0"
+   }
+  },
   "years": [
    {
     "year": 1,

@@ -16,7 +16,7 @@ const STEP_KEY: Record<Step, Key> = { farm: 'step.farm', crops: 'step.crops', eq
 
 export default function App() {
   const { t, lang, setLang } = useT();
-  const [state, dispatch] = usePlanStore({ step: window.location.hash === '#results' ? 'results' : 'farm', plan: SAMPLE_PLAN ?? { farm: DEFAULT_FARM, crops: [], equipment: [], customWork: [] } });
+  const [state, dispatch] = usePlanStore({ step: window.location.hash === '#sources' ? 'sources' : window.location.hash === '#results' ? 'results' : 'farm', plan: SAMPLE_PLAN ?? { farm: DEFAULT_FARM, crops: [], equipment: [], customWork: [] } });
   const result = computePlan(state.plan);
   const incomplete = missingPlanInputs(state.plan).length > 0;
   const idx = STEPS.findIndex(s => s.id === state.step);

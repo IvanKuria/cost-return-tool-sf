@@ -74,6 +74,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COST PER ACRE TO PRODUCE GRAIN HAY",
   "operatingTotal": {
    "value": 168,
    "unit": "$/acre",
@@ -137,6 +138,7 @@
    {
     "name": "Plow Alfalfa Stand",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.35,
     "labor": 6,
     "fuel": 10,
@@ -150,6 +152,7 @@
    {
     "name": "Fertilize: Ammonium Sulfate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -163,6 +166,7 @@
    {
     "name": "Finish Disc 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.22,
     "labor": 3,
     "fuel": 6,
@@ -176,6 +180,7 @@
    {
     "name": "Plant Grain @ 100 Lbs/Acre",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 2,
     "fuel": 4,
@@ -189,6 +194,7 @@
    {
     "name": "Irrigate 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.8,
     "labor": 9,
     "fuel": 0,
@@ -202,6 +208,7 @@
    {
     "name": "Weed Control - Broadleaf Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -215,6 +222,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 7,
     "fuel": 5,
@@ -228,6 +236,7 @@
    {
     "name": "Swath Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 1,
@@ -241,6 +250,7 @@
    {
     "name": "Rake Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 1,
@@ -254,6 +264,7 @@
    {
     "name": "Bale Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 2,
@@ -267,6 +278,7 @@
    {
     "name": "Roadside Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 5,
@@ -280,6 +292,7 @@
    {
     "name": "Load Hay",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.09,
     "labor": 1,
     "fuel": 2,

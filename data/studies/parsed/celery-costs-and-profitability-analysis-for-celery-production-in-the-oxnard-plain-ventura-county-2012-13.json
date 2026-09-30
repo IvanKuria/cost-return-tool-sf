@@ -71,6 +71,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "Costs per Acre to Produce Celery in Ventura County, 2012/2013",
   "operatingTotal": {
    "value": 10202,
    "unit": "$/acre",
@@ -162,6 +163,7 @@
    {
     "name": "Disc (4x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.41,
     "labor": 7.54,
     "fuel": 33.32,
@@ -175,6 +177,7 @@
    {
     "name": "Subsoil (2x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.65,
     "labor": 11.88,
     "fuel": 52.52,
@@ -188,6 +191,7 @@
    {
     "name": "Roller (5x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.37,
     "labor": 6.75,
     "fuel": 29.83,
@@ -201,6 +205,7 @@
    {
     "name": "Land Level (3x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 8.36,
     "fuel": 36.94,
@@ -214,6 +219,7 @@
    {
     "name": "Broadcast Fertilizer",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 6.18,
     "fuel": 27.32,
@@ -227,6 +233,7 @@
    {
     "name": "Chisel Plow",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 2.23,
     "fuel": 9.85,
@@ -240,6 +247,7 @@
    {
     "name": "List Beds",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 1.41,
     "fuel": 6.25,
@@ -253,6 +261,7 @@
    {
     "name": "Shape Beds",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.28,
     "labor": 5.09,
     "fuel": 22.48,
@@ -266,6 +275,7 @@
    {
     "name": "Sprinkler Irrigation Setup (machine)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.42,
     "labor": 7.78,
     "fuel": 6.59,
@@ -279,6 +289,7 @@
    {
     "name": "Sprinkler Irrigation Setup (labor)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 23.96,
     "fuel": 0,
@@ -292,6 +303,7 @@
    {
     "name": "Transplant",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -305,6 +317,7 @@
    {
     "name": "Herbicide Treatment",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 2.26,
     "fuel": 1.92,
@@ -318,6 +331,7 @@
    {
     "name": "Irrigation & System Inspection (3x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 17.97,
     "fuel": 0,
@@ -331,6 +345,7 @@
    {
     "name": "Sprinkler Irrigation Removal (machine)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.42,
     "labor": 7.78,
     "fuel": 6.59,
@@ -344,6 +359,7 @@
    {
     "name": "Sprinkler Irrigation Removal (labor)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 23.96,
     "fuel": 0,
@@ -357,6 +373,7 @@
    {
     "name": "Drip Setup (machine)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3.18,
     "fuel": 2.7,
@@ -370,6 +387,7 @@
    {
     "name": "Drip Setup (labor)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 3,
     "fuel": 0,
@@ -383,6 +401,7 @@
    {
     "name": "Sidedress - 15-15-15",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.34,
     "labor": 6.18,
     "fuel": 5.24,
@@ -396,6 +415,7 @@
    {
     "name": "Fertilization - UAN32% (5x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -409,6 +429,7 @@
    {
     "name": "Pest Control Advisor",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -422,6 +443,7 @@
    {
     "name": "Pesticide Treatment Appl. (3x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -435,6 +457,7 @@
    {
     "name": "Weed Cultivation",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -448,6 +471,7 @@
    {
     "name": "Fertilization - CAN17% (5x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -461,6 +485,7 @@
    {
     "name": "Hand weeding",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -474,6 +499,7 @@
    {
     "name": "Irrigation & System Inspection (10x)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 5,
     "labor": 59.9,
     "fuel": 0,
@@ -487,6 +513,7 @@
    {
     "name": "Conditional Waiver Program",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -500,6 +527,7 @@
    {
     "name": "Microbial Water Test",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -513,6 +541,7 @@
    {
     "name": "Food Safety Program",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -526,6 +555,7 @@
    {
     "name": "Drip Irrigation Removal (machine)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.29,
     "labor": 5.42,
     "fuel": 4.59,
@@ -539,6 +569,7 @@
    {
     "name": "Drip Irrigation Removal (labor)",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 3,
     "fuel": 0,
@@ -552,6 +583,7 @@
    {
     "name": "Pickup Truck",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 36.72,
     "fuel": 12.24,
@@ -565,6 +597,7 @@
    {
     "name": "Cut, Pack, Haul, Cool, Sell",
     "category": "harvest",
+    "section": "Harvesting and Marketing",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -578,6 +611,7 @@
    {
     "name": "0",
     "category": "harvest",
+    "section": "Harvesting and Marketing",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

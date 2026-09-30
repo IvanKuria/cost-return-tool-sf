@@ -51,6 +51,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS AND RETURNS FOR BEEF COW - CALF PRODUCTION",
   "operatingTotal": null,
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,

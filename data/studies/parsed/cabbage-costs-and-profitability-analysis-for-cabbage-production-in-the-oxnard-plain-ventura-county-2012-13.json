@@ -71,6 +71,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "Costs and Returns per Acre to Produce Cabbage in Ventura County,",
   "operatingTotal": null,
   "cashOverheadTotal": {
    "value": 1.27,

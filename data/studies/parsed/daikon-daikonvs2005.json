@@ -66,6 +66,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COST PER ACRE TO PRODUCE DAIKON",
   "operatingTotal": {
    "value": 2529,
    "unit": "$/acre",
@@ -88,6 +89,7 @@
    {
     "name": "Ending DEC 05 05 05 05 05 05",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5,
     "labor": 5,
     "fuel": 5,
@@ -101,6 +103,7 @@
    {
     "name": "Miscellaneous Pickup Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 22,
     "labor": 22,
     "fuel": 22,

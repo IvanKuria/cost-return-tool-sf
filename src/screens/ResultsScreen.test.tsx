@@ -43,7 +43,7 @@ describe('farmer-facing results', () => {
     const open = [...html.matchAll(/<details[^>]*\bopen\b[^>]*><summary[^>]*>([^<]*)<\/summary>/g)].map(m => m[1]);
     expect(open.length).toBeLessThanOrEqual(1);
     expect(open.every(text => text.startsWith('Table 1.'))).toBe(true);
-    expect(html).toContain('Tables in the UC study format');
+    expect(html).toContain('Detailed cost tables');
   });
 
   it('offers a labeled month selector without selecting January for the user', () => {

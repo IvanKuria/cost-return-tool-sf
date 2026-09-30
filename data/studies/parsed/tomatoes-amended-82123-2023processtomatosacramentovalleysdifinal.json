@@ -57,6 +57,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "CULTURAL COSTS PER ACRE TO PRODUCE PROCESSING TOMATOES (SDI)",
   "operatingTotal": {
    "value": 4583,
    "unit": "$/acre",
@@ -139,6 +140,7 @@
    {
     "name": "Irrigation-Drip Acid Flush",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -152,6 +154,7 @@
    {
     "name": "Drip Tape Extraction 20% Ac",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.08,
     "labor": 29.5,
     "fuel": 9,
@@ -165,6 +168,7 @@
    {
     "name": "PTAB CTGA CTRI CDFA-CTVP",
     "category": "assessment",
+    "section": "Assessment",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

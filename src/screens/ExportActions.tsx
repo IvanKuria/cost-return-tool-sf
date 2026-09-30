@@ -8,6 +8,7 @@ type Kind = 'pdf' | 'xlsx' | 'csv';
 
 export function ExportActions({ plan, result }: { plan: Plan; result: FarmResult }) {
   const { t, lang } = useT();
+  const [includeDetails, setIncludeDetails] = useState(false);
   const [busy, setBusy] = useState<Kind | null>(null);
   const [status, setStatus] = useState<'error' | 'done' | null>(null);
   const save = async (kind: Kind) => {
@@ -17,7 +18,7 @@ export function ExportActions({ plan, result }: { plan: Plan; result: FarmResult
     try {
       const snapshot = createExportSnapshot(plan, result, lang);
       const { buildPdf, buildWorkbook, buildCashFlowCsv, downloadExport } = await import('../lib/exportFiles');
-      const bytes = kind === 'pdf' ? await buildPdf(snapshot) : kind === 'xlsx' ? await buildWorkbook(snapshot) : buildCashFlowCsv(snapshot);
+      const bytes = kind === 'pdf' ? await buildPdf(snapshot, { includeDetails }) : kind === 'xlsx' ? await buildWorkbook(snapshot) : buildCashFlowCsv(snapshot);
       downloadExport(bytes, exportFilename(snapshot.title, kind, new Date(snapshot.created)), kind);
       setStatus('done');
     } catch { setStatus('error'); }
@@ -27,6 +28,7 @@ export function ExportActions({ plan, result }: { plan: Plan; result: FarmResult
   return <section aria-labelledby="export-heading">
     <h2 id="export-heading" className="text-[20px] font-semibold mb-3">{t('export.title')}</h2>
     <p className="text-sm text-ink-2 mb-4">{t('export.snapshot')}</p>
+    <label className="flex min-h-11 items-center gap-2 text-sm mb-3"><input type="checkbox" checked={includeDetails} onChange={e => setIncludeDetails(e.target.checked)} />{lang === 'es' ? 'Incluir fuentes y cálculos completos en el PDF' : 'Include full sources and calculations in PDF'}</label>
     <div className="flex flex-wrap gap-3" aria-busy={busy !== null}>
       <Button variant="secondary" disabled={busy !== null} onClick={() => void save('pdf')}>{label('pdf', 'export.pdf')}</Button>
       <Button variant="secondary" disabled={busy !== null} onClick={() => void save('xlsx')}>{label('xlsx', 'export.xlsx')}</Button>

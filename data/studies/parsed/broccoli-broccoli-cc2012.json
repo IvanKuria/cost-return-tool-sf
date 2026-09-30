@@ -66,6 +66,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE BROCCOLI",
   "operatingTotal": {
    "value": 5038,
    "unit": "$/acre",
@@ -151,6 +152,7 @@
    {
     "name": "Chop - 1X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 4,
     "fuel": 10,
@@ -164,6 +166,7 @@
    {
     "name": "Disc & Roll - 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 23,
     "fuel": 56,
@@ -177,6 +180,7 @@
    {
     "name": "Chisel - 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.35,
     "labor": 8,
     "fuel": 18,
@@ -190,6 +194,7 @@
    {
     "name": "Rip - 1X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.61,
     "labor": 14,
     "fuel": 33,
@@ -203,6 +208,7 @@
    {
     "name": "Landplane - 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.36,
     "labor": 9,
     "fuel": 19,
@@ -216,6 +222,7 @@
    {
     "name": "Chisel - 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 4,
     "fuel": 9,
@@ -229,6 +236,7 @@
    {
     "name": "Pre-plant Herbicide (Dacthal, Goal Tender)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 2,
@@ -242,6 +250,7 @@
    {
     "name": "Pre-plant Insecticide (Admire)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 4,
     "fuel": 4,
@@ -255,6 +264,7 @@
    {
     "name": "Soil Amendments (Lime & Gypsum)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 2,
@@ -268,6 +278,7 @@
    {
     "name": "List Beds & Fertilize Listing (3-9-9)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -281,6 +292,7 @@
    {
     "name": "Shape Beds & Roll",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.23,
     "labor": 5,
     "fuel": 5,
@@ -294,6 +306,7 @@
    {
     "name": "Transplant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -307,6 +320,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 5,
     "labor": 62,
     "fuel": 0,
@@ -320,6 +334,7 @@
    {
     "name": "Fertilize Side dress (18-0-5-4)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -333,6 +348,7 @@
    {
     "name": "Herbicide Line (Goal Tender)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 2,
@@ -346,6 +362,7 @@
    {
     "name": "Insecticide (Leverage, Synapse WG, LI 700)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 2,
@@ -359,6 +376,7 @@
    {
     "name": "Fungicide (Quadris)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 2,
@@ -372,6 +390,7 @@
    {
     "name": "Food Safety Certifications",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -385,6 +404,7 @@
    {
     "name": "Pickup use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 5,
@@ -398,6 +418,7 @@
    {
     "name": "Cut, Band, Pack, Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -411,6 +432,7 @@
    {
     "name": "Cooling, Palletizing, Selling Fee",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

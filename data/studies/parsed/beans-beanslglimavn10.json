@@ -82,6 +82,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE LARGE LIMA BEANS",
   "operatingTotal": {
    "value": 893,
    "unit": "$/acre",
@@ -167,6 +168,7 @@
    {
     "name": "Land Prep: Subsoil 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 7,
     "fuel": 17,
@@ -180,6 +182,7 @@
    {
     "name": "Land Prep: Disc 3X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.41,
     "labor": 7,
     "fuel": 18,
@@ -193,6 +196,7 @@
    {
     "name": "Land Prep: Landplane 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.24,
     "labor": 4,
     "fuel": 4,
@@ -206,6 +210,7 @@
    {
     "name": "Land Prep: Laser Level 1X/4Yr",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -219,6 +224,7 @@
    {
     "name": "Land Prep: List Beds",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -232,6 +238,7 @@
    {
     "name": "Fertilize: at bed listing (Aqua, 4-10-10 + Zn)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -245,6 +252,7 @@
    {
     "name": "Irrigate: Pull Ditch 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 4,
@@ -258,6 +266,7 @@
    {
     "name": "Irrigate: Pre-irrigation",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 6,
     "fuel": 0,
@@ -271,6 +280,7 @@
    {
     "name": "Irrigate: Close Ditch 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
@@ -284,6 +294,7 @@
    {
     "name": "Weed: Apply & Incorporate Preplant Herbicide (Treflan, Dual), 1st pass",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -297,6 +308,7 @@
    {
     "name": "Weed: Incorporate Preplant herbicide, 2nd pass",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.33,
     "labor": 6,
     "fuel": 5,
@@ -310,6 +322,7 @@
    {
     "name": "Plant: Beans",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 7,
     "fuel": 5,
@@ -323,6 +336,7 @@
    {
     "name": "Weed: Cultivate & Furrow 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.28,
     "labor": 5,
     "fuel": 4,
@@ -336,6 +350,7 @@
    {
     "name": "Irrigate: District Water 5X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2.5,
     "labor": 29,
     "fuel": 0,
@@ -349,6 +364,7 @@
    {
     "name": "Insect: Mites (Comite) Ground",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -362,6 +378,7 @@
    {
     "name": "Insect: Lygus, Aphid (Dimethoate) Air",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -375,6 +392,7 @@
    {
     "name": "Insect: Lygus (Warrior) Air",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -388,6 +406,7 @@
    {
     "name": "Pickup: (bean business)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 3,
@@ -401,6 +420,7 @@
    {
     "name": "ATV: (bean business)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 0,
@@ -414,6 +434,7 @@
    {
     "name": "Cut & Rake Beans",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -427,6 +448,7 @@
    {
     "name": "Thresh Beans & Haul",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -440,6 +462,7 @@
    {
     "name": "Clean, Bag, Store, Insurance",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -453,6 +476,7 @@
    {
     "name": "Assessments",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

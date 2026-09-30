@@ -107,6 +107,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ALFALFA",
   "operatingTotal": {
    "value": 652,
    "unit": "$/acre",
@@ -185,6 +186,7 @@
    {
     "name": "Weeds: (TriCor 75DF/Gramoxone)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -198,6 +200,7 @@
    {
     "name": "Vertebrate: Rodent Bait - 25% of Acres",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -211,6 +214,7 @@
    {
     "name": "Fertilize: Sulfur",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -224,6 +228,7 @@
    {
     "name": "Fertilize: Potassium",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -237,6 +242,7 @@
    {
     "name": "Fertilize: Sodium Molybdate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -250,6 +256,7 @@
    {
     "name": "Fertilize: 11-52-0",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -263,6 +270,7 @@
    {
     "name": "Irrigation: Water & Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 72,
     "fuel": 0,
@@ -276,6 +284,7 @@
    {
     "name": "Insects: Weevils (Steward EC)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -289,6 +298,7 @@
    {
     "name": "Pickup 3/4-Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.83,
     "labor": 26,
     "fuel": 4,
@@ -302,6 +312,7 @@
    {
     "name": "Pickup 1/2-Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.83,
     "labor": 26,
     "fuel": 4,
@@ -315,6 +326,7 @@
    {
     "name": "UTV4WD",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 16,
     "fuel": 2,
@@ -328,6 +340,7 @@
    {
     "name": "Swath Hay 3x",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.38,
     "labor": 12,
     "fuel": 9,
@@ -341,6 +354,7 @@
    {
     "name": "Rake Hay 3x",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.25,
     "labor": 8,
     "fuel": 2,
@@ -354,6 +368,7 @@
    {
     "name": "Bale Hay 3x (Small Baler #1)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.28,
     "labor": 9,
     "fuel": 3,
@@ -367,6 +382,7 @@
    {
     "name": "Bale Hay 3x (Small Baler #2)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.28,
     "labor": 9,
     "fuel": 3,
@@ -380,6 +396,7 @@
    {
     "name": "Roadside Hay 3x",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.45,
     "labor": 14,
     "fuel": 10,
@@ -393,6 +410,7 @@
    {
     "name": "Load Hay 3x",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.15,
     "labor": 5,
     "fuel": 3,
@@ -935,6 +953,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ALFALFA"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

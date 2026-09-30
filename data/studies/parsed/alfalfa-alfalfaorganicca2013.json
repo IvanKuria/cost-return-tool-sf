@@ -84,6 +84,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ORGANIC ALFALFA HAY",
   "operatingTotal": {
    "value": 663,
    "unit": "$/acre",
@@ -168,6 +169,7 @@
    {
     "name": "Weed: Harrow",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.08,
     "labor": 1,
     "fuel": 2,
@@ -181,6 +183,7 @@
    {
     "name": "Insect: Weevil (Entrust)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 0,
@@ -194,6 +197,7 @@
    {
     "name": "Irrigate: (water & labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.5,
     "labor": 19,
     "fuel": 0,
@@ -207,6 +211,7 @@
    {
     "name": "Fertilize: Tissue Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -220,6 +225,7 @@
    {
     "name": "Fertilize: Compost (1X per 4 Yrs, 25% of cost)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -233,6 +239,7 @@
    {
     "name": "Insect: Worms (Xen Tari)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 0,
@@ -246,6 +253,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.57,
     "labor": 10,
     "fuel": 7,
@@ -259,6 +267,7 @@
    {
     "name": "Harvest - 7X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -641,6 +650,7 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ORGANIC ALFALFA"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

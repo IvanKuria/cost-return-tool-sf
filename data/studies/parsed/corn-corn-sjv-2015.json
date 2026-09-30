@@ -94,6 +94,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE GRAIN CORN",
   "operatingTotal": {
    "value": 1204,
    "unit": "$/acre",
@@ -196,6 +197,7 @@
    {
     "name": "Chisel-24'",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.16,
     "labor": 3,
     "fuel": 9,
@@ -209,6 +211,7 @@
    {
     "name": "Finish Disc 2X",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.23,
     "labor": 5,
     "fuel": 13,
@@ -222,6 +225,7 @@
    {
     "name": "Laser Plane-Custom 25% Ac",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -235,6 +239,7 @@
    {
     "name": "Tri-plane 75% Ac",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 6,
@@ -248,6 +253,7 @@
    {
     "name": "List-Shape Beds",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 8,
@@ -261,6 +267,7 @@
    {
     "name": "Open Ditch",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 5,
@@ -274,6 +281,7 @@
    {
     "name": "Pre-irrigate",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0,
     "labor": 7,
     "fuel": 0,
@@ -287,6 +295,7 @@
    {
     "name": "Close Ditch",
     "category": "other",
+    "section": "Pre-plant",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 2,
@@ -300,6 +309,7 @@
    {
     "name": "Plant/Fertilize (10-34-0)",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.33,
     "labor": 7,
     "fuel": 12,
@@ -313,6 +323,7 @@
    {
     "name": "Cultivate-Furrow Out",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 3,
@@ -326,6 +337,7 @@
    {
     "name": "Weeds-Post Emergence",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 4,
@@ -339,6 +351,7 @@
    {
     "name": "Fertilize-UN32",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -352,6 +365,7 @@
    {
     "name": "Pests-Mites Oberon 2SC",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 4,
@@ -365,6 +379,7 @@
    {
     "name": "Open Ditch",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 5,
@@ -378,6 +393,7 @@
    {
     "name": "Irrigate 7X",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0,
     "labor": 95,
     "fuel": 0,
@@ -391,6 +407,7 @@
    {
     "name": "Close Ditch",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 2,
@@ -404,6 +421,7 @@
    {
     "name": "Service Truck",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 2,
@@ -417,6 +435,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural ",
     "timeHrsPerAcre": 0.27,
     "labor": 11,
     "fuel": 4,
@@ -430,6 +449,7 @@
    {
     "name": "Harvest-Bankout Grain",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,

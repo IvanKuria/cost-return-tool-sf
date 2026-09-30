@@ -209,6 +209,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ALFALFA",
   "operatingTotal": {
    "value": 1004,
    "unit": "$/acre",
@@ -294,6 +295,7 @@
    {
     "name": "Weeds-Roundup /Velpar",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -307,6 +309,7 @@
    {
     "name": "Fertilizer 11-52-0",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -320,6 +323,7 @@
    {
     "name": "Insects-Aphids/Weevil-Warrior II",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -333,6 +337,7 @@
    {
     "name": "Irrigation-Ditch/Tail Levee",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.38,
     "labor": 8,
     "fuel": 17,
@@ -346,6 +351,7 @@
    {
     "name": "Irrigate-Flood 7X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -359,6 +365,7 @@
    {
     "name": "Insects-Worms Coragen",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -372,6 +379,7 @@
    {
     "name": "Insects-Worms Belt SC",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -385,6 +393,7 @@
    {
     "name": "Irrigation Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 122,
     "fuel": 0,
@@ -398,6 +407,7 @@
    {
     "name": "Pickup 1/2 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.47,
     "labor": 10,
     "fuel": 4,
@@ -411,6 +421,7 @@
    {
     "name": "Pickup 3/4 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 8,
     "fuel": 5,
@@ -424,6 +435,7 @@
    {
     "name": "Service Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 2,
@@ -437,6 +449,7 @@
    {
     "name": "Harvest-Swathing",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.75,
     "labor": 15,
     "fuel": 26,
@@ -450,6 +463,7 @@
    {
     "name": "Harvest-Raking",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.6,
     "labor": 12,
     "fuel": 5,
@@ -463,6 +477,7 @@
    {
     "name": "Harvest-Baling",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.93,
     "labor": 19,
     "fuel": 35,
@@ -476,6 +491,7 @@
    {
     "name": "Harvest-Roadsiding",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.93,
     "labor": 19,
     "fuel": 33,
@@ -1048,6 +1064,7 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ALFALFA"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

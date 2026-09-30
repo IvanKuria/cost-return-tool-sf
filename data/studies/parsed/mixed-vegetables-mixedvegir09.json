@@ -142,6 +142,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE MELONS",
   "operatingTotal": {
    "value": 13460,
    "unit": "$/acre",
@@ -227,6 +228,7 @@
    {
     "name": "Land Prep: Disk",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.29,
     "labor": 5,
     "fuel": 3,
@@ -240,6 +242,7 @@
    {
     "name": "Cover Crop: Plant",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.39,
     "labor": 7,
     "fuel": 4,
@@ -253,6 +256,7 @@
    {
     "name": "Cover Crop: Mow",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 18,
     "fuel": 10,
@@ -266,6 +270,7 @@
    {
     "name": "Cover Crop: Rototill",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 37,
     "fuel": 20,
@@ -279,6 +284,7 @@
    {
     "name": "Fertilize: (Blood Meal)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.65,
     "labor": 12,
     "fuel": 6,
@@ -292,6 +298,7 @@
    {
     "name": "Fertilize: 1X/2 Yr (Compost)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 2,
@@ -305,6 +312,7 @@
    {
     "name": "Fertilize: 1X/3 Yr (Rock Phosphate)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.22,
     "labor": 4,
     "fuel": 2,
@@ -318,6 +326,7 @@
    {
     "name": "Amendment: (Lime)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.65,
     "labor": 12,
     "fuel": 6,
@@ -331,6 +340,7 @@
    {
     "name": "Fertilize: Hand Application (Potassium Sulfate)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 27,
     "fuel": 0,
@@ -344,6 +354,7 @@
    {
     "name": "Land Prep: Rip 1X/5 Yr (two directions)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.31,
     "labor": 6,
     "fuel": 3,
@@ -357,6 +368,7 @@
    {
     "name": "Fertilize: Incorporate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 37,
     "fuel": 20,
@@ -370,6 +382,7 @@
    {
     "name": "Irrigate: Lay Drip Tape (labor). Weed: Lay Mulch (labor, mulch)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 59,
     "fuel": 9,
@@ -383,6 +396,7 @@
    {
     "name": "Rodent: Gopher Control",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 14.5,
     "labor": 194,
     "fuel": 0,
@@ -396,6 +410,7 @@
    {
     "name": "Plant: Hand with Jab Planter",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 21,
     "labor": 281,
     "fuel": 0,
@@ -409,6 +424,7 @@
    {
     "name": "Irrigate: (water & labor)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 10.5,
     "labor": 141,
     "fuel": 0,
@@ -422,6 +438,7 @@
    {
     "name": "Weed: Hand Hoe",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 144,
     "labor": 1930,
     "fuel": 0,
@@ -435,6 +452,7 @@
    {
     "name": "Insect: Aphid (Neemix). Disease: Mildew (Neemix) Backpack",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 4,
     "labor": 54,
     "fuel": 0,
@@ -448,6 +466,7 @@
    {
     "name": "Insect: Squash Bug (vacuum)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 27,
     "fuel": 0,
@@ -461,6 +480,7 @@
    {
     "name": "Pick: 3X per week (picking labor see Table 16)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 42,
     "labor": 4153,
     "fuel": 377,
@@ -474,6 +494,7 @@
    {
     "name": "Packing/Sort",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 180,
     "labor": 2412,
     "fuel": 0,
@@ -487,6 +508,7 @@
    {
     "name": "Wholesale: (delivery)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 3.33,
     "labor": 79,
     "fuel": 40,
@@ -500,6 +522,7 @@
    {
     "name": "Farmers’ market (delivery, labor, see Table 16)",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 9.33,
     "labor": 816,
     "fuel": 112,

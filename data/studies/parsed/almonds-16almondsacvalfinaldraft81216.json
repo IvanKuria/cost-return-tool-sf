@@ -101,6 +101,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ALMONDS",
   "operatingTotal": {
    "value": 2267,
    "unit": "$/acre",
@@ -191,6 +192,7 @@
    {
     "name": "Pests: Weeds - Dormant Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.16,
     "labor": 4,
     "fuel": 0,
@@ -204,6 +206,7 @@
    {
     "name": "Pests: Weeds - Mow Middles 5x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.47,
     "labor": 11,
     "fuel": 5,
@@ -217,6 +220,7 @@
    {
     "name": "Pollination",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -230,6 +234,7 @@
    {
     "name": "Irrigation: Frost Protection",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 3,
     "fuel": 0,
@@ -243,6 +248,7 @@
    {
     "name": "Irrigation: Pump Test",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -256,6 +262,7 @@
    {
     "name": "Irrigation: Water Analysis",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -269,6 +276,7 @@
    {
     "name": "Pests: Disease/Insects 3x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.75,
     "labor": 18,
     "fuel": 9,
@@ -282,6 +290,7 @@
    {
     "name": "Pests: Squirrel - Traps 6x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 4,
     "fuel": 0,
@@ -295,6 +304,7 @@
    {
     "name": "Fertilize: UAN-32 3x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -308,6 +318,7 @@
    {
     "name": "Pests: Gophers - Bait 2x",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -321,6 +332,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 51,
     "fuel": 0,
@@ -334,6 +346,7 @@
    {
     "name": "Pests: Weeds - Strip Spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.16,
     "labor": 4,
     "fuel": 0,
@@ -347,6 +360,7 @@
    {
     "name": "Fertilize: Leaf Sample (1/20ac)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -360,6 +374,7 @@
    {
     "name": "Pests: Insects",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 3,
@@ -373,6 +388,7 @@
    {
     "name": "Pests: Weeds - Pre-Harvest",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.16,
     "labor": 4,
     "fuel": 0,
@@ -386,6 +402,7 @@
    {
     "name": "Fertilize: Hull Sample (1/25ac)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -399,6 +416,7 @@
    {
     "name": "Fertilize: K2SO4",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.19,
     "labor": 4,
     "fuel": 1,
@@ -412,6 +430,7 @@
    {
     "name": "Fertilize: Zinc Sulfate (36%)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.25,
     "labor": 6,
     "fuel": 3,
@@ -425,6 +444,7 @@
    {
     "name": "Winter Sanitation",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.09,
     "labor": 2,
     "fuel": 1,
@@ -438,6 +458,7 @@
    {
     "name": "Prune: Dormant (Alternate Years)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 34,
     "fuel": 0,
@@ -451,6 +472,7 @@
    {
     "name": "Prune: Push Prunings (Alternate Rows)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.23,
     "labor": 14,
     "fuel": 3,
@@ -464,6 +486,7 @@
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1.67,
     "labor": 39,
     "fuel": 10,
@@ -477,6 +500,7 @@
    {
     "name": "ATV Use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.83,
     "labor": 20,
     "fuel": 1,
@@ -490,6 +514,7 @@
    {
     "name": "PCA Fee",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -503,6 +528,7 @@
    {
     "name": "Shake-Trees",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -516,6 +542,7 @@
    {
     "name": "Hand Rake/Blow Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 8,
     "fuel": 0,
@@ -529,6 +556,7 @@
    {
     "name": "Sweep Windrows",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -542,6 +570,7 @@
    {
     "name": "Pickup/Haul Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -555,6 +584,7 @@
    {
     "name": "Hull/Shell Nuts",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -1049,6 +1079,661 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ALMONDS"
  },
  "establishment": {
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH AN ALMOND ORCHARD",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th",
+    "6th"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Plant",
+     "kind": "heading",
+     "section": "Pre-Plant",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Pre-Plant:"
+    },
+    {
+     "label": "Tree Removal (50%)",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      375,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Tree Removal (50%) 375"
+    },
+    {
+     "label": "Rip 4’ Depth/Root Removal (50%)",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      117,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Rip 4’ Depth/Root Removal (50%) 117"
+    },
+    {
+     "label": "Disc & Roll 2x",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      50,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Disc & Roll 2x 50"
+    },
+    {
+     "label": "Laser Leveling",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      70,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Laser Leveling 70"
+    },
+    {
+     "label": "Make Berms/Rows",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      30,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Make Berms/Rows 30"
+    },
+    {
+     "label": "Smooth Row Middles",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      30,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Smooth Row Middles 30"
+    },
+    {
+     "label": "Pests: Weeds – Strip Spray",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      34,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Pests: Weeds – Strip Spray 34"
+    },
+    {
+     "label": "TOTAL PRE-PLANT COSTS",
+     "kind": "subtotal",
+     "section": "Pre-Plant",
+     "values": [
+      706,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL PRE-PLANT COSTS 706"
+    },
+    {
+     "label": "Plant",
+     "kind": "heading",
+     "section": "Plant",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Plant:"
+    },
+    {
+     "label": "Dip Roots/Plant/Top",
+     "kind": "operation",
+     "section": "Plant",
+     "values": [
+      1162,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Dip Roots/Plant/Top 1,162"
+    },
+    {
+     "label": "Stake/Whitewash/Cartons",
+     "kind": "operation",
+     "section": "Plant",
+     "values": [
+      309,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Stake/Whitewash/Cartons 309"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Plant",
+     "values": [
+      1471,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "TOTAL PLANTING COSTS 1,471"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Irrigate: Pump Test",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     "page": 13,
+     "quote": "Irrigate: Pump Test 4 4 4 4 4 4"
+    },
+    {
+     "label": "Irrigate: Water Analysis",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "page": 13,
+     "quote": "Irrigate: Water Analysis 1 1 1 1 1 1"
+    },
+    {
+     "label": "Irrigate: Frost Protection",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      null,
+      17,
+      17,
+      17
+     ],
+     "page": 13,
+     "quote": "Irrigate: Frost Protection 17 17 17"
+    },
+    {
+     "label": "Irrigate",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      150,
+      150,
+      217,
+      267,
+      317,
+      317
+     ],
+     "page": 13,
+     "quote": "Irrigate 150 150 217 267 317 317"
+    },
+    {
+     "label": "Irrigation Labor",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      24,
+      24,
+      35,
+      46,
+      54,
+      54
+     ],
+     "page": 13,
+     "quote": "Irrigation Labor 24 24 35 46 54 54"
+    },
+    {
+     "label": "Pollination: Hive Rental",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      90,
+      180,
+      360,
+      450
+     ],
+     "page": 13,
+     "quote": "Pollination: Hive Rental 90 180 360 450"
+    },
+    {
+     "label": "Fertilize: Hand (15-15-15) 3x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      112,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Fertilize: Hand (15-15-15) 3x 112"
+    },
+    {
+     "label": "Fertilize: UAN – 32, 3x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      17,
+      35,
+      70,
+      93,
+      128
+     ],
+     "page": 13,
+     "quote": "Fertilize: UAN – 32, 3x 17 35 70 93 128"
+    },
+    {
+     "label": "Fertilize: Zinc Sulfate (36%)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      25,
+      30,
+      39,
+      39,
+      39
+     ],
+     "page": 13,
+     "quote": "Fertilize: Zinc Sulfate (36%) 25 30 39 39 39"
+    },
+    {
+     "label": "Fertilize: K2SO4",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      14,
+      36,
+      64,
+      108,
+      151
+     ],
+     "page": 13,
+     "quote": "Fertilize: K2SO4 14 36 64 108 151"
+    },
+    {
+     "label": "Fertilize: Leaf Sample (1/20 acres)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      1,
+      1,
+      1,
+      1
+     ],
+     "page": 13,
+     "quote": "Fertilize: Leaf Sample (1/20 acres) 1 1 1 1"
+    },
+    {
+     "label": "Fertilize: Hull Sample (1/25 acres)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      1,
+      1,
+      1,
+      1
+     ],
+     "page": 13,
+     "quote": "Fertilize: Hull Sample (1/25 acres) 1 1 1 1"
+    },
+    {
+     "label": "Pests: Gophers – Bait 2x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      8,
+      7,
+      7,
+      7,
+      7,
+      7
+     ],
+     "page": 13,
+     "quote": "Pests: Gophers – Bait 2x 8 7 7 7 7 7"
+    },
+    {
+     "label": "Pests: Squirrels – Traps 6x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     "page": 13,
+     "quote": "Pests: Squirrels – Traps 6x 4 4 4 4 4 4"
+    },
+    {
+     "label": "Pests: Weeds – Strip Spray",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      102,
+      20,
+      6,
+      6,
+      6,
+      6
+     ],
+     "page": 13,
+     "quote": "Pests: Weeds – Strip Spray 102 20 6 6 6 6"
+    },
+    {
+     "label": "Pests: Weeds – Pre-Harvest Spray",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      42,
+      42,
+      42,
+      42
+     ],
+     "page": 13,
+     "quote": "Pests: Weeds – Pre-Harvest Spray 42 42 42 42"
+    },
+    {
+     "label": "Pests: Weeds – Mow Middles",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      13,
+      8,
+      21,
+      21,
+      21,
+      21
+     ],
+     "page": 13,
+     "quote": "Pests: Weeds – Mow Middles 13 8 21 21 21 21"
+    },
+    {
+     "label": "Pests: Weeds – Dormant Spray",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      22,
+      68,
+      68,
+      68,
+      68
+     ],
+     "page": 13,
+     "quote": "Pests: Weeds – Dormant Spray 22 68 68 68 68"
+    },
+    {
+     "label": "Pests: Insects (Yr.1 Hand, Yr.2 50% of ac., Yr.3+ alternate years)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      11,
+      32,
+      null,
+      107,
+      null,
+      90
+     ],
+     "page": 13,
+     "quote": "Pests: Insects (Yr.1 Hand, Yr.2 50% of ac., Yr.3+ alternate years) 11 32 107 90"
+    },
+    {
+     "label": "Pests: Disease",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      64,
+      136,
+      142,
+      155
+     ],
+     "page": 13,
+     "quote": "Pests: Disease 64 136 142 155"
+    },
+    {
+     "label": "PCA Service Fee",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      20,
+      20,
+      20,
+      35,
+      35,
+      35
+     ],
+     "page": 13,
+     "quote": "PCA Service Fee 20 20 20 35 35 35"
+    },
+    {
+     "label": "Prune: Summer Suckering",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      22,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Prune: Summer Suckering 22"
+    },
+    {
+     "label": "Prune: Dormant – Hand Crew",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      34,
+      34,
+      34,
+      34,
+      34
+     ],
+     "page": 13,
+     "quote": "Prune: Dormant – Hand Crew 34 34 34 34 34"
+    },
+    {
+     "label": "Prune: Push Prunings",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      17,
+      17,
+      17,
+      17,
+      17
+     ],
+     "page": 13,
+     "quote": "Prune: Push Prunings 17 17 17 17 17"
+    },
+    {
+     "label": "Winter Sanitation",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      104,
+      104,
+      104,
+      104
+     ],
+     "page": 13,
+     "quote": "Winter Sanitation 104 104 104 104"
+    },
+    {
+     "label": "Pickup Truck Use",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      55,
+      55,
+      55,
+      55,
+      55,
+      55
+     ],
+     "page": 13,
+     "quote": "Pickup Truck Use 55 55 55 55 55 55"
+    },
+    {
+     "label": "ATV Use",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      21,
+      21,
+      21,
+      21,
+      21,
+      21
+     ],
+     "page": 13,
+     "quote": "ATV Use 21 21 21 21 21 21"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      545,
+      476,
+      912,
+      1347,
+      1550,
+      1821
+     ],
+     "page": 13,
+     "quote": "TOTAL CULTURAL COSTS 545 476 912 1,347 1,550 1,821"
+    }
+   ],
+   "yieldRow": {
+    "label": "Meat Pounds Per Acre @$2.50/lbs.",
+    "values": [
+     null,
+     null,
+     400,
+     800,
+     1400,
+     2000
+    ],
+    "quote": "Meat Pounds Per Acre @$2.50/lbs. 400 800 1,400 2,000"
+   }
+  },
   "years": [
    {
     "year": 1,

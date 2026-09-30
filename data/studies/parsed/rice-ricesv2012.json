@@ -96,6 +96,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE RICE",
   "operatingTotal": {
    "value": 1110,
    "unit": "$/acre",
@@ -180,6 +181,7 @@
    {
     "name": "Maintain drains",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 2,
@@ -193,6 +195,7 @@
    {
     "name": "Maintain and rework levees",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 2,
@@ -206,6 +209,7 @@
    {
     "name": "Chisel 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.17,
     "labor": 4,
     "fuel": 10,
@@ -219,6 +223,7 @@
    {
     "name": "Stubble disc",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.15,
     "labor": 4,
     "fuel": 7,
@@ -232,6 +237,7 @@
    {
     "name": "Finish disc 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.28,
     "labor": 7,
     "fuel": 12,
@@ -245,6 +251,7 @@
    {
     "name": "Triplane fields 2X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.19,
     "labor": 5,
     "fuel": 12,
@@ -258,6 +265,7 @@
    {
     "name": "Laser level – 1X/7 years",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -271,6 +279,7 @@
    {
     "name": "Fertilize – Aqua @ 130 lbs N",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -284,6 +293,7 @@
    {
     "name": "Fertilize – 12-23-20 @ 200 lbs",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 3,
@@ -297,6 +307,7 @@
    {
     "name": "Roll final seedbed",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 3,
@@ -310,6 +321,7 @@
    {
     "name": "Fertilize – zinc, 50% of acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -323,6 +335,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 1,
     "labor": 21,
     "fuel": 0,
@@ -336,6 +349,7 @@
    {
     "name": "Weed control – grass spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -349,6 +363,7 @@
    {
     "name": "Soak (chlorine) and deliver seed",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -362,6 +377,7 @@
    {
     "name": "Plant @ 180 lbs/acre",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -375,6 +391,7 @@
    {
     "name": "Insect control rice weevil, 15% of acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -388,6 +405,7 @@
    {
     "name": "Pest control shrimp/algae, 20% of acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -401,6 +419,7 @@
    {
     "name": "Weed control – broadleaf spray, 80% of acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -414,6 +433,7 @@
    {
     "name": "Weed control – cleanup spray, 20% of acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -427,6 +447,7 @@
    {
     "name": "Fertilize – topdress 21-0-0, 75% of acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -440,6 +461,7 @@
    {
     "name": "Insect control – armyworm, 5% of acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -453,6 +475,7 @@
    {
     "name": "Disease control – fungicide, 45% of acreage",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -466,6 +489,7 @@
    {
     "name": "Pickup truck use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.41,
     "labor": 20,
     "fuel": 6,
@@ -479,6 +503,7 @@
    {
     "name": "Combine rice – cutterbar header",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.39,
     "labor": 10,
     "fuel": 25,
@@ -492,6 +517,7 @@
    {
     "name": "Grain cart",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.21,
     "labor": 5,
     "fuel": 14,
@@ -505,6 +531,7 @@
    {
     "name": "Haul rice to dryer",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -518,6 +545,7 @@
    {
     "name": "Dry & store rice",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -531,6 +559,7 @@
    {
     "name": "Rice Research Board assessment",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -544,6 +573,7 @@
    {
     "name": "California Rice Commission assessment",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -557,6 +587,7 @@
    {
     "name": "Burn permit & fees, 10% of acreage",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 0,
@@ -570,6 +601,7 @@
    {
     "name": "Chop, flood & roll, 30% of acreage",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 0.07,
     "labor": 4,
     "fuel": 4,
@@ -583,6 +615,7 @@
    {
     "name": "Chop, 60% of acreage",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 0.16,
     "labor": 4,
     "fuel": 3,
@@ -596,6 +629,7 @@
    {
     "name": "Disc, 60% of acreage",
     "category": "postharvest",
+    "section": "Postharvest",
     "timeHrsPerAcre": 0.09,
     "labor": 2,
     "fuel": 4,

@@ -76,6 +76,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ALFALFA HAY",
   "operatingTotal": {
    "value": 1107,
    "unit": "$/acre",
@@ -173,6 +174,7 @@
    {
     "name": "Weeds-Roundup PowerMax",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -186,6 +188,7 @@
    {
     "name": "Fertilizer 11-52-0",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -199,6 +202,7 @@
    {
     "name": "Insects-Aphids/Weevil-Warrior II",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -212,6 +216,7 @@
    {
     "name": "Irrigation-Ditch/Tail Levee",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.38,
     "labor": 11,
     "fuel": 17,
@@ -225,6 +230,7 @@
    {
     "name": "Irrigate-Flood 6X",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -238,6 +244,7 @@
    {
     "name": "Insects-Worms Coragen",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -251,6 +258,7 @@
    {
     "name": "Insects-Worms Intepid",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
@@ -264,6 +272,7 @@
    {
     "name": "Irrigation Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 177,
     "fuel": 0,
@@ -277,6 +286,7 @@
    {
     "name": "Pickup 1/2 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.47,
     "labor": 13,
     "fuel": 4,
@@ -290,6 +300,7 @@
    {
     "name": "Pickup 3/4 Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.4,
     "labor": 11,
     "fuel": 4,
@@ -303,6 +314,7 @@
    {
     "name": "Service Truck",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.2,
     "labor": 6,
     "fuel": 2,
@@ -316,6 +328,7 @@
    {
     "name": "Harvest-Swathing",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.75,
     "labor": 21,
     "fuel": 25,
@@ -329,6 +342,7 @@
    {
     "name": "Harvest-Raking",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.6,
     "labor": 17,
     "fuel": 5,
@@ -342,6 +356,7 @@
    {
     "name": "Harvest-Baling",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.93,
     "labor": 26,
     "fuel": 34,
@@ -355,6 +370,7 @@
    {
     "name": "Harvest-Roadsiding",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.93,
     "labor": 26,
     "fuel": 32,
@@ -1045,6 +1061,7 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ALFALFA HAY"
  },
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,

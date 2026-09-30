@@ -102,6 +102,7 @@
   }
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE RICE",
   "operatingTotal": {
    "value": 1466,
    "unit": "$/acre",
@@ -204,6 +205,7 @@
    {
     "name": "Irrigation: Maintain laterals/Boxes/Drains",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 4,
     "fuel": 2,
@@ -217,6 +219,7 @@
    {
     "name": "Irrigation: Maintain Interior Levees",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 4,
     "fuel": 6,
@@ -230,6 +233,7 @@
    {
     "name": "Chisel 2x",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.28,
     "labor": 9,
     "fuel": 16,
@@ -243,6 +247,7 @@
    {
     "name": "Stubble Disc",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.12,
     "labor": 4,
     "fuel": 7,
@@ -256,6 +261,7 @@
    {
     "name": "Finish Disc",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 4,
     "fuel": 7,
@@ -269,6 +275,7 @@
    {
     "name": "Land Level: Tri-plane 50% Ac",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.13,
     "labor": 5,
     "fuel": 7,
@@ -282,6 +289,7 @@
    {
     "name": "Land Level: GPS Laser 50% Ac",
     "category": "other",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -295,6 +303,7 @@
    {
     "name": "Fertilize: NH4OH @ 130lbs. N/Ac",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.12,
     "labor": 4,
     "fuel": 6,
@@ -308,6 +317,7 @@
    {
     "name": "Fertilize: 12-23-20/Zinc Sulfate",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -321,6 +331,7 @@
    {
     "name": "Finish Roll",
     "category": "other",
+    "section": "Pre-Plant",
     "timeHrsPerAcre": 0.12,
     "labor": 4,
     "fuel": 2,
@@ -334,6 +345,7 @@
    {
     "name": "Irrigate: Water & Labor",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 44,
     "fuel": 0,
@@ -347,6 +359,7 @@
    {
     "name": "Seed: Soak & Deliver",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -360,6 +373,7 @@
    {
     "name": "Planting: Seed - 175 lbs./Acre",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -373,6 +387,7 @@
    {
     "name": "Weeds: Grasses (Butte)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -386,6 +401,7 @@
    {
     "name": "Insects: Midge/Shrimp/Weevil 25% Ac (Lambda cy)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -399,6 +415,7 @@
    {
     "name": "Weeds: Algae 30% Ac (Copper Sulfate)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -412,6 +429,7 @@
    {
     "name": "Weeds: Broadleaf (Grandstand/Super Wham)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -425,6 +443,7 @@
    {
     "name": "Weeds: Cleanup 80% Ac (Regiment)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -438,6 +457,7 @@
    {
     "name": "Fertilize: Top-Dress 75% Ac (NH4SO4)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -451,6 +471,7 @@
    {
     "name": "Insects: Armyworms 25% Ac (Dimilin 2L)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -464,6 +485,7 @@
    {
     "name": "Disease: Fungus 80% Ac (Quadris)",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -477,6 +499,7 @@
    {
     "name": "Truck: ½-Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.47,
     "labor": 16,
     "fuel": 5,
@@ -490,6 +513,7 @@
    {
     "name": "Truck: ¾-Ton",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.5,
     "labor": 17,
     "fuel": 5,
@@ -503,6 +527,7 @@
    {
     "name": "Combine/Header 30'",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.33,
     "labor": 11,
     "fuel": 26,
@@ -516,6 +541,7 @@
    {
     "name": "Bankout Grain",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.3,
     "labor": 10,
     "fuel": 16,
@@ -529,6 +555,7 @@
    {
     "name": "Haul to Dryer & Storage",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -542,6 +569,7 @@
    {
     "name": "Dry & Store Rice",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -555,6 +583,7 @@
    {
     "name": "Rice Research Board Assessment",
     "category": "assessment",
+    "section": "Assessments",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -568,6 +597,7 @@
    {
     "name": "California Rice Commission",
     "category": "assessment",
+    "section": "Assessments",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -581,6 +611,7 @@
    {
     "name": "Straw: Chop 100% Ac",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.25,
     "labor": 8,
     "fuel": 4,
@@ -594,6 +625,7 @@
    {
     "name": "Straw: Disc 100% Ac",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.17,
     "labor": 6,
     "fuel": 9,
@@ -607,6 +639,7 @@
    {
     "name": "Straw: Roll/Stomp 100% Ac",
     "category": "postharvest",
+    "section": "Post-Harvest",
     "timeHrsPerAcre": 0.17,
     "labor": 6,
     "fuel": 9,

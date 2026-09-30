@@ -205,6 +205,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "MONTLY CASH COST PER ACRE TO PRODUCE SWEETPOTATOES",
   "operatingTotal": {
    "value": 3417,
    "unit": "$/acre",
@@ -247,6 +248,7 @@
    {
     "name": "Ending OCT 06 05 05 06 06 06",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 6,
     "labor": 6,
     "fuel": 6,
@@ -260,6 +262,7 @@
    {
     "name": "Pickup Use 7 7 7 7 7 7",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 7,
     "labor": 7,
     "fuel": 7,

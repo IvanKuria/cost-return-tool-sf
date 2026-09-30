@@ -123,6 +123,7 @@
   "priceStatement": null
  },
  "costsPerAcre": {
+  "title": "COSTS PER ACRE TO PRODUCE ALFALFA",
   "operatingTotal": {
    "value": 345,
    "unit": "$/acre",
@@ -196,6 +197,7 @@
    {
     "name": "Weed control – dormant spray",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -209,6 +211,7 @@
    {
     "name": "Fertilize: sulfur, 1X every 4 yrs.",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -222,6 +225,7 @@
    {
     "name": "Fertilize: 11-52-0",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -235,6 +239,7 @@
    {
     "name": "Irrigate",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 2,
     "labor": 27,
     "fuel": 0,
@@ -248,6 +253,7 @@
    {
     "name": "Insect control – weevil, 1X every 3 yrs.",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
@@ -261,6 +267,7 @@
    {
     "name": "Pickup truck use",
     "category": "cultural",
+    "section": "Cultural",
     "timeHrsPerAcre": 0.46,
     "labor": 10,
     "fuel": 7,
@@ -274,6 +281,7 @@
    {
     "name": "Swath hay 3X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.38,
     "labor": 8,
     "fuel": 16,
@@ -287,6 +295,7 @@
    {
     "name": "Rake hay 3X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.25,
     "labor": 5,
     "fuel": 4,
@@ -300,6 +309,7 @@
    {
     "name": "Bale hay 3X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.33,
     "labor": 7,
     "fuel": 19,
@@ -313,6 +323,7 @@
    {
     "name": "Roadside hay 3X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.31,
     "labor": 7,
     "fuel": 17,
@@ -326,6 +337,7 @@
    {
     "name": "Load hay 3X",
     "category": "harvest",
+    "section": "Harvest",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 5,
@@ -695,6 +707,7 @@
  },
  "monthly": null,
  "establishment": {
+  "table": null,
   "years": [
    {
     "year": 1,
