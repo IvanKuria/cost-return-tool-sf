@@ -208,3 +208,65 @@ describe('all studies', () => {
     for (const s of archived) expect(s.source.indexYear).not.toBeNull();
   });
 });
+
+describe('avocado establishment tables', () => {
+  const studies = fs.readdirSync(PARSED_DIR).filter(f => f.startsWith('avocados-')).map(f => JSON.parse(fs.readFileSync(path.join(PARSED_DIR, f), 'utf8')) as ParsedStudy);
+  const byId = (id: string) => studies.find(s => s.source.id === id)!;
+  const cell = (id: string, label: RegExp, col: number) => {
+    const t = byId(id).establishment!.table!;
+    const r = t.rows.find(x => label.test(x.label));
+    expect(r, `${id}: no row ${label}`).toBeTruthy();
+    return r!.values[col];
+  };
+  const ids = [
+    'avocados-2020avocadohighdensitysandiegocounty', 'avocados-avocadoconventionalsdr2011', 'avocados-avocadosdrorganic-reports2011',
+    'avocados-avocadoconventionalvsbslo2011', 'avocados-avocadovsbsloorganicreport2011',
+  ];
+  it.each(ids)('%s has an establishment table with six years and its rows', id => {
+    const t = byId(id)?.establishment?.table;
+    expect(t).toBeTruthy();
+    expect(t!.years).toHaveLength(6);
+    expect(t!.rows.filter(r => r.kind === 'operation').length).toBeGreaterThan(15);
+    expect(t!.rows.some(r => r.kind === 'total' && /OPERATING/i.test(r.label))).toBe(true);
+    expect(t!.rows.some(r => r.kind === 'accumulated')).toBe(true);
+    for (const r of t!.rows) expect(r.values).toHaveLength(6);
+  });
+  it('2020 San Diego high density: Table 1 cells, both pages', () => {
+    const id = 'avocados-2020avocadohighdensitysandiegocounty';
+    expect(byId(id).establishment!.table!.years).toEqual(['Estab/1st', '2nd', '3rd', '4th', '5th', '6th']);
+    expect(cell(id, /^Avocado Trees \(430\) & Labor$/, 0)).toBe(15833);
+    expect(cell(id, /^TOTAL CULTURAL COSTS$/, 3)).toBe(11468);
+    expect(cell(id, /^ACCUMULATED NET CASH COSTS\/ACRE$/, 2)).toBe(28409);
+    // the prose establishment cost is the last column of the total accumulated row
+    expect(cell(id, /^TOTAL ACCUMULATED NET COST\/ACRE$/, 5)).toBe(17597);
+    expect(byId(id).establishment!.accumulatedNetCost?.value).toBe(17597);
+  });
+  it('2011 conventional San Diego/Riverside: the Riverside table, matching the production tables', () => {
+    const id = 'avocados-avocadoconventionalsdr2011';
+    expect(byId(id).establishment!.table!.title).toMatch(/Riverside/);
+    expect(cell(id, /^TOTAL CASH COSTS$/, 0)).toBe(10842);
+    expect(cell(id, /^TOTAL ACCUMULATED NET COST$/, 5)).toBe(32407);
+    expect(byId(id).establishment!.accumulatedNetCost?.value).toBe(32407);
+  });
+  it('2011 organic San Diego/Riverside', () => {
+    const id = 'avocados-avocadosdrorganic-reports2011';
+    expect(cell(id, /^TOTAL CASH COSTS$/, 5)).toBe(8530);
+    expect(cell(id, /^TOTAL ACCUMULATED NET COST$/, 5)).toBe(37798);
+  });
+  it('2011 conventional Ventura/Santa Barbara/SLO: the SLO table', () => {
+    const id = 'avocados-avocadoconventionalvsbslo2011';
+    expect(byId(id).establishment!.table!.title).toMatch(/San Luis Obispo/);
+    expect(cell(id, /^TOTAL Plant COSTS$/, 0)).toBe(6556);
+    expect(cell(id, /^TOTAL ACCUMULATED NET COST$/, 5)).toBe(35176);
+    expect(byId(id).establishment!.annualCharge?.value).toBe(2223.46);
+  });
+  it('2011 organic Ventura/Santa Barbara/SLO: continuation page without a year header', () => {
+    const id = 'avocados-avocadovsbsloorganicreport2011';
+    // 77.5 + (-58.13) = 19.38, the printed year-2 subtotal of the harvest, marketing and organic fees block
+    expect(cell(id, /^Organic Certification Application & Inspection$/, 1)).toBe(77.5);
+    expect(cell(id, /^TOTAL Harvesting, Marketing, & Organic Fees COSTS$/, 1)).toBe(19.38);
+    expect(cell(id, /^Interest on establishment$/, 1)).toBe(851);
+    expect(cell(id, /^TOTAL ACCUMULATED NET COST$/, 5)).toBe(39773);
+    expect(byId(id).establishment!.table!.rows.some(r => /^Irrigation & walk lines .* yr\. 2 - onward\)$/.test(r.label) && r.values[0] === 340)).toBe(true);
+  });
+});
