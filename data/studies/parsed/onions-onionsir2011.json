@@ -1872,6 +1872,13 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ONIONS FOR DEHYDRATING"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

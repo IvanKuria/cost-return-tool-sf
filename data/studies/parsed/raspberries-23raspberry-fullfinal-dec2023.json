@@ -1823,19 +1823,6 @@
      ],
      "page": 13,
      "quote": "TOTAL ACCUMULATED NET/ACRE -13,971 -18,347 -14,016 -13,730"
-    },
-    {
-     "label": "* F = Fall Crop; S = Spring Crop",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead (Capital Recovery Cost)",
-     "values": [
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 13,
-     "quote": "* F = Fall Crop; S = Spring Crop"
     }
    ],
    "yieldRow": null
@@ -1899,6 +1886,18 @@
   },
   "asset": null,
   "method": null
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 13762,
+   "page": 13,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 13,762 13,199",
+   "source": "table"
+  },
+  "annualCharge": null,
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

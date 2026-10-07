@@ -1042,7 +1042,38 @@
   "page": 15,
   "quote": "MONTHLY PER ACRE CASH COSTS TO PRODUCE ORGANIC ALMONDS"
  },
- "establishment": null,
+ "establishment": {
+  "table": null,
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 6000,
+   "page": 9,
+   "quote": "Costs to establish the orchard are included in non-cash overhead expenses and capital recovery costs for the production years and is estimated at $6,000 per planted acre for this study."
+  },
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": {
+   "value": 25,
+   "page": 3,
+   "quote": "The life of the orchard at the time of planting is estimated to be 25 years."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": null
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 6000,
+   "page": 9,
+   "quote": "Costs to establish the orchard are included in non-cash overhead expenses and capital recovery costs for the production years and is estimated at $6,000 per planted acre for this study.",
+   "source": "prose"
+  },
+  "annualCharge": null,
+  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1066,15 +1097,15 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
    "laborOverheadPct",
    "landRentPerAcre",
    "insuranceRatePct",
-   "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": [

@@ -1766,6 +1766,22 @@
    "quote": "Amortized Establishment Cost."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 37798,
+   "page": 19,
+   "quote": "TOTAL ACCUMULATED NET COST 12719 18446 24,999 29,682 34,061 37,798",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 2389,
+   "page": 21,
+   "quote": "Amortized Establishment Cost 37,798 2,389 2,389"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

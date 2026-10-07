@@ -842,26 +842,574 @@
   "quote": "MONTHLY CAST COSTS PER ACRE TO PRODUCE WILD RICE"
  },
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COST PER ACRE TO ESTABLISH WILD RICE",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Pre-plant Costs",
+     "kind": "heading",
+     "section": "Pre-plant Costs",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "Pre-plant Costs:"
+    },
+    {
+     "label": "Disk 2X",
+     "kind": "operation",
+     "section": "Pre-plant Costs",
+     "values": [
+      13
+     ],
+     "page": 9,
+     "quote": "Disk 2X 0.33 5 8 0 0 13"
+    },
+    {
+     "label": "Touch-Up Leveling - 1 every 5 Years",
+     "kind": "operation",
+     "section": "Pre-plant Costs",
+     "values": [
+      25
+     ],
+     "page": 9,
+     "quote": "Touch-Up Leveling - 1 every 5 Years 0.00 0 0 0 25 25"
+    },
+    {
+     "label": "Install Boxes 1 Box per 10 Acres",
+     "kind": "operation",
+     "section": "Pre-plant Costs",
+     "values": [
+      27
+     ],
+     "page": 9,
+     "quote": "Install Boxes 1 Box per 10 Acres 0.50 9 1 16 0 27"
+    },
+    {
+     "label": "Fertilize - Urea @ 115 Lbs N/Acre",
+     "kind": "operation",
+     "section": "Pre-plant Costs",
+     "values": [
+      50
+     ],
+     "page": 9,
+     "quote": "Fertilize - Urea @ 115 Lbs N/Acre 0.17 3 1 46 0 50"
+    },
+    {
+     "label": "Disk 1X - Incorporate Fertilizer",
+     "kind": "operation",
+     "section": "Pre-plant Costs",
+     "values": [
+      7
+     ],
+     "page": 9,
+     "quote": "Disk 1X - Incorporate Fertilizer 0.18 3 4 0 0 7"
+    },
+    {
+     "label": "Fertilize - Zinc @ 10 Lbs/Acre",
+     "kind": "operation",
+     "section": "Pre-plant Costs",
+     "values": [
+      20
+     ],
+     "page": 9,
+     "quote": "Fertilize - Zinc @ 10 Lbs/Acre 0.17 3 1 16 0 20"
+    },
+    {
+     "label": "Fertilize - Gypsum @ 500 Lbs/Acre",
+     "kind": "operation",
+     "section": "Pre-plant Costs",
+     "values": [
+      19
+     ],
+     "page": 9,
+     "quote": "Fertilize - Gypsum @ 500 Lbs/Acre 0.00 0 0 10 9 19"
+    },
+    {
+     "label": "TOTAL PRE-PLANT COSTS",
+     "kind": "subtotal",
+     "section": "Pre-plant Costs",
+     "values": [
+      161
+     ],
+     "page": 9,
+     "quote": "TOTAL PRE-PLANT COSTS 1.34 23 15 89 33 161"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Flood & Maintain Water",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      99
+     ],
+     "page": 9,
+     "quote": "Flood & Maintain Water 0.75 8 0 91 0 99"
+    },
+    {
+     "label": "Seed",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      103
+     ],
+     "page": 9,
+     "quote": "Seed 0.13 2 1 100 0 103"
+    },
+    {
+     "label": "Roll Seedbed",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      4
+     ],
+     "page": 9,
+     "quote": "Roll Seedbed 0.18 3 1 0 0 4"
+    },
+    {
+     "label": "Bird Control",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      50
+     ],
+     "page": 9,
+     "quote": "Bird Control 1.50 17 0 33 0 50"
+    },
+    {
+     "label": "Algae Control - 50% of Acres",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      8
+     ],
+     "page": 9,
+     "quote": "Algae Control - 50% of Acres 0.00 0 0 5 3 8"
+    },
+    {
+     "label": "Midge Control - 25% of Acres",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      3
+     ],
+     "page": 9,
+     "quote": "Midge Control - 25% of Acres 0.00 0 0 2 2 3"
+    },
+    {
+     "label": "Pickup Truck Use",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      14
+     ],
+     "page": 9,
+     "quote": "Pickup Truck Use 0.57 9 5 0 0 14"
+    },
+    {
+     "label": "ATV Use",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      8
+     ],
+     "page": 9,
+     "quote": "ATV Use 0.45 7 1 0 0 8"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      289
+     ],
+     "page": 9,
+     "quote": "TOTAL CULTURAL COSTS 3.57 46 8 231 5 289"
+    },
+    {
+     "label": "Harvest",
+     "kind": "heading",
+     "section": "Harvest",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "Harvest:"
+    },
+    {
+     "label": "Combine Rice",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      100
+     ],
+     "page": 9,
+     "quote": "Combine Rice 0.00 0 0 0 100 100"
+    },
+    {
+     "label": "Haul To Coop",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      6
+     ],
+     "page": 9,
+     "quote": "Haul To Coop 0.25 4 2 0 0 6"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest",
+     "values": [
+      106
+     ],
+     "page": 9,
+     "quote": "TOTAL HARVEST COSTS 0.25 4 2 0 100 106"
+    },
+    {
+     "label": "Assessments",
+     "kind": "heading",
+     "section": "Assessments",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "Assessments:"
+    },
+    {
+     "label": "Wild Rice Marketing Order",
+     "kind": "operation",
+     "section": "Assessments",
+     "values": [
+      8
+     ],
+     "page": 9,
+     "quote": "Wild Rice Marketing Order 0.00 0 0 8 0 8"
+    },
+    {
+     "label": "Wild Rice Cooperative Annual Fee",
+     "kind": "operation",
+     "section": "Assessments",
+     "values": [
+      1
+     ],
+     "page": 9,
+     "quote": "Wild Rice Cooperative Annual Fee 0.00 0 0 1 0 1"
+    },
+    {
+     "label": "TOTAL ASSESSMENT COSTS",
+     "kind": "subtotal",
+     "section": "Assessments",
+     "values": [
+      9
+     ],
+     "page": 9,
+     "quote": "TOTAL ASSESSMENT COSTS 0.00 0 0 9 0 9"
+    },
+    {
+     "label": "Post-Harvest",
+     "kind": "heading",
+     "section": "Post-Harvest",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "Post-Harvest:"
+    },
+    {
+     "label": "Disc Stubble 2X",
+     "kind": "operation",
+     "section": "Post-Harvest",
+     "values": [
+      13
+     ],
+     "page": 9,
+     "quote": "Disc Stubble 2X 0.33 5 8 0 0 13"
+    },
+    {
+     "label": "Weed Control 10% acres",
+     "kind": "operation",
+     "section": "Post-Harvest",
+     "values": [
+      2
+     ],
+     "page": 9,
+     "quote": "Weed Control 10% acres 0.01 0 0 2 0 2"
+    },
+    {
+     "label": "Flood Wet/Seal Field",
+     "kind": "operation",
+     "section": "Post-Harvest",
+     "values": [
+      11
+     ],
+     "page": 9,
+     "quote": "Flood Wet/Seal Field 0.25 3 0 8 0 11"
+    },
+    {
+     "label": "TOTAL POST-HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Post-Harvest",
+     "values": [
+      26
+     ],
+     "page": 9,
+     "quote": "TOTAL POST-HARVEST COSTS 0.59 8 8 10 0 26"
+    },
+    {
+     "label": "Interest on Operating Capital @ 7.65%",
+     "kind": "interest",
+     "section": "Post-Harvest",
+     "values": [
+      11
+     ],
+     "page": 9,
+     "quote": "Interest on Operating Capital @ 7.65% 11"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Post-Harvest",
+     "values": [
+      601
+     ],
+     "page": 9,
+     "quote": "TOTAL OPERATING COSTS/ACRE 81 32 339 138 601"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      33
+     ],
+     "page": 9,
+     "quote": "Office Expense 33"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 9,
+     "quote": "Liability Insurance 2"
+    },
+    {
+     "label": "Land Rent",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      150
+     ],
+     "page": 9,
+     "quote": "Land Rent 150"
+    },
+    {
+     "label": "Farm Manager Salary",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      95
+     ],
+     "page": 9,
+     "quote": "Farm Manager Salary 95"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 9,
+     "quote": "Property Taxes 2"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 9,
+     "quote": "Property Insurance 1"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      4
+     ],
+     "page": 9,
+     "quote": "Investment Repairs 4"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      288
+     ],
+     "page": 9,
+     "quote": "TOTAL CASH OVERHEAD COSTS 288"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      889
+     ],
+     "page": 9,
+     "quote": "TOTAL CASH COSTS/ACRE 889"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "NON-CASH OVERHEAD:"
+    },
+    {
+     "label": "Fuel Tanks & Pumps",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 9,
+     "quote": "Fuel Tanks & Pumps 19 2 2"
+    },
+    {
+     "label": "Fuel Wagon",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 9,
+     "quote": "Fuel Wagon 4 1 1"
+    },
+    {
+     "label": "Rice Bins",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      7
+     ],
+     "page": 9,
+     "quote": "Rice Bins (8) 50 7 7"
+    },
+    {
+     "label": "Shop Building",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      7
+     ],
+     "page": 9,
+     "quote": "Shop Building 95 7 7"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 9,
+     "quote": "Shop Tools 24 3 3"
+    },
+    {
+     "label": "Zon Guns",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 9,
+     "quote": "Zon Guns (4) 20 3 3"
+    },
+    {
+     "label": "Bird Traps",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      0
+     ],
+     "page": 9,
+     "quote": "Bird Traps (2) 1 0 0"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      19
+     ],
+     "page": 9,
+     "quote": "Equipment 163 19 19"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      40
+     ],
+     "page": 9,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 376 40 40"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      930
+     ],
+     "page": 9,
+     "quote": "TOTAL COSTS/ACRE 930"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,
-    "label": "1",
+    "label": "Total Cost",
     "totalCost": 889,
     "returns": null,
     "netCost": 889,
     "accumulated": null,
     "page": 9,
-    "quote": "TOTAL CASH COSTS/ACRE 889"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 889,
-    "returns": null,
-    "netCost": 889,
-    "accumulated": null,
-    "page": 10,
     "quote": "TOTAL CASH COSTS/ACRE 889"
    }
   ],
@@ -895,6 +1443,22 @@
    "page": 5,
    "quote": "The establishment cost is amortized over the remaining four years of crop life."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 217,
+   "page": 12,
+   "quote": "Establishment Cost 217 63 63",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 63,
+   "page": 12,
+   "quote": "Establishment Cost 217 63 63"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

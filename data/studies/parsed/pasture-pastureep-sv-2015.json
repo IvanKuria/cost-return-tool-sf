@@ -310,30 +310,312 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE PASTURE"
  },
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH PASTURE",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Plant",
+     "kind": "heading",
+     "section": "Pre-Plant",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "Pre-Plant:"
+    },
+    {
+     "label": "Sub-Soil 24\" 2X",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      50
+     ],
+     "page": 9,
+     "quote": "Sub-Soil 24\" 2X 0.00 0 0 0 0 50 50"
+    },
+    {
+     "label": "Fertilizer 16-20-0-24% S",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      68
+     ],
+     "page": 9,
+     "quote": "Fertilizer 16-20-0-24% S 0.00 0 0 0 68 0 68"
+    },
+    {
+     "label": "Disc 2X",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      48
+     ],
+     "page": 9,
+     "quote": "Disc 2X 0.00 0 0 0 0 48 48"
+    },
+    {
+     "label": "Laser Level",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      75
+     ],
+     "page": 9,
+     "quote": "Laser Level 0.00 0 0 0 0 75 75"
+    },
+    {
+     "label": "Ridge Borders",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      15
+     ],
+     "page": 9,
+     "quote": "Ridge Borders 0.00 0 0 0 0 15 15"
+    },
+    {
+     "label": "Irrigate-Flood 3X",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      4
+     ],
+     "page": 9,
+     "quote": "Irrigate-Flood 3X 0.00 0 0 0 4 0 4"
+    },
+    {
+     "label": "Weed Control-Spray Herbicides",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      19
+     ],
+     "page": 9,
+     "quote": "Weed Control-Spray Herbicides 0.00 0 0 0 9 11 19"
+    },
+    {
+     "label": "TOTAL PRE-PLANT COSTS",
+     "kind": "subtotal",
+     "section": "Pre-Plant",
+     "values": [
+      279
+     ],
+     "page": 9,
+     "quote": "TOTAL PRE-PLANT COSTS 0.00 0 0 0 81 199 279"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Plant Pasture Mix-Fertilizer",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      56
+     ],
+     "page": 9,
+     "quote": "Plant Pasture Mix-Fertilizer 0.00 0 0 0 41 15 56"
+    },
+    {
+     "label": "Irrigate-Flood 3X",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      8
+     ],
+     "page": 9,
+     "quote": "Irrigate-Flood 3X 0.00 0 0 0 8 0 8"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      64
+     ],
+     "page": 9,
+     "quote": "TOTAL CULTURAL COSTS 0.00 0 0 0 49 15 64"
+    },
+    {
+     "label": "Interest on Operating Capital at 5.75%",
+     "kind": "interest",
+     "section": "Cultural",
+     "values": [
+      0
+     ],
+     "page": 9,
+     "quote": "Interest on Operating Capital at 5.75% 0"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Cultural",
+     "values": [
+      343
+     ],
+     "page": 9,
+     "quote": "TOTAL OPERATING COSTS/ACRE 0 0 0 0 137 214 343"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      20
+     ],
+     "page": 9,
+     "quote": "Office Expense 20"
+    },
+    {
+     "label": "Liability Insurance 45Ac",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      16
+     ],
+     "page": 9,
+     "quote": "Liability Insurance 45Ac 16"
+    },
+    {
+     "label": "Land Lease-4 Months 40 Ac",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      60
+     ],
+     "page": 9,
+     "quote": "Land Lease-4 Months 40 Ac 60"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      0
+     ],
+     "page": 9,
+     "quote": "Property Taxes 0"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      0
+     ],
+     "page": 9,
+     "quote": "Property Insurance 0"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      0
+     ],
+     "page": 9,
+     "quote": "Investment Repairs 0"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      96
+     ],
+     "page": 9,
+     "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 96"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      439
+     ],
+     "page": 9,
+     "quote": "TOTAL CASH COSTS/ACRE 439"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "NON-CASH OVERHEAD: Per Producing Annual Cost"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      0
+     ],
+     "page": 9,
+     "quote": "Equipment 0 0 0"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      0
+     ],
+     "page": 9,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 0 0 0"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      439
+     ],
+     "page": 9,
+     "quote": "TOTAL COSTS/ACRE 439"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,
-    "label": "1",
+    "label": "Total Cost",
     "totalCost": 439,
     "returns": null,
     "netCost": 439,
     "accumulated": null,
     "page": 9,
     "quote": "TOTAL CASH COSTS/ACRE 439"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 269,
-    "returns": null,
-    "netCost": 269,
-    "accumulated": null,
-    "page": 11,
-    "quote": "TOTAL CASH COSTS/ACRE 269"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 439,
+   "page": 4,
+   "quote": "The second year costs uses the tilling establishment costs of $439/acre to determine the $34 non cash overhead costs of establishment."
+  },
   "annualCharge": null,
   "productionYears": {
    "value": 20,
@@ -357,6 +639,18 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 439,
+   "page": 9,
+   "quote": "TOTAL CASH COSTS/ACRE 439",
+   "source": "table"
+  },
+  "annualCharge": null,
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -372,7 +666,8 @@
    "investments",
    "businessOverhead",
    "monthly",
-   "establishment"
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
@@ -388,7 +683,6 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": [

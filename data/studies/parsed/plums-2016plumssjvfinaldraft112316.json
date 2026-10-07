@@ -2063,7 +2063,11 @@
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,575 7,937 7,807 6,711 4,039"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 7807,
+   "page": 9,
+   "quote": "For this study the cost is $7,807 per producing acre or $78,070 for the 10-acre orchard."
+  },
   "annualCharge": {
    "value": 629,
    "page": 12,
@@ -2091,6 +2095,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 7807,
+   "page": 12,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,575 7,937 7,807 6,711 4,039",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 629,
+   "page": 12,
+   "quote": "Orchard Establishment 629 629"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -2117,13 +2137,13 @@
    "propertyTaxRatePct",
    "monthly",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
    "landRentPerAcre",
    "insuranceRatePct",
-   "machineLaborFactor",
-   "establishmentAccumulated"
+   "machineLaborFactor"
   ],
   "warnings": [
    "establishment year 4: running net 7937 differs from printed accumulated 6711"

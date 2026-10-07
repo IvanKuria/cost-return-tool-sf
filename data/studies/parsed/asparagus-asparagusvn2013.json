@@ -1845,19 +1845,6 @@
      ],
      "page": 11,
      "quote": "TOTAL ACCUMULATED NET COST/ACRE 2,192 3,129 4,194 5,596"
-    },
-    {
-     "label": "*See production year for complete list of operations and costs",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead (Capital Recovery Cost)",
-     "values": [
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 11,
-     "quote": "*See production year for complete list of operations and costs"
     }
    ],
    "yieldRow": {
@@ -1947,6 +1934,22 @@
    "page": 8,
    "quote": "Establishment cost is amortized beginning in the third year over the remaining 8 years of production."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 2266,
+   "page": 10,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 1,745 2,266 2,896 3,491",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 347,
+   "page": 12,
+   "quote": "Establishment 2,266 347 347"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

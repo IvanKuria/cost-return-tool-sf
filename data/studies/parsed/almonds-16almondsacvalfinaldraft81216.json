@@ -2366,7 +2366,11 @@
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,204 4,081 4,591 4,591 3,334 920"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 4591,
+   "page": 10,
+   "quote": "For this study, this cost is $4,591 per acre or $459,100 for the 100-acre orchard."
+  },
   "annualCharge": {
    "value": 295,
    "page": 16,
@@ -2374,15 +2378,19 @@
   },
   "productionYears": {
    "value": 22,
-   "page": 21,
-   "quote": "Establishment Costs 459,100 22 0 29,534 194 2,296 459 32,482 (years of life of the establishment row in the investment table)"
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years of production. 2016 Almonds Costs and Returns Study Sacramento Valley UC Cooperative Extension-Ag Issues Center 10"
   },
   "plantingLife": {
    "value": 25,
    "page": 3,
    "quote": "The life of the orchard at the time of planting is estimated to be 25 years."
   },
-  "amortizedFromYear": null,
+  "amortizedFromYear": {
+   "value": 4,
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years of production. 2016 Almonds Costs and Returns Study Sacramento Valley UC Cooperative Extension-Ag Issues Center 10"
+  },
   "removalCost": {
    "value": 375,
    "page": 13,
@@ -2397,7 +2405,26 @@
    "page": 21,
    "line": "Establishment Costs 459,100 22 0 29,534 194 2,296 459 32,482"
   },
-  "method": null
+  "method": {
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years of production. 2016 Almonds Costs and Returns Study Sacramento Valley UC Cooperative Extension-Ag Issues Center 10"
+  }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 4591,
+   "page": 14,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,204 4,081 4,591 4,591 3,334 920",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 295,
+   "page": 16,
+   "quote": "Establishment Costs 4,591 295 295"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [
@@ -2425,13 +2452,13 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
-   "establishmentAccumulated"
+   "insuranceRatePct"
   ],
   "warnings": []
  }

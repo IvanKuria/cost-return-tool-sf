@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { loadManifest, slugOf, TEXT_DIR, PARSED_DIR, type ManifestEntry } from './manifest';
 import type {
-  Assumptions, BusinessOverheadRow, Cited, CostsPerAcre, EquipmentRow, Establishment, EstablishmentTable, EstablishmentTableRow, EstablishmentYear, HourlyEquipmentRow, Method, MonthlyCosts,
+  Assumptions, BusinessOverheadRow, Cited, CostsPerAcre, EquipmentRow, Establishment, EstablishmentSource, EstablishmentSummary, EstablishmentTable, EstablishmentTableRow, EstablishmentYear, HourlyEquipmentRow, Method, MonthlyCosts,
   OperationCategory, OperationRow, ParsedStudy, Quote, StudySource,
 } from './types';
 
@@ -53,12 +53,13 @@ function kindOf(title: string): TableKind {
 
 /** Body table headings (the table of contents repeats them, so a heading followed closely by another heading is TOC). */
 function findTables(lines: Line[]): TableHeading[] {
-  const re = /^\s*TABL[EA]\s*(\d+)(?:[-\s]?[A-Z])?\.?\s+(\S.*?)\s*$/i;
+  const re = /^\s*(?:TABL[EA]|TAHLE)\s*(\d+)(?:[-\s]?[A-Z])?\.?\s+(\S.*?)\s*$/i;
   const cands: { n: number; title: string; index: number; page: number }[] = [];
   for (const l of lines) {
     const m = l.text.match(re);
     if (!m) continue;
     if (/…|\.{4,}/.test(m[2])) continue;                 // dotted leaders
+    if (/^[a-z]/.test(m[2])) continue;                    // a prose line that starts with "Table 1 represents ..."
     if (/^CONTINUED/i.test(m[2]) || /CONTINUED\)?\s*$/i.test(m[2])) continue;
     cands.push({ n: Number(m[1]), title: m[2].replace(/\s+\d{1,3}\s*$/, ''), index: l.index, page: l.page });
   }
@@ -819,35 +820,48 @@ function tailNumbers(text: string): number[] {
 
 const EST_FURNITURE = /Costs? (&|and) Returns? Study|^\s*UCCE, Sample Costs|\bPage\s+\d+\s*$|UC COOPERATIVE EXTENSION|UC DAVIS|^\s*TABLE \d+\.?\s*CONTINUED|^\s*Costs? per Acre\s*$|^\s*Cost Per Acre\s*$|^\s*\(?Continued\)?\s*$/i;
 
-/** Character position where each year header token ends; numbers below are right-aligned to these. */
-function yearColumns(text: string): { labels: string[]; ends: number[]; zoneStart: number } | null {
-  const tokens = (rest: string, base: number, tokRe: RegExp) => {
+/** Character position where each year header token ends; numbers below are right-aligned to these.
+ *  `extra` counts trailing non-year columns printed after the years (a TOTAL or $/Tree column); their ends are
+ *  kept at the end of `ends` so their numbers do not land in a year column, and the table drops them. */
+function yearColumns(text: string): { labels: string[]; ends: number[]; zoneStart: number; extra?: number } | null {
+  const tokens = (rest: string, base: number, tokRe: RegExp, max = 10) => {
     const labels: string[] = []; const ends: number[] = [];
     let t: RegExpExecArray | null;
     while ((t = tokRe.exec(rest))) { labels.push(t[0].trim().replace(/^(\d+)(s|n|r|t) (t|d|h)$/i, '$1$2$3')); ends.push(base + t.index + t[0].length); }
-    if (labels.length < 2 || labels.length > 10) return null;
+    if (labels.length < 2 || labels.length > max) return null;
     return { labels, ends, zoneStart: base + rest.search(/\S/) - 9 };
   };
+  const EST = String.raw`Est(?:ab)?\w*(?:\/(?:\d+(?:st|nd|rd|th)|(?:Year|Yr)[-.]?\s*\d+))?`;
   // "Year:  1st  2nd  3rd" (most studies)
-  const m = text.match(/\bYear:\s*(\S.*)$/i);
+  const m = text.match(/(?:\bYear|\bA[ñn]o):\s*(\S.*)$/i);
   if (m) {
-    const r = tokens(m[1], text.length - m[1].length, /(?:Est(?:ab)?\w*(?:\/\d+(?:st|nd|rd|th))?|\d+(?:st|nd|rd|th)|Year\s*\d+|\b\d{1,2}\b)/gi);
+    const r = tokens(m[1], text.length - m[1].length, new RegExp(String.raw`(?:${EST}|\d+(?:st|nd|rd|th)|Year\s*\d+|\b\d{1,2}\b)`, 'gi'));
     if (r && r.labels.length <= 8) return r;
   }
   // A header whose tail is nothing but year tokens, optionally after a label ("Operation", "OPERATING COSTS:", "Year")
-  // and before a "Your Costs" column: "Estab/1st 2nd 3rd ... Your Costs", "Yr. 1 Yr.2 ...", "Year 1 Year2 ...", "Year 1st 2nd ...".
-  const body = text.replace(/\s+Your\s+Costs?\s*$/i, '');
+  // and before a "Your Costs" column: "Estab/1st 2nd 3rd ... Your Costs", "Yr. 1 Yr.2 ...", "Year 1 Year2 ...", "Year 1st 2nd ...",
+  // "Estab/Yr-1 Yr-2 ...". A last "Production" column (the first production year) counts as a year column;
+  // trailing TOTAL and $/Tree columns are kept as extra columns.
+  let body = text.replace(/\s+Your\s+Costs?\s*$/i, '');
+  const extraM = body.match(/(?:\s+(?:TOTAL|\*?\$\/Tree))+\s*$/i);
+  const extraText = extraM && extraM.index != null ? body.slice(extraM.index) : '';
+  if (extraM && extraM.index != null) body = body.slice(0, extraM.index);
   // ordinals may come apart in the text layer ("1s t")
-  const YT = String.raw`(?:Est(?:ab)?\w*(?:\/\d+(?:st|nd|rd|th))?|\d{1,2}(?:s ?t|n ?d|r ?d|t ?h)\b|(?:Year|Yr)\.?\s*\d{1,2})`;
-  const tail = body.match(new RegExp(String.raw`((?:\s+|^)${YT}(?:\s+${YT})+)\s*$`, 'i'));
+  const YT = String.raw`(?:${EST}|\d{1,2}(?:s ?t|n ?d|r ?d|t ?h)\b|(?:Year|Yr)[.-]?\s*\d{1,2})`;
+  const tail = body.match(new RegExp(String.raw`((?:\s+|^)${YT}(?:\s+${YT})+(?:\s+Production)?)\s*$`, 'i'));
   if (!tail || tail.index == null) return null;
   const label = body.slice(0, tail.index).trim();
   if (label && !/^(Operations?:?|OPERATING COSTS:?|Years?:?|Cost per Acre.*)$/i.test(label)) return null;
-  const r = tokens(tail[1], tail.index, new RegExp(YT, 'gi'));
+  const r = tokens(tail[1], tail.index, new RegExp(String.raw`${YT}|Production`, 'gi'), 12);
   if (!r) return null;
   // the tokens must count up from the first year (Estab counts as year 1)
-  const nums = r.labels.map(l => /^Est/i.test(l) ? 1 : Number(l.match(/\d+/g)!.pop()));
+  const yearLabels = r.labels.filter(l => !/^Production$/i.test(l));
+  const nums = yearLabels.map(l => /^Est/i.test(l) && !/\d/.test(l.replace(/^Est\w*/i, '')) ? 1 : Number(l.match(/\d+/g)!.pop()));
   if (!nums.every((n, i) => n === nums[0] + i) || nums[0] > 2) return null;
+  if (extraText) {
+    const ex = tokens(extraText, body.length, /TOTAL|\*?\$\/Tree/gi, 4) ?? (() => { const t = /TOTAL|\*?\$\/Tree/i.exec(extraText)!; return { labels: [t[0]], ends: [body.length + t.index + t[0].length], zoneStart: 0 }; })();
+    return { labels: [...r.labels, ...ex.labels], ends: [...r.ends, ...ex.ends], zoneStart: r.zoneStart, extra: ex.labels.length };
+  }
   return r;
 }
 
@@ -906,8 +920,12 @@ function pageColumns(lines: Line[], from: number, to: number, cols: { labels: st
 function rowKind(label: string, section: string): EstablishmentTableRow['kind'] {
   const L = label.toUpperCase();
   if (/^INTEREST ON OPERATING/.test(L)) return 'interest';
-  if (/^(INCOME|RETURNS?|REVENUE)(?:\/ACRE| FROM PRODUCTION| PER ACRE| FROM SALE)/.test(L)) return 'income';
-  if (/ACCUMULATED|^CUMULATIVE/.test(L)) return 'accumulated';
+  if (/^(?:LESS )?(INCOME|RETURNS?|REVENUE)(?:\/ACRE| FROM PRODUCTION| PER ACRE| FROM SALE)/.test(L)) return 'income';
+  if (/ACCUMULATED|^CUMULATIVE|ACUMULAD/.test(L)) return 'accumulated';
+  // Spanish studies
+  if (/^INGRESOS?\b/.test(L)) return 'income';
+  if (/^COSTOS? (?:TOTAL(?:ES)? )?NETOS?\b|^COSTO TOTAL NETO/.test(L)) return 'net';
+  if (/^(?:COSTOS? TOTAL(?:ES)?\b|TOTAL DE COSTOS|COSTO\/ACRE TOTAL|COSTO TOTAL GENERAL)/.test(L)) return 'total';
   if (/^(TOTAL )?NET\b|^(NET )?PROFIT/.test(L)) return 'net';
   // the text layer of some studies splits words ("TOTAL OPERATING COS TS /ACRE"), so totals are also matched without spaces
   const D = L.replace(/\s+/g, '');
@@ -928,7 +946,7 @@ function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: s
   // A table printed over several pages may repeat its heading ("..., Cont.", or the same title again);
   // those repeats are part of the same table, not a new one.
   const norm = (x: string) => x.replace(/[\W_]+$/, '').toUpperCase();
-  const isContinuation = (t: TableHeading, x: TableHeading) => x.number === t.number && (norm(x.title).startsWith(norm(t.title)) || norm(t.title).startsWith(norm(x.title)) || /\bcont(?:\.|inued)?\W*$/i.test(x.title));
+  const isContinuation = (t: TableHeading, x: TableHeading) => x.number === t.number && (norm(x.title).startsWith(norm(t.title)) || norm(t.title).startsWith(norm(x.title)) || /\bcont(?:\.|inued|d\.?)?\W*$/i.test(x.title));
   const firsts = estTables.filter((t, i) => !estTables.slice(0, i).some(x => isContinuation(x, t)));
   const tables: EstablishmentTable[] = [];
   for (const t of firsts) {
@@ -946,6 +964,7 @@ function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: s
     let wrapped: EstablishmentTableRow | null = null;              // a row whose numbers came on a line of their own
     let orphan: { values: (number | null)[]; raw: string } | null = null; // numbers printed above the label they belong to
     let pageHasHeader = false; // continuation pages without a year header keep the previous page's columns
+    let extra = 0;             // trailing TOTAL / $/Tree columns after the years, dropped from the table
     for (let i = a + 1; i < b; i++) {
       const raw = lines[i].text;
       if (lines[i].page !== page) {
@@ -955,11 +974,11 @@ function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: s
       }
       if (!raw.trim()) continue;
       // a continuation heading with no year header under it: the page keeps the columns of the page before
-      if (/^\s*TABL[EA]\s*\d+/i.test(raw) || /^\s*(?:\S.*)?\bcont(?:\.|inued)\W*$/i.test(raw)) { if (cols && !pageHasHeader) { awaitingHeader = false; sinceHeader = 0; cols = pageColumns(lines, i, b, cols); } continue; }
+      if (/^\s*(?:TABL[EA]|TAHLE)\s*\d+/i.test(raw) || /^\s*(?:\S.*)?\bcont(?:\.|inued|d\.)\W*$/i.test(raw)) { if (cols && !pageHasHeader) { awaitingHeader = false; sinceHeader = 0; cols = pageColumns(lines, i, b, cols); } continue; }
       if (EST_FURNITURE.test(raw)) continue;
       const yc = yearColumns(raw);
       if (yc) {
-        if (!cols || yc.labels.length >= cols.labels.length) { if (!labels || yc.labels.length !== labels.length) labels = yc.labels; cols = yc; }
+        if (!cols || yc.labels.length >= cols.labels.length) { if (!labels || yc.labels.length !== labels.length) { labels = yc.labels; extra = yc.extra ?? 0; } cols = yc; }
         awaitingHeader = false; sinceHeader = 0; continue;
       }
       if (!cols || awaitingHeader) continue;
@@ -968,6 +987,9 @@ function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: s
       const labelEnd = toks.length ? toks[0].start : text.length;
       const label = clean(text.slice(0, labelEnd));
       if (!label && !toks.length) continue;
+      // page furniture above the first row of a continuation page printed without a usable year header:
+      // the region subtitle ("SIERRA NEVADA FOOTHILLS-2015"), a "YOUR / COSTS" column title, a year header split over two lines
+      if (sinceHeader === 0 && !toks.length && (/^(YOUR|COSTS?|YOUR COSTS?|Years?)$/i.test(label) || (label.match(/\b(?:Yr|Year)[-.]?\s*\d|\b\d{1,2}(?:st|nd|rd|th)\b|\bEstab/gi) ?? []).length >= 2 || (/^[A-Z][A-Z\s,&().'-]+-\s*\d{4}$/.test(label) && !/:/.test(label)))) continue;
       const prev = rows.length ? rows[rows.length - 1] : null;
       const prevOpen = !!prev && prev.kind !== 'heading' && prev.values.every(v => v == null);
       // A label wrapped over two or three lines prints its numbers on a line of their own, or on the line of
@@ -1014,8 +1036,16 @@ function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: s
       const kind = rowKind(label, section);
       rows.push({ label, kind, section, values, page: lines[i].page, quote });
     }
+    // text after the table on its last page (a chart's labels) leaves rows with no values at the end
+    while (rows.length && rows[rows.length - 1].values.every(v => v == null)) rows.pop();
     if (!cols || rows.filter(r => r.kind !== 'heading').length < 5) continue;
-    tables.push({ title: t.title, years: labels ?? cols.labels, rows, yieldRow });
+    const years = labels ?? cols.labels;
+    if (extra) {
+      const n = years.length - extra;
+      for (const r of rows) r.values = r.values.slice(0, n);
+      if (yieldRow) yieldRow.values = yieldRow.values.slice(0, n);
+      tables.push({ title: t.title, years: years.slice(0, n), rows, yieldRow });
+    } else tables.push({ title: t.title, years, rows, yieldRow });
   }
   if (!tables.length) return null;
   // One table per region in some studies (San Diego and Riverside); the production tables are read from the last
@@ -1040,31 +1070,75 @@ function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: s
   return best;
 }
 
+/** A one-year establishment table (hay, pasture, mint and wild rice stands, a laser-leveled rice field): laid out like a
+ *  production costs table, one row per operation, read from its Total Cost column (the last number on each row; the
+ *  Your Cost column is blank). The table has a single column. */
+function parseOneYearEstablishment(lines: Line[], all: TableHeading[]): EstablishmentTable | null {
+  const cands = all.filter(t => isEstablishTitle(t.title) && /COSTS?\b.*\bESTABLISH/i.test(t.title) && !/RE-?ESTABLISH|RETURNS|MATERIAL|INPUT|EQUIPMENT|MONTHLY|HOURLY|RANGING|SUMMARY/i.test(t.title));
+  for (const t of cands) {
+    const [a, b] = spanOf(lines, all, t);
+    // the column header: a line naming the Total column, with no numbers on it
+    let i = a + 1;
+    while (i < b && !(/\bTotal\b/i.test(lines[i].text) && /\bCosts?\b|\bYour\b/i.test(lines[i].text) && !/\d/.test(lines[i].text.replace(/\(Hrs\/A\)/i, '')))) i++;
+    if (i >= b) continue;
+    const rows: EstablishmentTableRow[] = [];
+    let section = ''; let pending: { label: string; raw: string } | null = null;
+    for (i = i + 1; i < b; i++) {
+      const raw = lines[i].text;
+      if (!raw.trim() || EST_FURNITURE.test(raw)) continue;
+      if (yearColumns(raw)) break; // a year-by-year table follows; not a one-year table
+      const toks = numericTokens(raw, 0);
+      const label = clean(raw.slice(0, toks.length ? toks[0].start : raw.length));
+      if (!toks.length) {
+        if (/^[A-Za-z][A-Za-z\s&/()-]*:/.test(label)) {
+          section = label.replace(/:.*$/, '');
+          rows.push({ label: section, kind: 'heading', section, values: [null], page: lines[i].page, quote: clean(raw) });
+          pending = null;
+        } else pending = { label, raw };
+        continue;
+      }
+      let lab = label; let quote = clean(raw);
+      // a label wrapped over two lines ("Interest on Operating Capital at" / "5.75%   3")
+      if (pending && (!lab || /^[a-z0-9(%]/.test(lab))) { lab = clean(`${pending.label} ${lab}`); quote = clean(`${pending.raw} ${raw}`); }
+      pending = null;
+      if (!lab) continue;
+      rows.push({ label: lab, kind: rowKind(lab, section), section, values: [toks[toks.length - 1].value], page: lines[i].page, quote });
+      if (/^TOTAL COSTS?\s*\/\s*ACRE$/i.test(lab)) break;
+    }
+    while (rows.length && rows[rows.length - 1].values.every(v => v == null)) rows.pop();
+    if (rows.filter(r => r.kind !== 'heading').length < 5) continue;
+    if (!rows.some(r => /^TOTAL (?:CASH|OPERATING) COSTS?/i.test(r.label))) continue;
+    return { title: t.title, years: ['Total Cost'], rows, yieldRow: null };
+  }
+  return null;
+}
+
 function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s: string) => void): Establishment | null {
   const S = proseSentences(lines);
   const all = findTables(lines);
   const estTables = all.filter(t => isEstablishTitle(t.title));
-  const hasProse = S.some(x => /establishment cost/i.test(x.text));
+  const hasProse = S.some(x => /establishment costs?|costs? (?:to|of) establish/i.test(x.text));
   if (!estTables.length && !hasProse) return null;
 
   // Prose: the "Establishment Cost." paragraph, read as a window of sentences.
   // The paragraph can share its heading with an earlier section ("Orchard Establishment." in the cultural
   // practices), so take the first candidate window that actually holds the amortization or the dollar figure.
-  const table = parseEstablishmentTable(lines, all, warn);
+  const table = parseEstablishmentTable(lines, all, warn) ?? parseOneYearEstablishment(lines, all);
   const regional = !!table && all.filter(t => isEstablishTitle(t.title) && t.title !== table.title).some(t => /\bin\s+[A-Z][\w\s,&]*Count(?:y|ies)/.test(t.title) && /\bin\s+[A-Z][\w\s,&]*Count(?:y|ies)/.test(table.title) && !/\bcont\W*$/i.test(t.title));
   const tableAccumulated = table ? table.rows.filter(r => r.kind === 'accumulated').flatMap(r => r.values).filter((v): v is number => v != null) : [];
-  const starts = S.map((x, i) => (/^(?:amortized |orchard |vineyard |grove )?establishment(?: costs?)?[.:]/i.test(x.text) || /^Establishment Cost/i.test(x.text) || /establishment cost is the sum/i.test(x.text) ? i : -1)).filter(i => i >= 0);
-  const pickWindow = starts.map(i => S.slice(i, i + 10)).find(w => w.some(x => /amortiz/i.test(x.text) || /\$\s?[\d,]+\s*per acre/i.test(x.text)));
+  const starts = S.map((x, i) => (/^(?:amortized |orchard |vineyard |grove |tree |stand )?establishment(?: costs?)?[.:]/i.test(x.text) || /^Establishment Cost/i.test(x.text) || /establishment cost is the sum/i.test(x.text) ? i : -1)).filter(i => i >= 0);
+  const pickWindow = starts.map(i => S.slice(i, i + 10)).find(w => w.some(x => /amortiz/i.test(x.text) || /\$\s?[\d,]+\s*(?:per (?:planted |producing |bearing )?acre|\/\s?acre)/i.test(x.text)));
   const win = pickWindow ?? S.filter(x => /establishment/i.test(x.text));
   const q = (hit: { s: { text: string; page: number }; m: RegExpMatchArray } | null, group = 1) => {
     const v = hit ? wordOrNum(hit.m[group]) : null;
     return hit && v != null ? { value: v, page: hit.s.page, quote: hit.s.text } : null;
   };
-  const acc = sentenceMatch(win, /\$\s?([\d,]+)\s*per acre/i);
+  // "$15,037/acre", "$6,000 per planted acre"; not the land value of an established orchard ("land value ... is estimated at $30,000 per acre")
+  const acc = sentenceMatch(win.filter(x => !/land value|valued at|estimated worth|is worth/i.test(x.text) && !(/\bland\b/i.test(x.text) && !/establish/i.test(x.text))), /\$\s?([\d,]+)\s*(?:per (?:planted |producing |bearing )?acre|\/\s?acre)/i);
   const accumulatedNetCost = acc ? (() => {
     // A sentence can state one figure per region ("$35,111 per acre ... and $35,176 per acre in San Luis Obispo
     // County"); take the one the establishment table prints, else the first.
-    const all$ = [...acc.s.text.matchAll(/\$\s?([\d,]+)\s*per acre/gi)].map(m => toNum(m[1])).filter((v): v is number => v != null);
+    const all$ = [...acc.s.text.matchAll(/\$\s?([\d,]+)\s*(?:per (?:planted |producing |bearing )?acre|\/\s?acre)/gi)].map(m => toNum(m[1])).filter((v): v is number => v != null);
     const v = all$.find(x => tableAccumulated.some(t => Math.abs(t - x) <= 1)) ?? toNum(acc.m[1]);
     return v == null ? null : { value: v, page: acc.s.page, quote: acc.s.text };
   })() : null;
@@ -1165,6 +1239,167 @@ function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s
   };
 }
 
+// ---------------------------------------------------------------- establishment summary
+
+const fmtNum = (v: number) => v.toLocaleString('en-US', { maximumFractionDigits: 2 });
+const near = (a: number, b: number) => Math.abs(a - b) <= 1; // the studies print whole dollars; a cell and its prose figure differ by rounding at most
+const short = (s: string, n = 180) => (s.length > n ? s.slice(0, n - 3).trimEnd() + '...' : s);
+
+/** The establishment line of the production costs table's non-cash overhead: "Orchard Establishment 7,939 765 765",
+ *  "Establishment SV 9,500 457 457", "Peach Establishment 4,679 482 482". The first number is per producing acre, the
+ *  second the annual capital recovery. */
+function productionEstablishmentLines(lines: Line[], all: TableHeading[]): { perAcre: number; annual: number; line: Line }[] {
+  const out: { perAcre: number; annual: number; line: Line }[] = [];
+  for (const t of all.filter(x => !isEstablishTitle(x.title) && (x.kind === 'costs' || x.kind === 'returns' || x.kind === 'other'))) {
+    const [a, b] = spanOf(lines, all, t);
+    for (let i = a + 1; i < b; i++) {
+      const text = lines[i].text;
+      const toks = numericTokens(text, 0);
+      if (toks.length < 2 || toks.length > 3) continue;
+      const label = text.slice(0, toks[0].start);
+      if (!/establishment/i.test(label) || /re-?establish|interest|removal|year|yr\b|\bestablishment fee|\bland\b/i.test(label)) continue;
+      const v = toks.map(x => x.value);
+      if (v.some(x => x == null)) continue;
+      const [perAcre, annual] = v as number[];
+      if (!(perAcre > annual && annual > 0)) continue;
+      if (v.length === 3 && v[2] !== annual) continue;
+      out.push({ perAcre, annual, line: lines[i] });
+    }
+  }
+  return out;
+}
+
+function summarizeEstablishment(lines: Line[], est: Establishment | null, investments: EquipmentRow[], warn: (s: string) => void): EstablishmentSummary {
+  const S = proseSentences(lines);
+  const all = findTables(lines);
+  const table = est?.table && est.table.years.length && est.table.rows.length ? est.table : null;
+
+  // -- candidates for the per-acre establishment total
+  type Cand = { value: number; page: number; quote: string; source: EstablishmentSource };
+  const prodHits = productionEstablishmentLines(lines, all);
+  const prodHit = (est?.annualCharge ? prodHits.find(h => near(h.annual, est.annualCharge!.value)) : null) ?? prodHits[0] ?? null;
+  // the desert studies print the stand establishment as a block of its own: "TOTAL COST OF STAND ESTABLISHMENT 311.18"
+  const desertTotal = find(lines, /^\s*TOTAL COST OF (?:STAND )?ESTABLISHMENT\s+([\d,]+(?:\.\d+)?)\s*$/i);
+  const production: Cand | null = prodHit ? { value: prodHit.perAcre, page: prodHit.line.page, quote: clean(prodHit.line.text), source: 'production' }
+    : desertTotal ? { value: toNum(desertTotal.m[1])!, page: desertTotal.line.page, quote: clean(desertTotal.line.text), source: 'production' } : null;
+
+  // the whole farm establishment row divided by the acres, only when the study prints both
+  const inv = investments.find(r => /establishment/i.test(r.description) && !/re-?establish/i.test(r.description));
+  let investment: Cand | null = null;
+  if (inv && inv.price > 0) {
+    const inDesc = inv.description.match(/\(?\s*(\d[\d,]*)\s*-?\s*acres?\b/i);
+    const priceTxt = fmtNum(inv.price);
+    const sent = S.find(x => x.text.includes(priceTxt) && /(\d[\d,]*)[\s-]+acres?\b/i.test(x.text.slice(x.text.indexOf(priceTxt))));
+    const acresFromSent = sent ? sent.text.slice(sent.text.indexOf(priceTxt)).match(/(\d[\d,]*)[\s-]+acres?\b/i) : null;
+    const acres = inDesc ? toNum(inDesc[1]) : acresFromSent ? toNum(acresFromSent[1]) : null;
+    if (acres && acres > 0) investment = { value: Math.round((inv.price / acres) * 100) / 100, page: inv.page, quote: inDesc ? inv.line : `${inv.line} | ${sent!.text}`, source: 'investment' };
+  }
+
+  // Spanish studies: "... representa el costo del establecimiento, que es de $ 16,622 por acre"
+  // (the Spanish text runs past the first table heading, so every page is searched)
+  let es: { value: number; page: number; quote: string } | null = null;
+  if (!est?.accumulatedNetCost) {
+    const pages = new Map<number, string[]>();
+    for (const l of lines) if (l.text.trim()) (pages.get(l.page) ?? pages.set(l.page, []).get(l.page)!).push(l.text.trim());
+    for (const [page, ls] of pages) {
+      // the figure can sit in the next sentence: "... representa el costo de establecimiento. Para este estudio, el costo es de $ 11,219 por acre"
+      const ss = clean(ls.join(' ')).split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚÑ])/);
+      const re = /costo (?:de|del) establecimiento[^$]{0,80}?\$\s?([\d,]+)\s*por acre/i;
+      const sentence = ss.map((x, k) => (re.test(x) ? x : /costo (?:de|del) establecimiento/i.test(x) && k + 1 < ss.length && re.test(`${x} ${ss[k + 1]}`) ? `${x} ${ss[k + 1]}` : null)).find(Boolean) ?? null;
+      const v = sentence ? toNum(sentence.match(re)![1]) : null;
+      if (sentence && v) { es = { value: v, page, quote: sentence }; break; }
+    }
+  }
+  const prose: Cand | null = est?.accumulatedNetCost ? { ...est.accumulatedNetCost, source: 'prose' } : es ? { ...es, source: 'prose' } : null;
+
+  // the table: the accumulated net cost at the last establishment year, which is the column the study amortizes
+  let tableCand: Cand | null = null; let tableReason: string | null = null;
+  if (table) {
+    if (/1,?000\s*LF|LINEAR F/i.test(table.title)) tableReason = 'The establishment table is per 1,000 linear feet of hedgerow, not per acre';
+    else {
+      const accRows = table.rows.filter(r => r.kind === 'accumulated').sort((a, b) => Number(/NET\s*CASH/i.test(b.label)) - Number(/NET\s*CASH/i.test(a.label)));
+      const oneYear = table.years.length === 1;
+      const rowsToTry = oneYear ? [...accRows, ...table.rows.filter(r => /^TOTAL CASH COSTS?\b/i.test(r.label))] : accRows;
+      const refs = [production, prose, investment].filter((c): c is Cand => !!c);
+      let pick: { row: EstablishmentTableRow; c: number } | null = null;
+      for (const ref of refs) {
+        for (const row of rowsToTry) { const c = row.values.findIndex(v => v != null && near(v, ref.value)); if (c >= 0) { pick = { row, c }; break; } }
+        if (pick) break;
+      }
+      if (!pick && rowsToTry.length) {
+        const row = rowsToTry[0];
+        // a one-year table's total cash cost is gross of the establishment year's returns; when the study prints the
+        // amortized figure elsewhere and it is not this cell, the table is not where the total comes from
+        if (oneYear) { if (row.values[0] != null && !refs.length) pick = { row, c: 0 }; else if (!refs.length) tableReason = 'The one-year establishment table prints no total cash cost'; }
+        else {
+          // "The Total Accumulated Net Cash Cost in the fifth year represents the establishment cost"
+          const nth = sentenceMatch(S, /accumulated net (?:cash )?costs?(?:\s*\/\s*acre)? (?:in|at the end of|through) the (\w+) year/i);
+          const n = nth ? wordOrNum(nth.m[1]) : null;
+          const yearNum = (l: string) => (/^Est/i.test(l) && !/\d/.test(l.replace(/^Est\w*/i, '')) ? 1 : Number((l.match(/\d+/g) ?? ['NaN']).pop()));
+          const byLabel = n != null ? table.years.findIndex(l => yearNum(l) === n) : -1;
+          if (byLabel >= 0 && row.values[byLabel] != null) pick = { row, c: byLabel };
+          else {
+            const prodCol = table.years.findIndex(l => /^Production$/i.test(l));
+            const vals = row.values.slice(0, prodCol >= 0 ? prodCol : undefined);
+            const nonNull = vals.map((v, i) => ({ v, i })).filter(x => x.v != null) as { v: number; i: number }[];
+            const rising = nonNull.every((x, k) => k === 0 || x.v >= nonNull[k - 1].v);
+            if (nonNull.length && rising) { pick = { row, c: nonNull[nonNull.length - 1].i }; warn(`establishment total: no printed figure names the amortized column; took the last column (${table.years[pick.c]}) of ${row.label}`); }
+            else tableReason = 'The accumulated net cost row of the establishment table does not rise year over year (it restarts or turns to net returns), and the study names no single establishment total';
+          }
+        }
+      }
+      if (pick) tableCand = { value: pick.row.values[pick.c]!, page: pick.row.page, quote: pick.row.quote, source: 'table' };
+      else if (!tableReason) tableReason = 'The establishment table prints no accumulated net cost row';
+    }
+  }
+
+  const ordered = [tableCand, production, investment, prose].filter((c): c is Cand => !!c && c.value > 0);
+  const total = ordered[0] ?? null;
+  if (total) for (const c of ordered.slice(1)) if (!near(c.value, total.value)) warn(`establishment total: ${total.source} ${total.value} (${short(total.quote, 80)}) differs from ${c.source} ${c.value} (${short(c.quote, 80)}); using the ${total.source} figure`);
+
+  // -- the annual charge in the production years
+  let annualCharge: EstablishmentSummary['annualCharge'] = est?.annualCharge ? { value: est.annualCharge.value, page: est.annualCharge.page, quote: est.annualCharge.quote } : null;
+  if (!annualCharge && prodHit) annualCharge = { value: prodHit.annual, page: prodHit.line.page, quote: clean(prodHit.line.text) };
+  if (!annualCharge) {
+    // the costs and returns table prints only the annual charge: "Vineyard Establishment   2,124"
+    for (const t of all.filter(x => !isEstablishTitle(x.title) && (x.kind === 'costs' || x.kind === 'returns'))) {
+      const [a, b] = spanOf(lines, all, t);
+      for (let i = a + 1; i < b && !annualCharge; i++) {
+        const toks = numericTokens(lines[i].text, 0);
+        const label = lines[i].text.slice(0, toks[0]?.start ?? 0);
+        if (toks.length === 1 && toks[0].value != null && toks[0].value > 0 && /^\s*(?:\w+\s+){0,3}establishment(?: costs?)?\s*(?:\([^)]*\))?\s*$/i.test(label) && !/re-?establish|interest|fee/i.test(label)) annualCharge = { value: toks[0].value, page: lines[i].page, quote: clean(lines[i].text) };
+      }
+      if (annualCharge) break;
+    }
+  }
+  if (!annualCharge) {
+    const am = find(lines, /^\s*Amortization\b.*\bestablishment\s+([\d,]+(?:\.\d+)?)\s*$/i) ?? find(lines, /^\s*Amortized (?:tree |orchard |vineyard |stand )?establishment\b(?:\s+\S+)*?\s+([\d,]+(?:\.\d+)?)\s*$/i);
+    const v = am ? toNum(am.m[1]) : null;
+    if (am && v != null && v > 0) annualCharge = { value: v, page: am.line.page, quote: clean(am.line.text) };
+  }
+
+  // -- perennial: an establishment table or heading, an amortized establishment cost, an establishment row in the
+  // investments, or the study saying it leaves establishment out (an established orchard, a separate establishment study)
+  const excluded = sentenceMatch(S, /(?:does not (?:take into account|include)|not (?:presented|included))[^.]*establishment|no (?:other )?establishment costs? (?:is |are )?included|establishment costs? (?:is|are) (?:not (?:presented|included|shown)|assumed to be included in the land value)/i);
+  const separate = sentenceMatch(S, /(?:refer to|see)\s*\(?\s*["“]?(?:the )?Sample Costs? to Establish/i);
+  const perennial = !!(table || est?.method || est?.asset || inv || production || prose || annualCharge || excluded || separate);
+
+  let status: EstablishmentSummary['status'] = table ? 'table' : total ? 'total' : 'none';
+  let reason: string | null = null;
+  if (!perennial) { status = 'none'; reason = 'Annual crop, no establishment period'; }
+  else if (status === 'table' && !total) reason = tableReason;
+  else if (status === 'total') {
+    reason = 'No year-by-year establishment table in the study; ' + (total!.source === 'production' ? "the total is the establishment line of the production costs table's non-cash overhead"
+      : total!.source === 'investment' ? 'the total is the establishment row of the whole farm investment table divided by the acres it covers'
+        : 'the total is the per acre establishment cost stated in the text');
+  } else if (status === 'none') {
+    reason = excluded ? `The study does not cost establishment: "${short(excluded.s.text)}"`
+      : separate ? `Establishment is costed in a separate UC study: "${short(separate.s.text)}"`
+        : 'The study prints no establishment table and no per acre establishment cost';
+  }
+  return { perennial, status, total: perennial ? total : null, annualCharge: perennial ? annualCharge : null, reason };
+}
+
 // ---------------------------------------------------------------- method
 
 function parseMethod(lines: Line[]): Method {
@@ -1210,6 +1445,7 @@ export function parseStudy(e: ManifestEntry, text: string): ParsedStudy {
   const method = parseMethod(lines);
   const monthly = parseMonthly(lines, warn);
   const establishment = parseEstablishment(lines, investments, warn);
+  const establishmentSummary = summarizeEstablishment(lines, establishment, investments, warn);
 
   const fields: Record<string, unknown> = {
     year: source.year, region: source.region, counties: source.counties,
@@ -1227,7 +1463,7 @@ export function parseStudy(e: ManifestEntry, text: string): ParsedStudy {
   };
   const fieldsFound = Object.keys(fields).filter(k => fields[k] != null);
   const fieldsMissing = Object.keys(fields).filter(k => fields[k] == null);
-  return { source, assumptions, costsPerAcre, equipment, investments, hourlyEquipment, businessOverhead, method, monthly, establishment, parse: { fieldsFound, fieldsMissing, warnings } };
+  return { source, assumptions, costsPerAcre, equipment, investments, hourlyEquipment, businessOverhead, method, monthly, establishment, establishmentSummary, parse: { fieldsFound, fieldsMissing, warnings } };
 }
 
 function main() {

@@ -1685,6 +1685,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 4530,
+   "page": 13,
+   "quote": "TOTAL ACCUMULATED NET CASH COSTS 2,591 3,223 3,942 4,530 4,992",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 325,
+   "page": 15,
+   "quote": "Orchard Establishment 4,530 325 325"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

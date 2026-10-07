@@ -1698,6 +1698,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 26915,
+   "page": 10,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 3434,
+   "page": 13,
+   "quote": "Establishment (Protea) 26,915 3,434 3,434"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

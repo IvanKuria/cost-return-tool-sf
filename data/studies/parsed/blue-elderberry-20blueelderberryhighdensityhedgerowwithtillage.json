@@ -173,7 +173,264 @@
   }
  },
  "monthly": null,
- "establishment": null,
+ "establishment": {
+  "table": {
+   "title": "COSTS PER 1,000LF TO ESTABLISH BLUE ELDERBERRY",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Plant",
+     "kind": "heading",
+     "section": "Pre-Plant",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Pre-Plant:"
+    },
+    {
+     "label": "Land Prep: Disc/Hill/Rototill",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      89
+     ],
+     "page": 10,
+     "quote": "Land Prep: Disc/Hill/Rototill 2.49 66 11 12 0 0 89"
+    },
+    {
+     "label": "TOTAL PRE-PLANT COSTS",
+     "kind": "subtotal",
+     "section": "Pre-Plant",
+     "values": [
+      89
+     ],
+     "page": 10,
+     "quote": "TOTAL PRE-PLANT COSTS 2.49 66 11 12 0 0 89"
+    },
+    {
+     "label": "Planting",
+     "kind": "heading",
+     "section": "Planting",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Planting:"
+    },
+    {
+     "label": "Plant Trees",
+     "kind": "operation",
+     "section": "Planting",
+     "values": [
+      1440
+     ],
+     "page": 10,
+     "quote": "Plant Trees (167) 0.00 665 0 0 775 0 1,440"
+    },
+    {
+     "label": "Layout Irrigation Lines/Emitters",
+     "kind": "operation",
+     "section": "Planting",
+     "values": [
+      351
+     ],
+     "page": 10,
+     "quote": "Layout Irrigation Lines/Emitters 0.00 221 0 0 130 0 351"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Planting",
+     "values": [
+      1791
+     ],
+     "page": 10,
+     "quote": "TOTAL PLANTING COSTS 0.00 885 0 0 905 0 1,791"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Irrigation 10x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      77
+     ],
+     "page": 10,
+     "quote": "Irrigation 10x 0.00 0 0 0 77 0 77"
+    },
+    {
+     "label": "Fertilizer: Backpack 3-6-2 3x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      124
+     ],
+     "page": 10,
+     "quote": "Fertilizer: Backpack 3-6-2 3x 0.00 88 0 0 36 0 124"
+    },
+    {
+     "label": "Plant Replacement Trees",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      95
+     ],
+     "page": 10,
+     "quote": "Plant Replacement Trees (10) 0.00 71 0 0 24 0 95"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      296
+     ],
+     "page": 10,
+     "quote": "TOTAL CULTURAL COSTS 0.00 159 0 0 137 0 296"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/1,000LF",
+     "kind": "total",
+     "section": "Cultural",
+     "values": [
+      2176
+     ],
+     "page": 10,
+     "quote": "TOTAL OPERATING COSTS/1,000LF 2.49 1,110 11 12 1,043 0 2,176"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 10,
+     "quote": "Property Taxes 2"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 10,
+     "quote": "Property Insurance 1"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/1,000LF",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH OVERHEAD COSTS/1,000LF 3"
+    },
+    {
+     "label": "TOTAL CASH COSTS/1,000LF",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      2179
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH COSTS/1,000LF 2,179"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "NON-CASH OVERHEAD: Per Producing Annual Cost"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      26
+     ],
+     "page": 10,
+     "quote": "Equipment 278 26 26"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      26
+     ],
+     "page": 10,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 278 26 26"
+    },
+    {
+     "label": "TOTAL COSTS/1,000LF",
+     "kind": "subtotal",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      2204
+     ],
+     "page": 10,
+     "quote": "TOTAL COSTS/1,000LF 2,204"
+    }
+   ],
+   "yieldRow": null
+  },
+  "years": [
+   {
+    "year": 1,
+    "label": "Total Cost",
+    "totalCost": 2179,
+    "returns": null,
+    "netCost": 2179,
+    "accumulated": null,
+    "page": 10,
+    "quote": "TOTAL CASH COSTS/1,000LF 2,179"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": null
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": null,
+  "annualCharge": null,
+  "reason": "The establishment table is per 1,000 linear feet of hedgerow, not per acre"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -188,7 +445,8 @@
    "hourlyEquipment",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishment"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -204,7 +462,6 @@
    "businessOverhead",
    "insuranceRatePct",
    "monthly",
-   "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],

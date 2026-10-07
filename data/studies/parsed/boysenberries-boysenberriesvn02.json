@@ -1656,6 +1656,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 7345,
+   "page": 11,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,521 7,345",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 69,
+   "page": 12,
+   "quote": "Berry Crop Establishment 502 69 69"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1693,7 +1709,8 @@
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
-   "establishment year 2: running net 16966 differs from printed accumulated 7345"
+   "establishment year 2: running net 16966 differs from printed accumulated 7345",
+   "establishment total: table 7345 (ACCUMULATED NET CASH COSTS/ACRE 7,521 7,345) differs from production 502 (Berry Crop Establishment 502 69 69); using the table figure"
   ]
  }
 }

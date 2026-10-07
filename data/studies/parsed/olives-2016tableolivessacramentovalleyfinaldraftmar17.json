@@ -804,6 +804,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 5000,
+   "page": 10,
+   "quote": "Orchard Establishment 5,000 234 234",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 234,
+   "page": 10,
+   "quote": "Orchard Establishment 5,000 234 234"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",

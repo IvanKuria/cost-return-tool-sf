@@ -75,8 +75,18 @@
   },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 3.83,
+   "unit": "$/gal",
+   "page": 8,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.43 (excludes excise taxes) and $3.83 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.83,
+   "unit": "$/gal",
+   "page": 8,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.43 (excludes excise taxes) and $3.83 per gallon, respectively."
+  },
   "yieldStatement": {
    "page": 7,
    "quote": "An assumed yield of 4.5 tons per acre over the life of the vineyard is used to calculate returns in the production years."
@@ -781,15 +791,21 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 9,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 9,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 8,
-   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in"
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1796,10 +1812,18 @@
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 31,983 37,195 37,991"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 37991,
+   "page": 10,
+   "quote": "For this study the cost is $37,991 per acre or $379,910 for the 10-acre vineyard."
+  },
   "annualCharge": null,
   "productionYears": null,
-  "plantingLife": null,
+  "plantingLife": {
+   "value": 30,
+   "page": 10,
+   "quote": "The establishment cost is spread over the remaining 27 years of the 30 years the vineyard is in production."
+  },
   "amortizedFromYear": null,
   "removalCost": {
    "value": 1600,
@@ -1809,6 +1833,18 @@
   },
   "asset": null,
   "method": null
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 37991,
+   "page": 13,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 31,983 37,195 37,991",
+   "source": "table"
+  },
+  "annualCharge": null,
+  "reason": null
  },
  "parse": {
   "fieldsFound": [
@@ -1830,18 +1866,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
    "machineLaborFactor",
    "monthly",
-   "establishment"
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
    "interestRatePct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": [

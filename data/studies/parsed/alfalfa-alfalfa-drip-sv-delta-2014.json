@@ -745,6 +745,22 @@
    "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 1158,
+   "page": 13,
+   "quote": "Establishment Costs 160 Ac 1,158 226 226",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 226,
+   "page": 13,
+   "quote": "Establishment Costs 160 Ac 1,158 226 226"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",

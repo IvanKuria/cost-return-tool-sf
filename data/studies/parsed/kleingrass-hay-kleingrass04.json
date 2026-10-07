@@ -60,6 +60,22 @@
  },
  "monthly": null,
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 309.68,
+   "page": 6,
+   "quote": "TOTAL COST OF STAND ESTABLISHMENT 309.68",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 61.94,
+   "page": 6,
+   "quote": "Amortization 20 % of total cost of stand establishment 61.94"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",

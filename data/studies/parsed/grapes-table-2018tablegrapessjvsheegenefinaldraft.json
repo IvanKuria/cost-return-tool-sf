@@ -2360,6 +2360,22 @@
    "quote": "The establishment cost is amortized over the remaining 22 years of the 25 year vineyard."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 18399,
+   "page": 16,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,032 17,347 18,399",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1462,
+   "page": 18,
+   "quote": "Vineyard Establishment: Sheegene-21 18,399 1,462 1,462"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

@@ -62,7 +62,10 @@
    "page": 9,
    "quote": "According to the data from the USDA-NASS, the average prices for on-farm delivery of diesel and gasoline were $2.30 and $2.80 per gallon, respectively."
   },
-  "yieldStatement": null,
+  "yieldStatement": {
+   "page": 13,
+   "quote": "The break-even price for our production year yield assumption of 582 cartons per acre is $19.11 per carton."
+  },
   "priceStatement": {
    "page": 11,
    "quote": "For this study, crop value is estimated at a grower price of $1.93 per pound or $48.25 per carton--Los Angeles Terminal Market weighted average price for guavas from January to March for the 2005 to 2007 seasons (Table D)."
@@ -1105,6 +1108,22 @@
    "page": 11,
    "quote": "The establishment cost is amortized over 26 years (the expected useful life of the orchard) to determine an annual capital recovery charge (opportunity cost of the investment plus depreciation of trees)."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 8509,
+   "page": 15,
+   "quote": "ACCUMULATED NET CAS H COS TS 7112 11366 12926 8509",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 736,
+   "page": 17,
+   "quote": "Establishment Cost 8509 736 736"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

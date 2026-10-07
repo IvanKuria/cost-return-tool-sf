@@ -343,3 +343,93 @@ describe('avocado establishment tables', () => {
     expect(byId(id).establishment!.table!.rows.some(r => /^Irrigation & walk lines .* yr\. 2 - onward\)$/.test(r.label) && r.values[0] === 340)).toBe(true);
   });
 });
+
+describe('establishment summary: every perennial study has a table or a cited per acre total', () => {
+  const all = load();
+  const byId = (id: string) => all.find(x => x.source.id === id)!;
+  // Perennial studies that have neither a usable table nor a per acre total, and why (the study itself says so).
+  const NO_ESTABLISHMENT_COST: Record<string, string> = {
+    'apples-2023applesccfullfinal-nov23': 'establishment is folded into the $30,000 land value of an established orchard',
+    'apples-2023organicapplesccfullfinal-nov23': 'establishment is folded into the land value of an established orchard',
+    'apples-apples-santa-cruz-conv-processing': '"There are no establishment costs included in this study."',
+    'apples-apples-santa-cruz-org-processing': '"There are no establishment costs included in this study."',
+    'walnuts-walnut-org-nc2013': '"This study does not take into account establishment cost."',
+    'pasture-20pasturesnfhproduction': 'production of an established, rented pasture; establishment is a separate UC study',
+    'pasture-pasture-sv-2015': 'production of an established, rented pasture; establishment is a separate UC study',
+  };
+  // Perennial studies with a parsed table but no per acre total.
+  const TABLE_WITHOUT_TOTAL: Record<string, string> = {
+    'blue-elderberry-20blueelderberryhedgerowwithouttillage': 'hedgerow table is per 1,000 linear feet, not per acre',
+    'blue-elderberry-20blueelderberryhighdensityhedgerowwithtillage': 'hedgerow table is per 1,000 linear feet, not per acre',
+    'blue-elderberry-20blueelderberrymultispecieshedgerowwithtillage': 'hedgerow table is per 1,000 linear feet, not per acre',
+    'christmas-trees-christmastreesn2005': 'trees are cut from year 6 and replanted; the accumulated row restarts and no single establishment total is printed',
+  };
+  const printed = (quote: string, v: number) => quote.includes(v.toLocaleString('en-US', { maximumFractionDigits: 2 })) || quote.replace(/,/g, '').includes(String(v));
+
+  it('every study carries a summary; perennial studies have status table or total unless allowlisted', () => {
+    for (const s of all) {
+      const e = s.establishmentSummary;
+      expect(e, s.source.id).toBeTruthy();
+      if (!e.perennial) continue;
+      if (s.source.id in NO_ESTABLISHMENT_COST) { expect(e.status, s.source.id).toBe('none'); expect(e.reason, s.source.id).toBeTruthy(); continue; }
+      expect(['table', 'total'], s.source.id).toContain(e.status);
+      if (!(s.source.id in TABLE_WITHOUT_TOTAL)) expect(e.total, s.source.id).not.toBeNull();
+    }
+    const per = all.filter(s => s.establishmentSummary.perennial);
+    const count = (st: string) => per.filter(s => s.establishmentSummary.status === st).length;
+    console.log(`establishment summary: ${per.length} perennial studies; table ${count('table')}, total ${count('total')}, none ${count('none')}`);
+  });
+  it("status 'table' means the table has years and rows; a total is positive and cited as printed", () => {
+    for (const s of all) {
+      const e = s.establishmentSummary;
+      if (e.status === 'table') { expect(s.establishment?.table?.years.length, s.source.id).toBeGreaterThan(0); expect(s.establishment!.table!.rows.length, s.source.id).toBeGreaterThan(0); }
+      if (e.status === 'total') expect(e.total, s.source.id).not.toBeNull();
+      if (e.status !== 'table' && e.perennial) expect(e.reason, s.source.id).toBeTruthy();
+      for (const c of [e.total, e.annualCharge]) {
+        if (!c) continue;
+        expect(c.value, s.source.id).toBeGreaterThan(0);
+        expect(c.page, s.source.id).toBeGreaterThan(0);
+        if (!('source' in c) || c.source !== 'investment') expect(printed(c.quote, c.value), `${s.source.id}: ${c.value} in "${c.quote}"`).toBe(true);
+      }
+    }
+  });
+  it('annual crops are not perennial and carry no establishment figures', () => {
+    const annual = ['tomatoes-process-tomato-drip', 'lettuce-2023-iceberglettuce-full-final', 'strawberries-2024strawberry-full-final-march2024', 'cover-crops-2022covercropsbenefits', 'rice-2021ricesacramentovalley', 'wheat-wheatvs2013', 'beans-2023-baby-lima-final', 'artichokes-artichokes04'];
+    for (const id of annual) {
+      const e = byId(id).establishmentSummary;
+      expect(e.perennial, id).toBe(false);
+      expect(e.status, id).toBe('none');
+      expect(e.total, id).toBeNull();
+      expect(e.reason, id).toMatch(/Annual crop/);
+    }
+    for (const s of all.filter(x => !x.establishmentSummary.perennial)) { expect(s.establishmentSummary.total, s.source.id).toBeNull(); expect(s.establishmentSummary.status, s.source.id).toBe('none'); }
+  });
+  it('hand-checked totals and annual charges', () => {
+    // [id, status, total, source, annual charge] as printed in the study
+    const cases: [string, string, number | null, string | null, number | null][] = [
+      ['almonds-2024sacvalleyalmonds7-5-24-final-draft', 'table', 14894, 'table', 1489],  // 3rd year accumulated net cash cost; prose "$14,894 per acre"
+      ['pears-18pearssv-7218', 'total', 12500, 'production', 692],                          // "Establishment 12,500 692 692"; prose "$12,500 per acre"
+      ['pears-pearsv2010', 'total', 9500, 'production', 457],                               // "Establishment Costs 9,500 457 457"
+      ['grapes-wine-2021-grapewinelodi-22522', 'table', 26313, 'table', 1954],              // "Vineyard Establishment 26,313 1,954 1,954"
+      ['grapes-wine-wine-grape-sn-2015', 'table', 28603, 'table', 2124],                    // 3rd year accumulated net cash = $143,015 / 5 acres; "Vineyard Establishment 2,124"
+      ['grapes-wine-amendedwinegrapessonomafinaldraft91817', 'total', 45000, 'production', 3419],
+      ['alfalfa-16alfalfasjv300acfinal-41916', 'table', 888, 'table', 315],                 // one-year table TOTAL CASH COSTS/ACRE 888; "Establishment Costs for 300 acres of alfalfa 888 315 315"
+      // the production table amortizes 28,409 (3rd year accumulated net cash); the prose 6-year figure $17,597 is not what is amortized
+      ['avocados-2020avocadohighdensitysandiegocounty', 'table', 28409, 'table', 1955],
+      ['peaches-nectarines-2000peach', 'table', 4679, 'table', 482],                        // "Tahle 1." in the text layer; prose says $4,672, table and production line 4,679
+      ['grapes-grapesrivcty02', 'table', 21356, 'table', 1700],                              // "ACCUMULATED NET COSTS 12,248 17,443 21,356"
+      ['lychee-lycheescc02', 'total', 15037, 'prose', 1152],
+      ['peaches-peachesearlysv2011', 'total', 6286, 'production', 595],
+      ['apples-2023applesccfullfinal-nov23', 'none', null, null, null],
+    ];
+    for (const [id, status, total, source, annual] of cases) {
+      const e = byId(id).establishmentSummary;
+      expect(e.perennial, id).toBe(true);
+      expect(e.status, id).toBe(status);
+      expect(e.total?.value ?? null, id).toBe(total);
+      expect(e.total?.source ?? null, id).toBe(source);
+      expect(e.annualCharge?.value ?? null, id).toBe(annual);
+    }
+    expect(byId('apples-2023applesccfullfinal-nov23').establishmentSummary.reason).toMatch(/land value/);
+  });
+});

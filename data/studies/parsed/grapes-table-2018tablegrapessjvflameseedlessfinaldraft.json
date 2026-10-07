@@ -2406,6 +2406,22 @@
    "quote": "The establishment costs are amortized over the remaining 22 years of the 25 year vineyard."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 15871,
+   "page": 15,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,524 14,789 15,871",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1261,
+   "page": 17,
+   "quote": "Vineyard Establishment: Flame Seedless 15,871 1,261 1,261"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

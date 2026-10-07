@@ -1178,7 +1178,11 @@
  "establishment": {
   "table": null,
   "years": [],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 45000,
+   "page": 12,
+   "quote": "For this study, the total accumulated net cash cost in the third year represents the establishment cost and is estimated at $45,000 per planted acre ($1,800,000 for the entire 40 acres)."
+  },
   "annualCharge": {
    "value": 3419,
    "page": 15,
@@ -1204,6 +1208,22 @@
    "page": 12,
    "quote": "The cost is amortized over the remaining 22 years of vineyard production to estimate the annual capital recovery cost."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 45000,
+   "page": 15,
+   "quote": "Vineyard Establishment 45,000 3,419 3,419",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 3419,
+   "page": 15,
+   "quote": "Vineyard Establishment 45,000 3,419 3,419"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
  },
  "parse": {
   "fieldsFound": [
@@ -1233,11 +1253,11 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "landRentPerAcre",
-   "establishmentAccumulated"
+   "landRentPerAcre"
   ],
   "warnings": [
    "several costs-per-acre tables (establishment and production); using the production one"

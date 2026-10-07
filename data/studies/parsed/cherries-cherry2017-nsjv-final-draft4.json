@@ -2313,6 +2313,22 @@
    "quote": "The establishment cost is amortized over the remaining 21 years of the 25 years the orchard is in production."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 8688,
+   "page": 13,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,330 5,847 7,478 8,688 9,561",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 678,
+   "page": 15,
+   "quote": "Cherry Orchard Establishment 8,688 678 678"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

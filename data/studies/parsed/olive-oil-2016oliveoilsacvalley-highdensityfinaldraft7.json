@@ -58,8 +58,18 @@
     "quote": "Olive Oil 210 Gal 16.00 3,360"
    }
   ],
-  "interestRatePct": null,
-  "operatingInterestRatePct": null,
+  "interestRatePct": {
+   "value": 3.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "An interest rate of 3.75 percent is used to calculate capital recovery."
+  },
+  "operatingInterestRatePct": {
+   "value": 4.25,
+   "unit": "%",
+   "page": 8,
+   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 4.25 percent per year."
+  },
   "laborMachineRate": {
    "value": 13,
    "unit": "$/hr",
@@ -680,15 +690,26 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 9,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 9,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 7,
-   "quote": "Labor hours for operations involving machinery are 20 percent higher than the operation time given in"
+   "quote": "Labor hours for operations involving machinery are 20 percent higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1651,19 +1672,27 @@
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,121 4,943 4,403 3,040"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 4403,
+   "page": 10,
+   "quote": "For this study, the cost is $4,403 per acre or $484,330 for the 110 acres planted to olives."
+  },
   "annualCharge": null,
   "productionYears": {
    "value": 22,
-   "page": 18,
-   "quote": "Establishment SHDO 484,330 22 0 32,719 204 2,422 0 35,345 (years of life of the establishment row in the investment table)"
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
   },
   "plantingLife": {
    "value": 25,
    "page": 3,
    "quote": "The economic productive life of the orchard at the time of planting in this study is estimated to be 25 years before removal."
   },
-  "amortizedFromYear": null,
+  "amortizedFromYear": {
+   "value": 4,
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
+  },
   "removalCost": null,
   "asset": {
    "price": 484330,
@@ -1673,7 +1702,26 @@
    "page": 18,
    "line": "Establishment SHDO 484,330 22 0 32,719 204 2,422 0 35,345"
   },
-  "method": null
+  "method": {
+   "page": 10,
+   "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed to be in production."
+  }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 4403,
+   "page": 12,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,121 4,943 4,403 3,040",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 297,
+   "page": 14,
+   "quote": "Establishment SHDO 4,403 297 297"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [
@@ -1682,6 +1730,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -1695,18 +1744,17 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
-   "establishment"
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": []

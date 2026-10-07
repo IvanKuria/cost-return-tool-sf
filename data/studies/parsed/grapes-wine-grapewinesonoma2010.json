@@ -2229,30 +2229,6 @@
      ],
      "page": 15,
      "quote": "TOTAL ACCUMULATED NET COST/ACRE 29,138 36,927 42,567"
-    },
-    {
-     "label": "CC=Cover Crop Centers, NC=Non Cover Crop Centers",
-     "kind": "overheadItem",
-     "section": "NON-CASH OVERHEAD (Capital Recovery)",
-     "values": [
-      null,
-      null,
-      null
-     ],
-     "page": 15,
-     "quote": "CC=Cover Crop Centers, NC=Non Cover Crop Centers"
-    },
-    {
-     "label": "Income = $2,236 per ton",
-     "kind": "overheadItem",
-     "section": "NON-CASH OVERHEAD (Capital Recovery)",
-     "values": [
-      null,
-      null,
-      null
-     ],
-     "page": 15,
-     "quote": "Income = $2,236 per ton"
     }
    ],
    "yieldRow": {
@@ -2332,6 +2308,22 @@
    "page": 12,
    "quote": "The establishment cost is amortized over the remaining 22 years the vineyard is in production."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 30826,
+   "page": 15,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 25,306 29,279 30,826",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 2289,
+   "page": 17,
+   "quote": "Vineyard Establishment 30,826 2,289 2,289"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

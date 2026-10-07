@@ -1254,6 +1254,13 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE AND HARVEST BROCCOLI – BUNCHED 14s"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

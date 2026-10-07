@@ -650,11 +650,379 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE ORGANIC ALFALFA"
  },
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH ORGANIC ALFALFA",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Preplant",
+     "kind": "heading",
+     "section": "Preplant",
+     "values": [
+      null
+     ],
+     "page": 12,
+     "quote": "Preplant:"
+    },
+    {
+     "label": "Subsoil/Rip Ground",
+     "kind": "operation",
+     "section": "Preplant",
+     "values": [
+      28
+     ],
+     "page": 12,
+     "quote": "Subsoil/Rip Ground 0.39 7 16 6 0 0 28"
+    },
+    {
+     "label": "Disc Field 2X",
+     "kind": "operation",
+     "section": "Preplant",
+     "values": [
+      24
+     ],
+     "page": 12,
+     "quote": "Disc Field 2X 0.33 6 13 5 0 0 24"
+    },
+    {
+     "label": "Laser level",
+     "kind": "operation",
+     "section": "Preplant",
+     "values": [
+      75
+     ],
+     "page": 12,
+     "quote": "Laser level 0.00 0 0 0 0 75 75"
+    },
+    {
+     "label": "Fertilize: Compost (1X per 4 Yrs, 25% of cost)",
+     "kind": "operation",
+     "section": "Preplant",
+     "values": [
+      67
+     ],
+     "page": 12,
+     "quote": "Fertilize: Compost (1X per 4 Yrs, 25% of cost) 0.00 0 0 0 45 22 67"
+    },
+    {
+     "label": "Float Field",
+     "kind": "operation",
+     "section": "Preplant",
+     "values": [
+      4
+     ],
+     "page": 12,
+     "quote": "Float Field 0.12 2 2 1 0 0 4"
+    },
+    {
+     "label": "Pull Borders",
+     "kind": "operation",
+     "section": "Preplant",
+     "values": [
+      15
+     ],
+     "page": 12,
+     "quote": "Pull Borders 0.22 4 9 2 0 0 15"
+    },
+    {
+     "label": "TOTAL Preplant COSTS",
+     "kind": "subtotal",
+     "section": "Preplant",
+     "values": [
+      212
+     ],
+     "page": 12,
+     "quote": "TOTAL Preplant COSTS 1.06 18 39 13 45 97 212"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 12,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Roll Field 2X (pre and post plant)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      7
+     ],
+     "page": 12,
+     "quote": "Roll Field 2X (pre and post plant) 0.20 3 3 1 0 0 7"
+    },
+    {
+     "label": "Irrigate: Sprinkle (water & labor)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      22
+     ],
+     "page": 12,
+     "quote": "Irrigate: Sprinkle (water & labor) 0.70 9 0 0 13 0 22"
+    },
+    {
+     "label": "Plant: Alfalfa seed (25 lbs/acre)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      117
+     ],
+     "page": 12,
+     "quote": "Plant: Alfalfa seed (25 lbs/acre) 0.00 0 0 0 106 11 117"
+    },
+    {
+     "label": "Pickup Truck Use",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      19
+     ],
+     "page": 12,
+     "quote": "Pickup Truck Use 0.57 10 7 2 0 0 19"
+    },
+    {
+     "label": "TOTAL Cultural COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      165
+     ],
+     "page": 12,
+     "quote": "TOTAL Cultural COSTS 1.47 22 10 3 119 11 165"
+    },
+    {
+     "label": "Interest on Operating Capital @ 5.75%",
+     "kind": "interest",
+     "section": "Cultural",
+     "values": [
+      4
+     ],
+     "page": 12,
+     "quote": "Interest on Operating Capital @ 5.75% 4"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Cultural",
+     "values": [
+      380
+     ],
+     "page": 12,
+     "quote": "TOTAL OPERATING COSTS/ACRE 2.53 40 49 16 164 108 380"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 12,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 12,
+     "quote": "Liability Insurance 1"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      12
+     ],
+     "page": 12,
+     "quote": "Office Expense 12"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      64
+     ],
+     "page": 12,
+     "quote": "Property Taxes 64"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 12,
+     "quote": "Property Insurance 3"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      13
+     ],
+     "page": 12,
+     "quote": "Investment Repairs 13"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      93
+     ],
+     "page": 12,
+     "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 93"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      474
+     ],
+     "page": 12,
+     "quote": "TOTAL CASH COSTS/ACRE 474"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 12,
+     "quote": "NON-CASH OVERHEAD: Per producing Annual Cost"
+    },
+    {
+     "label": "Fuel Tanks & Pumps",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 12,
+     "quote": "Fuel Tanks & Pumps 11 1 1"
+    },
+    {
+     "label": "Fuel Wagon",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      0
+     ],
+     "page": 12,
+     "quote": "Fuel Wagon 3 0 0"
+    },
+    {
+     "label": "Hay Barn",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      41
+     ],
+     "page": 12,
+     "quote": "Hay Barn 525 41 41"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      288
+     ],
+     "page": 12,
+     "quote": "Land 6,061 288 288"
+    },
+    {
+     "label": "Shop Building",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      4
+     ],
+     "page": 12,
+     "quote": "Shop Building 61 4 4"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 12,
+     "quote": "Shop Tools 13 2 2"
+    },
+    {
+     "label": "Siphon Tubes",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 12,
+     "quote": "Siphon Tubes 17 1 1"
+    },
+    {
+     "label": "Sprinkler Pipe",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 12,
+     "quote": "Sprinkler Pipe 33 3 3"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      17
+     ],
+     "page": 12,
+     "quote": "Equipment 151 17 17"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      356
+     ],
+     "page": 12,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 6,874 356 356"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      830
+     ],
+     "page": 12,
+     "quote": "TOTAL COSTS/ACRE 830"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,
-    "label": "1",
+    "label": "Total Cost",
     "totalCost": 474,
     "returns": null,
     "netCost": 474,
@@ -663,11 +1031,7 @@
     "quote": "TOTAL CASH COSTS/ACRE 474"
    }
   ],
-  "accumulatedNetCost": {
-   "value": 6000,
-   "page": 9,
-   "quote": "For this study, the land is estimated to cost $6,000 per acre."
-  },
+  "accumulatedNetCost": null,
   "annualCharge": {
    "value": 173,
    "page": 14,
@@ -694,6 +1058,22 @@
    "quote": "The establishment cost is amortized over the remaining three years of stand life."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 474,
+   "page": 12,
+   "quote": "TOTAL CASH COSTS/ACRE 474",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 173,
+   "page": 14,
+   "quote": "Establishment Cost 474 173 173"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -717,7 +1097,6 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
@@ -726,10 +1105,9 @@
    "landRentPerAcre",
    "acresFarmed",
    "insuranceRatePct",
-   "propertyTaxRatePct"
+   "propertyTaxRatePct",
+   "establishmentAccumulated"
   ],
-  "warnings": [
-   "establishment per producing acre 474 differs from prose 6000"
-  ]
+  "warnings": []
  }
 }

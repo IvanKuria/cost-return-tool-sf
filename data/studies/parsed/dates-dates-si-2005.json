@@ -1613,24 +1613,6 @@
      ],
      "page": 17,
      "quote": "TOTAL ACCUMULATED NET COST 11650 17882 22566 27591 33640 39693 45092 49820 53805"
-    },
-    {
-     "label": "Coachella Valley, Riverside County, 2005-2006",
-     "kind": "overheadItem",
-     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
-     "values": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 17,
-     "quote": "Coachella Valley, Riverside County, 2005-2006"
     }
    ],
    "yieldRow": null
@@ -1738,6 +1720,22 @@
    "page": 14,
    "quote": "This value is amortized approximately over 40 years, (the expected useful life of the orchard) to determine an annual charge for depreciation of trees and the opportunity cost of the investment in tree establishment."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 33637,
+   "page": 17,
+   "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 2293,
+   "page": 18,
+   "quote": "Establishment Cost (Trees) 33637 2293 2293"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

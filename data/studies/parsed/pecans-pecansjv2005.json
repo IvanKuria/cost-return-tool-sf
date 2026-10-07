@@ -1720,7 +1720,11 @@
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 1,958 2,587 3,336 4,287 5,158"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 4287,
+   "page": 8,
+   "quote": "For this study the cost is $4,287 per producing acre or $248,646 for the 58-acre orchard."
+  },
   "annualCharge": {
    "value": 294,
    "page": 13,
@@ -1748,6 +1752,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 4287,
+   "page": 11,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 1,958 2,587 3,336 4,287 5,158",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 294,
+   "page": 13,
+   "quote": "Orchard Establishment 4,287 294 294"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1772,6 +1792,7 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
@@ -1779,8 +1800,7 @@
    "interestRatePct",
    "landRentPerAcre",
    "insuranceRatePct",
-   "propertyTaxRatePct",
-   "establishmentAccumulated"
+   "propertyTaxRatePct"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"

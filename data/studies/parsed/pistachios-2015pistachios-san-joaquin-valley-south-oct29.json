@@ -2192,6 +2192,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 11207,
+   "page": 16,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,411 4,914 6,538 8,260 10,295 11,207",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 671,
+   "page": 22,
+   "quote": "Pistachio Establishment Cost 671"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -2227,7 +2243,8 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "monthly table not used: MONTHLY CASH COSTS PER ACRE TO PRODUCE PISTACHIOS: TOTAL CASH COSTS row: months sum to 2905 but the Total column says 3461"
+   "monthly table not used: MONTHLY CASH COSTS PER ACRE TO PRODUCE PISTACHIOS: TOTAL CASH COSTS row: months sum to 2905 but the Total column says 3461",
+   "establishment total: no printed figure names the amortized column; took the last column (6th) of ACCUMULATED NET CASH COSTS/ACRE"
   ]
  }
 }

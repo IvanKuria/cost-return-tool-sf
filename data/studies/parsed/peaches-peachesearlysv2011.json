@@ -28,7 +28,12 @@
    "page": 3,
    "quote": "The hypothetical farm consists of 100 contiguous acres."
   },
-  "acresCrop": null,
+  "acresCrop": {
+   "value": 40,
+   "unit": "acres",
+   "page": 7,
+   "quote": "For this study, the cost is $6,286 per acre or $251,429 for the 40 acres planted to processing peaches."
+  },
   "yieldPerAcre": {
    "value": 17,
    "unit": "ton",
@@ -75,8 +80,18 @@
   },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 3.1,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.60 (excludes excise tax) and $3.10 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.1,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.60 (excludes excise tax) and $3.10 per gallon, respectively."
+  },
   "yieldStatement": {
    "page": 4,
    "quote": "In this study, the average yield over the life of a mature orchard is 17 tons per acre."
@@ -1005,15 +1020,21 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 6,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 6,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 5,
-   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in"
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1080,7 +1101,56 @@
   "page": 12,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE EXTRA EARLY CLING PEACH"
  },
- "establishment": null,
+ "establishment": {
+  "table": null,
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 6286,
+   "page": 7,
+   "quote": "For this study, the cost is $6,286 per acre or $251,429 for the 40 acres planted to processing peaches."
+  },
+  "annualCharge": {
+   "value": 595,
+   "page": 9,
+   "quote": "Orchard Establishment 6,286 595 595"
+  },
+  "productionYears": {
+   "value": 15,
+   "page": 7,
+   "quote": "Establishment cost is amortized over the remaining 15 years that the orchard is assumed to be in production."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 251429,
+   "yearsLife": 15,
+   "salvageValue": 0,
+   "capitalRecovery": 23816,
+   "page": 15,
+   "line": "Establishment (Orchard) 251,429 15 23,816 0 1,257 1,257 26,330"
+  },
+  "method": {
+   "page": 7,
+   "quote": "Establishment cost is amortized over the remaining 15 years that the orchard is assumed to be in production."
+  }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 6286,
+   "page": 9,
+   "quote": "Orchard Establishment 6,286 595 595",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 595,
+   "page": 9,
+   "quote": "Orchard Establishment 6,286 595 595"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1102,18 +1172,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "interestRatePct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct",
-   "establishment",
-   "establishmentAccumulated",
-   "establishmentAnnual"
+   "propertyTaxRatePct"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"

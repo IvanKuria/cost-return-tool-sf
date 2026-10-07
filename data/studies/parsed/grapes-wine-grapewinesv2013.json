@@ -1839,6 +1839,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 12807,
+   "page": 13,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,645 12,471 12,807",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1006,
+   "page": 14,
+   "quote": "Vineyard Establishment 12,807 1,006 1,006"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

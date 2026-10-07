@@ -55,15 +55,46 @@
   ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
-  "laborMachineRate": null,
-  "laborNonMachineRate": null,
-  "laborOverheadPct": null,
+  "laborMachineRate": {
+   "value": 14.28,
+   "unit": "$/hr",
+   "page": 9,
+   "quote": "Labor rates of $14.28 per hour for machine operators and $10.88 for general labor includes payroll overhead of 36%."
+  },
+  "laborNonMachineRate": {
+   "value": 10.88,
+   "unit": "$/hr",
+   "page": 9,
+   "quote": "Labor rates of $14.28 per hour for machine operators and $10.88 for general labor includes payroll overhead of 36%."
+  },
+  "laborOverheadPct": {
+   "value": 36,
+   "unit": "%",
+   "page": 9,
+   "quote": "Labor rates of $14.28 per hour for machine operators and $10.88 for general labor includes payroll overhead of 36%."
+  },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
-  "yieldStatement": null,
-  "priceStatement": null
+  "fuelPriceDiesel": {
+   "value": 3.85,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.44 (excludes excise tax) and $3.85 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.85,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.44 (excludes excise tax) and $3.85 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 8,
+   "quote": "The assumed average pack-out yield over the remaining orchard life is 4,788 cartons per acre."
+  },
+  "priceStatement": {
+   "page": 8,
+   "quote": "An estimated price based on past returns of $3.95 per carton, FOB packinghouse, is used in this study."
+  }
  },
  "costsPerAcre": {
   "title": "COSTS PER ACRE TO PRODUCE MANDARINS (TANGO)",
@@ -675,11 +706,22 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 10,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 10,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
-  "machineLaborFactor": null
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 9,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 3 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -1592,7 +1634,11 @@
     "quote": "TOTAL CASH COSTS/ACRE 4,268 995 2,617 5,397 8,545"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 8011,
+   "page": 11,
+   "quote": "For this study the cost is $8,011 per acre, or $80,110 for the 10-acre orchard."
+  },
   "annualCharge": {
    "value": 464,
    "page": 16,
@@ -1605,8 +1651,8 @@
   },
   "plantingLife": {
    "value": 40,
-   "page": 3,
-   "quote": "The life of the orchard is assumed to be 40 years."
+   "page": 11,
+   "quote": "The establishment cost is spread over the remaining 37 years of the 40 years the orchard is in production."
   },
   "amortizedFromYear": null,
   "removalCost": {
@@ -1625,12 +1671,31 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 8011,
+   "page": 13,
+   "quote": "ACCUMULATED NET TOTAL CASH COSTS 4,983 6,689 8,011 8,233 5,431",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 464,
+   "page": 16,
+   "quote": "Establishment Cost 8,011 464 464"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -1642,22 +1707,19 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
    "monthly",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",
    "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
-   "laborOverheadPct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct",
-   "machineLaborFactor",
-   "establishmentAccumulated"
+   "propertyTaxRatePct"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"

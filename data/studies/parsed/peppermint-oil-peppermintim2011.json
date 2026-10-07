@@ -1136,26 +1136,554 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE PEPPERMINT"
  },
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH PEPPERMINT",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 11,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Fertilize: Soil &Tissue Analysis",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      2
+     ],
+     "page": 11,
+     "quote": "Fertilize: Soil &Tissue Analysis 0.00 0 0 0 0 2 2"
+    },
+    {
+     "label": "Land Prep: Burn Stubble Disc",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      5
+     ],
+     "page": 11,
+     "quote": "Land Prep: Burn Stubble Disc 0.02 4 1 0 0 0 5"
+    },
+    {
+     "label": "Land Prep: Disc 1X",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      8
+     ],
+     "page": 11,
+     "quote": "Land Prep: Disc 1X 0.10 2 4 2 0 0 8"
+    },
+    {
+     "label": "Land Prep: Rip/Subsoil 1X",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      30
+     ],
+     "page": 11,
+     "quote": "Land Prep: Rip/Subsoil 1X 0.30 7 16 7 0 0 30"
+    },
+    {
+     "label": "Land Prep: Rototill",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      22
+     ],
+     "page": 11,
+     "quote": "Land Prep: Rototill 0.27 7 11 5 0 0 22"
+    },
+    {
+     "label": "Fertilize: Preplant (16-20-0, 0-0-60, Sulfur)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      189
+     ],
+     "page": 11,
+     "quote": "Fertilize: Preplant (16-20-0, 0-0-60, Sulfur) 0.00 0 0 0 179 11 189"
+    },
+    {
+     "label": "Irrigate: Set up Sprinklers",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      37
+     ],
+     "page": 11,
+     "quote": "Irrigate: Set up Sprinklers 2.70 37 0 0 0 0 37"
+    },
+    {
+     "label": "Irrigate: Water & Labor",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      396
+     ],
+     "page": 11,
+     "quote": "Irrigate: Water & Labor 11.00 151 0 0 245 0 396"
+    },
+    {
+     "label": "Irrigate: Remove Sprinklers",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      19
+     ],
+     "page": 11,
+     "quote": "Irrigate: Remove Sprinklers 1.35 19 0 0 0 0 19"
+    },
+    {
+     "label": "Plant: Mint Rootstock",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      736
+     ],
+     "page": 11,
+     "quote": "Plant: Mint Rootstock 0.77 238 20 9 470 0 736"
+    },
+    {
+     "label": "Plant: Plant (Wheat)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      35
+     ],
+     "page": 11,
+     "quote": "Plant: Plant (Wheat) 0.20 5 6 3 21 0 35"
+    },
+    {
+     "label": "Insect: Insect Scouting (6 months)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      8
+     ],
+     "page": 11,
+     "quote": "Insect: Insect Scouting (6 months) 0.00 0 0 0 0 8 8"
+    },
+    {
+     "label": "Weed: Ground (Basagran, Stinger)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      139
+     ],
+     "page": 11,
+     "quote": "Weed: Ground (Basagran, Stinger) 0.00 0 0 0 121 18 139"
+    },
+    {
+     "label": "Weed: Ground (Select Max)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      67
+     ],
+     "page": 11,
+     "quote": "Weed: Ground (Select Max) 0.00 0 0 0 49 18 67"
+    },
+    {
+     "label": "Fertilize: Ground (21-0-0, 46-0-0)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      78
+     ],
+     "page": 11,
+     "quote": "Fertilize: Ground (21-0-0, 46-0-0) 0.00 0 0 0 69 9 78"
+    },
+    {
+     "label": "Insect: Mites (AgriMek) Air",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      103
+     ],
+     "page": 11,
+     "quote": "Insect: Mites (AgriMek) Air 0.00 0 0 0 94 9 103"
+    },
+    {
+     "label": "Fertilize: Chemigate (UN32,ThioSul) 3X",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      129
+     ],
+     "page": 11,
+     "quote": "Fertilize: Chemigate (UN32,ThioSul) 3X 0.00 0 0 0 129 0 129"
+    },
+    {
+     "label": "Weed: Hand",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      55
+     ],
+     "page": 11,
+     "quote": "Weed: Hand 4.00 55 0 0 0 0 55"
+    },
+    {
+     "label": "Insect: Mite (Acramite) Air",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      116
+     ],
+     "page": 11,
+     "quote": "Insect: Mite (Acramite) Air 0.00 0 0 0 107 9 116"
+    },
+    {
+     "label": "Insect: Mint Root Borer (Coragen) Air",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      56
+     ],
+     "page": 11,
+     "quote": "Insect: Mint Root Borer (Coragen) Air 0.00 0 0 0 47 9 56"
+    },
+    {
+     "label": "TOTAL Cultural COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      2229
+     ],
+     "page": 11,
+     "quote": "TOTAL Cultural COSTS 20.71 524 57 24 1,531 93 2,229"
+    },
+    {
+     "label": "Harvest",
+     "kind": "heading",
+     "section": "Harvest",
+     "values": [
+      null
+     ],
+     "page": 11,
+     "quote": "Harvest:"
+    },
+    {
+     "label": "Remove and Reset Sprinklers",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      18
+     ],
+     "page": 11,
+     "quote": "Remove and Reset Sprinklers 1.28 18 0 0 0 0 18"
+    },
+    {
+     "label": "Harvest & Distill",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      303
+     ],
+     "page": 11,
+     "quote": "Harvest & Distill 0.00 0 0 0 0 303 303"
+    },
+    {
+     "label": "Voluntary Assessments",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      7
+     ],
+     "page": 11,
+     "quote": "Voluntary Assessments 0.00 0 0 0 7 0 7"
+    },
+    {
+     "label": "Mint Slug Disposal",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      134
+     ],
+     "page": 11,
+     "quote": "Mint Slug Disposal 1.62 40 69 18 0 7 134"
+    },
+    {
+     "label": "TOTAL Harvest COSTS",
+     "kind": "subtotal",
+     "section": "Harvest",
+     "values": [
+      462
+     ],
+     "page": 11,
+     "quote": "TOTAL Harvest COSTS 2.90 57 69 18 7 310 462"
+    },
+    {
+     "label": "Interest on Operating Capital @ 5.75%",
+     "kind": "interest",
+     "section": "Harvest",
+     "values": [
+      85
+     ],
+     "page": 11,
+     "quote": "Interest on Operating Capital @ 5.75% 85"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvest",
+     "values": [
+      2776
+     ],
+     "page": 11,
+     "quote": "TOTAL OPERATING COSTS/ACRE 23.61 582 126 43 1,538 402 2,776"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 11,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Field Supervisor",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      56
+     ],
+     "page": 11,
+     "quote": "Field Supervisor 56"
+    },
+    {
+     "label": "Land Rent 140ac",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      215
+     ],
+     "page": 11,
+     "quote": "Land Rent 140ac 215"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      12
+     ],
+     "page": 11,
+     "quote": "Office Expense 12"
+    },
+    {
+     "label": "Pipe Rent 49ac Solid Set",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      44
+     ],
+     "page": 11,
+     "quote": "Pipe Rent 49ac Solid Set 44"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 11,
+     "quote": "Liability Insurance 1"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      13
+     ],
+     "page": 11,
+     "quote": "Property Taxes 13"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      10
+     ],
+     "page": 11,
+     "quote": "Property Insurance 10"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      5
+     ],
+     "page": 11,
+     "quote": "Investment Repairs 5"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      357
+     ],
+     "page": 11,
+     "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 357"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      3132
+     ],
+     "page": 11,
+     "quote": "TOTAL CASH COSTS/ACRE 3,132"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 11,
+     "quote": "NON-CASH OVERHEAD: Per producing Annual Cost"
+    },
+    {
+     "label": "Buildings",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      4
+     ],
+     "page": 11,
+     "quote": "Buildings 57 4 4"
+    },
+    {
+     "label": "Fuel Tanks & Pumps",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 11,
+     "quote": "Fuel Tanks & Pumps 17 1 1"
+    },
+    {
+     "label": "Fuel Wagon",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      0
+     ],
+     "page": 11,
+     "quote": "Fuel Wagon 2 0 0"
+    },
+    {
+     "label": "Land (60 ac)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      51
+     ],
+     "page": 11,
+     "quote": "Land (60 ac) 1,077 51 51"
+    },
+    {
+     "label": "Pipe Trailers(5)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 11,
+     "quote": "Pipe Trailers(5) 14 2 2"
+    },
+    {
+     "label": "Portable Pumps",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 11,
+     "quote": "Portable Pumps (2) 15 1 1"
+    },
+    {
+     "label": "Shop/Field Tools",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 11,
+     "quote": "Shop/Field Tools 11 1 1"
+    },
+    {
+     "label": "Wheel Lines (146ac)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      17
+     ],
+     "page": 11,
+     "quote": "Wheel Lines (146ac) 131 17 17"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      150
+     ],
+     "page": 11,
+     "quote": "Equipment 1,433 150 150"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      227
+     ],
+     "page": 11,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 2,758 227 227"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      3360
+     ],
+     "page": 11,
+     "quote": "TOTAL COSTS/ACRE 3,360"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,
-    "label": "1",
+    "label": "Total Cost",
     "totalCost": 3132,
     "returns": null,
     "netCost": 3132,
     "accumulated": null,
     "page": 11,
-    "quote": "TOTAL CASH COSTS/ACRE 3,132"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 3132,
-    "returns": null,
-    "netCost": 3132,
-    "accumulated": null,
-    "page": 13,
     "quote": "TOTAL CASH COSTS/ACRE 3,132"
    }
   ],
@@ -1190,6 +1718,18 @@
    "page": 9,
    "quote": "Establishment cost is amortized over the remaining 4 years that the mint stand is assumed to be in production."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 3132,
+   "page": 11,
+   "quote": "TOTAL CASH COSTS/ACRE 3,132",
+   "source": "table"
+  },
+  "annualCharge": null,
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

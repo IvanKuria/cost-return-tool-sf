@@ -376,6 +376,13 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE PASTURE 40 AC"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Establishment is costed in a separate UC study: \"If your farm does not already have an established pasture, refer to (“Sample Costs to Establish or Reestablish and Produce Pasture in the Sacramento Valley - 2015”) for the cost...\""
+ },
  "parse": {
   "fieldsFound": [
    "year",

@@ -929,6 +929,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 6956,
+   "page": 9,
+   "quote": "Vineyard Establishment 6,956 589 589",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 589,
+   "page": 9,
+   "quote": "Vineyard Establishment 6,956 589 589"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",

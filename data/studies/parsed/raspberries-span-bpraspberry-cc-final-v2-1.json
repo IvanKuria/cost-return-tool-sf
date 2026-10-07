@@ -112,14 +112,452 @@
   "page": 21,
   "quote": "GASTOS DE EFECTIVO MENSUALES POR ACRE PARA PRODUCIR Y COSECHAR FRAMBUESAS: PRODUCCIÓN AÑO"
  },
- "establishment": null,
+ "establishment": {
+  "table": {
+   "title": "COSTOS POR ACRE PARA ESTABLECER, PRODUCIR Y COSECHAR FRAMBUESAS - RESUMEN",
+   "years": [
+    "Establecer",
+    "1",
+    "2",
+    "3"
+   ],
+   "rows": [
+    {
+     "label": "Bandejas de 4.5 libras: 4.750 (F)* 4.750 (S) 4.750 (S)",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Bandejas de 4.5 libras: 4.750 (F)* 4.750 (S) 4.750 (S)"
+    },
+    {
+     "label": "2.850 (F)",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "2.850 (F)"
+    },
+    {
+     "label": "Costos de preparación de tierra / plantar",
+     "kind": "heading",
+     "section": "Costos de preparación de tierra / plantar",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Costos de preparación de tierra / plantar:"
+    },
+    {
+     "label": "Costos de preparación de tierra / plantar:",
+     "kind": "operation",
+     "section": "Costos de preparación de tierra / plantar",
+     "values": [
+      8437,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Costos de preparación de tierra / plantar: 8,437"
+    },
+    {
+     "label": "COSTOS TOTALES DE PREPARACIÓN / PLANTACIÓN DE LA",
+     "kind": "total",
+     "section": "Costos de preparación de tierra / plantar",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "COSTOS TOTALES DE PREPARACIÓN / PLANTACIÓN DE LA"
+    },
+    {
+     "label": "TIERRA",
+     "kind": "operation",
+     "section": "Costos de preparación de tierra / plantar",
+     "values": [
+      8437,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "TIERRA 8,437"
+    },
+    {
+     "label": "Costos agronómicos",
+     "kind": "heading",
+     "section": "Costos agronómicos",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Costos agronómicos:"
+    },
+    {
+     "label": "Costos agronómicos",
+     "kind": "operation",
+     "section": "Costos agronómicos",
+     "values": [
+      null,
+      7900,
+      7779,
+      6506
+     ],
+     "page": 14,
+     "quote": "Costos agronómicos 7,900 7,779 6,506"
+    },
+    {
+     "label": "COSTOS AGRONÓMICOS TOTALES",
+     "kind": "operation",
+     "section": "Costos agronómicos",
+     "values": [
+      null,
+      7900,
+      7779,
+      6506
+     ],
+     "page": 14,
+     "quote": "COSTOS AGRONÓMICOS TOTALES 7,900 7,779 6,506"
+    },
+    {
+     "label": "Costos de cosecha",
+     "kind": "heading",
+     "section": "Costos de cosecha",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Costos de cosecha:"
+    },
+    {
+     "label": "Cosecha / carga / acarreo / enfrío / venta",
+     "kind": "operation",
+     "section": "Costos de cosecha",
+     "values": [
+      null,
+      51361,
+      82557,
+      51362
+     ],
+     "page": 14,
+     "quote": "Cosecha / carga / acarreo / enfrío / venta 51,361 82,557 51,362"
+    },
+    {
+     "label": "COSTOS TOTALES DE LA COSECHA",
+     "kind": "total",
+     "section": "Costos de cosecha",
+     "values": [
+      null,
+      51361,
+      82557,
+      51362
+     ],
+     "page": 14,
+     "quote": "COSTOS TOTALES DE LA COSECHA 51,361 82,557 51,362"
+    },
+    {
+     "label": "Interés en capital de operaciones @ 4.50%",
+     "kind": "operation",
+     "section": "Costos de cosecha",
+     "values": [
+      86,
+      534,
+      1549,
+      419
+     ],
+     "page": 14,
+     "quote": "Interés en capital de operaciones @ 4.50% 86 534 1,549 419"
+    },
+    {
+     "label": "COSTOS/ACRE DE OPERACIÓN TOTAL",
+     "kind": "operation",
+     "section": "Costos de cosecha",
+     "values": [
+      8523,
+      59795,
+      91885,
+      58287
+     ],
+     "page": 14,
+     "quote": "COSTOS/ACRE DE OPERACIÓN TOTAL 8,523 59,795 91,885 58,287"
+    },
+    {
+     "label": "Costos generales de efectivo",
+     "kind": "operation",
+     "section": "Costos de cosecha",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Costos generales de efectivo"
+    },
+    {
+     "label": "Alquiler de tierra, seguro, impuestos",
+     "kind": "operation",
+     "section": "Costos de cosecha",
+     "values": [
+      2697,
+      5978,
+      5983,
+      3415
+     ],
+     "page": 14,
+     "quote": "Alquiler de tierra, seguro, impuestos 2,697 5,978 5,983 3,415"
+    },
+    {
+     "label": "COSTOS TOTALES GENERALES EN EFECTIVO",
+     "kind": "total",
+     "section": "Costos de cosecha",
+     "values": [
+      2697,
+      5978,
+      5983,
+      3415
+     ],
+     "page": 14,
+     "quote": "COSTOS TOTALES GENERALES EN EFECTIVO 2,697 5,978 5,983 3,415"
+    },
+    {
+     "label": "TOTAL DE COSTOS DE EFECTIVO / ACRE",
+     "kind": "total",
+     "section": "Costos de cosecha",
+     "values": [
+      11219,
+      65773,
+      97869,
+      61702
+     ],
+     "page": 14,
+     "quote": "TOTAL DE COSTOS DE EFECTIVO / ACRE 11,219 65,773 97,869 61,702"
+    },
+    {
+     "label": "INGRESO / ACRE DE LA PRODUCCIÓN",
+     "kind": "income",
+     "section": "Costos de cosecha",
+     "values": [
+      null,
+      71250,
+      114000,
+      71250
+     ],
+     "page": 14,
+     "quote": "INGRESO / ACRE DE LA PRODUCCIÓN 71,250 114,000 71,250"
+    },
+    {
+     "label": "COSTOS NETOS DE EFECTIVO / ACRE PARA EL AÑO",
+     "kind": "net",
+     "section": "Costos de cosecha",
+     "values": [
+      11219,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "COSTOS NETOS DE EFECTIVO / ACRE PARA EL AÑO 11,219"
+    },
+    {
+     "label": "RETORNOS NETOS / ACRE POR ENCIMA DE LOS COSTOS DE",
+     "kind": "operation",
+     "section": "Costos de cosecha",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "RETORNOS NETOS / ACRE POR ENCIMA DE LOS COSTOS DE"
+    },
+    {
+     "label": "EFECTIVO",
+     "kind": "operation",
+     "section": "Costos de cosecha",
+     "values": [
+      null,
+      5477,
+      16131,
+      9548
+     ],
+     "page": 14,
+     "quote": "EFECTIVO 5,477 16,131 9,548"
+    },
+    {
+     "label": "COSTOS DE EFECTIVO NETOS ACUMULADOS / ACRE",
+     "kind": "accumulated",
+     "section": "Costos de cosecha",
+     "values": [
+      11219,
+      5742,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "COSTOS DE EFECTIVO NETOS ACUMULADOS / ACRE 11,219 5,742"
+    },
+    {
+     "label": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "kind": "heading",
+     "section": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Gastos generales en efectivo (costo de recuperación de capital):"
+    },
+    {
+     "label": "Inversiones/equipo",
+     "kind": "operation",
+     "section": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "values": [
+      413,
+      5190,
+      5308,
+      5185
+     ],
+     "page": 14,
+     "quote": "Inversiones/equipo 413 5,190 5,308 5,185"
+    },
+    {
+     "label": "COSTO TOTAL GENERAL SIN EFECTIVO / ACRE",
+     "kind": "total",
+     "section": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "values": [
+      413,
+      5190,
+      5308,
+      5185
+     ],
+     "page": 14,
+     "quote": "COSTO TOTAL GENERAL SIN EFECTIVO / ACRE 413 5,190 5,308 5,185"
+    },
+    {
+     "label": "COSTO/ACRE TOTAL POR EL AÑO",
+     "kind": "total",
+     "section": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "values": [
+      11633,
+      70963,
+      103177,
+      66887
+     ],
+     "page": 14,
+     "quote": "COSTO/ACRE TOTAL POR EL AÑO 11,633 70,963 103,177 66,887"
+    },
+    {
+     "label": "INGRESO / ACRE DE LA PRODUCCIÓN",
+     "kind": "income",
+     "section": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "values": [
+      null,
+      71250,
+      114000,
+      71250
+     ],
+     "page": 14,
+     "quote": "INGRESO / ACRE DE LA PRODUCCIÓN 71,250 114,000 71,250"
+    },
+    {
+     "label": "COSTO TOTAL NETO/ACRE POR EL AÑO",
+     "kind": "net",
+     "section": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "values": [
+      11633,
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "COSTO TOTAL NETO/ACRE POR EL AÑO 11,633"
+    },
+    {
+     "label": "RETORNOS NETOS / ACRE POR ENCIMA DEL COSTO TOTAL",
+     "kind": "operation",
+     "section": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "values": [
+      null,
+      287,
+      10823,
+      4363
+     ],
+     "page": 14,
+     "quote": "RETORNOS NETOS / ACRE POR ENCIMA DEL COSTO TOTAL 287 10,823 4,363"
+    },
+    {
+     "label": "TOTAL ACUMULADO NETO / ACRE",
+     "kind": "accumulated",
+     "section": "Gastos generales en efectivo (costo de recuperación de capital)",
+     "values": [
+      -11633,
+      -11346,
+      -523,
+      3840
+     ],
+     "page": 14,
+     "quote": "TOTAL ACUMULADO NETO / ACRE -11,633 -11,346 -523 3,840"
+    }
+   ],
+   "yieldRow": null
+  },
+  "years": [],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": null
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 11219,
+   "page": 14,
+   "quote": "COSTOS DE EFECTIVO NETOS ACUMULADOS / ACRE 11,219 5,742",
+   "source": "table"
+  },
+  "annualCharge": null,
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -143,7 +581,6 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],

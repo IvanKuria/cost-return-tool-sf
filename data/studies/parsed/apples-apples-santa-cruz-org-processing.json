@@ -1117,6 +1117,13 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE ORGANIC PROCESSING APPLES"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "The study does not cost establishment: \"There are no establishment costs included in this study.\""
+ },
  "parse": {
   "fieldsFound": [
    "year",

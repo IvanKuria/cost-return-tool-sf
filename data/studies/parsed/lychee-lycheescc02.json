@@ -72,13 +72,49 @@
   "machineLaborFactor": null
  },
  "monthly": null,
- "establishment": null,
+ "establishment": {
+  "table": null,
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 15037,
+   "page": 7,
+   "quote": "Our projected cost for six years of establishment period of a lychee orchard in the coastal region of California is $15,037/acre (Table 1)."
+  },
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": {
+   "page": 7,
+   "quote": "This value is amortized over the number of years of expected useful life of the orchard to determine an annual charge for depreciation of trees and the opportunity cost of the investment."
+  }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 15037,
+   "page": 7,
+   "quote": "Our projected cost for six years of establishment period of a lychee orchard in the coastal region of California is $15,037/acre (Table 1).",
+   "source": "prose"
+  },
+  "annualCharge": {
+   "value": 1152,
+   "page": 12,
+   "quote": "Amortized establishment (30 years) ac 1,152"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text"
+ },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
-   "laborOverheadPct"
+   "laborOverheadPct",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -103,8 +139,6 @@
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
-   "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": [

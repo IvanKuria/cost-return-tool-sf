@@ -54,15 +54,43 @@
   ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
-  "laborMachineRate": null,
-  "laborNonMachineRate": null,
-  "laborOverheadPct": null,
+  "laborMachineRate": {
+   "value": 16.92,
+   "unit": "$/hr",
+   "page": 9,
+   "quote": "Labor rates of $16.92 per hour for machine operators and $13.75 for general labor includes payroll overhead of 41%."
+  },
+  "laborNonMachineRate": {
+   "value": 13.75,
+   "unit": "$/hr",
+   "page": 9,
+   "quote": "Labor rates of $16.92 per hour for machine operators and $13.75 for general labor includes payroll overhead of 41%."
+  },
+  "laborOverheadPct": {
+   "value": 41,
+   "unit": "%",
+   "page": 9,
+   "quote": "Labor rates of $16.92 per hour for machine operators and $13.75 for general labor includes payroll overhead of 41%."
+  },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 3.79,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.88 (excludes excise tax) and $3.79 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.79,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.88 (excludes excise tax) and $3.79 per gallon, respectively."
+  },
   "yieldStatement": null,
-  "priceStatement": null
+  "priceStatement": {
+   "page": 8,
+   "quote": "An estimated price based on industry feedback of $20.00 per carton fresh market, fob packinghouse, and $135 per ton, or $2.70 per carton juice, is used in this study."
+  }
  },
  "costsPerAcre": {
   "title": "COSTS PER ACRE TO PRODUCE LEMONS",
@@ -675,11 +703,22 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 10,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 11,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
-  "machineLaborFactor": null
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 9,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 3 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": null,
  "establishment": {
@@ -1560,20 +1599,6 @@
      ],
      "page": 15,
      "quote": "ACCUMULATED NET TOTAL COST 5,406 8,318 10,086 10,942 10,380"
-    },
-    {
-     "label": "* Assumes a year with normal water costs. In drought years, water costs can increase to between $1,000 and $1,800 per acre-foot.",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead Costs",
-     "values": [
-      null,
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 15,
-     "quote": "* Assumes a year with normal water costs. In drought years, water costs can increase to between $1,000 and $1,800 per acre-foot."
     }
    ],
    "yieldRow": {
@@ -1640,7 +1665,11 @@
     "quote": "TOTAL ACCUMULATED NET CASH COSTS 4,194 5,895 6,453 6,099 4,296"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 6453,
+   "page": 11,
+   "quote": "For this study the cost is $6,453 per acre or $64,530 for the 10-acre orchard."
+  },
   "annualCharge": {
    "value": 374,
    "page": 18,
@@ -1653,8 +1682,8 @@
   },
   "plantingLife": {
    "value": 40,
-   "page": 3,
-   "quote": "The life of the orchard is assumed to be 40 years."
+   "page": 11,
+   "quote": "The establishment cost is spread over the remaining 37 years of the 40 years the orchard is in production."
   },
   "amortizedFromYear": null,
   "removalCost": null,
@@ -1668,10 +1697,29 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 6453,
+   "page": 14,
+   "quote": "TOTAL ACCUMULATED NET CASH COSTS 4,194 5,895 6,453 6,099 4,296",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 374,
+   "page": 18,
+   "quote": "Orchard Establishment 6,453 374 374"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -1683,7 +1731,10 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
@@ -1691,16 +1742,10 @@
    "yieldPerAcre",
    "pricePerUnit",
    "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
-   "laborOverheadPct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "machineLaborFactor",
-   "monthly",
-   "establishmentAccumulated"
+   "monthly"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",

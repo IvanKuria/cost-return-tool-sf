@@ -1421,6 +1421,13 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE SUNFLOWERS"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

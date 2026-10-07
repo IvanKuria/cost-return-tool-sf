@@ -1880,6 +1880,22 @@
    "quote": "Amortized Establishment Cost: The cumulative establishment costs (accumulated costs of establishment less the gross income for years 1-6) is the establishment cost."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 28409,
+   "page": 15,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1955,
+   "page": 18,
+   "quote": "Establishment Costs 28,409 1,955 1,955"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1915,7 +1931,8 @@
    "machineLaborFactor"
   ],
   "warnings": [
-   "establishment per producing acre 28409 differs from prose 17597 (28409 is the establishment table's ACCUMULATED NET CASH COSTS/ACRE in column 3rd)"
+   "establishment per producing acre 28409 differs from prose 17597 (28409 is the establishment table's ACCUMULATED NET CASH COSTS/ACRE in column 3rd)",
+   "establishment total: table 28409 (ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880) differs from prose 17597 (Summary of Costs and Returns: The total establishment cost estimate (cumulati...); using the table figure"
   ]
  }
 }

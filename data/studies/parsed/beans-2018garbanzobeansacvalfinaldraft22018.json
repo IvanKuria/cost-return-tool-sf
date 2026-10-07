@@ -1027,6 +1027,13 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE GARBANZO BEANS (Chickpeas)"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

@@ -220,6 +220,13 @@
   "quote": "MONTHLY COSTS PER ACRE TO ESTABLISH AND PRODUCE COVER CROPS"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

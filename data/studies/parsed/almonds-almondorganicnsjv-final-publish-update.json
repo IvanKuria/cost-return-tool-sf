@@ -1036,7 +1036,53 @@
   "page": 17,
   "quote": "MONTHLY PER ACRE CASH COSTS TO PRODUCE ORGANIC ALMONDS"
  },
- "establishment": null,
+ "establishment": {
+  "table": null,
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 17182,
+   "page": 9,
+   "quote": "Costs to establish the orchard are included in non-cash overhead expenses and capital recovery costs for the production years and is estimated at $17,182 per planted acre for this study."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 22,
+   "page": 19,
+   "quote": "Almond Orchard Establishment 687,280 22 0 68,713 244 3,436 3,436 75,829 (years of life of the establishment row in the investment table)"
+  },
+  "plantingLife": {
+   "value": 25,
+   "page": 3,
+   "quote": "The life of the orchard at the time of planting is estimated to be 25 years."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 687280,
+   "yearsLife": 22,
+   "salvageValue": 0,
+   "capitalRecovery": 68713,
+   "page": 19,
+   "line": "Almond Orchard Establishment 687,280 22 0 68,713 244 3,436 3,436 75,829"
+  },
+  "method": null
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 17182,
+   "page": 13,
+   "quote": "Almond Orchard Establishment 17,182 1,718 1,718",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 1718,
+   "page": 13,
+   "quote": "Almond Orchard Establishment 17,182 1,718 1,718"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1061,14 +1107,14 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
    "insuranceRatePct",
-   "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": [

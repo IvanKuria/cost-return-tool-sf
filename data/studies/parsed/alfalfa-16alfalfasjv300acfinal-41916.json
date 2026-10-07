@@ -589,11 +589,359 @@
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ALFALFA (300 Acres)"
  },
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COSTS PER ACRE to ESTABLISH ALFALFA (300 Acres)",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 11,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Soil Analysis (P&K)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      1
+     ],
+     "page": 11,
+     "quote": "Soil Analysis (P&K) 0.00 0 0 0 0 1 1"
+    },
+    {
+     "label": "Disc (Stubble) Field",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      16
+     ],
+     "page": 11,
+     "quote": "Disc (Stubble) Field 0.22 5 7 4 0 0 16"
+    },
+    {
+     "label": "Roll Field (2x)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      22
+     ],
+     "page": 11,
+     "quote": "Roll Field (2x) 0.31 8 10 4 0 0 22"
+    },
+    {
+     "label": "Chisel Field",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      8
+     ],
+     "page": 11,
+     "quote": "Chisel Field 0.10 3 3 2 0 0 8"
+    },
+    {
+     "label": "Laser Level Field (Custom)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      175
+     ],
+     "page": 11,
+     "quote": "Laser Level Field (Custom) 0.00 0 0 0 0 175 175"
+    },
+    {
+     "label": "Disc Boarder Ridges (60ft. intervals)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      4
+     ],
+     "page": 11,
+     "quote": "Disc Boarder Ridges (60ft. intervals) 0.10 2 1 1 0 0 4"
+    },
+    {
+     "label": "Fertilize - 11-52-0 (P2O5)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      76
+     ],
+     "page": 11,
+     "quote": "Fertilize - 11-52-0 (P2O5) 0.05 1 1 0 74 0 76"
+    },
+    {
+     "label": "Finish Disc",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      7
+     ],
+     "page": 11,
+     "quote": "Finish Disc 0.09 2 3 2 0 0 7"
+    },
+    {
+     "label": "Finish Roll",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      5
+     ],
+     "page": 11,
+     "quote": "Finish Roll 0.08 2 2 1 0 0 5"
+    },
+    {
+     "label": "Plant - Roundup Ready Seed",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      236
+     ],
+     "page": 11,
+     "quote": "Plant - Roundup Ready Seed 0.33 8 4 3 221 0 236"
+    },
+    {
+     "label": "Irrigate (2x) – Sprinkler Irrigation",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      104
+     ],
+     "page": 11,
+     "quote": "Irrigate (2x) – Sprinkler Irrigation 0.00 18 0 0 87 0 104"
+    },
+    {
+     "label": "Weed Control – Roundup Power Max",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      9
+     ],
+     "page": 11,
+     "quote": "Weed Control – Roundup Power Max 0.07 2 0 0 7 0 9"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      664
+     ],
+     "page": 11,
+     "quote": "TOTAL CULTURAL COSTS 1.34 50 30 18 389 176 664"
+    },
+    {
+     "label": "Interest on Operating Capital at 4.25%",
+     "kind": "interest",
+     "section": "Cultural",
+     "values": [
+      3
+     ],
+     "page": 11,
+     "quote": "Interest on Operating Capital at 4.25% 3"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Cultural",
+     "values": [
+      667
+     ],
+     "page": 11,
+     "quote": "TOTAL OPERATING COSTS/ACRE 1.34 50 30 18 389 176 667"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 11,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 11,
+     "quote": "Liability Insurance 1"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      50
+     ],
+     "page": 11,
+     "quote": "Office Expense 50"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      152
+     ],
+     "page": 11,
+     "quote": "Property Taxes 152"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      13
+     ],
+     "page": 11,
+     "quote": "Property Insurance 13"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      5
+     ],
+     "page": 11,
+     "quote": "Investment Repairs 5"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      221
+     ],
+     "page": 11,
+     "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 221"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      888
+     ],
+     "page": 11,
+     "quote": "TOTAL CASH COSTS/ACRE 888"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 11,
+     "quote": "NON-CASH OVERHEAD: Per Producing Annual Cost"
+    },
+    {
+     "label": "Land (300 acres of alfalfa)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      488
+     ],
+     "page": 11,
+     "quote": "Land (300 acres of alfalfa) 15,000 488 488"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 11,
+     "quote": "Shop Tools 17 1 1"
+    },
+    {
+     "label": "Hay Barn (500 Tons)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 11,
+     "quote": "Hay Barn (500 Tons) 50 3 3"
+    },
+    {
+     "label": "Fuel Tanks & Pumps (10,000gal)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 11,
+     "quote": "Fuel Tanks & Pumps (10,000gal) 25 3 3"
+    },
+    {
+     "label": "Shop Building (2,400sf)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 11,
+     "quote": "Shop Building (2,400sf) 50 3 3"
+    },
+    {
+     "label": "Sprinkler Pipe (300 acres)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      7
+     ],
+     "page": 11,
+     "quote": "Sprinkler Pipe (300 acres) 113 7 7"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      21
+     ],
+     "page": 11,
+     "quote": "Equipment 200 21 21"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      527
+     ],
+     "page": 11,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 15,454 527 527"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1415
+     ],
+     "page": 11,
+     "quote": "TOTAL COSTS/ACRE 1,415"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,
-    "label": "1",
+    "label": "Total Cost",
     "totalCost": 888,
     "returns": null,
     "netCost": 888,
@@ -632,6 +980,22 @@
    "page": 8,
    "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 888,
+   "page": 11,
+   "quote": "TOTAL CASH COSTS/ACRE 888",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 315,
+   "page": 13,
+   "quote": "Establishment Costs for 300 acres of alfalfa 888 315 315"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

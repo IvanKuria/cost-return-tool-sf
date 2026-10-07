@@ -55,13 +55,38 @@
   ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
-  "laborMachineRate": null,
-  "laborNonMachineRate": null,
-  "laborOverheadPct": null,
+  "laborMachineRate": {
+   "value": 14.49,
+   "unit": "$/hr",
+   "page": 9,
+   "quote": "Labor rates of $14.49 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
+  "laborNonMachineRate": {
+   "value": 11.04,
+   "unit": "$/hr",
+   "page": 9,
+   "quote": "Labor rates of $14.49 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
+  "laborOverheadPct": {
+   "value": 38,
+   "unit": "%",
+   "page": 9,
+   "quote": "Labor rates of $14.49 per hour for machine operators and $11.04 for general labor includes payroll overhead of 38%."
+  },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 2.67,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.04 and $2.67 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.67,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.04 and $2.67 per gallon, respectively."
+  },
   "yieldStatement": null,
   "priceStatement": null
  },
@@ -675,11 +700,22 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 10,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 10,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
-  "machineLaborFactor": null
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 9,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 3 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -1675,7 +1711,11 @@
     "quote": "TOTAL ACCUMULATED NET CASH COSTS 3,483 4,719 3,951 1,932"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 3951,
+   "page": 10,
+   "quote": "For this study the cost is $3,951 per acre or $39,513 for the 10-acre orchard."
+  },
   "annualCharge": {
    "value": 229,
    "page": 17,
@@ -1699,12 +1739,31 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 3951,
+   "page": 13,
+   "quote": "TOTAL ACCUMULATED NET CASH COSTS 3,483 4,719 3,951 1,932",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 229,
+   "page": 17,
+   "quote": "Orchard Establishment 3,951 229 229"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -1716,22 +1775,19 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
    "monthly",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",
    "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
-   "laborOverheadPct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct",
-   "machineLaborFactor",
-   "establishmentAccumulated"
+   "propertyTaxRatePct"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"

@@ -2285,6 +2285,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 5059,
+   "page": 13,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,209 4,171 5,059 5,838 5,136",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 376,
+   "page": 14,
+   "quote": "Orchard Establishment Costs 5,059 376 376"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -2320,7 +2336,8 @@
    "propertyTaxRatePct"
   ],
   "warnings": [
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "establishment total: table 5059 (ACCUMULATED NET CASH COSTS/ACRE 3,209 4,171 5,059 5,838 5,136) differs from prose 5049 (For this study the cost is $5,049 per acre or $201,953 for the 40-acre orchard.); using the table figure"
   ]
  }
 }

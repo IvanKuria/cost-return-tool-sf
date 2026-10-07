@@ -196,7 +196,294 @@
   }
  },
  "monthly": null,
- "establishment": null,
+ "establishment": {
+  "table": {
+   "title": "COSTS PER 1,000LF TO ESTABLISH BLUE ELDERBERRIES",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Plant",
+     "kind": "heading",
+     "section": "Pre-Plant",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Pre-Plant:"
+    },
+    {
+     "label": "Rip Planting Site (3' Depth)",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      58
+     ],
+     "page": 10,
+     "quote": "Rip Planting Site (3' Depth) 0.00 0 0 0 0 58 58"
+    },
+    {
+     "label": "Rototill Planting Area 3x",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      188
+     ],
+     "page": 10,
+     "quote": "Rototill Planting Area 3x 5.00 132 23 34 0 0 188"
+    },
+    {
+     "label": "Layout Mulch Materials",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      214
+     ],
+     "page": 10,
+     "quote": "Layout Mulch Materials 0.00 0 0 0 214 0 214"
+    },
+    {
+     "label": "Layout Mulch: Tractor/Labor",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      507
+     ],
+     "page": 10,
+     "quote": "Layout Mulch: Tractor/Labor 15.00 395 68 43 0 0 507"
+    },
+    {
+     "label": "Layout Mulch Manual Labor",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      266
+     ],
+     "page": 10,
+     "quote": "Layout Mulch Manual Labor 0.00 266 0 0 0 0 266"
+    },
+    {
+     "label": "TOTAL PRE-PLANT COSTS",
+     "kind": "subtotal",
+     "section": "Pre-Plant",
+     "values": [
+      1232
+     ],
+     "page": 10,
+     "quote": "TOTAL PRE-PLANT COSTS 20.00 793 91 76 214 58 1,232"
+    },
+    {
+     "label": "Planting",
+     "kind": "heading",
+     "section": "Planting",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Planting:"
+    },
+    {
+     "label": "Plant Trees/Flag/Irrigate",
+     "kind": "operation",
+     "section": "Planting",
+     "values": [
+      579
+     ],
+     "page": 10,
+     "quote": "Plant Trees/Flag/Irrigate (96) 0.00 213 0 0 367 0 579"
+    },
+    {
+     "label": "Layout Irrigation Lines",
+     "kind": "operation",
+     "section": "Planting",
+     "values": [
+      116
+     ],
+     "page": 10,
+     "quote": "Layout Irrigation Lines 0.00 35 0 0 81 0 116"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Planting",
+     "values": [
+      696
+     ],
+     "page": 10,
+     "quote": "TOTAL PLANTING COSTS 0.00 248 0 0 448 0 696"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Irrigation 19x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      166
+     ],
+     "page": 10,
+     "quote": "Irrigation 19x 0.00 106 0 0 59 0 166"
+    },
+    {
+     "label": "Hand Weed 2x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      142
+     ],
+     "page": 10,
+     "quote": "Hand Weed 2x 0.00 142 0 0 0 0 142"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      307
+     ],
+     "page": 10,
+     "quote": "TOTAL CULTURAL COSTS 0.00 248 0 0 59 0 307"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/1,000LF",
+     "kind": "total",
+     "section": "Cultural",
+     "values": [
+      2235
+     ],
+     "page": 10,
+     "quote": "TOTAL OPERATING COSTS/1,000LF 20.00 1,289 91 76 721 58 2,235"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      9
+     ],
+     "page": 10,
+     "quote": "Property Taxes 9"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      8
+     ],
+     "page": 10,
+     "quote": "Property Insurance 8"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/1,000LF",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      17
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH OVERHEAD COSTS/1,000LF 17"
+    },
+    {
+     "label": "TOTAL CASH COSTS/1,000LF",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      2253
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH COSTS/1,000LF 2,253"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "NON-CASH OVERHEAD: Per Producing Annual Cost"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      144
+     ],
+     "page": 10,
+     "quote": "Equipment 1,639 144 144"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      144
+     ],
+     "page": 10,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 1,639 144 144"
+    },
+    {
+     "label": "TOTAL COSTS/1,000LF",
+     "kind": "subtotal",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      2397
+     ],
+     "page": 10,
+     "quote": "TOTAL COSTS/1,000LF 2,397"
+    }
+   ],
+   "yieldRow": null
+  },
+  "years": [
+   {
+    "year": 1,
+    "label": "Total Cost",
+    "totalCost": 2253,
+    "returns": null,
+    "netCost": 2253,
+    "accumulated": null,
+    "page": 10,
+    "quote": "TOTAL CASH COSTS/1,000LF 2,253"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": null
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": null,
+  "annualCharge": null,
+  "reason": "The establishment table is per 1,000 linear feet of hedgerow, not per acre"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -210,7 +497,8 @@
    "hourlyEquipment",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
-   "machineLaborFactor"
+   "machineLaborFactor",
+   "establishment"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -227,7 +515,6 @@
    "businessOverhead",
    "insuranceRatePct",
    "monthly",
-   "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],

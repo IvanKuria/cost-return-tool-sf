@@ -1444,30 +1444,6 @@
      ],
      "page": 12,
      "quote": "TOTAL ACCUMULATED NET/ACRE 14,964 -9,539 3,055"
-    },
-    {
-     "label": "* Production Year 1 represents first harvest year; yield is 60% of a mature crop.",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead (Capital Recovery Cost)",
-     "values": [
-      null,
-      null,
-      null
-     ],
-     "page": 12,
-     "quote": "* Production Year 1 represents first harvest year; yield is 60% of a mature crop."
-    },
-    {
-     "label": "Production Year 2 represents the second through fifth harvest years; yield is for a mature crop.",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead (Capital Recovery Cost)",
-     "values": [
-      null,
-      null,
-      null
-     ],
-     "page": 12,
-     "quote": "Production Year 2 represents the second through fifth harvest years; yield is for a mature crop."
     }
    ],
    "yieldRow": {
@@ -1538,6 +1514,22 @@
    "page": 10,
    "quote": "Establishment costs are amortized over the remaining four years the blackberries are assumed to be in production."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 7753,
+   "page": 12,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 14,176 7,753",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 2174,
+   "page": 18,
+   "quote": "Establishment Blackberries 7,753 2,174 2,174"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

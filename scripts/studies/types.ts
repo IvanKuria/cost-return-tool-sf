@@ -128,6 +128,17 @@ export interface Establishment {
 
 export interface ParseReport { fieldsFound: string[]; fieldsMissing: string[]; warnings: string[] }
 
+/** Per study answer to "what does it cost to establish this crop, per acre", in the order the repricer reads it.
+ *  table: establishment.table has years and rows; total: no usable table but `total` is cited; none: neither. */
+export type EstablishmentSource = 'table' | 'investment' | 'production' | 'prose';
+export interface EstablishmentSummary {
+  perennial: boolean;            // the crop is established once and produces for several years (orchards, vineyards, berries, asparagus, alfalfa/hay/pasture stands, artichokes, Christmas trees ...)
+  status: 'table' | 'total' | 'none';  // table: establishment.table has years and rows; total: no usable table but `total` is cited; none: neither
+  total: { value: number; page: number; quote: string; source: EstablishmentSource } | null; // per acre accumulated establishment cost (net cost to establish), even when status is 'table'
+  annualCharge: { value: number; page: number; quote: string } | null; // per acre per production year establishment charge in the production table's non-cash overhead, when printed
+  reason: string | null;         // when status is 'none' (or perennial with only a total), a short plain-language reason
+}
+
 export interface ParsedStudy {
   source: StudySource;
   assumptions: Assumptions;
@@ -139,5 +150,6 @@ export interface ParsedStudy {
   method: Method;
   monthly: MonthlyCosts | null;
   establishment: Establishment | null;
+  establishmentSummary: EstablishmentSummary;
   parse: ParseReport;
 }

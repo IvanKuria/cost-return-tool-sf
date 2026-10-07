@@ -53,15 +53,45 @@
     "quote": "Olives 5 Ton 1250.00 6,250"
    }
   ],
-  "interestRatePct": null,
-  "operatingInterestRatePct": null,
-  "laborMachineRate": null,
-  "laborNonMachineRate": null,
+  "interestRatePct": {
+   "value": 7,
+   "unit": "%",
+   "page": 7,
+   "quote": "An interest rate of 7.00 percent is used to calculate capital recovery."
+  },
+  "operatingInterestRatePct": {
+   "value": 8.5,
+   "unit": "%",
+   "page": 5,
+   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 8.50 percent per year."
+  },
+  "laborMachineRate": {
+   "value": 20,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Hourly wages for workers are $20.00 for machine operators and $18.00 per hour non-machine labor."
+  },
+  "laborNonMachineRate": {
+   "value": 18,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Hourly wages for workers are $20.00 for machine operators and $18.00 per hour non-machine labor."
+  },
   "laborOverheadPct": null,
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 3.7,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.10 and $3.70 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.7,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.10 and $3.70 per gallon, respectively."
+  },
   "yieldStatement": {
    "page": 4,
    "quote": "A well-managed orchard can yield an annual average of 6 tons per acre compared to other orchards that may average 3 tons per acre."
@@ -720,11 +750,27 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
-  "machineLaborFactor": null
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 5,
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -793,7 +839,11 @@
  "establishment": {
   "table": null,
   "years": [],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 5000,
+   "page": 7,
+   "quote": "For this study, the 2016 establishment cost of $5,000 per acre or $175,000 for the 35-acre orchard is used."
+  },
   "annualCharge": {
    "value": 381,
    "page": 10,
@@ -821,6 +871,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 5000,
+   "page": 10,
+   "quote": "Orchard Establishment 5,000 381 381",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 381,
+   "page": 10,
+   "quote": "Orchard Establishment 5,000 381 381"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -828,6 +894,9 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -839,21 +908,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct",
+   "machineLaborFactor",
    "monthly",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
-   "machineLaborFactor",
-   "establishmentAccumulated"
+   "insuranceRatePct"
   ],
   "warnings": [
    "1 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)"

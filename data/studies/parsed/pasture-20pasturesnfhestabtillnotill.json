@@ -271,47 +271,245 @@
  },
  "monthly": null,
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH PASTURE",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Plant",
+     "kind": "heading",
+     "section": "Pre-Plant",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Pre-Plant:"
+    },
+    {
+     "label": "Sub-Soil/Chisel 24\" 2x",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      120
+     ],
+     "page": 10,
+     "quote": "Sub-Soil/Chisel 24\" 2x 0.00 0 0 0 0 120 120"
+    },
+    {
+     "label": "Fertilizer: Broadcast 16-20-0-24% Sulfur",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      149
+     ],
+     "page": 10,
+     "quote": "Fertilizer: Broadcast 16-20-0-24% Sulfur 0.00 0 0 0 136 13 149"
+    },
+    {
+     "label": "Soil Sample",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      2
+     ],
+     "page": 10,
+     "quote": "Soil Sample 0.00 0 0 0 0 2 2"
+    },
+    {
+     "label": "Disc & Roll 2x",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      70
+     ],
+     "page": 10,
+     "quote": "Disc & Roll 2x 0.00 0 0 0 0 70 70"
+    },
+    {
+     "label": "Irrigate: Flood 3x",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      49
+     ],
+     "page": 10,
+     "quote": "Irrigate: Flood 3x 0.00 0 0 0 43 7 49"
+    },
+    {
+     "label": "Weeds: Herbicide Application",
+     "kind": "operation",
+     "section": "Pre-Plant",
+     "values": [
+      20
+     ],
+     "page": 10,
+     "quote": "Weeds: Herbicide Application 0.00 0 0 0 8 13 20"
+    },
+    {
+     "label": "TOTAL PRE-PLANT COSTS",
+     "kind": "subtotal",
+     "section": "Pre-Plant",
+     "values": [
+      410
+     ],
+     "page": 10,
+     "quote": "TOTAL PRE-PLANT COSTS 0.00 0 0 0 186 224 410"
+    },
+    {
+     "label": "Plant",
+     "kind": "heading",
+     "section": "Plant",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Plant:"
+    },
+    {
+     "label": "Plant Pasture Mix",
+     "kind": "operation",
+     "section": "Plant",
+     "values": [
+      70
+     ],
+     "page": 10,
+     "quote": "Plant Pasture Mix 0.00 0 0 0 50 20 70"
+    },
+    {
+     "label": "TOTAL PLANT COSTS",
+     "kind": "subtotal",
+     "section": "Plant",
+     "values": [
+      70
+     ],
+     "page": 10,
+     "quote": "TOTAL PLANT COSTS 0.00 0 0 0 50 20 70"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Irrigate: Flood 3x",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      103
+     ],
+     "page": 10,
+     "quote": "Irrigate: Flood 3x 0.00 0 0 0 89 13 103"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      103
+     ],
+     "page": 10,
+     "quote": "TOTAL CULTURAL COSTS 0.00 0 0 0 89 13 103"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Cultural",
+     "values": [
+      583
+     ],
+     "page": 10,
+     "quote": "TOTAL OPERATING COSTS/ACRE 0.00 0 0 0 326 257 583"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      25
+     ],
+     "page": 10,
+     "quote": "Office Expense 25"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      16
+     ],
+     "page": 10,
+     "quote": "Liability Insurance 16"
+    },
+    {
+     "label": "Land Lease: 4 Months 40 Acres",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      160
+     ],
+     "page": 10,
+     "quote": "Land Lease: 4 Months 40 Acres 160"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      201
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 201"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      783
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH COSTS/ACRE 783"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      783
+     ],
+     "page": 10,
+     "quote": "TOTAL COSTS/ACRE 783"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,
-    "label": "1",
+    "label": "Total Cost",
     "totalCost": 783,
     "returns": null,
     "netCost": 783,
     "accumulated": null,
     "page": 10,
     "quote": "TOTAL CASH COSTS/ACRE 783"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 783,
-    "returns": null,
-    "netCost": 783,
-    "accumulated": null,
-    "page": 11,
-    "quote": "TOTAL CASH COSTS/ACRE 783"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 574,
-    "returns": null,
-    "netCost": 574,
-    "accumulated": null,
-    "page": 12,
-    "quote": "TOTAL CASH COSTS/ACRE 574"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 574,
-    "returns": null,
-    "netCost": 574,
-    "accumulated": null,
-    "page": 13,
-    "quote": "TOTAL CASH COSTS/ACRE 574"
    }
   ],
   "accumulatedNetCost": {
@@ -342,6 +540,18 @@
    "page": 8,
    "quote": "The pasture stand establishment cost is amortized over the 30-year stand life."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 783,
+   "page": 10,
+   "quote": "TOTAL CASH COSTS/ACRE 783",
+   "source": "table"
+  },
+  "annualCharge": null,
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

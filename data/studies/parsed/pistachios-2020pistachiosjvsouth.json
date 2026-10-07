@@ -2378,6 +2378,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 11308,
+   "page": 22,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,976 5,305 6,780 8,357 10,267 11,308",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 742,
+   "page": 26,
+   "quote": "Establishment Cost 11,308 742 742"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

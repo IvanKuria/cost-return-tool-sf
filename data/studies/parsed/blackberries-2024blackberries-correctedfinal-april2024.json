@@ -1523,6 +1523,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 15791,
+   "page": 21,
+   "quote": "Blackberry Establishment 15,791 4,794 4,794",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 4794,
+   "page": 21,
+   "quote": "Blackberry Establishment 15,791 4,794 4,794"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

@@ -60,8 +60,18 @@
   "laborOverheadPct": null,
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 3.93,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and unleaded gasoline are $4.12 and $3.93 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.93,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and unleaded gasoline are $4.12 and $3.93 per gallon, respectively."
+  },
   "yieldStatement": {
    "page": 5,
    "quote": "In this study, a yield of 38 tons per acre is used."
@@ -1775,6 +1785,13 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE TOMATOES (FURROW)"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

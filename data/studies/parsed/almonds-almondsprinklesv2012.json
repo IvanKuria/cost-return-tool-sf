@@ -2199,21 +2199,6 @@
      ],
      "page": 13,
      "quote": "TOTAL ACCUMULATED NET COST/ACRE 3,090 4,553 5,616 6,531 6,657 6,245"
-    },
-    {
-     "label": "*Tree row is either solid strip spray or spot spray depending on weed population.",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead (Capital Recovery)",
-     "values": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 13,
-     "quote": "*Tree row is either solid strip spray or spot spray depending on weed population."
     }
    ],
    "yieldRow": {
@@ -2329,6 +2314,22 @@
    "page": 10,
    "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years of production."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 3760,
+   "page": 13,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 2,474 3,317 3,760 4,046 3,552 2,513",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 279,
+   "page": 14,
+   "quote": "Establishment Cost 3,760 279 279"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

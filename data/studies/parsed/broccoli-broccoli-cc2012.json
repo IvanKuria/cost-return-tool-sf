@@ -23,7 +23,12 @@
  },
  "assumptions": {
   "acresFarmed": null,
-  "acresCrop": null,
+  "acresCrop": {
+   "value": 40,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The hypothetical farm in this study consists of 41 contiguous acres, of which 40 acres are planted to fresh market broccoli."
+  },
   "yieldPerAcre": {
    "value": 582,
    "unit": "box",
@@ -50,19 +55,52 @@
   ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
-  "laborMachineRate": null,
-  "laborNonMachineRate": null,
-  "laborOverheadPct": null,
+  "laborMachineRate": {
+   "value": 19.53,
+   "unit": "$/hr",
+   "page": 4,
+   "quote": "Labor rates of $19.53 per hour for machine operators and $12.33 for general labor (irrigation and non- machine labor) are used in this study."
+  },
+  "laborNonMachineRate": {
+   "value": 12.33,
+   "unit": "$/hr",
+   "page": 4,
+   "quote": "Labor rates of $19.53 per hour for machine operators and $12.33 for general labor (irrigation and non- machine labor) are used in this study."
+  },
+  "laborOverheadPct": {
+   "value": 37,
+   "unit": "%",
+   "page": 4,
+   "quote": "These rates include payroll overhead of 37%."
+  },
   "landRentPerAcre": {
    "value": 663,
    "unit": "$/acre/yr",
    "page": 9,
    "quote": "Land Rent 663"
   },
-  "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
-  "yieldStatement": null,
+  "cropsPerAcrePerYear": {
+   "value": 2,
+   "unit": "crops/acre/yr",
+   "page": 3,
+   "quote": "The farm will normally produce two crops per year."
+  },
+  "fuelPriceDiesel": {
+   "value": 3.82,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Average prices in 2011 on-farm delivery of diesel and gasoline are $3.43 and $3.82 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.82,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Average prices in 2011 on-farm delivery of diesel and gasoline are $3.43 and $3.82 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 4,
+   "quote": "The crop yield used in this study is Year Boxes/Acre $/Box 582 twenty-three pound boxes or 6.05 ton per acre (5- 2006 689 8.22 year average). 2007 585 8.16 2008 565 8.32 Returns."
+  },
   "priceStatement": null
  },
  "costsPerAcre": {
@@ -929,14 +967,32 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 6,
+   "quote": "The calculation for the annual capital recovery costs is: ((Purchase Price – Salvage Value) X Capital Recovery Factor) + (Salvage Value X Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 6,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
-  "machineLaborFactor": null
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 5,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": null,
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -944,6 +1000,9 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
    "landRentPerAcre",
    "operatingTotal",
    "cashOverheadTotal",
@@ -954,18 +1013,15 @@
    "equipment",
    "investments",
    "hourlyEquipment",
-   "businessOverhead"
+   "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor"
   ],
   "fieldsMissing": [
    "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
-   "laborOverheadPct",
    "acresFarmed",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "machineLaborFactor",
    "monthly",
    "establishment",
    "establishmentAccumulated",

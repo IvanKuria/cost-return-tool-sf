@@ -65,8 +65,18 @@
   "laborOverheadPct": null,
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 3.9,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.12 and $3.90 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.9,
+   "unit": "$/gal",
+   "page": 5,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $4.12 and $3.90 per gallon, respectively."
+  },
   "yieldStatement": null,
   "priceStatement": {
    "page": 5,
@@ -1129,8 +1139,14 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 6,
+   "quote": "[(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)"
+  },
+  "salvageMethod": {
+   "page": 6,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
   "machineLaborFactor": {
@@ -1198,6 +1214,13 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE BEANS (DOUBLE CROP)"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1217,6 +1240,7 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
    "machineLaborFactor",
    "monthly"
   ],
@@ -1225,7 +1249,6 @@
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",

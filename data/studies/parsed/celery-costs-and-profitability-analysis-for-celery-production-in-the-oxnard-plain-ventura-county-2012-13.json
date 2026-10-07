@@ -693,6 +693,13 @@
   "quote": "Monthly Cash Costs per Acre to Produce Celery in Ventura County, 2012/2013"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

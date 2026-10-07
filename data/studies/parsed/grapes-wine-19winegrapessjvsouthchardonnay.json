@@ -2059,6 +2059,22 @@
    "quote": "amortized over the remaining 22 years of the 25 years the vineyard is in production."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 20645,
+   "page": 15,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 15,901 19,227 20,645",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1615,
+   "page": 17,
+   "quote": "Vineyard Establishment 20,645 1,615 1,615"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

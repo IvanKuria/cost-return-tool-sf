@@ -1009,6 +1009,22 @@
   "asset": null,
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 12500,
+   "page": 13,
+   "quote": "Establishment 12,500 692 692",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 692,
+   "page": 13,
+   "quote": "Establishment 12,500 692 692"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",

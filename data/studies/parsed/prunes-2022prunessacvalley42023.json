@@ -2188,21 +2188,6 @@
      ],
      "page": 14,
      "quote": "TOTAL ACCUMULATED NET COST/ACRE 12,572 15,924 19,450 22,962 27,592 30,551"
-    },
-    {
-     "label": "*Dipel applied alternate years.",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead (Capital Recovery Cost)",
-     "values": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 14,
-     "quote": "*Dipel applied alternate years."
     }
    ],
    "yieldRow": {
@@ -2323,6 +2308,22 @@
    "page": 11,
    "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 16 years of production."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 16671,
+   "page": 14,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 10,998 12,786 14,758 16,671 17,994 17,643",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1707,
+   "page": 16,
+   "quote": "Orchard Establishment 16,671 1,707 1,707"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

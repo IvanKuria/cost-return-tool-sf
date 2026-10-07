@@ -22,8 +22,18 @@
   }
  },
  "assumptions": {
-  "acresFarmed": null,
-  "acresCrop": null,
+  "acresFarmed": {
+   "value": 645,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The hypothetical farm consists of 645 contiguous acres."
+  },
+  "acresCrop": {
+   "value": 440,
+   "unit": "acres",
+   "page": 3,
+   "quote": "Establishment and production costs are based on 440 acres of alfalfa."
+  },
   "yieldPerAcre": {
    "value": 5,
    "unit": "Tons",
@@ -50,15 +60,46 @@
   ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
-  "laborMachineRate": null,
-  "laborNonMachineRate": null,
-  "laborOverheadPct": null,
+  "laborMachineRate": {
+   "value": 17.81,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Labor rates of $17.81 per hour for machine operators and $13.70 for general labor (irrigation labor and non-machine labor) includes payroll overhead of 37%."
+  },
+  "laborNonMachineRate": {
+   "value": 13.7,
+   "unit": "$/hr",
+   "page": 5,
+   "quote": "Labor rates of $17.81 per hour for machine operators and $13.70 for general labor (irrigation labor and non-machine labor) includes payroll overhead of 37%."
+  },
+  "laborOverheadPct": {
+   "value": 37,
+   "unit": "%",
+   "page": 5,
+   "quote": "Labor rates of $17.81 per hour for machine operators and $13.70 for general labor (irrigation labor and non-machine labor) includes payroll overhead of 37%."
+  },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
-  "yieldStatement": null,
-  "priceStatement": null
+  "fuelPriceDiesel": {
+   "value": 3.82,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.43 (excludes excise tax) and $3.82 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.82,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of red dye diesel and gasoline are $3.43 (excludes excise tax) and $3.82 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 5,
+   "quote": "The alfalfa crop is assumed to yield 5.0 tons of hay per acre over three cuttings per year."
+  },
+  "priceStatement": {
+   "page": 5,
+   "quote": "Based on the current market, an estimated price of $200 per ton of hay is used to calculate returns."
+  }
  },
  "costsPerAcre": {
   "title": "COSTS PER ACRE TO PRODUCE ALFALFA",
@@ -642,19 +683,348 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
-  "machineLaborFactor": null
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 5,
+   "quote": "Machinery labor cost is approximately 20% higher than general labor prices, which accounts for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": null,
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH ALFALFA",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Subsoil/rip ground",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      26
+     ],
+     "page": 9,
+     "quote": "Subsoil/rip ground 0.39 8 17 0 0 26"
+    },
+    {
+     "label": "Fertilize: sulfur, 1 X every 4 yrs.",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      9
+     ],
+     "page": 9,
+     "quote": "Fertilize: sulfur, 1 X every 4 yrs. 0.00 0 0 7 2 9"
+    },
+    {
+     "label": "Fertilize: 11-52-0,",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      52
+     ],
+     "page": 9,
+     "quote": "Fertilize: 11-52-0, 0.00 0 0 44 8 52"
+    },
+    {
+     "label": "Disc stubble 2X",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      22
+     ],
+     "page": 9,
+     "quote": "Disc stubble 2X 0.33 7 15 0 0 22"
+    },
+    {
+     "label": "Level field with triplane 3X",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      29
+     ],
+     "page": 9,
+     "quote": "Level field with triplane 3X 0.77 16 13 0 0 29"
+    },
+    {
+     "label": "Plant: 20 lbs./ac (grain drill & cultipacker)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      89
+     ],
+     "page": 9,
+     "quote": "Plant: 20 lbs./ac (grain drill & cultipacker) 0.22 5 11 73 0 89"
+    },
+    {
+     "label": "Irrigate",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      26
+     ],
+     "page": 9,
+     "quote": "Irrigate 0.60 8 0 18 0 26"
+    },
+    {
+     "label": "Weed control",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      40
+     ],
+     "page": 9,
+     "quote": "Weed control 0.00 0 0 32 8 40"
+    },
+    {
+     "label": "Pickup truck use",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      6
+     ],
+     "page": 9,
+     "quote": "Pickup truck use 0.16 3 2 0 0 6"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      298
+     ],
+     "page": 9,
+     "quote": "TOTAL CULTURAL COSTS 2.47 48 59 173 17 298"
+    },
+    {
+     "label": "Interest on operating capital at 5.75%",
+     "kind": "interest",
+     "section": "Cultural",
+     "values": [
+      4
+     ],
+     "page": 9,
+     "quote": "Interest on operating capital at 5.75% 4"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Cultural",
+     "values": [
+      302
+     ],
+     "page": 9,
+     "quote": "TOTAL OPERATING COSTS/ACRE 2.47 48 59 173 17 302"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Liability insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 9,
+     "quote": "Liability insurance 2"
+    },
+    {
+     "label": "Office expense",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      20
+     ],
+     "page": 9,
+     "quote": "Office expense 20"
+    },
+    {
+     "label": "Property taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      32
+     ],
+     "page": 9,
+     "quote": "Property taxes 32"
+    },
+    {
+     "label": "Property insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      16
+     ],
+     "page": 9,
+     "quote": "Property insurance 16"
+    },
+    {
+     "label": "Investment repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      15
+     ],
+     "page": 9,
+     "quote": "Investment repairs 15"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      85
+     ],
+     "page": 9,
+     "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 85"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      387
+     ],
+     "page": 9,
+     "quote": "TOTAL CASH COSTS/ACRE 387"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 9,
+     "quote": "NON-CASH OVERHEAD: Per producing Annual Cost"
+    },
+    {
+     "label": "Fuel tanks & pumps",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1
+     ],
+     "page": 9,
+     "quote": "Fuel tanks & pumps 14 1 1"
+    },
+    {
+     "label": "Hay barns",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      12
+     ],
+     "page": 9,
+     "quote": "Hay barns (2) 155 12 12"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      131
+     ],
+     "page": 9,
+     "quote": "Land 2,750 131 131"
+    },
+    {
+     "label": "Shop building",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      4
+     ],
+     "page": 9,
+     "quote": "Shop building 72 4 4"
+    },
+    {
+     "label": "Shop tools",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 9,
+     "quote": "Shop tools 18 2 2"
+    },
+    {
+     "label": "Center pivot irrigation system",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      29
+     ],
+     "page": 9,
+     "quote": "Center pivot irrigation system (4) 465 29 29"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      24
+     ],
+     "page": 9,
+     "quote": "Equipment 229 24 24"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      202
+     ],
+     "page": 9,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 3,703 202 202"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      590
+     ],
+     "page": 9,
+     "quote": "TOTAL COSTS/ACRE 590"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,
-    "label": "1",
+    "label": "Total Cost",
     "totalCost": 387,
     "returns": null,
     "netCost": 387,
@@ -663,7 +1033,11 @@
     "quote": "TOTAL CASH COSTS/ACRE 387"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 387,
+   "page": 7,
+   "quote": "For this study, the cost is $387 per acre or $170,280 for the 440 alfalfa acres."
+  },
   "annualCharge": {
    "value": 89,
    "page": 11,
@@ -671,8 +1045,8 @@
   },
   "productionYears": {
    "value": 5,
-   "page": 15,
-   "quote": "Establishment cost 170,280 5 0 39,059 525 851 0 40,435 (years of life of the establishment row in the investment table)"
+   "page": 7,
+   "quote": "The establishment cost is amortized over the remaining five years of crop life."
   },
   "plantingLife": null,
   "amortizedFromYear": null,
@@ -685,7 +1059,26 @@
    "page": 15,
    "line": "Establishment cost 170,280 5 0 39,059 525 851 0 40,435"
   },
-  "method": null
+  "method": {
+   "page": 7,
+   "quote": "The establishment cost is amortized over the remaining five years of crop life."
+  }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 387,
+   "page": 9,
+   "quote": "TOTAL CASH COSTS/ACRE 387",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 89,
+   "page": 11,
+   "quote": "Establishment cost 387 89 89"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [
@@ -694,6 +1087,10 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -704,22 +1101,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
    "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
-   "laborOverheadPct",
    "landRentPerAcre",
-   "acresFarmed",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "machineLaborFactor",
-   "monthly",
-   "establishmentAccumulated"
+   "monthly"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",

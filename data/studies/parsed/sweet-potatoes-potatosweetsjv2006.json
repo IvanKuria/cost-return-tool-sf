@@ -60,13 +60,38 @@
   ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
-  "laborMachineRate": null,
-  "laborNonMachineRate": null,
-  "laborOverheadPct": null,
+  "laborMachineRate": {
+   "value": 11.82,
+   "unit": "$/hr",
+   "page": 9,
+   "quote": "Labor rates of $11.82 per hour for machine operators and $9.73 for general labor includes payroll overhead of 39%."
+  },
+  "laborNonMachineRate": {
+   "value": 9.73,
+   "unit": "$/hr",
+   "page": 9,
+   "quote": "Labor rates of $11.82 per hour for machine operators and $9.73 for general labor includes payroll overhead of 39%."
+  },
+  "laborOverheadPct": {
+   "value": 39,
+   "unit": "%",
+   "page": 9,
+   "quote": "Labor rates of $11.82 per hour for machine operators and $9.73 for general labor includes payroll overhead of 39%."
+  },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 2.55,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.00 and $2.55 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.55,
+   "unit": "$/gal",
+   "page": 9,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.00 and $2.55 per gallon, respectively."
+  },
   "yieldStatement": null,
   "priceStatement": null
  },
@@ -1296,11 +1321,22 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 10,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 10,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
-  "machineLaborFactor": null
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 9,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Tables 1 and 5 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": {
   "basis": "per acre",
@@ -1367,6 +1403,13 @@
   "quote": "HOTBED MONTHLY CASH COST PER ACRE TO PRODUCE SWEETPOTATO TRANSPLANTS"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1374,6 +1417,9 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -1385,18 +1431,15 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [
    "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
-   "laborOverheadPct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "machineLaborFactor",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

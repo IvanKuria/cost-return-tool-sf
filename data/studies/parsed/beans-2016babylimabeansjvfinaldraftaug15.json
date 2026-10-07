@@ -28,7 +28,12 @@
    "page": 3,
    "quote": "This report is based on a 1,500 non-contiguous acre farm on which 200 acres of rented land are producing baby lima beans."
   },
-  "acresCrop": null,
+  "acresCrop": {
+   "value": 200,
+   "unit": "acres",
+   "page": 6,
+   "quote": "The total cost is $15,000 for the 200 acres of baby lima bean production."
+  },
   "yieldPerAcre": {
    "value": 27,
    "unit": "Cwt",
@@ -53,8 +58,18 @@
     "quote": "Baby Lima 27.00 Cwt 56.00 1,512"
    }
   ],
-  "interestRatePct": null,
-  "operatingInterestRatePct": null,
+  "interestRatePct": {
+   "value": 3.75,
+   "unit": "%",
+   "page": 7,
+   "quote": "An interest rate of 3.75 percent is used to calculate capital recovery."
+  },
+  "operatingInterestRatePct": {
+   "value": 4.25,
+   "unit": "%",
+   "page": 6,
+   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 4.25 percent per year."
+  },
   "laborMachineRate": {
    "value": 16,
    "unit": "$/hr",
@@ -1075,15 +1090,26 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 7,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x (Capital Recovery Factor)) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 7,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 5,
-   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in"
+   "quote": "Labor for operations involving machinery are 20 percent higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1151,6 +1177,13 @@
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE BABY LIMA BEANS"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1158,6 +1191,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -1172,15 +1206,14 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborOverheadPct",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

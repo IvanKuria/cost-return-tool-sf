@@ -2479,6 +2479,22 @@
    "quote": "Establishment cost is amortized beginning in the sixth year over the remaining 25 years of production."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 15051,
+   "page": 15,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,778 8,988 10,640 12,739 15,051 17,049",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1041,
+   "page": 15,
+   "quote": "Establishment cost 1,041"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

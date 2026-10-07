@@ -2328,6 +2328,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 15427,
+   "page": 15,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,155 15,433 15,427",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1226,
+   "page": 17,
+   "quote": "Vineyard Establishment: Scarlet Royal 15,427 1,226 1,226"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

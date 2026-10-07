@@ -1408,7 +1408,52 @@
   "page": 23,
   "quote": "MONTHLY COSTS PER ACRE TO PRODUCE WINE GRAPES-WHITE VARIETY"
  },
- "establishment": null,
+ "establishment": {
+  "table": null,
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 35000,
+   "page": 11,
+   "quote": "For this study, the total accumulated net cash cost in the third year represents the establishment cost and is estimated at $35,000 per planted acre."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 27,
+   "page": 11,
+   "quote": "The cost is amortized over the remaining 27 years of vineyard production to estimate the annual capital recovery cost."
+  },
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": {
+   "price": 1400000,
+   "yearsLife": 27,
+   "salvageValue": 0,
+   "capitalRecovery": 88154,
+   "page": 27,
+   "line": "Vineyard Establishment-Biodynamic 1,400,000 27 0 88,154 590 7,000 0 95,744"
+  },
+  "method": {
+   "page": 11,
+   "quote": "The cost is amortized over the remaining 27 years of vineyard production to estimate the annual capital recovery cost."
+  }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "total",
+  "total": {
+   "value": 35000,
+   "page": 15,
+   "quote": "Vineyard Establishment-Biodynamic 35,000 2,204 2,204",
+   "source": "production"
+  },
+  "annualCharge": {
+   "value": 2204,
+   "page": 15,
+   "quote": "Vineyard Establishment-Biodynamic 35,000 2,204 2,204"
+  },
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -1432,15 +1477,15 @@
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
    "insuranceRatePct",
-   "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": [

@@ -1132,25 +1132,13 @@
   "page": 15,
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE AND HARVEST ORGANIC APPLES FOR PROCESSING"
  },
- "establishment": {
-  "table": null,
-  "years": [],
-  "accumulatedNetCost": {
-   "value": 30000,
-   "page": 3,
-   "quote": "In this study, land value for an established apple orchard is estimated at $30,000 per acre; no other establishment costs are included here."
-  },
+ "establishment": null,
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "none",
+  "total": null,
   "annualCharge": null,
-  "productionYears": null,
-  "plantingLife": {
-   "value": 25,
-   "page": 9,
-   "quote": "The irrigation system is considered an improvement to the property and has a 25-year lifespan."
-  },
-  "amortizedFromYear": null,
-  "removalCost": null,
-  "asset": null,
-  "method": null
+  "reason": "The study does not cost establishment: \"In this study, land value for an established apple orchard is estimated at $30,000 per acre; no other establishment costs are included here.\""
  },
  "parse": {
   "fieldsFound": [
@@ -1176,14 +1164,14 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly",
-   "establishment",
-   "establishmentAccumulated"
+   "monthly"
   ],
   "fieldsMissing": [
    "counties",
    "landRentPerAcre",
    "acresFarmed",
+   "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": []

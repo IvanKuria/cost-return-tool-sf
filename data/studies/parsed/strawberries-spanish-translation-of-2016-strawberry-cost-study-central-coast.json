@@ -113,6 +113,13 @@
   "quote": "COSTOS MENSUALES DE EFECTIVO POR ACRE PARA PRODUCIR Y COSECHAR FRESAS"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

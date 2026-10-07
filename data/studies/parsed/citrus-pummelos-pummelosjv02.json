@@ -1713,6 +1713,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 3325,
+   "page": 12,
+   "quote": "TOTAL ACCUMULATED NET CASH COSTS 2,302 2,944 3,325 3,649 3,837",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 237,
+   "page": 14,
+   "quote": "Establishment 3,325 237 237"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

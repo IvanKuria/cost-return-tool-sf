@@ -1056,6 +1056,13 @@
   "quote": "MONTHLY CASH COSTS PER ACRE TO PRODUCE SECOND YEAR STRAWBERRIES"
  },
  "establishment": null,
+ "establishmentSummary": {
+  "perennial": false,
+  "status": "none",
+  "total": null,
+  "annualCharge": null,
+  "reason": "Annual crop, no establishment period"
+ },
  "parse": {
   "fieldsFound": [
    "year",

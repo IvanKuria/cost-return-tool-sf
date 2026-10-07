@@ -136,7 +136,847 @@
   "page": 13,
   "quote": "Monthly cash costs per acre to produce wine grapes in Temecula, 2002"
  },
- "establishment": null,
+ "establishment": {
+  "table": {
+   "title": "Costs per Acre for Establishment and Production of Wine Grapes",
+   "years": [
+    "Year 1",
+    "Year 2",
+    "Year 3",
+    "Production"
+   ],
+   "rows": [
+    {
+     "label": "I. OPERATING (CASH) COSTS (Materials, Labor, Fuel, Lube, & Repair)",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "I. OPERATING (CASH) COSTS (Materials, Labor, Fuel, Lube, & Repair)"
+    },
+    {
+     "label": "A. Cultural Costs (preharvest)",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "A. Cultural Costs (preharvest)"
+    },
+    {
+     "label": "Custom",
+     "kind": "heading",
+     "section": "Custom",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Custom:"
+    },
+    {
+     "label": "Grade & Rip",
+     "kind": "operation",
+     "section": "Custom",
+     "values": [
+      1300,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Grade & Rip 1,300"
+    },
+    {
+     "label": "Material",
+     "kind": "heading",
+     "section": "Material",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Material:"
+    },
+    {
+     "label": "Survey & Mark",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      114,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Survey & Mark 114"
+    },
+    {
+     "label": "Trellis System",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      2005,
+      153,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Trellis System 2,005 153"
+    },
+    {
+     "label": "Plant Vine",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      3748,
+      322,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Plant Vine 3,748 322"
+    },
+    {
+     "label": "Pest & Disease Control",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      193,
+      193,
+      241,
+      241
+     ],
+     "page": 10,
+     "quote": "Pest & Disease Control 193 193 241 241"
+    },
+    {
+     "label": "Train & Tie & Sucker",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      15,
+      15,
+      15,
+      15
+     ],
+     "page": 10,
+     "quote": "Train & Tie & Sucker 15 15 15 15"
+    },
+    {
+     "label": "Shoot Thin",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Shoot Thin"
+    },
+    {
+     "label": "Prune",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Prune"
+    },
+    {
+     "label": "Fertilize",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      30,
+      30,
+      228,
+      228
+     ],
+     "page": 10,
+     "quote": "Fertilize 30 30 228 228"
+    },
+    {
+     "label": "Weed Control",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      19,
+      19,
+      19,
+      14
+     ],
+     "page": 10,
+     "quote": "Weed Control 19 19 19 14"
+    },
+    {
+     "label": "Cover Crop",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      105,
+      105,
+      105,
+      105
+     ],
+     "page": 10,
+     "quote": "Cover Crop 105 105 105 105"
+    },
+    {
+     "label": "Irrigate",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      180,
+      360,
+      540,
+      720
+     ],
+     "page": 10,
+     "quote": "Irrigate 180 360 540 720"
+    },
+    {
+     "label": "Material Costs Total:",
+     "kind": "operation",
+     "section": "Material",
+     "values": [
+      6409,
+      1197,
+      1147,
+      1323
+     ],
+     "page": 10,
+     "quote": "Material Costs Total: 6,409 1,197 1,147 1,323"
+    },
+    {
+     "label": "Labor",
+     "kind": "heading",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Labor:"
+    },
+    {
+     "label": "Survey & Mark",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      152,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Survey & Mark 152"
+    },
+    {
+     "label": "Trellis System Installation",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      613,
+      257,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Trellis System Installation 613 257"
+    },
+    {
+     "label": "Plant Vine",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      662,
+      66,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Plant Vine 662 66"
+    },
+    {
+     "label": "Pest & Disease Control",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      63,
+      63,
+      63,
+      63
+     ],
+     "page": 10,
+     "quote": "Pest & Disease Control 63 63 63 63"
+    },
+    {
+     "label": "Train & Tie & Sucker",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      383,
+      383,
+      128,
+      128
+     ],
+     "page": 10,
+     "quote": "Train & Tie & Sucker 383 383 128 128"
+    },
+    {
+     "label": "Shoot Thin",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      510,
+      510
+     ],
+     "page": 10,
+     "quote": "Shoot Thin 510 510"
+    },
+    {
+     "label": "Prune",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      319,
+      447
+     ],
+     "page": 10,
+     "quote": "Prune 319 447"
+    },
+    {
+     "label": "Fertilize",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Fertilize"
+    },
+    {
+     "label": "Weed Control",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Weed Control"
+    },
+    {
+     "label": "Cover Crop",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "Cover Crop"
+    },
+    {
+     "label": "Irrigate",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      32,
+      32,
+      32,
+      32
+     ],
+     "page": 10,
+     "quote": "Irrigate 32 32 32 32"
+    },
+    {
+     "label": "Labor Costs Total:",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      1904,
+      800,
+      1052,
+      1179
+     ],
+     "page": 10,
+     "quote": "Labor Costs Total: 1,904 800 1,052 1,179"
+    },
+    {
+     "label": "B. Machinery Costs (Fuel, Lube, & Repair)",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      176,
+      133,
+      294,
+      294
+     ],
+     "page": 10,
+     "quote": "B. Machinery Costs (Fuel, Lube, & Repair) 176 133 294 294"
+    },
+    {
+     "label": "C. Harvest Costs",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      283,
+      783
+     ],
+     "page": 10,
+     "quote": "C. Harvest Costs 283 783"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS",
+     "kind": "total",
+     "section": "Labor",
+     "values": [
+      9789,
+      2130,
+      2776,
+      3579
+     ],
+     "page": 10,
+     "quote": "TOTAL OPERATING COSTS 9,789 2,130 2,776 3,579"
+    },
+    {
+     "label": "II. CASH OVERHEAD COSTS",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 10,
+     "quote": "II. CASH OVERHEAD COSTS"
+    },
+    {
+     "label": "Office Expenses",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      120,
+      120,
+      120,
+      120
+     ],
+     "page": 10,
+     "quote": "Office Expenses 120 120 120 120"
+    },
+    {
+     "label": "Taxes & Insurance",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      198,
+      284,
+      330,
+      528
+     ],
+     "page": 10,
+     "quote": "Taxes & Insurance 198 284 330 528"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      20,
+      20,
+      20,
+      20
+     ],
+     "page": 10,
+     "quote": "Liability Insurance 20 20 20 20"
+    },
+    {
+     "label": "Investment Repair",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      62,
+      62,
+      62,
+      62
+     ],
+     "page": 10,
+     "quote": "Investment Repair 62 62 62 62"
+    },
+    {
+     "label": "Interest on Establishment",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      0,
+      1102,
+      1570,
+      0
+     ],
+     "page": 10,
+     "quote": "Interest on Establishment 0 1,102 1,570 0"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Labor",
+     "values": [
+      400,
+      1589,
+      2102,
+      730
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH OVERHEAD COSTS 400 1,589 2,102 730"
+    },
+    {
+     "label": "Interest on Operating Capital and Cash Overhead",
+     "kind": "interest",
+     "section": "Labor",
+     "values": [
+      682,
+      128,
+      128,
+      167
+     ],
+     "page": 10,
+     "quote": "Interest on Operating Capital and Cash Overhead 682 128 128 167"
+    },
+    {
+     "label": "TOTAL CASH COSTS",
+     "kind": "total",
+     "section": "Labor",
+     "values": [
+      10871,
+      3847,
+      5007,
+      4476
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH COSTS 10,871 3,847 5,007 4,476"
+    },
+    {
+     "label": "LESS INCOME FROM PRODUCTION",
+     "kind": "income",
+     "section": "Labor",
+     "values": [
+      0,
+      0,
+      -2563,
+      -6150
+     ],
+     "page": 10,
+     "quote": "LESS INCOME FROM PRODUCTION 0 0 -2,563 -6,150"
+    },
+    {
+     "label": "NET CASH COSTS FOR THE YEAR",
+     "kind": "net",
+     "section": "Labor",
+     "values": [
+      10871,
+      3847,
+      2444,
+      -1674
+     ],
+     "page": 10,
+     "quote": "NET CASH COSTS FOR THE YEAR 10,871 3,847 2,444 -1,674"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS",
+     "kind": "accumulated",
+     "section": "Labor",
+     "values": [
+      10871,
+      14717,
+      17162,
+      0
+     ],
+     "page": 10,
+     "quote": "ACCUMULATED NET CASH COSTS 10,871 14,717 17,162 0"
+    },
+    {
+     "label": "III. NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "III. NON-CASH OVERHEAD COSTS (Depreciation & Interest)"
+    },
+    {
+     "label": "Land Rent",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      1027,
+      1027,
+      1027,
+      1027
+     ],
+     "page": 11,
+     "quote": "Land Rent 1,027 1,027 1,027 1,027"
+    },
+    {
+     "label": "Building",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      23,
+      23,
+      23,
+      23
+     ],
+     "page": 11,
+     "quote": "Building 23 23 23 23"
+    },
+    {
+     "label": "Tools",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      6,
+      6,
+      6,
+      6
+     ],
+     "page": 11,
+     "quote": "Tools 6 6 6 6"
+    },
+    {
+     "label": "Fuel Tanks & Pumps",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      7,
+      7,
+      7,
+      7
+     ],
+     "page": 11,
+     "quote": "Fuel Tanks & Pumps 7 7 7 7"
+    },
+    {
+     "label": "Sanitation Costs",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      6,
+      6,
+      6,
+      6
+     ],
+     "page": 11,
+     "quote": "Sanitation Costs 6 6 6 6"
+    },
+    {
+     "label": "Drip Irrigation",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      169,
+      169,
+      169,
+      169
+     ],
+     "page": 11,
+     "quote": "Drip Irrigation 169 169 169 169"
+    },
+    {
+     "label": "Depr. & Interest",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      140,
+      112,
+      232,
+      232
+     ],
+     "page": 11,
+     "quote": "Depr. & Interest 140 112 232 232"
+    },
+    {
+     "label": "Amortized Tree Establishment Cost",
+     "kind": "operation",
+     "section": "Labor",
+     "values": [
+      0,
+      0,
+      0,
+      1700
+     ],
+     "page": 11,
+     "quote": "Amortized Tree Establishment Cost 0 0 0 1,700"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Labor",
+     "values": [
+      1377,
+      1349,
+      1468,
+      3168
+     ],
+     "page": 11,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 1,377 1,349 1,468 3,168"
+    },
+    {
+     "label": "TOTAL COSTS FOR THE YEAR",
+     "kind": "total",
+     "section": "Labor",
+     "values": [
+      12248,
+      5195,
+      6475,
+      7645
+     ],
+     "page": 11,
+     "quote": "TOTAL COSTS FOR THE YEAR 12,248 5,195 6,475 7,645"
+    },
+    {
+     "label": "TOTAL NET COSTS FOR THE YEAR",
+     "kind": "net",
+     "section": "Labor",
+     "values": [
+      12248,
+      5195,
+      3912,
+      1495
+     ],
+     "page": 11,
+     "quote": "TOTAL NET COSTS FOR THE YEAR 12,248 5,195 3,912 1,495"
+    },
+    {
+     "label": "ACCUMULATED NET COSTS",
+     "kind": "accumulated",
+     "section": "Labor",
+     "values": [
+      12248,
+      17443,
+      21356,
+      0
+     ],
+     "page": 11,
+     "quote": "ACCUMULATED NET COSTS 12,248 17,443 21,356 0"
+    }
+   ],
+   "yieldRow": null
+  },
+  "years": [
+   {
+    "year": 1,
+    "label": "Year 1",
+    "totalCost": 10871,
+    "returns": null,
+    "netCost": 10871,
+    "accumulated": 10871,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS 10,871 14,717 17,162 0"
+   },
+   {
+    "year": 2,
+    "label": "Year 2",
+    "totalCost": 3847,
+    "returns": null,
+    "netCost": 3847,
+    "accumulated": 14717,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS 10,871 14,717 17,162 0"
+   },
+   {
+    "year": 3,
+    "label": "Year 3",
+    "totalCost": 5007,
+    "returns": null,
+    "netCost": 2444,
+    "accumulated": 17162,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS 10,871 14,717 17,162 0"
+   },
+   {
+    "year": 4,
+    "label": "Production",
+    "totalCost": 4476,
+    "returns": null,
+    "netCost": -1674,
+    "accumulated": 0,
+    "page": 10,
+    "quote": "ACCUMULATED NET CASH COSTS 10,871 14,717 17,162 0"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 21356,
+   "page": 8,
+   "quote": "Based on our assumptions of cultural practices and methods of analyses, vineyard establishment in Temecula, Riverside is estimated to cost $21,356/acre: $12,248/acre in the first year, $5,195/acre in the second year, and $3,912/acre in the third year (Tables 1 and 2)."
+  },
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": {
+   "page": 7,
+   "quote": "This category includes land rent and ownership (fixed) costs of farm equipment and investments such as buildings, tools, fuel tanks and pumps, irrigation systems, and amortized tree establishment costs."
+  }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 21356,
+   "page": 11,
+   "quote": "ACCUMULATED NET COSTS 12,248 17,443 21,356 0",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1700,
+   "page": 9,
+   "quote": "Amortized Tree Establishment Cost 0 0 0 1,700"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -144,7 +984,9 @@
    "counties",
    "capitalRecoveryFormula",
    "insuranceRatePct",
-   "monthly"
+   "monthly",
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -167,8 +1009,6 @@
    "businessOverhead",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "establishment",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": [

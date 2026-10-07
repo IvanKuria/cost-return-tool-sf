@@ -22,7 +22,12 @@
   }
  },
  "assumptions": {
-  "acresFarmed": null,
+  "acresFarmed": {
+   "value": 80,
+   "unit": "acres",
+   "page": 9,
+   "quote": "For this study the cost is $13,412 per acre or $1,072,960 for the 80-acre vineyard."
+  },
   "acresCrop": null,
   "yieldPerAcre": {
    "value": 4,
@@ -48,8 +53,18 @@
     "quote": "Raisins 4.0 Ton 1,600 6,400"
    }
   ],
-  "interestRatePct": null,
-  "operatingInterestRatePct": null,
+  "interestRatePct": {
+   "value": 3.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "An interest rate of 3.75 percent is used to calculate capital recovery."
+  },
+  "operatingInterestRatePct": {
+   "value": 4.25,
+   "unit": "%",
+   "page": 7,
+   "quote": "Interest on operating capital is based on cash operating costs and is calculated monthly until harvest at a nominal rate of 4.25 percent per year."
+  },
   "laborMachineRate": {
    "value": 16,
    "unit": "$/hr",
@@ -65,8 +80,18 @@
   "laborOverheadPct": null,
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 2.7,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.43 and $2.70 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.7,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.43 and $2.70 per gallon, respectively."
+  },
   "yieldStatement": null,
   "priceStatement": {
    "page": 5,
@@ -964,15 +989,26 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 9,
+   "quote": "The formula for the calculation of the annual capital recovery costs is; ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 9,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1 percent of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 7,
-   "quote": "Labor hours for operations involving machinery are 20 percent higher than the operation time given in"
+   "quote": "Labor hours for operations involving machinery are 20 percent higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -1905,7 +1941,11 @@
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,336 14,811 13,412"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 13412,
+   "page": 9,
+   "quote": "For this study the cost is $13,412 per acre or $1,072,960 for the 80-acre vineyard."
+  },
   "annualCharge": null,
   "productionYears": {
    "value": 27,
@@ -1914,8 +1954,8 @@
   },
   "plantingLife": {
    "value": 30,
-   "page": 3,
-   "quote": "The life of the vineyard at planting is expected to be 30 years and the grapevines are expected to begin yielding harvestable fruit in three years."
+   "page": 10,
+   "quote": "over the remaining 27 years of the 30 years the vineyard is in production."
   },
   "amortizedFromYear": null,
   "removalCost": {
@@ -1934,14 +1974,32 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 13412,
+   "page": 12,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,336 14,811 13,412",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 798,
+   "page": 15,
+   "quote": "Vineyard Establishment-OGT 13,412 798 798"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
+   "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -1952,20 +2010,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
-   "establishment"
+   "establishment",
+   "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
-   "acresFarmed",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct",
-   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": []

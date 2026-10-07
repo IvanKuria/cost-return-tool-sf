@@ -2663,6 +2663,22 @@
    "quote": "Establishment costs are amortized beginning in the fourth year and are continuous for the remaining 20 years of production."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 16758,
+   "page": 15,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,599 14,061 16,758 19,778 21,454",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 1739,
+   "page": 15,
+   "quote": "Establishment Costs 1,739 1,739"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -2698,7 +2714,8 @@
    "insuranceRatePct"
   ],
   "warnings": [
-   "establishment table: TOTAL CULTURAL COSTS column 2nd prints 1830 but its rows sum to 1647"
+   "establishment table: TOTAL CULTURAL COSTS column 2nd prints 1830 but its rows sum to 1647",
+   "establishment total: table 16758 (ACCUMULATED NET CASH COSTS/ACRE 11,599 14,061 16,758 19,778 21,454) differs from prose 17096 (The cost is $17,096 per acre or $1,709,600 for the 100-acre orchard.); using the table figure"
   ]
  }
 }

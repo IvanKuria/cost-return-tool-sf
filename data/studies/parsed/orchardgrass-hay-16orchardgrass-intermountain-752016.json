@@ -801,11 +801,369 @@
   "quote": "MONTHLY CASH COSTS PER ACRE to PRODUCE ORCHARDGRASS"
  },
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COSTS PER ACRE to ESTABLISH ORCHARDGRASS",
+   "years": [
+    "Total Cost"
+   ],
+   "rows": [
+    {
+     "label": "Pre- Plant",
+     "kind": "heading",
+     "section": "Pre- Plant",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Pre- Plant:"
+    },
+    {
+     "label": "Chisel Field (12-14in. depth)",
+     "kind": "operation",
+     "section": "Pre- Plant",
+     "values": [
+      5
+     ],
+     "page": 10,
+     "quote": "Chisel Field (12-14in. depth) 0.09 3 1 1 0 0 5"
+    },
+    {
+     "label": "Disc Field (2x)",
+     "kind": "operation",
+     "section": "Pre- Plant",
+     "values": [
+      19
+     ],
+     "page": 10,
+     "quote": "Disc Field (2x) 0.33 9 5 5 0 0 19"
+    },
+    {
+     "label": "Level Field (Tri-Plane 3x)",
+     "kind": "operation",
+     "section": "Pre- Plant",
+     "values": [
+      25
+     ],
+     "page": 10,
+     "quote": "Level Field (Tri-Plane 3x) 0.46 13 7 5 0 0 25"
+    },
+    {
+     "label": "Fertilize: Soil Test",
+     "kind": "operation",
+     "section": "Pre- Plant",
+     "values": [
+      1
+     ],
+     "page": 10,
+     "quote": "Fertilize: Soil Test 0.00 0 0 0 0 1 1"
+    },
+    {
+     "label": "TOTAL PREPLANT COSTS",
+     "kind": "subtotal",
+     "section": "Pre- Plant",
+     "values": [
+      50
+     ],
+     "page": 10,
+     "quote": "TOTAL PREPLANT COSTS 0.88 25 14 11 0 1 50"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Plant Seed",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      61
+     ],
+     "page": 10,
+     "quote": "Plant Seed 0.16 4 2 2 53 0 61"
+    },
+    {
+     "label": "Fertilize (21-0-0-24)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      37
+     ],
+     "page": 10,
+     "quote": "Fertilize (21-0-0-24) 0.00 0 0 0 29 8 37"
+    },
+    {
+     "label": "Irrigate",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      23
+     ],
+     "page": 10,
+     "quote": "Irrigate 0.00 4 0 0 19 0 23"
+    },
+    {
+     "label": "Weed Control: Winter Herbicide",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      11
+     ],
+     "page": 10,
+     "quote": "Weed Control: Winter Herbicide 0.00 0 0 0 3 8 11"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      132
+     ],
+     "page": 10,
+     "quote": "TOTAL CULTURAL COSTS 0.16 9 2 2 104 16 132"
+    },
+    {
+     "label": "Interest on Operating Capital at 4.25%",
+     "kind": "interest",
+     "section": "Cultural",
+     "values": [
+      1
+     ],
+     "page": 10,
+     "quote": "Interest on Operating Capital at 4.25% 1"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Cultural",
+     "values": [
+      183
+     ],
+     "page": 10,
+     "quote": "TOTAL OPERATING COSTS/ACRE 1.04 34 16 12 104 17 183"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Liability Insurance (305 Acres)",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      3
+     ],
+     "page": 10,
+     "quote": "Liability Insurance (305 Acres) 3"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      20
+     ],
+     "page": 10,
+     "quote": "Office Expense 20"
+    },
+    {
+     "label": "GPS Fee",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      12
+     ],
+     "page": 10,
+     "quote": "GPS Fee 12"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      48
+     ],
+     "page": 10,
+     "quote": "Property Taxes 48"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      4
+     ],
+     "page": 10,
+     "quote": "Property Insurance 4"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      24
+     ],
+     "page": 10,
+     "quote": "Investment Repairs 24"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      111
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 111"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      294
+     ],
+     "page": 10,
+     "quote": "TOTAL CASH COSTS/ACRE 294"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null
+     ],
+     "page": 10,
+     "quote": "NON-CASH OVERHEAD: Per Producing Annual Cost"
+    },
+    {
+     "label": "Fuel Tanks & Pumps",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      4
+     ],
+     "page": 10,
+     "quote": "Fuel Tanks & Pumps 49 4 4"
+    },
+    {
+     "label": "Fuel Wagon",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 10,
+     "quote": "Fuel Wagon 29 2 2"
+    },
+    {
+     "label": "Hay Barns - 500T each",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      33
+     ],
+     "page": 10,
+     "quote": "Hay Barns - 500T each (3) 590 33 33"
+    },
+    {
+     "label": "Hay Land",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      150
+     ],
+     "page": 10,
+     "quote": "Hay Land 4,000 150 150"
+    },
+    {
+     "label": "Shop Building",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      8
+     ],
+     "page": 10,
+     "quote": "Shop Building 148 8 8"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      4
+     ],
+     "page": 10,
+     "quote": "Shop Tools 33 4 4"
+    },
+    {
+     "label": "Center Pivot w/out Corners",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      18
+     ],
+     "page": 10,
+     "quote": "Center Pivot w/out Corners (2) 333 18 18"
+    },
+    {
+     "label": "GPS Receivers",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      2
+     ],
+     "page": 10,
+     "quote": "GPS Receivers (3) 18 2 2"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      18
+     ],
+     "page": 10,
+     "quote": "Equipment 220 18 18"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      240
+     ],
+     "page": 10,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 5,420 240 240"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      533
+     ],
+     "page": 10,
+     "quote": "TOTAL COSTS/ACRE 533"
+    }
+   ],
+   "yieldRow": null
+  },
   "years": [
    {
     "year": 1,
-    "label": "1",
+    "label": "Total Cost",
     "totalCost": 294,
     "returns": null,
     "netCost": 294,
@@ -844,6 +1202,22 @@
    "page": 8,
    "quote": "The establishment cost is amortized over the remaining 4 years of the stand life."
   }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 294,
+   "page": 10,
+   "quote": "TOTAL CASH COSTS/ACRE 294",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 81,
+   "page": 12,
+   "quote": "Hay Stand Establishment Cost 294 81 81"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [

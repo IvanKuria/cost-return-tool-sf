@@ -2243,6 +2243,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 5237,
+   "page": 13,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,280 4,261 5,237 6,280 6,249",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 389,
+   "page": 14,
+   "quote": "Orchard Establishment Costs 5,237 389 389"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

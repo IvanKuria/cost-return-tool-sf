@@ -2382,6 +2382,22 @@
    "quote": "The cost is amortized over the remaining 20 years of orchard production to estimate the annual capital recovery cost."
   }
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 10109,
+   "page": 15,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,959 8,854 10,109 10,784 8,981",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 881,
+   "page": 17,
+   "quote": "Establishment Costs 10,109 881 881"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

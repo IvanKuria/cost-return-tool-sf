@@ -1801,6 +1801,22 @@
   },
   "method": null
  },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 11623,
+   "page": 14,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,932 10,321 11,623 11,693 10,107 6,511",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 742,
+   "page": 17,
+   "quote": "Grove Establishment (48 Acres) 11,623 742 742"
+  },
+  "reason": null
+ },
  "parse": {
   "fieldsFound": [
    "year",

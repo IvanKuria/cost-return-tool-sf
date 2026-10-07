@@ -80,8 +80,18 @@
   },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
+  "fuelPriceDiesel": {
+   "value": 3.1,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.60 (excludes excise tax) and $3.10 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 3.1,
+   "unit": "$/gal",
+   "page": 7,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.60 (excludes excise tax) and $3.10 per gallon, respectively."
+  },
   "yieldStatement": {
    "page": 6,
    "quote": "In this study, the average yield over the life of a mature orchard is 20 tons per acre."
@@ -1024,15 +1034,21 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
   "insuranceRatePct": null,
   "propertyTaxRatePct": null,
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
    "page": 7,
-   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in"
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 2 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
   }
  },
  "monthly": {
@@ -2138,7 +2154,11 @@
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,586 5,524 6,286 5,916"
    }
   ],
-  "accumulatedNetCost": null,
+  "accumulatedNetCost": {
+   "value": 6286,
+   "page": 9,
+   "quote": "For this study, the cost is $6,286 per acre or $251,429 for the 40 acres planted to processing peaches."
+  },
   "annualCharge": {
    "value": 595,
    "page": 13,
@@ -2146,8 +2166,8 @@
   },
   "productionYears": {
    "value": 15,
-   "page": 19,
-   "quote": "Establishment (Orchard) 251,429 15 23,816 0 1,257 1,257 26,330 (years of life of the establishment row in the investment table)"
+   "page": 9,
+   "quote": "Establishment cost is amortized over the remaining 15 years that the orchard is assumed to be in production."
   },
   "plantingLife": {
    "value": 18,
@@ -2169,7 +2189,26 @@
    "page": 19,
    "line": "Establishment (Orchard) 251,429 15 23,816 0 1,257 1,257 26,330"
   },
-  "method": null
+  "method": {
+   "page": 9,
+   "quote": "Establishment cost is amortized over the remaining 15 years that the orchard is assumed to be in production."
+  }
+ },
+ "establishmentSummary": {
+  "perennial": true,
+  "status": "table",
+  "total": {
+   "value": 6286,
+   "page": 12,
+   "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,586 5,524 6,286 5,916",
+   "source": "table"
+  },
+  "annualCharge": {
+   "value": 595,
+   "page": 13,
+   "quote": "Orchard Establishment 6,286 595 595"
+  },
+  "reason": null
  },
  "parse": {
   "fieldsFound": [
@@ -2192,18 +2231,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "capitalRecoveryFormula",
    "machineLaborFactor",
    "monthly",
    "establishment",
+   "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
    "interestRatePct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
    "insuranceRatePct",
-   "propertyTaxRatePct",
-   "establishmentAccumulated"
+   "propertyTaxRatePct"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
