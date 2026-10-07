@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
-import { PARSED_DIR } from './manifest';
+import { PARSED_DIR, TEXT_DIR } from './manifest';
 import type { ParsedStudy } from './types';
 
 const load = (): ParsedStudy[] => fs.readdirSync(PARSED_DIR).filter(f => f.endsWith('.json')).map(f => JSON.parse(fs.readFileSync(path.join(PARSED_DIR, f), 'utf8')));
@@ -150,6 +150,79 @@ describe('establishment table, row by row', () => {
     const warned = withTable.filter(s => s.parse.warnings.some(w => /establishment table/.test(w)));
     console.log(`establishment table: ${withTable.length} of ${est.length} studies with an establishment block have a row-by-row table; ${warned.length} carry reconciliation warnings; without table: ${est.filter(s => !s.establishment!.table).map(s => s.source.id).join(', ')}`);
     console.log(`with warnings: ${warned.map(s => s.source.id).join(', ')}`);
+  });
+});
+
+describe('gross returns block', () => {
+  const all = load();
+  const byId = (id: string) => all.find(x => x.source.id === id)!;
+  const textOf = (id: string): string[] | null => {
+    const f = path.join(TEXT_DIR, `${id}.txt`);
+    return fs.existsSync(f) ? fs.readFileSync(f, 'utf8').split('\n') : null;
+  };
+  const clean = (s: string) => s.replace(/\s+/g, ' ').trim();
+  const GROSS = /^\s*(?:TOTAL\s*)?GROSS\s*(?:RETURNS?|REVENUE|INCOME)\b/;
+  const OPS = /^\s*OPERATING\s*COSTS?\b/i;
+
+  // Studies whose text prints a GROSS RETURNS block before OPERATING COSTS but that have no per-acre gross to report.
+  const NO_PER_ACRE_RETURNS = new Set([
+    // hedgerows: the table is per 1,000 linear feet, not per acre
+    'blue-elderberry-20blueelderberryhedgerowwithouttillage',
+    'blue-elderberry-20blueelderberrymultispecieshedgerowwithtillage',
+    'blue-elderberry-20blueelderberryhighdensityhedgerowwithtillage',
+    // establishment-to-production table with one gross returns figure per year, no single per-acre value
+    'lychee-lycheescc02',
+  ]);
+
+  it('the spot-checked studies carry the printed gross returns', () => {
+    const g = (id: string) => byId(id).costsPerAcre.grossReturns?.value;
+    expect(g('grain-silage-smallgrainsilagevs2013')).toBe(1012);
+    expect(g('asparagus-asparagusvn2013')).toBe(5320);
+    expect(g('alfalfa-alfalfa-im-butte-2012')).toBe(1000);
+    expect(g('grapes-table-2018tablegrapessjvscarletroyalfinaldraft')).toBe(30400);
+    expect(g('beans-beanslglimavn10')).toBe(1495);
+    expect(g('lemons-lemons-vs-2015')).toBe(13905);
+    expect(g('onions-onionsir2011')).toBe(3024);
+    for (const id of ['grain-silage-smallgrainsilagevs2013', 'asparagus-asparagusvn2013', 'alfalfa-alfalfa-im-butte-2012']) expect(byId(id).assumptions.returns).toHaveLength(1);
+    expect(byId('grapes-table-2018tablegrapessjvscarletroyalfinaldraft').assumptions.pricePerUnit?.value).toBe(19);
+    expect(byId('grapes-table-2018tablegrapessjvscarletroyalfinaldraft').assumptions.yieldPerAcre?.value).toBe(1600);
+  });
+
+  it('every study that prints a per-acre GROSS RETURNS block has grossReturns', () => {
+    const missing: string[] = [];
+    let checked = 0;
+    for (const s of all) {
+      const t = textOf(s.source.id);
+      if (!t || NO_PER_ACRE_RETURNS.has(s.source.id)) continue;
+      const printed = t.some((l, i) => {
+        if (!GROSS.test(l)) return false;
+        const after = t.slice(i, i + 12);
+        if (!after.some(x => OPS.test(x))) return false;                    // the costs-and-returns table, not prose or a livestock budget
+        return t.slice(i, i + 4).some(x => /\d[\d,]*(?:\.\d+)?\s*$/.test(x)); // followed by numbers
+      });
+      if (!printed) continue;
+      checked++;
+      if (!s.costsPerAcre.grossReturns) missing.push(s.source.id);
+    }
+    console.log(`gross returns block printed in ${checked} studies`);
+    expect(missing).toEqual([]);
+  });
+
+  it('returns[] holds only lines of the returns block, never lines after OPERATING COSTS', () => {
+    const bad: string[] = [];
+    for (const s of all) {
+      if (!s.assumptions.returns.length) continue;
+      const t = textOf(s.source.id);
+      if (!t) continue;
+      for (const r of s.assumptions.returns) {
+        const i = t.findIndex(l => clean(l) === r.quote);
+        expect(i, `${s.source.id}: ${r.quote}`).toBeGreaterThanOrEqual(0);
+        let j = i;
+        while (j >= 0 && !GROSS.test(t[j]) && !OPS.test(t[j])) j--;
+        if (j < 0 || OPS.test(t[j])) bad.push(`${s.source.id}: ${r.quote}`);
+      }
+    }
+    expect(bad).toEqual([]);
   });
 });
 

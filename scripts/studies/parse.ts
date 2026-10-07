@@ -185,6 +185,63 @@ function parsePriceYear(lines: Line[], studyYear: number | null): StudySource['p
   return null;
 }
 
+// ---------------------------------------------------------------- gross returns block
+
+type ReturnRow = { name: string; quantity: number; unit: string; price: number; value: number };
+// "Ton", "Lb. N", "40 lb box", "*cartons", "crtn*", "bale equivalent"
+const UNIT = String.raw`(?:\d+ )?\*?[A-Za-z][A-Za-z./*-]*(?: [A-Za-z][A-Za-z./*-]*){0,2}`;
+// Headings are upper case in the tables; pdftotext sometimes drops the spaces ("GROSSRETURNS"). The rest of the line may hold a row.
+const GROSS_HEAD = /^\s*GROSS\s*(?:RETURNS?|REVENUE|INCOME)\b\s*[:-]?\s*(.*)$/;
+const GROSS_TOTAL = /^\s*TOTAL\s*(?:GROSS\s*)?(?:RETURNS?|REVENUE|INCOME)\b\s*:?\s*(.*)$/;
+// Anything that starts the cost part of the table: OPERATING COSTS, an overhead or net-returns line, another TOTAL, or a "Fertilizer:" style section heading.
+const RETURNS_END = /^\s*(?:OPERATING\s*COSTS?|CASH\s*OVERHEAD|NON-?CASH|NET\s*RETURNS?|TOTAL\b|[A-Za-z][A-Za-z0-9 ,&/()-]*:\s*$)/i;
+
+/** "Name  qty  unit  price  value"; the name is optional when the line is the heading itself. */
+function returnRow(text: string, defaultName: string | null): ReturnRow | null {
+  const m = text.match(new RegExp(String.raw`^\s*(?:(\S.*?)\s{2,})?(${NUM})\s+(${UNIT})\s+(${NUM})\s+(${NUM})\s*$`));
+  if (!m) return null;
+  const name = m[1] ? clean(m[1]) : defaultName;
+  if (!name || /^TOTAL\b/i.test(name)) return null;
+  const q = toNum(m[2]), p = toNum(m[4]), v = toNum(m[5]);
+  return q != null && p != null && v != null ? { name, quantity: q, unit: m[3], price: p, value: v } : null;
+}
+
+/**
+ * The GROSS RETURNS heading of the costs-and-returns table. Tables titled "COSTS & RETURNS" or printed with a
+ * "(continued)" heading count too; the last such table that has a heading wins. Null when the study has no such table;
+ * head null when it has one without a heading.
+ */
+function grossReturnsBlock(lines: Line[]): { head: { line: Line; rest: string } | null; end: number; perAcre: boolean } | null {
+  const tables = findTables(lines);
+  const cands = tables.filter(t => t.kind === 'returns' || (/\bRETURNS\b/i.test(t.title) && /\bCOSTS?\b/i.test(t.title) && t.kind !== 'ranging' && t.kind !== 'monthly'));
+  // Last resort, when no costs-and-returns table has the heading (missing or differently titled table headings, e.g.
+  // "Table 2. COST PER ACRE" or "MATERIAL AND INPUT COSTS"): the whole text, keeping only a heading that OPERATING COSTS follows.
+  const spans: { s: number; e: number; needOps: boolean }[] = cands.map(t => { const [s, e] = spanOf(lines, tables, t); return { s, e, needOps: false }; });
+  spans.unshift({ s: 0, e: lines.length, needOps: true });
+  const opsFollow = (i: number) => lines.slice(i + 1, i + 13).some(l => /^\s*OPERATING\s*COSTS?\b/i.test(l.text));
+  for (let c = spans.length - 1; c >= 0; c--) {
+    const { s, e, needOps } = spans[c];
+    let alone: { line: Line; rest: string } | null = null;
+    let inline: { line: Line; rest: string } | null = null;
+    for (let i = s; i < e; i++) {
+      const m = lines[i].text.match(GROSS_HEAD);
+      if (!m || (needOps && !opsFollow(i))) continue;
+      // A heading alone, or a heading with its one row; prose that starts with "Gross returns" is not upper case.
+      // A bare heading wins: some studies repeat "GROSS RETURNS  1,139  ctn  12  13,905" below the rows as the total.
+      if (!m[1].trim()) alone = { line: lines[i], rest: m[1] };
+      else if (returnRow(m[1], 'x') && !(alone && i - alone.line.index < 10)) inline = { line: lines[i], rest: m[1] };
+    }
+    const head = alone && (!inline || alone.line.index > inline.line.index) ? alone : inline;
+    if (head) {
+      // Column header above the heading: "Value or Cost/Acre", or "Cost/1,000LF" (hedgerows), "Cost/Head" (livestock).
+      const hdr = lines.slice(Math.max(s, head.line.index - 6), head.line.index).map(l => l.text).join(' ');
+      const perAcre = /acre/i.test(hdr) || !/Cost\s*\/\s*(?!acre)\S/i.test(hdr);
+      return { head, end: e, perAcre };
+    }
+  }
+  return cands.length ? { head: null, end: lines.length, perAcre: true } : null;
+}
+
 // ---------------------------------------------------------------- assumptions
 
 function parseAssumptions(lines: Line[], warn: (s: string) => void): Assumptions {
@@ -247,33 +304,41 @@ function parseAssumptions(lines: Line[], warn: (s: string) => void): Assumptions
   h = sentenceMatch(S, /gasoline.{0,60}?\$(\d+(?:\.\d+)?)\s*per gallon/i) || sentenceMatch(S, /\$(\d+(?:\.\d+)?)\s*per gallon for gasoline/i);
   if (h) a.fuelPriceGas = citeS(h, 1, '$/gal');
 
-  // returns from Table 2 GROSS RETURNS block
-  const tables = findTables(lines);
-  const rt = tables.filter(t => t.kind === 'returns').pop();
-  if (rt) {
-    const [t2, end] = spanOf(lines, tables, rt);
-    const grossStarts = findAll(lines, /^\s*GROSS RETURNS\s*:?\s*$/i, t2, end);
-    const gs = grossStarts[grossStarts.length - 1];
-    if (gs) {
-      const start = gs.line.index + 1;
-      for (let i = start; i < Math.min(end, start + 25); i++) {
+  // returns from the Table 2 GROSS RETURNS block
+  const gb = grossReturnsBlock(lines);
+  if (gb) {
+    if (gb.head && !gb.perAcre) warn(`Table 2 gross returns are not per acre (${clean(lines[gb.head.line.index - 1]?.text ?? '')}); left null`);
+    else if (gb.head) {
+      const pushRow = (l: Line, r: ReturnRow) => a.returns.push({ ...r, page: l.page, quote: clean(l.text) });
+      // "GROSS RETURNS   1,600  Box  19.00  30,400" or "GROSS RETURNS: Walnuts  5,000  Lb.  1.25  6,250" on one line
+      const inline = returnRow(gb.head.rest, 'Gross returns');
+      if (inline) pushRow(gb.head.line, inline);
+      let total: { line: Line; rest: string } | null = null;
+      // The block ends at its TOTAL line, or at OPERATING COSTS or any other heading (archived studies print no total).
+      for (let i = gb.head.line.index + 1; i < Math.min(gb.end, gb.head.line.index + 15); i++) {
         const t = lines[i].text;
-        const tot = t.match(new RegExp(String.raw`^\s*TOTAL GROSS RETURNS\s+(${NUM})\s+([A-Za-z./]+)\s+(?:${NUM}\s+)?(${NUM})\s*$`, 'i'))
-          || t.match(new RegExp(String.raw`^\s*TOTAL GROSS RETURNS\s+(${NUM})\s*$`, 'i'));
-        if (tot) {
-          const val = toNum(tot[3] ?? tot[1]);
-          if (tot[2]) {
-            const q = toNum(tot[1]);
-            if (q != null && a.returns.length <= 1) { a.yieldPerAcre = cite(lines[i], q, tot[2]); a.yieldUnit = tot[2]; }
-          }
-          if (val != null) (a as unknown as { _gross: Cited })._gross = cite(lines[i], val, '$/acre');
-          break;
+        if (!t.trim()) continue;
+        // "TOTAL GROSS RETURNS ...", a repeated "GROSS RETURNS  1,139  ctn  12  13,905", or a bare "Total  13056  lb  0.504  6574"
+        const tm = t.match(GROSS_TOTAL) || t.match(GROSS_HEAD) || t.match(/^\s*TOTAL\s*:?\s+(?=[-\d($])(.*)$/i);
+        if (tm) { total = { line: lines[i], rest: tm[1] }; break; }
+        if (RETURNS_END.test(t)) break;
+        const r = returnRow(t, null);
+        if (r) pushRow(lines[i], r);
+      }
+      if (total) {
+        const withQty = total.rest.match(new RegExp(String.raw`^(${NUM})\s+(${UNIT})\s+(?:${NUM}\s+)?(${NUM})\s*$`));
+        const nums = total.rest.match(new RegExp(NUM, 'g'));
+        const val = withQty ? toNum(withQty[3]) : nums ? toNum(nums[nums.length - 1]) : null;
+        if (withQty) {
+          const q = toNum(withQty[1]);
+          if (q != null && a.returns.length <= 1) { a.yieldPerAcre = cite(total.line, q, withQty[2]); a.yieldUnit = withQty[2]; }
         }
-        const row = t.match(new RegExp(String.raw`^\s*(\S.*?)\s{2,}(${NUM})\s+([A-Za-z./]+)\s+(${NUM})\s+(${NUM})\s*$`));
-        if (row && !/TOTAL/i.test(row[1])) {
-          const q = toNum(row[2]), p = toNum(row[4]), v = toNum(row[5]);
-          if (q != null && p != null && v != null) a.returns.push({ name: clean(row[1]), quantity: q, unit: row[3], price: p, value: v, page: lines[i].page, quote: clean(t) });
-        }
+        if (val != null) (a as unknown as { _gross: Cited })._gross = cite(total.line, val, '$/acre');
+      } else if (a.returns.length) {
+        // No total line: the gross is the one return line, or the sum of the return lines, each quoted.
+        const sum = a.returns.reduce((s, r) => s + r.value, 0);
+        const quote = a.returns.length === 1 ? a.returns[0].quote : `${a.returns.map(r => r.quote).join(' + ')} (sum of the ${a.returns.length} return lines)`;
+        (a as unknown as { _gross: Cited })._gross = { value: Math.round(sum * 100) / 100, unit: '$/acre', page: a.returns[0].page, quote };
       }
       if (a.returns.length === 1) {
         const r = a.returns[0];
@@ -411,7 +476,7 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
   const t2 = tableSpan(lines, 'returns');
   if (t2) {
     const [s2, e2] = t2;
-    if (!c.grossReturns) c.grossReturns = lastTotal(lines, /^\s*TOTAL GROSS RETURNS\b/i, s2, e2, '$/acre');
+    if (!c.grossReturns && grossReturnsBlock(lines)?.perAcre !== false) c.grossReturns = lastTotal(lines, /^\s*TOTAL GROSS RETURNS\b/i, s2, e2, '$/acre');
     c.netReturnsAboveOperating = lastTotal(lines, /^\s*NET RETURNS? ABOVE OPERATING COSTS?\b/i, s2, e2, '$/acre');
     c.netReturnsAboveTotal = lastTotal(lines, /^\s*NET RETURNS? ABOVE TOTAL COSTS?\b/i, s2, e2, '$/acre');
     if (!c.operatingTotal) c.operatingTotal = lastTotal(lines, /^\s*TOTAL OPERATING COSTS\s*\/\s*ACRE\b/i, s2, e2, '$/acre');
