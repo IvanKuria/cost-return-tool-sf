@@ -91,6 +91,12 @@
    "page": 9,
    "quote": "TOTAL OPERATING COSTS/ACRE 2 80 73 29 555 263 1,014"
   },
+  "operatingInterest": {
+   "value": 15,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "Interest on Operating Capital at 5.75% 15"
+  },
   "cashOverheadTotal": {
    "value": 60,
    "unit": "$/acre",
@@ -135,6 +141,24 @@
     "quote": "Liability Insurance 1"
    },
    {
+    "description": "Office Expense 50% DC",
+    "value": 25,
+    "page": 10,
+    "quote": "Office Expense 50% DC 25"
+   },
+   {
+    "description": "Miscellaneous Costs 50% DC",
+    "value": 10,
+    "page": 10,
+    "quote": "Miscellaneous Costs 50% DC 10"
+   },
+   {
+    "description": "Field Supervisor 1/6 Time",
+    "value": 21,
+    "page": 10,
+    "quote": "Field Supervisor 1/6 Time 21"
+   },
+   {
     "description": "Property Taxes",
     "value": 1,
     "page": 10,
@@ -158,295 +182,295 @@
     "name": "Stubble Disc & Roll",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Stubble Disc & Roll 0.11 2 12 4 0 0 18",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 12,
     "lubeRepairs": 4,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 18,
-    "page": 9,
-    "quote": "Stubble Disc & Roll 0.11 2 12 4 0 0 18"
+    "totalCost": 18
    },
    {
     "name": "Finish Disc & Roll 2X",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Finish Disc & Roll 2X 0.14 3 7 3 0 0 13",
     "timeHrsPerAcre": 0.14,
     "labor": 3,
     "fuel": 7,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 13,
-    "page": 9,
-    "quote": "Finish Disc & Roll 2X 0.14 3 7 3 0 0 13"
+    "totalCost": 13
    },
    {
     "name": "List 6 Row-30\" Beds",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "List 6 Row-30\" Beds 0.16 3 7 3 0 0 13",
     "timeHrsPerAcre": 0.16,
     "labor": 3,
     "fuel": 7,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 13,
-    "page": 9,
-    "quote": "List 6 Row-30\" Beds 0.16 3 7 3 0 0 13"
+    "totalCost": 13
    },
    {
     "name": "Bed Shape Pre-Plant Herbicide",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Bed Shape Pre-Plant Herbicide 0.21 4 8 4 41 0 57",
     "timeHrsPerAcre": 0.21,
     "labor": 4,
     "fuel": 8,
     "lubeRepairs": 4,
     "materials": 41,
     "customRent": 0,
-    "totalCost": 57,
-    "page": 9,
-    "quote": "Bed Shape Pre-Plant Herbicide 0.21 4 8 4 41 0 57"
+    "totalCost": 57
    },
    {
     "name": "Irrigation-Open Ditch 1X",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Irrigation-Open Ditch 1X 0.08 2 4 1 0 0 8",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 4,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 8,
-    "page": 9,
-    "quote": "Irrigation-Open Ditch 1X 0.08 2 4 1 0 0 8"
+    "totalCost": 8
    },
    {
     "name": "Irrigation-Pre-Plant",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Irrigation-Pre-Plant 0.10 9 1 0 33 0 43",
     "timeHrsPerAcre": 0.1,
     "labor": 9,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 33,
     "customRent": 0,
-    "totalCost": 43,
-    "page": 9,
-    "quote": "Irrigation-Pre-Plant 0.10 9 1 0 33 0 43"
+    "totalCost": 43
    },
    {
     "name": "Irrigation-Close Ditch 1X",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Irrigation-Close Ditch 1X 0.15 3 3 1 0 0 7",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 7,
-    "page": 9,
-    "quote": "Irrigation-Close Ditch 1X 0.15 3 3 1 0 0 7"
+    "totalCost": 7
    },
    {
     "name": "Plant Beans Starter Fertilizer",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Plant Beans Starter Fertilizer 0.13 3 5 3 96 0 106",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 5,
     "lubeRepairs": 3,
     "materials": 96,
     "customRent": 0,
-    "totalCost": 106,
-    "page": 9,
-    "quote": "Plant Beans Starter Fertilizer 0.13 3 5 3 96 0 106"
+    "totalCost": 106
    },
    {
     "name": "Cultivate Side-Dress Fertilizer",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Cultivate Side-Dress Fertilizer 0.13 3 5 2 68 0 77",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 5,
     "lubeRepairs": 2,
     "materials": 68,
     "customRent": 0,
-    "totalCost": 77,
-    "page": 9,
-    "quote": "Cultivate Side-Dress Fertilizer 0.13 3 5 2 68 0 77"
+    "totalCost": 77
    },
    {
     "name": "Irrigation-Open Ditch 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Irrigation-Open Ditch 2X 0.17 3 9 3 0 0 15",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 9,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 15,
-    "page": 9,
-    "quote": "Irrigation-Open Ditch 2X 0.17 3 9 3 0 0 15"
+    "totalCost": 15
    },
    {
     "name": "Irrigate 4X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Irrigate 4X 0.40 35 4 1 119 0 160",
     "timeHrsPerAcre": 0.4,
     "labor": 35,
     "fuel": 4,
     "lubeRepairs": 1,
     "materials": 119,
     "customRent": 0,
-    "totalCost": 160,
-    "page": 9,
-    "quote": "Irrigate 4X 0.40 35 4 1 119 0 160"
+    "totalCost": 160
    },
    {
     "name": "Irrigation-Close Ditch 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Irrigation-Close Ditch 2X 0.30 6 6 2 0 0 14",
     "timeHrsPerAcre": 0.3,
     "labor": 6,
     "fuel": 6,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 14,
-    "page": 9,
-    "quote": "Irrigation-Close Ditch 2X 0.30 6 6 2 0 0 14"
+    "totalCost": 14
    },
    {
     "name": "Insects-Lygus/Mites",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Insects-Lygus/Mites 0.08 2 2 1 18 12 33",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 18,
     "customRent": 12,
-    "totalCost": 33,
-    "page": 9,
-    "quote": "Insects-Lygus/Mites 0.08 2 2 1 18 12 33"
+    "totalCost": 33
    },
    {
     "name": "3/4 Ton Pickup Truck",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "3/4 Ton Pickup Truck 0.00 1 0 0 0 0 1",
     "timeHrsPerAcre": 0,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 9,
-    "quote": "3/4 Ton Pickup Truck 0.00 1 0 0 0 0 1"
+    "totalCost": 1
    },
    {
     "name": "Service Truck",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Service Truck 0.00 1 0 0 0 0 1",
     "timeHrsPerAcre": 0,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 9,
-    "quote": "Service Truck 0.00 1 0 0 0 0 1"
+    "totalCost": 1
    },
    {
     "name": "Cut/Rake/Windrow Beans",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Cut/Rake/Windrow Beans 0.00 0 0 0 0 35 35",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 35,
-    "totalCost": 35,
-    "page": 9,
-    "quote": "Cut/Rake/Windrow Beans 0.00 0 0 0 0 35 35"
+    "totalCost": 35
    },
    {
     "name": "Thresh/Harvest Beans",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Thresh/Harvest Beans 0.00 0 0 0 0 79 79",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 79,
-    "totalCost": 79,
-    "page": 9,
-    "quote": "Thresh/Harvest Beans 0.00 0 0 0 0 79 79"
+    "totalCost": 79
    },
    {
     "name": "Haul Beans",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Haul Beans 0.00 0 0 0 0 7 7",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 7,
-    "totalCost": 7,
-    "page": 9,
-    "quote": "Haul Beans 0.00 0 0 0 0 7 7"
+    "totalCost": 7
    },
    {
     "name": "Land Rent 16%",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Land Rent 16% 0.00 0 0 0 173 0 173",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 173,
     "customRent": 0,
-    "totalCost": 173,
-    "page": 9,
-    "quote": "Land Rent 16% 0.00 0 0 0 173 0 173"
+    "totalCost": 173
    },
    {
     "name": "Clean/Bag/Store Beans",
     "category": "postharvest",
     "section": "Post-Harvest",
+    "page": 9,
+    "quote": "Clean/Bag/Store Beans 0.00 0 0 0 0 131 131",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 131,
-    "totalCost": 131,
-    "page": 9,
-    "quote": "Clean/Bag/Store Beans 0.00 0 0 0 0 131 131"
+    "totalCost": 131
    },
    {
     "name": "Assessment",
     "category": "assessment",
     "section": "Assessment",
+    "page": 9,
+    "quote": "Assessment 0.00 0 0 0 8 0 8",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 8,
     "customRent": 0,
-    "totalCost": 8,
-    "page": 9,
-    "quote": "Assessment 0.00 0 0 0 8 0 8"
+    "totalCost": 8
    }
   ]
  },

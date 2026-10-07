@@ -104,6 +104,12 @@
    "page": 8,
    "quote": "TOTAL OPERATING COSTS/ACRE 1 19 23 9 360 66 489"
   },
+  "operatingInterest": {
+   "value": 12,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "Interest on operating capital @ 5.75% 12"
+  },
   "cashOverheadTotal": {
    "value": 152,
    "unit": "$/acre",
@@ -146,155 +152,155 @@
     "name": "Fertilize: Preplant (Manure)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Preplant (Manure) 0.00 0 0 0 5 40 45",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 5,
     "customRent": 40,
-    "totalCost": 45,
-    "page": 8,
-    "quote": "Fertilize: Preplant (Manure) 0.00 0 0 0 5 40 45"
+    "totalCost": 45
    },
    {
     "name": "Land Prep: Disk 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Disk 2X 0.22 4 11 5 0 0 20",
     "timeHrsPerAcre": 0.22,
     "labor": 4,
     "fuel": 11,
     "lubeRepairs": 5,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 20,
-    "page": 8,
-    "quote": "Land Prep: Disk 2X 0.22 4 11 5 0 0 20"
+    "totalCost": 20
    },
    {
     "name": "Land Prep: Pull Borders",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Pull Borders 0.04 1 1 0 0 0 2",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 2,
-    "page": 8,
-    "quote": "Land Prep: Pull Borders 0.04 1 1 0 0 0 2"
+    "totalCost": 2
    },
    {
     "name": "Fertilize: Preplant (Urea)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Preplant (Urea) 0.14 2 4 1 75 0 83",
     "timeHrsPerAcre": 0.14,
     "labor": 2,
     "fuel": 4,
     "lubeRepairs": 1,
     "materials": 75,
     "customRent": 0,
-    "totalCost": 83,
-    "page": 8,
-    "quote": "Fertilize: Preplant (Urea) 0.14 2 4 1 75 0 83"
+    "totalCost": 83
    },
    {
     "name": "Plant: Small Grains Mixture",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Plant: Small Grains Mixture 0.12 2 4 2 56 0 63",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 4,
     "lubeRepairs": 2,
     "materials": 56,
     "customRent": 0,
-    "totalCost": 63,
-    "page": 8,
-    "quote": "Plant: Small Grains Mixture 0.12 2 4 2 56 0 63"
+    "totalCost": 63
    },
    {
     "name": "Weed: Postemergent (Express, MCPA, Axial)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Weed: Postemergent (Express, MCPA, Axial) 0.00 0 0 0 54 8 62",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 54,
     "customRent": 8,
-    "totalCost": 62,
-    "page": 8,
-    "quote": "Weed: Postemergent (Express, MCPA, Axial) 0.00 0 0 0 54 8 62"
+    "totalCost": 62
    },
    {
     "name": "Irrigate: Water & Labor",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Irrigate: Water & Labor 0.60 7 0 0 133 0 140",
     "timeHrsPerAcre": 0.6,
     "labor": 7,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 133,
     "customRent": 0,
-    "totalCost": 140,
-    "page": 8,
-    "quote": "Irrigate: Water & Labor 0.60 7 0 0 133 0 140"
+    "totalCost": 140
    },
    {
     "name": "Fertilize: Top Dress (Urea)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Top Dress (Urea) 0.00 0 0 0 38 8 46",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 38,
     "customRent": 8,
-    "totalCost": 46,
-    "page": 8,
-    "quote": "Fertilize: Top Dress (Urea) 0.00 0 0 0 38 8 46"
+    "totalCost": 46
    },
    {
     "name": "Pest Control Adviser/Consultant",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Pest Control Adviser/Consultant 0.00 0 0 0 0 10 10",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 10,
-    "totalCost": 10,
-    "page": 8,
-    "quote": "Pest Control Adviser/Consultant 0.00 0 0 0 0 10 10"
+    "totalCost": 10
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Pickup Truck Use 0.24 4 2 1 0 0 7",
     "timeHrsPerAcre": 0.24,
     "labor": 4,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 7,
-    "page": 8,
-    "quote": "Pickup Truck Use 0.24 4 2 1 0 0 7"
+    "totalCost": 7
    },
    {
     "name": "Harvest: Paid by Buyer",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Harvest: Paid by Buyer 0.00 0 0 0 0 0",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 0,
-    "page": 8,
-    "quote": "Harvest: Paid by Buyer 0.00 0 0 0 0 0"
+    "totalCost": 0
    }
   ]
  },

@@ -114,6 +114,12 @@
    "page": 8,
    "quote": "TOTAL OPERATING COSTS/ACRE 20 29 456 244 756"
   },
+  "operatingInterest": {
+   "value": 8,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "Interest on operating capital @ 5.75% 8"
+  },
   "cashOverheadTotal": {
    "value": 244,
    "unit": "$/acre",
@@ -193,155 +199,155 @@
     "name": "Land Prep: Disc Stubble",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Disc Stubble 0.17 3 11 0 0 14",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 11,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 14,
-    "page": 8,
-    "quote": "Land Prep: Disc Stubble 0.17 3 11 0 0 14"
+    "totalCost": 14
    },
    {
     "name": "Land Prep: Pull Borders",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Pull Borders 0.04 1 2 0 0 2",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 2,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 2,
-    "page": 8,
-    "quote": "Land Prep: Pull Borders 0.04 1 2 0 0 2"
+    "totalCost": 2
    },
    {
     "name": "Irrigate: Preirrigate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Irrigate: Preirrigate 0.10 1 0 37 0 38",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 37,
     "customRent": 0,
-    "totalCost": 38,
-    "page": 8,
-    "quote": "Irrigate: Preirrigate 0.10 1 0 37 0 38"
+    "totalCost": 38
    },
    {
     "name": "Fertilize: Inject (80-0-0)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Inject (80-0-0) 0.00 0 0 45 14 59",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 45,
     "customRent": 14,
-    "totalCost": 59,
-    "page": 8,
-    "quote": "Fertilize: Inject (80-0-0) 0.00 0 0 45 14 59"
+    "totalCost": 59
    },
    {
     "name": "Land Prep: Finish Disc",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Finish Disc 0.13 2 8 0 0 10",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 8,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 8,
-    "quote": "Land Prep: Finish Disc 0.13 2 8 0 0 10"
+    "totalCost": 10
    },
    {
     "name": "Plant: Seed",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Plant: Seed 0.00 0 0 225 19 244",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 225,
     "customRent": 19,
-    "totalCost": 244,
-    "page": 8,
-    "quote": "Plant: Seed 0.00 0 0 225 19 244"
+    "totalCost": 244
    },
    {
     "name": "Weed: Postplant (Clarity, Prowl)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Weed: Postplant (Clarity, Prowl) 0.13 2 3 40 0 45",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 40,
     "customRent": 0,
-    "totalCost": 45,
-    "page": 8,
-    "quote": "Weed: Postplant (Clarity, Prowl) 0.13 2 3 40 0 45"
+    "totalCost": 45
    },
    {
     "name": "Irrigate 4X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Irrigate 4X 0.40 4 0 92 0 96",
     "timeHrsPerAcre": 0.4,
     "labor": 4,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 92,
     "customRent": 0,
-    "totalCost": 96,
-    "page": 8,
-    "quote": "Irrigate 4X 0.40 4 0 92 0 96"
+    "totalCost": 96
    },
    {
     "name": "Fertilize: Water Run (80-0-0)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Water Run (80-0-0) 0.00 0 0 18 0 18",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 18,
     "customRent": 0,
-    "totalCost": 18,
-    "page": 8,
-    "quote": "Fertilize: Water Run (80-0-0) 0.00 0 0 18 0 18"
+    "totalCost": 18
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Pickup Truck Use 0.38 6 4 0 0 11",
     "timeHrsPerAcre": 0.38,
     "labor": 6,
     "fuel": 4,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 11,
-    "page": 8,
-    "quote": "Pickup Truck Use 0.38 6 4 0 0 11"
+    "totalCost": 11
    },
    {
     "name": "Harvest - Swath, Rake, Bale, Roadside 2X",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Harvest - Swath, Rake, Bale, Roadside 2X 0.00 0 0 0 211 211",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 211,
-    "totalCost": 211,
-    "page": 8,
-    "quote": "Harvest - Swath, Rake, Bale, Roadside 2X 0.00 0 0 0 211 211"
+    "totalCost": 211
    }
   ]
  },

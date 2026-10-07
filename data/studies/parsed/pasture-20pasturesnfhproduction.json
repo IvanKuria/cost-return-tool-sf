@@ -67,7 +67,12 @@
   "laborMachineRate": null,
   "laborNonMachineRate": null,
   "laborOverheadPct": null,
-  "landRentPerAcre": null,
+  "landRentPerAcre": {
+   "value": 200,
+   "unit": "$/acre/yr",
+   "page": 10,
+   "quote": "Land Lease 40 Ac 200"
+  },
   "cropsPerAcrePerYear": null,
   "fuelPriceDiesel": null,
   "fuelPriceGas": null,
@@ -88,6 +93,7 @@
    "page": 10,
    "quote": "TOTAL OPERATING COSTS/ACRE 0 0 0 0 294 345 639"
   },
+  "operatingInterest": null,
   "cashOverheadTotal": {
    "value": 241,
    "unit": "$/acre",
@@ -131,6 +137,12 @@
     "value": 16,
     "page": 10,
     "quote": "Liability Insurance 16"
+   },
+   {
+    "description": "Land Lease 40 Ac",
+    "value": 200,
+    "page": 10,
+    "quote": "Land Lease 40 Ac 200"
    }
   ],
   "operations": [
@@ -138,99 +150,99 @@
     "name": "Weeds: Spot Spray 2x",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Weeds: Spot Spray 2x 0.00 0 0 0 7 25 32",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 7,
     "customRent": 25,
-    "totalCost": 32,
-    "page": 10,
-    "quote": "Weeds: Spot Spray 2x 0.00 0 0 0 7 25 32"
+    "totalCost": 32
    },
    {
     "name": "Fertilizer: 21-0-0-24% Sulfur (50%)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Fertilizer: 21-0-0-24% Sulfur (50%) 0.00 0 0 0 68 6 74",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 68,
     "customRent": 6,
-    "totalCost": 74,
-    "page": 10,
-    "quote": "Fertilizer: 21-0-0-24% Sulfur (50%) 0.00 0 0 0 68 6 74"
+    "totalCost": 74
    },
    {
     "name": "Irrigate: Flood 7x",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Irrigate: Flood 7x 0.00 0 0 0 217 46 264",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 217,
     "customRent": 46,
-    "totalCost": 264,
-    "page": 10,
-    "quote": "Irrigate: Flood 7x 0.00 0 0 0 217 46 264"
+    "totalCost": 264
    },
    {
     "name": "Fencing: Setup/Moving",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Fencing: Setup/Moving 0.00 0 0 0 0 22 22",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 22,
-    "totalCost": 22,
-    "page": 10,
-    "quote": "Fencing: Setup/Moving 0.00 0 0 0 0 22 22"
+    "totalCost": 22
    },
    {
     "name": "Weeds: Rotary Wiper",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Weeds: Rotary Wiper 0.00 0 0 0 2 15 17",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 2,
     "customRent": 15,
-    "totalCost": 17,
-    "page": 10,
-    "quote": "Weeds: Rotary Wiper 0.00 0 0 0 2 15 17"
+    "totalCost": 17
    },
    {
     "name": "Harvest: Hay 40 Acres",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Harvest: Hay 40 Acres 0.00 0 0 0 0 120 120",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 120,
-    "totalCost": 120,
-    "page": 10,
-    "quote": "Harvest: Hay 40 Acres 0.00 0 0 0 0 120 120"
+    "totalCost": 120
    },
    {
     "name": "Graze: 40 Acres 5x",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Graze: 40 Acres 5x 0.00 0 0 0 0 110 110",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 110,
-    "totalCost": 110,
-    "page": 10,
-    "quote": "Graze: 40 Acres 5x 0.00 0 0 0 0 110 110"
+    "totalCost": 110
    }
   ]
  },
@@ -363,6 +375,7 @@
    "region",
    "counties",
    "interestRatePct",
+   "landRentPerAcre",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -381,7 +394,6 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
-   "landRentPerAcre",
    "nonCashOverheadTotal",
    "equipment",
    "investments",

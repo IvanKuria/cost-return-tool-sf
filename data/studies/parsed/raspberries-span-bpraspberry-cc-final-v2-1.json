@@ -36,11 +36,22 @@
   "priceStatement": null
  },
  "costsPerAcre": {
-  "title": null,
+  "title": "COSTOS Y RETORNOS POR ACRE PARA PRODUCIR Y COSECHAR FRAMBUESAS: PRODUCCIÓN AÑO",
   "operatingTotal": null,
-  "cashOverheadTotal": null,
+  "operatingInterest": null,
+  "cashOverheadTotal": {
+   "value": 3415,
+   "unit": "$/acre",
+   "page": 32,
+   "quote": "COSTOS TOTALES GENERALES EN EFECTIVO / ACRE 3,415"
+  },
   "nonCashOverheadTotal": null,
-  "totalCost": null,
+  "totalCost": {
+   "value": 66887,
+   "unit": "$/acre",
+   "page": 32,
+   "quote": "COSTOS TOTALES / ACRE 66,887"
+  },
   "grossReturns": null,
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
@@ -555,6 +566,8 @@
    "year",
    "region",
    "counties",
+   "cashOverheadTotal",
+   "totalCost",
    "machineLaborFactor",
    "monthly",
    "establishment"
@@ -569,9 +582,7 @@
    "landRentPerAcre",
    "acresFarmed",
    "operatingTotal",
-   "cashOverheadTotal",
    "nonCashOverheadTotal",
-   "totalCost",
    "grossReturns",
    "operations",
    "equipment",
@@ -586,7 +597,8 @@
   ],
   "warnings": [
    "Spanish-language study; prose regexes are English only",
-   "no costs-per-acre table found",
+   "Table 2 found but no GROSS RETURNS block",
+   "several costs-per-acre tables (establishment and production); using the production one",
    "no whole-farm equipment table",
    "used an earlier monthly table; the last one did not reconcile"
   ]

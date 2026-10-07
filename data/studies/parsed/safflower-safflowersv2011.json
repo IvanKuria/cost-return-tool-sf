@@ -83,6 +83,12 @@
    "page": 9,
    "quote": "TOTAL OPERATING COSTS/ACRE 41 56 102 3 206"
   },
+  "operatingInterest": {
+   "value": 5,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "Interest on operating capital @ 5.75% 5"
+  },
   "cashOverheadTotal": {
    "value": 117,
    "unit": "$/acre",
@@ -139,6 +145,12 @@
     "quote": "Field Sanitation 1"
    },
    {
+    "description": "Share Rent @ 20%",
+    "value": 73,
+    "page": 9,
+    "quote": "Share Rent @ 20% 73"
+   },
+   {
     "description": "Supervisor Salary",
     "value": 25,
     "page": 9,
@@ -168,225 +180,225 @@
     "name": "Land Prep: Stubble Disc",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Land Prep: Stubble Disc 0.15 3 7 0 0 10",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 7,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 9,
-    "quote": "Land Prep: Stubble Disc 0.15 3 7 0 0 10"
+    "totalCost": 10
    },
    {
     "name": "Land Prep: Finish Disc",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Land Prep: Finish Disc 0.13 2 6 0 0 8",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 6,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 8,
-    "page": 9,
-    "quote": "Land Prep: Finish Disc 0.13 2 6 0 0 8"
+    "totalCost": 8
    },
    {
     "name": "Land Prep: List Beds",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Land Prep: List Beds 0.06 1 3 0 0 4",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 4,
-    "page": 9,
-    "quote": "Land Prep: List Beds 0.06 1 3 0 0 4"
+    "totalCost": 4
    },
    {
     "name": "Weed: (Roundup)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Weed: (Roundup) 0.07 1 0 10 0 12",
     "timeHrsPerAcre": 0.07,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 10,
     "customRent": 0,
-    "totalCost": 12,
-    "page": 9,
-    "quote": "Weed: (Roundup) 0.07 1 0 10 0 12"
+    "totalCost": 12
    },
    {
     "name": "Fertilize: Preplant N (20-0-0)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Fertilize: Preplant N (20-0-0) 0.15 3 3 58 3 66",
     "timeHrsPerAcre": 0.15,
     "labor": 3,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 58,
     "customRent": 3,
-    "totalCost": 66,
-    "page": 9,
-    "quote": "Fertilize: Preplant N (20-0-0) 0.15 3 3 58 3 66"
+    "totalCost": 66
    },
    {
     "name": "Weed: (Treflan)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Weed: (Treflan) 0.14 3 3 9 0 15",
     "timeHrsPerAcre": 0.14,
     "labor": 3,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 9,
     "customRent": 0,
-    "totalCost": 15,
-    "page": 9,
-    "quote": "Weed: (Treflan) 0.14 3 3 9 0 15"
+    "totalCost": 15
    },
    {
     "name": "Plant: (seed)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Plant: (seed) 0.12 2 3 13 0 19",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 13,
     "customRent": 0,
-    "totalCost": 19,
-    "page": 9,
-    "quote": "Plant: (seed) 0.12 2 3 13 0 19"
+    "totalCost": 19
    },
    {
     "name": "Irrigate: Make Drain",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Irrigate: Make Drain 0.01 0 0 0 0 1",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 9,
-    "quote": "Irrigate: Make Drain 0.01 0 0 0 0 1"
+    "totalCost": 1
    },
    {
     "name": "Irrigate: (water & labor)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Irrigate: (water & labor) 0.30 4 0 11 0 14",
     "timeHrsPerAcre": 0.3,
     "labor": 4,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 11,
     "customRent": 0,
-    "totalCost": 14,
-    "page": 9,
-    "quote": "Irrigate: (water & labor) 0.30 4 0 11 0 14"
+    "totalCost": 14
    },
    {
     "name": "Irrigate: Close Drain",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Irrigate: Close Drain 0.01 0 0 0 0 0",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 0,
-    "page": 9,
-    "quote": "Irrigate: Close Drain 0.01 0 0 0 0 0"
+    "totalCost": 0
    },
    {
     "name": "Weed: Cultivate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Weed: Cultivate 0.14 3 3 0 0 5",
     "timeHrsPerAcre": 0.14,
     "labor": 3,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 5,
-    "page": 9,
-    "quote": "Weed: Cultivate 0.14 3 3 0 0 5"
+    "totalCost": 5
    },
    {
     "name": "Land Prep: Chop (mow) Stubble",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Land Prep: Chop (mow) Stubble 0.14 3 3 0 0 6",
     "timeHrsPerAcre": 0.14,
     "labor": 3,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 6,
-    "page": 9,
-    "quote": "Land Prep: Chop (mow) Stubble 0.14 3 3 0 0 6"
+    "totalCost": 6
    },
    {
     "name": "Pickup Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Pickup Use 0.10 4 2 0 0 6",
     "timeHrsPerAcre": 0.1,
     "labor": 4,
     "fuel": 2,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 6,
-    "page": 9,
-    "quote": "Pickup Use 0.10 4 2 0 0 6"
+    "totalCost": 6
    },
    {
     "name": "ATV Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "ATV Use 0.10 2 0 0 0 2",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 2,
-    "page": 9,
-    "quote": "ATV Use 0.10 2 0 0 0 2"
+    "totalCost": 2
    },
    {
     "name": "Harvest",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Harvest 0.20 7 18 0 0 26",
     "timeHrsPerAcre": 0.2,
     "labor": 7,
     "fuel": 18,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 26,
-    "page": 9,
-    "quote": "Harvest 0.20 7 18 0 0 26"
+    "totalCost": 26
    },
    {
     "name": "Bank Out Grain",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Bank Out Grain 0.20 4 4 0 0 8",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 4,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 8,
-    "page": 9,
-    "quote": "Bank Out Grain 0.20 4 4 0 0 8"
+    "totalCost": 8
    }
   ]
  },

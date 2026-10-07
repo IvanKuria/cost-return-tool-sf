@@ -66,6 +66,12 @@
    "page": 20,
    "quote": "TOTAL OPERATING COSTS/ACRE 66.5 2378.8 128.22 70.96 766.85 425.82 3860"
   },
+  "operatingInterest": {
+   "value": 89.8,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "Interest on Operating Capital @ 5.75% 89.8"
+  },
   "cashOverheadTotal": {
    "value": 1305,
    "unit": "$/acre",
@@ -157,253 +163,253 @@
     "name": "Erosion control",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Erosion control 3 42 0 0 0 0 42",
     "timeHrsPerAcre": 3,
     "labor": 42,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 42,
-    "page": 20,
-    "quote": "Erosion control 3 42 0 0 0 0 42"
+    "totalCost": 42
    },
    {
     "name": "Weed control - glyphosate herbicide (3x/yr.)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Weed control - glyphosate herbicide (3x/yr.) 4 56 0 0 0.88 0 56.88",
     "timeHrsPerAcre": 4,
     "labor": 56,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0.88,
     "customRent": 0,
-    "totalCost": 56.88,
-    "page": 20,
-    "quote": "Weed control - glyphosate herbicide (3x/yr.) 4 56 0 0 0.88 0 56.88"
+    "totalCost": 56.88
    },
    {
     "name": "Weed control - weed whipping (2x/yr.)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Weed control - weed whipping (2x/yr.) 1 14 0 0 0 0 14",
     "timeHrsPerAcre": 1,
     "labor": 14,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 14,
-    "page": 20,
-    "quote": "Weed control - weed whipping (2x/yr.) 1 14 0 0 0 0 14"
+    "totalCost": 14
    },
    {
     "name": "Rodent control for squirrels (12x/yr.)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Rodent control for squirrels (12x/yr.) 1 14 0 0 9.15 0 23.15",
     "timeHrsPerAcre": 1,
     "labor": 14,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 9.15,
     "customRent": 0,
-    "totalCost": 23.15,
-    "page": 20,
-    "quote": "Rodent control for squirrels (12x/yr.) 1 14 0 0 9.15 0 23.15"
+    "totalCost": 23.15
    },
    {
     "name": "Fertilizer - potassium thiosulfate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Fertilizer - potassium thiosulfate 0 0 0 0 32 0 32",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 32,
     "customRent": 0,
-    "totalCost": 32,
-    "page": 20,
-    "quote": "Fertilizer - potassium thiosulfate 0 0 0 0 32 0 32"
+    "totalCost": 32
    },
    {
     "name": "Fertilizer - UN32% (8x/yr.)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Fertilizer - UN32% (8x/yr.) 0 0 0 0 76.72 0 76.72",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 76.72,
     "customRent": 0,
-    "totalCost": 76.72,
-    "page": 20,
-    "quote": "Fertilizer - UN32% (8x/yr.) 0 0 0 0 76.72 0 76.72"
+    "totalCost": 76.72
    },
    {
     "name": "Fertilizer - zinc sulfate 12%",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Fertilizer - zinc sulfate 12% 0 0 0 0 23 0 23",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 23,
     "customRent": 0,
-    "totalCost": 23,
-    "page": 20,
-    "quote": "Fertilizer - zinc sulfate 12% 0 0 0 0 23 0 23"
+    "totalCost": 23
    },
    {
     "name": "Root rot treatment - potassium phosphite (2x/yr.)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Root rot treatment - potassium phosphite (2x/yr.) 0 0 0 0 60 0 60",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 60,
     "customRent": 0,
-    "totalCost": 60,
-    "page": 20,
-    "quote": "Root rot treatment - potassium phosphite (2x/yr.) 0 0 0 0 60 0 60"
+    "totalCost": 60
    },
    {
     "name": "Irrigate & walk lines (30 irrigations)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Irrigate & walk lines (30 irrigations) 5 70 0 0 500 0 570",
     "timeHrsPerAcre": 5,
     "labor": 70,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 500,
     "customRent": 0,
-    "totalCost": 570,
-    "page": 20,
-    "quote": "Irrigate & walk lines (30 irrigations) 5 70 0 0 500 0 570"
+    "totalCost": 570
    },
    {
     "name": "Pollination",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Pollination 0 0 0 0 0 120 120",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 120,
-    "totalCost": 120,
-    "page": 20,
-    "quote": "Pollination 0 0 0 0 0 120 120"
+    "totalCost": 120
    },
    {
-    "name": "0",
+    "name": "Pest control - abamectin (Agri-Mek), NR415 oil & helicopter rental",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Pest control - abamectin (Agri-Mek), NR415 oil & helicopter 0 0 0 0 25 87 112 rental",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
-    "lubeRepairs": null,
+    "lubeRepairs": 0,
     "materials": 25,
     "customRent": 87,
-    "totalCost": 112,
-    "page": 20,
-    "quote": "0 0 0 0 25 87 112"
+    "totalCost": 112
    },
    {
     "name": "Pest control - NR415 oil & helicopter rental",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Pest control - NR415 oil & helicopter rental 0 0 0 0 40 87 127",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 40,
     "customRent": 87,
-    "totalCost": 127,
-    "page": 20,
-    "quote": "Pest control - NR415 oil & helicopter rental 0 0 0 0 40 87 127"
+    "totalCost": 127
    },
    {
     "name": "Orchard pruning",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Orchard pruning 30 420 0 0 0 0 420",
     "timeHrsPerAcre": 30,
     "labor": 420,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 420,
-    "page": 20,
-    "quote": "Orchard pruning 30 420 0 0 0 0 420"
+    "totalCost": 420
    },
    {
     "name": "Misc. pickup truck (labor, fuel, lube & repairs)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Misc. pickup truck (labor, fuel, lube & repairs) 15 324 86.63 55.02 0 0 466",
     "timeHrsPerAcre": 15,
     "labor": 324,
     "fuel": 86.63,
     "lubeRepairs": 55.02,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 466,
-    "page": 20,
-    "quote": "Misc. pickup truck (labor, fuel, lube & repairs) 15 324 86.63 55.02 0 0 466"
+    "totalCost": 466
    },
    {
     "name": "Misc. ATV (labor, fuel, lube & repairs)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 20,
+    "quote": "Misc. ATV (labor, fuel, lube & repairs) 7.5 162 41.59 15.94 0 0 220",
     "timeHrsPerAcre": 7.5,
     "labor": 162,
     "fuel": 41.59,
     "lubeRepairs": 15.94,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 220,
-    "page": 20,
-    "quote": "Misc. ATV (labor, fuel, lube & repairs) 7.5 162 41.59 15.94 0 0 220"
+    "totalCost": 220
    },
    {
     "name": "Picking - $0.11/lb.",
     "category": "harvest",
     "section": "Harvest and Marketing Costs",
+    "page": 20,
+    "quote": "Picking - $0.11/lb. 0 1232 0 0 0 0 1,232",
     "timeHrsPerAcre": 0,
     "labor": 1232,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1232,
-    "page": 20,
-    "quote": "Picking - $0.11/lb. 0 1232 0 0 0 0 1,232"
+    "totalCost": 1232
    },
    {
     "name": "Hauling - $0.004/lb.",
     "category": "harvest",
     "section": "Harvest and Marketing Costs",
+    "page": 20,
+    "quote": "Hauling - $0.004/lb. 0 44.8 0 0 0 0 44.8",
     "timeHrsPerAcre": 0,
     "labor": 44.8,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 44.8,
-    "page": 20,
-    "quote": "Hauling - $0.004/lb. 0 44.8 0 0 0 0 44.8"
+    "totalCost": 44.8
    },
    {
     "name": "CAC assessment fee - $0.011 x production value",
     "category": "harvest",
     "section": "Harvest and Marketing Costs",
+    "page": 20,
+    "quote": "CAC assessment fee - $0.011 x production value 0 0 0 0 0 131.82 131.82",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 131.82,
-    "totalCost": 131.82,
-    "page": 20,
-    "quote": "CAC assessment fee - $0.011 x production value 0 0 0 0 0 131.82 131.82"
+    "totalCost": 131.82
    }
   ]
  },
@@ -1789,7 +1795,6 @@
   "warnings": [
    "Table 2 found but no GROSS RETURNS block",
    "several costs-per-acre tables (establishment and production); using the production one",
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
    "2 establishment tables, one per region; using the last (Costs per Acre to Establish an Avocado Orchard in San Luis Obispo County using Conventional Production)"
   ]
  }

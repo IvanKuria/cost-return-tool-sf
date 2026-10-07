@@ -106,13 +106,24 @@
    "page": 12,
    "quote": "TOTAL OPERATING COSTS/ACRE 331 117 620 703 1,797"
   },
+  "operatingInterest": {
+   "value": 26,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "Interest on operating capital @ 5.75% 26"
+  },
   "cashOverheadTotal": {
    "value": 439,
    "unit": "$/acre",
    "page": 12,
    "quote": "TOTAL CASH OVERHEAD COSTS 439"
   },
-  "nonCashOverheadTotal": null,
+  "nonCashOverheadTotal": {
+   "value": 1022,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL CAPITAL RECOVERY COSTS 15,698 1,022 1,022"
+  },
   "totalCost": {
    "value": 3259,
    "unit": "$/acre",
@@ -170,197 +181,225 @@
     "name": "Irrigate: (water & labor)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Irrigate: (water & labor) 0.80 9 0 228 0 237",
     "timeHrsPerAcre": 0.8,
     "labor": 9,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 228,
     "customRent": 0,
-    "totalCost": 237,
-    "page": 12,
-    "quote": "Irrigate: (water & labor) 0.80 9 0 228 0 237"
+    "totalCost": 237
    },
    {
     "name": "Fertilize: Nitrogen (UN32)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Fertilize: Nitrogen (UN32) 0.80 9 0 74 0 83",
     "timeHrsPerAcre": 0.8,
     "labor": 9,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 74,
     "customRent": 0,
-    "totalCost": 83,
-    "page": 12,
-    "quote": "Fertilize: Nitrogen (UN32) 0.80 9 0 74 0 83"
+    "totalCost": 83
    },
    {
     "name": "Disease: Olive & Peacock (Kocide)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Disease: Olive & Peacock (Kocide) 0.85 15 14 36 0 65",
     "timeHrsPerAcre": 0.85,
     "labor": 15,
     "fuel": 14,
     "lubeRepairs": null,
     "materials": 36,
     "customRent": 0,
-    "totalCost": 65,
-    "page": 12,
-    "quote": "Disease: Olive & Peacock (Kocide) 0.85 15 14 36 0 65"
+    "totalCost": 65
    },
    {
     "name": "Prune: Hand (spring)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Prune: Hand (spring) 16.00 174 0 0 0 174",
     "timeHrsPerAcre": 16,
     "labor": 174,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 174,
-    "page": 12,
-    "quote": "Prune: Hand (spring) 16.00 174 0 0 0 174"
+    "totalCost": 174
    },
    {
     "name": "Prune: Shred Prunings (custom)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Prune: Shred Prunings (custom) 0.00 0 0 0 30 30",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 30,
-    "totalCost": 30,
-    "page": 12,
-    "quote": "Prune: Shred Prunings (custom) 0.00 0 0 0 30 30"
+    "totalCost": 30
    },
    {
     "name": "Insect: (McPhail Traps & Yeast) 20X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Insect: (McPhail Traps & Yeast) 20X 0.95 10 0 15 0 26",
     "timeHrsPerAcre": 0.95,
     "labor": 10,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 15,
     "customRent": 0,
-    "totalCost": 26,
-    "page": 12,
-    "quote": "Insect: (McPhail Traps & Yeast) 20X 0.95 10 0 15 0 26"
+    "totalCost": 26
    },
    {
     "name": "Insect: Olive Fruit Fly (GF120) 20X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Insect: Olive Fruit Fly (GF120) 20X 4.23 72 71 134 0 278",
     "timeHrsPerAcre": 4.23,
     "labor": 72,
     "fuel": 71,
     "lubeRepairs": null,
     "materials": 134,
     "customRent": 0,
-    "totalCost": 278,
-    "page": 12,
-    "quote": "Insect: Olive Fruit Fly (GF120) 20X 4.23 72 71 134 0 278"
+    "totalCost": 278
    },
    {
     "name": "Thin: Thin Fruit Spray (Liqui-Stik) (alt. yrs.)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Thin: Thin Fruit Spray (Liqui-Stik) (alt. yrs.) 0.21 4 4 41 0 49",
     "timeHrsPerAcre": 0.21,
     "labor": 4,
     "fuel": 4,
     "lubeRepairs": null,
     "materials": 41,
     "customRent": 0,
-    "totalCost": 49,
-    "page": 12,
-    "quote": "Thin: Thin Fruit Spray (Liqui-Stik) (alt. yrs.) 0.21 4 4 41 0 49"
+    "totalCost": 49
    },
    {
     "name": "Weed: Strip or Spot Spray (Roundup) 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Weed: Strip or Spot Spray (Roundup) 2X 0.43 7 6 15 0 28",
     "timeHrsPerAcre": 0.43,
     "labor": 7,
     "fuel": 6,
     "lubeRepairs": null,
     "materials": 15,
     "customRent": 0,
-    "totalCost": 28,
-    "page": 12,
-    "quote": "Weed: Strip or Spot Spray (Roundup) 2X 0.43 7 6 15 0 28"
+    "totalCost": 28
    },
    {
     "name": "Weed: Mow Middles 4X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Weed: Mow Middles 4X 0.79 14 14 0 0 28",
     "timeHrsPerAcre": 0.79,
     "labor": 14,
     "fuel": 14,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 28,
-    "page": 12,
-    "quote": "Weed: Mow Middles 4X 0.79 14 14 0 0 28"
+    "totalCost": 28
    },
    {
     "name": "Weed: Dormant Strip (Goal, Roundup, Surflan)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Weed: Dormant Strip (Goal, Roundup, Surflan) 0.22 4 3 76 0 83",
     "timeHrsPerAcre": 0.22,
     "labor": 4,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 76,
     "customRent": 0,
-    "totalCost": 83,
-    "page": 12,
-    "quote": "Weed: Dormant Strip (Goal, Roundup, Surflan) 0.22 4 3 76 0 83"
+    "totalCost": 83
    },
    {
     "name": "PCA",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "PCA 0.00 0 0 0 25 25",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 25,
-    "totalCost": 25,
-    "page": 12,
-    "quote": "PCA 0.00 0 0 0 25 25"
+    "totalCost": 25
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Pickup Truck Use 0.41 7 3 0 0 10",
     "timeHrsPerAcre": 0.41,
     "labor": 7,
     "fuel": 3,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 12,
-    "quote": "Pickup Truck Use 0.41 7 3 0 0 10"
+    "totalCost": 10
    },
    {
     "name": "ATV Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "ATV Use 0.41 7 1 0 0 8",
     "timeHrsPerAcre": 0.41,
     "labor": 7,
     "fuel": 1,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 8,
+    "totalCost": 8
+   },
+   {
+    "name": "Harvest (mechanical)",
+    "category": "harvest",
+    "section": "Harvest",
     "page": 12,
-    "quote": "ATV Use 0.41 7 1 0 0 8"
+    "quote": "Harvest (mechanical) 0.00 600 600",
+    "timeHrsPerAcre": 0,
+    "labor": null,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": null,
+    "customRent": 600,
+    "totalCost": 600
+   },
+   {
+    "name": "Transport Olives",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 12,
+    "quote": "Transport Olives 0.00 48 48",
+    "timeHrsPerAcre": 0,
+    "labor": null,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": null,
+    "customRent": 48,
+    "totalCost": 48
    }
   ]
  },
@@ -1585,6 +1624,7 @@
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
+   "nonCashOverheadTotal",
    "totalCost",
    "grossReturns",
    "operations",
@@ -1601,13 +1641,13 @@
   "fieldsMissing": [
    "interestRatePct",
    "landRentPerAcre",
-   "nonCashOverheadTotal",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "some Table 1 rows leave cells blank; their numbers are placed by column position and the blank cells are null"
   ]
  }
 }

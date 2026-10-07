@@ -109,6 +109,12 @@
    "page": 12,
    "quote": "TOTAL OPERATING COSTS/ACRE 3.51 204 77 39 386 166 891"
   },
+  "operatingInterest": {
+   "value": 19.75,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "Interest on Operating Capital at 5.00% 19.75"
+  },
   "cashOverheadTotal": {
    "value": 285,
    "unit": "$/acre",
@@ -171,6 +177,12 @@
     "quote": "Land Rent 195"
    },
    {
+    "description": "Crop Insurance (75%)",
+    "value": 37,
+    "page": 13,
+    "quote": "Crop Insurance (75%) 37"
+   },
+   {
     "description": "Property Taxes",
     "value": 2,
     "page": 13,
@@ -194,239 +206,239 @@
     "name": "Well Test/Water Analysis",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 12,
+    "quote": "Well Test/Water Analysis 0.00 0 0 0 1 0 1",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 1,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 12,
-    "quote": "Well Test/Water Analysis 0.00 0 0 0 1 0 1"
+    "totalCost": 1
    },
    {
     "name": "Soil Test: (NPK)",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 12,
+    "quote": "Soil Test: (NPK) 0.00 0 0 0 1 0 1",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 1,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 12,
-    "quote": "Soil Test: (NPK) 0.00 0 0 0 1 0 1"
+    "totalCost": 1
    },
    {
     "name": "Condition Beds: Performer 2x",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 12,
+    "quote": "Condition Beds: Performer 2x 0.32 9 26 10 0 0 44",
     "timeHrsPerAcre": 0.32,
     "labor": 9,
     "fuel": 26,
     "lubeRepairs": 10,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 44,
-    "page": 12,
-    "quote": "Condition Beds: Performer 2x 0.32 9 26 10 0 0 44"
+    "totalCost": 44
    },
    {
     "name": "Fertilizer: Pre-Plant (20-0-0)",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 12,
+    "quote": "Fertilizer: Pre-Plant (20-0-0) 0.14 4 3 2 61 0 69",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 3,
     "lubeRepairs": 2,
     "materials": 61,
     "customRent": 0,
-    "totalCost": 69,
-    "page": 12,
-    "quote": "Fertilizer: Pre-Plant (20-0-0) 0.14 4 3 2 61 0 69"
+    "totalCost": 69
    },
    {
     "name": "Attach Mainlines to Drip Tape",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 12,
+    "quote": "Attach Mainlines to Drip Tape 0.00 53 0 0 25 0 78",
     "timeHrsPerAcre": 0,
     "labor": 53,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 25,
     "customRent": 0,
-    "totalCost": 78,
-    "page": 12,
-    "quote": "Attach Mainlines to Drip Tape 0.00 53 0 0 25 0 78"
+    "totalCost": 78
    },
    {
     "name": "Plant Beans/Starter Fertilizer (8-24-6, 1% Zn)",
     "category": "other",
     "section": "Planting",
+    "page": 12,
+    "quote": "Plant Beans/Starter Fertilizer (8-24-6, 1% Zn) 0.20 6 8 6 136 0 155",
     "timeHrsPerAcre": 0.2,
     "labor": 6,
     "fuel": 8,
     "lubeRepairs": 6,
     "materials": 136,
     "customRent": 0,
-    "totalCost": 155,
-    "page": 12,
-    "quote": "Plant Beans/Starter Fertilizer (8-24-6, 1% Zn) 0.20 6 8 6 136 0 155"
+    "totalCost": 155
    },
    {
     "name": "Shape Beds/Apply Herbicides",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Shape Beds/Apply Herbicides 0.28 8 11 4 39 0 62",
     "timeHrsPerAcre": 0.28,
     "labor": 8,
     "fuel": 11,
     "lubeRepairs": 4,
     "materials": 39,
     "customRent": 0,
-    "totalCost": 62,
-    "page": 12,
-    "quote": "Shape Beds/Apply Herbicides 0.28 8 11 4 39 0 62"
+    "totalCost": 62
    },
    {
     "name": "Disease: Blight/Weeds: Cultivate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Disease: Blight/Weeds: Cultivate 0.28 8 6 3 18 0 35",
     "timeHrsPerAcre": 0.28,
     "labor": 8,
     "fuel": 6,
     "lubeRepairs": 3,
     "materials": 18,
     "customRent": 0,
-    "totalCost": 35,
-    "page": 12,
-    "quote": "Disease: Blight/Weeds: Cultivate 0.28 8 6 3 18 0 35"
+    "totalCost": 35
    },
    {
     "name": "Irrigate 3x",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Irrigate 3x 0.00 44 0 0 90 0 134",
     "timeHrsPerAcre": 0,
     "labor": 44,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 90,
     "customRent": 0,
-    "totalCost": 134,
-    "page": 12,
-    "quote": "Irrigate 3x 0.00 44 0 0 90 0 134"
+    "totalCost": 134
    },
    {
     "name": "Pickup ½ Ton",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Pickup ½ Ton 1.25 35 11 4 0 0 51",
     "timeHrsPerAcre": 1.25,
     "labor": 35,
     "fuel": 11,
     "lubeRepairs": 4,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 51,
-    "page": 12,
-    "quote": "Pickup ½ Ton 1.25 35 11 4 0 0 51"
+    "totalCost": 51
    },
    {
     "name": "ATV",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "ATV 0.75 21 1 1 0 0 22",
     "timeHrsPerAcre": 0.75,
     "labor": 21,
     "fuel": 1,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 22,
-    "page": 12,
-    "quote": "ATV 0.75 21 1 1 0 0 22"
+    "totalCost": 22
    },
    {
     "name": "Harvest: Combine/30' Header",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Harvest: Combine/30' Header 0.20 6 8 9 0 0 22",
     "timeHrsPerAcre": 0.2,
     "labor": 6,
     "fuel": 8,
     "lubeRepairs": 9,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 22,
-    "page": 12,
-    "quote": "Harvest: Combine/30' Header 0.20 6 8 9 0 0 22"
+    "totalCost": 22
    },
    {
     "name": "Roadside: Bankout",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Roadside: Bankout 0.08 2 3 1 0 0 7",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 7,
-    "page": 12,
-    "quote": "Roadside: Bankout 0.08 2 3 1 0 0 7"
+    "totalCost": 7
    },
    {
     "name": "Hauling/Transporting",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Hauling/Transporting 0.00 0 0 0 0 13 13",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 13,
-    "totalCost": 13,
-    "page": 12,
-    "quote": "Hauling/Transporting 0.00 0 0 0 0 13 13"
+    "totalCost": 13
    },
    {
     "name": "Clean/Bag/Store/Insurance",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Clean/Bag/Store/Insurance 0.00 0 0 0 0 152 152",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 152,
-    "totalCost": 152,
-    "page": 12,
-    "quote": "Clean/Bag/Store/Insurance 0.00 0 0 0 0 152 152"
+    "totalCost": 152
    },
    {
     "name": "Assessments",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Assessments 0.00 0 0 0 10 0 10",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 10,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 12,
-    "quote": "Assessments 0.00 0 0 0 10 0 10"
+    "totalCost": 10
    },
    {
     "name": "Irrigate: Drip Acid Flush",
     "category": "postharvest",
     "section": "Post-Harvest",
+    "page": 12,
+    "quote": "Irrigate: Drip Acid Flush 0.00 9 0 0 6 0 15",
     "timeHrsPerAcre": 0,
     "labor": 9,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 6,
     "customRent": 0,
-    "totalCost": 15,
-    "page": 12,
-    "quote": "Irrigate: Drip Acid Flush 0.00 9 0 0 6 0 15"
+    "totalCost": 15
    }
   ]
  },

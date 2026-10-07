@@ -111,30 +111,36 @@
   }
  },
  "costsPerAcre": {
-  "title": "GROWER COSTS PER ACRE to HARVEST ALFALFA HAY (300 Acres)",
+  "title": "COSTS PER ACRE to PRODUCE ALFALFA (300 Acres)",
   "operatingTotal": {
-   "value": 152,
+   "value": 1346,
    "unit": "$/acre",
-   "page": 18,
-   "quote": "TOTAL OPERATING COSTS/ACRE 152"
+   "page": 13,
+   "quote": "TOTAL OPERATING COSTS/ACRE 0.91 54 4 2 893 380 1,346"
+  },
+  "operatingInterest": {
+   "value": 11,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Interest on Operating Capital at 5.75% 11"
   },
   "cashOverheadTotal": {
-   "value": 5,
+   "value": 229,
    "unit": "$/acre",
-   "page": 18,
-   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 5"
+   "page": 13,
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 229"
   },
   "nonCashOverheadTotal": {
-   "value": 80,
+   "value": 834,
    "unit": "$/acre",
-   "page": 18,
-   "quote": "TOTAL NON-CASH OVERHEAD COSTS 780 80 80"
+   "page": 13,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 16,313 834 834"
   },
   "totalCost": {
-   "value": 237,
+   "value": 2409,
    "unit": "$/acre",
-   "page": 18,
-   "quote": "TOTAL COSTS/ACRE 237"
+   "page": 13,
+   "quote": "TOTAL COSTS/ACRE 2,409"
   },
   "grossReturns": {
    "value": 2454,
@@ -144,63 +150,220 @@
   },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
-  "cashOverheadItems": [],
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 1,
+    "page": 13,
+    "quote": "Liability Insurance 1"
+   },
+   {
+    "description": "Office Expense",
+    "value": 50,
+    "page": 13,
+    "quote": "Office Expense 50"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 157,
+    "page": 13,
+    "quote": "Property Taxes 157"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 13,
+    "page": 13,
+    "quote": "Property Insurance 13"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 8,
+    "page": 13,
+    "quote": "Investment Repairs 8"
+   }
+  ],
   "operations": [
    {
-    "name": "Harvest - Swathing",
-    "category": "harvest",
-    "section": "Harvest",
-    "timeHrsPerAcre": 0.68,
-    "labor": 17,
-    "fuel": 13,
-    "lubeRepairs": 10,
+    "name": "Weed Control - Roundup PowerMax",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Weed Control - Roundup PowerMax 0.13 3 0 0 14 0 18",
+    "timeHrsPerAcre": 0.13,
+    "labor": 3,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 14,
+    "customRent": 0,
+    "totalCost": 18
+   },
+   {
+    "name": "Semi- Perm. Drain Ditch (2% of acres)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Semi- Perm. Drain Ditch (2% of acres) 0.03 1 0 0 0 0 1",
+    "timeHrsPerAcre": 0.03,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 39,
-    "page": 18,
-    "quote": "Harvest - Swathing 0.68 17 13 10 0 0 39"
+    "totalCost": 1
    },
    {
-    "name": "Harvest - Raking",
-    "category": "harvest",
-    "section": "Harvest",
-    "timeHrsPerAcre": 0.6,
-    "labor": 15,
-    "fuel": 7,
-    "lubeRepairs": 3,
+    "name": "Insect - Aphid/Weevil – Warrior II",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Insect - Aphid/Weevil – Warrior II 0.07 2 0 0 8 0 10",
+    "timeHrsPerAcre": 0.07,
+    "labor": 2,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 8,
+    "customRent": 0,
+    "totalCost": 10
+   },
+   {
+    "name": "Irrigate – 10x Flood Irrigation",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Irrigate – 10x Flood Irrigation 0.00 32 0 0 693 0 725",
+    "timeHrsPerAcre": 0,
+    "labor": 32,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 693,
+    "customRent": 0,
+    "totalCost": 725
+   },
+   {
+    "name": "Insect - Worms – Coragen",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Insect - Worms – Coragen 0.07 2 0 0 29 0 31",
+    "timeHrsPerAcre": 0.07,
+    "labor": 2,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 29,
+    "customRent": 0,
+    "totalCost": 31
+   },
+   {
+    "name": "Tissue Sample (P&K) Analysis",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Tissue Sample (P&K) Analysis 0.00 0 0 0 0 1 1",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
     "materials": 0,
-    "customRent": 0,
-    "totalCost": 25,
-    "page": 18,
-    "quote": "Harvest - Raking 0.60 15 7 3 0 0 25"
+    "customRent": 1,
+    "totalCost": 1
    },
    {
-    "name": "Harvest - Baling",
-    "category": "harvest",
-    "section": "Harvest",
-    "timeHrsPerAcre": 1.27,
-    "labor": 31,
-    "fuel": 17,
-    "lubeRepairs": 9,
-    "materials": 5,
+    "name": "Fertilize (11-52-0)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Fertilize (11-52-0) 0.05 1 1 0 74 0 76",
+    "timeHrsPerAcre": 0.05,
+    "labor": 1,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 74,
     "customRent": 0,
-    "totalCost": 62,
-    "page": 18,
-    "quote": "Harvest - Baling 1.27 31 17 9 5 0 62"
+    "totalCost": 76
    },
    {
-    "name": "Harvest – Road-siding",
-    "category": "harvest",
-    "section": "Harvest",
-    "timeHrsPerAcre": 0.23,
+    "name": "Weed Control – Chateau & Prowl H2O",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Weed Control – Chateau & Prowl H2O 0.07 2 0 0 63 0 65",
+    "timeHrsPerAcre": 0.07,
+    "labor": 2,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 63,
+    "customRent": 0,
+    "totalCost": 65
+   },
+   {
+    "name": "Weed Control – Gramoxone",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Weed Control – Gramoxone 0.07 2 0 0 11 0 13",
+    "timeHrsPerAcre": 0.07,
+    "labor": 2,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 11,
+    "customRent": 0,
+    "totalCost": 13
+   },
+   {
+    "name": "Pickup Truck",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Pickup Truck 0.25 6 1 1 0 0 8",
+    "timeHrsPerAcre": 0.25,
     "labor": 6,
-    "fuel": 9,
-    "lubeRepairs": 10,
+    "fuel": 1,
+    "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 25,
-    "page": 18,
-    "quote": "Harvest – Road-siding 0.23 6 9 10 0 0 25"
+    "totalCost": 8
+   },
+   {
+    "name": "ATV",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "ATV 0.25 6 1 0 0 0 7",
+    "timeHrsPerAcre": 0.25,
+    "labor": 6,
+    "fuel": 1,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 7
+   },
+   {
+    "name": "Harvest – Silage (Buyer harvest)",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 13,
+    "quote": "Harvest – Silage (Buyer harvest) 0.00 0 0 0 0 0 0",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 0
+   },
+   {
+    "name": "Harvest – Hay (Custom harvest)",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 13,
+    "quote": "Harvest – Hay (Custom harvest) 0.00 0 0 0 0 379 379",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 379,
+    "totalCost": 379
    }
   ]
  },
@@ -1033,8 +1196,8 @@
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
-   "several costs-per-acre tables (establishment and production); using the production one",
-   "Table 1 has 2 TOTAL OPERATING COSTS rows (multi-year table); using the last"
+   "a later costs table had no totals or is a harvest-only table; used an earlier one",
+   "several costs-per-acre tables (establishment and production); using the production one"
   ]
  }
 }

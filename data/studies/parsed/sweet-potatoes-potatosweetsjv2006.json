@@ -96,29 +96,35 @@
   "priceStatement": null
  },
  "costsPerAcre": {
-  "title": "MONTLY CASH COST PER ACRE TO PRODUCE SWEETPOTATOES",
+  "title": "COST PER ACRE TO PRODUCE SWEETPOTATOES",
   "operatingTotal": {
    "value": 3417,
    "unit": "$/acre",
-   "page": 23,
-   "quote": "TOTAL OPERATING COSTS/ACRE 428 38 11 11 59 158 1,107 285 206 58 1,047 7 3,417"
+   "page": 19,
+   "quote": "TOTAL OPERATING COSTS/ACRE 27.26 111.80 1,475 409 1,264 157 3,417"
+  },
+  "operatingInterest": {
+   "value": 113,
+   "unit": "$/acre",
+   "page": 19,
+   "quote": "Interest on operating capital @ 9.25% 113"
   },
   "cashOverheadTotal": {
    "value": 902,
    "unit": "$/acre",
-   "page": 24,
-   "quote": "TOTAL CASH OVERHEAD COSTS 32 64 58 32 32 67 35 35 57 35 427 28 902"
+   "page": 19,
+   "quote": "TOTAL CASH OVERHEAD COSTS 902"
   },
   "nonCashOverheadTotal": {
    "value": 1281,
    "unit": "$/acre",
-   "page": 22,
-   "quote": "TOTAL NON-CASH OVERHEAD COSTS/ACRE 1,281"
+   "page": 20,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 12,367 1,281 1,281"
   },
   "totalCost": {
    "value": 5599,
    "unit": "$/acre",
-   "page": 22,
+   "page": 20,
    "quote": "TOTAL COSTS/ACRE 5,599"
   },
   "grossReturns": {
@@ -139,35 +145,462 @@
    "page": 22,
    "quote": "NET RETURNS ABOVE TOTAL COSTS (FOB Shed) 1,551"
   },
-  "cashOverheadItems": [],
-  "operations": [
+  "cashOverheadItems": [
    {
-    "name": "Ending OCT 06 05 05 06 06 06",
-    "category": "cultural",
-    "section": "Cultural",
-    "timeHrsPerAcre": 6,
-    "labor": 6,
-    "fuel": 6,
-    "lubeRepairs": 6,
-    "materials": 6,
-    "customRent": 6,
-    "totalCost": 6,
-    "page": 23,
-    "quote": "Ending OCT 06 05 05 06 06 06 06 06 06 06 06 06 06"
+    "description": "Rent – Land (per producing acre)",
+    "value": 393,
+    "page": 19,
+    "quote": "Rent – Land (per producing acre) 393"
    },
    {
-    "name": "Pickup Use 7 7 7 7 7 7",
+    "description": "Office Expense",
+    "value": 100,
+    "page": 19,
+    "quote": "Office Expense 100"
+   },
+   {
+    "description": "Sanitation Rental",
+    "value": 16,
+    "page": 19,
+    "quote": "Sanitation Rental 16"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 4,
+    "page": 19,
+    "quote": "Liability Insurance 4"
+   },
+   {
+    "description": "California Sweetpotato Council Assessment",
+    "value": 5,
+    "page": 19,
+    "quote": "California Sweetpotato Council Assessment 5"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 65,
+    "page": 19,
+    "quote": "Property Taxes 65"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 45,
+    "page": 19,
+    "quote": "Property Insurance 45"
+   },
+   {
+    "description": "Investment Cash Costs (repairs, fuel, lube, electricity, etc.)",
+    "value": 275,
+    "page": 19,
+    "quote": "Investment Cash Costs (repairs, fuel, lube, electricity, etc.) 275"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Fertilize: Soil Sample (3) - Custom",
     "category": "cultural",
     "section": "Cultural",
-    "timeHrsPerAcre": 7,
-    "labor": 7,
+    "page": 19,
+    "quote": "Fertilize: Soil Sample (3) - Custom 0.00 0.00 0 0 0 4 4",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 4,
+    "totalCost": 4
+   },
+   {
+    "name": "Fertilize: Soil Amendment (Gypsum) Custom",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Fertilize: Soil Amendment (Gypsum) Custom 0.00 0.00 0 0 60 0 60",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 60,
+    "customRent": 0,
+    "totalCost": 60
+   },
+   {
+    "name": "Land Prep: Chisel 2X - Custom",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Land Prep: Chisel 2X - Custom 0.00 0.00 0 0 0 48 48",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 48,
+    "totalCost": 48
+   },
+   {
+    "name": "Land Prep: Disk 2X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Land Prep: Disk 2X 0.14 0.00 2 3 0 0 5",
+    "timeHrsPerAcre": 0.14,
+    "labor": 2,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 5
+   },
+   {
+    "name": "Fumigate: Custom (Telone)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Fumigate: Custom (Telone) 0.00 0.00 0 0 254 40 294",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 254,
+    "customRent": 40,
+    "totalCost": 294
+   },
+   {
+    "name": "Land Prep: Disk & Roll 2X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Land Prep: Disk & Roll 2X 0.29 0.00 4 7 0 0 11",
+    "timeHrsPerAcre": 0.29,
+    "labor": 4,
     "fuel": 7,
-    "lubeRepairs": 7,
-    "materials": 7,
-    "customRent": 7,
-    "totalCost": 89,
-    "page": 23,
-    "quote": "Pickup Use 7 7 7 7 7 7 7 7 7 7 7 7 89"
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 11
+   },
+   {
+    "name": "Cover Crop: Plant (Rye)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Cover Crop: Plant (Rye) 0.20 0.00 3 5 14 0 22",
+    "timeHrsPerAcre": 0.2,
+    "labor": 3,
+    "fuel": 5,
+    "lubeRepairs": null,
+    "materials": 14,
+    "customRent": 0,
+    "totalCost": 22
+   },
+   {
+    "name": "Cover Crop: Disk 2X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Cover Crop: Disk 2X 0.29 0.00 4 7 0 0 11",
+    "timeHrsPerAcre": 0.29,
+    "labor": 4,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 11
+   },
+   {
+    "name": "Fertilize: (Composted Manure) Custom",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Fertilize: (Composted Manure) Custom 0.00 0.00 0 0 27 10 37",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 27,
+    "customRent": 10,
+    "totalCost": 37
+   },
+   {
+    "name": "Land Prep: Chisel 1X - Custom",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Land Prep: Chisel 1X - Custom 0.00 0.00 0 0 0 24 24",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 24,
+    "totalCost": 24
+   },
+   {
+    "name": "Land Prep: Disk & Roll 1X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Land Prep: Disk & Roll 1X 0.14 0.00 2 4 0 0 6",
+    "timeHrsPerAcre": 0.14,
+    "labor": 2,
+    "fuel": 4,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 6
+   },
+   {
+    "name": "Land Prep: Springtooth 2X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Land Prep: Springtooth 2X 0.14 0.00 2 3 0 0 5",
+    "timeHrsPerAcre": 0.14,
+    "labor": 2,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 5
+   },
+   {
+    "name": "Land Prep: List - Custom. Fertilize: (8-8-8+Zn)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Land Prep: List - Custom. Fertilize: (8-8-8+Zn) 0.00 0.00 0 0 91 20 111",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 91,
+    "customRent": 20,
+    "totalCost": 111
+   },
+   {
+    "name": "Plant: Sweetpotatoes",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Plant: Sweetpotatoes 3.95 20.00 251 89 577 0 916",
+    "timeHrsPerAcre": 3.95,
+    "labor": 251,
+    "fuel": 89,
+    "lubeRepairs": null,
+    "materials": 577,
+    "customRent": 0,
+    "totalCost": 916
+   },
+   {
+    "name": "Irrigate: Lay Drip Tape & Laterals",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Irrigate: Lay Drip Tape & Laterals 0.65 1.30 22 10 131 0 163",
+    "timeHrsPerAcre": 0.65,
+    "labor": 22,
+    "fuel": 10,
+    "lubeRepairs": null,
+    "materials": 131,
+    "customRent": 0,
+    "totalCost": 163
+   },
+   {
+    "name": "Irrigate: Water & Labor",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Irrigate: Water & Labor 0.00 4.00 39 0 35 0 74",
+    "timeHrsPerAcre": 0,
+    "labor": 39,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 35,
+    "customRent": 0,
+    "totalCost": 74
+   },
+   {
+    "name": "Weed: Cultivate 3X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Weed: Cultivate 3X 0.29 0.00 4 6 0 0 10",
+    "timeHrsPerAcre": 0.29,
+    "labor": 4,
+    "fuel": 6,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 10
+   },
+   {
+    "name": "Fertilize: Through Drip Line (UN32)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Fertilize: Through Drip Line (UN32) 0.00 0.00 0 0 30 0 30",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 30,
+    "customRent": 0,
+    "totalCost": 30
+   },
+   {
+    "name": "Weed: Hand 3X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Weed: Hand 3X 0.00 31.50 306 0 0 0 306",
+    "timeHrsPerAcre": 0,
+    "labor": 306,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 306
+   },
+   {
+    "name": "Weed: Banded over drip line (Roundup)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Weed: Banded over drip line (Roundup) 0.14 0.00 2 2 3 0 7",
+    "timeHrsPerAcre": 0.14,
+    "labor": 2,
+    "fuel": 2,
+    "lubeRepairs": null,
+    "materials": 3,
+    "customRent": 0,
+    "totalCost": 7
+   },
+   {
+    "name": "Weed: Broadcast (Prism)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Weed: Broadcast (Prism) 0.22 0.00 3 2 30 0 36",
+    "timeHrsPerAcre": 0.22,
+    "labor": 3,
+    "fuel": 2,
+    "lubeRepairs": null,
+    "materials": 30,
+    "customRent": 0,
+    "totalCost": 36
+   },
+   {
+    "name": "Insect: Worms (Intrepid) 50% acres by air",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Insect: Worms (Intrepid) 50% acres by air 0.00 0.00 0 0 10 9 19",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 10,
+    "customRent": 9,
+    "totalCost": 19
+   },
+   {
+    "name": "Pickup Use",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 19,
+    "quote": "Pickup Use 4.00 0.00 57 32 0 0 89",
+    "timeHrsPerAcre": 4,
+    "labor": 57,
+    "fuel": 32,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 89
+   },
+   {
+    "name": "Harvest: Drip Tape/Laterals Removal",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 19,
+    "quote": "Harvest: Drip Tape/Laterals Removal 0.26 5.00 52 3 0 2 56",
+    "timeHrsPerAcre": 0.26,
+    "labor": 52,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 2,
+    "totalCost": 56
+   },
+   {
+    "name": "Harvest: Mow Vines",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 19,
+    "quote": "Harvest: Mow Vines 0.25 3 4 0 0 7",
+    "timeHrsPerAcre": 0.25,
+    "labor": 3,
+    "fuel": 4,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 7
+   },
+   {
+    "name": "Harvest: Cut Vines",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 19,
+    "quote": "Harvest: Cut Vines 0.30 4 3 0 0 7",
+    "timeHrsPerAcre": 0.3,
+    "labor": 4,
+    "fuel": 3,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 7
+   },
+   {
+    "name": "Harvest: Dig Potatoes",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 19,
+    "quote": "Harvest: Dig Potatoes 10.00 50.00 628 174 0 0 803",
+    "timeHrsPerAcre": 10,
+    "labor": 628,
+    "fuel": 174,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 803
+   },
+   {
+    "name": "Harvest: Haul to Storage (includes forklift operations)",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 19,
+    "quote": "Harvest: Haul to Storage (includes forklift operations) 5.00 71 46 0 0 117",
+    "timeHrsPerAcre": 5,
+    "labor": 71,
+    "fuel": 46,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 117
+   },
+   {
+    "name": "Harvest: Water Truck",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 19,
+    "quote": "Harvest: Water Truck 1.00 14 10 0 0 24",
+    "timeHrsPerAcre": 1,
+    "labor": 14,
+    "fuel": 10,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 24
    }
   ]
  },
@@ -1341,34 +1774,38 @@
  "monthly": {
   "basis": "per acre",
   "cashCostsPerAcre": [
-   3791,
-   13558,
-   2043,
-   1661,
-   13983,
-   16,
-   47,
-   16,
-   16,
-   16,
-   79,
-   550
+   69,
+   43,
+   91,
+   225,
+   1142,
+   319,
+   263,
+   93,
+   1474,
+   35,
+   460,
+   103
   ],
   "operatingPerAcre": [
-   3739,
-   13382,
-   1868,
-   1440,
-   13807,
-   0,
-   0,
-   0,
-   0,
-   0,
-   63,
-   14
+   11,
+   11,
+   59,
+   158,
+   1107,
+   285,
+   206,
+   58,
+   1047,
+   7,
+   428,
+   38
   ],
   "harvestMonths": [
+   false,
+   false,
+   false,
+   false,
    false,
    false,
    false,
@@ -1376,13 +1813,9 @@
    true,
    false,
    false,
-   false,
-   false,
-   false,
-   false,
    false
   ],
-  "totalCheck": 35774,
+  "totalCheck": 4318,
   "checkedRow": "TOTAL CASH COSTS",
   "columns": [
    "NOV",
@@ -1399,8 +1832,8 @@
    "OCT"
   ],
   "spansTwoYears": false,
-  "page": 16,
-  "quote": "HOTBED MONTHLY CASH COST PER ACRE TO PRODUCE SWEETPOTATO TRANSPLANTS"
+  "page": 23,
+  "quote": "MONTLY CASH COST PER ACRE TO PRODUCE SWEETPOTATOES"
  },
  "establishment": null,
  "establishmentSummary": {
@@ -1445,7 +1878,9 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "several costs-per-acre tables (establishment and production); using the production one"
+   "several costs-per-acre tables (establishment and production); using the production one",
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "Table 1 prints a field labor hours column after the operation time; it is not stored"
   ]
  }
 }

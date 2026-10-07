@@ -68,7 +68,12 @@
   "laborMachineRate": null,
   "laborNonMachineRate": null,
   "laborOverheadPct": null,
-  "landRentPerAcre": null,
+  "landRentPerAcre": {
+   "value": 240,
+   "unit": "$/acre/yr",
+   "page": 14,
+   "quote": "Land Lease: 6-Months 40 Acres 240"
+  },
   "cropsPerAcrePerYear": null,
   "fuelPriceDiesel": null,
   "fuelPriceGas": null,
@@ -89,6 +94,7 @@
    "page": 14,
    "quote": "TOTAL OPERATING COSTS/ACRE 0.00 0 0 0 286 229 515"
   },
+  "operatingInterest": null,
   "cashOverheadTotal": {
    "value": 285,
    "unit": "$/acre",
@@ -139,6 +145,12 @@
     "quote": "Liability Insurance 16"
    },
    {
+    "description": "Land Lease: 6-Months 40 Acres",
+    "value": 240,
+    "page": 14,
+    "quote": "Land Lease: 6-Months 40 Acres 240"
+   },
+   {
     "description": "Property Taxes",
     "value": 4,
     "page": 14,
@@ -150,57 +162,57 @@
     "name": "Weeds: Spot Spray 2x",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Weeds: Spot Spray 2x 0.00 0 0 0 3 3 5",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 3,
     "customRent": 3,
-    "totalCost": 5,
-    "page": 14,
-    "quote": "Weeds: Spot Spray 2x 0.00 0 0 0 3 3 5"
+    "totalCost": 5
    },
    {
     "name": "Irrigate: Flood 7x",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Irrigate: Flood 7x 0.00 0 0 0 211 46 257",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 211,
     "customRent": 46,
-    "totalCost": 257,
-    "page": 14,
-    "quote": "Irrigate: Flood 7x 0.00 0 0 0 211 46 257"
+    "totalCost": 257
    },
    {
     "name": "Fertilizer: 46-0-0",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Fertilizer: 46-0-0 0.00 0 0 0 72 13 85",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 72,
     "customRent": 13,
-    "totalCost": 85,
-    "page": 14,
-    "quote": "Fertilizer: 46-0-0 0.00 0 0 0 72 13 85"
+    "totalCost": 85
    },
    {
     "name": "Harvest: Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 14,
+    "quote": "Harvest: Hay 0.00 0 0 0 0 168 168",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 168,
-    "totalCost": 168,
-    "page": 14,
-    "quote": "Harvest: Hay 0.00 0 0 0 0 168 168"
+    "totalCost": 168
    }
   ]
  },
@@ -561,6 +573,7 @@
    "yieldPerAcre",
    "pricePerUnit",
    "interestRatePct",
+   "landRentPerAcre",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -579,7 +592,6 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
-   "landRentPerAcre",
    "equipment",
    "hourlyEquipment",
    "insuranceRatePct",

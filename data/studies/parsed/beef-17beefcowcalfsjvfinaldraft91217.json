@@ -53,13 +53,27 @@
  "costsPerAcre": {
   "title": "COSTS AND RETURNS FOR BEEF COW - CALF PRODUCTION",
   "operatingTotal": null,
+  "operatingInterest": null,
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
   "totalCost": null,
   "grossReturns": null,
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
-  "cashOverheadItems": [],
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance $ 2,680 $",
+    "value": 8.93,
+    "page": 10,
+    "quote": "Liability Insurance $ 2,680 $ 8.93"
+   },
+   {
+    "description": "Office Expenses $ 2,680 $",
+    "value": 8.93,
+    "page": 10,
+    "quote": "Office Expenses $ 2,680 $ 8.93"
+   }
+  ],
   "operations": []
  },
  "equipment": [],

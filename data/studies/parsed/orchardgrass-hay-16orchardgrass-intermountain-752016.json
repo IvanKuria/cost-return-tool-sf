@@ -112,6 +112,12 @@
    "page": 12,
    "quote": "TOTAL OPERATING COSTS/ACRE 3.28 125 36 81 348 110 699"
   },
+  "operatingInterest": {
+   "value": 0,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "Interest on Operating Capital at 4.25% 0"
+  },
   "cashOverheadTotal": {
    "value": 114,
    "unit": "$/acre",
@@ -150,6 +156,12 @@
   },
   "cashOverheadItems": [
    {
+    "description": "Liability Insurance (305 Acres)",
+    "value": 3,
+    "page": 12,
+    "quote": "Liability Insurance (305 Acres) 3"
+   },
+   {
     "description": "Office Expense",
     "value": 20,
     "page": 12,
@@ -185,141 +197,141 @@
     "name": "Weed Control - In-Field Application",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Weed Control - In-Field Application 0.00 0 0 0 4 8 12",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 4,
     "customRent": 8,
-    "totalCost": 12,
-    "page": 12,
-    "quote": "Weed Control - In-Field Application 0.00 0 0 0 4 8 12"
+    "totalCost": 12
    },
    {
     "name": "Fertilize",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Fertilize 0.00 0 0 0 150 24 174",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 150,
     "customRent": 24,
-    "totalCost": 174,
-    "page": 12,
-    "quote": "Fertilize 0.00 0 0 0 150 24 174"
+    "totalCost": 174
    },
    {
     "name": "Irrigate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Irrigate 0.00 32 0 0 188 0 219",
     "timeHrsPerAcre": 0,
     "labor": 32,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 188,
     "customRent": 0,
-    "totalCost": 219,
-    "page": 12,
-    "quote": "Irrigate 0.00 32 0 0 188 0 219"
+    "totalCost": 219
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Pickup Truck Use 1.00 28 4 3 0 0 36",
     "timeHrsPerAcre": 1,
     "labor": 28,
     "fuel": 4,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 36,
-    "page": 12,
-    "quote": "Pickup Truck Use 1.00 28 4 3 0 0 36"
+    "totalCost": 36
    },
    {
     "name": "ATV Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "ATV Use 0.50 14 1 0 0 0 16",
     "timeHrsPerAcre": 0.5,
     "labor": 14,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 16,
-    "page": 12,
-    "quote": "ATV Use 0.50 14 1 0 0 0 16"
+    "totalCost": 16
    },
    {
     "name": "Soil Analysis",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Soil Analysis 0.00 0 0 0 0 1 1",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 1,
-    "totalCost": 1,
-    "page": 12,
-    "quote": "Soil Analysis 0.00 0 0 0 0 1 1"
+    "totalCost": 1
    },
    {
     "name": "Cut Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Cut Hay 0.39 11 9 7 0 0 27",
     "timeHrsPerAcre": 0.39,
     "labor": 11,
     "fuel": 9,
     "lubeRepairs": 7,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 27,
-    "page": 12,
-    "quote": "Cut Hay 0.39 11 9 7 0 0 27"
+    "totalCost": 27
    },
    {
     "name": "Rake Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Rake Hay 0.31 9 5 2 0 0 16",
     "timeHrsPerAcre": 0.31,
     "labor": 9,
     "fuel": 5,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 16,
-    "page": 12,
-    "quote": "Rake Hay 0.31 9 5 2 0 0 16"
+    "totalCost": 16
    },
    {
     "name": "Bale Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Bale Hay 1.09 31 17 68 7 0 122",
     "timeHrsPerAcre": 1.09,
     "labor": 31,
     "fuel": 17,
     "lubeRepairs": 68,
     "materials": 7,
     "customRent": 0,
-    "totalCost": 122,
-    "page": 12,
-    "quote": "Bale Hay 1.09 31 17 68 7 0 122"
+    "totalCost": 122
    },
    {
     "name": "Roadside, Store & Load Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Roadside, Store & Load Hay 0.00 0 0 0 0 77 77",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 77,
-    "totalCost": 77,
-    "page": 12,
-    "quote": "Roadside, Store & Load Hay 0.00 0 0 0 0 77 77"
+    "totalCost": 77
    }
   ]
  },

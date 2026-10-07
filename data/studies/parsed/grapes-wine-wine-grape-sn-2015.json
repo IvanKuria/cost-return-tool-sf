@@ -86,17 +86,18 @@
    "page": 20,
    "quote": "TOTAL OPERATING COSTS/ACRE 4,491"
   },
+  "operatingInterest": null,
   "cashOverheadTotal": {
-   "value": 155,
+   "value": 620,
    "unit": "$/acre",
    "page": 21,
-   "quote": "TOTAL CASH OVERHEAD COSTS/TON 155"
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 620"
   },
   "nonCashOverheadTotal": {
-   "value": 826,
+   "value": 3302,
    "unit": "$/acre",
    "page": 21,
-   "quote": "TOTAL NON-CASH OVERHEAD COSTS/TON 826"
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS/ACRE 3,302"
   },
   "totalCost": {
    "value": 8414,
@@ -1615,6 +1616,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
+   "the production cost table has no hours column; its rows are not read as operations",
    "equipment table present but no equipment rows parsed",
    "establishment table: TOTAL CULTURAL COSTS column Yr-4 prints 3370 but its rows sum to 3287",
    "establishment table: TOTAL CULTURAL COSTS column Yr-5 prints 3370 but its rows sum to 3287"

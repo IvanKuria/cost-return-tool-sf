@@ -52,7 +52,12 @@
   "laborMachineRate": null,
   "laborNonMachineRate": null,
   "laborOverheadPct": null,
-  "landRentPerAcre": null,
+  "landRentPerAcre": {
+   "value": 180,
+   "unit": "$/acre/yr",
+   "page": 9,
+   "quote": "Land Lease 40 Ac 180"
+  },
   "cropsPerAcrePerYear": null,
   "fuelPriceDiesel": null,
   "fuelPriceGas": null,
@@ -69,6 +74,12 @@
    "unit": "$/acre",
    "page": 9,
    "quote": "TOTAL OPERATING COSTS/ACRE 0 0 0 0 149 191 339"
+  },
+  "operatingInterest": {
+   "value": 0,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "Interest on Operating Capital at 5.75% 0"
   },
   "cashOverheadTotal": {
    "value": 220,
@@ -114,6 +125,18 @@
     "quote": "Office Expense 20"
    },
    {
+    "description": "Liability Insurance 45Ac",
+    "value": 16,
+    "page": 9,
+    "quote": "Liability Insurance 45Ac 16"
+   },
+   {
+    "description": "Land Lease 40 Ac",
+    "value": 180,
+    "page": 9,
+    "quote": "Land Lease 40 Ac 180"
+   },
+   {
     "description": "Property Taxes (Corral fencing)",
     "value": 1,
     "page": 9,
@@ -137,113 +160,113 @@
     "name": "Weeds-Spot Spray 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Weeds-Spot Spray 2X 0.00 0 0 0 5 11 16",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 5,
     "customRent": 11,
-    "totalCost": 16,
-    "page": 9,
-    "quote": "Weeds-Spot Spray 2X 0.00 0 0 0 5 11 16"
+    "totalCost": 16
    },
    {
     "name": "Irrigate-Flood 7X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Irrigate-Flood 7X 0.00 0 0 0 73 10 83",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 73,
     "customRent": 10,
-    "totalCost": 83,
-    "page": 9,
-    "quote": "Irrigate-Flood 7X 0.00 0 0 0 73 10 83"
+    "totalCost": 83
    },
    {
     "name": "Fencing Setup",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Fencing Setup 0.00 0 0 0 0 7 7",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 7,
-    "totalCost": 7,
-    "page": 9,
-    "quote": "Fencing Setup 0.00 0 0 0 0 7 7"
+    "totalCost": 7
    },
    {
     "name": "Fertilizer-21-0-0, 24% S",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Fertilizer-21-0-0, 24% S 0.00 0 0 0 68 11 79",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 68,
     "customRent": 11,
-    "totalCost": 79,
-    "page": 9,
-    "quote": "Fertilizer-21-0-0, 24% S 0.00 0 0 0 68 11 79"
+    "totalCost": 79
    },
    {
     "name": "Harrow Pasture 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Harrow Pasture 2X 0.00 0 0 0 0 15 15",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 15,
-    "totalCost": 15,
-    "page": 9,
-    "quote": "Harrow Pasture 2X 0.00 0 0 0 0 15 15"
+    "totalCost": 15
    },
    {
     "name": "Weeds-Rotary Wiper",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Weeds-Rotary Wiper 0.00 0 0 0 2 5 7",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 2,
     "customRent": 5,
-    "totalCost": 7,
-    "page": 9,
-    "quote": "Weeds-Rotary Wiper 0.00 0 0 0 2 5 7"
+    "totalCost": 7
    },
    {
     "name": "Harvest Hay 40 Ac",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Harvest Hay 40 Ac 0.00 0 0 0 0 120 120",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 120,
-    "totalCost": 120,
-    "page": 9,
-    "quote": "Harvest Hay 40 Ac 0.00 0 0 0 0 120 120"
+    "totalCost": 120
    },
    {
     "name": "Graze 40 Ac 5X",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Graze 40 Ac 5X 0.00 0 0 0 0 14 14",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 14,
-    "totalCost": 14,
-    "page": 9,
-    "quote": "Graze 40 Ac 5X 0.00 0 0 0 0 14 14"
+    "totalCost": 14
    }
   ]
  },
@@ -387,6 +410,7 @@
   "fieldsFound": [
    "year",
    "region",
+   "landRentPerAcre",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -405,7 +429,6 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
-   "landRentPerAcre",
    "acresFarmed",
    "equipment",
    "hourlyEquipment",

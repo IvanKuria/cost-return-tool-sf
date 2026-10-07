@@ -56,18 +56,33 @@
  "costsPerAcre": {
   "title": "COSTS AND RETURNS FOR SHEEP PRODUCTION",
   "operatingTotal": null,
-  "cashOverheadTotal": {
-   "value": 3.83,
-   "unit": "$/acre",
-   "page": 11,
-   "quote": "Total Cash Overhead Costs 14,647 3.83"
-  },
+  "operatingInterest": null,
+  "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
   "totalCost": null,
   "grossReturns": null,
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
-  "cashOverheadItems": [],
+  "cashOverheadItems": [
+   {
+    "description": "Ranch Liability Insurance 1,841",
+    "value": 0.48,
+    "page": 11,
+    "quote": "Ranch Liability Insurance 1,841 0.48"
+   },
+   {
+    "description": "Business Insurance and Taxes (Table 4) 8,806",
+    "value": 2.3,
+    "page": 11,
+    "quote": "Business Insurance and Taxes (Table 4) 8,806 2.30"
+   },
+   {
+    "description": "Office Expenses 4,000",
+    "value": 1.05,
+    "page": 11,
+    "quote": "Office Expenses 4,000 1.05"
+   }
+  ],
   "operations": []
  },
  "equipment": [],
@@ -102,7 +117,6 @@
    "region",
    "counties",
    "interestRatePct",
-   "cashOverheadTotal",
    "capitalRecoveryFormula"
   ],
   "fieldsMissing": [
@@ -114,6 +128,7 @@
    "landRentPerAcre",
    "acresFarmed",
    "operatingTotal",
+   "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
    "grossReturns",

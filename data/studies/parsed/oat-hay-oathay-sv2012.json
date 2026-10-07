@@ -101,6 +101,12 @@
    "page": 9,
    "quote": "TOTAL OPERATING COSTS/ACRE 0.76 13 17 6 108 116 265"
   },
+  "operatingInterest": {
+   "value": 5,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "Interest on Operating Capital @ 5.75% 5"
+  },
   "cashOverheadTotal": {
    "value": 116,
    "unit": "$/acre",
@@ -157,6 +163,12 @@
     "quote": "Field Sanitation 1"
    },
    {
+    "description": "Share Rent @ 20%",
+    "value": 75,
+    "page": 9,
+    "quote": "Share Rent @ 20% 75"
+   },
+   {
     "description": "Supervisor Salary-Oats",
     "value": 12,
     "page": 9,
@@ -186,113 +198,113 @@
     "name": "Land Prep: Stubble Disc",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Land Prep: Stubble Disc 0.13 2 6 2 0 0 10",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 6,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 9,
-    "quote": "Land Prep: Stubble Disc 0.13 2 6 2 0 0 10"
+    "totalCost": 10
    },
    {
     "name": "Land Prep: Finish Disc",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Land Prep: Finish Disc 0.12 2 5 2 0 0 9",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 5,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 9,
-    "quote": "Land Prep: Finish Disc 0.12 2 5 2 0 0 9"
+    "totalCost": 9
    },
    {
     "name": "Fertilize: Preplant N (aqua)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Fertilize: Preplant N (aqua) 0.13 2 2 1 44 3 52",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 44,
     "customRent": 3,
-    "totalCost": 52,
-    "page": 9,
-    "quote": "Fertilize: Preplant N (aqua) 0.13 2 2 1 44 3 52"
+    "totalCost": 52
    },
    {
     "name": "Plant: Drill (oat seed) . Fertilize: (11-52-0)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Plant: Drill (oat seed) . Fertilize: (11-52-0) 0.12 2 2 1 56 0 61",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 56,
     "customRent": 0,
-    "totalCost": 61,
-    "page": 9,
-    "quote": "Plant: Drill (oat seed) . Fertilize: (11-52-0) 0.12 2 2 1 56 0 61"
+    "totalCost": 61
    },
    {
     "name": "Weed: (Weedar)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Weed: (Weedar) 0.07 1 0 0 8 0 10",
     "timeHrsPerAcre": 0.07,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 8,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 9,
-    "quote": "Weed: (Weedar) 0.07 1 0 0 8 0 10"
+    "totalCost": 10
    },
    {
     "name": "Pickup",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "Pickup 0.10 2 1 0 0 0 3",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 9,
-    "quote": "Pickup 0.10 2 1 0 0 0 3"
+    "totalCost": 3
    },
    {
     "name": "ATV",
     "category": "cultural",
     "section": "Cultural",
+    "page": 9,
+    "quote": "ATV 0.10 2 0 0 0 0 2",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 2,
-    "page": 9,
-    "quote": "ATV 0.10 2 0 0 0 0 2"
+    "totalCost": 2
    },
    {
     "name": "Harvest (custom)",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Harvest (custom) 0.00 0 0 0 0 113 113",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 113,
-    "totalCost": 113,
-    "page": 9,
-    "quote": "Harvest (custom) 0.00 0 0 0 0 113 113"
+    "totalCost": 113
    }
   ]
  },

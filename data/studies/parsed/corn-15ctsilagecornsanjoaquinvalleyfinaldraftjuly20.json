@@ -109,6 +109,12 @@
    "page": 9,
    "quote": "TOTAL OPERATING COSTS/ACRE 1 141 7 2 516 547 1,232"
   },
+  "operatingInterest": {
+   "value": 20,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "Interest on Operating Capital at 5.75% 20"
+  },
   "cashOverheadTotal": {
    "value": 262,
    "unit": "$/acre",
@@ -159,6 +165,12 @@
     "quote": "Miscellaneous Costs (Training) 20"
    },
    {
+    "description": "Land Rent-Silage Corn (50% of Cost))",
+    "value": 155,
+    "page": 9,
+    "quote": "Land Rent-Silage Corn (50% of Cost)) 155"
+   },
+   {
     "description": "Office Expenses",
     "value": 40,
     "page": 9,
@@ -194,225 +206,225 @@
     "name": "Laser Plane-Custom 25% of Acres (50% of cost )",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Laser Plane-Custom 25% of Acres (50% of cost ) 0.00 0 0 0 0 15 15",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 15,
-    "totalCost": 15,
-    "page": 9,
-    "quote": "Laser Plane-Custom 25% of Acres (50% of cost ) 0.00 0 0 0 0 15 15"
+    "totalCost": 15
    },
    {
     "name": "Tri-Plane 75% of Acres (50% of cost)",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Tri-Plane 75% of Acres (50% of cost) 0.00 0 0 0 0 12 12",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 12,
-    "totalCost": 12,
-    "page": 9,
-    "quote": "Tri-Plane 75% of Acres (50% of cost) 0.00 0 0 0 0 12 12"
+    "totalCost": 12
    },
    {
     "name": "Ridge/Shape Borders (50% of cost)",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Ridge/Shape Borders (50% of cost) 0.00 0 0 0 0 6 6",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 6,
-    "totalCost": 6,
-    "page": 9,
-    "quote": "Ridge/Shape Borders (50% of cost) 0.00 0 0 0 0 6 6"
+    "totalCost": 6
    },
    {
     "name": "Haul/Spread Compost (1.5% N)",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Haul/Spread Compost (1.5% N) 0.00 0 0 0 0 129 129",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 129,
-    "totalCost": 129,
-    "page": 9,
-    "quote": "Haul/Spread Compost (1.5% N) 0.00 0 0 0 0 129 129"
+    "totalCost": 129
    },
    {
     "name": "Pre-Irrigate",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Pre-Irrigate 0.00 0 0 0 29 0 29",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 29,
     "customRent": 0,
-    "totalCost": 29,
-    "page": 9,
-    "quote": "Pre-Irrigate 0.00 0 0 0 29 0 29"
+    "totalCost": 29
    },
    {
     "name": "Strip-Tillage Cultivation",
     "category": "other",
     "section": "Pre-Plant",
+    "page": 9,
+    "quote": "Strip-Tillage Cultivation 0.00 0 0 0 0 18 18",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 18,
-    "totalCost": 18,
-    "page": 9,
-    "quote": "Strip-Tillage Cultivation 0.00 0 0 0 0 18 18"
+    "totalCost": 18
    },
    {
     "name": "Plant/Fertilize/Herbicide",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "Plant/Fertilize/Herbicide 0.00 0 0 0 178 22 200",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 178,
     "customRent": 22,
-    "totalCost": 200,
-    "page": 9,
-    "quote": "Plant/Fertilize/Herbicide 0.00 0 0 0 178 22 200"
+    "totalCost": 200
    },
    {
     "name": "Cultivate/Furrow Out",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "Cultivate/Furrow Out 0.00 0 0 0 0 14 14",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 14,
-    "totalCost": 14,
-    "page": 9,
-    "quote": "Cultivate/Furrow Out 0.00 0 0 0 0 14 14"
+    "totalCost": 14
    },
    {
     "name": "Weeds-Post Emergence",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "Weeds-Post Emergence 0.13 3 2 1 25 0 31",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 25,
     "customRent": 0,
-    "totalCost": 31,
-    "page": 9,
-    "quote": "Weeds-Post Emergence 0.13 3 2 1 25 0 31"
+    "totalCost": 31
    },
    {
     "name": "Pests-Mites Oberon 2SC",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "Pests-Mites Oberon 2SC 0.13 3 2 1 29 0 34",
     "timeHrsPerAcre": 0.13,
     "labor": 3,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 29,
     "customRent": 0,
-    "totalCost": 34,
-    "page": 9,
-    "quote": "Pests-Mites Oberon 2SC 0.13 3 2 1 29 0 34"
+    "totalCost": 34
    },
    {
     "name": "Irrigate 7X",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "Irrigate 7X 0.00 0 0 0 129 0 129",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 129,
     "customRent": 0,
-    "totalCost": 129,
-    "page": 9,
-    "quote": "Irrigate 7X 0.00 0 0 0 129 0 129"
+    "totalCost": 129
    },
    {
     "name": "Fertilize-UAN32",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "Fertilize-UAN32 0.00 0 0 0 126 0 126",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 126,
     "customRent": 0,
-    "totalCost": 126,
-    "page": 9,
-    "quote": "Fertilize-UAN32 0.00 0 0 0 126 0 126"
+    "totalCost": 126
    },
    {
     "name": "Irrigation Labor",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "Irrigation Labor 0.00 124 0 0 0 0 124",
     "timeHrsPerAcre": 0,
     "labor": 124,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 124,
-    "page": 9,
-    "quote": "Irrigation Labor 0.00 124 0 0 0 0 124"
+    "totalCost": 124
    },
    {
     "name": "Pickup Truck-Farm Use",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "Pickup Truck-Farm Use 0.27 6 2 1 0 0 9",
     "timeHrsPerAcre": 0.27,
     "labor": 6,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 9,
-    "quote": "Pickup Truck-Farm Use 0.27 6 2 1 0 0 9"
+    "totalCost": 9
    },
    {
     "name": "ATV-Farm Use",
     "category": "cultural",
     "section": "Cultural ",
+    "page": 9,
+    "quote": "ATV-Farm Use 0.20 5 1 0 0 0 6",
     "timeHrsPerAcre": 0.2,
     "labor": 5,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 6,
-    "page": 9,
-    "quote": "ATV-Farm Use 0.20 5 1 0 0 0 6"
+    "totalCost": 6
    },
    {
     "name": "Harvest-Chop/Haul-Silage",
     "category": "harvest",
     "section": "Harvest",
+    "page": 9,
+    "quote": "Harvest-Chop/Haul-Silage 0.00 0 0 0 0 331 331",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 331,
-    "totalCost": 331,
-    "page": 9,
-    "quote": "Harvest-Chop/Haul-Silage 0.00 0 0 0 0 331 331"
+    "totalCost": 331
    }
   ]
  },

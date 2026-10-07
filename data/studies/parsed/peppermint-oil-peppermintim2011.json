@@ -111,6 +111,12 @@
    "page": 14,
    "quote": "TOTAL OPERATING COSTS/ACRE 17.10 272 90 26 794 475 1,672"
   },
+  "operatingInterest": {
+   "value": 15,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "Interest on Operating Capital @ 5.75% 15"
+  },
   "cashOverheadTotal": {
    "value": 355,
    "unit": "$/acre",
@@ -155,10 +161,22 @@
     "quote": "Field Supervisor 56"
    },
    {
+    "description": "Land Rent 140ac",
+    "value": 215,
+    "page": 14,
+    "quote": "Land Rent 140ac 215"
+   },
+   {
     "description": "Office Expense",
     "value": 12,
     "page": 14,
     "quote": "Office Expense 12"
+   },
+   {
+    "description": "PipeRent49acSolidS",
+    "value": 44,
+    "page": 14,
+    "quote": "PipeRent49acSolidS 44"
    },
    {
     "description": "Liability Insurance",
@@ -190,253 +208,253 @@
     "name": "Weed: Dormant (Diuron, Gramoxone, Goal)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Weed: Dormant (Diuron, Gramoxone, Goal) 0.00 0 0 0 44 9 53",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 44,
     "customRent": 9,
-    "totalCost": 53,
-    "page": 14,
-    "quote": "Weed: Dormant (Diuron, Gramoxone, Goal) 0.00 0 0 0 44 9 53"
+    "totalCost": 53
    },
    {
     "name": "Fertilize: Soil & Tissue Analysis",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Fertilize: Soil & Tissue Analysis 0.00 0 0 0 0 2 2",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 2,
-    "totalCost": 2,
-    "page": 14,
-    "quote": "Fertilize: Soil & Tissue Analysis 0.00 0 0 0 0 2 2"
+    "totalCost": 2
    },
    {
     "name": "Roll Plants/Field 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Roll Plants/Field 2X 0.27 7 7 2 0 0 16",
     "timeHrsPerAcre": 0.27,
     "labor": 7,
     "fuel": 7,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 16,
-    "page": 14,
-    "quote": "Roll Plants/Field 2X 0.27 7 7 2 0 0 16"
+    "totalCost": 16
    },
    {
     "name": "Insect: Insect Scouting (6 months)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Insect: Insect Scouting (6 months) 0.00 0 0 0 0 8 8",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 8,
-    "totalCost": 8,
-    "page": 14,
-    "quote": "Insect: Insect Scouting (6 months) 0.00 0 0 0 0 8 8"
+    "totalCost": 8
    },
    {
     "name": "Irrigate: Water & Labor",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Irrigate: Water & Labor 8.96 123 0 0 198 0 321",
     "timeHrsPerAcre": 8.96,
     "labor": 123,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 198,
     "customRent": 0,
-    "totalCost": 321,
-    "page": 14,
-    "quote": "Irrigate: Water & Labor 8.96 123 0 0 198 0 321"
+    "totalCost": 321
    },
    {
     "name": "Fertilize: Grnd (21-0-0,46-0-0,16-20-0)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Fertilize: Grnd (21-0-0,46-0-0,16-20-0) 0.00 0 0 0 104 9 113",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 104,
     "customRent": 9,
-    "totalCost": 113,
-    "page": 14,
-    "quote": "Fertilize: Grnd (21-0-0,46-0-0,16-20-0) 0.00 0 0 0 104 9 113"
+    "totalCost": 113
    },
    {
     "name": "Fertilize: Chemigate (UN32,ThioSul) 3X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Fertilize: Chemigate (UN32,ThioSul) 3X 0.00 0 0 0 129 0 129",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 129,
     "customRent": 0,
-    "totalCost": 129,
-    "page": 14,
-    "quote": "Fertilize: Chemigate (UN32,ThioSul) 3X 0.00 0 0 0 129 0 129"
+    "totalCost": 129
    },
    {
     "name": "Weed: Air (Basagran, Stinger)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Weed: Air (Basagran, Stinger) 0.00 0 0 0 61 9 70",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 61,
     "customRent": 9,
-    "totalCost": 70,
-    "page": 14,
-    "quote": "Weed: Air (Basagran, Stinger) 0.00 0 0 0 61 9 70"
+    "totalCost": 70
    },
    {
     "name": "Insect: Mites (AgriMek) Air",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Insect: Mites (AgriMek) Air 0.00 0 0 0 94 9 103",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 94,
     "customRent": 9,
-    "totalCost": 103,
-    "page": 14,
-    "quote": "Insect: Mites (AgriMek) Air 0.00 0 0 0 94 9 103"
+    "totalCost": 103
    },
    {
     "name": "Weed: Hand",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Weed: Hand 4.00 55 0 0 0 0 55",
     "timeHrsPerAcre": 4,
     "labor": 55,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 55,
-    "page": 14,
-    "quote": "Weed: Hand 4.00 55 0 0 0 0 55"
+    "totalCost": 55
    },
    {
     "name": "Insect: Mite (Acramite) Air",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Insect: Mite (Acramite) Air 0.00 0 0 0 107 9 116",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 107,
     "customRent": 9,
-    "totalCost": 116,
-    "page": 14,
-    "quote": "Insect: Mite (Acramite) Air 0.00 0 0 0 107 9 116"
+    "totalCost": 116
    },
    {
     "name": "Insect: Mint Root Borer (Coragen) Air",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Insect: Mint Root Borer (Coragen) Air 0.00 0 0 0 47 9 56",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 47,
     "customRent": 9,
-    "totalCost": 56,
-    "page": 14,
-    "quote": "Insect: Mint Root Borer (Coragen) Air 0.00 0 0 0 47 9 56"
+    "totalCost": 56
    },
    {
     "name": "Recondition Stand 1X/4yr",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Recondition Stand 1X/4yr 0.17 11 8 3 0 0 22",
     "timeHrsPerAcre": 0.17,
     "labor": 11,
     "fuel": 8,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 22,
-    "page": 14,
-    "quote": "Recondition Stand 1X/4yr 0.17 11 8 3 0 0 22"
+    "totalCost": 22
    },
    {
     "name": "Pickup",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Pickup 0.80 20 6 2 0 0 28",
     "timeHrsPerAcre": 0.8,
     "labor": 20,
     "fuel": 6,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 28,
-    "page": 14,
-    "quote": "Pickup 0.80 20 6 2 0 0 28"
+    "totalCost": 28
    },
    {
     "name": "Remove and Reset Sprinklers",
     "category": "harvest",
     "section": "Harvest",
+    "page": 14,
+    "quote": "Remove and Reset Sprinklers 1.28 18 0 0 0 0 18",
     "timeHrsPerAcre": 1.28,
     "labor": 18,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 18,
-    "page": 14,
-    "quote": "Remove and Reset Sprinklers 1.28 18 0 0 0 0 18"
+    "totalCost": 18
    },
    {
     "name": "Harvest & Distill Mint",
     "category": "harvest",
     "section": "Harvest",
+    "page": 14,
+    "quote": "Harvest & Distill Mint 0.00 0 0 0 0 404 404",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 404,
-    "totalCost": 404,
-    "page": 14,
-    "quote": "Harvest & Distill Mint 0.00 0 0 0 0 404 404"
+    "totalCost": 404
    },
    {
     "name": "Voluntary Assessments",
     "category": "harvest",
     "section": "Harvest",
+    "page": 14,
+    "quote": "Voluntary Assessments 0.00 0 0 0 10 0 10",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 10,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 14,
-    "quote": "Voluntary Assessments 0.00 0 0 0 10 0 10"
+    "totalCost": 10
    },
    {
     "name": "Mint Slug Disposal",
     "category": "harvest",
     "section": "Harvest",
+    "page": 14,
+    "quote": "Mint Slug Disposal 1.62 40 69 18 0 7 134",
     "timeHrsPerAcre": 1.62,
     "labor": 40,
     "fuel": 69,
     "lubeRepairs": 18,
     "materials": 0,
     "customRent": 7,
-    "totalCost": 134,
-    "page": 14,
-    "quote": "Mint Slug Disposal 1.62 40 69 18 0 7 134"
+    "totalCost": 134
    }
   ]
  },

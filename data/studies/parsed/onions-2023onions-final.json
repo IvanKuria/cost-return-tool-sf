@@ -120,17 +120,18 @@
    "page": 11,
    "quote": "TOTAL OPERATING COSTS/ACRE 3615.29"
   },
+  "operatingInterest": null,
   "cashOverheadTotal": {
-   "value": 1.6,
+   "value": 746.07,
    "unit": "$/acre",
    "page": 12,
-   "quote": "TOTAL CASH OVERHEAD COSTS/CWT 1.60"
+   "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 746.07"
   },
   "nonCashOverheadTotal": {
-   "value": 0.337,
+   "value": 156.75,
    "unit": "$/acre",
    "page": 12,
-   "quote": "TOTAL NON-CASH OVERHEAD COSTS/CWT 0.337"
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS/ACRE 156.75"
   },
   "totalCost": {
    "value": 4518.11,
@@ -952,7 +953,8 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]"
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
+   "the production cost table has no hours column; its rows are not read as operations"
   ]
  }
 }

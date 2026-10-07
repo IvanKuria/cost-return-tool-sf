@@ -433,3 +433,138 @@ describe('establishment summary: every perennial study has a table or a cited pe
     expect(byId('apples-2023applesccfullfinal-nov23').establishmentSummary.reason).toMatch(/land value/);
   });
 });
+
+describe('per-acre operations table (Table 1 operation rows)', () => {
+  const all = load();
+  const get = (id: string) => { const s = all.find(x => x.source.id === id); expect(s, id).toBeTruthy(); return s!; };
+  const sumOps = (s: ParsedStudy) => s.costsPerAcre.operations.reduce((a, r) => a + (r.totalCost ?? 0), 0);
+  const within = (a: number, b: number, pct: number) => Math.abs(a - b) <= (pct / 100) * Math.abs(b);
+
+  // Studies with no per-acre operation table the parser can read, and why. Every other study must have one.
+  const NO_OPERATIONS_TABLE: Record<string, string> = {
+    // livestock budgets: per-head and whole-herd columns, no per-acre operation table
+    'beef-17beefcowcalfeastbayareafinaldraft121417': 'livestock budget',
+    'beef-17beefcowcalfsjvfinaldraft91217': 'livestock budget',
+    'beef-18beefcowcalfcentralcoast81018': 'livestock budget',
+    'beef-2017beefcowcalfsacvalleyfinaldraft63017': 'livestock budget',
+    'beef-2017beefyearlingstockerssacvalfinaldraft-71917': 'livestock budget',
+    'beef-2017grassfinishedbeefshastafinaldraft71917': 'livestock budget',
+    'beef-2019beefcowcalfcentralsanjoaquinvalleyamended92319': 'livestock budget',
+    'beef-beefsv2012': 'livestock budget',
+    'beef-beefyearling-stockersv2010': 'livestock budget',
+    'goats-meatgoatncal2010': 'livestock budget',
+    'sheep-2022sheepproductionsjvsouth': 'livestock budget',
+    // Imperial County 2004-05 (and 2000-01 ryegrass) budgets: Materials / Hand Labor / Cost Per Acre columns, no TOTAL OPERATING COSTS row
+    'artichokes-artichokes04': 'Imperial County layout',
+    'bermudagrass-hay-bermhay04': 'Imperial County layout',
+    'bermudagrass-seed-bermseed04': 'Imperial County layout',
+    'cantaloupes-cantaloupemb04': 'Imperial County layout',
+    'carrots-carrotsmkt04': 'Imperial County layout',
+    'cauliflower-cauliflower04': 'Imperial County layout',
+    'kleingrass-hay-kleingrass04': 'Imperial County layout',
+    'melons-mixedmelons04': 'Imperial County layout',
+    'ryegrass-ryegrass': 'Imperial County layout',
+    'sugar-beets-sugarbeet04': 'Imperial County layout',
+    'watermelon-watermelon04': 'Imperial County layout',
+    // the operations table is an image in the PDF; the text layer has only its heading
+    'onions-2023onions-final': 'Table 1 is an embedded image',
+    'lettuce-2010lettuce-wrap-cc': 'tables are embedded images',
+    // per 1,000 linear feet of hedgerow, establishment only
+    'blue-elderberry-20blueelderberryhedgerowwithouttillage': 'per 1,000 LF hedgerow',
+    'blue-elderberry-20blueelderberryhighdensityhedgerowwithtillage': 'per 1,000 LF hedgerow',
+    'blue-elderberry-20blueelderberrymultispecieshedgerowwithtillage': 'per 1,000 LF hedgerow',
+    // no single-year production table laid out by operation
+    'conservation-practices-12747': 'partial budget of practices',
+    'grapes-wine-wine-grape-sn-2015': 'production years appear only by input (Table 5); operation tables are establishment years',
+    'grapes-grapesrivcty02': 'one establishment-and-production table by year',
+    'lychee-lycheescc02': 'profitability table by year',
+    'christmas-trees-christmastreesn2005': 'one column per year and a per-tree column',
+    'guava-guava-sc07': 'text layer splits and joins words throughout ("COS TS PER ACREBY CATEGORY")',
+    'raspberries-span-bpraspberry-cc-final-v2-1': 'Spanish production tables are titled by season ("Producción de primavera - Año 2"), not "COSTOS POR ACRE"',
+  };
+
+  it('every study with a per-acre operations table has operation rows that add up to the printed operating total', () => {
+    const bad: string[] = [];
+    for (const s of all) {
+      const id = s.source.id;
+      if (id in NO_OPERATIONS_TABLE) continue;
+      const c = s.costsPerAcre;
+      if (!c.operations.length) { bad.push(`${id}: no operation rows`); continue; }
+      if (!c.operatingTotal) { bad.push(`${id}: no operating total`); continue; }
+      const rebuilt = sumOps(s) + (c.operatingInterest?.value ?? 0);
+      if (!within(rebuilt, c.operatingTotal.value, 2)) bad.push(`${id}: rows + interest ${rebuilt.toFixed(2)} vs printed ${c.operatingTotal.value}`);
+    }
+    expect(bad).toEqual([]);
+  });
+
+  it('the allowlist only names studies that really have no operation rows', () => {
+    for (const id of Object.keys(NO_OPERATIONS_TABLE)) expect(get(id).costsPerAcre.operations, id).toEqual([]);
+  });
+
+  it('operating + cash overhead + non-cash overhead = total cost (2%) where all four are printed', () => {
+    const bad: string[] = [];
+    for (const s of all) {
+      const { operatingTotal: op, cashOverheadTotal: co, nonCashOverheadTotal: nc, totalCost: t } = s.costsPerAcre;
+      if (!op || !co || !nc || !t) continue;
+      if (!within(op.value + co.value + nc.value, t.value, 2)) bad.push(`${s.source.id}: ${op.value} + ${co.value} + ${nc.value} vs ${t.value}`);
+    }
+    expect(bad).toEqual([]);
+  });
+
+  // Hand-checked against the printed Table 1 / Table 2.
+  it('2023 baby lima beans: "TOTAL OPERATING COSTS/A" row, and overhead per acre rather than per cwt', () => {
+    const c = get('beans-2023-baby-lima-final').costsPerAcre;
+    const r = c.operations.find(x => x.name === 'Irrigate 5x')!;
+    expect([r.labor, r.materials, r.totalCost, r.page]).toEqual([73, 208.25, 281.25, 11]);
+    expect(c.operations).toHaveLength(25);
+    expect(c.operatingTotal?.value).toBe(1317.17);      // "TOTAL OPERATING COSTS/A 3.19 184.45 77.31 34.73 539.38 457.50 1317.17"
+    expect(c.operatingInterest?.value).toBe(23.8);
+    expect(c.cashOverheadTotal?.value).toBe(481.82);    // not "TOTAL CASH OVERHEAD COSTS/CWT 17.21"
+    expect(c.nonCashOverheadTotal?.value).toBe(65.44);
+    expect(c.totalCost?.value).toBe(1864.42);
+  });
+  it('2012-13 Ventura County cabbage: "TOTAL OPERATI NG COSTS/ACRE" and per-carton rows', () => {
+    const c = get('cabbage-costs-and-profitability-analysis-for-cabbage-production-in-the-oxnard-plain-ventura-county-2012-13').costsPerAcre;
+    const r = c.operations.find(x => x.name === 'Cut, Pack, Haul, Cool, Sell')!;
+    expect([r.customRent, r.totalCost, r.category]).toEqual([4188.19, 4188.19, 'harvest']);
+    expect(c.operatingTotal?.value).toBe(6796);
+    expect(c.cashOverheadTotal?.value).toBe(1336);      // not "TOTAL CASH OVERHEAD COSTS/CRTN 1.27"
+    expect(c.nonCashOverheadTotal?.value).toBe(80);
+    expect(c.totalCost?.value).toBe(8212);
+  });
+  it('2006 sweetpotatoes: Table 5 (not the "MONTLY" table), with a field labor hours column', () => {
+    const c = get('sweet-potatoes-potatosweetsjv2006').costsPerAcre;
+    expect(c.title).toBe('COST PER ACRE TO PRODUCE SWEETPOTATOES');
+    const hand = c.operations.find(x => x.name === 'Weed: Hand 3X')!;
+    expect([hand.timeHrsPerAcre, hand.labor, hand.fuel, hand.totalCost]).toEqual([0, 306, 0, 306]);   // "0.00 31.50 306 0 0 0 306"
+    const mow = c.operations.find(x => x.name === 'Harvest: Mow Vines')!;
+    expect([mow.timeHrsPerAcre, mow.labor, mow.fuel, mow.totalCost]).toEqual([0.25, 3, 4, 7]);       // no field labor hours printed
+    expect(c.operatingTotal?.value).toBe(3417);
+    expect([c.cashOverheadTotal?.value, c.nonCashOverheadTotal?.value, c.totalCost?.value]).toEqual([902, 1281, 5599]);
+  });
+  it('2018 Fresno processing tomatoes: rows on the Table 1 continuation page are read', () => {
+    const c = get('tomatoes-17processtomatofresnosdi-final-draft').costsPerAcre;
+    const r = c.operations.find(x => x.name === 'Drip Tape Extraction 33% Ac')!;
+    expect([r.labor, r.fuel, r.lubeRepairs, r.totalCost, r.page]).toEqual([21, 11, 5, 36, 13]);
+    expect(c.operations.find(x => x.name === 'Laser level 7% Ac')?.totalCost).toBe(11);
+    expect(c.operatingTotal?.value).toBe(3345);
+    expect([c.cashOverheadTotal?.value, c.nonCashOverheadTotal?.value, c.totalCost?.value]).toEqual([318, 798, 4461]);
+  });
+  it('2014 processing tomatoes (drip): non-cash overhead is the per-acre 223, not the 1,994 investment', () => {
+    const c = get('tomatoes-process-tomato-drip').costsPerAcre;
+    expect(c.nonCashOverheadTotal?.value).toBe(223);
+    expect([c.operatingTotal?.value, c.cashOverheadTotal?.value, c.totalCost?.value]).toEqual([2733, 198, 3153]);  // 2,733 + 198 + 223 = 3,154; printed 3,153 (rounding)
+  });
+
+  it('cash overhead items never include TOTAL lines, and add up to the printed cash overhead total (2%)', () => {
+    const off: string[] = [];
+    for (const st of load()) {
+      const c = st.costsPerAcre;
+      for (const it of c.cashOverheadItems) if (/^\s*TOTAL/i.test(it.description)) off.push(`${st.source.id}: item "${it.description}"`);
+      if (!c.cashOverheadItems.length || !c.cashOverheadTotal) continue;
+      const sum = c.cashOverheadItems.reduce((a, x) => a + x.value, 0);
+      if (Math.abs(sum - c.cashOverheadTotal.value) > Math.max(2, 0.02 * c.cashOverheadTotal.value)) off.push(`${st.source.id}: items ${Math.round(sum)} vs total ${c.cashOverheadTotal.value}`);
+    }
+    expect(off).toEqual([]);
+  });
+});

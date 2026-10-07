@@ -102,11 +102,37 @@
   }
  },
  "costsPerAcre": {
-  "title": "COSTS AND RETURNS PER ACRE TO PRODUCE ALFALFA",
-  "operatingTotal": null,
-  "cashOverheadTotal": null,
-  "nonCashOverheadTotal": null,
-  "totalCost": null,
+  "title": "COSTS PER ACRE TO PRODUCE ALFALFA",
+  "operatingTotal": {
+   "value": 1003,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTALOPERATINGCOSTS/ACRE 5 241 125 109 492 18 1,003"
+  },
+  "operatingInterest": {
+   "value": 18,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Interest on Operating Capital at 5.75% 18"
+  },
+  "cashOverheadTotal": {
+   "value": 318,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTALCASHOVERHEADCOSTS/ACRE 318"
+  },
+  "nonCashOverheadTotal": {
+   "value": 937,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTALNON-CASHOVERHEADCOSTS 12,130 937 937"
+  },
+  "totalCost": {
+   "value": 2258,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL COSTS/ACRE 2,258"
+  },
   "grossReturns": {
    "value": 2475,
    "unit": "$/acre",
@@ -120,8 +146,290 @@
    "page": 15,
    "quote": "NET RETURNS ABOVE TOTAL COST 206"
   },
-  "cashOverheadItems": [],
-  "operations": []
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 50,
+    "page": 13,
+    "quote": "Office Expense 50"
+   },
+   {
+    "description": "MiscellaneousCosts",
+    "value": 20,
+    "page": 13,
+    "quote": "MiscellaneousCosts 20"
+   },
+   {
+    "description": "SupervisorSalary",
+    "value": 43,
+    "page": 13,
+    "quote": "SupervisorSalary 43"
+   },
+   {
+    "description": "Liability Insurance",
+    "value": 1,
+    "page": 13,
+    "quote": "Liability Insurance 1"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 96,
+    "page": 13,
+    "quote": "Property Taxes 96"
+   },
+   {
+    "description": "PropertyInsurance",
+    "value": 79,
+    "page": 13,
+    "quote": "PropertyInsurance 79"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 30,
+    "page": 13,
+    "quote": "Investment Repairs 30"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Fertilize 11-52-0",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Fertilize 11-52-0 0.00 0 0 0 46 7 54",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 46,
+    "customRent": 7,
+    "totalCost": 54
+   },
+   {
+    "name": "Weeds-RoundupPowerMax",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Weeds-RoundupPowerMax 0.07 1 0 0 63 0 65",
+    "timeHrsPerAcre": 0.07,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 63,
+    "customRent": 0,
+    "totalCost": 65
+   },
+   {
+    "name": "Insects-Aphids/Weevil-Warrior II",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Insects-Aphids/Weevil-Warrior II 0.07 1 0 0 8 0 10",
+    "timeHrsPerAcre": 0.07,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 8,
+    "customRent": 0,
+    "totalCost": 10
+   },
+   {
+    "name": "Vertebrate Pests-Gophers 3X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Vertebrate Pests-Gophers 3X 0.42 12 3 1 23 0 40",
+    "timeHrsPerAcre": 0.42,
+    "labor": 12,
+    "fuel": 3,
+    "lubeRepairs": 1,
+    "materials": 23,
+    "customRent": 0,
+    "totalCost": 40
+   },
+   {
+    "name": "Irrigate-Drip",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Irrigate-Drip 0.00 82 0 0 293 0 374",
+    "timeHrsPerAcre": 0,
+    "labor": 82,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 293,
+    "customRent": 0,
+    "totalCost": 374
+   },
+   {
+    "name": "Insects-WormsCoragen",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Insects-WormsCoragen 0.07 1 0 0 21 0 22",
+    "timeHrsPerAcre": 0.07,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 21,
+    "customRent": 0,
+    "totalCost": 22
+   },
+   {
+    "name": "Insects-Worms Belt SC",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Insects-Worms Belt SC 0.07 1 0 0 28 0 30",
+    "timeHrsPerAcre": 0.07,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 28,
+    "customRent": 0,
+    "totalCost": 30
+   },
+   {
+    "name": "TissueSamples",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "TissueSamples 0.00 0 0 0 0 11 11",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 11,
+    "totalCost": 11
+   },
+   {
+    "name": "Pickup 1/2 Ton",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Pickup 1/2 Ton 0.47 10 4 2 0 0 15",
+    "timeHrsPerAcre": 0.47,
+    "labor": 10,
+    "fuel": 4,
+    "lubeRepairs": 2,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 15
+   },
+   {
+    "name": "Pickup 3/4 Ton",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Pickup 3/4 Ton 0.40 8 4 1 0 0 14",
+    "timeHrsPerAcre": 0.4,
+    "labor": 8,
+    "fuel": 4,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 14
+   },
+   {
+    "name": "Service Truck",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 13,
+    "quote": "Service Truck 0.20 4 2 1 0 0 7",
+    "timeHrsPerAcre": 0.2,
+    "labor": 4,
+    "fuel": 2,
+    "lubeRepairs": 1,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 7
+   },
+   {
+    "name": "Harvest-Swathing",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 13,
+    "quote": "Harvest-Swathing 0.75 15 26 14 0 0 55",
+    "timeHrsPerAcre": 0.75,
+    "labor": 15,
+    "fuel": 26,
+    "lubeRepairs": 14,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 55
+   },
+   {
+    "name": "Harvest-Raking",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 13,
+    "quote": "Harvest-Raking 0.60 12 5 4 0 0 21",
+    "timeHrsPerAcre": 0.6,
+    "labor": 12,
+    "fuel": 5,
+    "lubeRepairs": 4,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 21
+   },
+   {
+    "name": "Harvest-Baling",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 13,
+    "quote": "Harvest-Baling 1.17 24 43 41 7 0 115",
+    "timeHrsPerAcre": 1.17,
+    "labor": 24,
+    "fuel": 43,
+    "lubeRepairs": 41,
+    "materials": 7,
+    "customRent": 0,
+    "totalCost": 115
+   },
+   {
+    "name": "Harvest-Roadsiding",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 13,
+    "quote": "Harvest-Roadsiding 1.05 21 37 45 0 0 103",
+    "timeHrsPerAcre": 1.05,
+    "labor": 21,
+    "fuel": 37,
+    "lubeRepairs": 45,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 103
+   },
+   {
+    "name": "Irrigate-Flush Drip System",
+    "category": "postharvest",
+    "section": "Postharvest",
+    "page": 13,
+    "quote": "Irrigate-Flush Drip System 0.00 7 0 0 3 0 10",
+    "timeHrsPerAcre": 0,
+    "labor": 7,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 3,
+    "customRent": 0,
+    "totalCost": 10
+   },
+   {
+    "name": "Drip System Maintenance",
+    "category": "postharvest",
+    "section": "Postharvest",
+    "page": 13,
+    "quote": "Drip System Maintenance 0.00 41 0 0 0 0 41",
+    "timeHrsPerAcre": 0,
+    "labor": 41,
+    "fuel": 0,
+    "lubeRepairs": 0,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 41
+   }
+  ]
  },
  "equipment": [
   {
@@ -773,7 +1081,12 @@
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
    "grossReturns",
+   "operations",
    "equipment",
    "investments",
    "hourlyEquipment",
@@ -785,11 +1098,6 @@
   ],
   "fieldsMissing": [
    "interestRatePct",
-   "operatingTotal",
-   "cashOverheadTotal",
-   "nonCashOverheadTotal",
-   "totalCost",
-   "operations",
    "businessOverhead",
    "insuranceRatePct",
    "propertyTaxRatePct",

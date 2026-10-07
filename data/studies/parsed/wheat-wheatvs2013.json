@@ -103,6 +103,12 @@
    "page": 8,
    "quote": "TOTAL OPERATING COSTS/ACRE 1.44 20 21 9 465 58 586"
   },
+  "operatingInterest": {
+   "value": 14,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "Interest on Operating Capital @ 5.75% 14"
+  },
   "cashOverheadTotal": {
    "value": 302,
    "unit": "$/acre",
@@ -153,6 +159,12 @@
     "quote": "Office Expense: 50"
    },
    {
+    "description": "Rent (600 acres)",
+    "value": 250,
+    "page": 8,
+    "quote": "Rent (600 acres) 250"
+   },
+   {
     "description": "Property Taxes",
     "value": 0,
     "page": 8,
@@ -176,169 +188,169 @@
     "name": "Fertilize: Preplant (Anhydrous Ammonia)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Preplant (Anhydrous Ammonia) 0.07 1 2 1 83 0 87",
     "timeHrsPerAcre": 0.07,
     "labor": 1,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 83,
     "customRent": 0,
-    "totalCost": 87,
-    "page": 8,
-    "quote": "Fertilize: Preplant (Anhydrous Ammonia) 0.07 1 2 1 83 0 87"
+    "totalCost": 87
    },
    {
     "name": "Land Prep: Finish Disc 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Finish Disc 2X 0.22 4 11 5 0 0 20",
     "timeHrsPerAcre": 0.22,
     "labor": 4,
     "fuel": 11,
     "lubeRepairs": 5,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 20,
-    "page": 8,
-    "quote": "Land Prep: Finish Disc 2X 0.22 4 11 5 0 0 20"
+    "totalCost": 20
    },
    {
     "name": "Land Prep: Pull Borders",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Pull Borders 0.04 1 1 0 0 0 2",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 2,
-    "page": 8,
-    "quote": "Land Prep: Pull Borders 0.04 1 1 0 0 0 2"
+    "totalCost": 2
    },
    {
     "name": "Plant: (wheat)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Plant: (wheat) 0.12 2 4 2 56 0 63",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 4,
     "lubeRepairs": 2,
     "materials": 56,
     "customRent": 0,
-    "totalCost": 63,
-    "page": 8,
-    "quote": "Plant: (wheat) 0.12 2 4 2 56 0 63"
+    "totalCost": 63
    },
    {
     "name": "Weed: Post-emergent (Express MCPA Axial)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Weed: Post-emergent (Express MCPA Axial) 0.00 0 0 0 54 8 62",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 54,
     "customRent": 8,
-    "totalCost": 62,
-    "page": 8,
-    "quote": "Weed: Post-emergent (Express MCPA Axial) 0.00 0 0 0 54 8 62"
+    "totalCost": 62
    },
    {
     "name": "Irrigate: (water & labor) 5X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Irrigate: (water & labor) 5X 0.75 8 0 0 167 0 175",
     "timeHrsPerAcre": 0.75,
     "labor": 8,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 167,
     "customRent": 0,
-    "totalCost": 175,
-    "page": 8,
-    "quote": "Irrigate: (water & labor) 5X 0.75 8 0 0 167 0 175"
+    "totalCost": 175
    },
    {
     "name": "Fertilize: Topdress (Urea)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Topdress (Urea) 0.00 0 0 0 38 8 46",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 38,
     "customRent": 8,
-    "totalCost": 46,
-    "page": 8,
-    "quote": "Fertilize: Topdress (Urea) 0.00 0 0 0 38 8 46"
+    "totalCost": 46
    },
    {
     "name": "Fertilize: Water Run (UN32)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Water Run (UN32) 0.00 0 0 0 65 0 65",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 65,
     "customRent": 0,
-    "totalCost": 65,
-    "page": 8,
-    "quote": "Fertilize: Water Run (UN32) 0.00 0 0 0 65 0 65"
+    "totalCost": 65
    },
    {
     "name": "PCA",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "PCA 0.00 0 0 0 0 10 10",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 10,
-    "totalCost": 10,
-    "page": 8,
-    "quote": "PCA 0.00 0 0 0 0 10 10"
+    "totalCost": 10
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Pickup Truck Use 0.24 4 2 1 0 0 7",
     "timeHrsPerAcre": 0.24,
     "labor": 4,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 7,
-    "page": 8,
-    "quote": "Pickup Truck Use 0.24 4 2 1 0 0 7"
+    "totalCost": 7
    },
    {
     "name": "Combine Wheat",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Combine Wheat 0.00 0 0 0 0 32 32",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 32,
-    "totalCost": 32,
-    "page": 8,
-    "quote": "Combine Wheat 0.00 0 0 0 0 32 32"
+    "totalCost": 32
    },
    {
     "name": "Assessment (CWC)",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Assessment (CWC) 0.00 0 0 0 4 0 4",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 4,
     "customRent": 0,
-    "totalCost": 4,
-    "page": 8,
-    "quote": "Assessment (CWC) 0.00 0 0 0 4 0 4"
+    "totalCost": 4
    }
   ]
  },

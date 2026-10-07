@@ -109,6 +109,12 @@
    "page": 14,
    "quote": "TOTAL OPERATING COSTS/ACRE 8 360 81 33 1,026 2,525 4,101"
   },
+  "operatingInterest": {
+   "value": 75,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "Interest on Operating Capital at 8.50% 75"
+  },
   "cashOverheadTotal": {
    "value": 840,
    "unit": "$/acre",
@@ -171,6 +177,12 @@
     "quote": "Regulatory Compliance Fees 40"
    },
    {
+    "description": "Crop Insurance (75% Coverage)",
+    "value": 137,
+    "page": 14,
+    "quote": "Crop Insurance (75% Coverage) 137"
+   },
+   {
     "description": "Property Taxes",
     "value": 288,
     "page": 14,
@@ -194,225 +206,225 @@
     "name": "Fertigate- UAN 32",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Fertigate- UAN 32 0.00 13 0 0 100 0 113",
     "timeHrsPerAcre": 0,
     "labor": 13,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 100,
     "customRent": 0,
-    "totalCost": 113,
-    "page": 14,
-    "quote": "Fertigate- UAN 32 0.00 13 0 0 100 0 113"
+    "totalCost": 113
    },
    {
     "name": "Pruning- Mechanical Hedging, alternate rows",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Pruning- Mechanical Hedging, alternate rows 0.00 0 0 0 0 125 125",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 125,
-    "totalCost": 125,
-    "page": 14,
-    "quote": "Pruning- Mechanical Hedging, alternate rows 0.00 0 0 0 0 125 125"
+    "totalCost": 125
    },
    {
     "name": "Irrigate (Water and Labor)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Irrigate (Water and Labor) 0.00 72 0 0 563 0 635",
     "timeHrsPerAcre": 0,
     "labor": 72,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 563,
     "customRent": 0,
-    "totalCost": 635,
-    "page": 14,
-    "quote": "Irrigate (Water and Labor) 0.00 72 0 0 563 0 635"
+    "totalCost": 635
    },
    {
     "name": "Weeds- Mow Middles 5X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Weeds- Mow Middles 5X 0.86 29 19 8 0 0 56",
     "timeHrsPerAcre": 0.86,
     "labor": 29,
     "fuel": 19,
     "lubeRepairs": 8,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 56,
-    "page": 14,
-    "quote": "Weeds- Mow Middles 5X 0.86 29 19 8 0 0 56"
+    "totalCost": 56
    },
    {
     "name": "Disease- Olive Knot 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Disease- Olive Knot 2X 0.70 24 16 7 125 0 171",
     "timeHrsPerAcre": 0.7,
     "labor": 24,
     "fuel": 16,
     "lubeRepairs": 7,
     "materials": 125,
     "customRent": 0,
-    "totalCost": 171,
-    "page": 14,
-    "quote": "Disease- Olive Knot 2X 0.70 24 16 7 125 0 171"
+    "totalCost": 171
    },
    {
     "name": "Weeds- Summer Strip Spray 3X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Weeds- Summer Strip Spray 3X 0.65 22 14 4 71 0 112",
     "timeHrsPerAcre": 0.65,
     "labor": 22,
     "fuel": 14,
     "lubeRepairs": 4,
     "materials": 71,
     "customRent": 0,
-    "totalCost": 112,
-    "page": 14,
-    "quote": "Weeds- Summer Strip Spray 3X 0.65 22 14 4 71 0 112"
+    "totalCost": 112
    },
    {
     "name": "Pruning- Mechanical Skirting",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Pruning- Mechanical Skirting 0.00 0 0 0 0 75 75",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 75,
-    "totalCost": 75,
-    "page": 14,
-    "quote": "Pruning- Mechanical Skirting 0.00 0 0 0 0 75 75"
+    "totalCost": 75
    },
    {
     "name": "Hand Prune- every third year, 1/3 of cost shown",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Hand Prune- every third year, 1/3 of cost shown 0.00 0 0 0 0 250 250",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 250,
-    "totalCost": 250,
-    "page": 14,
-    "quote": "Hand Prune- every third year, 1/3 of cost shown 0.00 0 0 0 0 250 250"
+    "totalCost": 250
    },
    {
     "name": "Shred Prunings",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Shred Prunings 0.00 0 0 0 0 100 100",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 100,
-    "totalCost": 100,
-    "page": 14,
-    "quote": "Shred Prunings 0.00 0 0 0 0 100 100"
+    "totalCost": 100
    },
    {
     "name": "Insects- Olive Fruit Fly 15X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Insects- Olive Fruit Fly 15X 0.40 14 1 1 117 0 132",
     "timeHrsPerAcre": 0.4,
     "labor": 14,
     "fuel": 1,
     "lubeRepairs": 1,
     "materials": 117,
     "customRent": 0,
-    "totalCost": 132,
-    "page": 14,
-    "quote": "Insects- Olive Fruit Fly 15X 0.40 14 1 1 117 0 132"
+    "totalCost": 132
    },
    {
     "name": "PCA",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "PCA 0.00 0 0 0 0 35 35",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 35,
-    "totalCost": 35,
-    "page": 14,
-    "quote": "PCA 0.00 0 0 0 0 35 35"
+    "totalCost": 35
    },
    {
     "name": "Weeds- Pre-emergent Strip Spray",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Weeds- Pre-emergent Strip Spray 0.22 7 5 1 51 0 64",
     "timeHrsPerAcre": 0.22,
     "labor": 7,
     "fuel": 5,
     "lubeRepairs": 1,
     "materials": 51,
     "customRent": 0,
-    "totalCost": 64,
-    "page": 14,
-    "quote": "Weeds- Pre-emergent Strip Spray 0.22 7 5 1 51 0 64"
+    "totalCost": 64
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Pickup Truck Use 2.59 89 19 9 0 0 117",
     "timeHrsPerAcre": 2.59,
     "labor": 89,
     "fuel": 19,
     "lubeRepairs": 9,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 117,
-    "page": 14,
-    "quote": "Pickup Truck Use 2.59 89 19 9 0 0 117"
+    "totalCost": 117
    },
    {
     "name": "ATV Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "ATV Use 2.59 89 8 3 0 0 99",
     "timeHrsPerAcre": 2.59,
     "labor": 89,
     "fuel": 8,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 99,
-    "page": 14,
-    "quote": "ATV Use 2.59 89 8 3 0 0 99"
+    "totalCost": 99
    },
    {
     "name": "Machine Harvest (25% by Hand)",
     "category": "harvest",
     "section": "Harvest",
+    "page": 14,
+    "quote": "Machine Harvest (25% by Hand) 0.00 0 0 0 0 1,800 1,800",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 1800,
-    "totalCost": 1800,
-    "page": 14,
-    "quote": "Machine Harvest (25% by Hand) 0.00 0 0 0 0 1,800 1,800"
+    "totalCost": 1800
    },
    {
     "name": "Haul Fruit to Processor",
     "category": "harvest",
     "section": "Harvest",
+    "page": 14,
+    "quote": "Haul Fruit to Processor 0.00 0 0 0 0 140 140",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 140,
-    "totalCost": 140,
-    "page": 14,
-    "quote": "Haul Fruit to Processor 0.00 0 0 0 0 140 140"
+    "totalCost": 140
    }
   ]
  },

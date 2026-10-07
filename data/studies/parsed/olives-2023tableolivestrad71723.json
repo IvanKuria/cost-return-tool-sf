@@ -109,6 +109,12 @@
    "page": 10,
    "quote": "TOTAL OPERATING COSTS/ACRE 6 235 57 24 1,251 4,267 5,956"
   },
+  "operatingInterest": {
+   "value": 123,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "Interest on Operating Capital at 8.50% 123"
+  },
   "cashOverheadTotal": {
    "value": 960,
    "unit": "$/acre",
@@ -171,6 +177,12 @@
     "quote": "Regulatory Compliance Fees 40"
    },
    {
+    "description": "Crop Insurance (75% Coverage)",
+    "value": 137,
+    "page": 10,
+    "quote": "Crop Insurance (75% Coverage) 137"
+   },
+   {
     "description": "Property Taxes",
     "value": 276,
     "page": 10,
@@ -194,197 +206,197 @@
     "name": "Pruning & Sucker",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pruning & Sucker 0.00 0 0 0 0 868 868",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 868,
-    "totalCost": 868,
-    "page": 10,
-    "quote": "Pruning & Sucker 0.00 0 0 0 0 868 868"
+    "totalCost": 868
    },
    {
     "name": "Shred Prunings",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Shred Prunings 0.00 0 0 0 0 114 114",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 114,
-    "totalCost": 114,
-    "page": 10,
-    "quote": "Shred Prunings 0.00 0 0 0 0 114 114"
+    "totalCost": 114
    },
    {
     "name": "Disease: Olive Knot 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Disease: Olive Knot 2X 0.50 17 8 4 125 0 155",
     "timeHrsPerAcre": 0.5,
     "labor": 17,
     "fuel": 8,
     "lubeRepairs": 4,
     "materials": 125,
     "customRent": 0,
-    "totalCost": 155,
-    "page": 10,
-    "quote": "Disease: Olive Knot 2X 0.50 17 8 4 125 0 155"
+    "totalCost": 155
    },
    {
     "name": "Fertigate: UAN-32",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Fertigate: UAN-32 0.00 0 0 0 100 0 100",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 100,
     "customRent": 0,
-    "totalCost": 100,
-    "page": 10,
-    "quote": "Fertigate: UAN-32 0.00 0 0 0 100 0 100"
+    "totalCost": 100
    },
    {
     "name": "Irrigate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Irrigate 0.00 18 0 0 675 0 693",
     "timeHrsPerAcre": 0,
     "labor": 18,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 675,
     "customRent": 0,
-    "totalCost": 693,
-    "page": 10,
-    "quote": "Irrigate 0.00 18 0 0 675 0 693"
+    "totalCost": 693
    },
    {
     "name": "Weeds: Mow Middles 3X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Weeds: Mow Middles 3X 0.80 28 13 6 0 0 47",
     "timeHrsPerAcre": 0.8,
     "labor": 28,
     "fuel": 13,
     "lubeRepairs": 6,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 47,
-    "page": 10,
-    "quote": "Weeds: Mow Middles 3X 0.80 28 13 6 0 0 47"
+    "totalCost": 47
    },
    {
     "name": "PCA",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "PCA 0.00 0 0 0 0 35 35",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 35,
-    "totalCost": 35,
-    "page": 10,
-    "quote": "PCA 0.00 0 0 0 0 35 35"
+    "totalCost": 35
    },
    {
     "name": "Thinning Spray (Alt. Years)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Thinning Spray (Alt. Years) 0.13 4 2 1 112 0 120",
     "timeHrsPerAcre": 0.13,
     "labor": 4,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 112,
     "customRent": 0,
-    "totalCost": 120,
-    "page": 10,
-    "quote": "Thinning Spray (Alt. Years) 0.13 4 2 1 112 0 120"
+    "totalCost": 120
    },
    {
     "name": "Weeds: In Season Strip Spray 3X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Weeds: In Season Strip Spray 3X 0.43 15 7 2 71 0 95",
     "timeHrsPerAcre": 0.43,
     "labor": 15,
     "fuel": 7,
     "lubeRepairs": 2,
     "materials": 71,
     "customRent": 0,
-    "totalCost": 95,
-    "page": 10,
-    "quote": "Weeds: In Season Strip Spray 3X 0.43 15 7 2 71 0 95"
+    "totalCost": 95
    },
    {
     "name": "Insects: Olive Fly 15X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Insects: Olive Fly 15X 0.40 14 1 1 117 0 133",
     "timeHrsPerAcre": 0.4,
     "labor": 14,
     "fuel": 1,
     "lubeRepairs": 1,
     "materials": 117,
     "customRent": 0,
-    "totalCost": 133,
-    "page": 10,
-    "quote": "Insects: Olive Fly 15X 0.40 14 1 1 117 0 133"
+    "totalCost": 133
    },
    {
     "name": "Weeds: Winter Strip Spray",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Weeds: Winter Strip Spray 0.25 9 3 1 51 0 64",
     "timeHrsPerAcre": 0.25,
     "labor": 9,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 51,
     "customRent": 0,
-    "totalCost": 64,
-    "page": 10,
-    "quote": "Weeds: Winter Strip Spray 0.25 9 3 1 51 0 64"
+    "totalCost": 64
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pickup Truck Use 1.90 65 14 7 0 0 86",
     "timeHrsPerAcre": 1.9,
     "labor": 65,
     "fuel": 14,
     "lubeRepairs": 7,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 86,
-    "page": 10,
-    "quote": "Pickup Truck Use 1.90 65 14 7 0 0 86"
+    "totalCost": 86
    },
    {
     "name": "ATV Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "ATV Use 1.90 65 7 2 0 0 75",
     "timeHrsPerAcre": 1.9,
     "labor": 65,
     "fuel": 7,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 75,
-    "page": 10,
-    "quote": "ATV Use 1.90 65 7 2 0 0 75"
+    "totalCost": 75
    },
    {
     "name": "Hand Pick/Load/Haul",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Hand Pick/Load/Haul 0.00 0 0 0 0 3,250 3,250",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 3250,
-    "totalCost": 3250,
-    "page": 10,
-    "quote": "Hand Pick/Load/Haul 0.00 0 0 0 0 3,250 3,250"
+    "totalCost": 3250
    }
   ]
  },

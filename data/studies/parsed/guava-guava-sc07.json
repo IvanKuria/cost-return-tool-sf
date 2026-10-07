@@ -72,69 +72,17 @@
   }
  },
  "costsPerAcre": {
-  "title": "RANGE ANALYSIS: ANALYSIS OF COSTS AND RETURNS FOR PRODUCING GUAVAS",
-  "operatingTotal": {
-   "value": 6150,
-   "unit": "$/acre",
-   "page": 21,
-   "quote": "TOTAL OPERATING COSTS/ACRE ($) 4670 4917 5164 5410 5657 5903 6150"
-  },
+  "title": null,
+  "operatingTotal": null,
+  "operatingInterest": null,
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
-  "totalCost": {
-   "value": 11860,
-   "unit": "$/acre",
-   "page": 21,
-   "quote": "TOTAL COSTS/ACRE ($) 10381 10627 10874 11121 11367 11614 11860"
-  },
+  "totalCost": null,
   "grossReturns": null,
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [],
-  "operations": [
-   {
-    "name": "407",
-    "category": "cultural",
-    "section": "Cultural",
-    "timeHrsPerAcre": 466,
-    "labor": 524,
-    "fuel": 582,
-    "lubeRepairs": null,
-    "materials": 640,
-    "customRent": 698,
-    "totalCost": 757,
-    "page": 21,
-    "quote": "407 466 524 582 640 698 757"
-   },
-   {
-    "name": "Cultural Costs ($)",
-    "category": "cultural",
-    "section": "Cultural",
-    "timeHrsPerAcre": 2849,
-    "labor": 2849,
-    "fuel": 2849,
-    "lubeRepairs": 2849,
-    "materials": 2849,
-    "customRent": 2849,
-    "totalCost": 2849,
-    "page": 21,
-    "quote": "Cultural Costs ($) 2849 2849 2849 2849 2849 2849 2849"
-   },
-   {
-    "name": "Harvest Cost ($)",
-    "category": "cultural",
-    "section": "Cultural",
-    "timeHrsPerAcre": 1670,
-    "labor": 1909,
-    "fuel": 2148,
-    "lubeRepairs": 2386,
-    "materials": 2625,
-    "customRent": 2863,
-    "totalCost": 3102,
-    "page": 21,
-    "quote": "Harvest Cost ($) 1670 1909 2148 2386 2625 2863 3102"
-   }
-  ]
+  "operations": []
  },
  "equipment": [
   {
@@ -1134,9 +1082,6 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
-   "operatingTotal",
-   "totalCost",
-   "operations",
    "equipment",
    "capitalRecoveryFormula",
    "establishment",
@@ -1148,9 +1093,12 @@
    "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
+   "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
+   "totalCost",
    "grossReturns",
+   "operations",
    "investments",
    "hourlyEquipment",
    "businessOverhead",
@@ -1160,8 +1108,7 @@
    "monthly"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "no costs-per-acre table found",
    "equipment row without a Total column: 2007 A TV 4WD",
    "equipment row without a Total column: 2007 Weed Wacker"
   ]

@@ -96,6 +96,12 @@
    "page": 15,
    "quote": "TOTAL OPERATING COSTS/ACRE 205 26 847 3,630 4,830"
   },
+  "operatingInterest": {
+   "value": 124,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "Interest on operating capital @ 7.40% 124"
+  },
   "cashOverheadTotal": {
    "value": 345,
    "unit": "$/acre",
@@ -169,267 +175,281 @@
     "name": "Frost Protection",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Frost Protection 2.19 20 0 200 0 220",
     "timeHrsPerAcre": 2.19,
     "labor": 20,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 200,
     "customRent": 0,
-    "totalCost": 220,
-    "page": 15,
-    "quote": "Frost Protection 2.19 20 0 200 0 220"
+    "totalCost": 220
    },
    {
     "name": "Irrigate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Irrigate 5.52 49 0 200 0 249",
     "timeHrsPerAcre": 5.52,
     "labor": 49,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 200,
     "customRent": 0,
-    "totalCost": 249,
-    "page": 15,
-    "quote": "Irrigate 5.52 49 0 200 0 249"
+    "totalCost": 249
    },
    {
     "name": "Weed - Pre-emergent",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Weed - Pre-emergent 0.25 3 1 30 0 34",
     "timeHrsPerAcre": 0.25,
     "labor": 3,
     "fuel": 1,
     "lubeRepairs": null,
     "materials": 30,
     "customRent": 0,
-    "totalCost": 34,
-    "page": 15,
-    "quote": "Weed - Pre-emergent 0.25 3 1 30 0 34"
+    "totalCost": 34
    },
    {
     "name": "Weed - Spot Spray",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Weed - Spot Spray 1.00 32 2 7 0 41",
     "timeHrsPerAcre": 1,
     "labor": 32,
     "fuel": 2,
     "lubeRepairs": null,
     "materials": 7,
     "customRent": 0,
-    "totalCost": 41,
-    "page": 15,
-    "quote": "Weed - Spot Spray 1.00 32 2 7 0 41"
+    "totalCost": 41
    },
    {
     "name": "Prune - Hand, Top, Shred",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Prune - Hand, Top, Shred 0.00 0 0 0 423 423",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 423,
-    "totalCost": 423,
-    "page": 15,
-    "quote": "Prune - Hand, Top, Shred 0.00 0 0 0 423 423"
+    "totalCost": 423
    },
    {
     "name": "Fertilize - Foliar Fall: N, KNO3, Zn",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Fertilize - Foliar Fall: N, KNO3, Zn 0.00 0 0 7 25 32",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 7,
     "customRent": 25,
-    "totalCost": 32,
+    "totalCost": 32
+   },
+   {
+    "name": "Fertilize - N",
+    "category": "cultural",
+    "section": "Cultural",
     "page": 15,
-    "quote": "Fertilize - Foliar Fall: N, KNO3, Zn 0.00 0 0 7 25 32"
+    "quote": "Fertilize - N 0.00 0 20 0 20",
+    "timeHrsPerAcre": 0,
+    "labor": null,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 20,
+    "customRent": 0,
+    "totalCost": 20
    },
    {
     "name": "Pest/Fertilizer: Worm/N KNO3 Mn Zn",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Pest/Fertilizer: Worm/N KNO3 Mn Zn 0.00 0 0 26 22 48",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 26,
     "customRent": 22,
-    "totalCost": 48,
-    "page": 15,
-    "quote": "Pest/Fertilizer: Worm/N KNO3 Mn Zn 0.00 0 0 26 22 48"
+    "totalCost": 48
    },
    {
     "name": "Pest - Thrips Katydid",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Pest - Thrips Katydid 0.00 0 0 177 43 220",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 177,
     "customRent": 43,
-    "totalCost": 220,
-    "page": 15,
-    "quote": "Pest - Thrips Katydid 0.00 0 0 177 43 220"
+    "totalCost": 220
    },
    {
     "name": "Pest - Scale",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Pest - Scale 0.00 0 0 84 60 144",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 84,
     "customRent": 60,
-    "totalCost": 144,
-    "page": 15,
-    "quote": "Pest - Scale 0.00 0 0 84 60 144"
+    "totalCost": 144
    },
    {
     "name": "Pest - Brown Rot",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Pest - Brown Rot 0.00 0 0 13 25 38",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 13,
     "customRent": 25,
-    "totalCost": 38,
-    "page": 15,
-    "quote": "Pest - Brown Rot 0.00 0 0 13 25 38"
+    "totalCost": 38
    },
    {
     "name": "Leaf Analysis",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Leaf Analysis 0.05 0 0 0 3 3",
     "timeHrsPerAcre": 0.05,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 3,
-    "totalCost": 3,
-    "page": 15,
-    "quote": "Leaf Analysis 0.05 0 0 0 3 3"
+    "totalCost": 3
    },
    {
     "name": "Soil Amendment: Soluble Gypsum w/irrigation",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Soil Amendment: Soluble Gypsum w/irrigation 1.05 10 0 48 0 57",
     "timeHrsPerAcre": 1.05,
     "labor": 10,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 48,
     "customRent": 0,
-    "totalCost": 57,
-    "page": 15,
-    "quote": "Soil Amendment: Soluble Gypsum w/irrigation 1.05 10 0 48 0 57"
+    "totalCost": 57
    },
    {
     "name": "Growth Regulators",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Growth Regulators 0.00 0 0 13 90 103",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 13,
     "customRent": 90,
-    "totalCost": 103,
-    "page": 15,
-    "quote": "Growth Regulators 0.00 0 0 13 90 103"
+    "totalCost": 103
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "Pickup Truck Use 3.33 45 19 0 0 64",
     "timeHrsPerAcre": 3.33,
     "labor": 45,
     "fuel": 19,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 64,
-    "page": 15,
-    "quote": "Pickup Truck Use 3.33 45 19 0 0 64"
+    "totalCost": 64
    },
    {
     "name": "ATV Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "ATV Use 3.33 45 4 0 0 49",
     "timeHrsPerAcre": 3.33,
     "labor": 45,
     "fuel": 4,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 49,
-    "page": 15,
-    "quote": "ATV Use 3.33 45 4 0 0 49"
+    "totalCost": 49
    },
    {
     "name": "PCA/Consultant Services",
     "category": "cultural",
     "section": "Cultural",
+    "page": 15,
+    "quote": "PCA/Consultant Services 0.00 0 0 0 35 35",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 35,
-    "totalCost": 35,
-    "page": 15,
-    "quote": "PCA/Consultant Services 0.00 0 0 0 35 35"
+    "totalCost": 35
    },
    {
     "name": "Pick & Haul Fruit",
     "category": "harvest",
     "section": "Harvest",
+    "page": 15,
+    "quote": "Pick & Haul Fruit 0.00 0 0 0 743 743",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 743,
-    "totalCost": 743,
-    "page": 15,
-    "quote": "Pick & Haul Fruit 0.00 0 0 0 743 743"
+    "totalCost": 743
    },
    {
     "name": "Pack & Marketing",
     "category": "harvest",
     "section": "Harvest",
+    "page": 15,
+    "quote": "Pack & Marketing 0.00 0 0 0 2,161 2,161",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 2161,
-    "totalCost": 2161,
-    "page": 15,
-    "quote": "Pack & Marketing 0.00 0 0 0 2,161 2,161"
+    "totalCost": 2161
    },
    {
     "name": "Assessments",
     "category": "harvest",
     "section": "Harvest",
+    "page": 15,
+    "quote": "Assessments 0.00 0 0 21 0 21",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 21,
     "customRent": 0,
-    "totalCost": 21,
-    "page": 15,
-    "quote": "Assessments 0.00 0 0 21 0 21"
+    "totalCost": 21
    }
   ]
  },
@@ -1736,7 +1756,8 @@
    "propertyTaxRatePct"
   ],
   "warnings": [
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "some Table 1 rows leave cells blank; their numbers are placed by column position and the blank cells are null"
   ]
  }
 }

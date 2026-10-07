@@ -67,148 +67,16 @@
  },
  "costsPerAcre": {
   "title": "SAMPLE COSTS PER ACRE TO PRODUCE CHRISTMAS TREES - WHITE FIR",
-  "operatingTotal": {
-   "value": 10.01,
-   "unit": "$/acre",
-   "page": 20,
-   "quote": "TOTAL OPERATING COSTS/ACRE 2,243 497 252 1,291 236 298 298 974 9,545 1,795 17,429 10.01"
-  },
-  "cashOverheadTotal": {
-   "value": 2.45,
-   "unit": "$/acre",
-   "page": 21,
-   "quote": "TOTAL CASH OVERHEAD COSTS 366 366 366 365 365 483 483 487 492 492 4,266 2.45"
-  },
-  "nonCashOverheadTotal": {
-   "value": 6.53,
-   "unit": "$/acre",
-   "page": 21,
-   "quote": "TOTAL NON-CASH OVERHEAD COST/ACRE 1,133 1,131 1,131 1,118 1,118 1,115 1,115 1,142 1,181 1,183 11,367 6.53"
-  },
-  "totalCost": {
-   "value": 17.72,
-   "unit": "$/acre",
-   "page": 21,
-   "quote": "TOTAL COST/ACRE FOR THE YEAR 3,742 1,993 1,749 2,775 1,713 1,893 1,893 2,606 11,216 3,463 30,862 17.72"
-  },
+  "operatingTotal": null,
+  "operatingInterest": null,
+  "cashOverheadTotal": null,
+  "nonCashOverheadTotal": null,
+  "totalCost": null,
   "grossReturns": null,
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [],
-  "operations": [
-   {
-    "name": "Fertilize: Urea",
-    "category": "cultural",
-    "section": "Cultural Costs",
-    "timeHrsPerAcre": 48,
-    "labor": 48,
-    "fuel": 48,
-    "lubeRepairs": 48,
-    "materials": 11,
-    "customRent": 203,
-    "totalCost": 0.12,
-    "page": 20,
-    "quote": "Fertilize: Urea 48 48 48 48 11 203 0.12"
-   },
-   {
-    "name": "Insect: Aphid (Asana) 7 12 25 25 25",
-    "category": "cultural",
-    "section": "Cultural Costs",
-    "timeHrsPerAcre": 25,
-    "labor": 25,
-    "fuel": 50,
-    "lubeRepairs": 50,
-    "materials": 14,
-    "customRent": 257,
-    "totalCost": 0.15,
-    "page": 20,
-    "quote": "Insect: Aphid (Asana) 7 12 25 25 25 25 25 50 50 14 257 0.15"
-   },
-   {
-    "name": "Weed: Spot Spray (Roundup) (Yrs 1-3, 2X. Yrs 4+, 1X) 22 22 22 11 11",
-    "category": "cultural",
-    "section": "Cultural Costs",
-    "timeHrsPerAcre": 11,
-    "labor": 11,
-    "fuel": 11,
-    "lubeRepairs": 11,
-    "materials": 11,
-    "customRent": 143,
-    "totalCost": 0.08,
-    "page": 20,
-    "quote": "Weed: Spot Spray (Roundup) (Yrs 1-3, 2X. Yrs 4+, 1X) 22 22 22 11 11 11 11 11 11 11 143 0.08"
-   },
-   {
-    "name": "Vertebrate: Gopher (Bait) (Yrs 1-3, 2X.) Yrs 4+, 1X) 26 26 26 13 13",
-    "category": "cultural",
-    "section": "Cultural Costs",
-    "timeHrsPerAcre": 13,
-    "labor": 13,
-    "fuel": 13,
-    "lubeRepairs": 13,
-    "materials": 13,
-    "customRent": 167,
-    "totalCost": 0.1,
-    "page": 20,
-    "quote": "Vertebrate: Gopher (Bait) (Yrs 1-3, 2X.) Yrs 4+, 1X) 26 26 26 13 13 13 13 13 13 13 167 0.10"
-   },
-   {
-    "name": "Prune: Keep leader in check 52",
-    "category": "cultural",
-    "section": "Cultural Costs",
-    "timeHrsPerAcre": 49,
-    "labor": 49,
-    "fuel": 49,
-    "lubeRepairs": 49,
-    "materials": 7,
-    "customRent": 257,
-    "totalCost": 0.15,
-    "page": 20,
-    "quote": "Prune: Keep leader in check 52 49 49 49 49 7 257 0.15"
-   },
-   {
-    "name": "Shear: Some trimming with clippers to shape 55",
-    "category": "cultural",
-    "section": "Cultural Costs",
-    "timeHrsPerAcre": 55,
-    "labor": 55,
-    "fuel": 55,
-    "lubeRepairs": 55,
-    "materials": 8,
-    "customRent": 282,
-    "totalCost": 0.16,
-    "page": 20,
-    "quote": "Shear: Some trimming with clippers to shape 55 55 55 55 55 8 282 0.16"
-   },
-   {
-    "name": "Irrigate: Drip 29 29 32 32 37",
-    "category": "cultural",
-    "section": "Cultural Costs",
-    "timeHrsPerAcre": 54,
-    "labor": 54,
-    "fuel": 76,
-    "lubeRepairs": 76,
-    "materials": 34,
-    "customRent": 453,
-    "totalCost": 0.26,
-    "page": 20,
-    "quote": "Irrigate: Drip 29 29 32 32 37 54 54 76 76 34 453 0.26"
-   },
-   {
-    "name": "Insect: Mites (Floramite) 15 28 28 28",
-    "category": "cultural",
-    "section": "Cultural Costs",
-    "timeHrsPerAcre": 28,
-    "labor": 28,
-    "fuel": 28,
-    "lubeRepairs": 28,
-    "materials": 7,
-    "customRent": 217,
-    "totalCost": 0.12,
-    "page": 20,
-    "quote": "Insect: Mites (Floramite) 15 28 28 28 28 28 28 28 7 217 0.12"
-   }
-  ]
+  "operations": []
  },
  "equipment": [
   {
@@ -465,12 +333,12 @@
    0,
    0,
    7,
-   42,
+   35,
    16,
-   104,
-   10,
-   10,
-   8,
+   24,
+   9,
+   9,
+   7,
    40,
    1641
   ],
@@ -488,7 +356,7 @@
    true,
    true
   ],
-  "totalCheck": 1879,
+  "totalCheck": 1788,
   "checkedRow": "TOTAL OPERATING COSTS (table has no cash overhead rows)",
   "columns": [
    "Jan",
@@ -505,8 +373,8 @@
    "Dec"
   ],
   "spansTwoYears": false,
-  "page": 15,
-  "quote": "MONTHLY CASH COSTS BY YEAR TO PRODUCE CHRISTMA TREES – DOUGLAS FIR"
+  "page": 23,
+  "quote": "MONTLY CASH COST BY YEAR FO PRODUCE CHRISTMAS TREES – WHITE FIR"
  },
  "establishment": {
   "table": {
@@ -1977,11 +1845,6 @@
    "counties",
    "laborOverheadPct",
    "acresFarmed",
-   "operatingTotal",
-   "cashOverheadTotal",
-   "nonCashOverheadTotal",
-   "totalCost",
-   "operations",
    "equipment",
    "investments",
    "businessOverhead",
@@ -1997,7 +1860,12 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
    "grossReturns",
+   "operations",
    "hourlyEquipment",
    "insuranceRatePct",
    "propertyTaxRatePct",
@@ -2006,6 +1874,8 @@
   ],
   "warnings": [
    "several costs-per-acre tables (establishment and production); using the production one",
+   "the production cost table has no hours column; its rows are not read as operations",
+   "the production cost table prints one column per year; its totals are not an annual per-acre figure and are left null",
    "monthly table gives operating costs by month only; cash overhead is not spread by month in this study"
   ]
  }

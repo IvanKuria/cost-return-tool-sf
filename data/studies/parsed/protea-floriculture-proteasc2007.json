@@ -98,6 +98,12 @@
    "page": 13,
    "quote": "TOTAL OPERATING COSTS/ACRE 7,166 223 2,220 0 10,159"
   },
+  "operatingInterest": {
+   "value": 550,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Interest on operating capital @ 10.00% 550"
+  },
   "cashOverheadTotal": {
    "value": 1331,
    "unit": "$/acre",
@@ -177,225 +183,253 @@
     "name": "Plant: Replant 2%",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Plant: Replant 2% 0.50 6 0 168 0 174",
     "timeHrsPerAcre": 0.5,
     "labor": 6,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 168,
     "customRent": 0,
-    "totalCost": 174,
-    "page": 13,
-    "quote": "Plant: Replant 2% 0.50 6 0 168 0 174"
+    "totalCost": 174
    },
    {
     "name": "Disease: Phytopthora (Subdue) applied through drip",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Disease: Phytopthora (Subdue) applied through drip 0.06 1 0 219 0 220",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 219,
     "customRent": 0,
-    "totalCost": 220,
-    "page": 13,
-    "quote": "Disease: Phytopthora (Subdue) applied through drip 0.06 1 0 219 0 220"
+    "totalCost": 220
    },
    {
     "name": "Rodent: Squirrel (bait)/Gopher (trap)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Rodent: Squirrel (bait)/Gopher (trap) 6.00 72 0 65 0 137",
     "timeHrsPerAcre": 6,
     "labor": 72,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 65,
     "customRent": 0,
-    "totalCost": 137,
-    "page": 13,
-    "quote": "Rodent: Squirrel (bait)/Gopher (trap) 6.00 72 0 65 0 137"
+    "totalCost": 137
    },
    {
     "name": "Mollusk: Snails (Metaldehyde)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Mollusk: Snails (Metaldehyde) 5.20 62 0 231 0 293",
     "timeHrsPerAcre": 5.2,
     "labor": 62,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 231,
     "customRent": 0,
-    "totalCost": 293,
-    "page": 13,
-    "quote": "Mollusk: Snails (Metaldehyde) 5.20 62 0 231 0 293"
+    "totalCost": 293
    },
    {
     "name": "Irrigate: Water & Labor",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Irrigate: Water & Labor 1.68 20 0 975 0 994",
     "timeHrsPerAcre": 1.68,
     "labor": 20,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 975,
     "customRent": 0,
-    "totalCost": 994,
-    "page": 13,
-    "quote": "Irrigate: Water & Labor 1.68 20 0 975 0 994"
+    "totalCost": 994
    },
    {
     "name": "Weed: Hand with Weedwhacker",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Weed: Hand with Weedwhacker 24.00 288 0 0 0 288",
     "timeHrsPerAcre": 24,
     "labor": 288,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 288,
-    "page": 13,
-    "quote": "Weed: Hand with Weedwhacker 24.00 288 0 0 0 288"
+    "totalCost": 288
    },
    {
     "name": "Prune: Hand 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Prune: Hand 2X 232.00 2,782 0 0 0 2,782",
     "timeHrsPerAcre": 232,
     "labor": 2782,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 2782,
-    "page": 13,
-    "quote": "Prune: Hand 2X 232.00 2,782 0 0 0 2,782"
+    "totalCost": 2782
    },
    {
     "name": "Insect: Mealy bug (Malathion)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Insect: Mealy bug (Malathion) 1.50 18 0 3 0 21",
     "timeHrsPerAcre": 1.5,
     "labor": 18,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 3,
     "customRent": 0,
-    "totalCost": 21,
-    "page": 13,
-    "quote": "Insect: Mealy bug (Malathion) 1.50 18 0 3 0 21"
+    "totalCost": 21
    },
    {
     "name": "Weed: (Roundup)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Weed: (Roundup) 0.50 6 0 12 0 18",
     "timeHrsPerAcre": 0.5,
     "labor": 6,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 12,
     "customRent": 0,
-    "totalCost": 18,
-    "page": 13,
-    "quote": "Weed: (Roundup) 0.50 6 0 12 0 18"
+    "totalCost": 18
    },
    {
     "name": "Fertilize: (Ammonium Sulfate) applied through drip",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Fertilize: (Ammonium Sulfate) applied through drip 0.00 0 0 43 0 43",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 43,
     "customRent": 0,
-    "totalCost": 43,
-    "page": 13,
-    "quote": "Fertilize: (Ammonium Sulfate) applied through drip 0.00 0 0 43 0 43"
+    "totalCost": 43
    },
    {
     "name": "Disease: Botrytis (Subdue)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Disease: Botrytis (Subdue) 0.50 6 0 219 0 225",
     "timeHrsPerAcre": 0.5,
     "labor": 6,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 219,
     "customRent": 0,
-    "totalCost": 225,
-    "page": 13,
-    "quote": "Disease: Botrytis (Subdue) 0.50 6 0 219 0 225"
+    "totalCost": 225
    },
    {
     "name": "Insect: Ants (Amdro)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Insect: Ants (Amdro) 0.40 5 0 9 0 13",
     "timeHrsPerAcre": 0.4,
     "labor": 5,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 9,
     "customRent": 0,
-    "totalCost": 13,
+    "totalCost": 13
+   },
+   {
+    "name": "Disease: Botrytis (Heritage)",
+    "category": "cultural",
+    "section": "Cultural",
     "page": 13,
-    "quote": "Insect: Ants (Amdro) 0.40 5 0 9 0 13"
+    "quote": "Disease: Botrytis (Heritage) 0.50 6 0 86 92",
+    "timeHrsPerAcre": 0.5,
+    "labor": 6,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 86,
+    "customRent": null,
+    "totalCost": 92
    },
    {
     "name": "Weed: (Ronstar)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Weed: (Ronstar) 0.50 6 0 191 0 197",
     "timeHrsPerAcre": 0.5,
     "labor": 6,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 191,
     "customRent": 0,
-    "totalCost": 197,
-    "page": 13,
-    "quote": "Weed: (Ronstar) 0.50 6 0 191 0 197"
+    "totalCost": 197
    },
    {
     "name": "ATV & Trailer",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "ATV & Trailer 2.00 29 6 0 0 35",
     "timeHrsPerAcre": 2,
     "labor": 29,
     "fuel": 6,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 35,
-    "page": 13,
-    "quote": "ATV & Trailer 2.00 29 6 0 0 35"
+    "totalCost": 35
    },
    {
     "name": "Pickup",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Pickup 0.50 7 8 0 0 16",
     "timeHrsPerAcre": 0.5,
     "labor": 7,
     "fuel": 8,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 16,
+    "totalCost": 16
+   },
+   {
+    "name": "Pick Flowers",
+    "category": "cultural",
+    "section": "Cultural",
     "page": 13,
-    "quote": "Pickup 0.50 7 8 0 0 16"
+    "quote": "Pick Flowers 250.00 2,998 2,998",
+    "timeHrsPerAcre": 250,
+    "labor": 2998,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": null,
+    "customRent": null,
+    "totalCost": 2998
    },
    {
     "name": "Haul to Cooler and/or Market",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Haul to Cooler and/or Market 59.40 855 208 0 0 1,063",
     "timeHrsPerAcre": 59.4,
     "labor": 855,
     "fuel": 208,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1063,
-    "page": 13,
-    "quote": "Haul to Cooler and/or Market 59.40 855 208 0 0 1,063"
+    "totalCost": 1063
    }
   ]
  },
@@ -1749,7 +1783,8 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "some Table 1 rows leave cells blank; their numbers are placed by column position and the blank cells are null"
   ]
  }
 }

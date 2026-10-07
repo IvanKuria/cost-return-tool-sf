@@ -95,6 +95,12 @@
    "page": 13,
    "quote": "TOTAL OPERATING COSTS/ACRE 25 8 541 155 730"
   },
+  "operatingInterest": {
+   "value": 1,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Interest on Operating Capital @ 5.75% 0.06 1"
+  },
   "cashOverheadTotal": {
    "value": 260,
    "unit": "$/acre",
@@ -176,169 +182,169 @@
     "name": "Weed Control - Dormant Spray",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Weed Control - Dormant Spray 0.01 0 0 13 0 13",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 13,
     "customRent": 0,
-    "totalCost": 13,
-    "page": 13,
-    "quote": "Weed Control - Dormant Spray 0.01 0 0 13 0 13"
+    "totalCost": 13
    },
    {
     "name": "Fertilize 4X - 46-0-0 (Urea)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Fertilize 4X - 46-0-0 (Urea) 0.00 0 0 296 39 335",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 296,
     "customRent": 39,
-    "totalCost": 335,
-    "page": 13,
-    "quote": "Fertilize 4X - 46-0-0 (Urea) 0.00 0 0 296 39 335"
+    "totalCost": 335
    },
    {
     "name": "Weed Control - Spot Spray 2X on 10% of Acreage",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Weed Control - Spot Spray 2X on 10% of Acreage 0.02 0 0 7 0 7",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 7,
     "customRent": 0,
-    "totalCost": 7,
-    "page": 13,
-    "quote": "Weed Control - Spot Spray 2X on 10% of Acreage 0.02 0 0 7 0 7"
+    "totalCost": 7
    },
    {
     "name": "Insect Control - Supracide",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Insect Control - Supracide 0.00 0 0 40 8 48",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 40,
     "customRent": 8,
-    "totalCost": 48,
-    "page": 13,
-    "quote": "Insect Control - Supracide 0.00 0 0 40 8 48"
+    "totalCost": 48
    },
    {
     "name": "Irrigate 8X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Irrigate 8X 0.60 7 0 148 0 155",
     "timeHrsPerAcre": 0.6,
     "labor": 7,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 148,
     "customRent": 0,
-    "totalCost": 155,
-    "page": 13,
-    "quote": "Irrigate 8X 0.60 7 0 148 0 155"
+    "totalCost": 155
    },
    {
     "name": "Insect Control - Baythroid",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Insect Control - Baythroid 0.00 0 0 38 8 46",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 38,
     "customRent": 8,
-    "totalCost": 46,
-    "page": 13,
-    "quote": "Insect Control - Baythroid 0.00 0 0 38 8 46"
+    "totalCost": 46
    },
    {
     "name": "Make Electric Fence",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Make Electric Fence 0.10 1 0 0 0 1",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 13,
-    "quote": "Make Electric Fence 0.10 1 0 0 0 1"
+    "totalCost": 1
    },
    {
     "name": "Remove Electric Fence",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Remove Electric Fence 0.10 1 0 0 0 1",
     "timeHrsPerAcre": 0.1,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 13,
-    "quote": "Remove Electric Fence 0.10 1 0 0 0 1"
+    "totalCost": 1
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Pickup Truck Use 0.48 7 7 0 0 14",
     "timeHrsPerAcre": 0.48,
     "labor": 7,
     "fuel": 7,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 14,
-    "page": 13,
-    "quote": "Pickup Truck Use 0.48 7 7 0 0 14"
+    "totalCost": 14
    },
    {
     "name": "ATV Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "ATV Use 0.48 7 1 0 0 9",
     "timeHrsPerAcre": 0.48,
     "labor": 7,
     "fuel": 1,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 13,
-    "quote": "ATV Use 0.48 7 1 0 0 9"
+    "totalCost": 9
    },
    {
     "name": "Harvest Hay 2X",
     "category": "harvest",
     "section": "Harvest",
+    "page": 13,
+    "quote": "Harvest Hay 2X 0.00 0 0 0 100 100",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 100,
-    "totalCost": 100,
-    "page": 13,
-    "quote": "Harvest Hay 2X 0.00 0 0 0 100 100"
+    "totalCost": 100
    },
    {
     "name": "Graze Field - October",
     "category": "harvest",
     "section": "Harvest",
+    "page": 13,
+    "quote": "Graze Field - October 0.05 1 0 0 0 1",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 13,
-    "quote": "Graze Field - October 0.05 1 0 0 0 1"
+    "totalCost": 1
    }
   ]
  },

@@ -54,6 +54,7 @@ export interface OperationRow {
 export interface CostsPerAcre {
   title: string | null;       // the production costs table heading as printed, e.g. 'COSTS PER ACRE TO PRODUCE ALMONDS'
   operatingTotal: Cited | null;
+  operatingInterest: Cited | null;  // the "Interest on operating capital" row of the production cost table; operations rows + this = operatingTotal
   cashOverheadTotal: Cited | null;
   nonCashOverheadTotal: Cited | null;
   totalCost: Cited | null;

@@ -91,6 +91,12 @@
    "page": 14,
    "quote": "TOTAL OPERATING COSTS/ACRE 2.37 34 9 3 231 374 663"
   },
+  "operatingInterest": {
+   "value": 12,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "Interest on Operating Capital @ 5.75% 12"
+  },
   "cashOverheadTotal": {
    "value": 102,
    "unit": "$/acre",
@@ -170,113 +176,113 @@
     "name": "Weed: Harrow",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Weed: Harrow 0.08 1 2 0 0 0 3",
     "timeHrsPerAcre": 0.08,
     "labor": 1,
     "fuel": 2,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 14,
-    "quote": "Weed: Harrow 0.08 1 2 0 0 0 3"
+    "totalCost": 3
    },
    {
     "name": "Insect: Weevil (Entrust)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Insect: Weevil (Entrust) 0.11 2 0 0 54 0 56",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 54,
     "customRent": 0,
-    "totalCost": 56,
-    "page": 14,
-    "quote": "Insect: Weevil (Entrust) 0.11 2 0 0 54 0 56"
+    "totalCost": 56
    },
    {
     "name": "Irrigate: (water & labor)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Irrigate: (water & labor) 1.50 19 0 0 89 0 108",
     "timeHrsPerAcre": 1.5,
     "labor": 19,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 89,
     "customRent": 0,
-    "totalCost": 108,
-    "page": 14,
-    "quote": "Irrigate: (water & labor) 1.50 19 0 0 89 0 108"
+    "totalCost": 108
    },
    {
     "name": "Fertilize: Tissue Analysis",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Fertilize: Tissue Analysis 0.00 0 0 0 0 2 2",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 2,
-    "totalCost": 2,
-    "page": 14,
-    "quote": "Fertilize: Tissue Analysis 0.00 0 0 0 0 2 2"
+    "totalCost": 2
    },
    {
     "name": "Fertilize: Compost (1X per 4 Yrs, 25% of cost)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Fertilize: Compost (1X per 4 Yrs, 25% of cost) 0.00 0 0 0 45 22 67",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 45,
     "customRent": 22,
-    "totalCost": 67,
-    "page": 14,
-    "quote": "Fertilize: Compost (1X per 4 Yrs, 25% of cost) 0.00 0 0 0 45 22 67"
+    "totalCost": 67
    },
    {
     "name": "Insect: Worms (Xen Tari)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Insect: Worms (Xen Tari) 0.11 2 0 0 43 0 45",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 43,
     "customRent": 0,
-    "totalCost": 45,
-    "page": 14,
-    "quote": "Insect: Worms (Xen Tari) 0.11 2 0 0 43 0 45"
+    "totalCost": 45
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 14,
+    "quote": "Pickup Truck Use 0.57 10 7 2 0 0 19",
     "timeHrsPerAcre": 0.57,
     "labor": 10,
     "fuel": 7,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 19,
-    "page": 14,
-    "quote": "Pickup Truck Use 0.57 10 7 2 0 0 19"
+    "totalCost": 19
    },
    {
     "name": "Harvest - 7X",
     "category": "harvest",
     "section": "Harvest",
+    "page": 14,
+    "quote": "Harvest - 7X 0.00 0 0 0 0 350 350",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 350,
-    "totalCost": 350,
-    "page": 14,
-    "quote": "Harvest - 7X 0.00 0 0 0 0 350 350"
+    "totalCost": 350
    }
   ]
  },

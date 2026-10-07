@@ -96,6 +96,12 @@
    "page": 8,
    "quote": "TOTAL OPERATING COSTS/ACRE 37 36 77 11 168"
   },
+  "operatingInterest": {
+   "value": 6,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "Interest on Operating Capital @ 10.00% 6"
+  },
   "cashOverheadTotal": {
    "value": 57,
    "unit": "$/acre",
@@ -159,169 +165,169 @@
     "name": "Plow Alfalfa Stand",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Plow Alfalfa Stand 0.35 6 10 0 0 15",
     "timeHrsPerAcre": 0.35,
     "labor": 6,
     "fuel": 10,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 15,
-    "page": 8,
-    "quote": "Plow Alfalfa Stand 0.35 6 10 0 0 15"
+    "totalCost": 15
    },
    {
     "name": "Fertilize: Ammonium Sulfate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Ammonium Sulfate 0.00 0 0 43 6 49",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 43,
     "customRent": 6,
-    "totalCost": 49,
-    "page": 8,
-    "quote": "Fertilize: Ammonium Sulfate 0.00 0 0 43 6 49"
+    "totalCost": 49
    },
    {
     "name": "Finish Disc 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Finish Disc 2X 0.22 3 6 0 0 9",
     "timeHrsPerAcre": 0.22,
     "labor": 3,
     "fuel": 6,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 8,
-    "quote": "Finish Disc 2X 0.22 3 6 0 0 9"
+    "totalCost": 9
    },
    {
     "name": "Plant Grain @ 100 Lbs/Acre",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Plant Grain @ 100 Lbs/Acre 0.15 2 4 13 0 20",
     "timeHrsPerAcre": 0.15,
     "labor": 2,
     "fuel": 4,
     "lubeRepairs": null,
     "materials": 13,
     "customRent": 0,
-    "totalCost": 20,
-    "page": 8,
-    "quote": "Plant Grain @ 100 Lbs/Acre 0.15 2 4 13 0 20"
+    "totalCost": 20
    },
    {
     "name": "Irrigate 3X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Irrigate 3X 0.80 9 0 13 0 22",
     "timeHrsPerAcre": 0.8,
     "labor": 9,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 13,
     "customRent": 0,
-    "totalCost": 22,
-    "page": 8,
-    "quote": "Irrigate 3X 0.80 9 0 13 0 22"
+    "totalCost": 22
    },
    {
     "name": "Weed Control - Broadleaf Spray",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Weed Control - Broadleaf Spray 0.00 0 0 4 6 9",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 4,
     "customRent": 6,
-    "totalCost": 9,
-    "page": 8,
-    "quote": "Weed Control - Broadleaf Spray 0.00 0 0 4 6 9"
+    "totalCost": 9
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Pickup Truck Use 0.46 7 5 0 0 13",
     "timeHrsPerAcre": 0.46,
     "labor": 7,
     "fuel": 5,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 13,
-    "page": 8,
-    "quote": "Pickup Truck Use 0.46 7 5 0 0 13"
+    "totalCost": 13
    },
    {
     "name": "Swath Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Swath Hay 0.17 3 1 0 0 3",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 1,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 8,
-    "quote": "Swath Hay 0.17 3 1 0 0 3"
+    "totalCost": 3
    },
    {
     "name": "Rake Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Rake Hay 0.11 2 1 0 0 3",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 1,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 8,
-    "quote": "Rake Hay 0.11 2 1 0 0 3"
+    "totalCost": 3
    },
    {
     "name": "Bale Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Bale Hay 0.13 2 2 4 0 8",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 2,
     "lubeRepairs": null,
     "materials": 4,
     "customRent": 0,
-    "totalCost": 8,
-    "page": 8,
-    "quote": "Bale Hay 0.13 2 2 4 0 8"
+    "totalCost": 8
    },
    {
     "name": "Roadside Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Roadside Hay 0.13 2 5 0 0 7",
     "timeHrsPerAcre": 0.13,
     "labor": 2,
     "fuel": 5,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 7,
-    "page": 8,
-    "quote": "Roadside Hay 0.13 2 5 0 0 7"
+    "totalCost": 7
    },
    {
     "name": "Load Hay",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Load Hay 0.09 1 2 0 0 3",
     "timeHrsPerAcre": 0.09,
     "labor": 1,
     "fuel": 2,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 8,
-    "quote": "Load Hay 0.09 1 2 0 0 3"
+    "totalCost": 3
    }
   ]
  },

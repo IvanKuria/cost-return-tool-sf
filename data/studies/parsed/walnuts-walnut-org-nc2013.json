@@ -94,10 +94,16 @@
  "costsPerAcre": {
   "title": "COSTS PER ACRE TO PRODUCE ORGANIC WALNUTS",
   "operatingTotal": {
-   "value": 1118,
+   "value": 1217,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL OPERATING COSTS/ACRE 1,217"
+  },
+  "operatingInterest": {
+   "value": 26,
    "unit": "$/acre",
    "page": 10,
-   "quote": "TOTAL OPERATING COSTS/ACRE 9.77 207 86 22 444 333 1,118"
+   "quote": "Interest on Operating Capital @ 5.75% 26"
   },
   "cashOverheadTotal": {
    "value": 635,
@@ -184,225 +190,225 @@
     "name": "Fertilize: Chicken Manure",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Fertilize: Chicken Manure 0.10 2 1 0 160 10 174",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 160,
     "customRent": 10,
-    "totalCost": 174,
-    "page": 10,
-    "quote": "Fertilize: Chicken Manure 0.10 2 1 0 160 10 174"
+    "totalCost": 174
    },
    {
     "name": "Fertilize: Compost/Gypsum",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Fertilize: Compost/Gypsum 0.10 2 1 0 120 10 134",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 120,
     "customRent": 10,
-    "totalCost": 134,
-    "page": 10,
-    "quote": "Fertilize: Compost/Gypsum 0.10 2 1 0 120 10 134"
+    "totalCost": 134
    },
    {
     "name": "Prune: Custom 1X/5yr",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Prune: Custom 1X/5yr 0.00 0 0 0 0 44 44",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 44,
-    "totalCost": 44,
-    "page": 10,
-    "quote": "Prune: Custom 1X/5yr 0.00 0 0 0 0 44 44"
+    "totalCost": 44
    },
    {
     "name": "Prune-Brush Disposal 1X/5yr",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Prune-Brush Disposal 1X/5yr 0.25 10 3 1 1 0 15",
     "timeHrsPerAcre": 0.25,
     "labor": 10,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 1,
     "customRent": 0,
-    "totalCost": 15,
-    "page": 10,
-    "quote": "Prune-Brush Disposal 1X/5yr 0.25 10 3 1 1 0 15"
+    "totalCost": 15
    },
    {
     "name": "Rodent: Squirrel (Tractor,Traps)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Rodent: Squirrel (Tractor,Traps) 0.53 13 7 2 0 0 21",
     "timeHrsPerAcre": 0.53,
     "labor": 13,
     "fuel": 7,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 21,
-    "page": 10,
-    "quote": "Rodent: Squirrel (Tractor,Traps) 0.53 13 7 2 0 0 21"
+    "totalCost": 21
    },
    {
     "name": "Weed-Mow Middles 5X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Weed-Mow Middles 5X 0.86 21 11 5 0 0 37",
     "timeHrsPerAcre": 0.86,
     "labor": 21,
     "fuel": 11,
     "lubeRepairs": 5,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 37,
-    "page": 10,
-    "quote": "Weed-Mow Middles 5X 0.86 21 11 5 0 0 37"
+    "totalCost": 37
    },
    {
     "name": "Weed: Hand (Weed Eater) Tree Row",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Weed: Hand (Weed Eater) Tree Row 1.05 26 2 0 0 0 27",
     "timeHrsPerAcre": 1.05,
     "labor": 26,
     "fuel": 2,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 27,
-    "page": 10,
-    "quote": "Weed: Hand (Weed Eater) Tree Row 1.05 26 2 0 0 0 27"
+    "totalCost": 27
    },
    {
     "name": "Irrigate 1X/month 4X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Irrigate 1X/month 4X 0.12 2 0 0 126 0 128",
     "timeHrsPerAcre": 0.12,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 126,
     "customRent": 0,
-    "totalCost": 128,
-    "page": 10,
-    "quote": "Irrigate 1X/month 4X 0.12 2 0 0 126 0 128"
+    "totalCost": 128
    },
    {
     "name": "Prune: Hand (Sucker)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Prune: Hand (Sucker) 1.00 11 0 0 0 0 11",
     "timeHrsPerAcre": 1,
     "labor": 11,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 11,
-    "page": 10,
-    "quote": "Prune: Hand (Sucker) 1.00 11 0 0 0 0 11"
+    "totalCost": 11
    },
    {
     "name": "Insect: Husk Fly (GF120)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Insect: Husk Fly (GF120) 0.75 18 9 3 111 0 142",
     "timeHrsPerAcre": 0.75,
     "labor": 18,
     "fuel": 9,
     "lubeRepairs": 3,
     "materials": 111,
     "customRent": 0,
-    "totalCost": 142,
-    "page": 10,
-    "quote": "Insect: Husk Fly (GF120) 0.75 18 9 3 111 0 142"
+    "totalCost": 142
    },
    {
     "name": "Leaf Analysis 1X/3yr",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Leaf Analysis 1X/3yr 0.11 4 1 0 0 2 8",
     "timeHrsPerAcre": 0.11,
     "labor": 4,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 2,
-    "totalCost": 8,
-    "page": 10,
-    "quote": "Leaf Analysis 1X/3yr 0.11 4 1 0 0 2 8"
+    "totalCost": 8
    },
    {
     "name": "Pickup",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pickup 3.25 80 55 11 0 0 145",
     "timeHrsPerAcre": 3.25,
     "labor": 80,
     "fuel": 55,
     "lubeRepairs": 11,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 145,
-    "page": 10,
-    "quote": "Pickup 3.25 80 55 11 0 0 145"
+    "totalCost": 145
    },
    {
     "name": "Harvest-Shake, Pickup, Rake",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Harvest-Shake, Pickup, Rake 2.00 27 0 0 0 160 187",
     "timeHrsPerAcre": 2,
     "labor": 27,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 160,
-    "totalCost": 187,
-    "page": 10,
-    "quote": "Harvest-Shake, Pickup, Rake 2.00 27 0 0 0 160 187"
+    "totalCost": 187
    },
    {
     "name": "Haul",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Haul 0.00 0 0 0 0 8 8",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 8,
-    "totalCost": 8,
-    "page": 10,
-    "quote": "Haul 0.00 0 0 0 0 8 8"
+    "totalCost": 8
    },
    {
     "name": "Harvest-Hull, Dry",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Harvest-Hull, Dry 0.00 0 0 0 0 100 100",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 100,
-    "totalCost": 100,
-    "page": 10,
-    "quote": "Harvest-Hull, Dry 0.00 0 0 0 0 100 100"
+    "totalCost": 100
    },
    {
     "name": "CWC Assessment Fee",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "CWC Assessment Fee 0.00 0 0 0 9 0 9",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 9,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 10,
-    "quote": "CWC Assessment Fee 0.00 0 0 0 9 0 9"
+    "totalCost": 9
    }
   ]
  },
@@ -840,6 +846,8 @@
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
-  "warnings": []
+  "warnings": [
+   "Tables 1 and 2 print different overhead totals; using the rows that add up to TOTAL COSTS/ACRE 3043"
+  ]
  }
 }

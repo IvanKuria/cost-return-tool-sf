@@ -104,6 +104,12 @@
    "page": 11,
    "quote": "TOTAL OPERATING COSTS/ACRE 374 213 146 1,349 600 2,733"
   },
+  "operatingInterest": {
+   "value": 51,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "Interest on Operating Capital at 5.75% 51"
+  },
   "cashOverheadTotal": {
    "value": 198,
    "unit": "$/acre",
@@ -111,10 +117,10 @@
    "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 198"
   },
   "nonCashOverheadTotal": {
-   "value": 1994,
+   "value": 223,
    "unit": "$/acre",
-   "page": 11,
-   "quote": "TOTAL NON-CASH OVERHEAD COSTS 1,994"
+   "page": 13,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS/ACRE 223"
   },
   "totalCost": {
    "value": 3153,
@@ -140,679 +146,734 @@
    "page": 13,
    "quote": "NET RETURNS ABOVE TOTAL COST 367"
   },
-  "cashOverheadItems": [],
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 2,
+    "page": 11,
+    "quote": "Liability Insurance 2"
+   },
+   {
+    "description": "Office Expense",
+    "value": 50,
+    "page": 11,
+    "quote": "Office Expense 50"
+   },
+   {
+    "description": "Field Sanitation",
+    "value": 1,
+    "page": 11,
+    "quote": "Field Sanitation 1"
+   },
+   {
+    "description": "Field Supervisor",
+    "value": 85,
+    "page": 11,
+    "quote": "Field Supervisor 85"
+   },
+   {
+    "description": "Miscellaneous Costs (Training etc.)",
+    "value": 20,
+    "page": 11,
+    "quote": "Miscellaneous Costs (Training etc.) 20"
+   },
+   {
+    "description": "Assistant Manager",
+    "value": 21,
+    "page": 11,
+    "quote": "Assistant Manager 21"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 8,
+    "page": 11,
+    "quote": "Property Taxes 8"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 6,
+    "page": 11,
+    "quote": "Property Insurance 6"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 5,
+    "page": 11,
+    "quote": "Investment Repairs 5"
+   }
+  ],
   "operations": [
    {
     "name": "Laser level 4 % Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Laser level 4 % Ac 0.00 0 0 0 0 7 7",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 7,
-    "totalCost": 7,
-    "page": 10,
-    "quote": "Laser level 4 % Ac 0.00 0 0 0 0 7 7"
+    "totalCost": 7
    },
    {
     "name": "Chisel Furrows 80% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Chisel Furrows 80% Ac 0.11 2 6 2 0 0 10",
     "timeHrsPerAcre": 0.11,
     "labor": 2,
     "fuel": 6,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 10,
-    "quote": "Chisel Furrows 80% Ac 0.11 2 6 2 0 0 10"
+    "totalCost": 10
    },
    {
     "name": "Condition Beds 80% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Condition Beds 80% Ac 0.10 2 5 2 0 0 10",
     "timeHrsPerAcre": 0.1,
     "labor": 2,
     "fuel": 5,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 10,
-    "quote": "Condition Beds 80% Ac 0.10 2 5 2 0 0 10"
+    "totalCost": 10
    },
    {
     "name": "Stubble Disc & Roll 20% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Stubble Disc & Roll 20% Ac 0.04 1 3 1 0 0 5",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 5,
-    "page": 10,
-    "quote": "Stubble Disc & Roll 20% Ac 0.04 1 3 1 0 0 5"
+    "totalCost": 5
    },
    {
     "name": "Sub-Soil & Roll 20% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Sub-Soil & Roll 20% Ac 0.06 1 6 2 0 0 9",
     "timeHrsPerAcre": 0.06,
     "labor": 1,
     "fuel": 6,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 10,
-    "quote": "Sub-Soil & Roll 20% Ac 0.06 1 6 2 0 0 9"
+    "totalCost": 9
    },
    {
     "name": "Finish Disc & Roll 20% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Finish Disc & Roll 20% Ac 0.02 0 1 0 0 0 2",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 2,
-    "page": 10,
-    "quote": "Finish Disc & Roll 20% Ac 0.02 0 1 0 0 0 2"
+    "totalCost": 2
    },
    {
     "name": "Land Plane 2X 20% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Land Plane 2X 20% Ac 0.05 1 3 1 0 0 5",
     "timeHrsPerAcre": 0.05,
     "labor": 1,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 5,
-    "page": 10,
-    "quote": "Land Plane 2X 20% Ac 0.05 1 3 1 0 0 5"
+    "totalCost": 5
    },
    {
     "name": "Gypsum 20% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Gypsum 20% Ac 0.00 0 0 0 0 42 42",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 42,
-    "totalCost": 42,
-    "page": 10,
-    "quote": "Gypsum 20% Ac 0.00 0 0 0 0 42 42"
+    "totalCost": 42
    },
    {
     "name": "List Beds 6-Row 20% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "List Beds 6-Row 20% Ac 0.02 0 2 1 0 0 3",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 10,
-    "quote": "List Beds 6-Row 20% Ac 0.02 0 2 1 0 0 3"
+    "totalCost": 3
    },
    {
     "name": "5-Row Shape/Insert Drip Tape 20% Ac",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "5-Row Shape/Insert Drip Tape 20% Ac 0.11 16 10 3 0 0 28",
     "timeHrsPerAcre": 0.11,
     "labor": 16,
     "fuel": 10,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 28,
-    "page": 10,
-    "quote": "5-Row Shape/Insert Drip Tape 20% Ac 0.11 16 10 3 0 0 28"
+    "totalCost": 28
    },
    {
     "name": "Pest Control-Weeds Roundup/Goal 2XL",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Pest Control-Weeds Roundup/Goal 2XL 0.08 2 0 0 22 0 24",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 22,
     "customRent": 0,
-    "totalCost": 24,
-    "page": 10,
-    "quote": "Pest Control-Weeds Roundup/Goal 2XL 0.08 2 0 0 22 0 24"
+    "totalCost": 24
    },
    {
     "name": "Pest Control-Weeds Roundup",
     "category": "other",
     "section": "Preplant",
+    "page": 10,
+    "quote": "Pest Control-Weeds Roundup 0.08 2 0 0 13 0 15",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 13,
     "customRent": 0,
-    "totalCost": 15,
-    "page": 10,
-    "quote": "Pest Control-Weeds Roundup 0.08 2 0 0 13 0 15"
+    "totalCost": 15
    },
    {
     "name": "Open Beds-3 Row Alloway",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Open Beds-3 Row Alloway 0.14 3 5 2 0 0 9",
     "timeHrsPerAcre": 0.14,
     "labor": 3,
     "fuel": 5,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 10,
-    "quote": "Open Beds-3 Row Alloway 0.14 3 5 2 0 0 9"
+    "totalCost": 9
    },
    {
     "name": "Mulch Beds-Apply Herbicides",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Mulch Beds-Apply Herbicides 0.20 4 8 3 34 0 49",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 8,
     "lubeRepairs": 3,
     "materials": 34,
     "customRent": 0,
-    "totalCost": 49,
-    "page": 10,
-    "quote": "Mulch Beds-Apply Herbicides 0.20 4 8 3 34 0 49"
+    "totalCost": 49
    },
    {
     "name": "Fertilize-Starter 8-24-6, 2% Zn",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Fertilize-Starter 8-24-6, 2% Zn 0.23 5 9 4 27 0 45",
     "timeHrsPerAcre": 0.23,
     "labor": 5,
     "fuel": 9,
     "lubeRepairs": 4,
     "materials": 27,
     "customRent": 0,
-    "totalCost": 45,
-    "page": 10,
-    "quote": "Fertilize-Starter 8-24-6, 2% Zn 0.23 5 9 4 27 0 45"
+    "totalCost": 45
    },
    {
     "name": "Transplant Tomatoes",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Transplant Tomatoes 0.00 0 0 0 425 211 636",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 425,
     "customRent": 211,
-    "totalCost": 636,
-    "page": 10,
-    "quote": "Transplant Tomatoes 0.00 0 0 0 425 211 636"
+    "totalCost": 636
    },
    {
     "name": "Pest Control-Weeds Post Plant herbicide",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Weeds Post Plant herbicide 0.08 2 3 1 12 0 17",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 12,
     "customRent": 0,
-    "totalCost": 17,
-    "page": 10,
-    "quote": "Pest Control-Weeds Post Plant herbicide 0.08 2 3 1 12 0 17"
+    "totalCost": 17
    },
    {
     "name": "Irrigate-Sprinklers 50% Ac",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Irrigate-Sprinklers 50% Ac 1.00 20 9 1 11 0 42",
     "timeHrsPerAcre": 1,
     "labor": 20,
     "fuel": 9,
     "lubeRepairs": 1,
     "materials": 11,
     "customRent": 0,
-    "totalCost": 42,
-    "page": 10,
-    "quote": "Irrigate-Sprinklers 50% Ac 1.00 20 9 1 11 0 42"
+    "totalCost": 42
    },
    {
     "name": "Irrigate-Drip",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Irrigate-Drip 0.00 0 0 0 152 0 152",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 152,
     "customRent": 0,
-    "totalCost": 152,
-    "page": 10,
-    "quote": "Irrigate-Drip 0.00 0 0 0 152 0 152"
+    "totalCost": 152
    },
    {
     "name": "Pest Control-Weeds Close Cultivate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Weeds Close Cultivate 0.22 4 7 3 0 0 14",
     "timeHrsPerAcre": 0.22,
     "labor": 4,
     "fuel": 7,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 14,
-    "page": 10,
-    "quote": "Pest Control-Weeds Close Cultivate 0.22 4 7 3 0 0 14"
+    "totalCost": 14
    },
    {
     "name": "Fertigation-UN 32",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Fertigation-UN 32 0.00 0 0 0 168 0 168",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 168,
     "customRent": 0,
-    "totalCost": 168,
-    "page": 10,
-    "quote": "Fertigation-UN 32 0.00 0 0 0 168 0 168"
+    "totalCost": 168
    },
    {
     "name": "Pest Control-Weeds Hand Hoe",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Weeds Hand Hoe 0.00 0 0 0 0 80 80",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 80,
-    "totalCost": 80,
-    "page": 10,
-    "quote": "Pest Control-Weeds Hand Hoe 0.00 0 0 0 0 80 80"
+    "totalCost": 80
    },
    {
     "name": "Pest Control-Weeds Herbicide Layby",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Weeds Herbicide Layby 0.23 5 9 4 4 0 22",
     "timeHrsPerAcre": 0.23,
     "labor": 5,
     "fuel": 9,
     "lubeRepairs": 4,
     "materials": 4,
     "customRent": 0,
-    "totalCost": 22,
-    "page": 10,
-    "quote": "Pest Control-Weeds Herbicide Layby 0.23 5 9 4 4 0 22"
+    "totalCost": 22
    },
    {
     "name": "Pest Control-Bacterial Speck 30% Ac",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Bacterial Speck 30% Ac 0.02 0 1 0 3 0 4",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 3,
     "customRent": 0,
-    "totalCost": 4,
-    "page": 10,
-    "quote": "Pest Control-Bacterial Speck 30% Ac 0.02 0 1 0 3 0 4"
+    "totalCost": 4
    },
    {
     "name": "Pest Control-Aphids 20% Ac",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Aphids 20% Ac 0.02 0 1 0 1 0 2",
     "timeHrsPerAcre": 0.02,
     "labor": 0,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 1,
     "customRent": 0,
-    "totalCost": 2,
-    "page": 10,
-    "quote": "Pest Control-Aphids 20% Ac 0.02 0 1 0 1 0 2"
+    "totalCost": 2
    },
    {
     "name": "Pest Control-Late Blight 5% Ac",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Late Blight 5% Ac 0.00 0 0 0 1 0 1",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 1,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 10,
-    "quote": "Pest Control-Late Blight 5% Ac 0.00 0 0 0 1 0 1"
+    "totalCost": 1
    },
    {
     "name": "Trim Vines",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Trim Vines 0.18 4 6 2 0 0 12",
     "timeHrsPerAcre": 0.18,
     "labor": 4,
     "fuel": 6,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 12,
-    "page": 10,
-    "quote": "Trim Vines 0.18 4 6 2 0 0 12"
+    "totalCost": 12
    },
    {
     "name": "Pest Control-Mites 40% Ac",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Mites 40% Ac 0.00 0 0 0 4 7 11",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 4,
     "customRent": 7,
-    "totalCost": 11,
-    "page": 10,
-    "quote": "Pest Control-Mites 40% Ac 0.00 0 0 0 4 7 11"
+    "totalCost": 11
    },
    {
     "name": "Irrigation Labor",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Irrigation Labor 0.00 109 0 0 0 0 109",
     "timeHrsPerAcre": 0,
     "labor": 109,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 109,
-    "page": 10,
-    "quote": "Irrigation Labor 0.00 109 0 0 0 0 109"
+    "totalCost": 109
    },
    {
     "name": "Pest Control-Fruit Rot 15% Ac",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Fruit Rot 15% Ac 0.01 0 0 0 2 0 3",
     "timeHrsPerAcre": 0.01,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 2,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 10,
-    "quote": "Pest Control-Fruit Rot 15% Ac 0.01 0 0 0 2 0 3"
+    "totalCost": 3
    },
    {
     "name": "Pest Control-Worms",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Worms 0.08 2 3 1 22 0 28",
     "timeHrsPerAcre": 0.08,
     "labor": 2,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 22,
     "customRent": 0,
-    "totalCost": 28,
-    "page": 10,
-    "quote": "Pest Control-Worms 0.08 2 3 1 22 0 28"
+    "totalCost": 28
    },
    {
     "name": "Fruit Ripener-Ethrel 5% Ac",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Fruit Ripener-Ethrel 5% Ac 0.00 0 0 0 2 0 2",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 2,
     "customRent": 0,
-    "totalCost": 2,
-    "page": 10,
-    "quote": "Fruit Ripener-Ethrel 5% Ac 0.00 0 0 0 2 0 2"
+    "totalCost": 2
    },
    {
     "name": "Service Truck",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Service Truck 0.50 10 2 3 0 0 15",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 2,
     "lubeRepairs": 3,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 15,
-    "page": 10,
-    "quote": "Service Truck 0.50 10 2 3 0 0 15"
+    "totalCost": 15
    },
    {
     "name": "Water Truck",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Water Truck 0.33 7 3 4 0 0 14",
     "timeHrsPerAcre": 0.33,
     "labor": 7,
     "fuel": 3,
     "lubeRepairs": 4,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 14,
-    "page": 10,
-    "quote": "Water Truck 0.33 7 3 4 0 0 14"
+    "totalCost": 14
    },
    {
     "name": "Back Hoe",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Back Hoe 0.20 4 5 1 0 0 9",
     "timeHrsPerAcre": 0.2,
     "labor": 4,
     "fuel": 5,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 10,
-    "quote": "Back Hoe 0.20 4 5 1 0 0 9"
+    "totalCost": 9
    },
    {
     "name": "Road Grader",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Road Grader 0.17 3 5 1 0 0 9",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 5,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 9,
-    "page": 10,
-    "quote": "Road Grader 0.17 3 5 1 0 0 9"
+    "totalCost": 9
    },
    {
     "name": "Truck-Lowbed Trailer",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Truck-Lowbed Trailer 0.17 3 3 2 0 0 8",
     "timeHrsPerAcre": 0.17,
     "labor": 3,
     "fuel": 3,
     "lubeRepairs": 2,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 8,
-    "page": 10,
-    "quote": "Truck-Lowbed Trailer 0.17 3 3 2 0 0 8"
+    "totalCost": 8
    },
    {
     "name": "1/2 Ton Pickup (3)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "1/2 Ton Pickup (3) 1.60 33 6 4 0 0 43",
     "timeHrsPerAcre": 1.6,
     "labor": 33,
     "fuel": 6,
     "lubeRepairs": 4,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 43,
-    "page": 10,
-    "quote": "1/2 Ton Pickup (3) 1.60 33 6 4 0 0 43"
+    "totalCost": 43
    },
    {
     "name": "3/4 Ton Pickup (2)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "3/4 Ton Pickup (2) 0.50 10 3 1 0 0 15",
     "timeHrsPerAcre": 0.5,
     "labor": 10,
     "fuel": 3,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 15,
-    "page": 10,
-    "quote": "3/4 Ton Pickup (2) 0.50 10 3 1 0 0 15"
+    "totalCost": 15
    },
    {
     "name": "Pest Control-Vertebrate",
     "category": "cultural",
     "section": "Cultural",
+    "page": 10,
+    "quote": "Pest Control-Vertebrate 0.20 7 1 0 6 0 14",
     "timeHrsPerAcre": 0.2,
     "labor": 7,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 6,
     "customRent": 0,
-    "totalCost": 14,
-    "page": 10,
-    "quote": "Pest Control-Vertebrate 0.20 7 1 0 6 0 14"
+    "totalCost": 14
    },
    {
     "name": "Harvest Custom 50% Ac",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Harvest Custom 50% Ac 0.00 0 0 0 0 253 253",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 253,
-    "totalCost": 253,
-    "page": 10,
-    "quote": "Harvest Custom 50% Ac 0.00 0 0 0 0 253 253"
+    "totalCost": 253
    },
    {
     "name": "Open Harvest Lanes 4% Ac",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Open Harvest Lanes 4% Ac 0.07 1 2 1 0 0 5",
     "timeHrsPerAcre": 0.07,
     "labor": 1,
     "fuel": 2,
     "lubeRepairs": 1,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 5,
-    "page": 10,
-    "quote": "Open Harvest Lanes 4% Ac 0.07 1 2 1 0 0 5"
+    "totalCost": 5
    },
    {
     "name": "Harvest Self 50% Ac",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Harvest Self 50% Ac 0.44 29 40 77 0 0 146",
     "timeHrsPerAcre": 0.44,
     "labor": 29,
     "fuel": 40,
     "lubeRepairs": 77,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 146,
-    "page": 10,
-    "quote": "Harvest Self 50% Ac 0.44 29 40 77 0 0 146"
+    "totalCost": 146
    },
    {
     "name": "In Field Hauling (2)",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "In Field Hauling (2) 0.87 18 35 12 0 0 65",
     "timeHrsPerAcre": 0.87,
     "labor": 18,
     "fuel": 35,
     "lubeRepairs": 12,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 65,
-    "page": 10,
-    "quote": "In Field Hauling (2) 0.87 18 35 12 0 0 65"
+    "totalCost": 65
    },
    {
     "name": "Share Rent 12.0%",
     "category": "harvest",
     "section": "Harvest",
+    "page": 10,
+    "quote": "Share Rent 12.0% 0.00 0 0 0 422 0 422",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 422,
     "customRent": 0,
-    "totalCost": 422,
-    "page": 10,
-    "quote": "Share Rent 12.0% 0.00 0 0 0 422 0 422"
+    "totalCost": 422
    },
    {
     "name": "Irrigation-Drip Chemigation",
     "category": "postharvest",
     "section": "Post-Harvest",
+    "page": 10,
+    "quote": "Irrigation-Drip Chemigation 0.00 0 0 0 3 0 3",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 3,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 10,
-    "quote": "Irrigation-Drip Chemigation 0.00 0 0 0 3 0 3"
+    "totalCost": 3
    },
    {
     "name": "Drip Tape System Maintenance",
     "category": "postharvest",
     "section": "Post-Harvest",
+    "page": 10,
+    "quote": "Drip Tape System Maintenance 0.20 52 1 0 0 0 54",
     "timeHrsPerAcre": 0.2,
     "labor": 52,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 54,
-    "page": 10,
-    "quote": "Drip Tape System Maintenance 0.20 52 1 0 0 0 54"
+    "totalCost": 54
    },
    {
     "name": "PTAB, CTGA, CTRI, CDFA-CTVP",
     "category": "assessment",
     "section": "Assessment",
+    "page": 11,
+    "quote": "PTAB, CTGA, CTRI, CDFA-CTVP 0.00 0 0 17 0 17",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 17,
     "customRent": 0,
-    "totalCost": 17,
-    "page": 11,
-    "quote": "PTAB, CTGA, CTRI, CDFA-CTVP 0.00 0 0 17 0 17"
+    "totalCost": 17
    }
   ]
  },
@@ -2571,6 +2632,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
+   "Tables 1 and 2 print different overhead totals; using the rows that add up to TOTAL COSTS/ACRE 3153",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

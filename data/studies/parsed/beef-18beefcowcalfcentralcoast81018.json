@@ -53,18 +53,33 @@
  "costsPerAcre": {
   "title": "COSTS AND RETURNS FOR BEEF COW – CALF PRODUCTION",
   "operatingTotal": null,
-  "cashOverheadTotal": {
-   "value": 34.62,
-   "unit": "$/acre",
-   "page": 11,
-   "quote": "TOTAL CASH OVERHEAD COSTS $10,385 $34.62"
-  },
+  "operatingInterest": null,
+  "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
   "totalCost": null,
   "grossReturns": null,
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
-  "cashOverheadItems": [],
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance $2,680",
+    "value": 8.93,
+    "page": 11,
+    "quote": "Liability Insurance $2,680 $8.93"
+   },
+   {
+    "description": "Labor/Employee Insurance $5,025",
+    "value": 16.75,
+    "page": 11,
+    "quote": "Labor/Employee Insurance $5,025 $16.75"
+   },
+   {
+    "description": "Office Expenses $2,680",
+    "value": 8.93,
+    "page": 11,
+    "quote": "Office Expenses $2,680 $8.93"
+   }
+  ],
   "operations": []
  },
  "equipment": [],
@@ -99,7 +114,6 @@
    "region",
    "counties",
    "interestRatePct",
-   "cashOverheadTotal",
    "capitalRecoveryFormula"
   ],
   "fieldsMissing": [
@@ -111,6 +125,7 @@
    "landRentPerAcre",
    "acresFarmed",
    "operatingTotal",
+   "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
    "grossReturns",

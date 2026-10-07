@@ -109,6 +109,12 @@
    "page": 8,
    "quote": "TOTAL OPERATING COSTS/ACRE 11 9 142 183 351"
   },
+  "operatingInterest": {
+   "value": 7,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "Interest on operating capital @ 6.89% 7"
+  },
   "cashOverheadTotal": {
    "value": 66,
    "unit": "$/acre",
@@ -151,141 +157,141 @@
     "name": "Fertilize: Manure",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: Manure 0.00 0 0 38 0 38",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 38,
     "customRent": 0,
-    "totalCost": 38,
-    "page": 8,
-    "quote": "Fertilize: Manure 0.00 0 0 38 0 38"
+    "totalCost": 38
    },
    {
     "name": "Land Prep: Disk 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Disk 2X 0.22 3 7 0 0 10",
     "timeHrsPerAcre": 0.22,
     "labor": 3,
     "fuel": 7,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 8,
-    "quote": "Land Prep: Disk 2X 0.22 3 7 0 0 10"
+    "totalCost": 10
    },
    {
     "name": "Land Prep: Make Borders",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Make Borders 0.04 1 1 0 0 1",
     "timeHrsPerAcre": 0.04,
     "labor": 1,
     "fuel": 1,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 1,
-    "page": 8,
-    "quote": "Land Prep: Make Borders 0.04 1 1 0 0 1"
+    "totalCost": 1
    },
    {
     "name": "Irrigate: Pre-Irrigation",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Irrigate: Pre-Irrigation 0.15 1 0 18 0 19",
     "timeHrsPerAcre": 0.15,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 18,
     "customRent": 0,
-    "totalCost": 19,
-    "page": 8,
-    "quote": "Irrigate: Pre-Irrigation 0.15 1 0 18 0 19"
+    "totalCost": 19
    },
    {
     "name": "Plant",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Plant 0.00 0 0 26 10 36",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 26,
     "customRent": 10,
-    "totalCost": 36,
-    "page": 8,
-    "quote": "Plant 0.00 0 0 26 10 36"
+    "totalCost": 36
    },
    {
     "name": "Fertilize: N Topdress (Urea)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: N Topdress (Urea) 0.00 0 0 23 7 29",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 23,
     "customRent": 7,
-    "totalCost": 29,
-    "page": 8,
-    "quote": "Fertilize: N Topdress (Urea) 0.00 0 0 23 7 29"
+    "totalCost": 29
    },
    {
     "name": "Weed: Post-Emergent (Buctril)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Weed: Post-Emergent (Buctril) 0.00 0 0 23 7 29",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 23,
     "customRent": 7,
-    "totalCost": 29,
-    "page": 8,
-    "quote": "Weed: Post-Emergent (Buctril) 0.00 0 0 23 7 29"
+    "totalCost": 29
    },
    {
     "name": "Irrigate 1X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Irrigate 1X 0.15 1 0 18 0 19",
     "timeHrsPerAcre": 0.15,
     "labor": 1,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 18,
     "customRent": 0,
-    "totalCost": 19,
-    "page": 8,
-    "quote": "Irrigate 1X 0.15 1 0 18 0 19"
+    "totalCost": 19
    },
    {
     "name": "Pickup Truck Use",
     "category": "cultural",
     "section": "Cultural",
+    "page": 8,
+    "quote": "Pickup Truck Use 0.24 4 2 0 0 5",
     "timeHrsPerAcre": 0.24,
     "labor": 4,
     "fuel": 2,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 5,
-    "page": 8,
-    "quote": "Pickup Truck Use 0.24 4 2 0 0 5"
+    "totalCost": 5
    },
    {
     "name": "Harvest: Swath, Chop, Pack, Haul",
     "category": "harvest",
     "section": "Harvest",
+    "page": 8,
+    "quote": "Harvest: Swath, Chop, Pack, Haul 0.00 0 0 0 157 157",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": null,
     "materials": 0,
     "customRent": 157,
-    "totalCost": 157,
-    "page": 8,
-    "quote": "Harvest: Swath, Chop, Pack, Haul 0.00 0 0 0 157 157"
+    "totalCost": 157
    }
   ]
  },

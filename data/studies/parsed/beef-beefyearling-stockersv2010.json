@@ -43,6 +43,7 @@
  "costsPerAcre": {
   "title": null,
   "operatingTotal": null,
+  "operatingInterest": null,
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
   "totalCost": null,

@@ -53,7 +53,12 @@
   "laborMachineRate": null,
   "laborNonMachineRate": null,
   "laborOverheadPct": null,
-  "landRentPerAcre": null,
+  "landRentPerAcre": {
+   "value": 180,
+   "unit": "$/acre/yr",
+   "page": 13,
+   "quote": "Land Lease 40 Ac 180"
+  },
   "cropsPerAcrePerYear": null,
   "fuelPriceDiesel": null,
   "fuelPriceGas": null,
@@ -73,6 +78,12 @@
    "unit": "$/acre",
    "page": 13,
    "quote": "TOTAL OPERATING COSTS/ACRE 0 0 0 0 147 183 332"
+  },
+  "operatingInterest": {
+   "value": 5,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Interest on Operating Capital at 5.75% 5"
   },
   "cashOverheadTotal": {
    "value": 218,
@@ -118,6 +129,18 @@
     "quote": "Office Expense 20"
    },
    {
+    "description": "Liability Insurance 45Ac",
+    "value": 16,
+    "page": 13,
+    "quote": "Liability Insurance 45Ac 16"
+   },
+   {
+    "description": "Land Lease 40 Ac",
+    "value": 180,
+    "page": 13,
+    "quote": "Land Lease 40 Ac 180"
+   },
+   {
     "description": "Property Taxes",
     "value": 2,
     "page": 13,
@@ -141,57 +164,57 @@
     "name": "Weeds-Spot Spray 2X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Weeds-Spot Spray 2X 0.00 0 0 0 3 2 5",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 3,
     "customRent": 2,
-    "totalCost": 5,
-    "page": 13,
-    "quote": "Weeds-Spot Spray 2X 0.00 0 0 0 3 2 5"
+    "totalCost": 5
    },
    {
     "name": "Irrigate-Flood 7X",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Irrigate-Flood 7X 0.00 0 0 0 73 0 73",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 73,
     "customRent": 0,
-    "totalCost": 73,
-    "page": 13,
-    "quote": "Irrigate-Flood 7X 0.00 0 0 0 73 0 73"
+    "totalCost": 73
    },
    {
     "name": "Fertilizer 46-0-0",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Fertilizer 46-0-0 0.00 0 0 0 70 11 81",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 70,
     "customRent": 11,
-    "totalCost": 81,
-    "page": 13,
-    "quote": "Fertilizer 46-0-0 0.00 0 0 0 70 11 81"
+    "totalCost": 81
    },
    {
-    "name": "0.00",
+    "name": "Harvest: Swath/Rake/Bale/Roadside",
     "category": "cultural",
     "section": "Cultural",
+    "page": 13,
+    "quote": "Harvest: Swath/Rake/Bale/Roadside 0.00 0 0 0 0 168 168",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
-    "lubeRepairs": null,
+    "lubeRepairs": 0,
     "materials": 0,
     "customRent": 168,
-    "totalCost": 168,
-    "page": 13,
-    "quote": "0.00 0 0 0 0 168 168"
+    "totalCost": 168
    }
   ]
  },
@@ -657,6 +680,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "landRentPerAcre",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -675,7 +699,6 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
-   "landRentPerAcre",
    "acresFarmed",
    "equipment",
    "hourlyEquipment",
@@ -686,7 +709,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
    "equipment table present but no equipment rows parsed"
   ]
  }

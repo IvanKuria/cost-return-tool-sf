@@ -73,7 +73,12 @@
    "page": 4,
    "quote": "Labor rates of $12.42 per hour for machine operators and $9.32 for general labor includes payroll overhead of 38%."
   },
-  "landRentPerAcre": null,
+  "landRentPerAcre": {
+   "value": 300,
+   "unit": "$/acre/yr",
+   "page": 8,
+   "quote": "Land Rent 300"
+  },
   "cropsPerAcrePerYear": null,
   "fuelPriceDiesel": {
    "value": 2.05,
@@ -96,19 +101,35 @@
  "costsPerAcre": {
   "title": "COST PER ACRE TO PRODUCE SUMMER SQUASH",
   "operatingTotal": {
-   "value": 7464,
+   "value": 7465,
    "unit": "$/acre",
-   "page": 10,
-   "quote": "TOTAL OPERATING COSTS/ACRE 10 714 711 340 1,594 3,068 1,027 0 0 0 0 0 7,464"
+   "page": 8,
+   "quote": "TOTAL OPERATING COSTS/ACRE 4,339 685 2,206 103 7,465"
+  },
+  "operatingInterest": {
+   "value": 133,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "Interest on operating capital 133"
   },
   "cashOverheadTotal": {
    "value": 368,
    "unit": "$/acre",
-   "page": 10,
-   "quote": "TOTAL CASH OVERHEAD COSTS 5 5 13 18 5 5 5 0 0 300 0 14 368"
+   "page": 8,
+   "quote": "TOTAL CASH OVERHEAD COSTS 368"
   },
-  "nonCashOverheadTotal": null,
-  "totalCost": null,
+  "nonCashOverheadTotal": {
+   "value": 304,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL NON-CASH OVERHEAD COSTS 2,569 304 304"
+  },
+  "totalCost": {
+   "value": 8137,
+   "unit": "$/acre",
+   "page": 8,
+   "quote": "TOTAL COSTS/ACRE 8,137"
+  },
   "grossReturns": {
    "value": 8400,
    "unit": "$/acre",
@@ -117,49 +138,310 @@
   },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
-  "cashOverheadItems": [],
+  "cashOverheadItems": [
+   {
+    "description": "Liability Insurance",
+    "value": 9,
+    "page": 8,
+    "quote": "Liability Insurance 9"
+   },
+   {
+    "description": "Office Expense",
+    "value": 30,
+    "page": 8,
+    "quote": "Office Expense 30"
+   },
+   {
+    "description": "Land Rent",
+    "value": 300,
+    "page": 8,
+    "quote": "Land Rent 300"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 16,
+    "page": 8,
+    "quote": "Property Taxes 16"
+   },
+   {
+    "description": "Property Insurance",
+    "value": 11,
+    "page": 8,
+    "quote": "Property Insurance 11"
+   },
+   {
+    "description": "Investment Repairs",
+    "value": 3,
+    "page": 8,
+    "quote": "Investment Repairs 3"
+   }
+  ],
   "operations": [
    {
-    "name": "Ending DEC 05 05 05 05 05 05",
+    "name": "Land Prep: Rip",
     "category": "cultural",
     "section": "Cultural",
-    "timeHrsPerAcre": 5,
+    "page": 8,
+    "quote": "Land Prep: Rip 0.32 5 8 0 0 13",
+    "timeHrsPerAcre": 0.32,
     "labor": 5,
-    "fuel": 5,
-    "lubeRepairs": 5,
-    "materials": 5,
-    "customRent": 5,
-    "totalCost": 5,
-    "page": 10,
-    "quote": "Ending DEC 05 05 05 05 05 05 05 05 05 05 05 05 05"
+    "fuel": 8,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 13
+   },
+   {
+    "name": "Land Prep: Disc 2X",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Disc 2X 0.28 4 7 0 0 11",
+    "timeHrsPerAcre": 0.28,
+    "labor": 4,
+    "fuel": 7,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 11
+   },
+   {
+    "name": "Land Prep: Roll (Cultipacker)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Roll (Cultipacker) 0.08 1 1 0 0 2",
+    "timeHrsPerAcre": 0.08,
+    "labor": 1,
+    "fuel": 1,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 2
+   },
+   {
+    "name": "Land Prep: List Beds",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: List Beds 0.20 3 2 0 0 5",
+    "timeHrsPerAcre": 0.2,
+    "labor": 3,
+    "fuel": 2,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 5
+   },
+   {
+    "name": "Land Prep: Bed Shape+Mulch+Drip",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Land Prep: Bed Shape+Mulch+Drip 6.00 12.00 201 57 223 0 481",
+    "timeHrsPerAcre": 6,
+    "labor": 201,
+    "fuel": 57,
+    "lubeRepairs": null,
+    "materials": 223,
+    "customRent": 0,
+    "totalCost": 481
+   },
+   {
+    "name": "Connect drip to main line",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Connect drip to main line 0.00 3.00 28 1 0 0 29",
+    "timeHrsPerAcre": 0,
+    "labor": 28,
+    "fuel": 1,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 29
+   },
+   {
+    "name": "Fumigate: Drip System (Vapam)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Fumigate: Drip System (Vapam) 0.00 0.30 3 0 158 0 160",
+    "timeHrsPerAcre": 0,
+    "labor": 3,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 158,
+    "customRent": 0,
+    "totalCost": 160
+   },
+   {
+    "name": "Plant: Make Planting Holes",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Plant: Make Planting Holes 0.32 5 1 0 0 6",
+    "timeHrsPerAcre": 0.32,
+    "labor": 5,
+    "fuel": 1,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 6
+   },
+   {
+    "name": "Plant: Transplant.",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Plant: Transplant. 0.00 50.00 466 0 198 0 664",
+    "timeHrsPerAcre": 0,
+    "labor": 466,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 198,
+    "customRent": 0,
+    "totalCost": 664
    },
    {
     "name": "Irrigate",
     "category": "cultural",
     "section": "Cultural",
-    "timeHrsPerAcre": 23,
-    "labor": 44,
-    "fuel": 49,
+    "page": 8,
+    "quote": "Irrigate 0.00 5.55 52 0 145 0 197",
+    "timeHrsPerAcre": 0,
+    "labor": 52,
+    "fuel": 0,
     "lubeRepairs": null,
-    "materials": 49,
-    "customRent": 33,
-    "totalCost": 197,
-    "page": 10,
-    "quote": "Irrigate 23 44 49 49 33 197"
+    "materials": 145,
+    "customRent": 0,
+    "totalCost": 197
    },
    {
-    "name": "Miscellaneous Pickup Use 10",
+    "name": "Insect: Aphid, Whitefly (Admire) through dripline",
     "category": "cultural",
     "section": "Cultural",
-    "timeHrsPerAcre": 10,
-    "labor": 10,
-    "fuel": 10,
-    "lubeRepairs": 10,
-    "materials": 10,
-    "customRent": 10,
-    "totalCost": 67,
-    "page": 10,
-    "quote": "Miscellaneous Pickup Use 10 10 10 10 10 10 10 67"
+    "page": 8,
+    "quote": "Insect: Aphid, Whitefly (Admire) through dripline 0.00 0.10 1 0 132 0 133",
+    "timeHrsPerAcre": 0,
+    "labor": 1,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 132,
+    "customRent": 0,
+    "totalCost": 133
+   },
+   {
+    "name": "Fertilize: N (UN32) drip",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Fertilize: N (UN32) drip 0.00 0 0 129 0 129",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 129,
+    "customRent": 0,
+    "totalCost": 129
+   },
+   {
+    "name": "Pollinate: Bee Hives (2)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Pollinate: Bee Hives (2) 0.00 0 0 0 100 100",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 100,
+    "totalCost": 100
+   },
+   {
+    "name": "Insect: Aphid (Capture)",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Insect: Aphid (Capture) 0.18 3 2 22 0 26",
+    "timeHrsPerAcre": 0.18,
+    "labor": 3,
+    "fuel": 2,
+    "lubeRepairs": null,
+    "materials": 22,
+    "customRent": 0,
+    "totalCost": 26
+   },
+   {
+    "name": "Field Cleanup: Mow Plants",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Field Cleanup: Mow Plants 0.17 3 2 0 0 5",
+    "timeHrsPerAcre": 0.17,
+    "labor": 3,
+    "fuel": 2,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 5
+   },
+   {
+    "name": "Field Cleanup: Roll Mulch/Tape/Haul to Dump",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Field Cleanup: Roll Mulch/Tape/Haul to Dump 0.10 4.00 39 1 0 3 42",
+    "timeHrsPerAcre": 0.1,
+    "labor": 39,
+    "fuel": 1,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 3,
+    "totalCost": 42
+   },
+   {
+    "name": "Miscellaneous Pickup Use",
+    "category": "cultural",
+    "section": "Cultural",
+    "page": 8,
+    "quote": "Miscellaneous Pickup Use 2.50 37 30 0 0 67",
+    "timeHrsPerAcre": 2.5,
+    "labor": 37,
+    "fuel": 30,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 67
+   },
+   {
+    "name": "Harvest: Field Pick and Pack",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 8,
+    "quote": "Harvest: Field Pick and Pack 18.00 288.00 2,952 297 1,200 0 4,449",
+    "timeHrsPerAcre": 18,
+    "labor": 2952,
+    "fuel": 297,
+    "lubeRepairs": null,
+    "materials": 1200,
+    "customRent": 0,
+    "totalCost": 4449
+   },
+   {
+    "name": "Load and Haul",
+    "category": "harvest",
+    "section": "Harvest",
+    "page": 8,
+    "quote": "Load and Haul 36.00 537 277 0 0 813",
+    "timeHrsPerAcre": 36,
+    "labor": 537,
+    "fuel": 277,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 813
    }
   ]
  },
@@ -746,8 +1028,11 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
+   "landRentPerAcre",
    "operatingTotal",
    "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
    "grossReturns",
    "operations",
    "equipment",
@@ -760,10 +1045,7 @@
   ],
   "fieldsMissing": [
    "interestRatePct",
-   "landRentPerAcre",
    "acresFarmed",
-   "nonCashOverheadTotal",
-   "totalCost",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
@@ -771,8 +1053,10 @@
    "establishmentAnnual"
   ],
   "warnings": [
+   "a later costs table had no totals or is a harvest-only table; used an earlier one",
    "several costs-per-acre tables (establishment and production); using the production one",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "Table 1 prints a field labor hours column after the operation time; it is not stored",
    "monthly table has no TABLE heading; parsed from the month header line"
   ]
  }

@@ -109,6 +109,12 @@
    "page": 12,
    "quote": "TOTAL OPERATING COSTS/ACRE 0.56 45 2 1 893 488 1,441"
   },
+  "operatingInterest": {
+   "value": 12,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "Interest on Operating Capital at 5.75% 12"
+  },
   "cashOverheadTotal": {
    "value": 246,
    "unit": "$/acre",
@@ -172,169 +178,169 @@
     "name": "Weed: Roundup PowerMax (2x)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Weed: Roundup PowerMax (2x) 0.14 4 0 0 14 0 18",
     "timeHrsPerAcre": 0.14,
     "labor": 4,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 14,
     "customRent": 0,
-    "totalCost": 18,
-    "page": 12,
-    "quote": "Weed: Roundup PowerMax (2x) 0.14 4 0 0 14 0 18"
+    "totalCost": 18
    },
    {
     "name": "Make Semi-Permanent Drains",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Make Semi-Permanent Drains 0.00 0 0 0 0 12 12",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 12,
-    "totalCost": 12,
-    "page": 12,
-    "quote": "Make Semi-Permanent Drains 0.00 0 0 0 0 12 12"
+    "totalCost": 12
    },
    {
     "name": "Insect: Aphid/Weevil (Warrior II)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Insect: Aphid/Weevil (Warrior II) 0.07 2 0 0 8 0 10",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 8,
     "customRent": 0,
-    "totalCost": 10,
-    "page": 12,
-    "quote": "Insect: Aphid/Weevil (Warrior II) 0.07 2 0 0 8 0 10"
+    "totalCost": 10
    },
    {
     "name": "Irrigate - 10X Flood Irrigation",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Irrigate - 10X Flood Irrigation 0.00 32 0 0 693 0 725",
     "timeHrsPerAcre": 0,
     "labor": 32,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 693,
     "customRent": 0,
-    "totalCost": 725,
-    "page": 12,
-    "quote": "Irrigate - 10X Flood Irrigation 0.00 32 0 0 693 0 725"
+    "totalCost": 725
    },
    {
     "name": "Insect: Worms (Coragen)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Insect: Worms (Coragen) 0.07 2 0 0 29 0 31",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 29,
     "customRent": 0,
-    "totalCost": 31,
-    "page": 12,
-    "quote": "Insect: Worms (Coragen) 0.07 2 0 0 29 0 31"
+    "totalCost": 31
    },
    {
     "name": "Tissue Sample (P&K) Analysis",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Tissue Sample (P&K) Analysis 0.00 0 0 0 0 1 1",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 1,
-    "totalCost": 1,
-    "page": 12,
-    "quote": "Tissue Sample (P&K) Analysis 0.00 0 0 0 0 1 1"
+    "totalCost": 1
    },
    {
     "name": "Fertilize (11-52-0)",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Fertilize (11-52-0) 0.00 0 0 0 74 12 86",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 74,
     "customRent": 12,
-    "totalCost": 86,
-    "page": 12,
-    "quote": "Fertilize (11-52-0) 0.00 0 0 0 74 12 86"
+    "totalCost": 86
    },
    {
     "name": "Weeds: Chateau & Prowl H2O",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Weeds: Chateau & Prowl H2O 0.07 2 0 0 63 0 65",
     "timeHrsPerAcre": 0.07,
     "labor": 2,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 63,
     "customRent": 0,
-    "totalCost": 65,
-    "page": 12,
-    "quote": "Weeds: Chateau & Prowl H2O 0.07 2 0 0 63 0 65"
+    "totalCost": 65
    },
    {
     "name": "Weeds: Gramoxone",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Weeds: Gramoxone 0.00 0 0 0 11 0 11",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 11,
     "customRent": 0,
-    "totalCost": 11,
-    "page": 12,
-    "quote": "Weeds: Gramoxone 0.00 0 0 0 11 0 11"
+    "totalCost": 11
    },
    {
     "name": "Pickup Truck 1/2 Ton",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "Pickup Truck 1/2 Ton 0.12 3 1 0 0 0 4",
     "timeHrsPerAcre": 0.12,
     "labor": 3,
     "fuel": 1,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 4,
-    "page": 12,
-    "quote": "Pickup Truck 1/2 Ton 0.12 3 1 0 0 0 4"
+    "totalCost": 4
    },
    {
     "name": "ATV",
     "category": "cultural",
     "section": "Cultural",
+    "page": 12,
+    "quote": "ATV 0.12 3 0 0 0 0 3",
     "timeHrsPerAcre": 0.12,
     "labor": 3,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 0,
-    "totalCost": 3,
-    "page": 12,
-    "quote": "ATV 0.12 3 0 0 0 0 3"
+    "totalCost": 3
    },
    {
     "name": "Harvest – 9x (Custom harvest)",
     "category": "harvest",
     "section": "Harvest",
+    "page": 12,
+    "quote": "Harvest – 9x (Custom harvest) 0.00 0 0 0 0 463 463",
     "timeHrsPerAcre": 0,
     "labor": 0,
     "fuel": 0,
     "lubeRepairs": 0,
     "materials": 0,
     "customRent": 463,
-    "totalCost": 463,
-    "page": 12,
-    "quote": "Harvest – 9x (Custom harvest) 0.00 0 0 0 0 463 463"
+    "totalCost": 463
    }
   ]
  },
