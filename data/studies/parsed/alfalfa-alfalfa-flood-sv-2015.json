@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/39/f2/39f29aa5-b991-4a13-816e-c695ed243249/alfalfa-flood-sv-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -29,13 +29,18 @@
    "quote": "The hypothetical farm consists of 3,000 non-contiguous acres of field, row, and tree crops of which 600 acres are in alfalfa (440 in production and 160 being established) and the remaining 2,400 acres are planted to other crops such as almonds, corn, grains, processing tomatoes, sunflowers and dry beans."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 7,
+   "unit": "Ton",
+   "page": 14,
+   "quote": "Hay 7 Ton 285 1,995"
+  },
   "yieldUnit": "Ton",
   "pricePerUnit": {
    "value": 285,
-   "unit": "$/ton",
-   "page": 5,
-   "quote": "A price of $285 per ton for premium hay is based on current USDA California 2014 averages over all grades for the Sacramento Valley market districts."
+   "unit": "$/Ton",
+   "page": 14,
+   "quote": "Hay 7 Ton 285 1,995"
   },
   "returns": [
    {
@@ -46,123 +51,6 @@
     "value": 1995,
     "page": 14,
     "quote": "Hay 7 Ton 285 1,995"
-   },
-   {
-    "name": "11-52-0",
-    "quantity": 200,
-    "unit": "Lb",
-    "price": 0.37,
-    "value": 74,
-    "page": 14,
-    "quote": "11-52-0 200.00 Lb 0.37 74"
-   },
-   {
-    "name": "Ground Application",
-    "quantity": 1,
-    "unit": "Acre",
-    "price": 10.5,
-    "value": 11,
-    "page": 14,
-    "quote": "Ground Application 1.00 Acre 10.50 11"
-   },
-   {
-    "name": "Roundup PowerMax",
-    "quantity": 2,
-    "unit": "Pint",
-    "price": 2.75,
-    "value": 6,
-    "page": 14,
-    "quote": "Roundup PowerMax 2.00 Pint 2.75 6"
-   },
-   {
-    "name": "Velpar L",
-    "quantity": 4,
-    "unit": "Pint",
-    "price": 14.41,
-    "value": 58,
-    "page": 14,
-    "quote": "Velpar L 4.00 Pint 14.41 58"
-   },
-   {
-    "name": "Warrior II",
-    "quantity": 1.5,
-    "unit": "FlOz",
-    "price": 5.25,
-    "value": 8,
-    "page": 14,
-    "quote": "Warrior II 1.50 FlOz 5.25 8"
-   },
-   {
-    "name": "Coragen",
-    "quantity": 2,
-    "unit": "FlOz",
-    "price": 10.25,
-    "value": 21,
-    "page": 14,
-    "quote": "Coragen 2.00 FlOz 10.25 21"
-   },
-   {
-    "name": "Belt SC",
-    "quantity": 3,
-    "unit": "FlOz",
-    "price": 9.4,
-    "value": 28,
-    "page": 14,
-    "quote": "Belt SC 3.00 FlOz 9.40 28"
-   },
-   {
-    "name": "Water-Alfalfa-Pumped",
-    "quantity": 42,
-    "unit": "AcIn",
-    "price": 7.5,
-    "value": 315,
-    "page": 14,
-    "quote": "Water-Alfalfa-Pumped 42.00 AcIn 7.50 315"
-   },
-   {
-    "name": "Bale Twine",
-    "quantity": 0.98,
-    "unit": "Acre",
-    "price": 7,
-    "value": 7,
-    "page": 14,
-    "quote": "Bale Twine 0.98 Acre 7.00 7"
-   },
-   {
-    "name": "Equipment Operator Labor",
-    "quantity": 5.84,
-    "unit": "Hrs",
-    "price": 17,
-    "value": 99,
-    "page": 14,
-    "quote": "Equipment Operator Labor 5.84 Hrs 17.00 99"
-   },
-   {
-    "name": "Irrigation Labor",
-    "quantity": 9,
-    "unit": "Hrs",
-    "price": 13.6,
-    "value": 122,
-    "page": 14,
-    "quote": "Irrigation Labor 9.00 Hrs 13.60 122"
-   },
-   {
-    "name": "Fuel-Gas",
-    "quantity": 2.56,
-    "unit": "Gal",
-    "price": 3.79,
-    "value": 10,
-    "page": 14,
-    "quote": "Fuel-Gas 2.56 Gal 3.79 10"
-   },
-   {
-    "name": "Fuel-Diesel",
-    "quantity": 32.75,
-    "unit": "Gal",
-    "price": 3.88,
-    "value": 127,
-    "page": 14,
-    "quote": "Fuel-Diesel 32.75 Gal 3.88 127"
    }
   ],
   "interestRatePct": null,
@@ -234,7 +122,12 @@
    "page": 13,
    "quote": "TOTAL COSTS/ACRE 1,962"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1995,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "Hay 7 Ton 285 1,995"
+  },
   "netReturnsAboveOperating": {
    "value": 980,
    "unit": "$/acre",
@@ -1106,6 +999,7 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -1115,6 +1009,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "hourlyEquipment",
@@ -1125,10 +1020,8 @@
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "investments",
    "businessOverhead",
    "insuranceRatePct",
@@ -1136,7 +1029,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 14 return lines with different prices; pricePerUnit left null, see returns[]",
    "used an earlier equipment table; the last one had no parsable rows"
   ]
  }

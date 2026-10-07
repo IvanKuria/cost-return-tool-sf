@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/84/2e/842e78c3-3f2c-4595-ab4b-230b89b24150/broccoli_cc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/broccoli",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -91,7 +91,12 @@
    "page": 9,
    "quote": "TOTAL COSTS/ACRE 6,069"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 4790,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "Broccoli 582 box 8.23 4,790"
+  },
   "netReturnsAboveOperating": {
    "value": -248,
    "unit": "$/acre",
@@ -944,6 +949,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -956,7 +962,6 @@
    "laborNonMachineRate",
    "laborOverheadPct",
    "acresFarmed",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",

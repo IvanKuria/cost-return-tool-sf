@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/43/85/4385b69b-078a-43d9-8f39-6ac149688fb5/16dovraisinsogtsjvfinaldraft111716.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–raisins",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1889,7 +1889,7 @@
     "label": "2nd",
     "totalCost": 7475,
     "returns": null,
-    "netCost": 7336,
+    "netCost": 7475,
     "accumulated": 14811,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,336 14,811 13,412"
@@ -1899,7 +1899,7 @@
     "label": "3rd",
     "totalCost": 2601,
     "returns": 4000,
-    "netCost": 7475,
+    "netCost": -1399,
     "accumulated": 13412,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,336 14,811 13,412"

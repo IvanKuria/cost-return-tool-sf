@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f3/08/f308b1f6-83b1-4a64-b2a2-c9c6615a395e/proteasc2007.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/protea–floriculture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2007,
   "priceYear": {
@@ -29,9 +29,19 @@
    "page": 3,
    "quote": "Protea is planted on 10 acres, other crops are on eight acres and, roads or open space and buildings are on the remaining two acres."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 25000,
+   "unit": "each",
+   "page": 14,
+   "quote": "Protea: flowers and/or bunches 25,000.00 each 1.20 30,000"
+  },
   "yieldUnit": "each",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 1.2,
+   "unit": "$/each",
+   "page": 14,
+   "quote": "Protea: flowers and/or bunches 25,000.00 each 1.20 30,000"
+  },
   "returns": [
    {
     "name": "Protea: flowers and/or bunches",
@@ -41,132 +51,6 @@
     "value": 30000,
     "page": 14,
     "quote": "Protea: flowers and/or bunches 25,000.00 each 1.20 30,000"
-   },
-   {
-    "name": "Protea",
-    "quantity": 28,
-    "unit": "each",
-    "price": 6,
-    "value": 168,
-    "page": 14,
-    "quote": "Protea 28.00 each 6.00 168"
-   },
-   {
-    "name": "Subdue Maxx",
-    "quantity": 87.06,
-    "unit": "floz",
-    "price": 5.03,
-    "value": 438,
-    "page": 14,
-    "quote": "Subdue Maxx 87.06 floz 5.03 438"
-   },
-   {
-    "name": "Heritage",
-    "quantity": 3.5,
-    "unit": "oz",
-    "price": 24.62,
-    "value": 86,
-    "page": 14,
-    "quote": "Heritage 3.50 oz 24.62 86"
-   },
-   {
-    "name": "Wilco Gopher Bait",
-    "quantity": 12,
-    "unit": "lb",
-    "price": 5.4,
-    "value": 65,
-    "page": 14,
-    "quote": "Wilco Gopher Bait 12.00 lb 5.40 65"
-   },
-   {
-    "name": "Metaldehyde 3.5G (snails)",
-    "quantity": 142.5,
-    "unit": "lb",
-    "price": 1.62,
-    "value": 231,
-    "page": 14,
-    "quote": "Metaldehyde 3.5G (snails) 142.50 lb 1.62 231"
-   },
-   {
-    "name": "Malathion 5",
-    "quantity": 0.75,
-    "unit": "pint",
-    "price": 4.27,
-    "value": 3,
-    "page": 14,
-    "quote": "Malathion 5 0.75 pint 4.27 3"
-   },
-   {
-    "name": "Amdro Pro Fire Ant Bait",
-    "quantity": 1,
-    "unit": "lb",
-    "price": 8.65,
-    "value": 9,
-    "page": 14,
-    "quote": "Amdro Pro Fire Ant Bait 1.00 lb 8.65 9"
-   },
-   {
-    "name": "Water",
-    "quantity": 18,
-    "unit": "acin",
-    "price": 54.17,
-    "value": 975,
-    "page": 14,
-    "quote": "Water 18.00 acin 54.17 975"
-   },
-   {
-    "name": "Roundup Pro",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 6.24,
-    "value": 12,
-    "page": 14,
-    "quote": "Roundup Pro 2.00 pint 6.24 12"
-   },
-   {
-    "name": "Ronstar WSP",
-    "quantity": 5,
-    "unit": "lb",
-    "price": 38.2,
-    "value": 191,
-    "page": 14,
-    "quote": "Ronstar WSP 5.00 lb 38.20 191"
-   },
-   {
-    "name": "Ammonium Sulfate (21-0-0)",
-    "quantity": 300,
-    "unit": "lb",
-    "price": 0.14,
-    "value": 43,
-    "page": 14,
-    "quote": "Ammonium Sulfate (21-0-0) 300.00 lb 0.14 43"
-   },
-   {
-    "name": "Labor (non-machine)",
-    "quantity": 597.62,
-    "unit": "hrs",
-    "price": 11.99,
-    "value": 7165,
-    "page": 14,
-    "quote": "Labor (non-machine) 597.62 hrs 11.99 7,165"
-   },
-   {
-    "name": "Fuel - Gas",
-    "quantity": 23.03,
-    "unit": "gal",
-    "price": 2.8,
-    "value": 64,
-    "page": 14,
-    "quote": "Fuel - Gas 23.03 gal 2.80 64"
-   },
-   {
-    "name": "Fuel - Diesel",
-    "quantity": 2.08,
-    "unit": "gal",
-    "price": 2.9,
-    "value": 6,
-    "page": 14,
-    "quote": "Fuel - Diesel 2.08 gal 2.90 6"
    }
   ],
   "interestRatePct": null,
@@ -232,7 +116,12 @@
    "page": 13,
    "quote": "TOTAL COSTS/ACRE 17,486"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 30000,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "Protea: flowers and/or bunches 25,000.00 each 1.20 30,000"
+  },
   "netReturnsAboveOperating": {
    "value": 19840,
    "unit": "$/acre",
@@ -1755,7 +1644,7 @@
     "label": "4th",
     "totalCost": 8157,
     "returns": 10800,
-    "netCost": 17605,
+    "netCost": -2643,
     "accumulated": 24272,
     "page": 10,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
@@ -1765,7 +1654,7 @@
     "label": "5th",
     "totalCost": 9342,
     "returns": 18000,
-    "netCost": 6101,
+    "netCost": -8658,
     "accumulated": 18257,
     "page": 10,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
@@ -1775,7 +1664,7 @@
     "label": "6th",
     "totalCost": 11356,
     "returns": 30000,
-    "netCost": 3209,
+    "netCost": -18644,
     "accumulated": 5628,
     "page": 10,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 17,605 23,706 26,915 24,272 18,257 5,628"
@@ -1813,6 +1702,8 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1820,6 +1711,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1833,18 +1725,14 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
    "acresFarmed",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

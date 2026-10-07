@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/4f/b7/4fb7b757-8f92-436f-a1ae-0f0e0eb5e25f/oliveoilnc_cc_2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/olive-oil",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 3,
    "quote": "The hypothetical farm consists of 15 acres of rolling hillside land."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 1211,
+   "unit": "botl",
+   "page": 14,
+   "quote": "Olive Oil 1,211.00 botl 10.00 12,110"
+  },
+  "yieldUnit": "botl",
+  "pricePerUnit": {
+   "value": 10,
+   "unit": "$/botl",
+   "page": 14,
+   "quote": "Olive Oil 1,211.00 botl 10.00 12,110"
+  },
+  "returns": [
+   {
+    "name": "Olive Oil",
+    "quantity": 1211,
+    "unit": "botl",
+    "price": 10,
+    "value": 12110,
+    "page": 14,
+    "quote": "Olive Oil 1,211.00 botl 10.00 12,110"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -96,7 +116,12 @@
    "page": 13,
    "quote": "TOTAL COSTS/ACRE 12,710"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 12110,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "Olive Oil 1,211.00 botl 10.00 12,110"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -1671,6 +1696,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1678,6 +1705,7 @@
    "operatingTotal",
    "cashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1690,18 +1718,14 @@
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
    "nonCashOverheadTotal",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

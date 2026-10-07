@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/be/c7/bec790f2-3cb8-4a07-ac0d-ccfdcb067bb8/2018tablegrapessjvautumnkingfinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2018,
   "priceYear": {
@@ -29,10 +29,30 @@
    "quote": "The hypothetical farm consists of 500 contiguous acres."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 1800,
+   "unit": "Box",
+   "page": 18,
+   "quote": "GROSS RETURNS 1,800 Box 17.00 30,600"
+  },
+  "yieldUnit": "Box",
+  "pricePerUnit": {
+   "value": 17,
+   "unit": "$/Box",
+   "page": 18,
+   "quote": "GROSS RETURNS 1,800 Box 17.00 30,600"
+  },
+  "returns": [
+   {
+    "name": "Gross returns",
+    "quantity": 1800,
+    "unit": "Box",
+    "price": 17,
+    "value": 30600,
+    "page": 18,
+    "quote": "GROSS RETURNS 1,800 Box 17.00 30,600"
+   }
+  ],
   "interestRatePct": {
    "value": 5.5,
    "unit": "%",
@@ -2182,9 +2202,9 @@
      "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,141 15,562 17,133"
     },
     {
-     "label": "Non-Cash Overhead Cost: (Capital Recovery)",
-     "kind": "overheadItem",
-     "section": "Cash Overhead Cost",
+     "label": "Non-Cash Overhead Cost",
+     "kind": "heading",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       null,
       null,
@@ -2196,7 +2216,7 @@
     {
      "label": "Land: Table Grapes",
      "kind": "overheadItem",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       1238,
       1238,
@@ -2208,7 +2228,7 @@
     {
      "label": "Irrigation System: Single Line Drip",
      "kind": "overheadItem",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       138,
       138,
@@ -2220,7 +2240,7 @@
     {
      "label": "Building Pole Barn",
      "kind": "overheadItem",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       8,
       8,
@@ -2232,7 +2252,7 @@
     {
      "label": "Tools: Shop/Field",
      "kind": "overheadItem",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       2,
       2,
@@ -2244,7 +2264,7 @@
     {
      "label": "Fuel Storage Tanks",
      "kind": "overheadItem",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       2,
       2,
@@ -2256,7 +2276,7 @@
     {
      "label": "Bait Stations",
      "kind": "overheadItem",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       0,
       0,
@@ -2268,7 +2288,7 @@
     {
      "label": "Equipment",
      "kind": "overheadItem",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       33,
       44,
@@ -2280,7 +2300,7 @@
     {
      "label": "TOTAL CAPITAL RECOVERY COST",
      "kind": "subtotal",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       1421,
       1432,
@@ -2292,7 +2312,7 @@
     {
      "label": "TOTAL COST/ACRE FOR THE YEAR",
      "kind": "total",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       7562,
       10854,
@@ -2304,7 +2324,7 @@
     {
      "label": "INCOME/ACRE FROM PRODUCTION",
      "kind": "income",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       0,
       0,
@@ -2316,7 +2336,7 @@
     {
      "label": "NET COST/ACRE FOR THE YEAR",
      "kind": "net",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       7562,
       10854,
@@ -2328,7 +2348,7 @@
     {
      "label": "NET PROFIT/ACRE ABOVE TOTAL COST",
      "kind": "net",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       0,
       0,
@@ -2340,7 +2360,7 @@
     {
      "label": "TOTAL ACCUMULATED NET COST/ACRE",
      "kind": "accumulated",
-     "section": "Cash Overhead Cost",
+     "section": "Non-Cash Overhead Cost",
      "values": [
       7562,
       18416,
@@ -2432,6 +2452,8 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -2456,18 +2478,12 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "landRentPerAcre",
    "insuranceRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
-   "establishment year 3: running net 15562 differs from printed accumulated 17133",
-   "establishment table: TOTAL CAPITAL RECOVERY COST column 1st prints 1421 but its rows sum to 2303",
-   "establishment table: TOTAL CAPITAL RECOVERY COST column 2nd prints 1432 but its rows sum to 2314",
-   "establishment table: TOTAL CAPITAL RECOVERY COST column 3rd prints 1535 but its rows sum to 2418"
+   "establishment year 3: running net 15562 differs from printed accumulated 17133"
   ]
  }
 }

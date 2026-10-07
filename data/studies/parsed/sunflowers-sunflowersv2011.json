@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/4a/38/4a388600-edff-4946-9110-0b0356499b6c/sunflowersv2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/sunflowers",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -29,10 +29,30 @@
    "page": 2,
    "quote": "The hypothetical farm used in this report is 1,500 acres, with 100 acres of sunflowers in production."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 1360,
+   "unit": "Lb",
+   "page": 9,
+   "quote": "Sunflowers 1,360 Lb 1.00 1,360"
+  },
+  "yieldUnit": "Lb",
+  "pricePerUnit": {
+   "value": 1,
+   "unit": "$/Lb",
+   "page": 9,
+   "quote": "Sunflowers 1,360 Lb 1.00 1,360"
+  },
+  "returns": [
+   {
+    "name": "Sunflowers",
+    "quantity": 1360,
+    "unit": "Lb",
+    "price": 1,
+    "value": 1360,
+    "page": 9,
+    "quote": "Sunflowers 1,360 Lb 1.00 1,360"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -102,7 +122,12 @@
    "page": 8,
    "quote": "TOTAL COSTS/ACRE 790"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1360,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL GROSS RETURNS FOR SUNFLOWERS 1,360"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -1148,6 +1173,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -1155,6 +1182,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1165,12 +1193,9 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
@@ -1178,7 +1203,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

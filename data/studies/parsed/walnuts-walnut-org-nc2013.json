@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f1/ce/f1ce757f-c350-482c-a4fb-89657da2b07a/walnut_org_nc2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -29,13 +29,18 @@
    "quote": "The farm consists of 10 contiguous acres – 9 acres of walnuts and 1 acre of roads, irrigation system and homestead – purchased as a mature orchard and farmed by the owner."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 1000,
+   "unit": "lb",
+   "page": 11,
+   "quote": "Organic Walnuts (price includes premium) 1,000.00 lb 1.20 1,200"
+  },
   "yieldUnit": "lb",
   "pricePerUnit": {
    "value": 1.2,
-   "unit": "$/pound",
-   "page": 5,
-   "quote": "This study uses an estimated market price of $1.10 per pound plus an average annual premium for organic at 10% per pound, resulting in an average price of $1.20 per pound ($1.10 + $0.10)."
+   "unit": "$/lb",
+   "page": 11,
+   "quote": "Organic Walnuts (price includes premium) 1,000.00 lb 1.20 1,200"
   },
   "returns": [
    {
@@ -46,141 +51,6 @@
     "value": 1200,
     "page": 11,
     "quote": "Organic Walnuts (price includes premium) 1,000.00 lb 1.20 1,200"
-   },
-   {
-    "name": "GF-120 Fruit Fly Bait",
-    "quantity": 80,
-    "unit": "floz",
-    "price": 1.39,
-    "value": 111,
-    "page": 11,
-    "quote": "GF-120 Fruit Fly Bait 80.00 floz 1.39 111"
-   },
-   {
-    "name": "Prune & Stack",
-    "quantity": 0.8,
-    "unit": "hour",
-    "price": 55,
-    "value": 44,
-    "page": 11,
-    "quote": "Prune & Stack 0.80 hour 55.00 44"
-   },
-   {
-    "name": "Leaf Analysis",
-    "quantity": 0.07,
-    "unit": "each",
-    "price": 35,
-    "value": 2,
-    "page": 11,
-    "quote": "Leaf Analysis 0.07 each 35.00 2"
-   },
-   {
-    "name": "Shake, Sweep, Pickup",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 160,
-    "value": 160,
-    "page": 11,
-    "quote": "Shake, Sweep, Pickup 1.00 acre 160.00 160"
-   },
-   {
-    "name": "Haul Nuts",
-    "quantity": 0.5,
-    "unit": "ton",
-    "price": 15,
-    "value": 8,
-    "page": 11,
-    "quote": "Haul Nuts 0.50 ton 15.00 8"
-   },
-   {
-    "name": "Hull/Dry Walnuts",
-    "quantity": 1000,
-    "unit": "lb",
-    "price": 0.1,
-    "value": 100,
-    "page": 11,
-    "quote": "Hull/Dry Walnuts 1,000.00 lb 0.10 100"
-   },
-   {
-    "name": "Water - Pump",
-    "quantity": 24,
-    "unit": "AcIn",
-    "price": 5.27,
-    "value": 126,
-    "page": 11,
-    "quote": "Water - Pump 24.00 AcIn 5.27 126"
-   },
-   {
-    "name": "Chicken Manure (Pelleted)",
-    "quantity": 1000,
-    "unit": "lb",
-    "price": 0.16,
-    "value": 160,
-    "page": 11,
-    "quote": "Chicken Manure (Pelleted) 1,000.00 lb 0.16 160"
-   },
-   {
-    "name": "Spreader (loaned)",
-    "quantity": 2,
-    "unit": "acre",
-    "price": 0,
-    "value": 0,
-    "page": 11,
-    "quote": "Spreader (loaned) 2.00 acre 0.00 0"
-   },
-   {
-    "name": "Compost/Gypsum 50/50",
-    "quantity": 3,
-    "unit": "ton",
-    "price": 40,
-    "value": 120,
-    "page": 11,
-    "quote": "Compost/Gypsum 50/50 3.00 ton 40.00 120"
-   },
-   {
-    "name": "Forklift Rental",
-    "quantity": 0.12,
-    "unit": "day",
-    "price": 160,
-    "value": 19,
-    "page": 11,
-    "quote": "Forklift Rental 0.12 day 160.00 19"
-   },
-   {
-    "name": "Burn Permit",
-    "quantity": 0.02,
-    "unit": "each",
-    "price": 25,
-    "value": 1,
-    "page": 11,
-    "quote": "Burn Permit 0.02 each 25.00 1"
-   },
-   {
-    "name": "CA Walnut Commission",
-    "quantity": 1000,
-    "unit": "lb",
-    "price": 0.01,
-    "value": 9,
-    "page": 11,
-    "quote": "CA Walnut Commission 1,000.00 lb 0.01 9"
-   },
-   {
-    "name": "Equipment Operator Labor",
-    "quantity": 8.4,
-    "unit": "hrs",
-    "price": 20.4,
-    "value": 171,
-    "page": 11,
-    "quote": "Equipment Operator Labor 8.40 hrs 20.40 171"
-   },
-   {
-    "name": "Non-Machine Labor",
-    "quantity": 3.48,
-    "unit": "hrs",
-    "price": 13.6,
-    "value": 44,
-    "page": 11,
-    "quote": "Non-Machine Labor 3.48 hrs 13.60 44"
    }
   ],
   "interestRatePct": null,
@@ -247,7 +117,12 @@
    "page": 10,
    "quote": "TOTAL COSTS/ACRE 3,043"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1200,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "Organic Walnuts (price includes premium) 1,000.00 lb 1.20 1,200"
+  },
   "netReturnsAboveOperating": {
    "value": -17,
    "unit": "$/acre",
@@ -929,6 +804,7 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -937,6 +813,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -947,19 +824,15 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
    "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
-  "warnings": [
-   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]"
-  ]
+  "warnings": []
  }
 }

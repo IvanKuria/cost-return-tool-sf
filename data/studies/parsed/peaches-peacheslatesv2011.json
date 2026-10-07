@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/67/04/6704c84a-02fa-45a4-8026-508bd019a35f/peacheslatesv2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peaches",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -34,9 +34,19 @@
    "page": 3,
    "quote": "Production costs are based on the 40 acres planted to a late harvested variety of cling peach."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 20,
+   "unit": "ton",
+   "page": 14,
+   "quote": "Processing Peaches (Cling & Freestone) 20.00 ton 287.00 5,740"
+  },
   "yieldUnit": "ton",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 287,
+   "unit": "$/ton",
+   "page": 14,
+   "quote": "Processing Peaches (Cling & Freestone) 20.00 ton 287.00 5,740"
+  },
   "returns": [
    {
     "name": "Processing Peaches (Cling & Freestone)",
@@ -46,159 +56,6 @@
     "value": 5740,
     "page": 14,
     "quote": "Processing Peaches (Cling & Freestone) 20.00 ton 287.00 5,740"
-   },
-   {
-    "name": "Superior Oil (Dormant Oil)",
-    "quantity": 5,
-    "unit": "gal",
-    "price": 7.9,
-    "value": 40,
-    "page": 14,
-    "quote": "Superior Oil (Dormant Oil) 5.00 gal 7.90 40"
-   },
-   {
-    "name": "Dimilin 2L",
-    "quantity": 14,
-    "unit": "floz",
-    "price": 1.92,
-    "value": 27,
-    "page": 14,
-    "quote": "Dimilin 2L 14.00 floz 1.92 27"
-   },
-   {
-    "name": "Pristine",
-    "quantity": 12,
-    "unit": "oz",
-    "price": 3.76,
-    "value": 45,
-    "page": 14,
-    "quote": "Pristine 12.00 oz 3.76 45"
-   },
-   {
-    "name": "Asana XL",
-    "quantity": 19.2,
-    "unit": "floz",
-    "price": 8,
-    "value": 154,
-    "page": 14,
-    "quote": "Asana XL 19.20 floz 8.00 154"
-   },
-   {
-    "name": "Checkmate OFM (F)",
-    "quantity": 5.2,
-    "unit": "floz",
-    "price": 17.38,
-    "value": 90,
-    "page": 14,
-    "quote": "Checkmate OFM (F) 5.20 floz 17.38 90"
-   },
-   {
-    "name": "Intrepid 2F",
-    "quantity": 12.8,
-    "unit": "floz",
-    "price": 2.1,
-    "value": 27,
-    "page": 14,
-    "quote": "Intrepid 2F 12.80 floz 2.10 27"
-   },
-   {
-    "name": "Agri-Mek 0.15EC (miticide)",
-    "quantity": 12.8,
-    "unit": "floz",
-    "price": 3.45,
-    "value": 44,
-    "page": 14,
-    "quote": "Agri-Mek 0.15EC (miticide) 12.80 floz 3.45 44"
-   },
-   {
-    "name": "Altacor",
-    "quantity": 4,
-    "unit": "oz",
-    "price": 15.72,
-    "value": 63,
-    "page": 14,
-    "quote": "Altacor 4.00 oz 15.72 63"
-   },
-   {
-    "name": "Kocide 20/20",
-    "quantity": 10,
-    "unit": "lb",
-    "price": 4.1,
-    "value": 41,
-    "page": 14,
-    "quote": "Kocide 20/20 10.00 lb 4.10 41"
-   },
-   {
-    "name": "Ziram 76DF",
-    "quantity": 8,
-    "unit": "lb",
-    "price": 5.26,
-    "value": 42,
-    "page": 14,
-    "quote": "Ziram 76DF 8.00 lb 5.26 42"
-   },
-   {
-    "name": "Indar 75WSP",
-    "quantity": 2,
-    "unit": "oz",
-    "price": 10.7,
-    "value": 21,
-    "page": 14,
-    "quote": "Indar 75WSP 2.00 oz 10.70 21"
-   },
-   {
-    "name": "Quintec",
-    "quantity": 7,
-    "unit": "floz",
-    "price": 5.16,
-    "value": 36,
-    "page": 14,
-    "quote": "Quintec 7.00 floz 5.16 36"
-   },
-   {
-    "name": "Sulfur (wettable)",
-    "quantity": 20,
-    "unit": "lb",
-    "price": 0.37,
-    "value": 7,
-    "page": 14,
-    "quote": "Sulfur (wettable) 20.00 lb 0.37 7"
-   },
-   {
-    "name": "Tree Wire (Repair Materials)",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 25,
-    "value": 25,
-    "page": 14,
-    "quote": "Tree Wire (Repair Materials) 1.00 acre 25.00 25"
-   },
-   {
-    "name": "Water",
-    "quantity": 42,
-    "unit": "acin",
-    "price": 2.74,
-    "value": 115,
-    "page": 14,
-    "quote": "Water 42.00 acin 2.74 115"
-   },
-   {
-    "name": "Roundup (or generic glyphosate)",
-    "quantity": 1.3,
-    "unit": "pint",
-    "price": 6.24,
-    "value": 8,
-    "page": 14,
-    "quote": "Roundup (or generic glyphosate) 1.30 pint 6.24 8"
-   },
-   {
-    "name": "Gramoxone Inteon",
-    "quantity": 0.3,
-    "unit": "pint",
-    "price": 6.15,
-    "value": 2,
-    "page": 14,
-    "quote": "Gramoxone Inteon 0.30 pint 6.15 2"
    }
   ],
   "interestRatePct": null,
@@ -2255,7 +2112,7 @@
     "label": "2nd",
     "totalCost": 937,
     "returns": null,
-    "netCost": 4586,
+    "netCost": 937,
     "accumulated": 5524,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,586 5,524 6,286 5,916"
@@ -2265,7 +2122,7 @@
     "label": "3rd",
     "totalCost": 2484,
     "returns": 1722,
-    "netCost": 937,
+    "netCost": 762,
     "accumulated": 6286,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,586 5,524 6,286 5,916"
@@ -2275,7 +2132,7 @@
     "label": "4th",
     "totalCost": 3074,
     "returns": 3444,
-    "netCost": 762,
+    "netCost": -370,
     "accumulated": 5916,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,586 5,524 6,286 5,916"
@@ -2319,6 +2176,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -2339,8 +2198,6 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
    "capitalRecoveryFormula",
@@ -2349,7 +2206,6 @@
    "establishmentAccumulated"
   ],
   "warnings": [
-   "Table 2 lists 18 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

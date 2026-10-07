@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/39/b6/39b6cb12-0c79-4b66-bb92-b1012bdbbfd2/nectarinevs09.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/nectarines",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2009,
   "priceYear": {
@@ -2207,7 +2207,7 @@
     "label": "3rd",
     "totalCost": 4223,
     "returns": 3600,
-    "netCost": 4882,
+    "netCost": 623,
     "accumulated": 6809,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,882 6,186 6,809 6,482 4,280"
@@ -2217,7 +2217,7 @@
     "label": "4th",
     "totalCost": 6873,
     "returns": 7200,
-    "netCost": 1304,
+    "netCost": -327,
     "accumulated": 6482,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,882 6,186 6,809 6,482 4,280"
@@ -2227,7 +2227,7 @@
     "label": "5th",
     "totalCost": 9798,
     "returns": 12000,
-    "netCost": 623,
+    "netCost": -2202,
     "accumulated": 4280,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,882 6,186 6,809 6,482 4,280"

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/54/26/54269a47-2bdb-4a22-84dd-567556d934d4/olivetablesv2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 9,
    "quote": "The cost is $4,609 per acre or $161,315 for the 35 acres planted to olives."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 4,
+   "unit": "ton",
+   "page": 13,
+   "quote": "Table Olives 4.00 ton 900.00 3,600"
+  },
+  "yieldUnit": "ton",
+  "pricePerUnit": {
+   "value": 900,
+   "unit": "$/ton",
+   "page": 13,
+   "quote": "Table Olives 4.00 ton 900.00 3,600"
+  },
+  "returns": [
+   {
+    "name": "Table Olives",
+    "quantity": 4,
+    "unit": "ton",
+    "price": 900,
+    "value": 3600,
+    "page": 13,
+    "quote": "Table Olives 4.00 ton 900.00 3,600"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -99,7 +119,12 @@
    "page": 12,
    "quote": "TOTAL COSTS/ACRE 3,259"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 3600,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Table Olives 4.00 ton 900.00 3,600"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -1478,7 +1503,7 @@
     "label": "2nd",
     "totalCost": 756,
     "returns": null,
-    "netCost": 3364,
+    "netCost": 756,
     "accumulated": 4120,
     "page": 11,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,364 4,120 4,609 4,273"
@@ -1488,7 +1513,7 @@
     "label": "3rd",
     "totalCost": 939,
     "returns": 450,
-    "netCost": 756,
+    "netCost": 489,
     "accumulated": 4609,
     "page": 11,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,364 4,120 4,609 4,273"
@@ -1498,7 +1523,7 @@
     "label": "4th",
     "totalCost": 1824,
     "returns": 2160,
-    "netCost": 489,
+    "netCost": -336,
     "accumulated": 4273,
     "page": 11,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,364 4,120 4,609 4,273"
@@ -1536,6 +1561,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1543,6 +1570,7 @@
    "operatingTotal",
    "cashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1555,18 +1583,14 @@
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
    "nonCashOverheadTotal",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

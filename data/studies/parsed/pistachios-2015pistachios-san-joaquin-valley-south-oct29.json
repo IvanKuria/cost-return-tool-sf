@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/50/a8/50a8805e-03a8-4092-82ca-ce18cfb92b2b/2015pistachios_san_joaquin_valley-south_oct29.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pistachios",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -29,9 +29,19 @@
    "quote": "The hypothetical farm consists of 80 contiguous acres."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 2800,
+   "unit": "lb",
+   "page": 21,
+   "quote": "Pistachios (Split-in shell, Shelling Stock, Closed Shell) 2,800 lb 2.58 7,224"
+  },
   "yieldUnit": "lb",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 2.58,
+   "unit": "$/lb",
+   "page": 21,
+   "quote": "Pistachios (Split-in shell, Shelling Stock, Closed Shell) 2,800 lb 2.58 7,224"
+  },
   "returns": [
    {
     "name": "Pistachios (Split-in shell, Shelling Stock, Closed Shell)",
@@ -41,168 +51,6 @@
     "value": 7224,
     "page": 21,
     "quote": "Pistachios (Split-in shell, Shelling Stock, Closed Shell) 2,800 lb 2.58 7,224"
-   },
-   {
-    "name": "Prune: Mechanical Topping",
-    "quantity": 0.5,
-    "unit": "acre",
-    "price": 60,
-    "value": 30,
-    "page": 21,
-    "quote": "Prune: Mechanical Topping 0.5 acre 60.00 30"
-   },
-   {
-    "name": "Prune: Mechanical Hedging",
-    "quantity": 0.5,
-    "unit": "acre",
-    "price": 60,
-    "value": 30,
-    "page": 21,
-    "quote": "Prune: Mechanical Hedging 0.5 acre 60.00 30"
-   },
-   {
-    "name": "Prune: Hand (Prune & stack)",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 250,
-    "value": 250,
-    "page": 21,
-    "quote": "Prune: Hand (Prune & stack) 1.00 acre 250.00 250"
-   },
-   {
-    "name": "Shred Prunings",
-    "quantity": 0.11,
-    "unit": "hour",
-    "price": 275,
-    "value": 30,
-    "page": 21,
-    "quote": "Shred Prunings 0.11 hour 275.00 30"
-   },
-   {
-    "name": "Winter Sanitation (Shake trees)",
-    "quantity": 0.75,
-    "unit": "hour",
-    "price": 95,
-    "value": 71,
-    "page": 21,
-    "quote": "Winter Sanitation (Shake trees) 0.75 hour 95.00 71"
-   },
-   {
-    "name": "AF36 Application",
-    "quantity": 0.5,
-    "unit": "acre",
-    "price": 12,
-    "value": 6,
-    "page": 21,
-    "quote": "AF36 Application 0.50 acre 12.00 6"
-   },
-   {
-    "name": "Leaf Analysis",
-    "quantity": 0.05,
-    "unit": "each",
-    "price": 55,
-    "value": 3,
-    "page": 21,
-    "quote": "Leaf Analysis 0.05 each 55.00 3"
-   },
-   {
-    "name": "Harvest-Bulk",
-    "quantity": 128,
-    "unit": "tree",
-    "price": 2.5,
-    "value": 320,
-    "page": 21,
-    "quote": "Harvest-Bulk 128.00 tree 2.50 320"
-   },
-   {
-    "name": "PCA/Consultant Fee",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 35,
-    "value": 35,
-    "page": 21,
-    "quote": "PCA/Consultant Fee 1.00 acre 35.00 35"
-   },
-   {
-    "name": "Goal 2 XL",
-    "quantity": 1.28,
-    "unit": "pint",
-    "price": 11.2,
-    "value": 14,
-    "page": 21,
-    "quote": "Goal 2 XL 1.28 pint 11.20 14"
-   },
-   {
-    "name": "Prowl H20",
-    "quantity": 2.56,
-    "unit": "pint",
-    "price": 4.87,
-    "value": 12,
-    "page": 21,
-    "quote": "Prowl H20 2.56 pint 4.87 12"
-   },
-   {
-    "name": "Roundup Power Max",
-    "quantity": 1.58,
-    "unit": "pint",
-    "price": 3.5,
-    "value": 6,
-    "page": 21,
-    "quote": "Roundup Power Max 1.58 pint 3.50 6"
-   },
-   {
-    "name": "Rely 280",
-    "quantity": 0.94,
-    "unit": "pint",
-    "price": 13.92,
-    "value": 13,
-    "page": 21,
-    "quote": "Rely 280 0.94 pint 13.92 13"
-   },
-   {
-    "name": "Zinc Sulfate 36%",
-    "quantity": 40,
-    "unit": "Lb",
-    "price": 0.5,
-    "value": 20,
-    "page": 21,
-    "quote": "Zinc Sulfate 36% 40.00 Lb 0.50 20"
-   },
-   {
-    "name": "Solubor (Boron)",
-    "quantity": 5,
-    "unit": "Lb",
-    "price": 1.94,
-    "value": 10,
-    "page": 21,
-    "quote": "Solubor (Boron) 5.00 Lb 1.94 10"
-   },
-   {
-    "name": "10-0-10",
-    "quantity": 103,
-    "unit": "gal",
-    "price": 1.51,
-    "value": 156,
-    "page": 21,
-    "quote": "10-0-10 103.00 gal 1.51 156"
-   },
-   {
-    "name": "15-0-05",
-    "quantity": 51.5,
-    "unit": "gal",
-    "price": 1.55,
-    "value": 80,
-    "page": 21,
-    "quote": "15-0-05 51.50 gal 1.55 80"
-   },
-   {
-    "name": "Water - District",
-    "quantity": 42,
-    "unit": "acin",
-    "price": 14.58,
-    "value": 656,
-    "page": 21,
-    "quote": "Water - District 42.00 acin 14.58 656"
    }
   ],
   "interestRatePct": null,
@@ -243,7 +91,12 @@
    "page": 20,
    "quote": "TOTAL COSTS/ACRE 4,984"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 7224,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "Pistachios (Split-in shell, Shelling Stock, Closed Shell) 2,800 lb 2.58 7,224"
+  },
   "netReturnsAboveOperating": {
    "value": 4583,
    "unit": "$/acre",
@@ -2343,11 +2196,14 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -2357,14 +2213,11 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
@@ -2374,7 +2227,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 19 return lines with different prices; pricePerUnit left null, see returns[]",
    "monthly table not used: MONTHLY CASH COSTS PER ACRE TO PRODUCE PISTACHIOS: TOTAL CASH COSTS row: months sum to 2905 but the Total column says 3461"
   ]
  }

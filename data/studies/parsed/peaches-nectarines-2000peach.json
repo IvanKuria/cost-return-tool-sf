@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/82/e4/82e4005a-c6ae-4c66-9540-38c9a9b10aee/2000peach.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peaches–nectarines",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2000,
   "priceYear": null
@@ -29,10 +29,30 @@
    "page": 3,
    "quote": "The farm consists of 100 acres of land."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 1400,
+   "unit": "box",
+   "page": 14,
+   "quote": "Peach/Nectarine 1400.00 box 6.00 8,400"
+  },
+  "yieldUnit": "box",
+  "pricePerUnit": {
+   "value": 6,
+   "unit": "$/box",
+   "page": 14,
+   "quote": "Peach/Nectarine 1400.00 box 6.00 8,400"
+  },
+  "returns": [
+   {
+    "name": "Peach/Nectarine",
+    "quantity": 1400,
+    "unit": "box",
+    "price": 6,
+    "value": 8400,
+    "page": 14,
+    "quote": "Peach/Nectarine 1400.00 box 6.00 8,400"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
@@ -84,7 +104,12 @@
    "page": 13,
    "quote": "TOTAL COSTS/ACRE 10,430"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 8400,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL GROSS RETURNS FOR PEACH/NECTARINE 8,400"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -978,11 +1003,14 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -994,14 +1022,11 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",

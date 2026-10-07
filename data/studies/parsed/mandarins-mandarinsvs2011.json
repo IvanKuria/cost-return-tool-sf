@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/05/9f/059f84bb-f096-4089-9053-a4cce02fb915/mandarinsvs2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/mandarins",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -29,144 +29,28 @@
    "quote": "The hypothetical farm consists of 65 contiguous acres."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": "acin",
-  "pricePerUnit": null,
+  "yieldPerAcre": {
+   "value": 4788,
+   "unit": "crtn*",
+   "page": 17,
+   "quote": "Mandarins (Tango) Mature 4,788 crtn* 3.95 18,913"
+  },
+  "yieldUnit": "crtn*",
+  "pricePerUnit": {
+   "value": 3.95,
+   "unit": "$/crtn*",
+   "page": 17,
+   "quote": "Mandarins (Tango) Mature 4,788 crtn* 3.95 18,913"
+  },
   "returns": [
    {
-    "name": "Water",
-    "quantity": 2.2,
-    "unit": "acin",
-    "price": 10.75,
-    "value": 24,
-    "page": 17,
-    "quote": "Water 2.20 acin 10.75 24"
-   },
-   {
-    "name": "Wind Machine Operation (propane at $2.60/gal)",
-    "quantity": 10,
-    "unit": "hour",
-    "price": 39,
-    "value": 390,
-    "page": 17,
-    "quote": "Wind Machine Operation (propane at $2.60/gal) 10.00 hour 39.00 390"
-   },
-   {
-    "name": "Zinc Sulfate 36%",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 0.64,
-    "value": 1,
-    "page": 17,
-    "quote": "Zinc Sulfate 36% 2.00 lb 0.64 1"
-   },
-   {
-    "name": "Tecmangam (31%Mn)",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 0.73,
-    "value": 1,
-    "page": 17,
-    "quote": "Tecmangam (31%Mn) 2.00 lb 0.73 1"
-   },
-   {
-    "name": "Gypsum Soluble",
-    "quantity": 1,
-    "unit": "ton",
-    "price": 162.6,
-    "value": 163,
-    "page": 17,
-    "quote": "Gypsum Soluble 1.00 ton 162.60 163"
-   },
-   {
-    "name": "Prowl H2O",
-    "quantity": 1,
-    "unit": "pin",
-    "price": 5.86,
-    "value": 6,
-    "page": 17,
-    "quote": "Prowl H2O 1.00 pin 5.86 6"
-   },
-   {
-    "name": "Matrix",
-    "quantity": 4,
-    "unit": "oz",
-    "price": 19.95,
-    "value": 80,
-    "page": 17,
-    "quote": "Matrix 4.00 oz 19.95 80"
-   },
-   {
-    "name": "Roundup Power Max",
-    "quantity": 0.6,
-    "unit": "pint",
-    "price": 2.4,
-    "value": 1,
-    "page": 17,
-    "quote": "Roundup Power Max 0.60 pint 2.40 1"
-   },
-   {
-    "name": "Dipel ES",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 5.1,
-    "value": 10,
-    "page": 17,
-    "quote": "Dipel ES 2.00 pint 5.10 10"
-   },
-   {
-    "name": "Delegate",
-    "quantity": 12,
-    "unit": "oz",
-    "price": 8.96,
-    "value": 108,
-    "page": 17,
-    "quote": "Delegate 12.00 oz 8.96 108"
-   },
-   {
-    "name": "Spray Oil 415",
-    "quantity": 1,
-    "unit": "gal",
-    "price": 6.3,
-    "value": 6,
-    "page": 17,
-    "quote": "Spray Oil 415 1.00 gal 6.30 6"
-   },
-   {
-    "name": "Esteem",
-    "quantity": 17,
-    "unit": "floz",
-    "price": 4.26,
-    "value": 72,
-    "page": 17,
-    "quote": "Esteem 17.00 floz 4.26 72"
-   },
-   {
-    "name": "Harvest- Picking, Forklift & Hauling",
-    "quantity": 38,
-    "unit": "bin",
-    "price": 62.7,
-    "value": 2385,
-    "page": 17,
-    "quote": "Harvest- Picking, Forklift & Hauling 38.00 bin 62.70 2,385"
-   },
-   {
-    "name": "Packing & Material",
+    "name": "Mandarins (Tango) Mature",
     "quantity": 4788,
-    "unit": "crtn",
-    "price": 1.53,
-    "value": 7326,
+    "unit": "crtn*",
+    "price": 3.95,
+    "value": 18913,
     "page": 17,
-    "quote": "Packing & Material 4,788.00 crtn 1.53 7,326"
-   },
-   {
-    "name": "Spray Ground - Orange worm",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 35,
-    "value": 35,
-    "page": 17,
-    "quote": "Spray Ground - Orange worm 1.00 acre 35.00 35"
+    "quote": "Mandarins (Tango) Mature 4,788 crtn* 3.95 18,913"
    }
   ],
   "interestRatePct": null,
@@ -207,7 +91,12 @@
    "page": 16,
    "quote": "TOTAL COSTS/ACRE 14,613"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 18913,
+   "unit": "$/acre",
+   "page": 17,
+   "quote": "Mandarins (Tango) Mature 4,788 crtn* 3.95 18,913"
+  },
   "netReturnsAboveOperating": {
    "value": 6459,
    "unit": "$/acre",
@@ -1676,8 +1565,8 @@
     "year": 3,
     "label": "3rd",
     "totalCost": 2617,
-    "returns": null,
-    "netCost": 2617,
+    "returns": 2390,
+    "netCost": 227,
     "accumulated": null,
     "page": 13,
     "quote": "TOTAL CASH COSTS/ACRE 4,268 995 2,617 5,397 8,545"
@@ -1686,8 +1575,8 @@
     "year": 4,
     "label": "4th",
     "totalCost": 5397,
-    "returns": null,
-    "netCost": 5397,
+    "returns": 6668,
+    "netCost": -1271,
     "accumulated": null,
     "page": 13,
     "quote": "TOTAL CASH COSTS/ACRE 4,268 995 2,617 5,397 8,545"
@@ -1696,8 +1585,8 @@
     "year": 5,
     "label": "5th",
     "totalCost": 8545,
-    "returns": null,
-    "netCost": 8545,
+    "returns": 12443,
+    "netCost": -3898,
     "accumulated": null,
     "page": 13,
     "quote": "TOTAL CASH COSTS/ACRE 4,268 995 2,617 5,397 8,545"
@@ -1740,11 +1629,14 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1756,14 +1648,11 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
@@ -1771,7 +1660,6 @@
    "establishmentAccumulated"
   ],
   "warnings": [
-   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

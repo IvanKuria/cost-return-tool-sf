@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a6/b3/a6b35d9d-bd82-495c-86b1-1987dd6154ae/alfalfa_im_scott2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -127,7 +127,12 @@
    "page": 11,
    "quote": "TOTAL COSTS/ACRE 978"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1200,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Alfalfa 6.00 Ton 200.00 1,200"
+  },
   "netReturnsAboveOperating": {
    "value": 708,
    "unit": "$/acre",
@@ -840,6 +845,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -854,7 +860,6 @@
   "fieldsMissing": [
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "monthly"

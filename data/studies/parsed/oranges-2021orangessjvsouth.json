@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/08/12/2021orangessjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/oranges",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2021,
   "priceYear": {
@@ -29,10 +29,30 @@
    "quote": "The hypothetical farm consists of 65 contiguous acres."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 564,
+   "unit": "Carton",
+   "page": 22,
+   "quote": "Oranges 564 Carton 17.80 10,039"
+  },
+  "yieldUnit": "Carton",
+  "pricePerUnit": {
+   "value": 17.8,
+   "unit": "$/Carton",
+   "page": 22,
+   "quote": "Oranges 564 Carton 17.80 10,039"
+  },
+  "returns": [
+   {
+    "name": "Oranges",
+    "quantity": 564,
+    "unit": "Carton",
+    "price": 17.8,
+    "value": 10039,
+    "page": 22,
+    "quote": "Oranges 564 Carton 17.80 10,039"
+   }
+  ],
   "interestRatePct": {
    "value": 4.75,
    "unit": "%",
@@ -109,7 +129,12 @@
    "page": 21,
    "quote": "TOTAL COSTS/ACRE 9,293"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 10039,
+   "unit": "$/acre",
+   "page": 22,
+   "quote": "TOTAL GROSS REVENUE 10,039"
+  },
   "netReturnsAboveOperating": {
    "value": 3377,
    "unit": "$/acre",
@@ -885,9 +910,9 @@
    ],
    "rows": [
     {
-     "label": "Pre-Plant: (Custom)",
-     "kind": "operation",
-     "section": "",
+     "label": "Pre-Plant",
+     "kind": "heading",
+     "section": "Pre-Plant",
      "values": [
       null,
       null,
@@ -901,7 +926,7 @@
     {
      "label": "Remove Trees",
      "kind": "operation",
-     "section": "",
+     "section": "Pre-Plant",
      "values": [
       468,
       null,
@@ -915,7 +940,7 @@
     {
      "label": "Sub-soil/Rip 4' - 6'",
      "kind": "operation",
-     "section": "",
+     "section": "Pre-Plant",
      "values": [
       300,
       null,
@@ -929,7 +954,7 @@
     {
      "label": "Disc 2x",
      "kind": "operation",
-     "section": "",
+     "section": "Pre-Plant",
      "values": [
       100,
       null,
@@ -943,7 +968,7 @@
     {
      "label": "Level/Float 2x",
      "kind": "operation",
-     "section": "",
+     "section": "Pre-Plant",
      "values": [
       350,
       null,
@@ -957,7 +982,7 @@
     {
      "label": "Weeds: Strip Spray",
      "kind": "operation",
-     "section": "",
+     "section": "Pre-Plant",
      "values": [
       23,
       null,
@@ -971,7 +996,7 @@
     {
      "label": "Layout Irrigation System",
      "kind": "operation",
-     "section": "",
+     "section": "Pre-Plant",
      "values": [
       83,
       null,
@@ -985,7 +1010,7 @@
     {
      "label": "TOTAL PRE-PLANT COSTS",
      "kind": "subtotal",
-     "section": "",
+     "section": "Pre-Plant",
      "values": [
       1325,
       null,
@@ -997,9 +1022,9 @@
      "quote": "TOTAL PRE-PLANT COSTS 1,325"
     },
     {
-     "label": "Planting: (Contracted)",
-     "kind": "operation",
-     "section": "",
+     "label": "Planting",
+     "kind": "heading",
+     "section": "Planting",
      "values": [
       null,
       null,
@@ -1013,7 +1038,7 @@
     {
      "label": "Layout, Plant, Stake & Wrap Trees (includes labor costs)",
      "kind": "operation",
-     "section": "",
+     "section": "Planting",
      "values": [
       4197,
       81,
@@ -1027,7 +1052,7 @@
     {
      "label": "TOTAL PLANTING COSTS",
      "kind": "subtotal",
-     "section": "",
+     "section": "Planting",
      "values": [
       4197,
       81,
@@ -1754,7 +1779,7 @@
     },
     {
      "label": "TOTAL COST FOR THE YEAR",
-     "kind": "subtotal",
+     "kind": "total",
      "section": "Non-Cash Overhead Costs",
      "values": [
       8419,
@@ -1835,7 +1860,58 @@
     "quote": "Operations Packout Yield (37.5 lbs. Cartons/Acre): 25 125 244"
    }
   },
-  "years": [],
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 7249,
+    "returns": 0,
+    "netCost": 7249,
+    "accumulated": 7249,
+    "page": 16,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 7,249 8,921 10,407 11,171 11,118"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1672,
+    "returns": 0,
+    "netCost": 1672,
+    "accumulated": 8921,
+    "page": 16,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 7,249 8,921 10,407 11,171 11,118"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 1931,
+    "returns": 445,
+    "netCost": 1486,
+    "accumulated": 10407,
+    "page": 16,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 7,249 8,921 10,407 11,171 11,118"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 2989,
+    "returns": 2225,
+    "netCost": 764,
+    "accumulated": 11171,
+    "page": 16,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 7,249 8,921 10,407 11,171 11,118"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 4290,
+    "returns": 4343,
+    "netCost": -53,
+    "accumulated": 11118,
+    "page": 16,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 7,249 8,921 10,407 11,171 11,118"
+   }
+  ],
   "accumulatedNetCost": {
    "value": 10407,
    "page": 14,
@@ -1873,6 +1949,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -1882,6 +1960,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1896,20 +1975,9 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct"
   ],
-  "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
-   "establishment table: TOTAL PLANTING COSTS column 1st prints 4197 but its rows sum to 5521",
-   "establishment table: TOTAL COST FOR THE YEAR column 1st prints 8419 but its rows sum to 1170",
-   "establishment table: TOTAL COST FOR THE YEAR column 2nd prints 2843 but its rows sum to 1171",
-   "establishment table: TOTAL COST FOR THE YEAR column 3rd prints 3102 but its rows sum to 1171",
-   "establishment table: TOTAL COST FOR THE YEAR column 4th prints 4936 but its rows sum to 1947",
-   "establishment table: TOTAL COST FOR THE YEAR column 5th prints 6238 but its rows sum to 1949"
-  ]
+  "warnings": []
  }
 }

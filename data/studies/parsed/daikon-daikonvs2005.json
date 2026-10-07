@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/d8/a3/d8a3d951-3251-4142-9fad-55e505e04c07/daikonvs2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/daikon",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -24,10 +24,30 @@
  "assumptions": {
   "acresFarmed": null,
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 650,
+   "unit": "box",
+   "page": 9,
+   "quote": "Daikon 650.00 box 8.00 5,200"
+  },
+  "yieldUnit": "box",
+  "pricePerUnit": {
+   "value": 8,
+   "unit": "$/box",
+   "page": 9,
+   "quote": "Daikon 650.00 box 8.00 5,200"
+  },
+  "returns": [
+   {
+    "name": "Daikon",
+    "quantity": 650,
+    "unit": "box",
+    "price": 8,
+    "value": 5200,
+    "page": 9,
+    "quote": "Daikon 650.00 box 8.00 5,200"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -81,7 +101,12 @@
   },
   "nonCashOverheadTotal": null,
   "totalCost": null,
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 5200,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "Daikon 650.00 box 8.00 5,200"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [],
@@ -435,11 +460,14 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "operatingTotal",
    "cashOverheadTotal",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -450,14 +478,11 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
    "acresFarmed",
    "nonCashOverheadTotal",
    "totalCost",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",

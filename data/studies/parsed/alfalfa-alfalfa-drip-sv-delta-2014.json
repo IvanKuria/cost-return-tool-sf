@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/69/ed/69ed1c05-999e-4c06-b59f-ebe6dbcecc8a/alfalfa-drip-sv-delta-2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2014,
   "priceYear": {
@@ -29,15 +29,30 @@
    "quote": "The hypothetical farm consists of 3,000 non-contiguous acres of field, row, and tree crops of which 600 acres are in alfalfa (440 in production and 160 being established) and the remaining 2,400 acres are planted to other crops such as almonds, corn, grains, processing tomatoes, sunflowers and dry beans."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": {
-   "value": 285,
-   "unit": "$/ton",
-   "page": 6,
-   "quote": "A price of $285 per ton for premium hay is based on current USDA California 2014 averages over all grades for the Sacramento Valley market districts."
+  "yieldPerAcre": {
+   "value": 9,
+   "unit": "Ton",
+   "page": 14,
+   "quote": "TOTALGROSSRETURNS 9 Ton 2,475"
   },
-  "returns": [],
+  "yieldUnit": "Ton",
+  "pricePerUnit": {
+   "value": 275,
+   "unit": "$/Ton",
+   "page": 14,
+   "quote": "Hay 9 Ton 275.00 2,475"
+  },
+  "returns": [
+   {
+    "name": "Hay",
+    "quantity": 9,
+    "unit": "Ton",
+    "price": 275,
+    "value": 2475,
+    "page": 14,
+    "quote": "Hay 9 Ton 275.00 2,475"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -92,7 +107,12 @@
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
   "totalCost": null,
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 2475,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTALGROSSRETURNS 9 Ton 2,475"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": {
    "value": 206,
@@ -730,12 +750,14 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
+   "grossReturns",
    "equipment",
    "investments",
    "hourlyEquipment",
@@ -746,21 +768,17 @@
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
    "interestRatePct",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
-   "grossReturns",
    "operations",
    "businessOverhead",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAnnual"
   ],
-  "warnings": [
-   "Table 2 found but no GROSS RETURNS block"
-  ]
+  "warnings": []
  }
 }

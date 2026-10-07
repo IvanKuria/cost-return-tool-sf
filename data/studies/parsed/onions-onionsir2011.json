@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/99/f7/99f71d07-ce98-4048-a0cb-357f69d65606/onionsir2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/onions",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -35,14 +35,33 @@
    "quote": "Just over 2.5 acres are in the buffer zone and are part of the 50 acres of unused land."
   },
   "yieldPerAcre": null,
-  "yieldUnit": null,
+  "yieldUnit": "cwt",
   "pricePerUnit": {
    "value": 350,
    "unit": "$/acre",
    "page": 3,
    "quote": "A rental price of $350 per acre is used in this study or $357 per producing acre."
   },
-  "returns": [],
+  "returns": [
+   {
+    "name": "Onions",
+    "quantity": 480,
+    "unit": "cwt",
+    "price": 6,
+    "value": 2880,
+    "page": 11,
+    "quote": "Onions 480 cwt 6.00 2,880"
+   },
+   {
+    "name": "Incentive",
+    "quantity": 480,
+    "unit": "cwt",
+    "price": 0.3,
+    "value": 144,
+    "page": 11,
+    "quote": "Incentive 480 cwt 0.30 144"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -114,7 +133,12 @@
    "page": 10,
    "quote": "TOTAL COSTS/ACRE 3,422"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 3024,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL GROSS RETURNS 3,024"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -1863,6 +1887,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1875,7 +1900,6 @@
   "fieldsMissing": [
    "yieldPerAcre",
    "interestRatePct",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
@@ -1883,7 +1907,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

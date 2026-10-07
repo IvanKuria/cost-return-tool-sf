@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/7a/16/7a160359-7b30-4cd7-ab32-b47b2e2dd6de/peachesearlysv2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peaches",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -29,9 +29,19 @@
    "quote": "The hypothetical farm consists of 100 contiguous acres."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 17,
+   "unit": "ton",
+   "page": 10,
+   "quote": "Processing Peaches 17.00 ton 287.00 4,879"
+  },
   "yieldUnit": "ton",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 287,
+   "unit": "$/ton",
+   "page": 10,
+   "quote": "Processing Peaches 17.00 ton 287.00 4,879"
+  },
   "returns": [
    {
     "name": "Processing Peaches",
@@ -41,159 +51,6 @@
     "value": 4879,
     "page": 10,
     "quote": "Processing Peaches 17.00 ton 287.00 4,879"
-   },
-   {
-    "name": "Superior Oil (Dormant Oil)",
-    "quantity": 5,
-    "unit": "gal",
-    "price": 7.9,
-    "value": 40,
-    "page": 10,
-    "quote": "Superior Oil (Dormant Oil) 5.00 gal 7.90 40"
-   },
-   {
-    "name": "Dimilin 2L",
-    "quantity": 14,
-    "unit": "floz",
-    "price": 1.92,
-    "value": 27,
-    "page": 10,
-    "quote": "Dimilin 2L 14.00 floz 1.92 27"
-   },
-   {
-    "name": "Pristine",
-    "quantity": 12,
-    "unit": "oz",
-    "price": 3.76,
-    "value": 45,
-    "page": 10,
-    "quote": "Pristine 12.00 oz 3.76 45"
-   },
-   {
-    "name": "Asana XL",
-    "quantity": 9.6,
-    "unit": "floz",
-    "price": 8,
-    "value": 77,
-    "page": 10,
-    "quote": "Asana XL 9.60 floz 8.00 77"
-   },
-   {
-    "name": "Checkmate OFM (F)",
-    "quantity": 2.6,
-    "unit": "floz",
-    "price": 17.38,
-    "value": 45,
-    "page": 10,
-    "quote": "Checkmate OFM (F) 2.60 floz 17.38 45"
-   },
-   {
-    "name": "Intrepid 2F",
-    "quantity": 12.8,
-    "unit": "floz",
-    "price": 2.1,
-    "value": 27,
-    "page": 10,
-    "quote": "Intrepid 2F 12.80 floz 2.10 27"
-   },
-   {
-    "name": "Agir-Mek 0.15EC (miticide)",
-    "quantity": 12.8,
-    "unit": "floz",
-    "price": 3.45,
-    "value": 44,
-    "page": 10,
-    "quote": "Agir-Mek 0.15EC (miticide) 12.80 floz 3.45 44"
-   },
-   {
-    "name": "Kocide 20/20",
-    "quantity": 10,
-    "unit": "lb",
-    "price": 4.1,
-    "value": 41,
-    "page": 10,
-    "quote": "Kocide 20/20 10.00 lb 4.10 41"
-   },
-   {
-    "name": "Ziram 76DF",
-    "quantity": 8,
-    "unit": "lb",
-    "price": 5.26,
-    "value": 42,
-    "page": 10,
-    "quote": "Ziram 76DF 8.00 lb 5.26 42"
-   },
-   {
-    "name": "Indar 75WSP",
-    "quantity": 2,
-    "unit": "oz",
-    "price": 10.7,
-    "value": 21,
-    "page": 10,
-    "quote": "Indar 75WSP 2.00 oz 10.70 21"
-   },
-   {
-    "name": "Quintec",
-    "quantity": 7,
-    "unit": "floz",
-    "price": 5.16,
-    "value": 36,
-    "page": 10,
-    "quote": "Quintec 7.00 floz 5.16 36"
-   },
-   {
-    "name": "Sulfur (wettable)",
-    "quantity": 20,
-    "unit": "lb",
-    "price": 0.37,
-    "value": 7,
-    "page": 10,
-    "quote": "Sulfur (wettable) 20.00 lb 0.37 7"
-   },
-   {
-    "name": "Tree Wire",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 25,
-    "value": 25,
-    "page": 10,
-    "quote": "Tree Wire 1.00 acre 25.00 25"
-   },
-   {
-    "name": "Water",
-    "quantity": 36,
-    "unit": "acin",
-    "price": 2.74,
-    "value": 99,
-    "page": 10,
-    "quote": "Water 36.00 acin 2.74 99"
-   },
-   {
-    "name": "Roundup (or generic glyphosate)",
-    "quantity": 1.3,
-    "unit": "pint",
-    "price": 6.24,
-    "value": 8,
-    "page": 10,
-    "quote": "Roundup (or generic glyphosate) 1.30 pint 6.24 8"
-   },
-   {
-    "name": "Gramoxone Inteon",
-    "quantity": 0.3,
-    "unit": "pint",
-    "price": 6.15,
-    "value": 2,
-    "page": 10,
-    "quote": "Gramoxone Inteon 0.30 pint 6.15 2"
-   },
-   {
-    "name": "Matrix SG",
-    "quantity": 1.32,
-    "unit": "oz",
-    "price": 22.69,
-    "value": 30,
-    "page": 10,
-    "quote": "Matrix SG 1.32 oz 22.69 30"
    }
   ],
   "interestRatePct": null,
@@ -1229,6 +1086,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1247,8 +1106,6 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
    "capitalRecoveryFormula",
@@ -1259,7 +1116,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 18 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

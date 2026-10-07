@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/61/f3/61f30970-b762-4de5-b84c-41fd03b761cd/sudanhayvs09.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/sudangrass",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2009,
   "priceYear": {
@@ -34,13 +34,18 @@
    "page": 3,
    "quote": "Sudan for hay is planted on 140 acres of the 150 acres of rented land."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 5,
+   "unit": "ton",
+   "page": 9,
+   "quote": "Sudan Hay 5.00 ton 110.00 550"
+  },
   "yieldUnit": "ton",
   "pricePerUnit": {
    "value": 110,
    "unit": "$/ton",
-   "page": 4,
-   "quote": "Based on the 2008 market, a price of $110 per ton is used to calculate returns."
+   "page": 9,
+   "quote": "Sudan Hay 5.00 ton 110.00 550"
   },
   "returns": [
    {
@@ -51,132 +56,6 @@
     "value": 550,
     "page": 9,
     "quote": "Sudan Hay 5.00 ton 110.00 550"
-   },
-   {
-    "name": "Water",
-    "quantity": 28,
-    "unit": "acin",
-    "price": 4.58,
-    "value": 128,
-    "page": 9,
-    "quote": "Water 28.00 acin 4.58 128"
-   },
-   {
-    "name": "Clarity",
-    "quantity": 1,
-    "unit": "pint",
-    "price": 18.98,
-    "value": 19,
-    "page": 9,
-    "quote": "Clarity 1.00 pint 18.98 19"
-   },
-   {
-    "name": "Prowl H20",
-    "quantity": 3,
-    "unit": "pint",
-    "price": 6.87,
-    "value": 21,
-    "page": 9,
-    "quote": "Prowl H20 3.00 pint 6.87 21"
-   },
-   {
-    "name": "Sudan Seed (conventional, treated)",
-    "quantity": 150,
-    "unit": "lb",
-    "price": 1.5,
-    "value": 225,
-    "page": 9,
-    "quote": "Sudan Seed (conventional, treated) 150.00 lb 1.50 225"
-   },
-   {
-    "name": "Plant (Drill)",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 19,
-    "value": 19,
-    "page": 9,
-    "quote": "Plant (Drill) 1.00 acre 19.00 19"
-   },
-   {
-    "name": "Injection-Sidedress NH3",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 14,
-    "value": 14,
-    "page": 9,
-    "quote": "Injection-Sidedress NH3 1.00 acre 14.00 14"
-   },
-   {
-    "name": "Swath (cut)",
-    "quantity": 2,
-    "unit": "acre",
-    "price": 17,
-    "value": 34,
-    "page": 9,
-    "quote": "Swath (cut) 2.00 acre 17.00 34"
-   },
-   {
-    "name": "Rake",
-    "quantity": 2,
-    "unit": "acre",
-    "price": 8.5,
-    "value": 17,
-    "page": 9,
-    "quote": "Rake 2.00 acre 8.50 17"
-   },
-   {
-    "name": "Bale (100 lb)",
-    "quantity": 100,
-    "unit": "bales",
-    "price": 1.2,
-    "value": 120,
-    "page": 9,
-    "quote": "Bale (100 lb) 100.00 bales 1.20 120"
-   },
-   {
-    "name": "Roadside Bales",
-    "quantity": 100,
-    "unit": "bales",
-    "price": 0.4,
-    "value": 40,
-    "page": 9,
-    "quote": "Roadside Bales 100.00 bales 0.40 40"
-   },
-   {
-    "name": "Labor (machine)",
-    "quantity": 1.02,
-    "unit": "hrs",
-    "price": 13.94,
-    "value": 14,
-    "page": 9,
-    "quote": "Labor (machine) 1.02 hrs 13.94 14"
-   },
-   {
-    "name": "Labor (non-machine)",
-    "quantity": 0.5,
-    "unit": "hrs",
-    "price": 10.88,
-    "value": 5,
-    "page": 9,
-    "quote": "Labor (non-machine) 0.50 hrs 10.88 5"
-   },
-   {
-    "name": "Fuel - Gas",
-    "quantity": 0.95,
-    "unit": "gal",
-    "price": 3.36,
-    "value": 3,
-    "page": 9,
-    "quote": "Fuel - Gas 0.95 gal 3.36 3"
-   },
-   {
-    "name": "Fuel - Diesel",
-    "quantity": 4.79,
-    "unit": "gal",
-    "price": 3.7,
-    "value": 18,
-    "page": 9,
-    "quote": "Fuel - Diesel 4.79 gal 3.70 18"
    }
   ],
   "interestRatePct": null,
@@ -253,7 +132,12 @@
    "page": 8,
    "quote": "TOTAL COSTS/ACRE 1,037"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 550,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "Sudan Hay 5.00 ton 110.00 550"
+  },
   "netReturnsAboveOperating": {
    "value": -206,
    "unit": "$/acre",
@@ -891,6 +775,7 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -901,6 +786,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -912,9 +798,7 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
    "interestRatePct",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
@@ -922,7 +806,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c7/0b/c70be1f3-aa8c-40c5-b7ac-5fade99a2e2b/grapewinevn2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -34,9 +34,19 @@
    "page": 3,
    "quote": "In addition, 135 acres of mature vineyards are in production, and roads, irrigation systems, fencing, and farmstead occupy five acres."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 10,
+   "unit": "ton",
+   "page": 15,
+   "quote": "Wine Grape - Cabernet Sauvignon 10.00 ton 480.00 4,800"
+  },
   "yieldUnit": "ton",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 480,
+   "unit": "$/ton",
+   "page": 15,
+   "quote": "Wine Grape - Cabernet Sauvignon 10.00 ton 480.00 4,800"
+  },
   "returns": [
    {
     "name": "Wine Grape - Cabernet Sauvignon",
@@ -46,141 +56,6 @@
     "value": 4800,
     "page": 15,
     "quote": "Wine Grape - Cabernet Sauvignon 10.00 ton 480.00 4,800"
-   },
-   {
-    "name": "Goal 2XL",
-    "quantity": 2.4,
-    "unit": "pint",
-    "price": 17.25,
-    "value": 41,
-    "page": 15,
-    "quote": "Goal 2XL 2.40 pint 17.25 41"
-   },
-   {
-    "name": "Prowl H2O",
-    "quantity": 4,
-    "unit": "pint",
-    "price": 7.63,
-    "value": 31,
-    "page": 15,
-    "quote": "Prowl H2O 4.00 pint 7.63 31"
-   },
-   {
-    "name": "Roundup Weather Max",
-    "quantity": 1.2,
-    "unit": "pint",
-    "price": 10,
-    "value": 12,
-    "page": 15,
-    "quote": "Roundup Weather Max 1.20 pint 10.00 12"
-   },
-   {
-    "name": "Rely 200",
-    "quantity": 1.5,
-    "unit": "pint",
-    "price": 9.72,
-    "value": 15,
-    "page": 15,
-    "quote": "Rely 200 1.50 pint 9.72 15"
-   },
-   {
-    "name": "Tying Materials",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 15,
-    "value": 15,
-    "page": 15,
-    "quote": "Tying Materials 1.00 acre 15.00 15"
-   },
-   {
-    "name": "Dusting Sulfur",
-    "quantity": 90,
-    "unit": "lb",
-    "price": 0.28,
-    "value": 25,
-    "page": 15,
-    "quote": "Dusting Sulfur 90.00 lb 0.28 25"
-   },
-   {
-    "name": "Rally",
-    "quantity": 4,
-    "unit": "oz",
-    "price": 4.75,
-    "value": 19,
-    "page": 15,
-    "quote": "Rally 4.00 oz 4.75 19"
-   },
-   {
-    "name": "Adament 50WS",
-    "quantity": 3,
-    "unit": "oz",
-    "price": 9.09,
-    "value": 27,
-    "page": 15,
-    "quote": "Adament 50WS 3.00 oz 9.09 27"
-   },
-   {
-    "name": "Water-Pumped",
-    "quantity": 18,
-    "unit": "acin",
-    "price": 8.33,
-    "value": 150,
-    "page": 15,
-    "quote": "Water-Pumped 18.00 acin 8.33 150"
-   },
-   {
-    "name": "5-0-12 (liquid fertilizer)",
-    "quantity": 600,
-    "unit": "lb",
-    "price": 0.13,
-    "value": 78,
-    "page": 15,
-    "quote": "5-0-12 (liquid fertilizer) 600.00 lb 0.13 78"
-   },
-   {
-    "name": "Provado 1.6 Flowable",
-    "quantity": 4,
-    "unit": "floz",
-    "price": 3.74,
-    "value": 15,
-    "page": 15,
-    "quote": "Provado 1.6 Flowable 4.00 floz 3.74 15"
-   },
-   {
-    "name": "Movento",
-    "quantity": 8,
-    "unit": "floz",
-    "price": 10.07,
-    "value": 81,
-    "page": 15,
-    "quote": "Movento 8.00 floz 10.07 81"
-   },
-   {
-    "name": "Acramite 50WS",
-    "quantity": 16,
-    "unit": "oz",
-    "price": 4.45,
-    "value": 71,
-    "page": 15,
-    "quote": "Acramite 50WS 16.00 oz 4.45 71"
-   },
-   {
-    "name": "Machine Harvest",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 325,
-    "value": 325,
-    "page": 15,
-    "quote": "Machine Harvest 1.00 acre 325.00 325"
-   },
-   {
-    "name": "Haul to Crusher",
-    "quantity": 10,
-    "unit": "ton",
-    "price": 18,
-    "value": 180,
-    "page": 15,
-    "quote": "Haul to Crusher 10.00 ton 18.00 180"
    }
   ],
   "interestRatePct": null,
@@ -252,7 +127,12 @@
    "page": 14,
    "quote": "TOTAL COSTS/ACRE 5,438"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 4800,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "Wine Grape - Cabernet Sauvignon 10.00 ton 480.00 4,800"
+  },
   "netReturnsAboveOperating": {
    "value": 2601,
    "unit": "$/acre",
@@ -1980,6 +1860,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1988,6 +1870,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1999,18 +1882,14 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "businessOverhead",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor"
   ],
   "warnings": [
-   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
    "1 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)"
   ]

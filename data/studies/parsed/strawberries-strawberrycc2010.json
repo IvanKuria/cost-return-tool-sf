@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/1f/29/1f290e6f-c512-4f08-9695-517da36d10f8/strawberrycc2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/strawberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -34,9 +34,19 @@
    "page": 3,
    "quote": "Strawberries are being planted on 45 acres."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 6000,
+   "unit": "tray",
+   "page": 13,
+   "quote": "Strawberry 6,000.00 tray 8.30 49,800"
+  },
   "yieldUnit": "tray",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 8.3,
+   "unit": "$/tray",
+   "page": 13,
+   "quote": "Strawberry 6,000.00 tray 8.30 49,800"
+  },
   "returns": [
    {
     "name": "Strawberry",
@@ -46,150 +56,6 @@
     "value": 49800,
     "page": 13,
     "quote": "Strawberry 6,000.00 tray 8.30 49,800"
-   },
-   {
-    "name": "Water",
-    "quantity": 36,
-    "unit": "acin",
-    "price": 21.67,
-    "value": 780,
-    "page": 13,
-    "quote": "Water 36.00 acin 21.67 780"
-   },
-   {
-    "name": "18-8-13",
-    "quantity": 500,
-    "unit": "lb",
-    "price": 0.85,
-    "value": 425,
-    "page": 13,
-    "quote": "18-8-13 500.00 lb 0.85 425"
-   },
-   {
-    "name": "CAN 17 (17-0-0-8Ca)",
-    "quantity": 350,
-    "unit": "lb",
-    "price": 0.18,
-    "value": 63,
-    "page": 13,
-    "quote": "CAN 17 (17-0-0-8Ca) 350.00 lb 0.18 63"
-   },
-   {
-    "name": "T-Tape",
-    "quantity": 21780,
-    "unit": "ft",
-    "price": 0.02,
-    "value": 436,
-    "page": 13,
-    "quote": "T-Tape 21,780.00 ft 0.02 436"
-   },
-   {
-    "name": "Mulch Pins",
-    "quantity": 4000,
-    "unit": "ea",
-    "price": 0.02,
-    "value": 60,
-    "page": 13,
-    "quote": "Mulch Pins 4,000.00 ea 0.02 60"
-   },
-   {
-    "name": "Mulch 1.25m",
-    "quantity": 10890,
-    "unit": "ft",
-    "price": 0.04,
-    "value": 392,
-    "page": 13,
-    "quote": "Mulch 1.25m 10,890.00 ft 0.04 392"
-   },
-   {
-    "name": "Tray w/8x1lb clamshells",
-    "quantity": 6000,
-    "unit": "ea",
-    "price": 1.68,
-    "value": 10080,
-    "page": 13,
-    "quote": "Tray w/8x1lb clamshells 6,000.00 ea 1.68 10,080"
-   },
-   {
-    "name": "Strawberry Plants",
-    "quantity": 22869,
-    "unit": "each",
-    "price": 0.11,
-    "value": 2401,
-    "page": 13,
-    "quote": "Strawberry Plants 22,869.00 each 0.11 2,401"
-   },
-   {
-    "name": "California Strawberry Commission ($0.0175)",
-    "quantity": 6000,
-    "unit": "tray",
-    "price": 0.02,
-    "value": 105,
-    "page": 13,
-    "quote": "California Strawberry Commission ($0.0175) 6,000.00 tray 0.02 105"
-   },
-   {
-    "name": "Captan 50W",
-    "quantity": 12,
-    "unit": "lb",
-    "price": 6.92,
-    "value": 83,
-    "page": 13,
-    "quote": "Captan 50W 12.00 lb 6.92 83"
-   },
-   {
-    "name": "Rally 40W",
-    "quantity": 20,
-    "unit": "oz",
-    "price": 5.23,
-    "value": 105,
-    "page": 13,
-    "quote": "Rally 40W 20.00 oz 5.23 105"
-   },
-   {
-    "name": "Quadris",
-    "quantity": 36,
-    "unit": "floz",
-    "price": 3.25,
-    "value": 117,
-    "page": 13,
-    "quote": "Quadris 36.00 floz 3.25 117"
-   },
-   {
-    "name": "Elevate 50WDG",
-    "quantity": 3,
-    "unit": "lb",
-    "price": 49.12,
-    "value": 147,
-    "page": 13,
-    "quote": "Elevate 50WDG 3.00 lb 49.12 147"
-   },
-   {
-    "name": "Thiolux",
-    "quantity": 25,
-    "unit": "lb",
-    "price": 1.04,
-    "value": 26,
-    "page": 13,
-    "quote": "Thiolux 25.00 lb 1.04 26"
-   },
-   {
-    "name": "Pristine",
-    "quantity": 23,
-    "unit": "oz",
-    "price": 3.76,
-    "value": 86,
-    "page": 13,
-    "quote": "Pristine 23.00 oz 3.76 86"
-   },
-   {
-    "name": "Switch 62.5WG",
-    "quantity": 14,
-    "unit": "oz",
-    "price": 4.27,
-    "value": 60,
-    "page": 13,
-    "quote": "Switch 62.5WG 14.00 oz 4.27 60"
    }
   ],
   "interestRatePct": null,
@@ -266,7 +132,12 @@
    "page": 12,
    "quote": "TOTAL COSTS/ACRE 47,882"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 49800,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Strawberry 6,000.00 tray 8.30 49,800"
+  },
   "netReturnsAboveOperating": {
    "value": 7612,
    "unit": "$/acre",
@@ -1653,6 +1524,8 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1662,6 +1535,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1673,10 +1547,7 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
@@ -1684,7 +1555,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 17 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

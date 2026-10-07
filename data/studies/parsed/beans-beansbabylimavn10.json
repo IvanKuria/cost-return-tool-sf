@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/8c/2c/8c2ca355-68a2-4eee-9e45-65a2cd3b17dd/beansbabylimavn10.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -29,13 +29,18 @@
    "quote": "This report is based on a 1,200 non-contiguous acre field and row crop farm on which 200 acres of rented land are producing baby lima beans; 1,000 acres of rented and grower owned land are planted to alfalfa hay, field corn, tomatoes, and wheat."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 25,
+   "unit": "cwt",
+   "page": 10,
+   "quote": "Baby Lima 25.00 cwt 50.00 1,250"
+  },
   "yieldUnit": "cwt",
   "pricePerUnit": {
    "value": 50,
    "unit": "$/cwt",
-   "page": 5,
-   "quote": "Based on the 2008 and 2009 Bean Market Reports a price of $50 per cwt is used to calculate income."
+   "page": 10,
+   "quote": "Baby Lima 25.00 cwt 50.00 1,250"
   },
   "returns": [
    {
@@ -46,150 +51,6 @@
     "value": 1250,
     "page": 10,
     "quote": "Baby Lima 25.00 cwt 50.00 1,250"
-   },
-   {
-    "name": "Laser Level",
-    "quantity": 0.25,
-    "unit": "acre",
-    "price": 150,
-    "value": 38,
-    "page": 10,
-    "quote": "Laser Level 0.25 acre 150.00 38"
-   },
-   {
-    "name": "List Beds",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 20,
-    "value": 20,
-    "page": 10,
-    "quote": "List Beds 1.00 acre 20.00 20"
-   },
-   {
-    "name": "Application - Ground",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 10,
-    "value": 10,
-    "page": 10,
-    "quote": "Application - Ground 1.00 acre 10.00 10"
-   },
-   {
-    "name": "Application - Air",
-    "quantity": 2,
-    "unit": "acre",
-    "price": 16,
-    "value": 32,
-    "page": 10,
-    "quote": "Application - Air 2.00 acre 16.00 32"
-   },
-   {
-    "name": "Cutting & Windrow",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 38,
-    "value": 38,
-    "page": 10,
-    "quote": "Cutting & Windrow 1.00 acre 38.00 38"
-   },
-   {
-    "name": "Threshing",
-    "quantity": 27,
-    "unit": "cwt",
-    "price": 2.5,
-    "value": 68,
-    "page": 10,
-    "quote": "Threshing 27.00 cwt 2.50 68"
-   },
-   {
-    "name": "Haul",
-    "quantity": 27,
-    "unit": "cwt",
-    "price": 0.7,
-    "value": 19,
-    "page": 10,
-    "quote": "Haul 27.00 cwt 0.70 19"
-   },
-   {
-    "name": "Clean, Store, Insure",
-    "quantity": 25,
-    "unit": "cwt",
-    "price": 3,
-    "value": 75,
-    "page": 10,
-    "quote": "Clean, Store, Insure 25.00 cwt 3.00 75"
-   },
-   {
-    "name": "4-10-10 (10.45 lbs/gal)",
-    "quantity": 209,
-    "unit": "lb",
-    "price": 0.13,
-    "value": 27,
-    "page": 10,
-    "quote": "4-10-10 (10.45 lbs/gal) 209.00 lb 0.13 27"
-   },
-   {
-    "name": "Zinc Chelate 6%",
-    "quantity": 0.5,
-    "unit": "gal",
-    "price": 12.8,
-    "value": 6,
-    "page": 10,
-    "quote": "Zinc Chelate 6% 0.50 gal 12.80 6"
-   },
-   {
-    "name": "Water (District)",
-    "quantity": 30,
-    "unit": "acin",
-    "price": 3.33,
-    "value": 100,
-    "page": 10,
-    "quote": "Water (District) 30.00 acin 3.33 100"
-   },
-   {
-    "name": "Dual Magnum",
-    "quantity": 1.5,
-    "unit": "pint",
-    "price": 20.28,
-    "value": 30,
-    "page": 10,
-    "quote": "Dual Magnum 1.50 pint 20.28 30"
-   },
-   {
-    "name": "Treflan HFP",
-    "quantity": 1.5,
-    "unit": "pint",
-    "price": 4.84,
-    "value": 7,
-    "page": 10,
-    "quote": "Treflan HFP 1.50 pint 4.84 7"
-   },
-   {
-    "name": "Baby Lima (treated with protectants)",
-    "quantity": 70,
-    "unit": "lb",
-    "price": 0.75,
-    "value": 53,
-    "page": 10,
-    "quote": "Baby Lima (treated with protectants) 70.00 lb 0.75 53"
-   },
-   {
-    "name": "Comite",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 14.8,
-    "value": 30,
-    "page": 10,
-    "quote": "Comite 2.00 pint 14.80 30"
-   },
-   {
-    "name": "Dimethoate 4E",
-    "quantity": 1,
-    "unit": "pint",
-    "price": 8.64,
-    "value": 9,
-    "page": 10,
-    "quote": "Dimethoate 4E 1.00 pint 8.64 9"
    }
   ],
   "interestRatePct": null,
@@ -266,7 +127,12 @@
    "page": 9,
    "quote": "TOTAL COSTS/ACRE 1,150"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1250,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "Baby Lima 25.00 cwt 50.00 1,250"
+  },
   "netReturnsAboveOperating": {
    "value": 450,
    "unit": "$/acre",
@@ -1193,6 +1059,7 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -1203,6 +1070,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1212,9 +1080,7 @@
    "machineLaborFactor"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
    "interestRatePct",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "monthly",
@@ -1223,7 +1089,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 17 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
    "monthly table not used: MONTHLY CASH COSTS PER ACRE TO PRODUCE BABY LIMA BEANS: TOTAL CASH COSTS row: months sum to 974 but the Total column says 1114"
   ]

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/91/0b/910b6b2a-1f01-4697-be7f-0ae88f5ee11b/asparagusvn2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/asparagus",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -34,9 +34,19 @@
    "page": 3,
    "quote": "Asparagus is being established on 200 acres, other vegetable crops are on 380 acres and roads, irrigation systems and farmstead occupy 20 acres."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 4000,
+   "unit": "lb",
+   "page": 13,
+   "quote": "Asparagus 4,000.00 lb 1.33 5,320"
+  },
   "yieldUnit": "lb",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 1.33,
+   "unit": "$/lb",
+   "page": 13,
+   "quote": "Asparagus 4,000.00 lb 1.33 5,320"
+  },
   "returns": [
    {
     "name": "Asparagus",
@@ -46,132 +56,6 @@
     "value": 5320,
     "page": 13,
     "quote": "Asparagus 4,000.00 lb 1.33 5,320"
-   },
-   {
-    "name": "Ridomil Gold EC",
-    "quantity": 4,
-    "unit": "floz",
-    "price": 6.71,
-    "value": 27,
-    "page": 13,
-    "quote": "Ridomil Gold EC 4.00 floz 6.71 27"
-   },
-   {
-    "name": "Rally 40 WSP",
-    "quantity": 5,
-    "unit": "oz",
-    "price": 5.5,
-    "value": 28,
-    "page": 13,
-    "quote": "Rally 40 WSP 5.00 oz 5.50 28"
-   },
-   {
-    "name": "Karmex DF",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 9.98,
-    "value": 20,
-    "page": 13,
-    "quote": "Karmex DF 2.00 lb 9.98 20"
-   },
-   {
-    "name": "Roundup Ultra",
-    "quantity": 2,
-    "unit": "pt",
-    "price": 6.19,
-    "value": 12,
-    "page": 13,
-    "quote": "Roundup Ultra 2.00 pt 6.19 12"
-   },
-   {
-    "name": "Harvest Piece Rate ($11.50+OH)",
-    "quantity": 143,
-    "unit": "crt",
-    "price": 15.53,
-    "value": 2221,
-    "page": 13,
-    "quote": "Harvest Piece Rate ($11.50+OH) 143.00 crt 15.53 2,221"
-   },
-   {
-    "name": "Fulfill",
-    "quantity": 2.75,
-    "unit": "oz",
-    "price": 7.8,
-    "value": 21,
-    "page": 13,
-    "quote": "Fulfill 2.75 oz 7.80 21"
-   },
-   {
-    "name": "Lorsban Advanced",
-    "quantity": 2,
-    "unit": "pt",
-    "price": 8.65,
-    "value": 17,
-    "page": 13,
-    "quote": "Lorsban Advanced 2.00 pt 8.65 17"
-   },
-   {
-    "name": "Water",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 90,
-    "value": 90,
-    "page": 13,
-    "quote": "Water 1.00 acre 90.00 90"
-   },
-   {
-    "name": "California Asparagus Commission",
-    "quantity": 143,
-    "unit": "crt",
-    "price": 0.22,
-    "value": 32,
-    "page": 13,
-    "quote": "California Asparagus Commission 143.00 crt 0.22 32"
-   },
-   {
-    "name": "Packing",
-    "quantity": 143,
-    "unit": "crt",
-    "price": 16,
-    "value": 2288,
-    "page": 13,
-    "quote": "Packing 143.00 crt 16.00 2,288"
-   },
-   {
-    "name": "Labor (machine)",
-    "quantity": 20.34,
-    "unit": "hrs",
-    "price": 17.55,
-    "value": 357,
-    "page": 13,
-    "quote": "Labor (machine) 20.34 hrs 17.55 357"
-   },
-   {
-    "name": "Labor (non-machine)",
-    "quantity": 12.14,
-    "unit": "hrs",
-    "price": 12.15,
-    "value": 148,
-    "page": 13,
-    "quote": "Labor (non-machine) 12.14 hrs 12.15 148"
-   },
-   {
-    "name": "Fuel - Gas",
-    "quantity": 0,
-    "unit": "gal",
-    "price": 4.07,
-    "value": 0,
-    "page": 13,
-    "quote": "Fuel - Gas 0.00 gal 4.07 0"
-   },
-   {
-    "name": "Fuel - Diesel",
-    "quantity": 55.21,
-    "unit": "gal",
-    "price": 3.84,
-    "value": 212,
-    "page": 13,
-    "quote": "Fuel - Diesel 55.21 gal 3.84 212"
    }
   ],
   "interestRatePct": null,
@@ -238,7 +122,12 @@
    "page": 12,
    "quote": "TOTAL COSTS/ACRE 6,722"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 5320,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "Asparagus 4,000.00 lb 1.33 5,320"
+  },
   "netReturnsAboveOperating": {
    "value": -356,
    "unit": "$/acre",
@@ -2015,7 +1904,7 @@
    },
    {
     "year": 4,
-    "label": "*4th",
+    "label": "4th",
     "totalCost": 5914,
     "returns": 5320,
     "netCost": 594,
@@ -2064,6 +1953,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -2071,6 +1962,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -2084,17 +1976,12 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct"
   ],
-  "warnings": [
-   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]"
-  ]
+  "warnings": []
  }
 }

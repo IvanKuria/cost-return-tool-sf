@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/09/28/2022covercropsbenefits.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/cover-crops",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2022,
   "priceYear": {
@@ -24,10 +24,30 @@
  "assumptions": {
   "acresFarmed": null,
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 30,
+   "unit": "Lbs.",
+   "page": 7,
+   "quote": "Fertilizer (Lbs. of N) 30 Lbs. 1.20 36"
+  },
+  "yieldUnit": "Lbs.",
+  "pricePerUnit": {
+   "value": 1.2,
+   "unit": "$/Lbs.",
+   "page": 7,
+   "quote": "Fertilizer (Lbs. of N) 30 Lbs. 1.20 36"
+  },
+  "returns": [
+   {
+    "name": "Fertilizer (Lbs. of N)",
+    "quantity": 30,
+    "unit": "Lbs.",
+    "price": 1.2,
+    "value": 36,
+    "page": 7,
+    "quote": "Fertilizer (Lbs. of N) 30 Lbs. 1.20 36"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -56,7 +76,12 @@
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
   "totalCost": null,
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 36,
+   "unit": "$/acre",
+   "page": 7,
+   "quote": "TOTAL GROSS RETURNS 36"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [],
@@ -199,16 +224,17 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
+   "grossReturns",
    "hourlyEquipment",
    "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
@@ -217,7 +243,6 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
-   "grossReturns",
    "operations",
    "equipment",
    "investments",

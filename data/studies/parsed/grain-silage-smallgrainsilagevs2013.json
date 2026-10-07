@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/1a/d8/1ad8788d-8db4-4c43-9a84-19d48916311f/smallgrainsilagevs2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grain-silage",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -29,13 +29,18 @@
    "quote": "The hypothetical farm consists of 1,500 non-contiguous acres of which 750 acres are rented and 750 owned by the grower."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 22,
+   "unit": "ton",
+   "page": 9,
+   "quote": "Small Grain Silage 22.00 ton 46.00 1,012"
+  },
   "yieldUnit": "ton",
   "pricePerUnit": {
    "value": 46,
    "unit": "$/ton",
-   "page": 4,
-   "quote": "A price of $46 per ton for silage is used to calculate returns over a range of yields."
+   "page": 9,
+   "quote": "Small Grain Silage 22.00 ton 46.00 1,012"
   },
   "returns": [
    {
@@ -46,123 +51,6 @@
     "value": 1012,
     "page": 9,
     "quote": "Small Grain Silage 22.00 ton 46.00 1,012"
-   },
-   {
-    "name": "Manure (raw)",
-    "quantity": 5,
-    "unit": "ton",
-    "price": 1,
-    "value": 5,
-    "page": 9,
-    "quote": "Manure (raw) 5.00 ton 1.00 5"
-   },
-   {
-    "name": "Deliver & Spread Manure",
-    "quantity": 5,
-    "unit": "ton",
-    "price": 8,
-    "value": 40,
-    "page": 9,
-    "quote": "Deliver & Spread Manure 5.00 ton 8.00 40"
-   },
-   {
-    "name": "Small Grain Mix (wheat)",
-    "quantity": 130,
-    "unit": "lb",
-    "price": 0.43,
-    "value": 56,
-    "page": 9,
-    "quote": "Small Grain Mix (wheat) 130.00 lb 0.43 56"
-   },
-   {
-    "name": "Express (soluble granules)",
-    "quantity": 1,
-    "unit": "oz",
-    "price": 26.49,
-    "value": 26,
-    "page": 9,
-    "quote": "Express (soluble granules) 1.00 oz 26.49 26"
-   },
-   {
-    "name": "MCPA Amine",
-    "quantity": 1,
-    "unit": "pint",
-    "price": 3.68,
-    "value": 4,
-    "page": 9,
-    "quote": "MCPA Amine 1.00 pint 3.68 4"
-   },
-   {
-    "name": "Axial XL",
-    "quantity": 16,
-    "unit": "floz",
-    "price": 1.47,
-    "value": 24,
-    "page": 9,
-    "quote": "Axial XL 16.00 floz 1.47 24"
-   },
-   {
-    "name": "Air Application",
-    "quantity": 2,
-    "unit": "acre",
-    "price": 8,
-    "value": 16,
-    "page": 9,
-    "quote": "Air Application 2.00 acre 8.00 16"
-   },
-   {
-    "name": "Pest Control Adviser/Consultant",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 10,
-    "value": 10,
-    "page": 9,
-    "quote": "Pest Control Adviser/Consultant 1.00 acre 10.00 10"
-   },
-   {
-    "name": "Water",
-    "quantity": 16,
-    "unit": "acin",
-    "price": 8.33,
-    "value": 133,
-    "page": 9,
-    "quote": "Water 16.00 acin 8.33 133"
-   },
-   {
-    "name": "Labor (machine)",
-    "quantity": 0.91,
-    "unit": "hrs",
-    "price": 13.8,
-    "value": 13,
-    "page": 9,
-    "quote": "Labor (machine) 0.91 hrs 13.80 13"
-   },
-   {
-    "name": "Labor (non-machine)",
-    "quantity": 0.6,
-    "unit": "hrs",
-    "price": 11.04,
-    "value": 7,
-    "page": 9,
-    "quote": "Labor (non-machine) 0.60 hrs 11.04 7"
-   },
-   {
-    "name": "Fuel - Gas",
-    "quantity": 0,
-    "unit": "gal",
-    "price": 4.07,
-    "value": 0,
-    "page": 9,
-    "quote": "Fuel - Gas 0.00 gal 4.07 0"
-   },
-   {
-    "name": "Fuel - Diesel",
-    "quantity": 5.97,
-    "unit": "gal",
-    "price": 3.84,
-    "value": 23,
-    "page": 9,
-    "quote": "Fuel - Diesel 5.97 gal 3.84 23"
    }
   ],
   "interestRatePct": null,
@@ -234,7 +122,12 @@
    "page": 8,
    "quote": "TOTAL COSTS/ACRE 658"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1012,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL RETURNS 46.00 1,012"
+  },
   "netReturnsAboveOperating": {
    "value": 523,
    "unit": "$/acre",
@@ -748,6 +641,7 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -757,6 +651,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -768,10 +663,8 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
@@ -779,7 +672,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 14 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

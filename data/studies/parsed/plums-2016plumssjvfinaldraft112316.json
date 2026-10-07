@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/05/1e/051eabc3-9bdd-45cc-9c85-f122f8f275f0/2016plumssjvfinaldraft112316.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/plums",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -2126,8 +2126,7 @@
    "establishmentAccumulated"
   ],
   "warnings": [
-   "establishment year 4: running net 7937 differs from printed accumulated 6711",
-   "establishment table: TOTAL PLANTING COSTS column 1st prints 2996 but its rows sum to 5458"
+   "establishment year 4: running net 7937 differs from printed accumulated 6711"
   ]
  }
 }

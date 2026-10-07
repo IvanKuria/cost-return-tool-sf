@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/2e/f8/2ef8342f-19bd-41e8-bc14-5b5abc2b2488/blackberrycc2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 3,
    "quote": "Blackberries are planted on 15 acres."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 3500,
+   "unit": "each",
+   "page": 19,
+   "quote": "TOTAL GROSS RETURNS 3,500.00 each 56,000"
+  },
+  "yieldUnit": "each",
+  "pricePerUnit": {
+   "value": 16,
+   "unit": "$/each",
+   "page": 19,
+   "quote": "Blackberries 3,500.00 each 16.00 56,000"
+  },
+  "returns": [
+   {
+    "name": "Blackberries",
+    "quantity": 3500,
+    "unit": "each",
+    "price": 16,
+    "value": 56000,
+    "page": 19,
+    "quote": "Blackberries 3,500.00 each 16.00 56,000"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
@@ -97,7 +117,12 @@
    "page": 20,
    "quote": "TOTAL COST/ACRE 43,406"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 56000,
+   "unit": "$/acre",
+   "page": 19,
+   "quote": "TOTAL GROSS RETURNS 3,500.00 each 56,000"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": {
    "value": 12594,
@@ -1462,7 +1487,7 @@
     "totalCost": 14176,
     "returns": null,
     "netCost": 14176,
-    "accumulated": null,
+    "accumulated": 14176,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 14,176 7,753"
    },
@@ -1472,7 +1497,7 @@
     "totalCost": 27177,
     "returns": 33600,
     "netCost": -6423,
-    "accumulated": 14176,
+    "accumulated": 7753,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 14,176 7,753"
    },
@@ -1481,20 +1506,10 @@
     "label": "2nd",
     "totalCost": 40165,
     "returns": 56000,
-    "netCost": 14176,
-    "accumulated": 7753,
+    "netCost": -15835,
+    "accumulated": null,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 14,176 7,753"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 14176,
-    "returns": null,
-    "netCost": 14176,
-    "accumulated": null,
-    "page": 13,
-    "quote": "TOTAL CASH COSTS/ACRE 14,176"
    }
   ],
   "accumulatedNetCost": {
@@ -1529,12 +1544,15 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
    "operatingTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1547,19 +1565,15 @@
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "cashOverheadTotal",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "a later costs table had no totals; used an earlier one",
    "several costs-per-acre tables (establishment and production); using the production one"
   ]

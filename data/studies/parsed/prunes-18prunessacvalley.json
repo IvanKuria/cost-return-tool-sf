@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/53/8c/538c2e79-e322-4e83-a70b-7663e819ef52/18prunessacvalley.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/prunes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2018,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 3,
    "quote": "Prunes are being established on 100 acres."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 4,
+   "unit": "Ton",
+   "page": 17,
+   "quote": "Dried Plums 4.0 Ton 1,800.00 7,200"
+  },
+  "yieldUnit": "Ton",
+  "pricePerUnit": {
+   "value": 1800,
+   "unit": "$/Ton",
+   "page": 17,
+   "quote": "Dried Plums 4.0 Ton 1,800.00 7,200"
+  },
+  "returns": [
+   {
+    "name": "Dried Plums",
+    "quantity": 4,
+    "unit": "Ton",
+    "price": 1800,
+    "value": 7200,
+    "page": 17,
+    "quote": "Dried Plums 4.0 Ton 1,800.00 7,200"
+   }
+  ],
   "interestRatePct": {
    "value": 5.5,
    "unit": "%",
@@ -109,7 +129,12 @@
    "page": 16,
    "quote": "TOTAL COSTS/ACRE 6,671"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 7200,
+   "unit": "$/acre",
+   "page": 17,
+   "quote": "TOTAL GROSS RETURNS 7,200"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -2223,6 +2248,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -2231,6 +2258,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -2245,11 +2273,8 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct"
   ],
   "warnings": [

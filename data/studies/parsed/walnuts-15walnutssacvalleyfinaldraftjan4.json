@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/78/a7/78a775e3-6488-49d4-b234-b3eaf9171a55/15walnutssacvalleyfinaldraftjan4.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -2136,7 +2136,7 @@
     "label": "3rd",
     "totalCost": 1084,
     "returns": null,
-    "netCost": 5008,
+    "netCost": 1084,
     "accumulated": 7212,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,008 6,128 7,212 8,164 8,656 8,255 4,982"
@@ -2146,7 +2146,7 @@
     "label": "4th",
     "totalCost": 1577,
     "returns": 625,
-    "netCost": 1120,
+    "netCost": 952,
     "accumulated": 8164,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,008 6,128 7,212 8,164 8,656 8,255 4,982"
@@ -2156,7 +2156,7 @@
     "label": "5th",
     "totalCost": 1742,
     "returns": 1250,
-    "netCost": 1084,
+    "netCost": 492,
     "accumulated": 8656,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,008 6,128 7,212 8,164 8,656 8,255 4,982"
@@ -2166,7 +2166,7 @@
     "label": "6th",
     "totalCost": 2.099,
     "returns": 2500,
-    "netCost": 952,
+    "netCost": -2497.901,
     "accumulated": 8255,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,008 6,128 7,212 8,164 8,656 8,255 4,982"
@@ -2176,7 +2176,7 @@
     "label": "7th",
     "totalCost": 2602,
     "returns": 5875,
-    "netCost": 492,
+    "netCost": -3273,
     "accumulated": 4982,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,008 6,128 7,212 8,164 8,656 8,255 4,982"

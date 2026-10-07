@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/72/c6/72c666e3-858c-4f7d-8c68-3151c3104114/grapewinesonoma2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -34,9 +34,19 @@
    "page": 2,
    "quote": "The hypothetical vineyard used in this report consists of 35 acres, 30 of which are being established and 5 acres in farmstead, roads and pumping stations."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 5,
+   "unit": "ton",
+   "page": 18,
+   "quote": "Cabernet Sauvignon Winegrapes 5.00 ton 2,236.00 11,180"
+  },
   "yieldUnit": "ton",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 2236,
+   "unit": "$/ton",
+   "page": 18,
+   "quote": "Cabernet Sauvignon Winegrapes 5.00 ton 2,236.00 11,180"
+  },
   "returns": [
    {
     "name": "Cabernet Sauvignon Winegrapes",
@@ -46,159 +56,6 @@
     "value": 11180,
     "page": 18,
     "quote": "Cabernet Sauvignon Winegrapes 5.00 ton 2,236.00 11,180"
-   },
-   {
-    "name": "Goal 2XL",
-    "quantity": 1,
-    "unit": "pint",
-    "price": 17.25,
-    "value": 17,
-    "page": 18,
-    "quote": "Goal 2XL 1.00 pint 17.25 17"
-   },
-   {
-    "name": "Chateau",
-    "quantity": 10,
-    "unit": "oz",
-    "price": 8.47,
-    "value": 85,
-    "page": 18,
-    "quote": "Chateau 10.00 oz 8.47 85"
-   },
-   {
-    "name": "Buccaneer",
-    "quantity": 0.5,
-    "unit": "pint",
-    "price": 4.37,
-    "value": 2,
-    "page": 18,
-    "quote": "Buccaneer 0.50 pint 4.37 2"
-   },
-   {
-    "name": "Champ 2 Flowable (copper)",
-    "quantity": 7.2,
-    "unit": "pint",
-    "price": 5.89,
-    "value": 42,
-    "page": 18,
-    "quote": "Champ 2 Flowable (copper) 7.20 pint 5.89 42"
-   },
-   {
-    "name": "Thiolux Micro Sul (sulfur)",
-    "quantity": 24,
-    "unit": "lb",
-    "price": 0.9,
-    "value": 22,
-    "page": 18,
-    "quote": "Thiolux Micro Sul (sulfur) 24.00 lb 0.90 22"
-   },
-   {
-    "name": "Sulfur Dust",
-    "quantity": 55,
-    "unit": "lb",
-    "price": 0.21,
-    "value": 12,
-    "page": 18,
-    "quote": "Sulfur Dust 55.00 lb 0.21 12"
-   },
-   {
-    "name": "Pristine",
-    "quantity": 10,
-    "unit": "oz",
-    "price": 3.77,
-    "value": 38,
-    "page": 18,
-    "quote": "Pristine 10.00 oz 3.77 38"
-   },
-   {
-    "name": "Rally 40WS",
-    "quantity": 5,
-    "unit": "oz",
-    "price": 5.5,
-    "value": 28,
-    "page": 18,
-    "quote": "Rally 40WS 5.00 oz 5.50 28"
-   },
-   {
-    "name": "Acramite 50 WS",
-    "quantity": 0.33,
-    "unit": "lb",
-    "price": 69.17,
-    "value": 23,
-    "page": 18,
-    "quote": "Acramite 50 WS 0.33 lb 69.17 23"
-   },
-   {
-    "name": "Wind Machine (Propane @ $1.97 per gallon)",
-    "quantity": 50,
-    "unit": "hr/ac",
-    "price": 3,
-    "value": 150,
-    "page": 18,
-    "quote": "Wind Machine (Propane @ $1.97 per gallon) 50.00 hr/ac 3.00 150"
-   },
-   {
-    "name": "Water pumped",
-    "quantity": 6,
-    "unit": "acin",
-    "price": 16.5,
-    "value": 99,
-    "page": 18,
-    "quote": "Water pumped 6.00 acin 16.50 99"
-   },
-   {
-    "name": "CAN-17 (17-0-0, 12.64 lbs/gal)",
-    "quantity": 44.1,
-    "unit": "lb",
-    "price": 0.18,
-    "value": 8,
-    "page": 18,
-    "quote": "CAN-17 (17-0-0, 12.64 lbs/gal) 44.10 lb 0.18 8"
-   },
-   {
-    "name": "12-26-26 (water soluble)",
-    "quantity": 62.5,
-    "unit": "lb",
-    "price": 1.44,
-    "value": 90,
-    "page": 18,
-    "quote": "12-26-26 (water soluble) 62.50 lb 1.44 90"
-   },
-   {
-    "name": "Solubor (Boron)",
-    "quantity": 4.9,
-    "unit": "lb",
-    "price": 1.63,
-    "value": 8,
-    "page": 18,
-    "quote": "Solubor (Boron) 4.90 lb 1.63 8"
-   },
-   {
-    "name": "Neutral Zinc",
-    "quantity": 3.84,
-    "unit": "lb",
-    "price": 2.5,
-    "value": 10,
-    "page": 18,
-    "quote": "Neutral Zinc 3.84 lb 2.50 10"
-   },
-   {
-    "name": "Gypsum (includes haul & spread)",
-    "quantity": 0.83,
-    "unit": "ton",
-    "price": 45,
-    "value": 37,
-    "page": 18,
-    "quote": "Gypsum (includes haul & spread) 0.83 ton 45.00 37"
-   },
-   {
-    "name": "Petiole Analysis",
-    "quantity": 0.21,
-    "unit": "each",
-    "price": 40,
-    "value": 8,
-    "page": 18,
-    "quote": "Petiole Analysis 0.21 each 40.00 8"
    }
   ],
   "interestRatePct": null,
@@ -267,7 +124,12 @@
    "page": 17,
    "quote": "TOTAL COSTS/ACRE 12,304"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 11180,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "Cabernet Sauvignon Winegrapes 5.00 ton 2,236.00 11,180"
+  },
   "netReturnsAboveOperating": {
    "value": 7436,
    "unit": "$/acre",
@@ -2476,6 +2338,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -2484,6 +2348,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -2497,16 +2362,12 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct"
   ],
   "warnings": [
-   "Table 2 lists 18 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

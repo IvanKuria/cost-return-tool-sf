@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a1/39/a139af36-5c70-48ec-8367-bc534c314eb3/lemons-vs-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2015,
   "priceYear": {
@@ -50,132 +50,6 @@
     "value": 1385,
     "page": 19,
     "quote": "Lemons (juice) 513.00 ctn 2.7 1,385"
-   },
-   {
-    "name": "GROSS RETURNS",
-    "quantity": 1139,
-    "unit": "ctn",
-    "price": 12,
-    "value": 13905,
-    "page": 19,
-    "quote": "GROSS RETURNS 1,139.00 ctn 12 13,905"
-   },
-   {
-    "name": "Princep 90S",
-    "quantity": 1,
-    "unit": "gal",
-    "price": 23.56,
-    "value": 24,
-    "page": 19,
-    "quote": "Princep 90S 1.00 gal 23.56 24"
-   },
-   {
-    "name": "Karmex",
-    "quantity": 4,
-    "unit": "lb",
-    "price": 5.29,
-    "value": 21,
-    "page": 19,
-    "quote": "Karmex 4.00 lb 5.29 21"
-   },
-   {
-    "name": "Roundup Original Max",
-    "quantity": 0.6,
-    "unit": "pint",
-    "price": 3.57,
-    "value": 2,
-    "page": 19,
-    "quote": "Roundup Original Max 0.60 pint 3.57 2"
-   },
-   {
-    "name": "Success",
-    "quantity": 6,
-    "unit": "oz",
-    "price": 5.97,
-    "value": 36,
-    "page": 19,
-    "quote": "Success 6.00 oz 5.97 36"
-   },
-   {
-    "name": "Spray Oil 415",
-    "quantity": 0.5,
-    "unit": "gal",
-    "price": 5.68,
-    "value": 3,
-    "page": 19,
-    "quote": "Spray Oil 415 0.50 gal 5.68 3"
-   },
-   {
-    "name": "Esteem",
-    "quantity": 17,
-    "unit": "floz",
-    "price": 4.7,
-    "value": 80,
-    "page": 19,
-    "quote": "Esteem 17.00 floz 4.70 80"
-   },
-   {
-    "name": "Hydrated Lime",
-    "quantity": 10,
-    "unit": "lb",
-    "price": 0.29,
-    "value": 3,
-    "page": 19,
-    "quote": "Hydrated Lime 10.00 lb 0.29 3"
-   },
-   {
-    "name": "Kocide 20/20",
-    "quantity": 10,
-    "unit": "lb",
-    "price": 4.32,
-    "value": 43,
-    "page": 19,
-    "quote": "Kocide 20/20 10.00 lb 4.32 43"
-   },
-   {
-    "name": "Gib Gro 4LS (Gibberalic Acid)",
-    "quantity": 32,
-    "unit": "gram",
-    "price": 0.48,
-    "value": 15,
-    "page": 19,
-    "quote": "Gib Gro 4LS (Gibberalic Acid) 32.00 gram 0.48 15"
-   },
-   {
-    "name": "Fruit Fix (2, 4-D)",
-    "quantity": 1.25,
-    "unit": "floz",
-    "price": 4.97,
-    "value": 6,
-    "page": 19,
-    "quote": "Fruit Fix (2, 4-D) 1.25 floz 4.97 6"
-   },
-   {
-    "name": "Zinc Sulfate 36%",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 0.86,
-    "value": 2,
-    "page": 19,
-    "quote": "Zinc Sulfate 36% 2.00 lb 0.86 2"
-   },
-   {
-    "name": "Tecmangam (31% Mn)",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 0.73,
-    "value": 1,
-    "page": 19,
-    "quote": "Tecmangam (31% Mn) 2.00 lb 0.73 1"
-   },
-   {
-    "name": "Gypsum Soluble",
-    "quantity": 1,
-    "unit": "ton",
-    "price": 160,
-    "value": 160,
-    "page": 19,
-    "quote": "Gypsum Soluble 1.00 ton 160.00 160"
    }
   ],
   "interestRatePct": null,
@@ -216,7 +90,12 @@
    "page": 18,
    "quote": "TOTAL COSTS/ACRE 11,190"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 13905,
+   "unit": "$/acre",
+   "page": 19,
+   "quote": "GROSS RETURNS 1,139.00 ctn 12 13,905"
+  },
   "netReturnsAboveOperating": {
    "value": 5139,
    "unit": "$/acre",
@@ -1614,7 +1493,7 @@
     },
     {
      "label": "TOTAL COST FOR THE YEAR",
-     "kind": "subtotal",
+     "kind": "total",
      "section": "Non-Cash Overhead Costs",
      "values": [
       5406,
@@ -1709,7 +1588,58 @@
     "quote": "PACKOUT YIELD (37.5 lb Cartons/Acre) – Fresh Market & Juice: 244 407 651"
    }
   },
-  "years": [],
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 4194,
+    "returns": 0,
+    "netCost": 4194,
+    "accumulated": 4194,
+    "page": 14,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 4,194 5,895 6,453 6,099 4,296"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 1702,
+    "returns": 0,
+    "netCost": 1702,
+    "accumulated": 5895,
+    "page": 14,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 4,194 5,895 6,453 6,099 4,296"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 3369,
+    "returns": 2812,
+    "netCost": 557,
+    "accumulated": 6453,
+    "page": 14,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 4,194 5,895 6,453 6,099 4,296"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 4620,
+    "returns": 4974,
+    "netCost": -354,
+    "accumulated": 6099,
+    "page": 14,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 4,194 5,895 6,453 6,099 4,296"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 6148,
+    "returns": 7951,
+    "netCost": -1803,
+    "accumulated": 4296,
+    "page": 14,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 4,194 5,895 6,453 6,099 4,296"
+   }
+  ],
   "accumulatedNetCost": null,
   "annualCharge": {
    "value": 374,
@@ -1747,6 +1677,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1764,7 +1695,6 @@
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
@@ -1773,13 +1703,8 @@
    "establishmentAccumulated"
   ],
   "warnings": [
-   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",
-   "monthly table not used: MONTHLY PER ACRE CASH COSTS - LEMONS: TOTAL CASH COSTS row: months sum to 8906 but the Total column says 9573",
-   "establishment table: TOTAL COST FOR THE YEAR column 1st prints 5406 but its rows sum to 1213",
-   "establishment table: TOTAL COST FOR THE YEAR column 2nd prints 2912 but its rows sum to 1210",
-   "establishment table: TOTAL COST FOR THE YEAR column 3rd prints 4579 but its rows sum to 1210",
-   "establishment table: TOTAL COST FOR THE YEAR column 4th prints 5830 but its rows sum to 1210",
-   "establishment table: TOTAL COST FOR THE YEAR column 5th prints 7389 but its rows sum to 1241"
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
+   "monthly table not used: MONTHLY PER ACRE CASH COSTS - LEMONS: TOTAL CASH COSTS row: months sum to 8906 but the Total column says 9573"
   ]
  }
 }

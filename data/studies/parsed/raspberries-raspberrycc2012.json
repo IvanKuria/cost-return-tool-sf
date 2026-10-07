@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/9e/28/9e286208-f8d8-4a6c-bbcc-d6d04d0f61d3/raspberrycc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/raspberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -1360,13 +1360,13 @@
     "totalCost": 7581,
     "returns": null,
     "netCost": 7581,
-    "accumulated": null,
+    "accumulated": 7581,
     "page": 11,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,581"
    },
    {
     "year": 2,
-    "label": "Prod Yr",
+    "label": "1",
     "totalCost": 44154,
     "returns": 67500,
     "netCost": -23346,
@@ -1376,33 +1376,13 @@
    },
    {
     "year": 3,
-    "label": "1 Prod Yr",
+    "label": "2",
     "totalCost": 46475,
     "returns": 75000,
-    "netCost": 7581,
-    "accumulated": 7581,
+    "netCost": -28525,
+    "accumulated": null,
     "page": 11,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,581"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 7581,
-    "returns": null,
-    "netCost": 7581,
-    "accumulated": null,
-    "page": 12,
-    "quote": "TOTAL CASH COSTS/ACRE 7,581"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 7581,
-    "returns": null,
-    "netCost": 7581,
-    "accumulated": null,
-    "page": 13,
-    "quote": "TOTAL CASH COSTS/ACRE 7,581"
    }
   ],
   "accumulatedNetCost": {

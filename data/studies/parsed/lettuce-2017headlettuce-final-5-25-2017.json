@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/52/c9/52c99335-fcc8-44fe-9ce0-6a0bd5fbe006/2017headlettuce-final_-_5-25-2017.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lettuce",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2017,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 3,
    "quote": "Iceberg lettuce is planted on 250 acres and rotated with other lettuce and cool season vegetable crops to assist with pest management and soil fertility."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 900,
+   "unit": "Carton",
+   "page": 13,
+   "quote": "Iceburg Lettuce 900 Carton 13.00 11,700"
+  },
+  "yieldUnit": "Carton",
+  "pricePerUnit": {
+   "value": 13,
+   "unit": "$/Carton",
+   "page": 13,
+   "quote": "Iceburg Lettuce 900 Carton 13.00 11,700"
+  },
+  "returns": [
+   {
+    "name": "Iceburg Lettuce",
+    "quantity": 900,
+    "unit": "Carton",
+    "price": 13,
+    "value": 11700,
+    "page": 13,
+    "quote": "Iceburg Lettuce 900 Carton 13.00 11,700"
+   }
+  ],
   "interestRatePct": {
    "value": 5,
    "unit": "%",
@@ -119,7 +139,12 @@
    "page": 12,
    "quote": "TOTAL COSTS/ACRE 12,400"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 11700,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL GROSS RETURNS 11,700"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -1316,6 +1341,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -1326,6 +1353,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1338,9 +1366,6 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
-   "grossReturns",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

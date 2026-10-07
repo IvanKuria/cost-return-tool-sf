@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/43/c6/43c6124a-9459-451b-bf3f-7a55db1c1b8a/walnutsnc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 3,
    "quote": "Walnuts are established on 19 acres."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 5000,
+   "unit": "Lb.",
+   "page": 14,
+   "quote": "GROSS RETURNS: Walnuts 5,000 Lb. 1.25 6,250"
+  },
+  "yieldUnit": "Lb.",
+  "pricePerUnit": {
+   "value": 1.25,
+   "unit": "$/Lb.",
+   "page": 14,
+   "quote": "GROSS RETURNS: Walnuts 5,000 Lb. 1.25 6,250"
+  },
+  "returns": [
+   {
+    "name": "Walnuts",
+    "quantity": 5000,
+    "unit": "Lb.",
+    "price": 1.25,
+    "value": 6250,
+    "page": 14,
+    "quote": "GROSS RETURNS: Walnuts 5,000 Lb. 1.25 6,250"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -107,7 +127,12 @@
    "page": 13,
    "quote": "TOTAL COSTS/ACRE 3,912"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 6250,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "GROSS RETURNS: Walnuts 5,000 Lb. 1.25 6,250"
+  },
   "netReturnsAboveOperating": {
    "value": 4326,
    "unit": "$/acre",
@@ -2010,6 +2035,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -2018,6 +2045,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -2030,17 +2058,13 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "monthly"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "monthly table not used: MONTHLY CASH COSTS PER ACRE TO PRODUCE CHANDLER WALNUTS: TOTAL CASH COSTS row: months sum to 2177 but the Total column says 2568"
   ]
  }

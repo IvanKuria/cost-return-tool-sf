@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f6/c7/f6c7d8c2-d02a-4c61-a364-6d3b08a5428b/pecansjv2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pecans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 3,
    "quote": "This report is based on a 60-acre farm of which 58 acres are planted to pecans."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 2000,
+   "unit": "lb",
+   "page": 14,
+   "quote": "GROSS RETURNS - Pecans 2,000.00 lb 1.20 2,400"
+  },
+  "yieldUnit": "lb",
+  "pricePerUnit": {
+   "value": 1.2,
+   "unit": "$/lb",
+   "page": 14,
+   "quote": "GROSS RETURNS - Pecans 2,000.00 lb 1.20 2,400"
+  },
+  "returns": [
+   {
+    "name": "Pecans",
+    "quantity": 2000,
+    "unit": "lb",
+    "price": 1.2,
+    "value": 2400,
+    "page": 14,
+    "quote": "GROSS RETURNS - Pecans 2,000.00 lb 1.20 2,400"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -104,7 +124,12 @@
    "page": 13,
    "quote": "TOTAL COSTS/ACRE 2,405"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 2400,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "GROSS RETURNS - Pecans 2,000.00 lb 1.20 2,400"
+  },
   "netReturnsAboveOperating": {
    "value": 1031,
    "unit": "$/acre",
@@ -1727,6 +1752,8 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1735,6 +1762,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1748,17 +1776,13 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAccumulated"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

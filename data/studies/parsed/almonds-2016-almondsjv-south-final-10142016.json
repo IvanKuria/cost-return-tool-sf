@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/87/3c/873c1216-f21e-4e3e-8961-8ece2d647329/2016_almondsjv_south_final_10142016.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2016,
   "priceYear": {
@@ -2044,6 +2044,524 @@
      ],
      "page": 14,
      "quote": "TOTAL CULTURAL COSTS 1,109 1,431 2,287 2,976 3,332"
+    },
+    {
+     "label": "Harvest",
+     "kind": "heading",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Harvest:"
+    },
+    {
+     "label": "Pole Nuts",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      50,
+      100,
+      150
+     ],
+     "page": 15,
+     "quote": "Pole Nuts 50 100 150"
+    },
+    {
+     "label": "Shake Trees",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      11,
+      11,
+      11
+     ],
+     "page": 15,
+     "quote": "Shake Trees 11 11 11"
+    },
+    {
+     "label": "Sweep & Rake Nuts",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      8,
+      9,
+      13
+     ],
+     "page": 15,
+     "quote": "Sweep & Rake Nuts 8 9 13"
+    },
+    {
+     "label": "Pickup Nuts",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      22,
+      22,
+      31
+     ],
+     "page": 15,
+     "quote": "Pickup Nuts 22 22 31"
+    },
+    {
+     "label": "Hull & Shell Nuts",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      30,
+      60,
+      120
+     ],
+     "page": 15,
+     "quote": "Hull & Shell Nuts 30 60 120"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      121,
+      202,
+      326
+     ],
+     "page": 15,
+     "quote": "TOTAL HARVEST COSTS 121 202 326"
+    },
+    {
+     "label": "Interest On Operating Capital @ 4.75%",
+     "kind": "interest",
+     "section": "Harvest",
+     "values": [
+      150,
+      36,
+      61,
+      75,
+      85
+     ],
+     "page": 15,
+     "quote": "Interest On Operating Capital @ 4.75% 150 36 61 75 85"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvest",
+     "values": [
+      4257,
+      1468,
+      2469,
+      3254,
+      3743
+     ],
+     "page": 15,
+     "quote": "TOTAL OPERATING COSTS/ACRE 4,257 1,468 2,469 3,254 3,743"
+    },
+    {
+     "label": "Cash Overhead",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Cash Overhead"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "page": 15,
+     "quote": "Liability Insurance 8 8 8 8 8"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      60,
+      60,
+      60,
+      60,
+      60
+     ],
+     "page": 15,
+     "quote": "Office Expense 60 60 60 60 60"
+    },
+    {
+     "label": "Sanitation Fees",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     "page": 15,
+     "quote": "Sanitation Fees 8 8 8 8 8"
+    },
+    {
+     "label": "Environmental Fee",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "page": 15,
+     "quote": "Environmental Fee 10 10 10 10 10"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      262,
+      262,
+      264,
+      304,
+      304
+     ],
+     "page": 15,
+     "quote": "Property Taxes 262 262 264 304 304"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      22,
+      22,
+      22,
+      26,
+      26
+     ],
+     "page": 15,
+     "quote": "Property Insurance 22 22 22 26 26"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      39,
+      39,
+      39,
+      79,
+      79
+     ],
+     "page": 15,
+     "quote": "Investment Repairs 39 39 39 79 79"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Harvest",
+     "values": [
+      409,
+      409,
+      411,
+      495,
+      495
+     ],
+     "page": 15,
+     "quote": "TOTAL CASH OVERHEAD COSTS 409 409 411 495 495"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvest",
+     "values": [
+      4666,
+      1876,
+      2880,
+      3749,
+      4238
+     ],
+     "page": 15,
+     "quote": "TOTAL CASH COSTS/ACRE 4,666 1,876 2,880 3,749 4,238"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      1350,
+      2700,
+      5400
+     ],
+     "page": 15,
+     "quote": "INCOME/ACRE FROM PRODUCTION 1,350 2,700 5,400"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Harvest",
+     "values": [
+      4666,
+      1876,
+      1530,
+      1049,
+      null
+     ],
+     "page": 15,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 4,666 1,876 1,530 1,049"
+    },
+    {
+     "label": "PROFIT/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      1162
+     ],
+     "page": 15,
+     "quote": "PROFIT/ACRE ABOVE CASH COSTS 1,162"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS/ACRE",
+     "kind": "accumulated",
+     "section": "Harvest",
+     "values": [
+      4666,
+      6542,
+      8072,
+      91,
+      21
+     ],
+     "page": 15,
+     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,666 6,542 8,072 9,1 21 7,959"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "NON-CASH OVERHEAD:"
+    },
+    {
+     "label": "Pole Barn 1,500 sq. ft.",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      12,
+      12,
+      12,
+      12,
+      12
+     ],
+     "page": 15,
+     "quote": "Pole Barn 1,500 sq. ft. 12 12 12 12 12"
+    },
+    {
+     "label": "Fuel Tanks 2- 500 Gal",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     "page": 15,
+     "quote": "Fuel Tanks 2- 500 Gal 4 4 4 4 4"
+    },
+    {
+     "label": "Shop/Field Tools",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      7,
+      7,
+      7,
+      7,
+      7
+     ],
+     "page": 15,
+     "quote": "Shop/Field Tools 7 7 7 7 7"
+    },
+    {
+     "label": "Irrigation System- Double Line Drip",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      112,
+      112,
+      112,
+      112,
+      112
+     ],
+     "page": 15,
+     "quote": "Irrigation System- Double Line Drip 112 112 112 112 112"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      938,
+      938,
+      938,
+      938,
+      938
+     ],
+     "page": 15,
+     "quote": "Land 938 938 938 938 938"
+    },
+    {
+     "label": "Establishment Costs",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null,
+      null,
+      null,
+      581,
+      581
+     ],
+     "page": 15,
+     "quote": "Establishment Costs 581 581"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      21,
+      21,
+      61,
+      61,
+      63
+     ],
+     "page": 15,
+     "quote": "Equipment 21 21 61 61 63"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COST/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1094,
+      1094,
+      1134,
+      1714,
+      1716
+     ],
+     "page": 15,
+     "quote": "TOTAL NON-CASH OVERHEAD COST/ACRE 1,094 1,094 1,134 1,714 1,716"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      5759,
+      2970,
+      4014,
+      5463,
+      5955
+     ],
+     "page": 15,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 5,759 2,970 4,014 5,463 5,955"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null,
+      null,
+      1350,
+      2700,
+      5400
+     ],
+     "page": 15,
+     "quote": "INCOME/ACRE FROM PRODUCTION 1,350 2,700 5,400"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      5759,
+      2970,
+      2664,
+      2763,
+      555
+     ],
+     "page": 15,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 5,759 2,970 2,664 2,763 555"
+    },
+    {
+     "label": "NET PROFIT/ACRE ABOVE TOTAL COSTS",
+     "kind": "net",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "NET PROFIT/ACRE ABOVE TOTAL COSTS"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST/ACRE",
+     "kind": "accumulated",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      5759,
+      8729,
+      11393,
+      14156,
+      14711
+     ],
+     "page": 15,
+     "quote": "TOTAL ACCUMULATED NET COST/ACRE 5,759 8,729 11,393 14,156 14,711"
     }
    ],
    "yieldRow": {
@@ -2062,9 +2580,9 @@
    {
     "year": 1,
     "label": "1st",
-    "totalCost": null,
+    "totalCost": 4666,
     "returns": null,
-    "netCost": null,
+    "netCost": 4666,
     "accumulated": 4666,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,666 6,542 8,072 9,1 21 7,959"
@@ -2072,9 +2590,9 @@
    {
     "year": 2,
     "label": "2nd",
-    "totalCost": 4666,
+    "totalCost": 1876,
     "returns": null,
-    "netCost": 4666,
+    "netCost": 1876,
     "accumulated": 6542,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,666 6,542 8,072 9,1 21 7,959"
@@ -2082,9 +2600,9 @@
    {
     "year": 3,
     "label": "3rd",
-    "totalCost": 1876,
-    "returns": null,
-    "netCost": 4666,
+    "totalCost": 2880,
+    "returns": 1350,
+    "netCost": 1530,
     "accumulated": 8072,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,666 6,542 8,072 9,1 21 7,959"
@@ -2092,9 +2610,9 @@
    {
     "year": 4,
     "label": "4th",
-    "totalCost": 2880,
-    "returns": 1350,
-    "netCost": 1876,
+    "totalCost": 3749,
+    "returns": 2700,
+    "netCost": 1049,
     "accumulated": 91,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,666 6,542 8,072 9,1 21 7,959"
@@ -2102,20 +2620,10 @@
    {
     "year": 5,
     "label": "5th",
-    "totalCost": 3749,
-    "returns": 2700,
-    "netCost": 1530,
-    "accumulated": 21,
-    "page": 15,
-    "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,666 6,542 8,072 9,1 21 7,959"
-   },
-   {
-    "year": 6,
-    "label": "6",
     "totalCost": 4238,
     "returns": 5400,
-    "netCost": 1049,
-    "accumulated": 7959,
+    "netCost": -1162,
+    "accumulated": 21,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 4,666 6,542 8,072 9,1 21 7,959"
    }

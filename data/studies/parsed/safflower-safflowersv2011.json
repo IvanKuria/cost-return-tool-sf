@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/63/a9/63a948b0-8cef-4843-b66c-ac27006f726f/safflowersv2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/safflower",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -24,9 +24,19 @@
  "assumptions": {
   "acresFarmed": null,
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 22,
+   "unit": "cwt",
+   "page": 10,
+   "quote": "SAFFLOWER 22.00 cwt 16.50 363"
+  },
   "yieldUnit": "cwt",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 16.5,
+   "unit": "$/cwt",
+   "page": 10,
+   "quote": "SAFFLOWER 22.00 cwt 16.50 363"
+  },
   "returns": [
    {
     "name": "SAFFLOWER",
@@ -36,87 +46,6 @@
     "value": 363,
     "page": 10,
     "quote": "SAFFLOWER 22.00 cwt 16.50 363"
-   },
-   {
-    "name": "Aqua Injector",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 2.75,
-    "value": 3,
-    "page": 10,
-    "quote": "Aqua Injector 1.00 acre 2.75 3"
-   },
-   {
-    "name": "Roundup WeatherMax",
-    "quantity": 22,
-    "unit": "floz",
-    "price": 0.46,
-    "value": 10,
-    "page": 10,
-    "quote": "Roundup WeatherMax 22.00 floz 0.46 10"
-   },
-   {
-    "name": "Treflan HFP",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 4.74,
-    "value": 9,
-    "page": 10,
-    "quote": "Treflan HFP 2.00 pint 4.74 9"
-   },
-   {
-    "name": "Safflower",
-    "quantity": 22,
-    "unit": "lb",
-    "price": 0.61,
-    "value": 13,
-    "page": 10,
-    "quote": "Safflower 22.00 lb 0.61 13"
-   },
-   {
-    "name": "Water",
-    "quantity": 6,
-    "unit": "acin",
-    "price": 1.76,
-    "value": 11,
-    "page": 10,
-    "quote": "Water 6.00 acin 1.76 11"
-   },
-   {
-    "name": "Labor (machine)",
-    "quantity": 2.38,
-    "unit": "hrs",
-    "price": 15.55,
-    "value": 37,
-    "page": 10,
-    "quote": "Labor (machine) 2.38 hrs 15.55 37"
-   },
-   {
-    "name": "Labor (non-machine)",
-    "quantity": 0.3,
-    "unit": "hrs",
-    "price": 12.6,
-    "value": 4,
-    "page": 10,
-    "quote": "Labor (non-machine) 0.30 hrs 12.60 4"
-   },
-   {
-    "name": "Fuel - Gas",
-    "quantity": 0.74,
-    "unit": "gal",
-    "price": 3.1,
-    "value": 2,
-    "page": 10,
-    "quote": "Fuel - Gas 0.74 gal 3.10 2"
-   },
-   {
-    "name": "Fuel - Diesel",
-    "quantity": 13.91,
-    "unit": "gal",
-    "price": 2.6,
-    "value": 36,
-    "page": 10,
-    "quote": "Fuel - Diesel 13.91 gal 2.60 36"
    }
   ],
   "interestRatePct": null,
@@ -172,7 +101,12 @@
    "page": 9,
    "quote": "TOTAL COSTS/ACRE 350"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 363,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "SAFFLOWER 22.00 cwt 16.50 363"
+  },
   "netReturnsAboveOperating": {
    "value": 157,
    "unit": "$/acre",
@@ -1165,6 +1099,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -1172,6 +1108,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1181,12 +1118,9 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
@@ -1195,7 +1129,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 10 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
    "3 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)"
   ]

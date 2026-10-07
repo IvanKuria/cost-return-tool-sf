@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/ef/85/ef8541d9-cc27-4b4a-a9bb-7442b559c075/2017peachsvsjv-lcling.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/peaches",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2017,
   "priceYear": {
@@ -2056,7 +2056,7 @@
     "label": "2nd",
     "totalCost": 1795,
     "returns": null,
-    "netCost": 5462,
+    "netCost": 1795,
     "accumulated": 7257,
     "page": 14,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,462 7,257 7,939 6,559"
@@ -2066,7 +2066,7 @@
     "label": "3rd",
     "totalCost": 3622,
     "returns": 2940,
-    "netCost": 1795,
+    "netCost": 682,
     "accumulated": 7939,
     "page": 14,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,462 7,257 7,939 6,559"
@@ -2076,7 +2076,7 @@
     "label": "4th",
     "totalCost": 4500,
     "returns": 5880,
-    "netCost": 682,
+    "netCost": -1380,
     "accumulated": 6559,
     "page": 14,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 5,462 7,257 7,939 6,559"

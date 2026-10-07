@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f9/c1/f9c1777a-1c0e-4231-9d59-15e5aa3da588/pearsnc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pears",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -1460,22 +1460,7 @@
      "quote": "Fertilize - Nitrogen (urea) 38 41 58 67 67 67"
     },
     {
-     "label": "Weed: Disc middles 4X, year 1, mow 7X, years 2-4, spray 1X (Roundup) +",
-     "kind": "operation",
-     "section": "Cultural Costs",
-     "values": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 14,
-     "quote": "Weed: Disc middles 4X, year 1, mow 7X, years 2-4, spray 1X (Roundup) +"
-    },
-    {
-     "label": "mow 5X, years 5+",
+     "label": "Weed: Disc middles 4X, year 1, mow 7X, years 2-4, spray 1X (Roundup) + mow 5X, years 5+",
      "kind": "operation",
      "section": "Cultural Costs",
      "values": [
@@ -1487,7 +1472,7 @@
       86
      ],
      "page": 14,
-     "quote": "mow 5X, years 5+ 51 103 103 103 86 86"
+     "quote": "Weed: Disc middles 4X, year 1, mow 7X, years 2-4, spray 1X (Roundup) + mow 5X, years 5+ 51 103 103 103 86 86"
     },
     {
      "label": "Weed: Strip spray",
@@ -1610,22 +1595,7 @@
      "quote": "Disease: Pear scab (Ziram, Syllit, Manzate) 71 71"
     },
     {
-     "label": "Disease: Blight/scab/codling moth (Badge 2X, Agrimycin, Mycoshield,",
-     "kind": "operation",
-     "section": "Cultural Costs",
-     "values": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 14,
-     "quote": "Disease: Blight/scab/codling moth (Badge 2X, Agrimycin, Mycoshield,"
-    },
-    {
-     "label": "Syllit, Intrepid, Ziram)",
+     "label": "Disease: Blight/scab/codling moth (Badge 2X, Agrimycin, Mycoshield, Syllit, Intrepid, Ziram)",
      "kind": "operation",
      "section": "Cultural Costs",
      "values": [
@@ -1637,7 +1607,7 @@
       97
      ],
      "page": 14,
-     "quote": "Syllit, Intrepid, Ziram) 97 97"
+     "quote": "Disease: Blight/scab/codling moth (Badge 2X, Agrimycin, Mycoshield, Syllit, Intrepid, Ziram) 97 97"
     },
     {
      "label": "Vertebrate: Gophers (bait)",

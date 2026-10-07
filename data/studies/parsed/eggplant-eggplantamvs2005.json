@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a4/f8/a4f8ae8d-c0d4-4f6a-8a30-71a46258b6bd/eggplantamvs2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/eggplant",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -29,10 +29,30 @@
    "page": 3,
    "quote": "In this study 20 acres are planted to American eggplant."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 2450,
+   "unit": "box",
+   "page": 9,
+   "quote": "American Eggplant 2,450.00 box 7.00 17,150"
+  },
+  "yieldUnit": "box",
+  "pricePerUnit": {
+   "value": 7,
+   "unit": "$/box",
+   "page": 9,
+   "quote": "American Eggplant 2,450.00 box 7.00 17,150"
+  },
+  "returns": [
+   {
+    "name": "American Eggplant",
+    "quantity": 2450,
+    "unit": "box",
+    "price": 7,
+    "value": 17150,
+    "page": 9,
+    "quote": "American Eggplant 2,450.00 box 7.00 17,150"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -89,7 +109,12 @@
   },
   "nonCashOverheadTotal": null,
   "totalCost": null,
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 17150,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "American Eggplant 2,450.00 box 7.00 17,150"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [],
@@ -877,11 +902,14 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "operatingTotal",
    "cashOverheadTotal",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -892,14 +920,11 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
    "acresFarmed",
    "nonCashOverheadTotal",
    "totalCost",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",

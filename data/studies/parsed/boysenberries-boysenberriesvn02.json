@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/7f/02/7f02fe7a-64c0-4991-b809-dfbbd3f01cfb/boysenberriesvn02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/boysenberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -60,132 +60,6 @@
     "value": 19200,
     "page": 13,
     "quote": "Process-Frozen 6.00 ton 3,200.00 19,200"
-   },
-   {
-    "name": "Devrinol 50 DF",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 10.02,
-    "value": 20,
-    "page": 13,
-    "quote": "Devrinol 50 DF 2.00 lb 10.02 20"
-   },
-   {
-    "name": "Water-Drip Irrigation",
-    "quantity": 3.36,
-    "unit": "acft",
-    "price": 39,
-    "value": 131,
-    "page": 13,
-    "quote": "Water-Drip Irrigation 3.36 acft 39.00 131"
-   },
-   {
-    "name": "Water-Flood Irrigation",
-    "quantity": 0.22,
-    "unit": "acft",
-    "price": 5,
-    "value": 1,
-    "page": 13,
-    "quote": "Water-Flood Irrigation 0.22 acft 5.00 1"
-   },
-   {
-    "name": "Liquid Lime Sulfur",
-    "quantity": 15,
-    "unit": "gal",
-    "price": 1.25,
-    "value": 19,
-    "page": 13,
-    "quote": "Liquid Lime Sulfur 15.00 gal 1.25 19"
-   },
-   {
-    "name": "UN 32",
-    "quantity": 69.8,
-    "unit": "gal",
-    "price": 0.92,
-    "value": 64,
-    "page": 13,
-    "quote": "UN 32 69.80 gal 0.92 64"
-   },
-   {
-    "name": "Aliette WDG",
-    "quantity": 5,
-    "unit": "lb",
-    "price": 13.11,
-    "value": 66,
-    "page": 13,
-    "quote": "Aliette WDG 5.00 lb 13.11 66"
-   },
-   {
-    "name": "Kocide 101",
-    "quantity": 4,
-    "unit": "lb",
-    "price": 2.59,
-    "value": 10,
-    "page": 13,
-    "quote": "Kocide 101 4.00 lb 2.59 10"
-   },
-   {
-    "name": "Tray w/12 shells",
-    "quantity": 1848,
-    "unit": "flat",
-    "price": 0.9,
-    "value": 1663,
-    "page": 13,
-    "quote": "Tray w/12 shells 1,848.00 flat 0.90 1,663"
-   },
-   {
-    "name": "Plastic Crate:Processing",
-    "quantity": 858,
-    "unit": "crate",
-    "price": 1.25,
-    "value": 1073,
-    "page": 13,
-    "quote": "Plastic Crate:Processing 858.00 crate 1.25 1,073"
-   },
-   {
-    "name": "Process:Freezing",
-    "quantity": 12000,
-    "unit": "lb",
-    "price": 0.25,
-    "value": 3000,
-    "page": 13,
-    "quote": "Process:Freezing 12,000.00 lb 0.25 3,000"
-   },
-   {
-    "name": "Labor (machine)",
-    "quantity": 6.59,
-    "unit": "hrs",
-    "price": 14.07,
-    "value": 93,
-    "page": 13,
-    "quote": "Labor (machine) 6.59 hrs 14.07 93"
-   },
-   {
-    "name": "Labor (non-machine)",
-    "quantity": 634.52,
-    "unit": "hrs",
-    "price": 9.05,
-    "value": 5742,
-    "page": 13,
-    "quote": "Labor (non-machine) 634.52 hrs 9.05 5,742"
-   },
-   {
-    "name": "Fuel - Gas",
-    "quantity": 5.17,
-    "unit": "gal",
-    "price": 1.51,
-    "value": 8,
-    "page": 13,
-    "quote": "Fuel - Gas 5.17 gal 1.51 8"
-   },
-   {
-    "name": "Fuel - Diesel",
-    "quantity": 9.37,
-    "unit": "gal",
-    "price": 1.26,
-    "value": 12,
-    "page": 13,
-    "quote": "Fuel - Diesel 9.37 gal 1.26 12"
    }
   ],
   "interestRatePct": null,
@@ -1413,6 +1287,314 @@
      ],
      "page": 10,
      "quote": "TOTAL OPERATING COSTS/ACRE 6,896 8,830"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      300,
+      300
+     ],
+     "page": 11,
+     "quote": "Office Expense 300 300"
+    },
+    {
+     "label": "Sanitation Fees",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      90,
+      90
+     ],
+     "page": 11,
+     "quote": "Sanitation Fees 90 90"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      13,
+      13
+     ],
+     "page": 11,
+     "quote": "Liability Insurance 13 13"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      31,
+      25
+     ],
+     "page": 11,
+     "quote": "Property Taxes 31 25"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      19,
+      15
+     ],
+     "page": 11,
+     "quote": "Property Insurance 19 15"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      172,
+      172
+     ],
+     "page": 11,
+     "quote": "Investment Repairs 172 172"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      625,
+      615
+     ],
+     "page": 11,
+     "quote": "TOTAL CASH OVERHEAD COSTS 625 615"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7521,
+      9445
+     ],
+     "page": 11,
+     "quote": "TOTAL CASH COSTS/ACRE 7,521 9,445"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      9621
+     ],
+     "page": 11,
+     "quote": "INCOME/ACRE FROM PRODUCTION 9,621"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7521,
+      9445
+     ],
+     "page": 11,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 7,521 9,445"
+    },
+    {
+     "label": "PROFIT/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      176
+     ],
+     "page": 11,
+     "quote": "PROFIT/ACRE ABOVE CASH COSTS 176"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      7521,
+      7345
+     ],
+     "page": 11,
+     "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,521 7,345"
+    },
+    {
+     "label": "Non-Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Non-Cash Overhead Costs:"
+    },
+    {
+     "label": "Capital Recovery Cost",
+     "kind": "heading",
+     "section": "Capital Recovery Cost",
+     "values": [
+      null,
+      null
+     ],
+     "page": 11,
+     "quote": "Capital Recovery Cost:"
+    },
+    {
+     "label": "Shop Building",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      131,
+      131
+     ],
+     "page": 11,
+     "quote": "Shop Building 131 131"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      29,
+      29
+     ],
+     "page": 11,
+     "quote": "Shop Tools 29 29"
+    },
+    {
+     "label": "Fuel Tank & Pump",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      43,
+      43
+     ],
+     "page": 11,
+     "quote": "Fuel Tank & Pump 43 43"
+    },
+    {
+     "label": "Well w/20 hp Pump",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      63,
+      40
+     ],
+     "page": 11,
+     "quote": "Well w/20 hp Pump 63 40"
+    },
+    {
+     "label": "Drip Irrigation System",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      40,
+      69
+     ],
+     "page": 11,
+     "quote": "Drip Irrigation System 40 69"
+    },
+    {
+     "label": "Berry Crop Establishment",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      0,
+      63
+     ],
+     "page": 11,
+     "quote": "Berry Crop Establishment 0 63"
+    },
+    {
+     "label": "Land @ $8,000/Acre",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      13,
+      13
+     ],
+     "page": 11,
+     "quote": "Land @ $8,000/Acre 13 13"
+    },
+    {
+     "label": "Equipment",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      179,
+      28
+     ],
+     "page": 11,
+     "quote": "Equipment 179 28"
+    },
+    {
+     "label": "TOTAL INTEREST ON INVESTMENT",
+     "kind": "total",
+     "section": "Capital Recovery Cost",
+     "values": [
+      498,
+      416
+     ],
+     "page": 11,
+     "quote": "TOTAL INTEREST ON INVESTMENT 498 416"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Capital Recovery Cost",
+     "values": [
+      8019,
+      9861
+     ],
+     "page": 11,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 8,019 9,861"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Capital Recovery Cost",
+     "values": [
+      null,
+      176
+     ],
+     "page": 11,
+     "quote": "INCOME/ACRE FROM PRODUCTION 176"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Capital Recovery Cost",
+     "values": [
+      8019,
+      9685
+     ],
+     "page": 11,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 8,019 9,685"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST/ACRE",
+     "kind": "accumulated",
+     "section": "Capital Recovery Cost",
+     "values": [
+      8019,
+      17704
+     ],
+     "page": 11,
+     "quote": "TOTAL ACCUMULATED NET COST/ACRE 8,019 17,704"
     }
    ],
    "yieldRow": {
@@ -1509,7 +1691,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
    "establishment year 2: running net 16966 differs from printed accumulated 7345"
   ]

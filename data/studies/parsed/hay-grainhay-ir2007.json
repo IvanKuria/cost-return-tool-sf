@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/04/d2/04d230cb-c06d-4aff-b4ca-f081dce59356/grainhay_ir2007.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/hay",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2007,
   "priceYear": {
@@ -29,15 +29,30 @@
    "page": 3,
    "quote": "Grain hay is planted on 62 acres."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
+  "yieldPerAcre": {
+   "value": 4.5,
+   "unit": "Tons",
+   "page": 9,
+   "quote": "Grain Hay 4.50 Tons 90 405"
+  },
+  "yieldUnit": "Tons",
   "pricePerUnit": {
    "value": 90,
-   "unit": "$/ton",
-   "page": 4,
-   "quote": "A price of $90 per ton for hay is used to calculate returns above several cost levels."
+   "unit": "$/Tons",
+   "page": 9,
+   "quote": "Grain Hay 4.50 Tons 90 405"
   },
-  "returns": [],
+  "returns": [
+   {
+    "name": "Grain Hay",
+    "quantity": 4.5,
+    "unit": "Tons",
+    "price": 90,
+    "value": 405,
+    "page": 9,
+    "quote": "Grain Hay 4.50 Tons 90 405"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -99,7 +114,12 @@
    "page": 8,
    "quote": "TOTAL COSTS/ACRE 431"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 405,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "TOTAL GROSS RETURNS FOR GRAIN HAY 405"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -808,6 +828,7 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -815,6 +836,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -824,12 +846,10 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
    "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
@@ -838,7 +858,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

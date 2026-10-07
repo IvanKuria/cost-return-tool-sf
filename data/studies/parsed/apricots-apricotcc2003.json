@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/20/a3/20a3613f-2ae8-4f0d-9e71-89cd099af990/apricotcc2003.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/apricots",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2003,
   "priceYear": {
@@ -24,9 +24,19 @@
  "assumptions": {
   "acresFarmed": null,
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 3.5,
+   "unit": "ton",
+   "page": 12,
+   "quote": "Apricots for Drying 3.50 ton 375.00 1,313"
+  },
   "yieldUnit": "ton",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 375,
+   "unit": "$/ton",
+   "page": 12,
+   "quote": "Apricots for Drying 3.50 ton 375.00 1,313"
+  },
   "returns": [
    {
     "name": "Apricots for Drying",
@@ -36,114 +46,6 @@
     "value": 1313,
     "page": 12,
     "quote": "Apricots for Drying 3.50 ton 375.00 1,313"
-   },
-   {
-    "name": "Asana XL",
-    "quantity": 10,
-    "unit": "floz",
-    "price": 1.04,
-    "value": 10,
-    "page": 12,
-    "quote": "Asana XL 10.00 floz 1.04 10"
-   },
-   {
-    "name": "Superior Spray Oil",
-    "quantity": 2,
-    "unit": "gal",
-    "price": 3.19,
-    "value": 6,
-    "page": 12,
-    "quote": "Superior Spray Oil 2.00 gal 3.19 6"
-   },
-   {
-    "name": "Rovral 4F",
-    "quantity": 1.5,
-    "unit": "pt",
-    "price": 26.5,
-    "value": 40,
-    "page": 12,
-    "quote": "Rovral 4F 1.50 pt 26.50 40"
-   },
-   {
-    "name": "Roundup Ultramax",
-    "quantity": 0.44,
-    "unit": "pt",
-    "price": 7.25,
-    "value": 3,
-    "page": 12,
-    "quote": "Roundup Ultramax 0.44 pt 7.25 3"
-   },
-   {
-    "name": "Goal 2XL",
-    "quantity": 1.75,
-    "unit": "pt",
-    "price": 15,
-    "value": 26,
-    "page": 12,
-    "quote": "Goal 2XL 1.75 pt 15.00 26"
-   },
-   {
-    "name": "Water",
-    "quantity": 18,
-    "unit": "acin",
-    "price": 7.9,
-    "value": 142,
-    "page": 12,
-    "quote": "Water 18.00 acin 7.90 142"
-   },
-   {
-    "name": "Harvest – Hand Pick",
-    "quantity": 3.5,
-    "unit": "ton",
-    "price": 100,
-    "value": 350,
-    "page": 12,
-    "quote": "Harvest – Hand Pick 3.50 ton 100.00 350"
-   },
-   {
-    "name": "Hauling",
-    "quantity": 3.5,
-    "unit": "ton",
-    "price": 10,
-    "value": 35,
-    "page": 12,
-    "quote": "Hauling 3.50 ton 10.00 35"
-   },
-   {
-    "name": "Leaf Analysis",
-    "quantity": 0.33,
-    "unit": "each",
-    "price": 15,
-    "value": 5,
-    "page": 12,
-    "quote": "Leaf Analysis 0.33 each 15.00 5"
-   },
-   {
-    "name": "Labor (machine)",
-    "quantity": 4.75,
-    "unit": "hrs",
-    "price": 14.5,
-    "value": 69,
-    "page": 12,
-    "quote": "Labor (machine) 4.75 hrs 14.50 69"
-   },
-   {
-    "name": "Labor (non-machine)",
-    "quantity": 43.64,
-    "unit": "hrs",
-    "price": 10.88,
-    "value": 475,
-    "page": 12,
-    "quote": "Labor (non-machine) 43.64 hrs 10.88 475"
-   },
-   {
-    "name": "Fuel - Diesel",
-    "quantity": 11.77,
-    "unit": "gal",
-    "price": 1.11,
-    "value": 13,
-    "page": 12,
-    "quote": "Fuel - Diesel 11.77 gal 1.11 13"
    }
   ],
   "interestRatePct": null,
@@ -207,7 +109,12 @@
    "page": 11,
    "quote": "TOTAL COSTS/ACRE 2,790"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1313,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "Apricots for Drying 3.50 ton 375.00 1,313"
+  },
   "netReturnsAboveOperating": {
    "value": 107,
    "unit": "$/acre",
@@ -1473,7 +1380,7 @@
   "years": [
    {
     "year": 1,
-    "label": "= January to December",
+    "label": "1st",
     "totalCost": 1521,
     "returns": null,
     "netCost": 1521,
@@ -1483,7 +1390,7 @@
    },
    {
     "year": 2,
-    "label": "Year:",
+    "label": "2nd",
     "totalCost": 674,
     "returns": null,
     "netCost": 674,
@@ -1493,7 +1400,7 @@
    },
    {
     "year": 3,
-    "label": "1st",
+    "label": "3rd",
     "totalCost": 890,
     "returns": 188,
     "netCost": 703,
@@ -1503,7 +1410,7 @@
    },
    {
     "year": 4,
-    "label": "2nd",
+    "label": "4th",
     "totalCost": 972,
     "returns": 375,
     "netCost": 597,
@@ -1556,12 +1463,15 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1575,18 +1485,14 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct"
   ],
   "warnings": [
-   "Table 2 lists 13 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

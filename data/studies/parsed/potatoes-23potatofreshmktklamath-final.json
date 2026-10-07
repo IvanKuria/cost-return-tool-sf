@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/05/10/23PotatoFreshMktKlamath-Final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/potatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2023,
   "priceYear": {
@@ -29,10 +29,30 @@
    "quote": "The 1,500-acre farm has 50 acres consisting of roads, irrigation systems, farmstead, and unused or unusable land."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 490,
+   "unit": "Cwt",
+   "page": 11,
+   "quote": "Potatoes Fresh Mkt 490 Cwt 12 5880"
+  },
+  "yieldUnit": "Cwt",
+  "pricePerUnit": {
+   "value": 12,
+   "unit": "$/Cwt",
+   "page": 11,
+   "quote": "Potatoes Fresh Mkt 490 Cwt 12 5880"
+  },
+  "returns": [
+   {
+    "name": "Potatoes Fresh Mkt",
+    "quantity": 490,
+    "unit": "Cwt",
+    "price": 12,
+    "value": 5880,
+    "page": 11,
+    "quote": "Potatoes Fresh Mkt 490 Cwt 12 5880"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -89,7 +109,12 @@
    "page": 12,
    "quote": "TOTAL COSTS/ACRE 3894.51"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 5880,
+   "unit": "$/acre",
+   "page": 11,
+   "quote": "TOTAL GROSS RETURNS 5880"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": {
    "value": 1985.49,
@@ -1276,6 +1301,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1284,6 +1311,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1293,11 +1321,8 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
@@ -1305,8 +1330,6 @@
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
-  "warnings": [
-   "Table 2 found but no GROSS RETURNS block"
-  ]
+  "warnings": []
  }
 }

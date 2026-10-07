@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/11/30/2023moderntableolivedraft11302023.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2023,
   "priceYear": null
@@ -774,7 +774,1051 @@
  },
  "monthly": null,
  "establishment": {
-  "table": null,
+  "table": {
+   "title": "COSTS PER ACRE TO ESTABLISH A MODERN TABLE OLIVE ORCHARD",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th",
+    "6th"
+   ],
+   "rows": [
+    {
+     "label": "Pre-Plant Costs",
+     "kind": "heading",
+     "section": "Pre-Plant Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Pre-Plant Costs:"
+    },
+    {
+     "label": "Laser Leveling",
+     "kind": "operation",
+     "section": "Pre-Plant Costs",
+     "values": [
+      500,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Laser Leveling 500"
+    },
+    {
+     "label": "Rip 3' Depth, 2-Way",
+     "kind": "operation",
+     "section": "Pre-Plant Costs",
+     "values": [
+      600,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Rip 3' Depth, 2-Way 600"
+    },
+    {
+     "label": "Stubble Disc 2X",
+     "kind": "operation",
+     "section": "Pre-Plant Costs",
+     "values": [
+      80,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Stubble Disc 2X 80"
+    },
+    {
+     "label": "Pull Ridges",
+     "kind": "operation",
+     "section": "Pre-Plant Costs",
+     "values": [
+      20,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Pull Ridges 20"
+    },
+    {
+     "label": "Finish Disc",
+     "kind": "operation",
+     "section": "Pre-Plant Costs",
+     "values": [
+      40,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Finish Disc 40"
+    },
+    {
+     "label": "Triplane",
+     "kind": "operation",
+     "section": "Pre-Plant Costs",
+     "values": [
+      75,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Triplane 75"
+    },
+    {
+     "label": "TOTAL PRE-PLANT COSTS",
+     "kind": "subtotal",
+     "section": "Pre-Plant Costs",
+     "values": [
+      1315,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "TOTAL PRE-PLANT COSTS 1,315"
+    },
+    {
+     "label": "Planting Costs",
+     "kind": "heading",
+     "section": "Planting Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Planting Costs:"
+    },
+    {
+     "label": "Survey and Layout Orchard",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      35,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Survey and Layout Orchard 35"
+    },
+    {
+     "label": "Trellis Install & Tree Planting (Materials and Labor)",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      2100,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Trellis Install & Tree Planting (Materials and Labor) 2100"
+    },
+    {
+     "label": "Trees: 242 Per Acre",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      1210,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Trees: 242 Per Acre 1210"
+    },
+    {
+     "label": "Drip Irrigation (Double Line) Install- Labor and Materials",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      2100,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Drip Irrigation (Double Line) Install- Labor and Materials 2100"
+    },
+    {
+     "label": "Wrap Trees – Labor and Materials",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      75,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Wrap Trees – Labor and Materials 75"
+    },
+    {
+     "label": "Replant Trees (3% in 2nd Year) No Tree Cost, Only Labor",
+     "kind": "operation",
+     "section": "Planting Costs",
+     "values": [
+      0,
+      10,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Replant Trees (3% in 2nd Year) No Tree Cost, Only Labor 0 10"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "Planting Costs",
+     "values": [
+      5520,
+      10,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "TOTAL PLANTING COSTS 5,520 10"
+    },
+    {
+     "label": "Cultural Costs",
+     "kind": "heading",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Cultural Costs:"
+    },
+    {
+     "label": "Irrigate (Water & Labor)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      243,
+      358,
+      358,
+      471,
+      583,
+      583
+     ],
+     "page": 12,
+     "quote": "Irrigate (Water & Labor) 243 358 358 471 583 583"
+    },
+    {
+     "label": "Fertigate- Nitrogen (CAN17 1st Year, UAN-32 Year 2+)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      60,
+      53,
+      73,
+      93,
+      113,
+      113
+     ],
+     "page": 12,
+     "quote": "Fertigate- Nitrogen (CAN17 1st Year, UAN-32 Year 2+) 60 53 73 93 113 113"
+    },
+    {
+     "label": "Pests- Weeds/Pre-emergent",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+     ],
+     "page": 12,
+     "quote": "Pests- Weeds/Pre-emergent 64 64 64 64 64 64"
+    },
+    {
+     "label": "Pests- Weeds/Mow Middles 5X",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      56,
+      56,
+      56,
+      56,
+      56,
+      56
+     ],
+     "page": 12,
+     "quote": "Pests- Weeds/Mow Middles 5X 56 56 56 56 56 56"
+    },
+    {
+     "label": "Pests- Disease/Olive Knot (1X Yr. 1-2, 2X Yr. 3+)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      54,
+      54,
+      172,
+      172,
+      172,
+      172
+     ],
+     "page": 12,
+     "quote": "Pests- Disease/Olive Knot (1X Yr. 1-2, 2X Yr. 3+) 54 54 172 172 172 172"
+    },
+    {
+     "label": "Pests- Olive Fruit Fly 15X",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      132,
+      132,
+      132,
+      132
+     ],
+     "page": 12,
+     "quote": "Pests- Olive Fruit Fly 15X 132 132 132 132"
+    },
+    {
+     "label": "PCA",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      35,
+      35,
+      35,
+      35
+     ],
+     "page": 12,
+     "quote": "PCA 35 35 35 35"
+    },
+    {
+     "label": "Hand Prune, Train, & Tie (Year 1-3)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      100,
+      100,
+      100,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Hand Prune, Train, & Tie (Year 1-3) 100 100 100"
+    },
+    {
+     "label": "Pruning- Mechanical Hedging (alternating rows)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      100,
+      100,
+      100
+     ],
+     "page": 12,
+     "quote": "Pruning- Mechanical Hedging (alternating rows) 100 100 100"
+    },
+    {
+     "label": "Pests- Weeds/Strip Spray 3X- Gramoxone Yr.1-3, RU Yr.3+",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      54,
+      54,
+      54,
+      81,
+      81,
+      81
+     ],
+     "page": 12,
+     "quote": "Pests- Weeds/Strip Spray 3X- Gramoxone Yr.1-3, RU Yr.3+ 54 54 54 81 81 81"
+    },
+    {
+     "label": "Pruning- Mechanical Skirting",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      50,
+      50,
+      50
+     ],
+     "page": 12,
+     "quote": "Pruning- Mechanical Skirting 50 50 50"
+    },
+    {
+     "label": "Hand Pruning (Year 3+, every third year, 1/3 of cost shown)",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      75,
+      75,
+      75
+     ],
+     "page": 12,
+     "quote": "Hand Pruning (Year 3+, every third year, 1/3 of cost shown) 75 75 75"
+    },
+    {
+     "label": "Shredding Brush",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      100,
+      100
+     ],
+     "page": 12,
+     "quote": "Shredding Brush 100 100"
+    },
+    {
+     "label": "Trellis Removal",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      300,
+      null
+     ],
+     "page": 12,
+     "quote": "Trellis Removal 300"
+    },
+    {
+     "label": "Pickup Truck Use",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      117,
+      117,
+      117,
+      117,
+      117,
+      117
+     ],
+     "page": 12,
+     "quote": "Pickup Truck Use 117 117 117 117 117 117"
+    },
+    {
+     "label": "ATV Use",
+     "kind": "operation",
+     "section": "Cultural Costs",
+     "values": [
+      99,
+      99,
+      99,
+      99,
+      99,
+      99
+     ],
+     "page": 12,
+     "quote": "ATV Use 99 99 99 99 99 99"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "Cultural Costs",
+     "values": [
+      849,
+      957,
+      1261,
+      1545,
+      2077,
+      1777
+     ],
+     "page": 12,
+     "quote": "TOTAL CULTURAL COSTS 849 957 1,261 1,545 2,077 1,777"
+    },
+    {
+     "label": "Harvest",
+     "kind": "heading",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Harvest:"
+    },
+    {
+     "label": "Harvest (Hand Yr. 3-4, Mechanical Yr. 5+)",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      1200,
+      2100,
+      1425,
+      1575
+     ],
+     "page": 12,
+     "quote": "Harvest (Hand Yr. 3-4, Mechanical Yr. 5+) 1200 2,100 1,425 1,575"
+    },
+    {
+     "label": "Haul Fruit to Processor",
+     "kind": "operation",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      40,
+      70,
+      90,
+      110
+     ],
+     "page": 12,
+     "quote": "Haul Fruit to Processor 40 70 90 110"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "Harvest",
+     "values": [
+      null,
+      null,
+      1240,
+      2170,
+      1515,
+      1685
+     ],
+     "page": 12,
+     "quote": "TOTAL HARVEST COSTS 1,240 2,170 1,515 1,685"
+    },
+    {
+     "label": "Interest on Operating Capital at 8.50%",
+     "kind": "interest",
+     "section": "Harvest",
+     "values": [
+      457,
+      31,
+      45,
+      66,
+      79,
+      74
+     ],
+     "page": 12,
+     "quote": "Interest on Operating Capital at 8.50% 457 31 45 66 79 74"
+    },
+    {
+     "label": "TOTAL OPERATING COST/ACRE",
+     "kind": "total",
+     "section": "Harvest",
+     "values": [
+      8141,
+      997,
+      2546,
+      3781,
+      3671,
+      3536
+     ],
+     "page": 12,
+     "quote": "TOTAL OPERATING COST/ACRE 8,141 997 2,546 3,781 3,671 3,536"
+    },
+    {
+     "label": "Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "Cash Overhead Costs:"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+     ],
+     "page": 12,
+     "quote": "Liability Insurance 16 16 16 16 16 16"
+    },
+    {
+     "label": "Office Expense",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      75,
+      75,
+      75,
+      75,
+      75,
+      75
+     ],
+     "page": 12,
+     "quote": "Office Expense 75 75 75 75 75 75"
+    },
+    {
+     "label": "Sanitation Fees",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+     ],
+     "page": 12,
+     "quote": "Sanitation Fees 14 14 14 14 14 14"
+    },
+    {
+     "label": "Regulatory Compliance Fees",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+     ],
+     "page": 12,
+     "quote": "Regulatory Compliance Fees 40 40 40 40 40 40"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      232,
+      232,
+      232,
+      288,
+      288,
+      288
+     ],
+     "page": 12,
+     "quote": "Property Taxes 232 232 232 288 288 288"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      16,
+      16,
+      16,
+      20,
+      20,
+      20
+     ],
+     "page": 12,
+     "quote": "Property Insurance 16 16 16 20 20 20"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      195,
+      195,
+      195,
+      251,
+      251,
+      251
+     ],
+     "page": 12,
+     "quote": "Investment Repairs 195 195 195 251 251 251"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      588,
+      588,
+      588,
+      703,
+      703,
+      703
+     ],
+     "page": 12,
+     "quote": "TOTAL CASH OVERHEAD COSTS 588 588 588 703 703 703"
+    },
+    {
+     "label": "TOTAL CASH COSTS/ACRE",
+     "kind": "total",
+     "section": "Cash Overhead Costs",
+     "values": [
+      8728,
+      1585,
+      3134,
+      4484,
+      4375,
+      4240
+     ],
+     "page": 12,
+     "quote": "TOTAL CASH COSTS/ACRE 8,728 1,585 3,134 4,484 4,375 4,240"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      2300,
+      4025,
+      5175,
+      6325
+     ],
+     "page": 12,
+     "quote": "INCOME/ACRE FROM PRODUCTION 2,300 4,025 5,175 6,325"
+    },
+    {
+     "label": "NET CASH COSTS/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      8728,
+      1585,
+      834,
+      459,
+      null,
+      null
+     ],
+     "page": 12,
+     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 8,728 1,585 834 459"
+    },
+    {
+     "label": "PROFIT/ACRE ABOVE CASH COSTS",
+     "kind": "net",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      800,
+      2085
+     ],
+     "page": 12,
+     "quote": "PROFIT/ACRE ABOVE CASH COSTS 800 2,085"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS/ACRE",
+     "kind": "accumulated",
+     "section": "Cash Overhead Costs",
+     "values": [
+      8728,
+      10313,
+      11147,
+      11606,
+      10806,
+      8721
+     ],
+     "page": 12,
+     "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
+    },
+    {
+     "label": "Capital Recovery Cost",
+     "kind": "heading",
+     "section": "Capital Recovery Cost",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "Capital Recovery Cost:"
+    },
+    {
+     "label": "Shop Building",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      283,
+      283,
+      283,
+      283,
+      283,
+      283
+     ],
+     "page": 13,
+     "quote": "Shop Building 283 283 283 283 283 283"
+    },
+    {
+     "label": "Modern Table Olive Orchard Establishment",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      null,
+      null,
+      null,
+      836,
+      836,
+      836
+     ],
+     "page": 13,
+     "quote": "Modern Table Olive Orchard Establishment 836 836 836"
+    },
+    {
+     "label": "Fuel Tank: 2-1000 Gallon",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+     ],
+     "page": 13,
+     "quote": "Fuel Tank: 2-1000 Gallon 25 25 25 25 25 25"
+    },
+    {
+     "label": "Land",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      1260,
+      1260,
+      1260,
+      1260,
+      1260,
+      1260
+     ],
+     "page": 13,
+     "quote": "Land 1,260 1,260 1,260 1,260 1,260 1,260"
+    },
+    {
+     "label": "Well/Pump/Filter",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      467,
+      467,
+      467,
+      467,
+      467,
+      467
+     ],
+     "page": 13,
+     "quote": "Well/Pump/Filter 467 467 467 467 467 467"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+     ],
+     "page": 13,
+     "quote": "Shop Tools 32 32 32 32 32 32"
+    },
+    {
+     "label": "Equipment",
+     "kind": "operation",
+     "section": "Capital Recovery Cost",
+     "values": [
+      53,
+      53,
+      60,
+      60,
+      60,
+      60
+     ],
+     "page": 13,
+     "quote": "Equipment 53 53 60 60 60 60"
+    },
+    {
+     "label": "TOTAL CAPITAL RECOVERY COST",
+     "kind": "subtotal",
+     "section": "Capital Recovery Cost",
+     "values": [
+      2120,
+      2120,
+      2127,
+      2963,
+      2963,
+      2945
+     ],
+     "page": 13,
+     "quote": "TOTAL CAPITAL RECOVERY COST 2,120 2,120 2,127 2,963 2,963 2,945"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Capital Recovery Cost",
+     "values": [
+      10849,
+      3706,
+      5261,
+      7447,
+      7338,
+      7203
+     ],
+     "page": 13,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 10,849 3,706 5,261 7,447 7,338 7,203"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Capital Recovery Cost",
+     "values": [
+      null,
+      null,
+      2300,
+      4025,
+      5175,
+      6325
+     ],
+     "page": 13,
+     "quote": "INCOME/ACRE FROM PRODUCTION 2,300 4,025 5,175 6,325"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Capital Recovery Cost",
+     "values": [
+      10849,
+      3706,
+      2961,
+      3422,
+      2163,
+      878
+     ],
+     "page": 13,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 10,849 3,706 2,961 3,422 2,163 878"
+    },
+    {
+     "label": "NET PROFIT/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Capital Recovery Cost",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 13,
+     "quote": "NET PROFIT/ACRE FOR THE YEAR"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST/ACRE",
+     "kind": "accumulated",
+     "section": "Capital Recovery Cost",
+     "values": [
+      10849,
+      14555,
+      17516,
+      20938,
+      23101,
+      23979
+     ],
+     "page": 13,
+     "quote": "TOTAL ACCUMULATED NET COST/ACRE 10,849 14,555 17,516 20,938 23,101 23,979"
+    }
+   ],
+   "yieldRow": {
+    "label": "Tons Per Acre",
+    "values": [
+     null,
+     null,
+     2,
+     3.5,
+     4.5,
+     5.5
+    ],
+    "quote": "Tons Per Acre 2.0 3.5 4.5 5.5"
+   }
+  },
   "years": [
    {
     "year": 1,
@@ -801,7 +1845,7 @@
     "label": "3rd",
     "totalCost": 3134,
     "returns": 2300,
-    "netCost": 8728,
+    "netCost": 834,
     "accumulated": 11147,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
@@ -811,7 +1855,7 @@
     "label": "4th",
     "totalCost": 4484,
     "returns": 4025,
-    "netCost": 1585,
+    "netCost": 459,
     "accumulated": 11606,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
@@ -821,7 +1865,7 @@
     "label": "5th",
     "totalCost": 4375,
     "returns": 5175,
-    "netCost": 834,
+    "netCost": -800,
     "accumulated": 10806,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"
@@ -831,7 +1875,7 @@
     "label": "6th",
     "totalCost": 4240,
     "returns": 6325,
-    "netCost": 459,
+    "netCost": -2085,
     "accumulated": 8721,
     "page": 12,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 8,728 10,313 11,147 11,606 10,806 8,721"

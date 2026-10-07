@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/eb/30/eb30eff3-7e34-48d1-a633-e1d87ef13d03/beansvn2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -29,15 +29,30 @@
    "quote": "This report is based on a 1,200 non-contiguous acre field and row crop farm on which 200 acres of rented land are planted to common dry beans, double cropped with winter cereal or winter forage."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
+  "yieldPerAcre": {
+   "value": 25,
+   "unit": "cwt",
+   "page": 10,
+   "quote": "GROSS RETURNS: Common Dry Beans 25.00 cwt 40.00 1,000"
+  },
+  "yieldUnit": "cwt",
   "pricePerUnit": {
    "value": 40,
    "unit": "$/cwt",
-   "page": 5,
-   "quote": "An average selling price of $40 per cwt is used to calculate income."
+   "page": 10,
+   "quote": "GROSS RETURNS: Common Dry Beans 25.00 cwt 40.00 1,000"
   },
-  "returns": [],
+  "returns": [
+   {
+    "name": "Common Dry Beans",
+    "quantity": 25,
+    "unit": "cwt",
+    "price": 40,
+    "value": 1000,
+    "page": 10,
+    "quote": "GROSS RETURNS: Common Dry Beans 25.00 cwt 40.00 1,000"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -112,7 +127,12 @@
    "page": 9,
    "quote": "TOTAL COSTS/ACRE 1,065"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1000,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "GROSS RETURNS: Common Dry Beans 25.00 cwt 40.00 1,000"
+  },
   "netReturnsAboveOperating": {
    "value": 249,
    "unit": "$/acre",
@@ -1102,6 +1122,7 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -1112,6 +1133,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1122,9 +1144,7 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
    "interestRatePct",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
@@ -1132,7 +1152,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

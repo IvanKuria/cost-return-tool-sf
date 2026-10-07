@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/69/50/69503a65-9616-44bf-bcac-3c7ebb4c6002/bloodorangevs02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/citrus–blood-orange",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -29,13 +29,18 @@
    "quote": "The hypothetical farm consists of 60 contiguous acres."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 490,
+   "unit": "Crtn",
+   "page": 16,
+   "quote": "Blood Oranges 490.00 Crtn 16.00 7,840"
+  },
   "yieldUnit": "Crtn",
   "pricePerUnit": {
    "value": 16,
-   "unit": "$/carton",
-   "page": 8,
-   "quote": "A price of $16.00 per carton is based on the average grower return over the past two seasons."
+   "unit": "$/Crtn",
+   "page": 16,
+   "quote": "Blood Oranges 490.00 Crtn 16.00 7,840"
   },
   "returns": [
    {
@@ -46,132 +51,6 @@
     "value": 7840,
     "page": 16,
     "quote": "Blood Oranges 490.00 Crtn 16.00 7,840"
-   },
-   {
-    "name": "Water- Frost",
-    "quantity": 2.2,
-    "unit": "acin",
-    "price": 6.67,
-    "value": 15,
-    "page": 16,
-    "quote": "Water- Frost 2.20 acin 6.67 15"
-   },
-   {
-    "name": "Wind Machine Operation",
-    "quantity": 100,
-    "unit": "hour",
-    "price": 1.86,
-    "value": 185,
-    "page": 16,
-    "quote": "Wind Machine Operation 100.00 hour 1.86 185"
-   },
-   {
-    "name": "Water",
-    "quantity": 30,
-    "unit": "acin",
-    "price": 6.67,
-    "value": 200,
-    "page": 16,
-    "quote": "Water 30.00 acin 6.67 200"
-   },
-   {
-    "name": "Zinc Sulfate 36%",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 0.4,
-    "value": 1,
-    "page": 16,
-    "quote": "Zinc Sulfate 36% 2.00 lb 0.40 1"
-   },
-   {
-    "name": "Techmangan (MnSO4)",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 0.4,
-    "value": 1,
-    "page": 16,
-    "quote": "Techmangan (MnSO4) 2.00 lb 0.40 1"
-   },
-   {
-    "name": "Gypsum Soluble",
-    "quantity": 1,
-    "unit": "ton",
-    "price": 95,
-    "value": 95,
-    "page": 16,
-    "quote": "Gypsum Soluble 1.00 ton 95.00 95"
-   },
-   {
-    "name": "Compost, Haul, Spread",
-    "quantity": 2,
-    "unit": "ton",
-    "price": 40,
-    "value": 80,
-    "page": 16,
-    "quote": "Compost, Haul, Spread 2.00 ton 40.00 80"
-   },
-   {
-    "name": "Citrus Research/55lb box",
-    "quantity": 477,
-    "unit": "box",
-    "price": 0.02,
-    "value": 11,
-    "page": 16,
-    "quote": "Citrus Research/55lb box 477.00 box 0.02 11"
-   },
-   {
-    "name": "Tristeza Eradication",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 10,
-    "value": 10,
-    "page": 16,
-    "quote": "Tristeza Eradication 1.00 acre 10.00 10"
-   },
-   {
-    "name": "Princep 90S",
-    "quantity": 4,
-    "unit": "lb",
-    "price": 4.56,
-    "value": 18,
-    "page": 16,
-    "quote": "Princep 90S 4.00 lb 4.56 18"
-   },
-   {
-    "name": "Karmex",
-    "quantity": 4,
-    "unit": "lb",
-    "price": 5.59,
-    "value": 22,
-    "page": 16,
-    "quote": "Karmex 4.00 lb 5.59 22"
-   },
-   {
-    "name": "Roundup Ultra",
-    "quantity": 0.6,
-    "unit": "pint",
-    "price": 6.75,
-    "value": 4,
-    "page": 16,
-    "quote": "Roundup Ultra 0.60 pint 6.75 4"
-   },
-   {
-    "name": "Dipel ES",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 5.39,
-    "value": 11,
-    "page": 16,
-    "quote": "Dipel ES 2.00 pint 5.39 11"
-   },
-   {
-    "name": "Success",
-    "quantity": 12.4,
-    "unit": "oz",
-    "price": 5.32,
-    "value": 66,
-    "page": 16,
-    "quote": "Success 12.40 oz 5.32 66"
    }
   ],
   "interestRatePct": null,
@@ -235,7 +114,12 @@
    "page": 15,
    "quote": "TOTAL COSTS/ACRE 5,651"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 7840,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "Blood Oranges 490.00 Crtn 16.00 7,840"
+  },
   "netReturnsAboveOperating": {
    "value": 3589,
    "unit": "$/acre",
@@ -1720,7 +1604,7 @@
     },
     {
      "label": "TOTAL COST FOR THE YEAR",
-     "kind": "subtotal",
+     "kind": "total",
      "section": "Non-Cash Overhead Costs",
      "values": [
       3114,
@@ -1801,7 +1685,58 @@
     "quote": "YIELD (Cartons/Acre) 28 207"
    }
   },
-  "years": [],
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 2522,
+    "returns": null,
+    "netCost": 2522,
+    "accumulated": 2522,
+    "page": 13,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 2,522 3,193 3,999 3,895 1,173"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 671,
+    "returns": null,
+    "netCost": 671,
+    "accumulated": 3193,
+    "page": 13,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 2,522 3,193 3,999 3,895 1,173"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 806,
+    "returns": null,
+    "netCost": 806,
+    "accumulated": 3999,
+    "page": 13,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 2,522 3,193 3,999 3,895 1,173"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 1784,
+    "returns": 1888,
+    "netCost": -104,
+    "accumulated": 3895,
+    "page": 13,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 2,522 3,193 3,999 3,895 1,173"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 3454,
+    "returns": 6176,
+    "netCost": -2722,
+    "accumulated": 1173,
+    "page": 13,
+    "quote": "TOTAL ACCUMULATED NET CASH COSTS 2,522 3,193 3,999 3,895 1,173"
+   }
+  ],
   "accumulatedNetCost": {
    "value": 3895,
    "page": 10,
@@ -1838,6 +1773,7 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
    "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -1846,6 +1782,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1860,22 +1797,14 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
    "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct"
   ],
   "warnings": [
-   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]",
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
-   "establishment table: TOTAL COST FOR THE YEAR column 1st prints 3114 but its rows sum to 592",
-   "establishment table: TOTAL COST FOR THE YEAR column 2nd prints 1260 but its rows sum to 589",
-   "establishment table: TOTAL COST FOR THE YEAR column 3rd prints 1659 but its rows sum to 853",
-   "establishment table: TOTAL COST FOR THE YEAR column 4th prints 2636 but its rows sum to 852",
-   "establishment table: TOTAL COST FOR THE YEAR column 5th prints 4306 but its rows sum to 852"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }
 }

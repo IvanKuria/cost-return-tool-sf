@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/10/d1/10d19557-9c32-47ea-89e8-b94cb186536b/cotton2012acalatransgenic.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/cotton",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -43,130 +43,13 @@
     "quote": "Lint (3.25 bales) 1625.00 lb 0.90 1,463"
    },
    {
-    "name": "Orthene",
+    "name": "Seed",
     "quantity": 3.25,
-    "unit": "oz",
-    "price": 0.98,
-    "value": 3,
+    "unit": "bale equivalent",
+    "price": 50,
+    "value": 163,
     "page": 14,
-    "quote": "Orthene 3.25 oz 0.98 3"
-   },
-   {
-    "name": "Zephyr",
-    "quantity": 8,
-    "unit": "floz",
-    "price": 7.46,
-    "value": 60,
-    "page": 14,
-    "quote": "Zephyr 8.00 floz 7.46 60"
-   },
-   {
-    "name": "Carbine 50WG",
-    "quantity": 2.5,
-    "unit": "oz",
-    "price": 6.87,
-    "value": 17,
-    "page": 14,
-    "quote": "Carbine 50WG 2.50 oz 6.87 17"
-   },
-   {
-    "name": "Leverage 2.7",
-    "quantity": 5,
-    "unit": "floz",
-    "price": 3.88,
-    "value": 19,
-    "page": 14,
-    "quote": "Leverage 2.7 5.00 floz 3.88 19"
-   },
-   {
-    "name": "Assail 70WP",
-    "quantity": 1.1,
-    "unit": "oz",
-    "price": 16.82,
-    "value": 19,
-    "page": 14,
-    "quote": "Assail 70WP 1.10 oz 16.82 19"
-   },
-   {
-    "name": "Finish 6 Pro",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 13.75,
-    "value": 28,
-    "page": 14,
-    "quote": "Finish 6 Pro 2.00 pint 13.75 28"
-   },
-   {
-    "name": "Ginstar",
-    "quantity": 6,
-    "unit": "floz",
-    "price": 2.74,
-    "value": 16,
-    "page": 14,
-    "quote": "Ginstar 6.00 floz 2.74 16"
-   },
-   {
-    "name": "Defol 5",
-    "quantity": 1,
-    "unit": "gal",
-    "price": 6.37,
-    "value": 6,
-    "page": 14,
-    "quote": "Defol 5 1.00 gal 6.37 6"
-   },
-   {
-    "name": "Triflurex HFP",
-    "quantity": 96,
-    "unit": "floz",
-    "price": 0.87,
-    "value": 63,
-    "page": 14,
-    "quote": "Triflurex HFP 96.00 floz 0.87 63"
-   },
-   {
-    "name": "Roundup (glyphosate)",
-    "quantity": 1.5,
-    "unit": "pt",
-    "price": 4.52,
-    "value": 7,
-    "page": 14,
-    "quote": "Roundup (glyphosate) 1.50 pt 4.52 7"
-   },
-   {
-    "name": "Shark EW",
-    "quantity": 0.75,
-    "unit": "floz",
-    "price": 9.09,
-    "value": 7,
-    "page": 14,
-    "quote": "Shark EW 0.75 floz 9.09 7"
-   },
-   {
-    "name": "Mepex Gin Out",
-    "quantity": 2,
-    "unit": "floz",
-    "price": 0.39,
-    "value": 1,
-    "page": 14,
-    "quote": "Mepex Gin Out 2.00 floz 0.39 1"
-   },
-   {
-    "name": "Seed transgenic",
-    "quantity": 16,
-    "unit": "lb",
-    "price": 3,
-    "value": 48,
-    "page": 14,
-    "quote": "Seed transgenic 16.00 lb 3.00 48"
-   },
-   {
-    "name": "Seed transgenic technology fee",
-    "quantity": 16,
-    "unit": "lb",
-    "price": 2.74,
-    "value": 44,
-    "page": 14,
-    "quote": "Seed transgenic technology fee 16.00 lb 2.74 44"
+    "quote": "Seed 3.25 bale equivalent 50.00 163"
    }
   ],
   "interestRatePct": null,
@@ -1649,7 +1532,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]",
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/20/e3/20e339eb-2ea7-41f0-8823-26939ff07c06/bpraspberry-cc-finaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/raspberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2017,
   "priceYear": {
@@ -1836,19 +1836,6 @@
      ],
      "page": 13,
      "quote": "* F = Fall Crop; S = Spring Crop"
-    },
-    {
-     "label": "Raspberry Cost and Return Study – Central Coast – University of California",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead (Capital Recovery Cost)",
-     "values": [
-      null,
-      null,
-      null,
-      null
-     ],
-     "page": 13,
-     "quote": "Raspberry Cost and Return Study – Central Coast – University of California"
     }
    ],
    "yieldRow": null
@@ -1860,59 +1847,39 @@
     "totalCost": 11219,
     "returns": null,
     "netCost": 11219,
-    "accumulated": null,
-    "page": 13,
-    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,219 5,742"
-   },
-   {
-    "year": 2,
-    "label": "Prod Yr",
-    "totalCost": 65773,
-    "returns": 71250,
-    "netCost": -5477,
-    "accumulated": null,
-    "page": 13,
-    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,219 5,742"
-   },
-   {
-    "year": 3,
-    "label": "1 Prod Yr",
-    "totalCost": 97869,
-    "returns": 114000,
-    "netCost": -16131,
     "accumulated": 11219,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,219 5,742"
    },
    {
-    "year": 4,
-    "label": "2",
-    "totalCost": 61702,
+    "year": 2,
+    "label": "1",
+    "totalCost": 65773,
     "returns": 71250,
-    "netCost": 11219,
+    "netCost": -5477,
     "accumulated": 5742,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,219 5,742"
    },
    {
-    "year": 1,
-    "label": "1",
-    "totalCost": 11219,
-    "returns": null,
-    "netCost": 11219,
+    "year": 3,
+    "label": "2",
+    "totalCost": 97869,
+    "returns": 114000,
+    "netCost": -16131,
     "accumulated": null,
-    "page": 14,
-    "quote": "TOTAL CASH COSTS/ACRE 11,219"
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,219 5,742"
    },
    {
-    "year": 1,
-    "label": "1",
-    "totalCost": 11219,
-    "returns": null,
-    "netCost": 11219,
+    "year": 4,
+    "label": "3",
+    "totalCost": 61702,
+    "returns": 71250,
+    "netCost": -9548,
     "accumulated": null,
-    "page": 15,
-    "quote": "TOTAL CASH COSTS/ACRE 11,219"
+    "page": 13,
+    "quote": "ACCUMULATED NET CASH COSTS/ACRE 11,219 5,742"
    }
   ],
   "accumulatedNetCost": {

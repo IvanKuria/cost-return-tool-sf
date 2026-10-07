@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/53/39/5339d98f-f575-4eab-8482-b3162d71a8fd/avocadosdrorganic_reports2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/avocados",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -714,14 +714,1037 @@
   "quote": "Monthly Cash Costs per Acre to Produce Avocados in Riverside County using Organic Production Practices in 2011"
  },
  "establishment": {
-  "table": null,
-  "years": [],
-  "accumulatedNetCost": {
-   "value": 2660,
-   "page": 5,
-   "quote": "We used $2,660 per acre including 1 6 1124 installation for an irrigation system (drippers and micro sprinklers 2 11 2060 included). 3 16 2996 4 21 3933 The irrigation system is installed before planting in the first year of 5 26 4869 6 32 establishment."
+  "table": {
+   "title": "Costs per Acre to Establish an Avocado Orchard in Riverside County using Organic Production Practices in 2011",
+   "years": [
+    "Year 1",
+    "Year2",
+    "Year 3",
+    "Year 4",
+    "Year 5",
+    "Year 6"
+   ],
+   "rows": [
+    {
+     "label": "Pre-plant",
+     "kind": "heading",
+     "section": "Pre-plant",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Pre-plant:"
+    },
+    {
+     "label": "Clear Land, Road Built, Orchard Layout",
+     "kind": "operation",
+     "section": "Pre-plant",
+     "values": [
+      2500,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Clear Land, Road Built, Orchard Layout 2500"
+    },
+    {
+     "label": "TOTAL Pre-plant COSTS",
+     "kind": "subtotal",
+     "section": "Pre-plant",
+     "values": [
+      2500,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "TOTAL Pre-plant COSTS 2500"
+    },
+    {
+     "label": "Plant",
+     "kind": "heading",
+     "section": "Plant",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Plant:"
+    },
+    {
+     "label": "Avocado Trees, Stakes, & Labor",
+     "kind": "operation",
+     "section": "Plant",
+     "values": [
+      4814,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Avocado Trees, Stakes, & Labor 4,814"
+    },
+    {
+     "label": "Gypsum & Labor",
+     "kind": "operation",
+     "section": "Plant",
+     "values": [
+      194.1,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Gypsum & Labor 194.1"
+    },
+    {
+     "label": "Mulch & Labor",
+     "kind": "operation",
+     "section": "Plant",
+     "values": [
+      700,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Mulch & Labor 700"
+    },
+    {
+     "label": "TOTAL Plant COSTS",
+     "kind": "subtotal",
+     "section": "Plant",
+     "values": [
+      5708,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "TOTAL Plant COSTS 5,708"
+    },
+    {
+     "label": "Replant",
+     "kind": "heading",
+     "section": "Replant",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Replant:"
+    },
+    {
+     "label": "Replacement Trees & Labor (5 trees/acre)",
+     "kind": "operation",
+     "section": "Replant",
+     "values": [
+      null,
+      155,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Replacement Trees & Labor (5 trees/acre) 155"
+    },
+    {
+     "label": "TOTAL Replant COSTS",
+     "kind": "subtotal",
+     "section": "Replant",
+     "values": [
+      null,
+      155,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "TOTAL Replant COSTS 155"
+    },
+    {
+     "label": "Cultural",
+     "kind": "heading",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Cultural:"
+    },
+    {
+     "label": "Mulch & Labor",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      700,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Mulch & Labor 700"
+    },
+    {
+     "label": "Erosion Control (2x/yr.)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      42,
+      42,
+      42,
+      42,
+      42,
+      42
+     ],
+     "page": 18,
+     "quote": "Erosion Control (2x/yr.) 42 42 42 42 42 42"
+    },
+    {
+     "label": "Weed Control - weed whipping",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      70,
+      70,
+      70,
+      70,
+      70,
+      28
+     ],
+     "page": 18,
+     "quote": "Weed Control - weed whipping 70 70 70 70 70 28"
+    },
+    {
+     "label": "Rodent Control for Gophers - traps & labor (12x/yr.)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      33,
+      33,
+      33,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Rodent Control for Gophers - traps & labor (12x/yr.) 33 33 33"
+    },
+    {
+     "label": "Rodent Control for Squirrels - trap, bait station, baits, labor (12x/yr.)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      27.65,
+      27.65,
+      27.65,
+      27.65,
+      27.65,
+      27.65
+     ],
+     "page": 18,
+     "quote": "Rodent Control for Squirrels - trap, bait station, baits, labor (12x/yr.) 27.65 27.65 27.65 27.65 27.65 27.65"
+    },
+    {
+     "label": "Fertilizer - organic crumbles (Bio Flora 8-8-4+8% cal) & labor (3x/yr.)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      167.61,
+      294.9,
+      422.19,
+      549.62,
+      676.9,
+      804.19
+     ],
+     "page": 18,
+     "quote": "Fertilizer - organic crumbles (Bio Flora 8-8-4+8% cal) & labor (3x/yr.) 167.61 294.90 422.19 549.62 676.9 804.19"
+    },
+    {
+     "label": "Fertilizer - sulfate of potash 0-0-50",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "page": 18,
+     "quote": "Fertilizer - sulfate of potash 0-0-50 90 90 90 90 90 90"
+    },
+    {
+     "label": "Irrigation & Walk Lines (58 irrigations/yr.)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      527,
+      797,
+      1067,
+      1337,
+      1607,
+      1931
+     ],
+     "page": 18,
+     "quote": "Irrigation & Walk Lines (58 irrigations/yr.) 527 797 1067 1337 1,607 1,931"
+    },
+    {
+     "label": "Misc. pickup truck (labor, fuel, lube & repairs)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      227,
+      227,
+      227,
+      227,
+      227,
+      227
+     ],
+     "page": 18,
+     "quote": "Misc. pickup truck (labor, fuel, lube & repairs) 227 227 227 227 227 227"
+    },
+    {
+     "label": "Misc. ATV (labor, fuel, lube & repairs)",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      450,
+      450,
+      450,
+      450,
+      450,
+      450
+     ],
+     "page": 18,
+     "quote": "Misc. ATV (labor, fuel, lube & repairs) 450 450 450 450 450 450"
+    },
+    {
+     "label": "Root Rot Treatment - gypsum & labor",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      194.1,
+      194.1,
+      194.1,
+      194.1,
+      194.1
+     ],
+     "page": 18,
+     "quote": "Root Rot Treatment - gypsum & labor 194.10 194.10 194.10 194.10 194.10"
+    },
+    {
+     "label": "Misc. Road Repair",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      38,
+      null,
+      38,
+      38,
+      null
+     ],
+     "page": 18,
+     "quote": "Misc. Road Repair 38 38 38"
+    },
+    {
+     "label": "Pest Control - spinosad (Entrust), NR415 oil, helicopter rental",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      236.61,
+      236.61,
+      236.61,
+      236.61
+     ],
+     "page": 18,
+     "quote": "Pest Control - spinosad (Entrust), NR415 oil, helicopter rental 236.61 236.61 236.61 236.61"
+    },
+    {
+     "label": "Pest Control Advisor",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      36,
+      36,
+      36,
+      36
+     ],
+     "page": 18,
+     "quote": "Pest Control Advisor 36 36 36 36"
+    },
+    {
+     "label": "Orchard Pruning",
+     "kind": "operation",
+     "section": "Cultural",
+     "values": [
+      null,
+      null,
+      null,
+      203,
+      236.74,
+      304.5
+     ],
+     "page": 18,
+     "quote": "Orchard Pruning 203 236.74 304.5"
+    },
+    {
+     "label": "TOTAL Cultural COSTS",
+     "kind": "subtotal",
+     "section": "Cultural",
+     "values": [
+      1634,
+      2264,
+      3596,
+      3501,
+      3932,
+      4371
+     ],
+     "page": 18,
+     "quote": "TOTAL Cultural COSTS 1634 2264 3,596 3,501 3,932 4,371"
+    },
+    {
+     "label": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "kind": "heading",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Harvesting, Marketing, Organic Fees, & Reimbursement:"
+    },
+    {
+     "label": "Organic Certification Application & Inspection",
+     "kind": "operation",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      77.5,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 18,
+     "quote": "Organic Certification Application & Inspection 77.5"
+    },
+    {
+     "label": "CDFA State Organic Registration fee",
+     "kind": "operation",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      null,
+      7.5,
+      10,
+      10,
+      17.5
+     ],
+     "page": 18,
+     "quote": "CDFA State Organic Registration fee 7.50 10 10 17.5"
+    },
+    {
+     "label": "Organic Certification renewal fee (based on CCOF rates)",
+     "kind": "operation",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      null,
+      20,
+      35,
+      35,
+      52.5
+     ],
+     "page": 18,
+     "quote": "Organic Certification renewal fee (based on CCOF rates) 20 35 35 52.5"
+    },
+    {
+     "label": "USDA - CDFA Cost Share Program Reimbursement",
+     "kind": "operation",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      -58.13,
+      -15,
+      -26.25,
+      -26.25,
+      -39.38
+     ],
+     "page": 18,
+     "quote": "USDA - CDFA Cost Share Program Reimbursement -58.13 -15 -26.25 -26.25 -39.38"
+    },
+    {
+     "label": "Picking - Yr. 3-4 $0.09/lb.; Yr. 5-7 $0.18/lb.",
+     "kind": "operation",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      null,
+      54,
+      225,
+      666,
+      900
+     ],
+     "page": 18,
+     "quote": "Picking - Yr. 3-4 $0.09/lb.; Yr. 5-7 $0.18/lb. 54 225 666 900"
+    },
+    {
+     "label": "Hauling - $0.004/lb.",
+     "kind": "operation",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      null,
+      2.4,
+      10,
+      14.8,
+      20
+     ],
+     "page": 18,
+     "quote": "Hauling - $0.004/lb. 2.40 10 14.8 20"
+    },
+    {
+     "label": "CAC assessment - $0.011 x production value",
+     "kind": "operation",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      null,
+      8.38,
+      34.93,
+      51.69,
+      69.85
+     ],
+     "page": 18,
+     "quote": "CAC assessment - $0.011 x production value 8.38 34.93 51.69 69.85"
+    },
+    {
+     "label": "TOTAL HARVESTING, MARKETING, AND ORGANIC FEES COSTS",
+     "kind": "subtotal",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      null,
+      19.38,
+      77.28,
+      289,
+      751,
+      1020
+     ],
+     "page": 18,
+     "quote": "TOTAL HARVESTING, MARKETING, AND ORGANIC FEES COSTS 19.38 77.28 289 751 1020"
+    },
+    {
+     "label": "Interest on Operating Capital @ 5.75%",
+     "kind": "interest",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      543.21,
+      104.33,
+      84.8,
+      76.28,
+      91.08,
+      101.01
+     ],
+     "page": 18,
+     "quote": "Interest on Operating Capital @ 5.75% 543.21 104.33 84.8 76.28 91.08 101.01"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS/ACRE",
+     "kind": "total",
+     "section": "Harvesting, Marketing, Organic Fees, & Reimbursement",
+     "values": [
+      10386,
+      2543,
+      3758,
+      3866,
+      4775,
+      5493
+     ],
+     "page": 18,
+     "quote": "TOTAL OPERATING COSTS/ACRE 10,386 2543 3,758 3,866 4,775 5493"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 19,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      47.7,
+      47.7,
+      47.7,
+      47.7,
+      47.7,
+      47.7
+     ],
+     "page": 19,
+     "quote": "Liability Insurance 47.70 47.70 47.70 47.70 47.70 47.70"
+    },
+    {
+     "label": "Interest on Operating Capital - cash overhead",
+     "kind": "interest",
+     "section": "CASH OVERHEAD",
+     "values": [
+      25.32,
+      25.32,
+      25.32,
+      25.32,
+      25.32,
+      25.32
+     ],
+     "page": 19,
+     "quote": "Interest on Operating Capital - cash overhead 25.32 25.32 25.32 25.32 25.32 25.32"
+    },
+    {
+     "label": "Leaf Analysis",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      5.5,
+      5.5,
+      5.5,
+      5.5,
+      5.5,
+      5.5
+     ],
+     "page": 19,
+     "quote": "Leaf Analysis 5.50 5.50 5.50 5.50 5.50 5.50"
+    },
+    {
+     "label": "Soil Analysis",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+     ],
+     "page": 19,
+     "quote": "Soil Analysis 7 7 7 7 7 7"
+    },
+    {
+     "label": "Office Expenses",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120
+     ],
+     "page": 19,
+     "quote": "Office Expenses 120 120 120 120 120 120"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      260,
+      327,
+      352,
+      385,
+      408,
+      430
+     ],
+     "page": 19,
+     "quote": "Property Taxes 260 327 352 385 408 430"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      230,
+      283,
+      302,
+      327,
+      345,
+      362
+     ],
+     "page": 19,
+     "quote": "Property Insurance 230 283 302 327 345 362"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      81,
+      81,
+      81,
+      81,
+      81,
+      81
+     ],
+     "page": 19,
+     "quote": "Investment Repairs 81 81 81 81 81 81"
+    },
+    {
+     "label": "Interest on Establishment",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null,
+      731,
+      1061,
+      1437,
+      1707,
+      1959
+     ],
+     "page": 19,
+     "quote": "Interest on Establishment 731 1061 1437 1707 1959"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS/ACRE",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      777,
+      1628,
+      2001,
+      2436,
+      2747,
+      3038
+     ],
+     "page": 19,
+     "quote": "TOTAL CASH OVERHEAD COSTS/ACRE 777 1628 2001 2436 2747 3038"
+    },
+    {
+     "label": "TOTAL CASH COSTS",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      11163,
+      4171,
+      5759,
+      6302,
+      7522,
+      8530
+     ],
+     "page": 19,
+     "quote": "TOTAL CASH COSTS 11163 4171 5,759 6,302 7,522 8530"
+    },
+    {
+     "label": "INCOME FROM PRODUCTION",
+     "kind": "income",
+     "section": "CASH OVERHEAD",
+     "values": [
+      0,
+      0,
+      762,
+      3175,
+      4699,
+      6350
+     ],
+     "page": 19,
+     "quote": "INCOME FROM PRODUCTION 0 0 762 3175 4699 6350"
+    },
+    {
+     "label": "NET CASH COSTS FOR THE YEAR",
+     "kind": "net",
+     "section": "CASH OVERHEAD",
+     "values": [
+      11163,
+      4171,
+      4997,
+      3127,
+      2823,
+      2180
+     ],
+     "page": 19,
+     "quote": "NET CASH COSTS FOR THE YEAR 11163 4171 4,997 3,127 2,823 2180"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS",
+     "kind": "accumulated",
+     "section": "CASH OVERHEAD",
+     "values": [
+      11163,
+      15333,
+      20330,
+      23458,
+      26280,
+      28460
+     ],
+     "page": 19,
+     "quote": "ACCUMULATED NET CASH COSTS 11163 15333 20,330 23,458 26,280 28,460"
+    },
+    {
+     "label": "NON-CASH OVERHEAD",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 19,
+     "quote": "NON-CASH OVERHEAD:"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1045,
+      1045,
+      1045,
+      1045,
+      1045,
+      1045
+     ],
+     "page": 19,
+     "quote": "Land 1,045 1,045 1,045 1,045 1,045 1,045"
+    },
+    {
+     "label": "Building",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      57.41,
+      57.41,
+      57.41,
+      57.41,
+      57.41,
+      57.41
+     ],
+     "page": 19,
+     "quote": "Building 57.41 57.41 57.41 57.41 57.41 57.41"
+    },
+    {
+     "label": "Tools",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      24.66,
+      24.66,
+      24.66,
+      24.66,
+      24.66,
+      24.66
+     ],
+     "page": 19,
+     "quote": "Tools 24.66 24.66 24.66 24.66 24.66 24.66"
+    },
+    {
+     "label": "Irrigation System",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      152.7,
+      152.7,
+      152.7,
+      152.7,
+      152.7,
+      152.7
+     ],
+     "page": 19,
+     "quote": "Irrigation System 152.7 152.7 152.7 152.7 152.7 152.7"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      276.42,
+      276.42,
+      276.42,
+      276.42,
+      276.42,
+      276.42
+     ],
+     "page": 19,
+     "quote": "Equipment 276.42 276.42 276.42 276.42 276.42 276.42"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      1556,
+      1556,
+      1556,
+      1556,
+      1556,
+      1556
+     ],
+     "page": 19,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 1556 1556 1556 1556 1,556 1,556"
+    },
+    {
+     "label": "TOTAL COSTS/ACRE",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      12719,
+      5727,
+      6553,
+      4683,
+      4379,
+      3737
+     ],
+     "page": 19,
+     "quote": "TOTAL COSTS/ACRE 12719 5727 6,553 4,683 4,379 3,737"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST",
+     "kind": "accumulated",
+     "section": "NON-CASH OVERHEAD",
+     "values": [
+      12719,
+      18446,
+      24999,
+      29682,
+      34061,
+      37798
+     ],
+     "page": 19,
+     "quote": "TOTAL ACCUMULATED NET COST 12719 18446 24,999 29,682 34,061 37,798"
+    }
+   ],
+   "yieldRow": null
   },
-  "annualCharge": null,
+  "years": [
+   {
+    "year": 1,
+    "label": "Year 1",
+    "totalCost": 11163,
+    "returns": 0,
+    "netCost": 11163,
+    "accumulated": 11163,
+    "page": 19,
+    "quote": "ACCUMULATED NET CASH COSTS 11163 15333 20,330 23,458 26,280 28,460"
+   },
+   {
+    "year": 2,
+    "label": "Year2",
+    "totalCost": 4171,
+    "returns": 0,
+    "netCost": 4171,
+    "accumulated": 15333,
+    "page": 19,
+    "quote": "ACCUMULATED NET CASH COSTS 11163 15333 20,330 23,458 26,280 28,460"
+   },
+   {
+    "year": 3,
+    "label": "Year 3",
+    "totalCost": 5759,
+    "returns": 762,
+    "netCost": 4997,
+    "accumulated": 20330,
+    "page": 19,
+    "quote": "ACCUMULATED NET CASH COSTS 11163 15333 20,330 23,458 26,280 28,460"
+   },
+   {
+    "year": 4,
+    "label": "Year 4",
+    "totalCost": 6302,
+    "returns": 3175,
+    "netCost": 3127,
+    "accumulated": 23458,
+    "page": 19,
+    "quote": "ACCUMULATED NET CASH COSTS 11163 15333 20,330 23,458 26,280 28,460"
+   },
+   {
+    "year": 5,
+    "label": "Year 5",
+    "totalCost": 7522,
+    "returns": 4699,
+    "netCost": 2823,
+    "accumulated": 26280,
+    "page": 19,
+    "quote": "ACCUMULATED NET CASH COSTS 11163 15333 20,330 23,458 26,280 28,460"
+   },
+   {
+    "year": 6,
+    "label": "Year 6",
+    "totalCost": 8530,
+    "returns": 6350,
+    "netCost": 2180,
+    "accumulated": 28460,
+    "page": 19,
+    "quote": "ACCUMULATED NET CASH COSTS 11163 15333 20,330 23,458 26,280 28,460"
+   }
+  ],
+  "accumulatedNetCost": {
+   "value": 37798,
+   "page": 12,
+   "quote": "The cumulative establishment costs (accumulated costs of establishment less the gross income for years 1- 6) in San Diego County are $43,626 per acre and $37,798 per acre in Riverside County."
+  },
+  "annualCharge": {
+   "value": 2389,
+   "page": 21,
+   "quote": "Amortized Establishment Cost 37,798 2,389 2,389"
+  },
   "productionYears": {
    "value": 30,
    "page": 27,
@@ -760,7 +1783,8 @@
    "businessOverhead",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -774,12 +1798,12 @@
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
-   "machineLaborFactor",
-   "establishmentAnnual"
+   "machineLaborFactor"
   ],
   "warnings": [
    "Table 2 found but no GROSS RETURNS block",
-   "several costs-per-acre tables (establishment and production); using the production one"
+   "several costs-per-acre tables (establishment and production); using the production one",
+   "2 establishment tables, one per region; using the last (Costs per Acre to Establish an Avocado Orchard in Riverside County using Organic Production Practices in 2011)"
   ]
  }
 }

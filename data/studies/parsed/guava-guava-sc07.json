@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/07/d6/07d6b068-6b6b-4f8d-9e49-91cd39b1dd39/guava_sc07.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/guava",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2007,
   "priceYear": null
@@ -265,8 +265,827 @@
  },
  "monthly": null,
  "establishment": {
-  "table": null,
-  "years": [],
+  "table": {
+   "title": "S AMPLECOS TS PER ACRETO ES TABLIS H A GUAVA ORCHARD IN S AN DIEGO COUNTY, 2007",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th"
+   ],
+   "rows": [
+    {
+     "label": "LA ND PREPA RA TION",
+     "kind": "heading",
+     "section": "LA ND PREPA RA TION",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "LA ND PREPA RA TION:"
+    },
+    {
+     "label": "Bus h and weed removal",
+     "kind": "operation",
+     "section": "LA ND PREPA RA TION",
+     "values": [
+      300,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Bus h and weed removal 300"
+    },
+    {
+     "label": "Root Removal",
+     "kind": "operation",
+     "section": "LA ND PREPA RA TION",
+     "values": [
+      400,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Root Removal 400"
+    },
+    {
+     "label": "Rip Soil",
+     "kind": "operation",
+     "section": "LA ND PREPA RA TION",
+     "values": [
+      250,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Rip Soil 250"
+    },
+    {
+     "label": "Plouging",
+     "kind": "operation",
+     "section": "LA ND PREPA RA TION",
+     "values": [
+      200,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Plouging 200"
+    },
+    {
+     "label": "TOTAL LAND PREPARATION COS TS",
+     "kind": "subtotal",
+     "section": "LA ND PREPA RA TION",
+     "values": [
+      1150,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "TOTAL LAND PREPARATION COS TS 1150"
+    },
+    {
+     "label": "PRE-PLA NT A ND PLA NT",
+     "kind": "heading",
+     "section": "PRE-PLA NT A ND PLA NT",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "PRE-PLA NT A ND PLA NT:"
+    },
+    {
+     "label": "Flag Field",
+     "kind": "operation",
+     "section": "PRE-PLA NT A ND PLA NT",
+     "values": [
+      43,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Flag Field 43"
+    },
+    {
+     "label": "Guava Plants (194 plants /acre, 2% replacement in yr.2, $10 per Plant)",
+     "kind": "operation",
+     "section": "PRE-PLA NT A ND PLA NT",
+     "values": [
+      1940,
+      40,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Guava Plants (194 plants /acre, 2% replacement in yr.2, $10 per Plant) 1940 40"
+    },
+    {
+     "label": "Hole Digging and Planting",
+     "kind": "operation",
+     "section": "PRE-PLA NT A ND PLA NT",
+     "values": [
+      430,
+      9,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Hole Digging and Planting 430 9"
+    },
+    {
+     "label": "Compos t A pplication",
+     "kind": "operation",
+     "section": "PRE-PLA NT A ND PLA NT",
+     "values": [
+      215,
+      4,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "Compos t A pplication 215 4"
+    },
+    {
+     "label": "TOTAL PRE-PLANT AND PLANT COS TS",
+     "kind": "subtotal",
+     "section": "PRE-PLA NT A ND PLA NT",
+     "values": [
+      2628,
+      53,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "TOTAL PRE-PLANT AND PLANT COS TS 2628 53"
+    },
+    {
+     "label": "CULTURA L",
+     "kind": "heading",
+     "section": "CULTURA L",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "CULTURA L:"
+    },
+    {
+     "label": "Irrigate (1x/week every month, an extra irrigation every other week in July and A ugus t)",
+     "kind": "operation",
+     "section": "CULTURA L",
+     "values": [
+      681,
+      830,
+      1155,
+      1591
+     ],
+     "page": 15,
+     "quote": "Irrigate (1x/week every month, an extra irrigation every other week in July and A ugus t) 681 830 1155 1591"
+    },
+    {
+     "label": "Fertilizer CA N 17 (1x/month from Feb.-Oct. in yr.2 on and 1x/month from June-Oct in yr.1)",
+     "kind": "operation",
+     "section": "CULTURA L",
+     "values": [
+      21,
+      42,
+      64,
+      85
+     ],
+     "page": 15,
+     "quote": "Fertilizer CA N 17 (1x/month from Feb.-Oct. in yr.2 on and 1x/month from June-Oct in yr.1) 21 42 64 85"
+    },
+    {
+     "label": "Training and Pruning",
+     "kind": "operation",
+     "section": "CULTURA L",
+     "values": [
+      215,
+      430,
+      430,
+      645
+     ],
+     "page": 15,
+     "quote": "Training and Pruning 215 430 430 645"
+    },
+    {
+     "label": "Weed Control-Weeding",
+     "kind": "operation",
+     "section": "CULTURA L",
+     "values": [
+      86,
+      32,
+      32,
+      32
+     ],
+     "page": 15,
+     "quote": "Weed Control-Weeding 86 32 32 32"
+    },
+    {
+     "label": "Weed Control-Roundup",
+     "kind": "operation",
+     "section": "CULTURA L",
+     "values": [
+      null,
+      46,
+      46,
+      46
+     ],
+     "page": 15,
+     "quote": "Weed Control-Roundup 46 46 46"
+    },
+    {
+     "label": "Gopher Control",
+     "kind": "operation",
+     "section": "CULTURA L",
+     "values": [
+      248,
+      319,
+      319,
+      319
+     ],
+     "page": 15,
+     "quote": "Gopher Control 248 319 319 319"
+    },
+    {
+     "label": "Squirrel Control",
+     "kind": "operation",
+     "section": "CULTURA L",
+     "values": [
+      109,
+      109,
+      109,
+      109
+     ],
+     "page": 15,
+     "quote": "Squirrel Control 109 109 109 109"
+    },
+    {
+     "label": "TOTAL CULTURAL COS TS",
+     "kind": "subtotal",
+     "section": "CULTURA L",
+     "values": [
+      1360,
+      1808,
+      2155,
+      2827
+     ],
+     "page": 15,
+     "quote": "TOTAL CULTURAL COS TS 1360 1808 2155 2827"
+    },
+    {
+     "label": "HA RVEST",
+     "kind": "heading",
+     "section": "HA RVEST",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "HA RVEST:"
+    },
+    {
+     "label": "Picking",
+     "kind": "operation",
+     "section": "HA RVEST",
+     "values": [
+      null,
+      null,
+      207,
+      617
+     ],
+     "page": 15,
+     "quote": "Picking 207 617"
+    },
+    {
+     "label": "Trans port and Hauling",
+     "kind": "operation",
+     "section": "HA RVEST",
+     "values": [
+      null,
+      null,
+      51,
+      151
+     ],
+     "page": 15,
+     "quote": "Trans port and Hauling 51 151"
+    },
+    {
+     "label": "Packing & M arketing",
+     "kind": "operation",
+     "section": "HA RVEST",
+     "values": [
+      null,
+      null,
+      62,
+      186
+     ],
+     "page": 15,
+     "quote": "Packing & M arketing 62 186"
+    },
+    {
+     "label": "TOTAL HARVES T COS TS",
+     "kind": "subtotal",
+     "section": "HA RVEST",
+     "values": [
+      null,
+      null,
+      320,
+      954
+     ],
+     "page": 15,
+     "quote": "TOTAL HARVES T COS TS 320 954"
+    },
+    {
+     "label": "Interes t on operating Capital @10%",
+     "kind": "interest",
+     "section": "HA RVEST",
+     "values": [
+      397,
+      104,
+      121,
+      161
+     ],
+     "page": 15,
+     "quote": "Interes t on operating Capital @10% 397 104 121 161"
+    },
+    {
+     "label": "TOTAL OPERATING COS TS /ACRE",
+     "kind": "total",
+     "section": "HA RVEST",
+     "values": [
+      5535,
+      1965,
+      2596,
+      3942
+     ],
+     "page": 15,
+     "quote": "TOTAL OPERATING COS TS /ACRE 5535 1965 2596 3942"
+    },
+    {
+     "label": "CA SH OVERHEA D",
+     "kind": "heading",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "CA SH OVERHEA D:"
+    },
+    {
+     "label": "Office Expens e",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      240,
+      240,
+      240,
+      240
+     ],
+     "page": 15,
+     "quote": "Office Expens e 240 240 240 240"
+    },
+    {
+     "label": "Liability Ins uranc",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      87,
+      87,
+      87,
+      87
+     ],
+     "page": 15,
+     "quote": "Liability Ins uranc 87 87 87 87"
+    },
+    {
+     "label": "Interes t-Cas h Overhead cos ts",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      75,
+      75,
+      76,
+      76
+     ],
+     "page": 15,
+     "quote": "Interes t-Cas h Overhead cos ts 75 75 76 76"
+    },
+    {
+     "label": "Interes t- Es tablis hent cos ts",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      null,
+      711,
+      1137,
+      1293
+     ],
+     "page": 15,
+     "quote": "Interes t- Es tablis hent cos ts 711 1137 1293"
+    },
+    {
+     "label": "Leaf A nalys is",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      null,
+      null,
+      10,
+      10
+     ],
+     "page": 15,
+     "quote": "Leaf A nalys is 10 10"
+    },
+    {
+     "label": "Soil A nalys is",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      null,
+      null,
+      2,
+      2
+     ],
+     "page": 15,
+     "quote": "Soil A nalys is 2 2"
+    },
+    {
+     "label": "Field Sanitation",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      348,
+      348,
+      348,
+      348
+     ],
+     "page": 15,
+     "quote": "Field Sanitation 348 348 348 348"
+    },
+    {
+     "label": "Property Taxes",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      421,
+      421,
+      421,
+      421
+     ],
+     "page": 15,
+     "quote": "Property Taxes 421 421 421 421"
+    },
+    {
+     "label": "Property Ins urance",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      300,
+      301,
+      301,
+      301
+     ],
+     "page": 15,
+     "quote": "Property Ins urance 300 301 301 301"
+    },
+    {
+     "label": "Inves tment Repairs",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      106,
+      106,
+      106,
+      106
+     ],
+     "page": 15,
+     "quote": "Inves tment Repairs 106 106 106 106"
+    },
+    {
+     "label": "TOTAL CAS H OVERHEAD COS TS",
+     "kind": "total",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      1577,
+      2289,
+      2727,
+      2883
+     ],
+     "page": 15,
+     "quote": "TOTAL CAS H OVERHEAD COS TS 1577 2289 2727 2883"
+    },
+    {
+     "label": "TOTAL CAS H COS TS /ACRE",
+     "kind": "total",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      7112,
+      4254,
+      5323,
+      6825
+     ],
+     "page": 15,
+     "quote": "TOTAL CAS H COS TS /ACRE 7112 4254 5323 6825"
+    },
+    {
+     "label": "Harves ted Guava (in Carton)",
+     "kind": "overheadItem",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      0,
+      0,
+      78,
+      233
+     ],
+     "page": 15,
+     "quote": "Harves ted Guava (in Carton) 0 0 78 233"
+    },
+    {
+     "label": "Revenue from Sale @ $48.25/Carton",
+     "kind": "income",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      0,
+      0,
+      3764,
+      11242
+     ],
+     "page": 15,
+     "quote": "Revenue from Sale @ $48.25/Carton 0 0 3764 11242"
+    },
+    {
+     "label": "NET CA SH COTS",
+     "kind": "net",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      7112,
+      4254,
+      1560,
+      -4417
+     ],
+     "page": 15,
+     "quote": "NET CA SH COTS 7112 4254 1560 -4417"
+    },
+    {
+     "label": "ACCUMULATED NET CAS H COS TS",
+     "kind": "accumulated",
+     "section": "CA SH OVERHEA D",
+     "values": [
+      7112,
+      11366,
+      12926,
+      8509
+     ],
+     "page": 15,
+     "quote": "ACCUMULATED NET CAS H COS TS 7112 11366 12926 8509"
+    },
+    {
+     "label": "NON-CA SH OVERHEA D",
+     "kind": "heading",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 15,
+     "quote": "NON-CA SH OVERHEA D:"
+    },
+    {
+     "label": "Fuel Tanks & Pumps",
+     "kind": "overheadItem",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      17,
+      17,
+      17,
+      17
+     ],
+     "page": 15,
+     "quote": "Fuel Tanks & Pumps 17 17 17 17"
+    },
+    {
+     "label": "Irrigation Sys tem",
+     "kind": "overheadItem",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      99,
+      99,
+      99,
+      99
+     ],
+     "page": 15,
+     "quote": "Irrigation Sys tem 99 99 99 99"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      2900,
+      2900,
+      2900,
+      2900
+     ],
+     "page": 15,
+     "quote": "Land 2900 2900 2900 2900"
+    },
+    {
+     "label": "Shop Buildings",
+     "kind": "overheadItem",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      165,
+      165,
+      165,
+      165
+     ],
+     "page": 15,
+     "quote": "Shop Buildings 165 165 165 165"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "overheadItem",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      10,
+      10,
+      10,
+      10
+     ],
+     "page": 15,
+     "quote": "Shop Tools 10 10 10 10"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      95,
+      116,
+      116,
+      116
+     ],
+     "page": 15,
+     "quote": "Equipment 95 116 116 116"
+    },
+    {
+     "label": "TOTAL NON-CAS H OVERHEAD COS TS",
+     "kind": "total",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      3286,
+      3307,
+      3307,
+      3307
+     ],
+     "page": 15,
+     "quote": "TOTAL NON-CAS H OVERHEAD COS TS 3286 3307 3307 3307"
+    },
+    {
+     "label": "TOTAL COS TS /ACRE",
+     "kind": "total",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      10398,
+      7561,
+      8630,
+      10132
+     ],
+     "page": 15,
+     "quote": "TOTAL COS TS /ACRE 10398 7561 8630 10132"
+    },
+    {
+     "label": "Harves ted Guava (in Carton)",
+     "kind": "overheadItem",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      0,
+      0,
+      78,
+      233
+     ],
+     "page": 15,
+     "quote": "Harves ted Guava (in Carton) 0 0 78 233"
+    },
+    {
+     "label": "Revenue from Sale @ $48.25/Carton",
+     "kind": "income",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      0,
+      0,
+      3764,
+      11242
+     ],
+     "page": 15,
+     "quote": "Revenue from Sale @ $48.25/Carton 0 0 3764 11242"
+    },
+    {
+     "label": "NET COSTS",
+     "kind": "net",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      10398,
+      7561,
+      4867,
+      -1110
+     ],
+     "page": 15,
+     "quote": "NET COSTS 10398 7561 4867 -1110"
+    },
+    {
+     "label": "CUMULATIVECOS TS FOR ONEACRE",
+     "kind": "accumulated",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      10398,
+      17959,
+      22826,
+      21716
+     ],
+     "page": 15,
+     "quote": "CUMULATIVECOS TS FOR ONEACRE 10398 17959 22826 21716"
+    },
+    {
+     "label": "CUMULATIVECOS TS FOR FIVEACRES",
+     "kind": "accumulated",
+     "section": "NON-CA SH OVERHEA D",
+     "values": [
+      51991,
+      89797,
+      114132,
+      108582
+     ],
+     "page": 15,
+     "quote": "CUMULATIVECOS TS FOR FIVEACRES 51991 89797 114132 108582"
+    }
+   ],
+   "yieldRow": null
+  },
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 7112,
+    "returns": 0,
+    "netCost": 7112,
+    "accumulated": 7112,
+    "page": 15,
+    "quote": "ACCUMULATED NET CAS H COS TS 7112 11366 12926 8509"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 4254,
+    "returns": 0,
+    "netCost": 4254,
+    "accumulated": 11366,
+    "page": 15,
+    "quote": "ACCUMULATED NET CAS H COS TS 7112 11366 12926 8509"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 5323,
+    "returns": 3764,
+    "netCost": 1560,
+    "accumulated": 12926,
+    "page": 15,
+    "quote": "ACCUMULATED NET CAS H COS TS 7112 11366 12926 8509"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 6825,
+    "returns": 11242,
+    "netCost": -4417,
+    "accumulated": 8509,
+    "page": 15,
+    "quote": "ACCUMULATED NET CAS H COS TS 7112 11366 12926 8509"
+   }
+  ],
   "accumulatedNetCost": {
    "value": 8509,
    "page": 11,

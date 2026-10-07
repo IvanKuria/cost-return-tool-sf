@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c9/6f/c96fb62f-512f-41bd-b587-7db8d3b437dc/20blueelderberryhedgerowwithouttillage.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blue-elderberry",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -265,6 +265,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
+   "Table 2 gross returns are not per acre (1,000LF Unit Cost/Unit Cost/1,000LF Cost); left null",
    "no costs-per-acre table found",
    "monthly table not used: MONTHLY CASH COSTS PER 1,000LF TO ESTABLISH BLUE ELDERBERRIES: no TOTAL CASH COSTS, TOTAL OPERATING COSTS or cash overhead rows found under the month header"
   ]

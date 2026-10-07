@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/d5/bd/d5bdaad2-b874-4b99-a3c2-cc7a89cfc72d/pomegranatevs2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pomegranates",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -29,9 +29,19 @@
    "quote": "The farm consists of 100 contiguous acres; 20 acres are being planted to pomegranates and will reach maturity in six to seven years."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 400,
+   "unit": "box",
+   "page": 15,
+   "quote": "Pomegranate 400.00 box 18.00 7,200"
+  },
   "yieldUnit": "box",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 18,
+   "unit": "$/box",
+   "page": 15,
+   "quote": "Pomegranate 400.00 box 18.00 7,200"
+  },
   "returns": [
    {
     "name": "Pomegranate",
@@ -41,132 +51,6 @@
     "value": 7200,
     "page": 15,
     "quote": "Pomegranate 400.00 box 18.00 7,200"
-   },
-   {
-    "name": "Surflan 4 AS",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 14.51,
-    "value": 29,
-    "page": 15,
-    "quote": "Surflan 4 AS 2.00 pint 14.51 29"
-   },
-   {
-    "name": "Goal 2 XL",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 17.25,
-    "value": 35,
-    "page": 15,
-    "quote": "Goal 2 XL 2.00 pint 17.25 35"
-   },
-   {
-    "name": "Roundup Ultra Max",
-    "quantity": 5.2,
-    "unit": "pint",
-    "price": 9.5,
-    "value": 49,
-    "page": 15,
-    "quote": "Roundup Ultra Max 5.20 pint 9.50 49"
-   },
-   {
-    "name": "Water",
-    "quantity": 45,
-    "unit": "acin",
-    "price": 4,
-    "value": 180,
-    "page": 15,
-    "quote": "Water 45.00 acin 4.00 180"
-   },
-   {
-    "name": "Lannate SP",
-    "quantity": 1,
-    "unit": "lb",
-    "price": 39.62,
-    "value": 40,
-    "page": 15,
-    "quote": "Lannate SP 1.00 lb 39.62 40"
-   },
-   {
-    "name": "Dusting Sulfur 98",
-    "quantity": 100,
-    "unit": "lb",
-    "price": 0.55,
-    "value": 55,
-    "page": 15,
-    "quote": "Dusting Sulfur 98 100.00 lb 0.55 55"
-   },
-   {
-    "name": "Dipel DF",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 15.65,
-    "value": 31,
-    "page": 15,
-    "quote": "Dipel DF 2.00 lb 15.65 31"
-   },
-   {
-    "name": "Haul Fruit (field to packing shed)",
-    "quantity": 18,
-    "unit": "bin",
-    "price": 5.5,
-    "value": 99,
-    "page": 15,
-    "quote": "Haul Fruit (field to packing shed) 18.00 bin 5.50 99"
-   },
-   {
-    "name": "Pack Fruit",
-    "quantity": 400,
-    "unit": "box",
-    "price": 4.75,
-    "value": 1900,
-    "page": 15,
-    "quote": "Pack Fruit 400.00 box 4.75 1,900"
-   },
-   {
-    "name": "Sell @ 10% of Returns",
-    "quantity": 400,
-    "unit": "box",
-    "price": 1.8,
-    "value": 720,
-    "page": 15,
-    "quote": "Sell @ 10% of Returns 400.00 box 1.80 720"
-   },
-   {
-    "name": "Labor (machine)",
-    "quantity": 19.82,
-    "unit": "hrs",
-    "price": 20.4,
-    "value": 404,
-    "page": 15,
-    "quote": "Labor (machine) 19.82 hrs 20.40 404"
-   },
-   {
-    "name": "Labor (non-machine)",
-    "quantity": 80.3,
-    "unit": "hrs",
-    "price": 10.88,
-    "value": 874,
-    "page": 15,
-    "quote": "Labor (non-machine) 80.30 hrs 10.88 874"
-   },
-   {
-    "name": "Fuel - Gas",
-    "quantity": 1.02,
-    "unit": "gal",
-    "price": 2.67,
-    "value": 3,
-    "page": 15,
-    "quote": "Fuel - Gas 1.02 gal 2.67 3"
-   },
-   {
-    "name": "Fuel - Diesel",
-    "quantity": 40.34,
-    "unit": "gal",
-    "price": 2.04,
-    "value": 82,
-    "page": 15,
-    "quote": "Fuel - Diesel 40.34 gal 2.04 82"
    }
   ],
   "interestRatePct": null,
@@ -232,7 +116,12 @@
    "page": 14,
    "quote": "TOTAL COSTS/ACRE 5,951"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 7200,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "Pomegranate 400.00 box 18.00 7,200"
+  },
   "netReturnsAboveOperating": {
    "value": 2423,
    "unit": "$/acre",
@@ -1965,6 +1854,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1973,6 +1864,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1985,17 +1877,13 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAccumulated"
   ],
   "warnings": [
-   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

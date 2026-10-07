@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/8f/0c/8f0ce321-295f-409b-8d3e-267cb5fb163d/almondfloodvn2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -34,9 +34,19 @@
    "page": 3,
    "quote": "Almonds are being established on 40 acres."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 2000,
+   "unit": "lb",
+   "page": 15,
+   "quote": "Almonds 2,000.00 lb 1.50 3,000"
+  },
   "yieldUnit": "lb",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 1.5,
+   "unit": "$/lb",
+   "page": 15,
+   "quote": "Almonds 2,000.00 lb 1.50 3,000"
+  },
   "returns": [
    {
     "name": "Almonds",
@@ -46,141 +56,6 @@
     "value": 3000,
     "page": 15,
     "quote": "Almonds 2,000.00 lb 1.50 3,000"
-   },
-   {
-    "name": "Agri-Mek 0.15 EC",
-    "quantity": 15,
-    "unit": "floz",
-    "price": 2.35,
-    "value": 35,
-    "page": 15,
-    "quote": "Agri-Mek 0.15 EC 15.00 floz 2.35 35"
-   },
-   {
-    "name": "Intrepid 2F",
-    "quantity": 18,
-    "unit": "floz",
-    "price": 3.11,
-    "value": 56,
-    "page": 15,
-    "quote": "Intrepid 2F 18.00 floz 3.11 56"
-   },
-   {
-    "name": "Clinch",
-    "quantity": 1,
-    "unit": "lb",
-    "price": 12.74,
-    "value": 13,
-    "page": 15,
-    "quote": "Clinch 1.00 lb 12.74 13"
-   },
-   {
-    "name": "Vangard WF",
-    "quantity": 5,
-    "unit": "oz",
-    "price": 4.71,
-    "value": 24,
-    "page": 15,
-    "quote": "Vangard WF 5.00 oz 4.71 24"
-   },
-   {
-    "name": "Abound",
-    "quantity": 14,
-    "unit": "floz",
-    "price": 3.71,
-    "value": 52,
-    "page": 15,
-    "quote": "Abound 14.00 floz 3.71 52"
-   },
-   {
-    "name": "Bravo Weatherstik",
-    "quantity": 4,
-    "unit": "pint",
-    "price": 8.23,
-    "value": 33,
-    "page": 15,
-    "quote": "Bravo Weatherstik 4.00 pint 8.23 33"
-   },
-   {
-    "name": "Gopher Bait",
-    "quantity": 1.5,
-    "unit": "lb",
-    "price": 7.87,
-    "value": 12,
-    "page": 15,
-    "quote": "Gopher Bait 1.50 lb 7.87 12"
-   },
-   {
-    "name": "Squirrel Bait",
-    "quantity": 1.5,
-    "unit": "lb",
-    "price": 4.54,
-    "value": 7,
-    "page": 15,
-    "quote": "Squirrel Bait 1.50 lb 4.54 7"
-   },
-   {
-    "name": "Rely 200",
-    "quantity": 1.2,
-    "unit": "pint",
-    "price": 9.72,
-    "value": 12,
-    "page": 15,
-    "quote": "Rely 200 1.20 pint 9.72 12"
-   },
-   {
-    "name": "Roundup Ultra Max",
-    "quantity": 4.5,
-    "unit": "pint",
-    "price": 4.75,
-    "value": 21,
-    "page": 15,
-    "quote": "Roundup Ultra Max 4.50 pint 4.75 21"
-   },
-   {
-    "name": "Goal 2 XL",
-    "quantity": 1.25,
-    "unit": "pint",
-    "price": 9.73,
-    "value": 12,
-    "page": 15,
-    "quote": "Goal 2 XL 1.25 pint 9.73 12"
-   },
-   {
-    "name": "Matrix SG",
-    "quantity": 4,
-    "unit": "oz",
-    "price": 22.69,
-    "value": 91,
-    "page": 15,
-    "quote": "Matrix SG 4.00 oz 22.69 91"
-   },
-   {
-    "name": "Neutral Zinc",
-    "quantity": 5,
-    "unit": "lb",
-    "price": 2.2,
-    "value": 11,
-    "page": 15,
-    "quote": "Neutral Zinc 5.00 lb 2.20 11"
-   },
-   {
-    "name": "Solubor (Boron)",
-    "quantity": 2,
-    "unit": "lb",
-    "price": 0.72,
-    "value": 1,
-    "page": 15,
-    "quote": "Solubor (Boron) 2.00 lb 0.72 1"
-   },
-   {
-    "name": "Potassium Sulfate (0-0-50)",
-    "quantity": 400,
-    "unit": "lb",
-    "price": 0.42,
-    "value": 168,
-    "page": 15,
-    "quote": "Potassium Sulfate (0-0-50) 400.00 lb 0.42 168"
    }
   ],
   "interestRatePct": null,
@@ -244,7 +119,12 @@
    "page": 14,
    "quote": "TOTAL COSTS/ACRE 3,811"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 3000,
+   "unit": "$/acre",
+   "page": 15,
+   "quote": "Almonds 2,000.00 lb 1.50 3,000"
+  },
   "netReturnsAboveOperating": {
    "value": 923,
    "unit": "$/acre",
@@ -2290,7 +2170,7 @@
     "label": "2nd",
     "totalCost": 980,
     "returns": null,
-    "netCost": 3280,
+    "netCost": 980,
     "accumulated": 4261,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,280 4,261 5,237 6,280 6,249"
@@ -2300,7 +2180,7 @@
     "label": "3rd",
     "totalCost": 1576,
     "returns": 600,
-    "netCost": 980,
+    "netCost": 976,
     "accumulated": 5237,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,280 4,261 5,237 6,280 6,249"
@@ -2310,7 +2190,7 @@
     "label": "4th",
     "totalCost": 2243,
     "returns": 1200,
-    "netCost": 976,
+    "netCost": 1043,
     "accumulated": 6280,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,280 4,261 5,237 6,280 6,249"
@@ -2320,7 +2200,7 @@
     "label": "5th",
     "totalCost": 2369,
     "returns": 2400,
-    "netCost": 1043,
+    "netCost": -31,
     "accumulated": 6249,
     "page": 13,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 3,280 4,261 5,237 6,280 6,249"
@@ -2367,6 +2247,8 @@
   "fieldsFound": [
    "year",
    "region",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -2374,6 +2256,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -2388,17 +2271,13 @@
   ],
   "fieldsMissing": [
    "counties",
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct"
   ],
   "warnings": [
-   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

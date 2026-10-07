@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/ec/ba/ecba9b89-f1e9-401c-9044-4afa2c060093/2016dovraisinsohtsjvfinaldraft111716.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–raisins",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1363,6 +1363,198 @@
      ],
      "page": 13,
      "quote": "ACCUMULATED NET CASH COSTS/ACRE 7,895 15,377 13,994"
+    },
+    {
+     "label": "San Joaquin Valley- Overhead Trellis System-2016",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "San Joaquin Valley- Overhead Trellis System-2016"
+    },
+    {
+     "label": "Year; 1st 2nd 3rd",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Year; 1st 2nd 3rd"
+    },
+    {
+     "label": "Tons per Acre Dried Fruit @ $1,600/ton;",
+     "kind": "overheadItem",
+     "section": "Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      2.5
+     ],
+     "page": 14,
+     "quote": "Tons per Acre Dried Fruit @ $1,600/ton; 0 0 2.5"
+    },
+    {
+     "label": "Non-Cash Overhead Costs",
+     "kind": "heading",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      null,
+      null,
+      null
+     ],
+     "page": 14,
+     "quote": "Non-Cash Overhead Costs:"
+    },
+    {
+     "label": "Land",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      750,
+      750,
+      750
+     ],
+     "page": 14,
+     "quote": "Land 750 750 750"
+    },
+    {
+     "label": "Irrigation System",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      75,
+      75,
+      75
+     ],
+     "page": 14,
+     "quote": "Irrigation System 75 75 75"
+    },
+    {
+     "label": "Shop Building",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      35,
+      35,
+      35
+     ],
+     "page": 14,
+     "quote": "Shop Building 35 35 35"
+    },
+    {
+     "label": "Shop Tools",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      3,
+      3,
+      3
+     ],
+     "page": 14,
+     "quote": "Shop Tools 3 3 3"
+    },
+    {
+     "label": "Fuel Tank & Pump",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      4,
+      4,
+      4
+     ],
+     "page": 14,
+     "quote": "Fuel Tank & Pump 4 4 4"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      30,
+      31,
+      77
+     ],
+     "page": 14,
+     "quote": "Equipment 30 31 77"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      897,
+      898,
+      945
+     ],
+     "page": 14,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 897 898 945"
+    },
+    {
+     "label": "TOTAL COST/ACRE FOR THE YEAR",
+     "kind": "total",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      8792,
+      8380,
+      3562
+     ],
+     "page": 14,
+     "quote": "TOTAL COST/ACRE FOR THE YEAR 8,792 8,380 3,562"
+    },
+    {
+     "label": "INCOME/ACRE FROM PRODUCTION",
+     "kind": "income",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      4000
+     ],
+     "page": 14,
+     "quote": "INCOME/ACRE FROM PRODUCTION 0 0 4,000"
+    },
+    {
+     "label": "TOTAL NET COST/ACRE FOR THE YEAR",
+     "kind": "net",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      8792,
+      8380,
+      0
+     ],
+     "page": 14,
+     "quote": "TOTAL NET COST/ACRE FOR THE YEAR 8,792 8,380 0"
+    },
+    {
+     "label": "NET PROFIT/ACRE ABOVE TOTAL COSTS",
+     "kind": "net",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      0,
+      0,
+      438
+     ],
+     "page": 14,
+     "quote": "NET PROFIT/ACRE ABOVE TOTAL COSTS 0 0 438"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST/ACRE",
+     "kind": "accumulated",
+     "section": "Non-Cash Overhead Costs",
+     "values": [
+      8792,
+      17172,
+      16734
+     ],
+     "page": 14,
+     "quote": "TOTAL ACCUMULATED NET COST/ACRE 8,792 17,172 16,734"
     }
    ],
    "yieldRow": {

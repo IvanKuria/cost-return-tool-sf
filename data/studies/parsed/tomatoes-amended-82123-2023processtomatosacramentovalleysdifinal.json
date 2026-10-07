@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/08/21/amended_82123_2023processtomatosacramentovalleysdifinal.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/tomatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2023,
   "priceYear": null
@@ -29,15 +29,30 @@
    "page": 3,
    "quote": "Tomatoes are transplanted on 1,000 acres, all sub-surface drip irrigated as three quarters of the local tomato acreage is estimated to be sub-surface drip irrigated."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
+  "yieldPerAcre": {
+   "value": 46,
+   "unit": "Ton",
+   "page": 14,
+   "quote": "Tomatoes (SDI) 46 Ton 138.00 6,348"
+  },
+  "yieldUnit": "Ton",
   "pricePerUnit": {
    "value": 138,
-   "unit": "$/ton",
-   "page": 6,
-   "quote": "A price of $138 per ton is used, which reflects the statewide crop price for 2023."
+   "unit": "$/Ton",
+   "page": 14,
+   "quote": "Tomatoes (SDI) 46 Ton 138.00 6,348"
   },
-  "returns": [],
+  "returns": [
+   {
+    "name": "Tomatoes (SDI)",
+    "quantity": 46,
+    "unit": "Ton",
+    "price": 138,
+    "value": 6348,
+    "page": 14,
+    "quote": "Tomatoes (SDI) 46 Ton 138.00 6,348"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
@@ -77,7 +92,12 @@
    "page": 13,
    "quote": "TOTAL COSTS/ACRE 5,248"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 6348,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "Tomatoes (SDI) 46 Ton 138.00 6,348"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -2230,11 +2250,13 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
    "pricePerUnit",
    "acresFarmed",
    "operatingTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -2246,14 +2268,12 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
    "cashOverheadTotal",
-   "grossReturns",
    "insuranceRatePct",
    "establishment",
    "establishmentAccumulated",

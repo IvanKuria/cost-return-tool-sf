@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/42/9f/429f9234-f33f-43d0-8db6-9be7251aa7f4/timothygrassir09.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/timothygrass",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2009,
   "priceYear": null
@@ -20,14 +20,33 @@
   "acresFarmed": null,
   "acresCrop": null,
   "yieldPerAcre": null,
-  "yieldUnit": null,
+  "yieldUnit": "Ton",
   "pricePerUnit": {
    "value": 27,
    "unit": "$/AUM",
    "page": 5,
    "quote": "A price of $27.00 per AUM is used to determine the potential income from grazing"
   },
-  "returns": [],
+  "returns": [
+   {
+    "name": "Timothygrass Hay",
+    "quantity": 6,
+    "unit": "Ton",
+    "price": 260,
+    "value": 1560,
+    "page": 14,
+    "quote": "Timothygrass Hay 6.0 Ton 260.00 1,560"
+   },
+   {
+    "name": "Graze",
+    "quantity": 0.25,
+    "unit": "AUM",
+    "price": 27,
+    "value": 7,
+    "page": 14,
+    "quote": "Graze 0.25 AUM 27.00 7"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -94,7 +113,12 @@
    "page": 13,
    "quote": "TOTAL COSTS/ACRE 1162"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1567,
+   "unit": "$/acre",
+   "page": 14,
+   "quote": "TOTAL GROSS RETURNS FOR TIMOTHYGRASS HAY 1,567"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -710,6 +734,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -725,14 +750,13 @@
    "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

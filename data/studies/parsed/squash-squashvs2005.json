@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/9c/2f/9c2f18e4-a530-4da6-b786-8a0c6a7ca00c/squashvs2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/squash",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -29,10 +29,30 @@
    "page": 3,
    "quote": "In this study 20 acres are planted to summer squash and the remaining acres to other vegetables."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 1200,
+   "unit": "box",
+   "page": 9,
+   "quote": "Summer Squash 1,200.00 box 7.00 8,400"
+  },
+  "yieldUnit": "box",
+  "pricePerUnit": {
+   "value": 7,
+   "unit": "$/box",
+   "page": 9,
+   "quote": "Summer Squash 1,200.00 box 7.00 8,400"
+  },
+  "returns": [
+   {
+    "name": "Summer Squash",
+    "quantity": 1200,
+    "unit": "box",
+    "price": 7,
+    "value": 8400,
+    "page": 9,
+    "quote": "Summer Squash 1,200.00 box 7.00 8,400"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -89,7 +109,12 @@
   },
   "nonCashOverheadTotal": null,
   "totalCost": null,
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 8400,
+   "unit": "$/acre",
+   "page": 9,
+   "quote": "Summer Squash 1,200.00 box 7.00 8,400"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [],
@@ -709,11 +734,14 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "operatingTotal",
    "cashOverheadTotal",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -724,14 +752,11 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
    "acresFarmed",
    "nonCashOverheadTotal",
    "totalCost",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",

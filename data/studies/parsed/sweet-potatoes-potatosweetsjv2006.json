@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/6f/32/6f32eea8-df52-4607-897b-6a90537a8aff/potatosweetsjv2006.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/sweet-potatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2006,
   "priceYear": {
@@ -34,9 +34,19 @@
    "page": 4,
    "quote": "About one-half acre of planted area, or one acre of fumigated area is required to produce transplants for 62 acres of field production."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 650,
+   "unit": "box",
+   "page": 21,
+   "quote": "Sweetpotatoes 650.00 box 11.00 7,150"
+  },
   "yieldUnit": "box",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 11,
+   "unit": "$/box",
+   "page": 21,
+   "quote": "Sweetpotatoes 650.00 box 11.00 7,150"
+  },
   "returns": [
    {
     "name": "Sweetpotatoes",
@@ -46,150 +56,6 @@
     "value": 7150,
     "page": 21,
     "quote": "Sweetpotatoes 650.00 box 11.00 7,150"
-   },
-   {
-    "name": "Soil Samples",
-    "quantity": 0.04,
-    "unit": "each",
-    "price": 100,
-    "value": 4,
-    "page": 21,
-    "quote": "Soil Samples 0.04 each 100.00 4"
-   },
-   {
-    "name": "Chisel",
-    "quantity": 3,
-    "unit": "acre",
-    "price": 24,
-    "value": 72,
-    "page": 21,
-    "quote": "Chisel 3.00 acre 24.00 72"
-   },
-   {
-    "name": "Fumigate - Shank",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 40,
-    "value": 40,
-    "page": 21,
-    "quote": "Fumigate - Shank 1.00 acre 40.00 40"
-   },
-   {
-    "name": "Spread Compost",
-    "quantity": 1,
-    "unit": "ton",
-    "price": 10,
-    "value": 10,
-    "page": 21,
-    "quote": "Spread Compost 1.00 ton 10.00 10"
-   },
-   {
-    "name": "List Beds",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 20,
-    "value": 20,
-    "page": 21,
-    "quote": "List Beds 1.00 acre 20.00 20"
-   },
-   {
-    "name": "Helicopter (insecticide application)",
-    "quantity": 0.5,
-    "unit": "acre",
-    "price": 18,
-    "value": 9,
-    "page": 21,
-    "quote": "Helicopter (insecticide application) 0.50 acre 18.00 9"
-   },
-   {
-    "name": "Disposal Fee (drip tape)",
-    "quantity": 60,
-    "unit": "lb",
-    "price": 0.03,
-    "value": 2,
-    "page": 21,
-    "quote": "Disposal Fee (drip tape) 60.00 lb 0.03 2"
-   },
-   {
-    "name": "Telone II",
-    "quantity": 12,
-    "unit": "gal",
-    "price": 21.2,
-    "value": 254,
-    "page": 21,
-    "quote": "Telone II 12.00 gal 21.20 254"
-   },
-   {
-    "name": "Merced Rye (cover crop)",
-    "quantity": 30,
-    "unit": "lb",
-    "price": 0.48,
-    "value": 14,
-    "page": 21,
-    "quote": "Merced Rye (cover crop) 30.00 lb 0.48 14"
-   },
-   {
-    "name": "Sweetpotatoes Transplants (Hotbed Cash Cost)",
-    "quantity": 17.5,
-    "unit": "thou",
-    "price": 32.97,
-    "value": 577,
-    "page": 21,
-    "quote": "Sweetpotatoes Transplants (Hotbed Cash Cost) 17.50 thou 32.97 577"
-   },
-   {
-    "name": "Gypsum (includes delivery & spread)",
-    "quantity": 1,
-    "unit": "ton",
-    "price": 60,
-    "value": 60,
-    "page": 21,
-    "quote": "Gypsum (includes delivery & spread) 1.00 ton 60.00 60"
-   },
-   {
-    "name": "Compost (Chicken Manure)",
-    "quantity": 1,
-    "unit": "ton",
-    "price": 27,
-    "value": 27,
-    "page": 21,
-    "quote": "Compost (Chicken Manure) 1.00 ton 27.00 27"
-   },
-   {
-    "name": "8-8-8",
-    "quantity": 816,
-    "unit": "lb",
-    "price": 0.11,
-    "value": 86,
-    "page": 21,
-    "quote": "8-8-8 816.00 lb 0.11 86"
-   },
-   {
-    "name": "Zinc 9%",
-    "quantity": 0.5,
-    "unit": "gal",
-    "price": 9.21,
-    "value": 5,
-    "page": 21,
-    "quote": "Zinc 9% 0.50 gal 9.21 5"
-   },
-   {
-    "name": "Drip Tape",
-    "quantity": 6534,
-    "unit": "ft",
-    "price": 0.02,
-    "value": 131,
-    "page": 21,
-    "quote": "Drip Tape 6,534.00 ft 0.02 131"
-   },
-   {
-    "name": "Water Surface",
-    "quantity": 30,
-    "unit": "acin",
-    "price": 1.18,
-    "value": 35,
-    "page": 21,
-    "quote": "Water Surface 30.00 acin 1.18 35"
    }
   ],
   "interestRatePct": null,
@@ -230,7 +96,12 @@
    "page": 22,
    "quote": "TOTAL COSTS/ACRE 5,599"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 7150,
+   "unit": "$/acre",
+   "page": 21,
+   "quote": "Sweetpotatoes 650.00 box 11.00 7,150"
+  },
   "netReturnsAboveOperating": {
    "value": 3734,
    "unit": "$/acre",
@@ -1501,11 +1372,14 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1514,14 +1388,11 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
@@ -1531,7 +1402,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 17 return lines with different prices; pricePerUnit left null, see returns[]",
    "several costs-per-acre tables (establishment and production); using the production one"
   ]
  }

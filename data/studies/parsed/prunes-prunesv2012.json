@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/dd/6b/dd6b6a51-8d7b-4392-8a03-723e50f6fa91/prunesv2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/prunes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -2237,7 +2237,7 @@
    },
    {
     "year": 7,
-    "label": "**7th",
+    "label": "7th",
     "totalCost": 3621,
     "returns": 1867,
     "netCost": 1754,

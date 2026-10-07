@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e2/52/e2525250-9c1e-4279-b0c9-4b182f6f5c4b/wildriceir05.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/wild-rice",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -24,10 +24,30 @@
  "assumptions": {
   "acresFarmed": null,
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 1600,
+   "unit": "Pounds",
+   "page": 13,
+   "quote": "WILD RICE 1,600 Pounds 0.48 768"
+  },
+  "yieldUnit": "Pounds",
+  "pricePerUnit": {
+   "value": 0.48,
+   "unit": "$/Pounds",
+   "page": 13,
+   "quote": "WILD RICE 1,600 Pounds 0.48 768"
+  },
+  "returns": [
+   {
+    "name": "WILD RICE",
+    "quantity": 1600,
+    "unit": "Pounds",
+    "price": 0.48,
+    "value": 768,
+    "page": 13,
+    "quote": "WILD RICE 1,600 Pounds 0.48 768"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -97,7 +117,12 @@
    "page": 12,
    "quote": "TOTAL COSTS/ACRE 805"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 768,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL GROSS RETURNS FOR WILD RICE 768"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -876,6 +901,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -883,6 +910,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -895,18 +923,14 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
-   "grossReturns",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

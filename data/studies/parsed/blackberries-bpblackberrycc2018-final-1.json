@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/30/89/3089b129-9d64-4c00-9032-194edf41842e/bpblackberrycc2018-final-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2018,
   "priceYear": {
@@ -1474,17 +1474,6 @@
      ],
      "page": 13,
      "quote": "TOTAL ACCUMULATED NET/ACRE -23,245 -32,842"
-    },
-    {
-     "label": "Blackberry Cost and Return Study – Central Coast – University of California",
-     "kind": "overheadItem",
-     "section": "Non-Cash Overhead (Capital Recovery Cost)",
-     "values": [
-      null,
-      null
-     ],
-     "page": 13,
-     "quote": "Blackberry Cost and Return Study – Central Coast – University of California"
     }
    ],
    "yieldRow": {
@@ -1516,166 +1505,6 @@
     "accumulated": null,
     "page": 13,
     "quote": "NET CASH COSTS/ACRE FOR THE YEAR 16,622 2,981"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 72622,
-    "returns": null,
-    "netCost": 72622,
-    "accumulated": null,
-    "page": 15,
-    "quote": "TOTAL CASH COSTS/ACRE 72,622"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 72622,
-    "returns": null,
-    "netCost": 72622,
-    "accumulated": null,
-    "page": 17,
-    "quote": "TOTAL CASH COSTS/ACRE 72,622"
-   },
-   {
-    "year": 1,
-    "label": "1",
-    "totalCost": 584,
-    "returns": null,
-    "netCost": 584,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 2,
-    "label": "2",
-    "totalCost": 11166,
-    "returns": null,
-    "netCost": 11166,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 3,
-    "label": "3",
-    "totalCost": 411,
-    "returns": null,
-    "netCost": 411,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 4,
-    "label": "4",
-    "totalCost": 1272,
-    "returns": null,
-    "netCost": 1272,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 5,
-    "label": "5",
-    "totalCost": 1782,
-    "returns": null,
-    "netCost": 1782,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 6,
-    "label": "6",
-    "totalCost": 4238,
-    "returns": null,
-    "netCost": 4238,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 7,
-    "label": "7",
-    "totalCost": 3611,
-    "returns": null,
-    "netCost": 3611,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 8,
-    "label": "8",
-    "totalCost": 8449,
-    "returns": null,
-    "netCost": 8449,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 9,
-    "label": "9",
-    "totalCost": 15675,
-    "returns": null,
-    "netCost": 15675,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 10,
-    "label": "10",
-    "totalCost": 15683,
-    "returns": null,
-    "netCost": 15683,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 11,
-    "label": "11",
-    "totalCost": 8039,
-    "returns": null,
-    "netCost": 8039,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 12,
-    "label": "12",
-    "totalCost": 238,
-    "returns": null,
-    "netCost": 238,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 13,
-    "label": "13",
-    "totalCost": 1473,
-    "returns": null,
-    "netCost": 1473,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
-   },
-   {
-    "year": 14,
-    "label": "14",
-    "totalCost": 72622,
-    "returns": null,
-    "netCost": 72622,
-    "accumulated": null,
-    "page": 19,
-    "quote": "TOTAL CASH COSTS/ACRE 584 11,166 411 1,272 1,782 4,238 3,611 8,449 15,675 15,683 8,039 238 1,473 72,622"
    }
   ],
   "accumulatedNetCost": {
@@ -1726,7 +1555,8 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "prose establishment cost 16622 matches no column of the accumulated row [-23245, -32842]"
   ]
  }
 }

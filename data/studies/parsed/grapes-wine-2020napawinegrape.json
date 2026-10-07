@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/fe/24/fe24e27a-5c29-4cc3-a83c-63a31cd0c767/2020napawinegrape.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -29,15 +29,30 @@
    "quote": "The cost is $45,837 per acre or $458,370 for the 10-acre vineyard."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
+  "yieldPerAcre": {
+   "value": 4,
+   "unit": "Ton",
+   "page": 20,
+   "quote": "Cabernet Sauvignon 4.0 Ton 8,200.00 32,800"
+  },
+  "yieldUnit": "Ton",
   "pricePerUnit": {
    "value": 8200,
-   "unit": "$/ton",
-   "page": 9,
-   "quote": "A price of $8,200 per ton for Cabernet Sauvignon wine grapes is used in this analysis."
+   "unit": "$/Ton",
+   "page": 20,
+   "quote": "Cabernet Sauvignon 4.0 Ton 8,200.00 32,800"
   },
-  "returns": [],
+  "returns": [
+   {
+    "name": "Cabernet Sauvignon",
+    "quantity": 4,
+    "unit": "Ton",
+    "price": 8200,
+    "value": 32800,
+    "page": 20,
+    "quote": "Cabernet Sauvignon 4.0 Ton 8,200.00 32,800"
+   }
+  ],
   "interestRatePct": {
    "value": 5.5,
    "unit": "%",
@@ -107,7 +122,12 @@
    "page": 19,
    "quote": "TOTAL COSTS/ACRE 26,169"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 32800,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "TOTAL GROSS REVENUE 32,800"
+  },
   "netReturnsAboveOperating": {
    "value": 23781,
    "unit": "$/acre",
@@ -1880,7 +1900,7 @@
     "label": "2nd",
     "totalCost": 11806,
     "returns": null,
-    "netCost": 37056,
+    "netCost": 11806,
     "accumulated": 48862,
     "page": 17,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 37,056 48,862 45,837"
@@ -1890,7 +1910,7 @@
     "label": "3rd",
     "totalCost": 9275,
     "returns": 12300,
-    "netCost": 11806,
+    "netCost": -3025,
     "accumulated": 45837,
     "page": 17,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 37,056 48,862 45,837"
@@ -1934,6 +1954,7 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
    "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
@@ -1944,6 +1965,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "investments",
    "businessOverhead",
@@ -1955,16 +1977,13 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
    "landRentPerAcre",
-   "grossReturns",
    "equipment",
    "hourlyEquipment",
    "insuranceRatePct",
    "machineLaborFactor"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "equipment table present but no equipment rows parsed"
   ]
  }

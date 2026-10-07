@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b5/55/b5553ac8-9aaa-49e1-b617-8e87f0e55bf0/dates_si_2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/dates",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2005,
   "priceYear": null
@@ -25,9 +25,37 @@
   },
   "acresCrop": null,
   "yieldPerAcre": null,
-  "yieldUnit": null,
+  "yieldUnit": "lb",
   "pricePerUnit": null,
-  "returns": [],
+  "returns": [
+   {
+    "name": "Grade B (65% of Total)",
+    "quantity": 8486,
+    "unit": "lb",
+    "price": 0.65,
+    "value": 5516,
+    "page": 20,
+    "quote": "Grade B (65% of Total) 8486 lb 0.65 5516"
+   },
+   {
+    "name": "Grade C (30% of Total)",
+    "quantity": 3917,
+    "unit": "lb",
+    "price": 0.27,
+    "value": 1058,
+    "page": 20,
+    "quote": "Grade C (30% of Total) 3917 lb 0.27 1058"
+   },
+   {
+    "name": "Culls (5% of Total)",
+    "quantity": 653,
+    "unit": "lb",
+    "price": 0,
+    "value": 0,
+    "page": 20,
+    "quote": "Culls (5% of Total) 653 lb 0.00 0"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -82,7 +110,12 @@
    "quote": "TOTAL NON-CASH OVERHEAD COSTS 4565"
   },
   "totalCost": null,
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 6574,
+   "unit": "$/acre",
+   "page": 20,
+   "quote": "Total 13056 lb 0.504 6574"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -486,7 +519,1226 @@
   "page": 21,
   "quote": "Monthly Cash Costs Per Acre to Produce Dates in the Coachella Valley, Riverside County, 2005-2006"
  },
- "establishment": null,
+ "establishment": {
+  "table": {
+   "title": "Sample Costs Per Acre to Establish a Date Palm Orchard in the Coachella Valley, Riverside County, 2005-2006",
+   "years": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th",
+    "6th",
+    "7th",
+    "8th",
+    "9th"
+   ],
+   "rows": [
+    {
+     "label": "OPERATIONS",
+     "kind": "operation",
+     "section": "",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "OPERATIONS"
+    },
+    {
+     "label": "PRE-PLANTING",
+     "kind": "heading",
+     "section": "PRE-PLANTING",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "PRE-PLANTING: (Contract)"
+    },
+    {
+     "label": "Ground Preparation: Discing",
+     "kind": "operation",
+     "section": "PRE-PLANTING",
+     "values": [
+      500,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "Ground Preparation: Discing 500"
+    },
+    {
+     "label": "Fumigation (methyl bromide)",
+     "kind": "operation",
+     "section": "PRE-PLANTING",
+     "values": [
+      1200,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "Fumigation (methyl bromide) 1200"
+    },
+    {
+     "label": "Pre-Plant Discing (1x)",
+     "kind": "operation",
+     "section": "PRE-PLANTING",
+     "values": [
+      8,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "Pre-Plant Discing (1x) 8"
+    },
+    {
+     "label": "TOTAL PRE-PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "PRE-PLANTING",
+     "values": [
+      1708,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "TOTAL PRE-PLANTING COSTS 1708"
+    },
+    {
+     "label": "PLANTING",
+     "kind": "heading",
+     "section": "PLANTING",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "PLANTING: (Contract, Labor, Material and Equipment Operating Costs)"
+    },
+    {
+     "label": "Plant Trees [offshoots + (cut, transport & plant)]",
+     "kind": "operation",
+     "section": "PLANTING",
+     "values": [
+      6125,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "Plant Trees [offshoots + (cut, transport & plant)] 6125"
+    },
+    {
+     "label": "Re-Plant Trees [offshoots + (cut, transport & plant)]",
+     "kind": "operation",
+     "section": "PLANTING",
+     "values": [
+      null,
+      1875,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "Re-Plant Trees [offshoots + (cut, transport & plant)] 1875"
+    },
+    {
+     "label": "TOTAL PLANTING COSTS",
+     "kind": "subtotal",
+     "section": "PLANTING",
+     "values": [
+      6125,
+      1875,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "TOTAL PLANTING COSTS 6125 1875"
+    },
+    {
+     "label": "CULTURAL",
+     "kind": "heading",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "CULTURAL: (Contract, Labor, Material and Equipment Operating Costs)"
+    },
+    {
+     "label": "Cover Crop",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+     ],
+     "page": 17,
+     "quote": "Cover Crop 9 9 9 9 9 9 9 9 9"
+    },
+    {
+     "label": "Irrigation",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      63,
+      86,
+      132,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225
+     ],
+     "page": 17,
+     "quote": "Irrigation 63 86 132 225 225 225 225 225 225"
+    },
+    {
+     "label": "Fertilizer - Fertilizer Spike",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      144,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "Fertilizer - Fertilizer Spike 144"
+    },
+    {
+     "label": "Fertilizer - Urea",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      17,
+      25,
+      33,
+      42,
+      50,
+      58,
+      67,
+      75
+     ],
+     "page": 17,
+     "quote": "Fertilizer - Urea 17 25 33 42 50 58 67 75"
+    },
+    {
+     "label": "Fertilizer - Phosphorus (Super Phosphate) (1x yr.1 and 3x after that)",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      9,
+      27,
+      27,
+      33,
+      33,
+      38,
+      38,
+      44,
+      44
+     ],
+     "page": 17,
+     "quote": "Fertilizer - Phosphorus (Super Phosphate) (1x yr.1 and 3x after that) 9 27 27 33 33 38 38 44 44"
+    },
+    {
+     "label": "Fertilizer - Potassium (Potassium Chloride) (1x yr.1 and 3x after that)",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      8,
+      23,
+      23,
+      26,
+      26,
+      28,
+      28,
+      30,
+      30
+     ],
+     "page": 17,
+     "quote": "Fertilizer - Potassium (Potassium Chloride) (1x yr.1 and 3x after that) 8 23 23 26 26 28 28 30 30"
+    },
+    {
+     "label": "Fertilizer - Magnesium Sulfate (1x yr.1 and 3x after that)",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      10,
+      31,
+      31,
+      31,
+      31,
+      31,
+      0,
+      0,
+      0
+     ],
+     "page": 17,
+     "quote": "Fertilizer - Magnesium Sulfate (1x yr.1 and 3x after that) 10 31 31 31 31 31 0 0 0"
+    },
+    {
+     "label": "Discing: 3x",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      23,
+      23,
+      23,
+      23,
+      23,
+      23,
+      23,
+      23
+     ],
+     "page": 17,
+     "quote": "Discing: 3x 23 23 23 23 23 23 23 23"
+    },
+    {
+     "label": "Herbicide - Roundup (Glyphosate 2x)",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      34,
+      54,
+      54,
+      54,
+      54,
+      94,
+      94,
+      94,
+      94
+     ],
+     "page": 17,
+     "quote": "Herbicide - Roundup (Glyphosate 2x) 34 54 54 54 54 94 94 94 94"
+    },
+    {
+     "label": "Insecticide - Banks Grass Mite (Savey 1x)",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      129,
+      129,
+      129,
+      129
+     ],
+     "page": 17,
+     "quote": "Insecticide - Banks Grass Mite (Savey 1x) 129 129 129 129"
+    },
+    {
+     "label": "Insecticide - Carob Moth (Malathion 3x)",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      360,
+      360,
+      360,
+      360
+     ],
+     "page": 17,
+     "quote": "Insecticide - Carob Moth (Malathion 3x) 360 360 360 360"
+    },
+    {
+     "label": "Vertebrate Pest Control - Strychnine (2x)",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22
+     ],
+     "page": 17,
+     "quote": "Vertebrate Pest Control - Strychnine (2x) 22 22 22 22 22 22 22 22 22"
+    },
+    {
+     "label": "Dethorning 1x",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      245,
+      245,
+      245,
+      245,
+      245
+     ],
+     "page": 17,
+     "quote": "Dethorning 1x 245 245 245 245 245"
+    },
+    {
+     "label": "Pollination (Including Thinning 2x)",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      503,
+      503,
+      503,
+      503,
+      503
+     ],
+     "page": 17,
+     "quote": "Pollination (Including Thinning 2x) 503 503 503 503 503"
+    },
+    {
+     "label": "Fruit Bunch Tiedown 1x",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      263,
+      263,
+      263,
+      263,
+      263
+     ],
+     "page": 17,
+     "quote": "Fruit Bunch Tiedown 1x 263 263 263 263 263"
+    },
+    {
+     "label": "Pruning & Bagging 1x",
+     "kind": "operation",
+     "section": "CULTURAL",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      641,
+      641,
+      641,
+      641,
+      641
+     ],
+     "page": 17,
+     "quote": "Pruning & Bagging 1x 641 641 641 641 641"
+    },
+    {
+     "label": "TOTAL CULTURAL COSTS",
+     "kind": "subtotal",
+     "section": "CULTURAL",
+     "values": [
+      299,
+      292,
+      346,
+      456,
+      2117,
+      2661,
+      2638,
+      2655,
+      2663
+     ],
+     "page": 17,
+     "quote": "TOTAL CULTURAL COSTS 299 292 346 456 2117 2661 2638 2655 2663"
+    },
+    {
+     "label": "HARVEST",
+     "kind": "heading",
+     "section": "HARVEST",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "HARVEST:"
+    },
+    {
+     "label": "Picking",
+     "kind": "operation",
+     "section": "HARVEST",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      68,
+      133,
+      197,
+      262,
+      327
+     ],
+     "page": 17,
+     "quote": "Picking 68 133 197 262 327"
+    },
+    {
+     "label": "Hauling",
+     "kind": "operation",
+     "section": "HARVEST",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      45,
+      88,
+      132,
+      175,
+      218
+     ],
+     "page": 17,
+     "quote": "Hauling 45 88 132 175 218"
+    },
+    {
+     "label": "TOTAL HARVEST COSTS",
+     "kind": "subtotal",
+     "section": "HARVEST",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      113,
+      221,
+      329,
+      437,
+      545
+     ],
+     "page": 17,
+     "quote": "TOTAL HARVEST COSTS 113 221 329 437 545"
+    },
+    {
+     "label": "Interest on Operating Capital @ 9.25%",
+     "kind": "interest",
+     "section": "HARVEST",
+     "values": [
+      449,
+      114,
+      15,
+      19,
+      127,
+      153,
+      153,
+      156,
+      158
+     ],
+     "page": 17,
+     "quote": "Interest on Operating Capital @ 9.25% 449 114 15 19 127 153 153 156 158"
+    },
+    {
+     "label": "TOTAL OPERATING COSTS",
+     "kind": "total",
+     "section": "HARVEST",
+     "values": [
+      8581,
+      2281,
+      361,
+      475,
+      2357,
+      3035,
+      3120,
+      3248,
+      3366
+     ],
+     "page": 17,
+     "quote": "TOTAL OPERATING COSTS 8581 2281 361 475 2357 3035 3120 3248 3366"
+    },
+    {
+     "label": "CASH OVERHEAD",
+     "kind": "heading",
+     "section": "CASH OVERHEAD",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "CASH OVERHEAD:"
+    },
+    {
+     "label": "Office Expenses",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+     ],
+     "page": 17,
+     "quote": "Office Expenses 200 200 200 200 200 200 200 200 200"
+    },
+    {
+     "label": "Liability Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+     ],
+     "page": 17,
+     "quote": "Liability Insurance 17 17 17 17 17 17 17 17 17"
+    },
+    {
+     "label": "Leaf Analysis",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+     ],
+     "page": 17,
+     "quote": "Leaf Analysis 0 10 10 10 10 10 10 10 10"
+    },
+    {
+     "label": "Field Sanitation",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      0,
+      0,
+      0,
+      0,
+      17,
+      17,
+      17,
+      17,
+      17
+     ],
+     "page": 17,
+     "quote": "Field Sanitation 0 0 0 0 17 17 17 17 17"
+    },
+    {
+     "label": "Property Tax",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      321,
+      321,
+      321,
+      321,
+      321,
+      323,
+      323,
+      323,
+      323
+     ],
+     "page": 17,
+     "quote": "Property Tax 321 321 321 321 321 323 323 323 323"
+    },
+    {
+     "label": "Property Insurance",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      225,
+      225,
+      225,
+      225,
+      225,
+      226,
+      226,
+      226,
+      226
+     ],
+     "page": 17,
+     "quote": "Property Insurance 225 225 225 225 225 226 226 226 226"
+    },
+    {
+     "label": "Investment Repairs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52
+     ],
+     "page": 17,
+     "quote": "Investment Repairs 52 52 52 52 52 52 52 52 52"
+    },
+    {
+     "label": "Interest-Cash Overhead Costs",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      38,
+      38,
+      38,
+      38,
+      39,
+      39,
+      39,
+      39,
+      39
+     ],
+     "page": 17,
+     "quote": "Interest-Cash Overhead Costs 38 38 38 38 39 39 39 39 39"
+    },
+    {
+     "label": "Interest-Establishment Costs (Trees)",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD",
+     "values": [
+      0,
+      872,
+      1244,
+      1471,
+      1731,
+      2085,
+      2434,
+      2723,
+      2949
+     ],
+     "page": 17,
+     "quote": "Interest-Establishment Costs (Trees) 0 872 1244 1471 1731 2085 2434 2723 2949"
+    },
+    {
+     "label": "TOTAL CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      853,
+      1735,
+      2107,
+      2334,
+      2612,
+      2969,
+      3318,
+      3607,
+      3833
+     ],
+     "page": 17,
+     "quote": "TOTAL CASH OVERHEAD COSTS 853 1735 2107 2334 2612 2969 3318 3607 3833"
+    },
+    {
+     "label": "TOTAL ALL CASH COSTS",
+     "kind": "total",
+     "section": "CASH OVERHEAD",
+     "values": [
+      9434,
+      4016,
+      2468,
+      2809,
+      4969,
+      6004,
+      6438,
+      6855,
+      7199
+     ],
+     "page": 17,
+     "quote": "TOTAL ALL CASH COSTS 9434 4016 2468 2809 4969 6004 6438 6855 7199"
+    },
+    {
+     "label": "INCOME FROM PRODUCTION",
+     "kind": "income",
+     "section": "CASH OVERHEAD",
+     "values": [
+      0,
+      0,
+      0,
+      0,
+      1136,
+      2223,
+      3311,
+      4399,
+      5486
+     ],
+     "page": 17,
+     "quote": "INCOME FROM PRODUCTION 0 0 0 0 1,136 2,223 3,311 4,399 5,486"
+    },
+    {
+     "label": "NET CASH COSTS FOR THE YEAR",
+     "kind": "net",
+     "section": "CASH OVERHEAD",
+     "values": [
+      9434,
+      4016,
+      2468,
+      2809,
+      3833,
+      3781,
+      3127,
+      2456,
+      1713
+     ],
+     "page": 17,
+     "quote": "NET CASH COSTS FOR THE YEAR 9434 4016 2468 2809 3833 3781 3127 2456 1713"
+    },
+    {
+     "label": "ACCUMULATED NET CASH COSTS",
+     "kind": "accumulated",
+     "section": "CASH OVERHEAD",
+     "values": [
+      9434,
+      13450,
+      15918,
+      18727,
+      22560,
+      26341,
+      29468,
+      31924,
+      33637
+     ],
+     "page": 17,
+     "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+    },
+    {
+     "label": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "NON-CASH OVERHEAD (CAPITAL RECOVERY):"
+    },
+    {
+     "label": "Shop Buildings",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66
+     ],
+     "page": 17,
+     "quote": "Shop Buildings 66 66 66 66 66 66 66 66 66"
+    },
+    {
+     "label": "Shop Tools (fuel tanks, pruning and picking clips, and lug boxes)",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+     ],
+     "page": 17,
+     "quote": "Shop Tools (fuel tanks, pruning and picking clips, and lug boxes) 6 6 6 6 6 6 6 6 6"
+    },
+    {
+     "label": "Irrigation System",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99
+     ],
+     "page": 17,
+     "quote": "Irrigation System 99 99 99 99 99 99 99 99 99"
+    },
+    {
+     "label": "Equipment",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      170,
+      170,
+      170,
+      170,
+      170,
+      226,
+      226,
+      226,
+      226
+     ],
+     "page": 17,
+     "quote": "Equipment 170 170 170 170 170 226 226 226 226"
+    },
+    {
+     "label": "Land Rent",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      1875,
+      1875,
+      1875,
+      1875,
+      1875,
+      1875,
+      1875,
+      1875,
+      1875
+     ],
+     "page": 17,
+     "quote": "Land Rent 1875 1875 1875 1875 1875 1875 1875 1875 1875"
+    },
+    {
+     "label": "TOTAL NON-CASH OVERHEAD COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      2216,
+      2216,
+      2216,
+      2216,
+      2216,
+      2272,
+      2272,
+      2272,
+      2272
+     ],
+     "page": 17,
+     "quote": "TOTAL NON-CASH OVERHEAD COSTS 2216 2216 2216 2216 2216 2272 2272 2272 2272"
+    },
+    {
+     "label": "TOTAL ALL COSTS",
+     "kind": "total",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      11650,
+      6232,
+      4684,
+      5025,
+      7185,
+      8276,
+      8710,
+      9127,
+      9471
+     ],
+     "page": 17,
+     "quote": "TOTAL ALL COSTS 11650 6232 4684 5025 7185 8276 8710 9127 9471"
+    },
+    {
+     "label": "RETURNS/ INCOME FROM PRODUCTION",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      0,
+      0,
+      0,
+      0,
+      1136,
+      2223,
+      3311,
+      4399,
+      5486
+     ],
+     "page": 17,
+     "quote": "RETURNS/ INCOME FROM PRODUCTION 0 0 0 0 1,136 2,223 3,311 4,399 5,486"
+    },
+    {
+     "label": "TOTAL NET COST FOR THE YEAR",
+     "kind": "net",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      11650,
+      6232,
+      4684,
+      5025,
+      6049,
+      6053,
+      5399,
+      4728,
+      3985
+     ],
+     "page": 17,
+     "quote": "TOTAL NET COST FOR THE YEAR 11650 6232 4684 5025 6049 6053 5399 4728 3985"
+    },
+    {
+     "label": "TOTAL ACCUMULATED NET COST",
+     "kind": "accumulated",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      11650,
+      17882,
+      22566,
+      27591,
+      33640,
+      39693,
+      45092,
+      49820,
+      53805
+     ],
+     "page": 17,
+     "quote": "TOTAL ACCUMULATED NET COST 11650 17882 22566 27591 33640 39693 45092 49820 53805"
+    },
+    {
+     "label": "Coachella Valley, Riverside County, 2005-2006",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD (CAPITAL RECOVERY)",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "page": 17,
+     "quote": "Coachella Valley, Riverside County, 2005-2006"
+    }
+   ],
+   "yieldRow": null
+  },
+  "years": [
+   {
+    "year": 1,
+    "label": "1st",
+    "totalCost": 9434,
+    "returns": 0,
+    "netCost": 9434,
+    "accumulated": 9434,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   },
+   {
+    "year": 2,
+    "label": "2nd",
+    "totalCost": 4016,
+    "returns": 0,
+    "netCost": 4016,
+    "accumulated": 13450,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   },
+   {
+    "year": 3,
+    "label": "3rd",
+    "totalCost": 2468,
+    "returns": 0,
+    "netCost": 2468,
+    "accumulated": 15918,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   },
+   {
+    "year": 4,
+    "label": "4th",
+    "totalCost": 2809,
+    "returns": 0,
+    "netCost": 2809,
+    "accumulated": 18727,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   },
+   {
+    "year": 5,
+    "label": "5th",
+    "totalCost": 4969,
+    "returns": 1136,
+    "netCost": 3833,
+    "accumulated": 22560,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   },
+   {
+    "year": 6,
+    "label": "6th",
+    "totalCost": 6004,
+    "returns": 2223,
+    "netCost": 3781,
+    "accumulated": 26341,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   },
+   {
+    "year": 7,
+    "label": "7th",
+    "totalCost": 6438,
+    "returns": 3311,
+    "netCost": 3127,
+    "accumulated": 29468,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   },
+   {
+    "year": 8,
+    "label": "8th",
+    "totalCost": 6855,
+    "returns": 4399,
+    "netCost": 2456,
+    "accumulated": 31924,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   },
+   {
+    "year": 9,
+    "label": "9th",
+    "totalCost": 7199,
+    "returns": 5486,
+    "netCost": 1713,
+    "accumulated": 33637,
+    "page": 17,
+    "quote": "ACCUMULATED NET CASH COSTS 9434 13450 15918 18727 22560 26341 29468 31924 33637"
+   }
+  ],
+  "accumulatedNetCost": null,
+  "annualCharge": null,
+  "productionYears": null,
+  "plantingLife": null,
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": {
+   "page": 14,
+   "quote": "This value is amortized approximately over 40 years, (the expected useful life of the orchard) to determine an annual charge for depreciation of trees and the opportunity cost of the investment in tree establishment."
+  }
+ },
  "parse": {
   "fieldsFound": [
    "year",
@@ -497,10 +1749,12 @@
    "acresFarmed",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
+   "grossReturns",
    "equipment",
    "hourlyEquipment",
    "capitalRecoveryFormula",
-   "monthly"
+   "monthly",
+   "establishment"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -510,19 +1764,17 @@
    "landRentPerAcre",
    "operatingTotal",
    "totalCost",
-   "grossReturns",
    "operations",
    "investments",
    "businessOverhead",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
+   "Table 2 lists 3 return lines with different prices; pricePerUnit left null, see returns[]",
    "a later costs table had no totals; used an earlier one",
    "several costs-per-acre tables (establishment and production); using the production one",
    "equipment row without a Total column: 2005-2006 70 HP 4WD Tractor",

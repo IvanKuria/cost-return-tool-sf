@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e9/1f/e91f8ba2-2df2-48f7-af33-bf1c0b0456b1/beanslglimavn10.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -29,10 +29,30 @@
    "quote": "This report is based on a 1,200 non-contiguous acre field and row crop farm on which 200 acres of rented land are producing large lima beans; 1,000 acres of rented and grower owned land are planted to alfalfa hay, field corn, tomatoes, and wheat."
   },
   "acresCrop": null,
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 23,
+   "unit": "cwt",
+   "page": 10,
+   "quote": "GROSS RETURNS: Large Lima Beans 23.00 cwt 65.00 1,495"
+  },
+  "yieldUnit": "cwt",
+  "pricePerUnit": {
+   "value": 65,
+   "unit": "$/cwt",
+   "page": 10,
+   "quote": "GROSS RETURNS: Large Lima Beans 23.00 cwt 65.00 1,495"
+  },
+  "returns": [
+   {
+    "name": "Large Lima Beans",
+    "quantity": 23,
+    "unit": "cwt",
+    "price": 65,
+    "value": 1495,
+    "page": 10,
+    "quote": "GROSS RETURNS: Large Lima Beans 23.00 cwt 65.00 1,495"
+   }
+  ],
   "interestRatePct": null,
   "operatingInterestRatePct": null,
   "laborMachineRate": {
@@ -107,7 +127,12 @@
    "page": 9,
    "quote": "TOTAL COSTS/ACRE 1,253"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 1495,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "GROSS RETURNS: Large Lima Beans 23.00 cwt 65.00 1,495"
+  },
   "netReturnsAboveOperating": {
    "value": 602,
    "unit": "$/acre",
@@ -1097,6 +1122,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1106,6 +1133,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1116,10 +1144,7 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
@@ -1127,7 +1152,6 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 found but no GROSS RETURNS block",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

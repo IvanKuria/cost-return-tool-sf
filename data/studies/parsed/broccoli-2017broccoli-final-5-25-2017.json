@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e4/13/e413c195-5ddb-433b-9be8-a48c40b4063b/2017broccoli-final_5-25-2017.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/broccoli",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2017,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 3,
    "quote": "Broccoli for the fresh market is planted on 500 acres and rotated with other cool season vegetable crops to assist with pest management and soil fertility."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 700,
+   "unit": "carton",
+   "page": 13,
+   "quote": "Broccoli 700 carton 10.55 7,385"
+  },
+  "yieldUnit": "carton",
+  "pricePerUnit": {
+   "value": 10.55,
+   "unit": "$/carton",
+   "page": 13,
+   "quote": "Broccoli 700 carton 10.55 7,385"
+  },
+  "returns": [
+   {
+    "name": "Broccoli",
+    "quantity": 700,
+    "unit": "carton",
+    "price": 10.55,
+    "value": 7385,
+    "page": 13,
+    "quote": "Broccoli 700 carton 10.55 7,385"
+   }
+  ],
   "interestRatePct": {
    "value": 5,
    "unit": "%",
@@ -122,7 +142,12 @@
    "page": 12,
    "quote": "TOTAL COSTS/ACRE 10,135"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 7385,
+   "unit": "$/acre",
+   "page": 13,
+   "quote": "TOTAL GROSS RETURNS 7,385"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -1193,6 +1218,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -1203,6 +1230,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1215,9 +1243,6 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
-   "grossReturns",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

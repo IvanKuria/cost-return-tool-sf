@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/50/a0/50a0bad6-1cf0-4d61-a632-78b6fe2ff538/2015romainehearts-finaldraft_1-27-2016-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lettuce",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -34,10 +34,30 @@
    "page": 3,
    "quote": "Romaine lettuce for the hearts market is planted on 250 acres and rotated with other lettuce and cool season vegetable crops to assist with pest management and soil fertility."
   },
-  "yieldPerAcre": null,
-  "yieldUnit": null,
-  "pricePerUnit": null,
-  "returns": [],
+  "yieldPerAcre": {
+   "value": 750,
+   "unit": "Carton",
+   "page": 12,
+   "quote": "TOTAL GROSS RETURNS 750 Carton 9,375"
+  },
+  "yieldUnit": "Carton",
+  "pricePerUnit": {
+   "value": 12.5,
+   "unit": "$/Carton",
+   "page": 12,
+   "quote": "Romaine Hearts 750 Carton 12.50 9,375"
+  },
+  "returns": [
+   {
+    "name": "Romaine Hearts",
+    "quantity": 750,
+    "unit": "Carton",
+    "price": 12.5,
+    "value": 9375,
+    "page": 12,
+    "quote": "Romaine Hearts 750 Carton 12.50 9,375"
+   }
+  ],
   "interestRatePct": {
    "value": 4.75,
    "unit": "%",
@@ -119,7 +139,12 @@
    "page": 11,
    "quote": "TOTAL COSTS/ACRE 10,781"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 9375,
+   "unit": "$/acre",
+   "page": 12,
+   "quote": "TOTAL GROSS RETURNS 750 Carton 9,375"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
   "cashOverheadItems": [
@@ -1302,6 +1327,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
@@ -1312,6 +1339,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1324,9 +1352,6 @@
    "monthly"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
-   "grossReturns",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

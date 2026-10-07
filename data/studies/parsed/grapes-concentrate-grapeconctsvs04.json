@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/46/c7/46c712f3-8a8f-4db5-aef4-8b9ccea1a82a/grapeconctsvs04.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–concentrate",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2004,
   "priceYear": null
@@ -29,9 +29,19 @@
    "page": 3,
    "quote": "The farm is comprised of 120 acres, 40 acres of concentrate grapes being established and 75 acres of raisin grapes."
   },
-  "yieldPerAcre": null,
+  "yieldPerAcre": {
+   "value": 12,
+   "unit": "ton",
+   "page": 10,
+   "quote": "Grapes for Concentrate 12.00 ton 200.00 2,400"
+  },
   "yieldUnit": "ton",
-  "pricePerUnit": null,
+  "pricePerUnit": {
+   "value": 200,
+   "unit": "$/ton",
+   "page": 10,
+   "quote": "Grapes for Concentrate 12.00 ton 200.00 2,400"
+  },
   "returns": [
    {
     "name": "Grapes for Concentrate",
@@ -41,141 +51,6 @@
     "value": 2400,
     "page": 10,
     "quote": "Grapes for Concentrate 12.00 ton 200.00 2,400"
-   },
-   {
-    "name": "Tying Materials",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 11.5,
-    "value": 11,
-    "page": 10,
-    "quote": "Tying Materials 1.00 acre 11.50 11"
-   },
-   {
-    "name": "Machine Harvest",
-    "quantity": 1,
-    "unit": "acre",
-    "price": 225,
-    "value": 225,
-    "page": 10,
-    "quote": "Machine Harvest 1.00 acre 225.00 225"
-   },
-   {
-    "name": "Haul to Crusher",
-    "quantity": 12,
-    "unit": "ton",
-    "price": 10,
-    "value": 120,
-    "page": 10,
-    "quote": "Haul to Crusher 12.00 ton 10.00 120"
-   },
-   {
-    "name": "Roundup Ultra Max",
-    "quantity": 2.16,
-    "unit": "pint",
-    "price": 8.56,
-    "value": 18,
-    "page": 10,
-    "quote": "Roundup Ultra Max 2.16 pint 8.56 18"
-   },
-   {
-    "name": "Goal 2XL",
-    "quantity": 1,
-    "unit": "pint",
-    "price": 16.21,
-    "value": 16,
-    "page": 10,
-    "quote": "Goal 2XL 1.00 pint 16.21 16"
-   },
-   {
-    "name": "Surflan 4 AS",
-    "quantity": 2.64,
-    "unit": "pint",
-    "price": 16.96,
-    "value": 45,
-    "page": 10,
-    "quote": "Surflan 4 AS 2.64 pint 16.96 45"
-   },
-   {
-    "name": "Water",
-    "quantity": 30,
-    "unit": "acin",
-    "price": 5.67,
-    "value": 170,
-    "page": 10,
-    "quote": "Water 30.00 acin 5.67 170"
-   },
-   {
-    "name": "Wettable Sulfur",
-    "quantity": 6,
-    "unit": "lb",
-    "price": 0.21,
-    "value": 1,
-    "page": 10,
-    "quote": "Wettable Sulfur 6.00 lb 0.21 1"
-   },
-   {
-    "name": "Dusting Sulfur",
-    "quantity": 30,
-    "unit": "lb",
-    "price": 0.18,
-    "value": 5,
-    "page": 10,
-    "quote": "Dusting Sulfur 30.00 lb 0.18 5"
-   },
-   {
-    "name": "Rubigan EC",
-    "quantity": 4,
-    "unit": "floz",
-    "price": 2.5,
-    "value": 10,
-    "page": 10,
-    "quote": "Rubigan EC 4.00 floz 2.50 10"
-   },
-   {
-    "name": "Flint",
-    "quantity": 1.5,
-    "unit": "oz",
-    "price": 16.49,
-    "value": 25,
-    "page": 10,
-    "quote": "Flint 1.50 oz 16.49 25"
-   },
-   {
-    "name": "Neutral Zinc 50%",
-    "quantity": 5,
-    "unit": "lb",
-    "price": 0.92,
-    "value": 5,
-    "page": 10,
-    "quote": "Neutral Zinc 50% 5.00 lb 0.92 5"
-   },
-   {
-    "name": "Kryocide",
-    "quantity": 6,
-    "unit": "lb",
-    "price": 3,
-    "value": 18,
-    "page": 10,
-    "quote": "Kryocide 6.00 lb 3.00 18"
-   },
-   {
-    "name": "Provado 1.6 Solupak",
-    "quantity": 0.75,
-    "unit": "oz",
-    "price": 43.96,
-    "value": 33,
-    "page": 10,
-    "quote": "Provado 1.6 Solupak 0.75 oz 43.96 33"
-   },
-   {
-    "name": "Labor (machine)",
-    "quantity": 13.93,
-    "unit": "hrs",
-    "price": 12.73,
-    "value": 177,
-    "page": 10,
-    "quote": "Labor (machine) 13.93 hrs 12.73 177"
    }
   ],
   "interestRatePct": null,
@@ -241,7 +116,12 @@
    "page": 9,
    "quote": "TOTAL COSTS/ACRE 2,832"
   },
-  "grossReturns": null,
+  "grossReturns": {
+   "value": 2400,
+   "unit": "$/acre",
+   "page": 10,
+   "quote": "Grapes for Concentrate 12.00 ton 200.00 2,400"
+  },
   "netReturnsAboveOperating": {
    "value": 1136,
    "unit": "$/acre",
@@ -1054,6 +934,8 @@
    "year",
    "region",
    "counties",
+   "yieldPerAcre",
+   "pricePerUnit",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1062,6 +944,7 @@
    "cashOverheadTotal",
    "nonCashOverheadTotal",
    "totalCost",
+   "grossReturns",
    "operations",
    "equipment",
    "investments",
@@ -1075,16 +958,12 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
    "interestRatePct",
    "landRentPerAcre",
-   "grossReturns",
    "insuranceRatePct",
    "propertyTaxRatePct"
   ],
   "warnings": [
-   "Table 2 lists 16 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }

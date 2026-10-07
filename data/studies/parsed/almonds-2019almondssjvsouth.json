@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/cb/07/cb078774-fd91-4418-906e-f94dfbd84506/2019almondssjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2019,
   "priceYear": {
@@ -2306,7 +2306,7 @@
     "label": "2nd",
     "totalCost": 1895,
     "returns": null,
-    "netCost": 6959,
+    "netCost": 1895,
     "accumulated": 8854,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,959 8,854 10,109 10,784 8,981"
@@ -2316,7 +2316,7 @@
     "label": "3rd",
     "totalCost": 2755,
     "returns": 1500,
-    "netCost": 1895,
+    "netCost": 1255,
     "accumulated": 10109,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,959 8,854 10,109 10,784 8,981"
@@ -2326,7 +2326,7 @@
     "label": "4th",
     "totalCost": 3675,
     "returns": 3000,
-    "netCost": 1255,
+    "netCost": 675,
     "accumulated": 10784,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,959 8,854 10,109 10,784 8,981"
@@ -2336,7 +2336,7 @@
     "label": "5th",
     "totalCost": 4197,
     "returns": 6000,
-    "netCost": 675,
+    "netCost": -1803,
     "accumulated": 8981,
     "page": 15,
     "quote": "ACCUMULATED NET CASH COSTS/ACRE 6,959 8,854 10,109 10,784 8,981"

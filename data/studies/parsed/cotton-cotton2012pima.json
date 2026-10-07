@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a3/60/a360464e-9d4c-4948-ac28-82978d9e4be7/cotton2012pima.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/cotton",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-09-30",
+  "fetchedAt": "2026-10-07",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -43,130 +43,13 @@
     "quote": "Lint (3 bales) 1500.00 lb 1.30 1,950"
    },
    {
-    "name": "Orthene",
-    "quantity": 3.25,
-    "unit": "oz",
-    "price": 0.98,
-    "value": 3,
+    "name": "Seed",
+    "quantity": 3,
+    "unit": "bale equivalent",
+    "price": 35,
+    "value": 105,
     "page": 14,
-    "quote": "Orthene 3.25 oz 0.98 3"
-   },
-   {
-    "name": "Zephyr",
-    "quantity": 8,
-    "unit": "floz",
-    "price": 7.46,
-    "value": 60,
-    "page": 14,
-    "quote": "Zephyr 8.00 floz 7.46 60"
-   },
-   {
-    "name": "Carbine 50WG",
-    "quantity": 2.5,
-    "unit": "oz",
-    "price": 6.87,
-    "value": 17,
-    "page": 14,
-    "quote": "Carbine 50WG 2.50 oz 6.87 17"
-   },
-   {
-    "name": "Leverage 2.7",
-    "quantity": 5,
-    "unit": "floz",
-    "price": 3.88,
-    "value": 19,
-    "page": 14,
-    "quote": "Leverage 2.7 5.00 floz 3.88 19"
-   },
-   {
-    "name": "Assail 70WP",
-    "quantity": 1.1,
-    "unit": "oz",
-    "price": 16.82,
-    "value": 19,
-    "page": 14,
-    "quote": "Assail 70WP 1.10 oz 16.82 19"
-   },
-   {
-    "name": "Finish 6 Pro",
-    "quantity": 2,
-    "unit": "pint",
-    "price": 13.75,
-    "value": 28,
-    "page": 14,
-    "quote": "Finish 6 Pro 2.00 pint 13.75 28"
-   },
-   {
-    "name": "Ginstar",
-    "quantity": 10,
-    "unit": "floz",
-    "price": 2.74,
-    "value": 27,
-    "page": 14,
-    "quote": "Ginstar 10.00 floz 2.74 27"
-   },
-   {
-    "name": "Defol 5",
-    "quantity": 1,
-    "unit": "gal",
-    "price": 6.37,
-    "value": 6,
-    "page": 14,
-    "quote": "Defol 5 1.00 gal 6.37 6"
-   },
-   {
-    "name": "Roundup",
-    "quantity": 32,
-    "unit": "floz",
-    "price": 0.22,
-    "value": 7,
-    "page": 14,
-    "quote": "Roundup 32.00 floz 0.22 7"
-   },
-   {
-    "name": "Triflurex HFP",
-    "quantity": 1.5,
-    "unit": "pt",
-    "price": 4.52,
-    "value": 7,
-    "page": 14,
-    "quote": "Triflurex HFP 1.50 pt 4.52 7"
-   },
-   {
-    "name": "Staple",
-    "quantity": 0.38,
-    "unit": "floz",
-    "price": 72.88,
-    "value": 28,
-    "page": 14,
-    "quote": "Staple 0.38 floz 72.88 28"
-   },
-   {
-    "name": "Shark EW",
-    "quantity": 2.5,
-    "unit": "floz",
-    "price": 9.09,
-    "value": 23,
-    "page": 14,
-    "quote": "Shark EW 2.50 floz 9.09 23"
-   },
-   {
-    "name": "Mepex Gin Out",
-    "quantity": 2,
-    "unit": "floz",
-    "price": 0.39,
-    "value": 1,
-    "page": 14,
-    "quote": "Mepex Gin Out 2.00 floz 0.39 1"
-   },
-   {
-    "name": "Seed (Pima)",
-    "quantity": 18,
-    "unit": "lb",
-    "price": 3,
-    "value": 54,
-    "page": 14,
-    "quote": "Seed (Pima) 18.00 lb 3.00 54"
+    "quote": "Seed 3.00 bale equivalent 35.00 105"
    }
   ],
   "interestRatePct": null,
@@ -1635,7 +1518,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "Table 2 lists 15 return lines with different prices; pricePerUnit left null, see returns[]",
+   "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
   ]
  }
