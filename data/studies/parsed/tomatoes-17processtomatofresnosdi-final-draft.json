@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/2e/7a/2e7a8cf0-b7fd-4207-b945-7b4b8a82625c/17processtomatofresnosdi-final_draft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/tomatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2018,
   "priceYear": {
@@ -2447,7 +2447,12 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.846,
+   "unit": "%",
+   "page": 7,
+   "quote": "This provides coverage for property loss and is charged at 0.846 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2531,7 +2536,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -2555,6 +2563,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly"
@@ -2562,7 +2571,6 @@
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/05/11/20022ricedeltacontinuousrotation5923.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/rice",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2022,
   "priceYear": {
@@ -1347,8 +1347,18 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life. 7 Rice (Continuous Planting) Cost and Returns Study Delta Region – 2022 UCCE, UC DAVIS-ARE"
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 6,
+   "quote": "This provides coverage for property loss and is charged at 0.886 percent of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "Counties charge a base property tax rate of one percent on the assessed value of the property."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -1678,7 +1688,31 @@
    "page": 11,
    "quote": "Field Establishment 843 203 203"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.5,
+    "page": 8,
+    "quote": "An interest rate of 6.50 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 5,
+    "page": 8,
+    "quote": "The costs are amortized over the 5 years the field is expected to be in production."
+   },
+   "computed": 202.8549151946815,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0.37,
+   "taxes": 4.22,
+   "acres": 1000,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 16,
+   "quote": "Field Establishment 843,000 5 0 202,855 373 4,215 0 207,443 / 1000 acres (p. 3: \"The study is based on a hypothetical non-contiguous 1,100 acre farm of which 1,000 acre...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1704,13 +1738,13 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishmentAccumulated"
   ],

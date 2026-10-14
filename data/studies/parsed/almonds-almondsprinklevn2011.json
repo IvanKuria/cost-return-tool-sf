@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/0b/a3/0ba3e804-7e05-4d7d-8c6b-8412190b45c3/almondsprinklevn2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -58,7 +58,12 @@
     "quote": "Almonds 2,000.00 lb 1.50 3,000"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 5.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 5.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 12,
@@ -957,8 +962,18 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.767,
+   "unit": "%",
+   "page": 8,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.767% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -2266,8 +2281,8 @@
   },
   "productionYears": {
    "value": 22,
-   "page": 20,
-   "quote": "Orchard Establishment 202,374 22 15,026 784 1,012 1,010 17,832 (years of life of the establishment row in the investment table)"
+   "page": 9,
+   "quote": "The establishment cost is spread over the remaining 22 years of the 25 years the orchard is in production."
   },
   "plantingLife": {
    "value": 25,
@@ -2305,7 +2320,34 @@
    "page": 14,
    "quote": "Orchard Establishment Costs 5,059 376 376"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.75,
+    "page": 9,
+    "quote": "The interest rate of 5.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 9,
+    "quote": "The establishment cost is spread over the remaining 22 years of the 25 years the orchard is in production."
+   },
+   "computed": 411.04042036976364,
+   "reproduces": false
+  },
+  "investmentCharges": {
+   "insurance": 19.6,
+   "taxes": 25.3,
+   "acres": 40,
+   "insuranceRatePct": 0.767,
+   "taxRatePct": 1,
+   "page": 20,
+   "quote": "Orchard Establishment 202,374 22 15,026 784 1,012 1,010 17,832 / 40 acres (p. 3: \"Almonds are being established on 40 acres.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2313,6 +2355,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -2327,6 +2370,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -2335,15 +2380,12 @@
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
-   "establishment total: table 5059 (ACCUMULATED NET CASH COSTS/ACRE 3,209 4,171 5,059 5,838 5,136) differs from prose 5049 (For this study the cost is $5,049 per acre or $201,953 for the 40-acre orchard.); using the table figure"
+   "establishment total: using the table figure 5059 (ACCUMULATED NET CASH COSTS/ACRE 3,209 4,171 5,059 5,838 5,136); the prose prints 5049 (For this study the cost is $5,049 per acre or $201,953 for the 40-acre orchard.), which measures the establishment period differently"
   ]
  }
 }

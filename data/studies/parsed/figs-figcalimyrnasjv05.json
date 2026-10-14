@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/8c/05/8c05587a-9954-46bd-b980-b3919ba8df97/figcalimyrnasjv05.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/figs",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -62,7 +62,12 @@
     "quote": "Cull Figs 594 Lb 0.03 18"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.01,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 6.01% used to calculate capital recovery cost is the USDA-ERS’s ten-year average of California’s agricultural sector long-run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 16.59,
@@ -1232,8 +1237,18 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.69,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.69% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "County taxes are calculated as 1% of the average value of the property for this study."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -2282,13 +2297,41 @@
    "page": 12,
    "quote": "Orchard Establishment Cost 3,864 248 248"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.01,
+    "page": 8,
+    "quote": "The interest rate of 6.01% used to calculate capital recovery cost is the USDA-ERS’s ten-year average of California’s..."
+   },
+   "years": {
+    "value": 47,
+    "page": 15,
+    "quote": "Orchard Establishment Cost 1,912,500 47 122,849 6,598 9,563 0 139,010 (years of life of the establishment row in the..."
+   },
+   "computed": 245.698680092444,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 13.2,
+   "taxes": 19.13,
+   "acres": 500,
+   "insuranceRatePct": 0.69,
+   "taxRatePct": 1,
+   "page": 15,
+   "quote": "Orchard Establishment Cost 1,912,500 47 122,849 6,598 9,563 0 139,010 / 500 acres (p. 8: \"For this study, this cost is $3,825 per acre or $1,912,500 for the 500 acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -2303,6 +2346,8 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -2312,16 +2357,13 @@
   "fieldsMissing": [
    "counties",
    "yieldPerAcre",
-   "interestRatePct",
    "landRentPerAcre",
-   "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "capitalRecoveryFormula"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
-   "establishment total: table 3825 (ACCUMULATED NET CASH COSTS/ACRE 2,288 3,000 3,825 4,662 5,499) differs from production 3864 (Orchard Establishment Cost 3,864 248 248); using the table figure"
+   "establishment total: using the table figure 3825 (ACCUMULATED NET CASH COSTS/ACRE 2,288 3,000 3,825 4,662 5,499); the production prints 3864 (Orchard Establishment Cost 3,864 248 248), which measures the establishment period differently"
   ]
  }
 }

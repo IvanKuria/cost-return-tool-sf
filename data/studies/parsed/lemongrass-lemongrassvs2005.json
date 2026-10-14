@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/98/de/98def1a6-a4e9-4d2a-8e99-fe539c6d4708/lemongrassvs2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lemongrass",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -48,7 +48,12 @@
     "quote": "Lemongrass 1,410.00 box 8.00 11,280"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.01,
+   "unit": "%",
+   "page": 6,
+   "quote": "The interest rate of 6.01% used to calculate capital recovery cost is the USDA-ERS’s ten- year average of California’s agricultural sector long-run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 12.42,
@@ -439,8 +444,18 @@
    "page": 6,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.69,
+   "unit": "%",
+   "page": 5,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.690% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 5,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of all property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -520,7 +535,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -528,6 +546,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -543,15 +562,14 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "acresFarmed",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

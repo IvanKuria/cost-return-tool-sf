@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/27/59/27599258-3e53-4e5f-aefb-08d12f5b0cb9/16almondssjvnorthfinaldraft81116.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2016,
   "priceYear": null
@@ -1015,7 +1015,12 @@
    "page": 10,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 9,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2371,8 +2376,8 @@
   },
   "productionYears": {
    "value": 22,
-   "page": 21,
-   "quote": "Establishment Costs SJV 652,600 22 0 41,918 275 3,263 652 46,171 (years of life of the establishment row in the investment table)"
+   "page": 10,
+   "quote": "The establishment cost is spread over the remaining 22 years of the 25 years the orchard is in production."
   },
   "plantingLife": {
    "value": 25,
@@ -2410,7 +2415,34 @@
    "page": 14,
    "quote": "Establishment Costs 420 420"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.25,
+    "page": 10,
+    "quote": "The interest rate of 3.25 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 10,
+    "quote": "The establishment cost is spread over the remaining 22 years of the 25 years the orchard is in production."
+   },
+   "computed": 419.8134007409341,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 2.75,
+   "taxes": 32.63,
+   "acres": 100,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 21,
+   "quote": "Establishment Costs SJV 652,600 22 0 41,918 275 3,263 652 46,171 / 100 acres (p. 10: \"For this study, the cost is $6,526 per acre or $652,600 for the 100-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2433,6 +2465,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2443,8 +2476,7 @@
   "fieldsMissing": [
    "counties",
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

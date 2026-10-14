@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/08/21/amended_82123_2023processtomatosacramentovalleysdifinal.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/tomatoes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2023,
   "priceYear": null
@@ -53,7 +53,12 @@
     "quote": "Tomatoes (SDI) 46 Ton 138.00 6,348"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 7,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 7.0% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -2861,7 +2866,12 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.71,
+   "unit": "%",
+   "page": 8,
+   "quote": "This provides coverage for property loss and is charged at 0.710% of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2945,7 +2955,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -2954,6 +2967,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -2966,17 +2980,16 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

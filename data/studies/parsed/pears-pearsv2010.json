@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/3d/89/3d892a7b-b898-466c-9024-2d8d3efc04c3/pearsv2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pears",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -61,7 +61,12 @@
     "quote": "Juice 1.10 ton 0.00 0"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 14.28,
@@ -1359,8 +1364,18 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.767,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.767% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1445,7 +1460,11 @@
    "page": 12,
    "quote": "Establishment Costs 9,500 457 457"
   },
-  "productionYears": null,
+  "productionYears": {
+   "value": 95,
+   "page": 9,
+   "quote": "Establishment cost is depreciated beginning in the sixth year over the remaining 95 years of production."
+  },
   "plantingLife": {
    "value": 100,
    "page": 3,
@@ -1470,13 +1489,30 @@
    "page": 12,
    "quote": "Establishment Costs 9,500 457 457"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 8,
+    "quote": "The interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 95,
+    "page": 9,
+    "quote": "Establishment cost is depreciated beginning in the sixth year over the remaining 95 years of production."
+   },
+   "computed": 456.8103603708393,
+   "reproduces": true
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1492,6 +1528,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1501,10 +1539,7 @@
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
-   "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "Table 2 lists 3 return lines with different prices; pricePerUnit left null, see returns[]",

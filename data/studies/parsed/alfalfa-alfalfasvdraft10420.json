@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/02/ee/02ee0710-8c2c-41ea-8b25-736d1854b737/alfalfasvdraft10420.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -1032,7 +1032,12 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 8,
+   "quote": "This cost provides coverage for property loss and is charged at 0.886 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1585,7 +1590,34 @@
    "page": 15,
    "quote": "Establishment- Alfalfa 721 206 206"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 9,
+    "quote": "An interest rate of 5.50 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 4,
+    "page": 9,
+    "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
+   },
+   "computed": 205.6973239235296,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0.33,
+   "taxes": 3.6,
+   "acres": 80,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Establishment- Alfalfa 57,680 4 0 16,456 26 288 0 16,770 / 80 acres (p. 9: \"For this study, the cost is $721 per acre or $57,680 for the 80 acres.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1610,6 +1642,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1618,7 +1651,6 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "insuranceRatePct",
    "establishmentAnnual"
   ],
   "warnings": []

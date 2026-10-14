@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/05/10/2024OrgStrawberries-FINAL-May2024.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/strawberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2024,
   "priceYear": {
@@ -1663,7 +1663,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [

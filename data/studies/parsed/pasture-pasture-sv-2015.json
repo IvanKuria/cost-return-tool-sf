@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/0e/23/0e230982-8610-42a4-8a26-32a0b10a4c5c/pasture_sv_2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2015,
   "priceYear": {
@@ -47,7 +47,12 @@
     "quote": "Graze 40 Ac 5 AUM 35.00 175"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 6,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long-term interest rate in January 2014."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -334,8 +339,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 6,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.843% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 5,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -404,12 +419,16 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Establishment is costed in a separate UC study: \"If your farm does not already have an established pasture, refer to (“Sample Costs to Establish or Reestablish and Produce Pasture in the Sacramento Valley - 2015”) for the cost...\""
+  "reason": "Establishment is costed in a separate UC study: \"If your farm does not already have an established pasture, refer to (“Sample Costs to Establish or Reestablish and Produce Pasture in the Sacramento Valley - 2015”) for the cost...\"",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
+   "interestRatePct",
    "landRentPerAcre",
    "operatingTotal",
    "cashOverheadTotal",
@@ -419,13 +438,14 @@
    "operations",
    "investments",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly"
   ],
   "fieldsMissing": [
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -433,8 +453,6 @@
    "equipment",
    "hourlyEquipment",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishment",
    "establishmentAccumulated",

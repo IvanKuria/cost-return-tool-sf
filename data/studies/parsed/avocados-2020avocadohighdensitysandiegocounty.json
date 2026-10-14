@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b4/3d/b43d58d9-1e91-4a3e-80f9-a2edb14958b0/2020avocadohighdensitysandiegocounty.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/avocados",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -48,7 +48,12 @@
     "quote": "Avocado 16,220 Lbs. 1.39 22,494"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 5.5,
+   "unit": "%",
+   "page": 10,
+   "quote": "Interest on Establishment or long-term interest rate: Capital recovery are calculated using 5.50%, California’s long-term rate of return on agricultural production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 18,
@@ -661,8 +666,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 10,
+   "quote": "Property and liability Insurance: Property and liability insurances for the farm size of 20 acres in our study include $8.86 per $1,000 asset value for property insurance and $546 per orchard ($26 per acre for 21 acres) per year for liability insurance."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 9,
+   "quote": "Property Taxes: San Diego and Riverside counties charge a base property tax rate of 1% on the assessed value of assets, including land, equipment, buildings, and improvements."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -1866,9 +1881,9 @@
    "quote": "Establishment Costs 28,409 1,955 1,955"
   },
   "productionYears": {
-   "value": 30,
-   "page": 23,
-   "quote": "Establishment Costs 568,180 30 0 39,094 252 2,841 0 42,186 (years of life of the establishment row in the investment table)"
+   "value": 34,
+   "page": 11,
+   "quote": "The establishment cost is then amortized at the long-term average rate of return on agricultural production asset from current income (5.50%) over a 34-year productive life to determine the annual amount that must be recovered from the investment."
   },
   "plantingLife": null,
   "amortizedFromYear": null,
@@ -1900,7 +1915,34 @@
    "page": 18,
    "quote": "Establishment Costs 28,409 1,955 1,955"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 10,
+    "quote": "Interest on Establishment or long-term interest rate: Capital recovery are calculated using 5.50%, California’s long-..."
+   },
+   "years": {
+    "value": 30,
+    "page": 23,
+    "quote": "Establishment Costs 568,180 30 0 39,094 252 2,841 0 42,186 (years of life of the establishment row in the investment table; the text says: \"The establishment cost is then amortized at the long-term average rate of return on agr...\")"
+   },
+   "computed": 1954.692315401779,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 12.6,
+   "taxes": 142.05,
+   "acres": 20,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 23,
+   "quote": "Establishment Costs 568,180 30 0 39,094 252 2,841 0 42,186 / 20 acres (p. 10: \"Property and liability Insurance: Property and liability insurances for the farm size o...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1909,6 +1951,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "operatingTotal",
@@ -1921,24 +1964,24 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor"
   ],
   "warnings": [
-   "establishment per producing acre 28409 differs from prose 17597 (28409 is the establishment table's ACCUMULATED NET CASH COSTS/ACRE in column 3rd)",
-   "establishment total: table 28409 (ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880) differs from prose 17597 (Summary of Costs and Returns: The total establishment cost estimate (cumulati...); using the table figure"
+   "establishment cost: the yearly charge is amortized from 28409 (the establishment table's ACCUMULATED NET CASH COSTS/ACRE, 3rd column); the text's 17597 is a different measure of the establishment period",
+   "establishment total: using the table figure 28409 (ACCUMULATED NET CASH COSTS/ACRE 28,070 36,269 28,409 14,254 15,742 1,880); the prose prints 17597 (Summary of Costs and Returns: The total establishment cost estimate (cumulati...), which measures the establishment period differently",
+   "establishment years: the text says 34 (\"The establishment cost is then amortized at the long-term average rate of return on agricultural...\") but the printed charge 1955 uses the investment row's 30 years"
   ]
  }
 }

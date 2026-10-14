@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/84/4f/844f0de3-7c1c-4bd3-89ac-893e3388c140/cherry2017_nsjv_final_draft4.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/cherries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2017,
   "priceYear": {
@@ -997,7 +997,12 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.846,
+   "unit": "%",
+   "page": 8,
+   "quote": "This provides coverage for property loss and is charged at 0.846 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2333,7 +2338,34 @@
    "page": 15,
    "quote": "Cherry Orchard Establishment 8,688 678 678"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 3,
+   "label": "4th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5,
+    "page": 10,
+    "quote": "An interest rate of 5.00 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 21,
+    "page": 10,
+    "quote": "The establishment cost is amortized over the remaining 21 years of the 25 years the orchard is in production."
+   },
+   "computed": 677.6301786916534,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 3.68,
+   "taxes": 43.45,
+   "acres": 40,
+   "insuranceRatePct": 0.846,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Orchard Establishment 347,520 21 0 27,105 147 1,738 0 28,990 / 40 acres (p. 10: \"For this study the cost is $8,688 per acre or $347,520 for the 40-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2354,6 +2386,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2366,7 +2399,6 @@
    "pricePerUnit",
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

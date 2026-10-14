@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b0/fa/b0fa617f-329f-4993-b3e3-0aaf055238f6/costs-and-profitability-analysis-for-cabbage-production-in-the-oxnard-plain-ventura-county-2012-13.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/cabbage",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Cabbage 1050 crtn $8 $8,400"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest we used to calculate ownership cost is 4.75%, which is California’s long-term rate of return on agricultural production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -553,8 +558,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.817,
+   "unit": "%",
+   "page": 8,
+   "quote": "In addition, property insurance is calculated at $8.17 per $1,000 valuation."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "Counties charge a base property tax rate of 1 percent on the assessed value of the property, including equipment, building, and improvements."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -619,7 +634,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -628,6 +646,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "landRentPerAcre",
    "acresFarmed",
    "operatingTotal",
@@ -636,10 +655,11 @@
    "totalCost",
    "grossReturns",
    "operations",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -648,8 +668,6 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishment",
    "establishmentAccumulated",

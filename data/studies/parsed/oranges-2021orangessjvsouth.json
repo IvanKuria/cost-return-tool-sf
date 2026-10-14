@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/08/12/2021orangessjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/oranges",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2021,
   "priceYear": {
@@ -826,7 +826,12 @@
    "page": 13,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 12,
+   "quote": "Coverage for property loss is charged at 0.886 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1930,8 +1935,8 @@
   },
   "productionYears": {
    "value": 37,
-   "page": 26,
-   "quote": "Establishment Cost 104,070 37 0 6,025 46 520 520 7,112 (years of life of the establishment row in the investment table)"
+   "page": 14,
+   "quote": "The establishment cost is spread over the remaining 37 years of the 40 years the orchard is in production."
   },
   "plantingLife": {
    "value": 40,
@@ -1964,7 +1969,34 @@
    "page": 21,
    "quote": "Establishment Cost 10,407 603 603"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 14,
+    "quote": "An interest rate of 4.75 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 37,
+    "page": 14,
+    "quote": "The establishment cost is spread over the remaining 37 years of the 40 years the orchard is in production."
+   },
+   "computed": 602.5489136763556,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 4.6,
+   "taxes": 52,
+   "acres": 10,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 26,
+   "quote": "Establishment Cost 104,070 37 0 6,025 46 520 520 7,112 / 10 acres (p. 14: \"The cost is $10,407 per acre or $104,070 for the 10-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1989,6 +2021,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1997,8 +2030,7 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

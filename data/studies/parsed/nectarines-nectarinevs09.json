@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/39/b6/39b6cb12-0c79-4b66-bb92-b1012bdbbfd2/nectarinevs09.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/nectarines",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2009,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Fresh Nectarines 1,200.00 box 12.00 14,400"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 20.7,
@@ -1026,8 +1031,18 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.82,
+   "unit": "%",
+   "page": 8,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.82% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -2290,7 +2305,34 @@
    "page": 13,
    "quote": "Orchard Establishment 6,809 757 757"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 9,
+    "quote": "The interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 12,
+    "page": 19,
+    "quote": "Orchard Establishment 68,090 12 7,574 279 340 0 8,194 (years of life of the establishment row in the investment table)"
+   },
+   "computed": 757.4344270484415,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 27.9,
+   "taxes": 34,
+   "acres": 10,
+   "insuranceRatePct": 0.82,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Orchard Establishment 68,090 12 7,574 279 340 0 8,194 / 10 acres (p. 9: \"For this study the cost is $6,809 per producing acre or $68,090 for the 10-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2299,6 +2341,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -2314,6 +2357,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -2321,10 +2366,7 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
-   "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"

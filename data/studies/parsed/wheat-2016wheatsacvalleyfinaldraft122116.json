@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/dc/15/dc158210-055c-494c-9c2f-54083fbf0323/2016wheatsacvalleyfinaldraft122116.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/wheat",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1146,12 +1146,17 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 7,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
    "page": 6,
-   "quote": "Counties charge a base property tax rate of 1 percent on the assessed value of the property."
+   "quote": "For this study, county taxes are calculated as 1 percent"
   },
   "machineLaborFactor": {
    "value": 1.2,
@@ -1228,7 +1233,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1250,6 +1258,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly"
@@ -1259,7 +1268,6 @@
    "pricePerUnit",
    "landRentPerAcre",
    "acresFarmed",
-   "insuranceRatePct",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"

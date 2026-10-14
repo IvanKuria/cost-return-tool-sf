@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e2/52/e2525250-9c1e-4279-b0c9-4b182f6f5c4b/wildriceir05.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/wild-rice",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -48,7 +48,12 @@
     "quote": "WILD RICE 1,600 Pounds 0.48 768"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.01,
+   "unit": "%",
+   "page": 7,
+   "quote": "The interest rate of 6.01% used to calculate capital recovery cost is the USDA-ERS’s ten year average of California’s agricultural sector long-run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 9,
@@ -774,8 +779,18 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.69,
+   "unit": "%",
+   "page": 6,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.690% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1464,7 +1479,31 @@
    "page": 12,
    "quote": "Establishment Cost 217 63 63"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.01,
+    "page": 7,
+    "quote": "The interest rate of 6.01% used to calculate capital recovery cost is the USDA-ERS’s ten year average of California’s..."
+   },
+   "years": {
+    "value": 4,
+    "page": 5,
+    "quote": "The establishment cost is amortized over the remaining four years of crop life."
+   },
+   "computed": 62.6386944584011,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0,
+   "taxes": 0,
+   "acres": 80,
+   "insuranceRatePct": 0.69,
+   "taxRatePct": 1,
+   "page": 15,
+   "quote": "Establishment Cost 17,360 4 5,011 0 0 0 5,011 / 80 acres (p. 5: \"For this study, the cost is $217 per acre or $17,360 for the 80 acre field.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1473,6 +1512,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -1486,6 +1526,8 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1493,12 +1535,9 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
-   "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "capitalRecoveryFormula"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"

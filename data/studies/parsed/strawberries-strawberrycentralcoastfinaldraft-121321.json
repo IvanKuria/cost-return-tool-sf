@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2022/01/04/strawberrycentralcoastfinaldraft-121321.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/strawberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2021,
   "priceYear": {
@@ -58,7 +58,12 @@
     "quote": "Strawberry 9,000 tray 10.00 90,000"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate effective January 1, 2021."
+  },
   "operatingInterestRatePct": {
    "value": 4,
    "unit": "%",
@@ -1494,7 +1499,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1503,6 +1511,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1524,7 +1533,6 @@
    "machineLaborFactor"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "monthly",
    "establishment",
    "establishmentAccumulated",

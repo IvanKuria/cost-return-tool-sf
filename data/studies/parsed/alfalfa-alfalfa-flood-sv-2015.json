@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/39/f2/39f29aa5-b991-4a13-816e-c695ed243249/alfalfa-flood-sv-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Hay 7 Ton 285 1,995"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 7,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 17,
@@ -891,8 +896,18 @@
    "quote": "[(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)."
   },
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 6,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.843% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1482,7 +1497,34 @@
    "page": 13,
    "quote": "Establishment Costs 160 Ac 821 230 230"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 7,
+    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 4,
+    "page": 8,
+    "quote": "The alfalfa stand establishment cost is amortized over the 4-year stand life."
+   },
+   "computed": 230.18863411954305,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0.34,
+   "taxes": 4.11,
+   "acres": 160,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 17,
+   "quote": "Establishment Costs 160 Ac 131,360 4 0 36,830 55 657 0 37,542"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1491,6 +1533,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1504,18 +1547,17 @@
    "equipment",
    "hourlyEquipment",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "landRentPerAcre",
    "investments",
    "businessOverhead",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

@@ -138,6 +138,24 @@ export interface EstablishmentSummary {
   total: { value: number; page: number; quote: string; source: EstablishmentSource } | null; // per acre accumulated establishment cost (net cost to establish), even when status is 'table'
   annualCharge: { value: number; page: number; quote: string } | null; // per acre per production year establishment charge in the production table's non-cash overhead, when printed
   reason: string | null;         // when status is 'none' (or perennial with only a total), a short plain-language reason
+  /** Index into establishment.table.years of the column whose accumulated net cash cost the study amortizes (tier 'table'); null otherwise. */
+  basisYear: { index: number; label: string } | null;
+  /** The study's yearly establishment charge recomputed the UC way: total x CRF(rate, years), salvage 0. Null when rate, years or total is missing. */
+  capitalRecovery: {
+    ratePct: { value: number; page: number; quote: string };  // long-term rate used for capital recovery
+    years: { value: number; page: number; quote: string };    // remaining production years the charge runs
+    computed: number;          // total.value x CRF(rate, years), unrounded
+    reproduces: boolean;       // |computed - annualCharge.value| <= max(3, 2% of it); false when the study prints no annual charge
+  } | null;
+  /** The establishment row of the whole-farm investment table, converted to per acre. */
+  investmentCharges: {
+    insurance: number;         // per acre per year, as printed / crop acres
+    taxes: number;             // per acre per year, as printed / crop acres
+    acres: number;             // crop acres used for the division
+    insuranceRatePct: number | null; // method.insuranceRatePct when stated
+    taxRatePct: number | null;       // method.propertyTaxRatePct when stated
+    page: number; quote: string;     // the investment row line, and where the acres are printed
+  } | null;
 }
 
 export interface ParsedStudy {

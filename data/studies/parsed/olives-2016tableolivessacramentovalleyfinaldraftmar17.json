@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/ad/97/ad9753c5-0cdc-4d82-b358-31157d6e6061/2016tableolivessacramentovalleyfinaldraftmar17.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2016,
   "priceYear": null
@@ -702,7 +702,12 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 6,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -824,7 +829,31 @@
    "page": 10,
    "quote": "Orchard Establishment 5,000 234 234"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.25,
+    "page": 7,
+    "quote": "An interest rate of 3.25 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 37,
+    "page": 14,
+    "quote": "Orchard Establishment 175,000 37 0 8,198 74 875 0 9,147 (years of life of the establishment row in the investment table)"
+   },
+   "computed": 234.23225110259258,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 2.11,
+   "taxes": 25,
+   "acres": 35,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 14,
+   "quote": "Orchard Establishment 175,000 37 0 8,198 74 875 0 9,147 / 35 acres (p. 8: \"This cost is $5,000 per acre or $175,000 for the 35-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -848,6 +877,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -857,8 +887,7 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

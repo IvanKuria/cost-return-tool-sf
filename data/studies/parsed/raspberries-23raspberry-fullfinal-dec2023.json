@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/12/15/23raspberry-fullfinal-dec2023.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/raspberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2023,
   "priceYear": {
@@ -1903,7 +1903,13 @@
    "source": "table"
   },
   "annualCharge": null,
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Establish"
+  },
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [

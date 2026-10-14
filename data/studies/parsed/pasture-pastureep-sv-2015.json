@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b2/a9/b2a91349-8ef5-4ed3-8b99-37eccbbdd272/pastureep_sv_2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2015,
   "priceYear": {
@@ -48,7 +48,12 @@
     "quote": "Hay 3.5 Ton 185.00 648"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.25,
+   "unit": "%",
+   "page": 7,
+   "quote": "The interest rate of 6.25% used to calculate capital recovery cost is the USDA-ERS’s ten year average of California’s agricultural sector long-run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -268,7 +273,12 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.74,
+   "unit": "%",
+   "page": 6,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.740% of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": null,
   "machineLaborFactor": null
  },
@@ -672,7 +682,34 @@
    "source": "table"
   },
   "annualCharge": null,
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.25,
+    "page": 7,
+    "quote": "The interest rate of 6.25% used to calculate capital recovery cost is the USDA-ERS’s ten year average of California’s..."
+   },
+   "years": {
+    "value": 20,
+    "page": 18,
+    "quote": "Establishment Costs 40 Ac 17,560 20 0 1,379 7 88 0 1,474 (years of life of the establishment row in the investment ta..."
+   },
+   "computed": 39.05443596871517,
+   "reproduces": false
+  },
+  "investmentCharges": {
+   "insurance": 0.18,
+   "taxes": 2.2,
+   "acres": 40,
+   "insuranceRatePct": 0.74,
+   "taxRatePct": null,
+   "page": 18,
+   "quote": "Establishment Costs 40 Ac 17,560 20 0 1,379 7 88 0 1,474"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -680,6 +717,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "landRentPerAcre",
    "operatingTotal",
    "cashOverheadTotal",
@@ -689,13 +727,13 @@
    "operations",
    "investments",
    "businessOverhead",
+   "insuranceRatePct",
    "monthly",
    "establishment",
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -703,7 +741,6 @@
    "equipment",
    "hourlyEquipment",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "establishmentAnnual"

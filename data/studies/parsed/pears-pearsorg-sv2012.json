@@ -11,14 +11,29 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/98/4c/984cc236-f5bc-4385-a5d3-ad1c9d1fe75d/pearsorg_sv2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pears",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2012,
-  "priceYear": null
+  "priceYear": {
+   "value": 2012,
+   "month": null,
+   "page": 2,
+   "quote": "The sample costs for labor, materials, equipment and custom services are based on current figures. (Current at the time of the study, so the study year 2012 is used.)"
+  }
  },
  "assumptions": {
-  "acresFarmed": null,
-  "acresCrop": null,
+  "acresFarmed": {
+   "value": 100,
+   "unit": "acres",
+   "page": 3,
+   "quote": "The 400 contiguous acre farm consists of 100 acres of pears, 290 acres of orchard and/or vine crops, and 10 acres for shop, equipment yard and roads."
+  },
+  "acresCrop": {
+   "value": 25,
+   "unit": "acres",
+   "page": 3,
+   "quote": "There are 25 acres of organic pears."
+  },
   "yieldPerAcre": null,
   "yieldUnit": "Tons",
   "pricePerUnit": null,
@@ -69,17 +84,53 @@
     "quote": "Conventional 6 Tons 210.00 1,260"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
-  "laborMachineRate": null,
-  "laborNonMachineRate": null,
-  "laborOverheadPct": null,
+  "laborMachineRate": {
+   "value": 16.63,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Labor rates of $16.63 per hour for machine operators and $12.33 for general labor includes payroll overhead of 45% based on grower input."
+  },
+  "laborNonMachineRate": {
+   "value": 12.33,
+   "unit": "$/hr",
+   "page": 6,
+   "quote": "Labor rates of $16.63 per hour for machine operators and $12.33 for general labor includes payroll overhead of 45% based on grower input."
+  },
+  "laborOverheadPct": {
+   "value": 45,
+   "unit": "%",
+   "page": 6,
+   "quote": "Labor rates of $16.63 per hour for machine operators and $12.33 for general labor includes payroll overhead of 45% based on grower input."
+  },
   "landRentPerAcre": null,
   "cropsPerAcrePerYear": null,
-  "fuelPriceDiesel": null,
-  "fuelPriceGas": null,
-  "yieldStatement": null,
-  "priceStatement": null
+  "fuelPriceDiesel": {
+   "value": 2.67,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.04 (excludes excise tax) and $2.67 per gallon, respectively."
+  },
+  "fuelPriceGas": {
+   "value": 2.67,
+   "unit": "$/gal",
+   "page": 6,
+   "quote": "Prices for on-farm delivery of diesel and gasoline are $2.04 (excludes excise tax) and $2.67 per gallon, respectively."
+  },
+  "yieldStatement": {
+   "page": 5,
+   "quote": "An assumed yield of 20 tons per acre with 10 percent off grade is used to calculate cost per ton."
+  },
+  "priceStatement": {
+   "page": 6,
+   "quote": "Estimated net return prices per ton are the price received from the packer less packing shed costs of $7.50 per box."
+  }
  },
  "costsPerAcre": {
   "title": "COSTS PER ACRE TO PRODUCE ORGANIC PEARS",
@@ -1219,14 +1270,58 @@
   }
  ],
  "method": {
-  "capitalRecoveryFormula": null,
-  "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
-  "machineLaborFactor": null
+  "capitalRecoveryFormula": {
+   "page": 8,
+   "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
+  },
+  "salvageMethod": {
+   "page": 8,
+   "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
+  },
+  "insuranceRatePct": {
+   "value": 0.676,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.676% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
+  "machineLaborFactor": {
+   "value": 1.2,
+   "unit": "x",
+   "page": 6,
+   "quote": "Labor for operations involving machinery are 20% higher than the operation time given in Table 1 to account for the extra labor involved in equipment set up, moving, maintenance, work breaks, and field repair."
+  }
  },
  "monthly": null,
- "establishment": null,
+ "establishment": {
+  "table": null,
+  "years": [],
+  "accumulatedNetCost": {
+   "value": 9500,
+   "page": 9,
+   "quote": "For this study, this cost is $9,500 per acre or $950,000 for the 100-acre orchard."
+  },
+  "annualCharge": null,
+  "productionYears": {
+   "value": 95,
+   "page": 9,
+   "quote": "Establishment cost is depreciated beginning in the sixth year over the remaining 95 years of production."
+  },
+  "plantingLife": {
+   "value": 100,
+   "page": 3,
+   "quote": "The life of the orchard at the time of planting in this study is estimated to be 100 years."
+  },
+  "amortizedFromYear": null,
+  "removalCost": null,
+  "asset": null,
+  "method": null
+ },
  "establishmentSummary": {
   "perennial": true,
   "status": "total",
@@ -1241,13 +1336,34 @@
    "page": 12,
    "quote": "Establishment SV 9,500 457 457"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 8,
+    "quote": "The interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 95,
+    "page": 9,
+    "quote": "Establishment cost is depreciated beginning in the sixth year over the remaining 95 years of production."
+   },
+   "computed": 456.8103603708393,
+   "reproduces": true
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
+   "interestRatePct",
+   "laborMachineRate",
+   "laborNonMachineRate",
+   "laborOverheadPct",
+   "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -1257,28 +1373,24 @@
    "equipment",
    "investments",
    "hourlyEquipment",
-   "businessOverhead"
-  ],
-  "fieldsMissing": [
-   "yieldPerAcre",
-   "pricePerUnit",
-   "interestRatePct",
-   "laborMachineRate",
-   "laborNonMachineRate",
-   "laborOverheadPct",
-   "landRentPerAcre",
-   "acresFarmed",
+   "businessOverhead",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
-   "monthly",
    "establishment",
-   "establishmentAccumulated",
+   "establishmentAccumulated"
+  ],
+  "fieldsMissing": [
+   "yieldPerAcre",
+   "pricePerUnit",
+   "landRentPerAcre",
+   "monthly",
    "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 lists 5 return lines with different prices; pricePerUnit left null, see returns[]",
+   "2 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)",
    "monthly table not used: MONTHLY COSTS PER ACRE TO PRODUCE ORGANIC PEARS: TOTAL CASH COSTS row: months sum to 6134 but the Total column says 6604"
   ]
  }

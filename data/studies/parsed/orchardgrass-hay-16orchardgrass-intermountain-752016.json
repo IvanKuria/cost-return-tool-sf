@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/86/b2/86b28877-5976-4d3a-b0e7-862314057bf1/16orchardgrass_intermountain_752016.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/orchardgrass-hay",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1229,7 +1229,34 @@
    "page": 12,
    "quote": "Hay Stand Establishment Cost 294 81 81"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.75,
+    "page": 8,
+    "quote": "The interest rate of 3.75 percent used to calculate capital recovery cost is the effective long term interest rate ef..."
+   },
+   "years": {
+    "value": 4,
+    "page": 8,
+    "quote": "The establishment cost is amortized over the remaining 4 years of the stand life."
+   },
+   "computed": 80.51741196302845,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0.12,
+   "taxes": 1.47,
+   "acres": 300,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 16,
+   "quote": "Hay Stand Establishment Cost 88,200 4 0 24,155 37 441 0 24,633 / 300 acres (p. 8: \"For this study, the cost is $294 per acre or $88,200 for the 300 acre field.\")"
+  }
  },
  "parse": {
   "fieldsFound": [

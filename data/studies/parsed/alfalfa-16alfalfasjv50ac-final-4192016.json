@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/24/b6/24b68b4a-4c04-4853-b127-d3461e1a248f/16alfalfasjv50ac_final_4192016.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2016,
   "priceYear": null
@@ -935,7 +935,34 @@
    "page": 12,
    "quote": "Establishment 50 acres 966 343 343"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.25,
+    "page": 8,
+    "quote": "An interest rate of 3.25 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 3,
+    "page": 8,
+    "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
+   },
+   "computed": 343.1530970169574,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0.4,
+   "taxes": 4.84,
+   "acres": 50,
+   "insuranceRatePct": 0.834,
+   "taxRatePct": 1,
+   "page": 16,
+   "quote": "Establishment 50 acres 48,300 3 0 17,158 20 242 0 17,420"
+  }
  },
  "parse": {
   "fieldsFound": [

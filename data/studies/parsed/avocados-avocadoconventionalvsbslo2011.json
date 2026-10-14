@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/63/ff/63ff6438-9231-4e91-ab1f-fb8894c9ecf1/avocadoconventionalvsbslo2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/avocados",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -33,7 +33,12 @@
    "quote": "Each time, it is applied at 200 cubic yards per acre at a price of $2.50 per cubic yard."
   },
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 11,
+   "quote": "The interest we used to calculate ownership cost is 4.75%, which is California’s long-term rate of return on agricultural production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -636,8 +641,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 7.75,
+   "unit": "%",
+   "page": 10,
+   "quote": "Growers also carry insurance for property protection, which is typically calculated at 7.75% of the average value of assets for 2011."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 10,
+   "quote": "There may also be additional taxes on property in special assessment districts but for this study we calculated county taxes at 1% (the base rate) of the value of the properties."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -1723,8 +1738,8 @@
   },
   "productionYears": {
    "value": 30,
-   "page": 26,
-   "quote": "Amortized Establishment Cost 702,220 30 0 44,386.94 2,721.10 3,511.10 0 50,619.14 (years of life of the establishment row in the investment table)"
+   "page": 11,
+   "quote": "The establishment cost is then amortized at the long-term average rate of return to agricultural production asset from current income over a 30-year productive life to determine the annual amount that must be recovered from the investment."
   },
   "plantingLife": null,
   "amortizedFromYear": null,
@@ -1756,7 +1771,34 @@
    "page": 20,
    "quote": "Amortized Establishment Cost 35,176 2,223.46 2,223.46"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 5,
+   "label": "6th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 11,
+    "quote": "The interest we used to calculate ownership cost is 4.75%, which is California’s long-term rate of return on agricult..."
+   },
+   "years": {
+    "value": 30,
+    "page": 11,
+    "quote": "The establishment cost is then amortized at the long-term average rate of return to agricultural production asset fro..."
+   },
+   "computed": 2223.4557520053713,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 136.06,
+   "taxes": 175.56,
+   "acres": 20,
+   "insuranceRatePct": 7.75,
+   "taxRatePct": 1,
+   "page": 26,
+   "quote": "Amortized Establishment Cost 702,220 30 0 44,386.94 2,721.10 3,511.10 0 50,619.14 / 20 acres (p. 3: \"This study is based on assumptions of orchard establishment and production practices th...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1764,6 +1806,7 @@
    "region",
    "counties",
    "pricePerUnit",
+   "interestRatePct",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -1773,6 +1816,8 @@
    "equipment",
    "investments",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment",
    "establishmentAccumulated",
@@ -1780,7 +1825,6 @@
   ],
   "fieldsMissing": [
    "yieldPerAcre",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1788,8 +1832,6 @@
    "acresFarmed",
    "hourlyEquipment",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor"
   ],
   "warnings": [

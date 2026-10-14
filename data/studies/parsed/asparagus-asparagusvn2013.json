@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/91/0b/910b6b2a-1f01-4697-be7f-0ae88f5ee11b/asparagusvn2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/asparagus",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -58,7 +58,12 @@
     "quote": "Asparagus 4,000.00 lb 1.33 5,320"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 8,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 13,
@@ -1015,8 +1020,18 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.817,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.817% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1955,7 +1970,34 @@
    "page": 12,
    "quote": "Establishment 2,266 347 347"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 1,
+   "label": "2nd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 8,
+    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 8,
+    "page": 8,
+    "quote": "Establishment cost is amortized beginning in the third year over the remaining 8 years of production."
+   },
+   "computed": 347.0650009419826,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 9.26,
+   "taxes": 11.33,
+   "acres": 200,
+   "insuranceRatePct": 0.817,
+   "taxRatePct": 1,
+   "page": 16,
+   "quote": "Establishment-Asparagus 453,200 8 69,413 1,851 2,266 0 73,530 / 200 acres (p. 8: \"For this study, this cost is $2,266 per acre or $453,200 for the 200-acres.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1964,6 +2006,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -1978,6 +2021,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1985,11 +2030,8 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

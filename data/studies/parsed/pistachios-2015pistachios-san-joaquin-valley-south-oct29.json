@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/50/a8/50a8805e-03a8-4092-82ca-ce18cfb92b2b/2015pistachios_san_joaquin_valley-south_oct29.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pistachios",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Pistachios (Split-in shell, Shelling Stock, Closed Shell) 2,800 lb 2.58 7,224"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 12,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -966,8 +971,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 11,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.843% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 11,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": null
  },
  "monthly": null,
@@ -2212,7 +2227,34 @@
    "page": 22,
    "quote": "Pistachio Establishment Cost 671"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 5,
+   "label": "6th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 12,
+    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 34,
+    "page": 26,
+    "quote": "Orchard Establishment Cost 851,732 34 0 50,981 359 4,259 0 55,599 (years of life of the establishment row in the inve..."
+   },
+   "computed": 670.8032652206889,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 4.72,
+   "taxes": 56.04,
+   "acres": 76,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 26,
+   "quote": "Orchard Establishment Cost 851,732 34 0 50,981 359 4,259 0 55,599 / 76 acres (p. 12: \"For this study, the cost is $11,207 per acre or $851,732 for the 76-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2220,6 +2262,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -2231,18 +2274,17 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "establishment"
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishmentAccumulated",

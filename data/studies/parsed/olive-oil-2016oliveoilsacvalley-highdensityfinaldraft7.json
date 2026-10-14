@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/08/4a/084a8c93-1e36-496e-ad76-bd984109834e/2016oliveoilsacvalley-highdensityfinaldraft7.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olive-oil",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -704,7 +704,12 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 8,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1727,7 +1732,34 @@
    "page": 14,
    "quote": "Establishment SHDO 4,403 297 297"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.75,
+    "page": 9,
+    "quote": "An interest rate of 3.75 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 10,
+    "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 22 years that the orchard is assumed..."
+   },
+   "computed": 297.4460085205745,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 1.85,
+   "taxes": 22.02,
+   "acres": 110,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 18,
+   "quote": "Establishment SHDO 484,330 22 0 32,719 204 2,422 0 35,345 / 110 acres (p. 10: \"For this study, the cost is $4,403 per acre or $484,330 for the 110 acres planted to ol...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1751,6 +1783,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1760,7 +1793,6 @@
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
    "establishmentAnnual"
   ],
   "warnings": []

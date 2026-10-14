@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/30/89/3089b129-9d64-4c00-9032-194edf41842e/bpblackberrycc2018-final-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2018,
   "priceYear": {
@@ -1541,7 +1541,10 @@
    "source": "prose"
   },
   "annualCharge": null,
-  "reason": null
+  "reason": null,
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1580,7 +1583,7 @@
   "warnings": [
    "Tables 1 and 2 print different overhead totals; using the rows that add up to TOTAL COSTS/ACRE 65597",
    "the text layer drops the decimal point of the Table 1 hours column (\"0 50\"); it is read as 0.50",
-   "prose establishment cost 16622 matches no column of the accumulated row [-23245, -32842]"
+   "establishment cost: the text's 16622 is not one of the accumulated row's columns [-23245, -32842]; it measures the establishment period differently"
   ]
  }
 }

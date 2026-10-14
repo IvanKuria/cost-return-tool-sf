@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/df/68/df68d252-a08d-49d1-8eb6-965637c0b615/wine-grape-sn-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2015,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Grapes 4 Ton 1300.00 5,200"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 13,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 14.1,
@@ -244,8 +249,18 @@
    "page": 13,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.74,
+   "unit": "%",
+   "page": 12,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.740% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 12,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1579,7 +1594,34 @@
    "page": 21,
    "quote": "Vineyard Establishment 2,124"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "Yr-3"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 13,
+    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 13,
+    "quote": "The cost is amortized over the remaining 22 years of vineyard production to estimate the annual capital recovery cost."
+   },
+   "computed": 2123.7286215211216,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 12,
+   "taxes": 143,
+   "acres": 5,
+   "insuranceRatePct": 0.74,
+   "taxRatePct": 1,
+   "page": 26,
+   "quote": "Vineyard Establishment 143,015 22 0 10,619 60 715 0 11,394 / 5 acres (p. 5: \"It is assumed 2,000 feet of deer fence is needed to encircle the 5 acre vineyard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1587,6 +1629,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -1597,21 +1640,20 @@
    "grossReturns",
    "investments",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment"
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
    "operations",
    "equipment",
    "hourlyEquipment",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/2d/10/2d10450b-f265-45db-85d6-5b15a0fde6c0/19winegrapessjvsouthcabernet.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2019,
   "priceYear": {
@@ -963,7 +963,12 @@
    "page": 12,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 11,
+   "quote": "This provides coverage for property loss and is charged at 8.86 percent per $1,000 of the value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2058,7 +2063,34 @@
    "page": 17,
    "quote": "Vineyard Establishment 21,428 1,780 1,780"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6,
+    "page": 12,
+    "quote": "An interest rate of 6 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 12,
+    "quote": "The establishment cost is amortized over the remaining 22 years of the 25 years the vineyard is in production."
+   },
+   "computed": 1779.5004428379896,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 94.93,
+   "taxes": 107.15,
+   "acres": 40,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Vineyard Establishment 857,120 22 0 71,180 3,797 4,286 4,286 83,548 / 40 acres (p. 12: \"For this study the cost is $21,428 per acre or $857,120 for the 40-acre vineyard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2082,6 +2114,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2091,8 +2124,7 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

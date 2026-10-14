@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/2e/f8/2ef8342f-19bd-41e8-bc14-5b5abc2b2488/blackberrycc2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -58,7 +58,12 @@
     "quote": "Blackberries 3,500.00 each 16.00 56,000"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate effective January 2013."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -1027,8 +1032,18 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.817,
+   "unit": "%",
+   "page": 8,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.817% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1540,7 +1555,34 @@
    "page": 18,
    "quote": "Establishment Blackberries 7,753 2,174 2,174"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 1,
+   "label": "1st"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 9,
+    "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate effective..."
+   },
+   "years": {
+    "value": 4,
+    "page": 10,
+    "quote": "Establishment costs are amortized over the remaining four years the blackberries are assumed to be in production."
+   },
+   "computed": 2173.7545436404594,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 30.47,
+   "taxes": 38.73,
+   "acres": 15,
+   "insuranceRatePct": 0.817,
+   "taxRatePct": 1,
+   "page": 24,
+   "quote": "Establishment Blackberries 116,295 4 0 32,606 457 581 0 33,663 / 15 acres (p. 10: \"Establishment costs are $7,753 per acre or $116,295 for the 15 acres.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1549,6 +1591,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
@@ -1563,17 +1606,16 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

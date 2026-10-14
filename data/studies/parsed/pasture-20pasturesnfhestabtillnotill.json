@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/bf/2a/bf2a6a2f-10da-4e01-97fc-7ed8e9bade2f/20pasturesnfhestabtillnotill.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -272,7 +272,12 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 7,
+   "quote": "This provides coverage for property loss and is charged at 8.86 percent per $1,000 of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -563,7 +568,26 @@
    "source": "table"
   },
   "annualCharge": null,
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6,
+    "page": 8,
+    "quote": "The interest rate of 6.00 percent is used to calculate capital recovery, which is the basic suggested rate by a farm-..."
+   },
+   "years": {
+    "value": 30,
+    "page": 8,
+    "quote": "The pasture stand establishment cost is amortized over the 30-year stand life."
+   },
+   "computed": 56.88409769670697,
+   "reproduces": false
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -584,6 +608,7 @@
    "investments",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
    "establishmentAccumulated"
@@ -594,7 +619,6 @@
    "laborOverheadPct",
    "equipment",
    "hourlyEquipment",
-   "insuranceRatePct",
    "machineLaborFactor",
    "monthly",
    "establishmentAnnual"

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/69/ed/69ed1c05-999e-4c06-b59f-ebe6dbcecc8a/alfalfa-drip-sv-delta-2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2014,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Hay 9 Ton 275.00 2,475"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 8,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 17,
@@ -948,8 +953,18 @@
    "quote": "[(Purchase Price – Salvage Value) x Capital Recovery Factor] + (Salvage Value x Interest Rate)."
   },
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.74,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.740% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1067,7 +1082,31 @@
    "page": 13,
    "quote": "Establishment Costs 160 Ac 1,158 226 226"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 8,
+    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 6,
+    "page": 19,
+    "quote": "Establishment Costs 160 Ac 185,280 6 0 36,212 768 926 0 37,906 (years of life of the establishment row in the investment table; the text says: \"The alfalfa stand establishment cost is amortized over the 4-year stand life.\")"
+   },
+   "computed": 226.32544390842028,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 4.8,
+   "taxes": 5.79,
+   "acres": 160,
+   "insuranceRatePct": 0.74,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Establishment Costs 160 Ac 185,280 6 0 36,212 768 926 0 37,906"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1076,6 +1115,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1091,18 +1131,19 @@
    "investments",
    "hourlyEquipment",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "businessOverhead",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAnnual"
   ],
-  "warnings": []
+  "warnings": [
+   "establishment years: the text says 4 (\"The alfalfa stand establishment cost is amortized over the 4-year stand life.\") but the printed charge 226 uses the investment row's 6 years"
+  ]
  }
 }

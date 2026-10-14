@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/de/d6/ded6333c-02e2-4a1c-9efb-b0b96a1fc713/beans_singlecropped_sv_2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2014,
   "priceYear": {
@@ -48,7 +48,12 @@
     "quote": "Beans (Single Crop) (Cwt) -Hundredweight 25 Cwt 50.00 1,250"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 6,
+   "quote": "The interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 17,
@@ -1216,8 +1221,18 @@
    "page": 6,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.74,
+   "unit": "%",
+   "page": 5,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.740% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 5,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1232,7 +1247,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1241,6 +1259,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "operatingTotal",
@@ -1254,15 +1273,14 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "monthly",
    "establishment",
    "establishmentAccumulated",

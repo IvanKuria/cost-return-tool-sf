@@ -62,6 +62,7 @@ function findTables(lines: Line[]): TableHeading[] {
     const m = l.text.match(re);
     if (!m) continue;
     if (/…|\.{4,}/.test(m[2])) continue;                 // dotted leaders
+    if (/[A-Z)]\.\d{1,3}\s*$/.test(m[2])) continue;          // a TOC line whose leader is a single dot: "... OVERHEAD COSTS.18"
     if (/^[a-z]/.test(m[2])) continue;                    // a prose line that starts with "Table 1 represents ..."
     if (/^CONTINU(?:ED|ADO|ACI[ÓO]N)/i.test(m[2]) || /CONTINU(?:ED|ADO|ACI[ÓO]N)\)?\s*$/i.test(m[2])) continue;
     cands.push({ n: Number(m[1]), title: m[2].replace(/\s+\d{1,3}\s*$/, ''), index: l.index, page: l.page });
@@ -107,6 +108,57 @@ function proseSentences(lines: Line[]): { text: string; page: number }[] {
   const sentences: { text: string; page: number }[] = [];
   for (const p of out) for (const s of p.text.split(/(?<=[.!?])\s+(?=[A-Z$(])/)) sentences.push({ text: clean(s), page: p.page });
   return sentences;
+}
+
+/** Sentences of the whole study, every page (the assumptions can run past the first table heading, and Spanish
+ *  studies print them after the tables). Paragraphs are split at blank lines and at page breaks. */
+function allSentences(lines: Line[]): { text: string; page: number }[] {
+  const out: { text: string; page: number }[] = [];
+  let buf = ''; let page = 1;
+  const flush = () => { if (buf) for (const s of buf.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ$(])/)) out.push({ text: clean(s), page }); buf = ''; };
+  for (let i = 0; i < lines.length; i++) {
+    const t = lines[i].text.trim();
+    if (!t || (i > 0 && lines[i - 1].page !== lines[i].page)) flush();
+    if (!t) continue;
+    if (!buf) page = lines[i].page;
+    buf = buf ? buf + ' ' + t : t;
+  }
+  flush();
+  return out;
+}
+
+/** The long-term (capital recovery) interest rate as the study states it; never the operating loan rate. */
+function capitalRecoveryRate(lines: Line[]): Cited | null {
+  const N = String.raw`(\d+(?:\.\d+)?|\.\d+)`, P = String.raw`\s*(?:percent|%|por ciento)`;
+  const res = [
+    new RegExp(String.raw`(?:An|The) interest rate of ${N}${P},? (?:is )?used to calculate capital recovery`, 'i'),
+    new RegExp(String.raw`interest rate of ${N}${P}.{0,40}capital recovery`, 'i'),
+    new RegExp(String.raw`tasa de inter[ée]s de ${N}${P} se utiliza para calcular la recuperaci[óo]n de capital`, 'i'),
+    new RegExp(String.raw`capital recover(?:y|ies)[^.]{0,40}?(?:are |is )?calculated (?:using|at) (?:the )?${N}${P}`, 'i'),
+    new RegExp(String.raw`interest (?:rate )?(?:we )?used to calculate (?:ownership|capital recovery) costs? is ${N}${P}`, 'i'),
+    new RegExp(String.raw`capital recovery factor calculated at ${N}${P} interest rate`, 'i'),
+    new RegExp(String.raw`long[- ]?term interest rate (?:used )?(?:in this study )?is ${N}${P}`, 'i'),
+    new RegExp(String.raw`interest (?:for|on) capital investments? (?:are|is) calculated at[^.]{0,160}?\(?${N}${P}`, 'i'),
+    new RegExp(String.raw`\(Capital Recovery\) costs calculated at the ${N}${P} rate`, 'i'),
+  ];
+  const sets = [proseSentences(lines), allSentences(lines)];
+  for (const re of res) for (const S of sets) {
+    const h = sentenceMatch(S.filter(s => !/operating capital|nominal rate/i.test(s.text.slice(0, 80))), re);
+    if (h) { const c = citeS(h, 1, '%'); if (c && c.value > 0 && c.value < 20) return c; }
+  }
+  // the rate in the next sentence: "Interest for capital investments are calculated at the long-run rate of return of
+  // agricultural assets to current income. In this study, we used a ten year average (6.25%) of the most current years"
+  const all = allSentences(lines);
+  for (let k = 0; k + 1 < all.length; k++) {
+    if (!/interest (?:for|on) capital investments? (?:are|is) calculated at the long[- ]run rate/i.test(all[k].text)) continue;
+    const m = all[k + 1].text.match(new RegExp(String.raw`\(${N}${P}\)`, 'i'));
+    const v = m ? toNum(m[1]) : null;
+    if (v != null) return { value: v, unit: '%', page: all[k].page, quote: `${all[k].text} ${all[k + 1].text}` };
+  }
+  // the header block of the cost tables: "Long Term Interest Rate: 6.01%"
+  const hit = find(lines, /Long[- ]Term Interest Rate:?\s*(\d+(?:\.\d+)?)\s*%/i);
+  if (hit) { const v = toNum(hit.m[1]); if (v != null) return { value: v, unit: '%', page: hit.line.page, quote: clean(hit.line.text) }; }
+  return null;
 }
 
 function sentenceMatch(sentences: { text: string; page: number }[], re: RegExp): { s: { text: string; page: number }; m: RegExpMatchArray } | null {
@@ -261,6 +313,7 @@ function parseAssumptions(lines: Line[], warn: (s: string) => void): Assumptions
   let h = sentenceMatch(S, /(?:An|The) interest rate of (\d+(?:\.\d+)?)\s*percent (?:is )?used to calculate capital recovery/i)
     || sentenceMatch(S, /interest rate of (\d+(?:\.\d+)?)\s*percent.{0,40}capital recovery/i);
   if (h) a.interestRatePct = citeS(h, 1, '%');
+  if (!a.interestRatePct) a.interestRatePct = capitalRecoveryRate(lines);
   h = sentenceMatch(S, /(?:calculated monthly|interest on operating capital).{0,80}?nominal rate of (\d+(?:\.\d+)?)\s*percent/i)
     || sentenceMatch(S, /nominal rate of (\d+(?:\.\d+)?)\s*percent per year/i);
   if (h) a.operatingInterestRatePct = citeS(h, 1, '%');
@@ -1305,7 +1358,17 @@ function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s
   const amort = sentenceMatch(win, /amortiz/i);
   const productionYears = q(sentenceMatch(win, /amortiz[^.]*?remaining\s+(\w+)\s+years?/i))
     || q(sentenceMatch(win, /amortiz[^.]*?over the\s+(\w+)[- ]years?/i))
-    || q(sentenceMatch(win, /amortiz[^.]*?over the remaining\s+(\w+)/i));
+    || q(sentenceMatch(win, /amortiz[^.]*?over the remaining\s+(\w+)/i))
+    // "Establishment cost is depreciated beginning in the sixth year over the remaining 95 years of production",
+    // "The establishment cost is spread over the remaining 27 years of the 30 years the vineyard is in production"
+    || q(sentenceMatch(win, /establishment costs?[^.]*?(?:depreciated|spread)[^.]*?over the remaining\s+(\w+)\s+years?/i))
+    // "This value is amortized approximately over 40 years", "The establishment cost is amortized over 26 years",
+    // "amortizing the net establishment costs ... over a 27 years productive life"
+    || q(sentenceMatch([...win, ...S.filter(x => /establishment/i.test(x.text))], /amortiz(?:[^.]|\.\d)*?over (?:approximately |about |an? )?(\d+)[- ]years?(?! (?:old|of age))/i))
+    // under a neighbouring heading ("Land. ... The cost is amortized over the remaining 23 years of orchard production")
+    || q(sentenceMatch(S, /amortiz[^.]*?over the remaining\s+(\w+)\s+years? of (?:orchard |vineyard |grove |stand )?production/i))
+    // the production table's row: "Amortized establishment (30 years) ac 1,152"
+    || (() => { const h = find(lines, /^\s*Amortized (?:tree )?establishment\s*\((\d+) years?\)/i); const v = h ? toNum(h.m[1]) : null; return h && v != null ? { value: v, page: h.line.page, quote: clean(h.line.text) } : null; })();
   const plantingLife = q(sentenceMatch(S, /of the\s+(\d+)\s+years? the (?:vineyard|orchard|stand|planting) is in production/i))
     || q(sentenceMatch(S, /(?:projected|assumed|estimated)?\s*(\d+)[- ]year (?:life|stand life|vineyard|orchard)/i))
     || q(sentenceMatch(S, /(?:economic )?life of the (?:orchard|vineyard|stand|planting|grove)[^.]*?(\d+)\s+years/i))
@@ -1357,10 +1420,13 @@ function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s
   for (const t of regional ? [...prodTables].reverse() : prodTables) {
     const [a, b] = spanOf(lines, all, t);
     const hit = find(lines, /^\s*(?:amortized\s+)?(?:orchard|vineyard|grove|field|stand)?\s*establishment( costs?)?\s+[\d,]{3,}(?:\.\d+)?(?:\s+[\d,]+(?:\.\d+)?)+\s*$/i, a, b);
-    if (hit) { const v = tailNumbers(hit.line.text); if (v.length >= 2 && (!regional || v.length <= 3)) { annualCharge = { value: v[1], page: hit.line.page, quote: clean(hit.line.text) }; if (accumulatedNetCost && Math.abs(v[0] - accumulatedNetCost.value) > 0.02 * accumulatedNetCost.value) {
+    if (hit) { const v = tailNumbers(hit.line.text); if (v.length >= 2 && (!regional || v.length <= 3)) {
+      // "Orchard Establishment 8,560 825 765": per producing acre, annual capital recovery, and the per acre cost the
+      // table sums into its total; they agree except where the study prints a stale per producing acre pair
+      annualCharge = { value: v.length === 3 ? v[2] : v[1], page: hit.line.page, quote: clean(hit.line.text) }; if (accumulatedNetCost && Math.abs(v[0] - accumulatedNetCost.value) > 0.02 * accumulatedNetCost.value) {
       // say which printed table cell the production table's figure is, when it is one
       const cell = table?.rows.filter(r => r.kind === 'accumulated').flatMap(r => r.values.map((x, c) => ({ r, x, c }))).find(o => o.x != null && Math.abs(o.x - v[0]) <= 1);
-      warn(`establishment per producing acre ${v[0]} differs from prose ${accumulatedNetCost.value}` + (cell ? ` (${v[0]} is the establishment table's ${cell.r.label} in column ${table!.years[cell.c]})` : ''));
+      warn(`establishment cost: the yearly charge is amortized from ${v[0]}` + (cell ? ` (the establishment table's ${cell.r.label}, ${table!.years[cell.c]} column)` : '') + `; the text's ${accumulatedNetCost.value} is a different measure of the establishment period`);
     } break; } }
   }
   if (!annualCharge && annualFromTable) annualCharge = annualFromTable;
@@ -1389,7 +1455,7 @@ function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s
     // the prose figure may be the accumulated net cash cost or the total accumulated net cost (with non-cash overhead)
     const accRows = table ? table.rows.filter(r => r.kind === 'accumulated') : [];
     const printed = accRows.length ? accRows.flatMap(r => r.values).filter((v): v is number => v != null) : years.map(y => y.accumulated).filter((v): v is number => v != null);
-    if (printed.length && !printed.some(v => Math.abs(v - accumulatedNetCost.value) <= 0.02 * accumulatedNetCost.value)) warn(`prose establishment cost ${accumulatedNetCost.value} matches no column of the accumulated row [${printed.join(', ')}]`);
+    if (printed.length && !printed.some(v => Math.abs(v - accumulatedNetCost.value) <= 0.02 * accumulatedNetCost.value)) warn(`establishment cost: the text's ${accumulatedNetCost.value} is not one of the accumulated row's columns [${printed.join(', ')}]; it measures the establishment period differently`);
   }
   if (!accumulatedNetCost && !years.length && !annualCharge && !table) return null;
   return {
@@ -1515,7 +1581,7 @@ function summarizeEstablishment(lines: Line[], est: Establishment | null, invest
 
   const ordered = [tableCand, production, investment, prose].filter((c): c is Cand => !!c && c.value > 0);
   const total = ordered[0] ?? null;
-  if (total) for (const c of ordered.slice(1)) if (!near(c.value, total.value)) warn(`establishment total: ${total.source} ${total.value} (${short(total.quote, 80)}) differs from ${c.source} ${c.value} (${short(c.quote, 80)}); using the ${total.source} figure`);
+  if (total) for (const c of ordered.slice(1)) if (!near(c.value, total.value)) warn(`establishment total: using the ${total.source} figure ${total.value} (${short(total.quote, 80)}); the ${c.source} prints ${c.value} (${short(c.quote, 80)}), which measures the establishment period differently`);
 
   // -- the annual charge in the production years
   let annualCharge: EstablishmentSummary['annualCharge'] = est?.annualCharge ? { value: est.annualCharge.value, page: est.annualCharge.page, quote: est.annualCharge.quote } : null;
@@ -1557,7 +1623,122 @@ function summarizeEstablishment(lines: Line[], est: Establishment | null, invest
       : separate ? `Establishment is costed in a separate UC study: "${short(separate.s.text)}"`
         : 'The study prints no establishment table and no per acre establishment cost';
   }
-  return { perennial, status, total: perennial ? total : null, annualCharge: perennial ? annualCharge : null, reason };
+  return { perennial, status, total: perennial ? total : null, annualCharge: perennial ? annualCharge : null, reason, basisYear: null, capitalRecovery: null, investmentCharges: null };
+}
+
+// ---------------------------------------------------------------- establishment charge inputs
+
+/** Capital recovery factor: the annual payment whose present value at `ratePct` over `years` is 1. */
+export const crf = (ratePct: number, years: number): number => {
+  const r = ratePct / 100;
+  return r === 0 ? 1 / years : (r * (1 + r) ** years) / ((1 + r) ** years - 1);
+};
+const reproducesCharge = (computed: number, printed: number) => Math.abs(computed - printed) <= Math.max(3, 0.02 * printed);
+const yearNumOf = (l: string) => (/^Est/i.test(l) && !/\d/.test(l.replace(/^Est\w*/i, '')) ? 1 : Number((l.match(/\d+/g) ?? ['NaN']).pop()));
+
+/** Fills basisYear, capitalRecovery and investmentCharges: what a repricer needs to recompute the yearly
+ *  establishment charge the way the study does. Every input is a cited figure; nothing is estimated. */
+function establishmentChargeInputs(lines: Line[], sum: EstablishmentSummary, est: Establishment | null, a: Assumptions, method: Method, investments: EquipmentRow[], warn: (s: string) => void): void {
+  const total = sum.total;
+  const S = allSentences(lines);
+
+  // -- basisYear: the column of the establishment table whose accumulated net cash cost the study amortizes
+  const table = sum.status === 'table' && est?.table && est.table.years.length ? est.table : null;
+  if (table && total) {
+    const accRows = table.rows.filter(r => r.kind === 'accumulated').sort((x, y) => Number(/NET\s*CASH/i.test(y.label)) - Number(/NET\s*CASH/i.test(x.label)));
+    const rows = table.years.length === 1 ? [...accRows, ...table.rows.filter(r => /^TOTAL CASH COSTS?\b/i.test(r.label))] : accRows;
+    const matches = (c: number) => rows.some(r => r.values[c] != null && near(r.values[c]!, total.value));
+    // "The Total Accumulated Net Cash Cost on Table 1, in the third year represents the establishment cost"
+    const nth = sentenceMatch(S, /accumulated net (?:cash )?costs?(?:\s*\/\s*acre)?(?:\s+(?:on|in|from|shown in) Table \d+,?)?\s+(?:in|at the end of|through|for|of) (?:the )?(\w+) year/i);
+    const n = nth ? wordOrNum(nth.m[1]) ?? (Number(nth.m[1].replace(/\D/g, '')) || null) : null;
+    const byProse = n != null ? table.years.findIndex(l => yearNumOf(l) === n) : -1;
+    let index = byProse >= 0 && matches(byProse) ? byProse : -1;
+    if (index < 0) for (const r of rows) { const c = r.values.findIndex(v => v != null && near(v, total.value)); if (c >= 0) { index = c; break; } }
+    if (index < 0 && byProse >= 0) { index = byProse; warn(`establishment basis year: the text names column ${table.years[byProse]}, whose accumulated cost is not the total ${total.value}`); }
+    if (index >= 0) sum.basisYear = { index, label: table.years[index] };
+    else if (total.source === 'table') warn(`establishment basis year: no column of the accumulated row equals the total ${total.value}`);
+  }
+
+  // -- capitalRecovery: total x CRF(long-term rate, remaining production years)
+  const rate = a.interestRatePct;
+  const yp = est?.productionYears ?? null;
+  if (rate && yp && total && yp.value > 0) {
+    // the quotes repeat establishment.productionYears and assumptions.interestRatePct, which keep the full sentence; kept short for the bundle size
+    let years = { value: yp.value, page: yp.page, quote: short(yp.quote, 120) };
+    let computed = total.value * crf(rate.value, years.value);
+    const printed = sum.annualCharge?.value ?? null;
+    // The text and the investment table can disagree on the years ("amortized over the 4-year stand life" against a
+    // 6-year stand and a 6-year establishment row). When only the investment row's years reproduce the printed
+    // charge, the study computed its charge with those; cite that row.
+    const asset = est?.asset;
+    if (printed != null && !reproducesCharge(computed, printed) && asset && asset.yearsLife > 0 && asset.yearsLife !== years.value && reproducesCharge(total.value * crf(rate.value, asset.yearsLife), printed)) {
+      warn(`establishment years: the text says ${years.value} ("${short(yp.quote, 100)}") but the printed charge ${printed} uses the investment row's ${asset.yearsLife} years`);
+      years = { value: asset.yearsLife, page: asset.page, quote: `${asset.line} (years of life of the establishment row in the investment table; the text says: "${short(yp.quote, 90)}")` };
+      computed = total.value * crf(rate.value, years.value);
+    }
+    // The capital recovery table's own header can state a different rate than the text ("CAPITAL RECOVERY COSTS
+    // (4.75% Interest Rate)" against "The interest rate of 5.75% is used to calculate capital recovery"); when only the
+    // header's rate reproduces the printed charge, the study computed its charge with it; cite the header.
+    let ratePct = { value: rate.value, page: rate.page, quote: short(rate.quote, 120) };
+    const hdr = find(lines, /CAPITAL RECOVERY COSTS?\s*\((\d+(?:\.\d+)?)\s*%\s*Interest Rate\)/i);
+    const hv = hdr ? toNum(hdr.m[1]) : null;
+    if (printed != null && !reproducesCharge(computed, printed) && hdr && hv != null && hv !== rate.value && reproducesCharge(total.value * crf(hv, years.value), printed)) {
+      warn(`capital recovery rate: the text says ${rate.value}% but the printed establishment charge ${printed} uses the capital recovery table's ${hv}%`);
+      ratePct = { value: hv, page: hdr.line.page, quote: `${clean(hdr.line.text)} (header of the capital recovery table; the text says: "${short(rate.quote, 90)}")` };
+      computed = total.value * crf(hv, years.value);
+    }
+    sum.capitalRecovery = {
+      ratePct, years, computed,
+      reproduces: printed != null && reproducesCharge(computed, printed),
+    };
+  }
+
+  // -- investmentCharges: insurance and taxes of the establishment row of the investment table, per acre
+  // the row from the parsed investment table, else the row as printed when that table was not read:
+  // "Establishment Costs 160 Ac 131,360 4 0 36,830 55 657 0 37,542" (price, years, salvage, capital recovery,
+  // insurance, taxes, repairs, total; the total checks the four charges)
+  const inv = investments.find(r => /establishment/i.test(r.description) && !/re-?establish/i.test(r.description)) ?? (() => {
+    for (const l of lines) {
+      const m = l.text.match(/^\s*((?:\w+\s+)?establishment(?:\s+costs?)?(?:\s+\d[\d,]*\s*ac\.?)?)\s+((?:[\d,]+(?:\.\d+)?\s+){7}[\d,]+(?:\.\d+)?)\s*$/i);
+      if (!m || /re-?establish/i.test(m[1])) continue;
+      const v = m[2].trim().split(/\s+/).map(toNum);
+      if (v.some(x => x == null)) continue;
+      const [price, yearsLife, salvageValue, capitalRecovery, insurance, taxes, repairs, tot] = v as number[];
+      if (!(yearsLife > 0 && yearsLife < 100 && Math.abs(capitalRecovery + insurance + taxes + repairs - tot) <= 2)) continue;
+      return { description: m[1].trim(), yearCode: null, price, yearsLife, salvageValue, capitalRecovery, insurance, taxes, repairs, total: tot, page: l.page, line: clean(l.text) } as EquipmentRow;
+    }
+    return undefined;
+  })();
+  if (inv && inv.price > 0) {
+    const ok = (acres: number) => acres > 0 && (!total || Math.abs(inv.price / acres - total.value) <= 0.02 * total.value);
+    type AcreCand = { acres: number; page: number; quote: string };
+    const cands: AcreCand[] = [];
+    const inDesc = inv.description.match(/(\d[\d,]*)\s*-?\s*ac(?:res?|\.)?(?![a-z])/i);
+    if (inDesc) cands.push({ acres: toNum(inDesc[1])!, page: inv.page, quote: inv.line });
+    // "$825,800 for the 40-acre vineyard"
+    const priceTxt = fmtNum(inv.price);
+    for (const x of S) {
+      const at = x.text.indexOf(priceTxt);
+      if (at < 0) continue;
+      const m = x.text.slice(at).match(/(\d[\d,]*)[\s-]+acres?\b/i);
+      if (m) cands.push({ acres: toNum(m[1])!, page: x.page, quote: x.text });
+    }
+    if (a.acresCrop) cands.push({ acres: a.acresCrop.value, page: a.acresCrop.page, quote: a.acresCrop.quote });
+    if (a.acresFarmed) cands.push({ acres: a.acresFarmed.value, page: a.acresFarmed.page, quote: a.acresFarmed.quote });
+    // any acreage the text states that turns the row into the per acre total ("20 acres of avocados")
+    if (total) for (const x of proseSentences(lines)) for (const m of x.text.matchAll(/(\d[\d,]*(?:\.\d+)?)[\s-]+acres?\b/gi)) cands.push({ acres: toNum(m[1])!, page: x.page, quote: x.text });
+    const pick = cands.find(c => c.acres != null && ok(c.acres)) ?? (!total ? cands[0] : undefined);
+    if (pick) {
+      const r2 = (v: number) => Math.round(v * 100) / 100;
+      sum.investmentCharges = {
+        insurance: r2(inv.insurance / pick.acres), taxes: r2(inv.taxes / pick.acres), acres: pick.acres,
+        insuranceRatePct: method.insuranceRatePct?.value ?? null, taxRatePct: method.propertyTaxRatePct?.value ?? null,
+        page: inv.page,
+        // the investment row, then where the acres it is divided by are printed
+        quote: pick.quote === inv.line ? inv.line : `${inv.line} / ${pick.acres} acres (p. ${pick.page}: "${short(pick.quote, 90)}")`,
+      };
+    } else warn(`establishment investment row ${inv.price}: no acreage in the study turns it into the per acre total ${total?.value}`);
+  }
 }
 
 // ---------------------------------------------------------------- method
@@ -1568,10 +1749,33 @@ function parseMethod(lines: Line[]): Method {
   const cr = sentenceMatch(S, /Purchase Price\s*[–-]\s*Salvage Value.{0,40}Capital Recovery Factor.{0,40}Salvage Value\s*[xX×]\s*Interest Rate/i)
     || sentenceMatch(S, /capital recovery.{0,200}Capital Recovery Factor/i);
   const sal = sentenceMatch(S, /Salvage value is an estimate of the remaining value[^.]*\./i) || sentenceMatch(S, /Salvage Value\.\s*[^.]*\./i);
-  const ins = sentenceMatch(S, /(?:property )?insurance.{0,80}?(\d+(?:\.\d+)?)\s*percent of the average value/i)
-    || sentenceMatch(S, /insurance.{0,60}?charged at (\d+(?:\.\d+)?)\s*percent/i);
-  const tax = sentenceMatch(S, /(?:property )?tax(?:es)?.{0,120}?(\d+(?:\.\d+)?)\s*percent of the average value/i)
-    || sentenceMatch(S, /base property tax rate of (\d+(?:\.\d+)?)\s*percent/i);
+  // prose before the first table first, then every page ("1%" as often as "1 percent"; ".710 percent")
+  const A = allSentences(lines);
+  const either = (re: RegExp) => sentenceMatch(S, re) || sentenceMatch(A, re);
+  const PCT = String.raw`(\d+(?:\.\d+)?|\.\d+)\s*(?:percent|%|por ciento)`;
+  // not the labor overhead sentence ("Management salaries include annual bonuses, and insurance, payroll taxes and
+  // benefits which are calculated at 40.5 percent")
+  const notLabor = (re: RegExp) => { const f = (X: { text: string; page: number }[]) => sentenceMatch(X.filter(x => !/payroll|salar|benefits|workers/i.test(x.text)), re); return f(S) || f(A); };
+  const insHit = notLabor(new RegExp(String.raw`(?:property )?insurance.{0,80}?${PCT} (?:per \$1,000 )?of the average value`, 'i'))
+    || notLabor(new RegExp(String.raw`insurance.{0,60}?(?:charged|calculated) at ${PCT}`, 'i'))
+    // "Property Insurance. This provides coverage for property loss and is charged at 0.886 percent of the average value"
+    // ("Coverage for property loss is charged at 0.886 percent", "is charged 0.843 percent", "at 0. 846 percent")
+    || notLabor(new RegExp(String.raw`coverage for property loss (?:and )?is charged (?:at )?(\d+\.\s?\d+|\d+|\.\d+)\s*(?:percent|%)`, 'i'));
+  // "$8.86 per $1,000 asset value for property insurance", "property insurance is calculated at $8.17 per $1,000"
+  const perK = notLabor(/\$\s?(\d+(?:\.\d+)?) per \$1,000 (?:of )?(?:asset )?valu\w* for property insurance/i)
+    || notLabor(/property insurance[^.]{0,40}?\$\s?(\d+(?:\.\d+)?) per \$1,000(?! of crop)/i);
+  const insCited = insHit ? (() => { const v = toNum(insHit.m[1].replace(/\s+/g, '')); return v == null ? null : { value: v, unit: '%', page: insHit.s.page, quote: insHit.s.text }; })() : null;
+  // "charged at 8.86 percent per $1,000 of the average value" means $8.86 per $1,000, 0.886 percent (the investment
+  // tables charge 0.886 percent); "0.710 percent per $1,000" is already the percent. A dollars per $1,000 figure is
+  // a tenth of the percent.
+  const insuranceRatePct: Cited | null = insCited
+    ? (/percent per \$1,000/i.test(insHit!.m[0] + insHit!.s.text.slice(insHit!.s.text.indexOf(insHit!.m[0]) + insHit!.m[0].length, insHit!.s.text.indexOf(insHit!.m[0]) + insHit!.m[0].length + 20)) && insCited.value >= 2
+      ? { ...insCited, value: Math.round(insCited.value * 100) / 1000 } : insCited)
+    : perK ? (() => { const c = citeS(perK, 1, '%'); return c ? { ...c, value: Math.round(c.value * 100) / 1000 } : null; })() : null;
+  const tax = either(new RegExp(String.raw`(?:property )?tax(?:es)?.{0,120}?${PCT} of the average value`, 'i'))
+    || either(new RegExp(String.raw`(?:county|property) taxes (?:are )?(?:calculated )?(?:at|as) ${PCT}`, 'i'))
+    || either(new RegExp(String.raw`base property tax rate of ${PCT}`, 'i'))
+    || either(/base property tax rate of (one) percent/i);
   // Operator labor versus machine time: "Labor for operations involving machinery are 20 percent higher than the
   // operation time ..." in most studies. The tractor-versus-implement time sentence ("Tractor time is 10 percent
   // higher than implement time") is a different quantity and is deliberately not matched.
@@ -1582,7 +1786,7 @@ function parseMethod(lines: Line[]): Method {
     ? { ...mlfCited, value: Math.round((1 + mlfCited.value / 100) * 1000) / 1000, unit: 'x' } : null;
   return {
     capitalRecoveryFormula: q(cr), salvageMethod: q(sal),
-    insuranceRatePct: ins ? citeS(ins, 1, '%') : null, propertyTaxRatePct: tax ? citeS(tax, 1, '%') : null,
+    insuranceRatePct, propertyTaxRatePct: tax ? (/^one$/i.test(tax.m[1]) ? { value: 1, unit: '%', page: tax.s.page, quote: tax.s.text } : citeS(tax, 1, '%')) : null,
     machineLaborFactor,
   };
 }
@@ -1606,6 +1810,7 @@ export function parseStudy(e: ManifestEntry, text: string): ParsedStudy {
   const monthly = parseMonthly(lines, warn);
   const establishment = parseEstablishment(lines, investments, warn);
   const establishmentSummary = summarizeEstablishment(lines, establishment, investments, warn);
+  establishmentChargeInputs(lines, establishmentSummary, establishment, assumptions, method, investments, warn);
 
   const fields: Record<string, unknown> = {
     year: source.year, region: source.region, counties: source.counties,

@@ -568,3 +568,112 @@ describe('per-acre operations table (Table 1 operation rows)', () => {
     expect(off).toEqual([]);
   });
 });
+
+describe('establishment charge inputs: basis year, capital recovery, investment charges', () => {
+  const studies = load();
+  const byId = (id: string) => studies.find(x => x.source.id === id)!;
+  const tiered = studies.filter(s => (s.establishmentSummary.status === 'table' || s.establishmentSummary.status === 'total') && s.establishmentSummary.total);
+  const crfOf = (ratePct: number, years: number) => { const r = ratePct / 100; return (r * (1 + r) ** years) / ((1 + r) ** years - 1); };
+
+  // Studies that print an annual establishment charge but state no capital recovery rate or no years to run it.
+  const NO_CAPITAL_RECOVERY: Record<string, string> = {
+    'bermudagrass-hay-bermhay04': 'charges a flat "20 % of total cost of stand establishment"; no interest rate, no capital recovery',
+    'bermudagrass-seed-bermseed04': 'charges a flat "20 % of total cost of stand establishment"; no interest rate, no capital recovery',
+    'kleingrass-hay-kleingrass04': 'charges a flat "20 % of total cost of stand establishment"; no interest rate, no capital recovery',
+    'lychee-lycheescc02': 'states no capital recovery rate (8.5% is interest on investment in cash overhead, 8.06% the land opportunity rate); the printed 1,152 matches 15,037 over 30 years only at an unstated 6.5%',
+  };
+  // Studies whose printed annual charge does not follow from the rate and years their text states.
+  const NOT_REPRODUCING: Record<string, string> = {
+    'alfalfa-alfalfaorganicca2013': 'text says 5.75%; the investment table charges 17,316 on 47,377 over 3 years, which is 4.75% (unstated)',
+    'almonds-almondfloodvn2011': 'text says 5.75%; the printed 389 is 5,237 over 22 years at 4.75% (unstated)',
+    'almonds-almondsprinklevn2011': 'text says 5.75%; the printed 376 is 5,059 over 22 years at 4.75% (unstated)',
+    'walnuts-walnutsv2012': 'text says 4.75%; the printed 585 is 8,379 over 31 years at 5.75%, the operating capital rate',
+    'grapes-wine-16winegrapebiodynamicmendocinofinaldraft61416-1': 'text says 3.25%; the investment table computes every row at 4.25%, the operating capital rate (88,154 on 1,400,000 over 27 years)',
+    'boysenberries-boysenberriesvn02': 'the production table prints "Berry Crop Establishment 502 69 69", not the 7,345 establishment cost; the investment table charges 1,042 on 7,524 over 10 years at 6.41%',
+  };
+
+  it('every table/total study with a printed annual charge has capitalRecovery, unless allowlisted', () => {
+    const missing = tiered.filter(s => s.establishmentSummary.annualCharge && !s.establishmentSummary.capitalRecovery).map(s => s.source.id);
+    expect(missing.filter(id => !(id in NO_CAPITAL_RECOVERY))).toEqual([]);
+    for (const id of Object.keys(NO_CAPITAL_RECOVERY)) expect(byId(id).establishmentSummary.capitalRecovery, id).toBeNull();
+  });
+
+  it('capitalRecovery reproduces the printed annual charge, unless allowlisted with the diagnosed reason', () => {
+    const bad = tiered.filter(s => s.establishmentSummary.annualCharge && s.establishmentSummary.capitalRecovery && !s.establishmentSummary.capitalRecovery.reproduces).map(s => s.source.id);
+    expect(bad.filter(id => !(id in NOT_REPRODUCING))).toEqual([]);
+    for (const id of Object.keys(NOT_REPRODUCING)) expect(byId(id).establishmentSummary.capitalRecovery?.reproduces, id).toBe(false);
+  });
+
+  it('capitalRecovery is internally consistent and cited', () => {
+    for (const s of studies) {
+      const e = s.establishmentSummary, cr = e.capitalRecovery;
+      if (!cr) continue;
+      expect(e.total, s.source.id).toBeTruthy();
+      expect(cr.computed).toBeCloseTo(e.total!.value * crfOf(cr.ratePct.value, cr.years.value), 6);
+      const printed = e.annualCharge?.value;
+      expect(cr.reproduces).toBe(printed != null && Math.abs(cr.computed - printed) <= Math.max(3, 0.02 * printed));
+      for (const c of [cr.ratePct, cr.years]) { expect(c.page).toBeGreaterThan(0); expect(c.quote.length).toBeGreaterThan(3); }
+      expect(cr.ratePct.value).toBeGreaterThan(0); expect(cr.ratePct.value).toBeLessThan(20);
+    }
+  });
+
+  it("basisYear is present for status 'table' studies whose total came from the table, and points at the total", () => {
+    for (const s of studies) {
+      const e = s.establishmentSummary;
+      if (e.status !== 'table' || e.total?.source !== 'table') { if (e.status !== 'table') expect(e.basisYear, s.source.id).toBeNull(); continue; }
+      expect(e.basisYear, s.source.id).toBeTruthy();
+      const years = s.establishment!.table!.years;
+      expect(years[e.basisYear!.index]).toBe(e.basisYear!.label);
+    }
+  });
+
+  it('investmentCharges are per acre figures of the printed establishment row', () => {
+    for (const s of studies) {
+      const ic = s.establishmentSummary.investmentCharges;
+      if (!ic) continue;
+      expect(ic.acres, s.source.id).toBeGreaterThan(0);
+      expect(ic.insurance).toBeGreaterThanOrEqual(0); expect(ic.taxes).toBeGreaterThanOrEqual(0);
+      expect(ic.page).toBeGreaterThan(0); expect(ic.quote).toMatch(/establish/i);
+    }
+  });
+
+  it('hand-checked: 2020 high density avocados, San Diego County', () => {
+    const e = byId('avocados-2020avocadohighdensitysandiegocounty').establishmentSummary;
+    expect(e.total?.value).toBe(28409);
+    expect(e.basisYear).toEqual({ index: 2, label: '3rd' });
+    expect(e.capitalRecovery?.ratePct.value).toBe(5.5);
+    expect(e.capitalRecovery?.years.value).toBe(30);
+    expect(e.capitalRecovery?.computed).toBeCloseTo(1954.69, 1);
+    expect(e.capitalRecovery?.reproduces).toBe(true);
+    expect(e.investmentCharges).toMatchObject({ insurance: 12.6, taxes: 142.05, acres: 20, insuranceRatePct: 0.886, taxRatePct: 1 });
+  });
+
+  it('hand-checked: 2024 Sacramento Valley almonds', () => {
+    const e = byId('almonds-2024sacvalleyalmonds7-5-24-final-draft').establishmentSummary;
+    expect(e.total?.value).toBe(14894);
+    expect(e.basisYear).toEqual({ index: 2, label: '3rd' });
+    expect(e.capitalRecovery).toMatchObject({ ratePct: { value: 8.25 }, years: { value: 22 }, reproduces: true });
+    expect(e.capitalRecovery?.computed).toBeCloseTo(1489.07, 1);
+    expect(e.annualCharge?.value).toBe(1489);
+    expect(e.investmentCharges).toMatchObject({ insurance: 5.29, taxes: 74.47, acres: 100, insuranceRatePct: 0.71, taxRatePct: 1 });
+  });
+
+  it('hand-checked: 2019 San Joaquin Valley South Chardonnay (charge runs the investment row\'s 25 years, not the text\'s 22)', () => {
+    const e = byId('grapes-wine-19winegrapessjvsouthchardonnay').establishmentSummary;
+    expect(e.total?.value).toBe(20645);
+    expect(e.basisYear).toEqual({ index: 2, label: '3rd' });
+    expect(e.capitalRecovery).toMatchObject({ ratePct: { value: 6 }, years: { value: 25 }, reproduces: true });
+    expect(e.capitalRecovery?.years.quote).toMatch(/remaining 22 years/);
+    expect(e.capitalRecovery?.computed).toBeCloseTo(1614.99, 1);
+    expect(e.investmentCharges).toMatchObject({ insurance: 91.45, taxes: 103.23, acres: 40 });
+  });
+
+  it('hand-checked: 2015 Sacramento Valley flood irrigated alfalfa', () => {
+    const e = byId('alfalfa-alfalfa-flood-sv-2015').establishmentSummary;
+    expect(e.total?.value).toBe(821);
+    expect(e.basisYear?.index).toBe(0);
+    expect(e.capitalRecovery).toMatchObject({ ratePct: { value: 4.75 }, years: { value: 4 }, reproduces: true });
+    expect(e.capitalRecovery?.computed).toBeCloseTo(230.19, 1);
+    expect(e.investmentCharges).toMatchObject({ insurance: 0.34, taxes: 4.11, acres: 160 });
+  });
+});

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f1/bc/f1bc157e-feee-4f4e-9336-e2e8b4571c13/minneolovs02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/citrus–minneola",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Minneola 550.00 crtn 13.00 7,150"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.41,
+   "unit": "%",
+   "page": 10,
+   "quote": "The interest rate of 6.41% used to calculate capital recovery cost is the USDA-ERS’s ten- year average of California’s agricultural sector long-run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 8.4,
@@ -684,8 +689,18 @@
    "page": 10,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.66,
+   "unit": "%",
+   "page": 9,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.660% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 9,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1685,8 +1700,8 @@
   },
   "productionYears": {
    "value": 36,
-   "page": 19,
-   "quote": "Orchard Establishment Cost 45,300 36 3,251 149 226 0 3,627 (years of life of the establishment row in the investment table)"
+   "page": 10,
+   "quote": "The establishment cost is spread over the remaining 36 years of the 40 years the orchard is in production."
   },
   "plantingLife": {
    "value": 40,
@@ -1719,7 +1734,34 @@
    "page": 15,
    "quote": "Orchard Establishment 4,530 325 325"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 3,
+   "label": "4th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.41,
+    "page": 10,
+    "quote": "The interest rate of 6.41% used to calculate capital recovery cost is the USDA-ERS’s ten- year average of California’..."
+   },
+   "years": {
+    "value": 36,
+    "page": 10,
+    "quote": "The establishment cost is spread over the remaining 36 years of the 40 years the orchard is in production."
+   },
+   "computed": 325.09836599416843,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 14.9,
+   "taxes": 22.6,
+   "acres": 10,
+   "insuranceRatePct": 0.66,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Orchard Establishment Cost 45,300 36 3,251 149 226 0 3,627 / 10 acres (p. 10: \"For this study the cost is $4,530 per acre or $45,300 for the 10-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1727,6 +1769,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -1741,6 +1784,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1749,11 +1794,8 @@
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",

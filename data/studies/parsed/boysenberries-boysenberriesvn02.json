@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/7f/02/7f02fe7a-64c0-4991-b809-dfbbd3f01cfb/boysenberriesvn02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/boysenberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -62,7 +62,12 @@
     "quote": "Process-Frozen 6.00 ton 3,200.00 19,200"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.41,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 6.41% used to calculate capital recovery cost is the USDA-ERS’s ten- year average of California’s agricultural sector long-run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 10.5,
@@ -795,8 +800,18 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.66,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.660% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1641,9 +1656,9 @@
   },
   "annualCharge": null,
   "productionYears": {
-   "value": 10,
-   "page": 15,
-   "quote": "Berry Crop Establishment 7,524 10 1,042 25 38 0 1,105 (years of life of the establishment row in the investment table)"
+   "value": 9,
+   "page": 8,
+   "quote": "The establishment cost is spread over the remaining 9 years of the 10 years the boysenberries are in production."
   },
   "plantingLife": {
    "value": 25,
@@ -1676,7 +1691,26 @@
    "page": 12,
    "quote": "Berry Crop Establishment 502 69 69"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 1,
+   "label": "2nd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.41,
+    "page": 8,
+    "quote": "The interest rate of 6.41% used to calculate capital recovery cost is the USDA-ERS’s ten- year average of California’..."
+   },
+   "years": {
+    "value": 9,
+    "page": 8,
+    "quote": "The establishment cost is spread over the remaining 9 years of the 10 years the boysenberries are in production."
+   },
+   "computed": 1099.2289708967737,
+   "reproduces": false
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1684,6 +1718,7 @@
    "region",
    "counties",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -1698,6 +1733,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1705,18 +1742,16 @@
   ],
   "fieldsMissing": [
    "yieldPerAcre",
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
    "establishment year 2: running net 16966 differs from printed accumulated 7345",
-   "establishment total: table 7345 (ACCUMULATED NET CASH COSTS/ACRE 7,521 7,345) differs from production 502 (Berry Crop Establishment 502 69 69); using the table figure"
+   "establishment total: using the table figure 7345 (ACCUMULATED NET CASH COSTS/ACRE 7,521 7,345); the production prints 502 (Berry Crop Establishment 502 69 69), which measures the establishment period differently",
+   "establishment investment row 7524: no acreage in the study turns it into the per acre total 7345"
   ]
  }
 }

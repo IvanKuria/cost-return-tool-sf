@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f4/ba/f4bab2ce-ed5f-4103-a412-d472b9c7148d/avocadovsbsloorganicreport2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/avocados",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -38,7 +38,12 @@
    "quote": "Each time, it is applied at 200 cubic yards per acre at a price of $2.50 per cubic yard."
   },
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 12,
+   "quote": "The interest we used to calculate ownership cost is 4.75%, which is California’s long-term rate of return on agricultural production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -655,8 +660,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 7.75,
+   "unit": "%",
+   "page": 11,
+   "quote": "Growers also carry insurance for property protection, which is typically calculated at 7.75% of the average value of assets for 2011."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 11,
+   "quote": "There may also be additional taxes on property in special assessment districts but for this study we calculated county taxes at 1% (the base rate) of the value of the properties."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -1772,8 +1787,8 @@
   },
   "productionYears": {
    "value": 30,
-   "page": 28,
-   "quote": "Amortized Establishment Cost 395,520 30 0 25,000.60 1,532.64 1,977.60 0 28,510.84 (years of life of the establishment row in the investment table)"
+   "page": 12,
+   "quote": "The establishment cost is then amortized at the long-term average rate of return on agricultural production asset from current income over a 30-year productive life to determine the annual amount that must be recovered from the investment."
   },
   "plantingLife": null,
   "amortizedFromYear": null,
@@ -1805,7 +1820,34 @@
    "page": 22,
    "quote": "Amortized Establishment Cost 39,773 2,514.03 2,514.03"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 5,
+   "label": "6th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 12,
+    "quote": "The interest we used to calculate ownership cost is 4.75%, which is California’s long-term rate of return on agricult..."
+   },
+   "years": {
+    "value": 30,
+    "page": 12,
+    "quote": "The establishment cost is then amortized at the long-term average rate of return on agricultural production asset fro..."
+   },
+   "computed": 2514.0296117952475,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 153.26,
+   "taxes": 197.76,
+   "acres": 10,
+   "insuranceRatePct": 7.75,
+   "taxRatePct": 1,
+   "page": 28,
+   "quote": "Amortized Establishment Cost 395,520 30 0 25,000.60 1,532.64 1,977.60 0 28,510.84 / 10 acres (p. 3: \"In 2001/2002, there were about 340 organic avocado acres in Ventura County, about 130 a...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1813,6 +1855,7 @@
    "region",
    "counties",
    "pricePerUnit",
+   "interestRatePct",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -1822,6 +1865,8 @@
    "equipment",
    "investments",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment",
    "establishmentAccumulated",
@@ -1829,7 +1874,6 @@
   ],
   "fieldsMissing": [
    "yieldPerAcre",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1837,8 +1881,6 @@
    "acresFarmed",
    "hourlyEquipment",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor"
   ],
   "warnings": [

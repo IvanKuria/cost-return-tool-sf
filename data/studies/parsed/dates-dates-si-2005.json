@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b5/55/b5553ac8-9aaa-49e1-b617-8e87f0e55bf0/dates_si_2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/dates",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2005,
   "priceYear": null
@@ -56,7 +56,12 @@
     "quote": "Culls (5% of Total) 653 lb 0.00 0"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.25,
+   "unit": "%",
+   "page": 13,
+   "quote": "Interest for capital investments are calculated at the long-run rate of return of agricultural assets to current income. In this study, we used a ten year average (6.25%) of the most current years (data provided by USDA-ERS--Economic Research Services)."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 10.5,
@@ -697,8 +702,18 @@
    "page": 13,
    "quote": "Salvage Value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.7,
+   "unit": "%",
+   "page": 12,
+   "quote": "Property loss coverage insurance premiums are charged annually at 0.70% of the average value of the property."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 12,
+   "quote": "For this study, we calculated property taxes at 1.0% (the rate most counties commonly charge) of the value of the property."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -1957,7 +1972,11 @@
   ],
   "accumulatedNetCost": null,
   "annualCharge": null,
-  "productionYears": null,
+  "productionYears": {
+   "value": 40,
+   "page": 14,
+   "quote": "This value is amortized approximately over 40 years, (the expected useful life of the orchard) to determine an annual charge for depreciation of trees and the opportunity cost of the investment in tree establishment."
+  },
   "plantingLife": null,
   "amortizedFromYear": null,
   "removalCost": null,
@@ -1981,13 +2000,33 @@
    "page": 18,
    "quote": "Establishment Cost (Trees) 33637 2293 2293"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 8,
+   "label": "9th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.25,
+    "page": 13,
+    "quote": "Interest for capital investments are calculated at the long-run rate of return of agricultural assets to current inco..."
+   },
+   "years": {
+    "value": 40,
+    "page": 14,
+    "quote": "This value is amortized approximately over 40 years, (the expected useful life of the orchard) to determine an annual..."
+   },
+   "computed": 2306.3797270145596,
+   "reproduces": true
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -2000,19 +2039,18 @@
    "equipment",
    "hourlyEquipment",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
    "investments",
    "businessOverhead",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishmentAccumulated",
    "establishmentAnnual"

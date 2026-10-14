@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/62/3a/623a8e4d-ba4c-4c7b-9f13-389e17fd1928/16winegrapebiodynamicmendocinofinaldraft61416-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1350,7 +1350,12 @@
    "page": 10,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 9,
+   "quote": "This provides coverage for property loss and is charged 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1458,7 +1463,31 @@
    "page": 15,
    "quote": "Vineyard Establishment-Biodynamic 35,000 2,204 2,204"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.25,
+    "page": 10,
+    "quote": "The interest rate of 3.25 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 27,
+    "page": 11,
+    "quote": "The cost is amortized over the remaining 27 years of vineyard production to estimate the annual capital recovery cost."
+   },
+   "computed": 1966.855818936073,
+   "reproduces": false
+  },
+  "investmentCharges": {
+   "insurance": 14.75,
+   "taxes": 175,
+   "acres": 40,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 27,
+   "quote": "Vineyard Establishment-Biodynamic 1,400,000 27 0 88,154 590 7,000 0 95,744 / 40 acres (p. 9: \"A sanitation service provides one portable toilet for the vineyard which is serviced fo...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1481,6 +1510,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1491,7 +1521,6 @@
    "laborOverheadPct",
    "landRentPerAcre",
    "acresFarmed",
-   "insuranceRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

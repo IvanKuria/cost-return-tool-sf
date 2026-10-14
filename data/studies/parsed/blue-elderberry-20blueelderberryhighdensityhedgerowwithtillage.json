@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/72/72/7272112b-2dec-4cb4-95ed-b4253dd5e981/20blueelderberryhighdensityhedgerowwithtillage.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blue-elderberry",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -159,7 +159,12 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.866,
+   "unit": "%",
+   "page": 7,
+   "quote": "This provides coverage for property loss and is charged at 0.866 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -430,7 +435,10 @@
   "status": "table",
   "total": null,
   "annualCharge": null,
-  "reason": "The establishment table is per 1,000 linear feet of hedgerow, not per acre"
+  "reason": "The establishment table is per 1,000 linear feet of hedgerow, not per acre",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -445,6 +453,7 @@
    "equipment",
    "hourlyEquipment",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "establishment"
@@ -461,7 +470,6 @@
    "operations",
    "investments",
    "businessOverhead",
-   "insuranceRatePct",
    "monthly",
    "establishmentAccumulated",
    "establishmentAnnual"

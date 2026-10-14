@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c4/36/c436fc40-8c6b-4ebb-97f6-e407160608bc/2020alfalfascottvalley-mixed_irrigation-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -884,7 +884,12 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.866,
+   "unit": "%",
+   "page": 7,
+   "quote": "This provides coverage for property loss and is charged at 0.866 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1375,7 +1380,34 @@
    "page": 13,
    "quote": "Establishment Cost 589 118 118"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 8,
+    "quote": "An interest rate of 5.5 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 6,
+    "page": 8,
+    "quote": "The establishment cost is amortized over the remaining six years of crop life."
+   },
+   "computed": 117.90540014958204,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0.26,
+   "taxes": 2.95,
+   "acres": 80,
+   "insuranceRatePct": 0.866,
+   "taxRatePct": 1,
+   "page": 17,
+   "quote": "Establishment Cost 47,120 6 0 9,432 21 236 0 9,689 / 80 acres (p. 8: \"For this study, the cost is $589 per acre, or $47,120 for the 80 acres.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1400,6 +1432,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1408,8 +1441,7 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "2 annual equipment blocks (establishment and production); using the last"

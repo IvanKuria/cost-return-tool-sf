@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/20/a3/20a3613f-2ae8-4f0d-9e71-89cd099af990/apricotcc2003.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/apricots",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2003,
   "priceYear": {
@@ -48,7 +48,12 @@
     "quote": "Apricots for Drying 3.50 ton 375.00 1,313"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.25,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 6.25% used to calculate capital recovery cost is the United States Department of Agriculture-Economic Reporting Service’s (USDA-ERS) ten-year average of California’s agricultural sector long run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 10,
@@ -651,8 +656,18 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.676,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.676% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1478,7 +1493,26 @@
    "page": 11,
    "quote": "Orchard Establishment Costs 2,898 225 225"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.25,
+    "page": 8,
+    "quote": "The interest rate of 6.25% used to calculate capital recovery cost is the United States Department of Agriculture-Eco..."
+   },
+   "years": {
+    "value": 27,
+    "page": 7,
+    "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 27 years of production."
+   },
+   "computed": 224.88522891827643,
+   "reproduces": true
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1487,6 +1521,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "operatingTotal",
@@ -1500,6 +1535,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1507,15 +1544,13 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
-   "acresFarmed",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "acresFarmed"
   ],
   "warnings": [
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "establishment investment row 11592: no acreage in the study turns it into the per acre total 2898"
   ]
  }
 }

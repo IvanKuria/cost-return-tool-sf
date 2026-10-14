@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/53/39/5339d98f-f575-4eab-8482-b3162d71a8fd/avocadosdrorganic_reports2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/avocados",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -33,7 +33,12 @@
    "quote": "Each time, it is applied at 200 cubic yards per acre at a price of $2.50 per cubic yard."
   },
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 12,
+   "quote": "The interest used to calculate ownership cost is 4.75%, which is California’s long-term rate of return on agricultural production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -650,8 +655,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 7.75,
+   "unit": "%",
+   "page": 11,
+   "quote": "Growers also carry insurance for property protection, which is typically calculated at 7.75% of the average value of assets for 2011."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 11,
+   "quote": "There may also be additional taxes on property in special assessment districts but for this study, we calculated county taxes at 1% (the base rate) of the value of the properties."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -1753,8 +1768,8 @@
   },
   "productionYears": {
    "value": 30,
-   "page": 27,
-   "quote": "Amortized Establishment Cost 436,260 30 0 27,575.76 1,690.51 2,181.30 0 31,447.57 (years of life of the establishment row in the investment table)"
+   "page": 12,
+   "quote": "The establishment cost is then amortized at the long-term average rate of return on agricultural production asset from current income over a 30-year productive life to determine the annual amount that must be recovered from the investment."
   },
   "plantingLife": null,
   "amortizedFromYear": null,
@@ -1786,7 +1801,26 @@
    "page": 21,
    "quote": "Amortized Establishment Cost 37,798 2,389 2,389"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 5,
+   "label": "Year 6"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 12,
+    "quote": "The interest used to calculate ownership cost is 4.75%, which is California’s long-term rate of return on agricultura..."
+   },
+   "years": {
+    "value": 30,
+    "page": 12,
+    "quote": "The establishment cost is then amortized at the long-term average rate of return on agricultural production asset fro..."
+   },
+   "computed": 2389.1909402518486,
+   "reproduces": true
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1794,6 +1828,7 @@
    "region",
    "counties",
    "pricePerUnit",
+   "interestRatePct",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -1803,6 +1838,8 @@
    "equipment",
    "investments",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment",
    "establishmentAccumulated",
@@ -1810,7 +1847,6 @@
   ],
   "fieldsMissing": [
    "yieldPerAcre",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1818,14 +1854,13 @@
    "acresFarmed",
    "hourlyEquipment",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor"
   ],
   "warnings": [
    "Table 2 found but no GROSS RETURNS block",
    "several costs-per-acre tables (establishment and production); using the production one",
-   "2 establishment tables, one per region; using the last (Costs per Acre to Establish an Avocado Orchard in Riverside County using Organic Production Practices in 2011)"
+   "2 establishment tables, one per region; using the last (Costs per Acre to Establish an Avocado Orchard in Riverside County using Organic Production Practices in 2011)",
+   "establishment investment row 436260: no acreage in the study turns it into the per acre total 37798"
   ]
  }
 }

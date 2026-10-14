@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f9/c1/f9c1777a-1c0e-4231-9d59-15e5aa3da588/pearsnc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pears",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -61,7 +61,12 @@
     "quote": "Off-grades 3.00 Ton 70.00 210"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 11,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 14.7,
@@ -1188,8 +1193,18 @@
    "page": 10,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.7,
+   "unit": "%",
+   "page": 10,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.70% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 10,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -2499,13 +2514,41 @@
    "page": 15,
    "quote": "Establishment cost 1,041"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 4,
+   "label": "5"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 11,
+    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 25,
+    "page": 11,
+    "quote": "Establishment cost is amortized beginning in the sixth year over the remaining 25 years of production."
+   },
+   "computed": 1041.3053263067088,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 63.24,
+   "taxes": 75.24,
+   "acres": 25,
+   "insuranceRatePct": 0.7,
+   "taxRatePct": 1,
+   "page": 25,
+   "quote": "Establishment cost 376,275 25 0 26,033 1,581 1,881 0 29,495 / 25 acres (p. 11: \"For this study, this cost is $15,051 per acre or $376,275 for the 25-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -2521,6 +2564,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishment",
    "establishmentAccumulated",
@@ -2529,10 +2574,7 @@
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "monthly"
   ],
   "warnings": [

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/3e/6e/3e6e2dd9-a6c7-4272-84b4-f5eaaddcdb1c/span_bpblackberrycc2018-final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2018,
   "priceYear": null
@@ -23,7 +23,12 @@
   "yieldUnit": null,
   "pricePerUnit": null,
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 5.5,
+   "unit": "%",
+   "page": 11,
+   "quote": "La tasa de interés de 5.50 por ciento se utiliza para calcular la recuperación de capital."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -883,13 +888,17 @@
    "source": "prose"
   },
   "annualCharge": null,
-  "reason": null
+  "reason": null,
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
+   "interestRatePct",
    "operatingTotal",
    "cashOverheadTotal",
    "totalCost",
@@ -901,7 +910,6 @@
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",

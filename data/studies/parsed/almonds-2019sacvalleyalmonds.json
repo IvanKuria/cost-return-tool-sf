@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/67/b7/67b72c81-5ce0-4462-a396-fbb62ce8564e/2019sacvalleyalmonds.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2019,
   "priceYear": {
@@ -1007,7 +1007,12 @@
    "page": 11,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 8.86 percent per $1,000 of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2521,7 +2526,34 @@
    "page": 17,
    "quote": "Establishment Costs 7,678 638 638"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6,
+    "page": 12,
+    "quote": "An interest rate of 6 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 12,
+    "quote": "Establishment costs are amortized beginning in the fourth year and are continuous for the remaining 22 years of produ..."
+   },
+   "computed": 637.6238753084788,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 3.4,
+   "taxes": 38.39,
+   "acres": 100,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 23,
+   "quote": "Establishment Costs 767,800 22 0 63,762 340 3,839 3,839 71,781 / 100 acres (p. 12: \"The cost is $7,678 per acre or $767,800 for the 100-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2545,6 +2577,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2554,8 +2587,7 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "the text layer drops the decimal point of the Table 1 hours column (\"0 50\"); it is read as 0.50"

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/84/2e/842e78c3-3f2c-4595-ab4b-230b89b24150/broccoli_cc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/broccoli",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Broccoli 582 box 8.23 4,790"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 7,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 19.53,
@@ -982,7 +987,12 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 5,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -997,7 +1007,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1006,6 +1019,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1021,13 +1035,12 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "propertyTaxRatePct",
    "machineLaborFactor"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "acresFarmed",
    "insuranceRatePct",
-   "propertyTaxRatePct",
    "monthly",
    "establishment",
    "establishmentAccumulated",

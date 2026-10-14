@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/ef/85/ef8541d9-cc27-4b4a-a9bb-7442b559c075/2017peachsvsjv-lcling.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/peaches",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2017,
   "priceYear": {
@@ -946,7 +946,12 @@
    "page": 10,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.846,
+   "unit": "%",
+   "page": 9,
+   "quote": "This provides coverage for property loss and is charged at 0.846 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2094,7 +2099,7 @@
    "quote": "For this study, the cost is $7,939 per acre or $317,560 for the 40 acres planted to processing peaches."
   },
   "annualCharge": {
-   "value": 825,
+   "value": 765,
    "page": 16,
    "quote": "Orchard Establishment 8,560 825 765"
   },
@@ -2138,11 +2143,38 @@
    "source": "table"
   },
   "annualCharge": {
-   "value": 825,
+   "value": 765,
    "page": 16,
    "quote": "Orchard Establishment 8,560 825 765"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5,
+    "page": 10,
+    "quote": "An interest rate of 5.00 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 15,
+    "page": 11,
+    "quote": "Establishment cost is amortized over the remaining 15 years that the orchard is assumed to be in production."
+   },
+   "computed": 764.8614213297907,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 3.35,
+   "taxes": 39.7,
+   "acres": 40,
+   "insuranceRatePct": 0.846,
+   "taxRatePct": 1,
+   "page": 21,
+   "quote": "Orchard Establishment Cost 317,560 15 0 30,594 134 1,588 1,588 33,905 / 40 acres (p. 11: \"For this study, the cost is $7,939 per acre or $317,560 for the 40 acres planted to pro...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2166,6 +2198,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2175,11 +2208,10 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
-   "establishment per producing acre 8560 differs from prose 7939"
+   "establishment cost: the yearly charge is amortized from 8560; the text's 7939 is a different measure of the establishment period"
   ]
  }
 }

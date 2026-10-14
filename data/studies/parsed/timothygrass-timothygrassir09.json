@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/42/9f/429f9234-f33f-43d0-8db6-9be7251aa7f4/timothygrassir09.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/timothygrass",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2009,
   "priceYear": null
@@ -47,7 +47,12 @@
     "quote": "Graze 0.25 AUM 27.00 7"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 7,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery cost is used to calculate capital recovery cost is the effective long-term interest rate in April 2009."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 9.6,
@@ -603,8 +608,18 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.74,
+   "unit": "%",
+   "page": 6,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.740% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1099,7 +1114,34 @@
    "page": 13,
    "quote": "Timothygrass Hay Establishment Costs 620 142 142"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 7,
+    "quote": "The interest rate of 4.75% used to calculate capital recovery cost is used to calculate capital recovery cost is the..."
+   },
+   "years": {
+    "value": 5,
+    "page": 5,
+    "quote": "The establishment cost is amortized over the remaining 5 years of the stand life."
+   },
+   "computed": 142.44553847235477,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 2.54,
+   "taxes": 3.1,
+   "acres": 300,
+   "insuranceRatePct": 0.74,
+   "taxRatePct": 1,
+   "page": 16,
+   "quote": "Timothygrass Hay Establishment Cost 186,000 5 42,665 763 930 0 44,357 / 300 acres (p. 2: \"The hypothetical farm used in this report consists of 320 acres with 300 acres of Timot...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1107,6 +1149,7 @@
    "region",
    "counties",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -1120,6 +1163,8 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1127,18 +1172,15 @@
   ],
   "fieldsMissing": [
    "yieldPerAcre",
-   "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
-   "establishment total: table 621 (TOTAL CASH COSTS/ACRE 621) differs from prose 509 (For this study, the cost is $509 per acre or $152,700 for the 300 acre field.); using the table figure"
+   "establishment total: using the table figure 621 (TOTAL CASH COSTS/ACRE 621); the prose prints 509 (For this study, the cost is $509 per acre or $152,700 for the 300 acre field.), which measures the establishment period differently"
   ]
  }
 }

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/04/20/alfalfaorganiccadraft42021.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -48,7 +48,12 @@
     "quote": "Alfalfa Hay 7 Ton 260.00 1,820"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 5.5,
+   "unit": "%",
+   "page": 10,
+   "quote": "An interest rate of 5.50% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 16,
@@ -578,7 +583,12 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 8,
+   "quote": "This cost provides coverage for property loss and is charged at 0.886 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1110,7 +1120,34 @@
    "page": 15,
    "quote": "Establishment Cost 879 251 251"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 10,
+    "quote": "An interest rate of 5.50% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 4,
+    "page": 10,
+    "quote": "The establishment cost is amortized over the remaining four years of stand life."
+   },
+   "computed": 250.773852605801,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0,
+   "taxes": 0,
+   "acres": 100,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Establishment Cost 87,900 4 0 25,077 0 0 0 25,077 / 100 acres (p. 10: \"For this study, the cost is $879 per acre or $87,900 for the 100 acres.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1119,6 +1156,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -1133,6 +1171,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1141,10 +1180,8 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborOverheadPct",
-   "acresFarmed",
-   "insuranceRatePct"
+   "acresFarmed"
   ],
   "warnings": []
  }

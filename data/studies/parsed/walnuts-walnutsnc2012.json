@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/43/c6/43c6124a-9459-451b-bf3f-7a55db1c1b8a/walnutsnc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -58,7 +58,12 @@
     "quote": "GROSS RETURNS: Walnuts 5,000 Lb. 1.25 6,250"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 20.4,
@@ -839,7 +844,12 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
   "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -2050,7 +2060,34 @@
    "page": 13,
    "quote": "Orchard establishment 6,601 411 411"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 3,
+   "label": "4th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 8,
+    "quote": "The interest rate of 4.75% used to calculate capital recovery."
+   },
+   "years": {
+    "value": 31,
+    "page": 7,
+    "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 31 years of production."
+   },
+   "computed": 411.08059201008535,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 26.53,
+   "taxes": 33,
+   "acres": 19,
+   "insuranceRatePct": null,
+   "taxRatePct": 1,
+   "page": 17,
+   "quote": "Orchard establishment 125,419 31 0 7,811 504 627 0 8,941 / 19 acres (p. 7: \"For this study, the cost is $6,601 per acre or $125,419 for the 19-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2059,6 +2096,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -2074,16 +2112,15 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "landRentPerAcre",
    "insuranceRatePct",
-   "propertyTaxRatePct",
    "monthly"
   ],
   "warnings": [

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/05/1e/051eabc3-9bdd-45cc-9c85-f122f8f275f0/2016plumssjvfinaldraft112316.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/plums",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -927,7 +927,12 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 7,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2115,7 +2120,34 @@
    "page": 12,
    "quote": "Orchard Establishment 629 629"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.75,
+    "page": 9,
+    "quote": "The interest rate of 3.75 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 17,
+    "page": 19,
+    "quote": "Establishment Cost-Plums 78,070 17 0 6,293 33 390 1,561 8,278 (years of life of the establishment row in the investme..."
+   },
+   "computed": 629.344104980178,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 3.3,
+   "taxes": 39,
+   "acres": 10,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Establishment Cost-Plums 78,070 17 0 6,293 33 390 1,561 8,278 / 10 acres (p. 9: \"For this study the cost is $7,807 per producing acre or $78,070 for the 10-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2140,6 +2172,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "monthly",
    "establishment",
@@ -2148,7 +2181,6 @@
   ],
   "fieldsMissing": [
    "landRentPerAcre",
-   "insuranceRatePct",
    "machineLaborFactor"
   ],
   "warnings": [

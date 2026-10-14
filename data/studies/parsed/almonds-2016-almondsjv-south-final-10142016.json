@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/87/3c/873c1216-f21e-4e3e-8961-8ece2d647329/2016_almondsjv_south_final_10142016.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2016,
   "priceYear": {
@@ -1276,7 +1276,12 @@
    "page": 11,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2688,7 +2693,34 @@
    "page": 17,
    "quote": "Establishment Costs 8,072 581 581"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.75,
+    "page": 11,
+    "quote": "The interest rate of 3.75 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 20,
+    "page": 12,
+    "quote": "The cost is amortized over the remaining 20 years of orchard production to estimate the annual capital recovery cost."
+   },
+   "computed": 580.8780496432626,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 3.4,
+   "taxes": 40.36,
+   "acres": 100,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Establishment Costs 807,200 20 0 58,088 340 4,036 4,036 66,500 / 100 acres (p. 3: \"Almonds are being established on 100 acres.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2711,6 +2743,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2721,8 +2754,7 @@
   "fieldsMissing": [
    "counties",
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

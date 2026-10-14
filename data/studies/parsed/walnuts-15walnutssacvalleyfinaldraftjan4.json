@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/78/a7/78a775e3-6488-49d4-b234-b3eaf9171a55/15walnutssacvalleyfinaldraftjan4.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -846,7 +846,12 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 8,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life. 2015 Walnuts Costs & Returns Study Sacramento Valley UC Cooperative Extension 8"
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2246,7 +2251,34 @@
    "page": 15,
    "quote": "Orchard Establishment 7,212 456 456"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 10,
+    "quote": "An interest rate of 4.75 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 30,
+    "page": 10,
+    "quote": "Establishment cost is amortized beginning in the fourth year over the remaining 30 years of production."
+   },
+   "computed": 455.8665818587315,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 3.04,
+   "taxes": 36.06,
+   "acres": 100,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Orchard Establishment 721,200 30 0 45,587 304 3,606 8 49,504 / 100 acres (p. 10: \"For this study, this cost is $7,212 per acre or $721,200 for the 100-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2268,6 +2300,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
    "establishmentAccumulated",
@@ -2278,7 +2311,6 @@
    "pricePerUnit",
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
    "machineLaborFactor",
    "monthly"
   ],

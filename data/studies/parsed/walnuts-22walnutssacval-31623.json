@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/03/17/22walnutssacval-31623.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2022,
   "priceYear": {
@@ -1050,7 +1050,12 @@
    "quote": "The formula for the calculation of the annual capital recovery costs is ((Purchase Price – Salvage Value) x Capital Recovery Factor) + (Salvage Value x Interest Rate)."
   },
   "salvageMethod": null,
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 0.886 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2224,7 +2229,34 @@
    "page": 17,
    "quote": "Orchard Establishment 18,667 1506 1,506"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 3,
+   "label": "4th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.5,
+    "page": 11,
+    "quote": "An interest rate of 6.50 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 26,
+    "page": 11,
+    "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 26 years of production."
+   },
+   "computed": 1506.329799418163,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 8.27,
+   "taxes": 93.34,
+   "acres": 100,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Orchard Establishment 1,866,700 26 0 150,633 827 9,334 72 160,865 / 100 acres (p. 11: \"For this study, this cost is $18,667 per acre or $1,866,700 for the 100-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2248,6 +2280,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2257,8 +2290,7 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

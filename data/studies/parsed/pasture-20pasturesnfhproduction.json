@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/bb/94/bb94edc2-fbfb-4be0-8853-6565b486e032/20pasturesnfhproduction.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -288,7 +288,7 @@
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
   "insuranceRatePct": {
-   "value": 8.86,
+   "value": 0.886,
    "unit": "%",
    "page": 6,
    "quote": "Property insurance provides coverage for property loss and is charged at 8.86 percent per $1,000 of the value of the assets over their useful life."
@@ -367,7 +367,10 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Establishment is costed in a separate UC study: \"If your farm does not already have an established pasture, refer to (“Sample Costs to Establish or Reestablish and Produce Pasture in the Sierra Nevada Foothills - 2020”) for th...\""
+  "reason": "Establishment is costed in a separate UC study: \"If your farm does not already have an established pasture, refer to (“Sample Costs to Establish or Reestablish and Produce Pasture in the Sierra Nevada Foothills - 2020”) for th...\"",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [

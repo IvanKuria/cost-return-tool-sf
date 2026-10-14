@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/07/24/2023tableolivestrad71723.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2023,
   "priceYear": {
@@ -770,7 +770,12 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.71,
+   "unit": "%",
+   "page": 6,
+   "quote": "This provides coverage for property loss and is charged at 0.710 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -897,7 +902,31 @@
    "page": 10,
    "quote": "Orchard Establishment 5,000 381 381"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 7,
+    "page": 7,
+    "quote": "An interest rate of 7.00 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 37,
+    "page": 14,
+    "quote": "Orchard Establishment 175,000 37 0 13,341 62 875 0 14,279 (years of life of the establishment row in the investment t..."
+   },
+   "computed": 381.18423983960105,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 1.77,
+   "taxes": 25,
+   "acres": 35,
+   "insuranceRatePct": 0.71,
+   "taxRatePct": 1,
+   "page": 14,
+   "quote": "Orchard Establishment 175,000 37 0 13,341 62 875 0 14,279 / 35 acres (p. 7: \"For this study, the 2016 establishment cost of $5,000 per acre or $175,000 for the 35-a...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -921,6 +950,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -930,8 +960,7 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "1 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)"

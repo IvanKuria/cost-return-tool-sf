@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/68/8c/688c8061-ac3c-4661-b0f2-7e4d3e5e88db/alfalfa_im_butte_2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -58,7 +58,12 @@
     "quote": "Alfalfa 5 Tons 200 1,000"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 7,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 17.81,
@@ -697,8 +702,18 @@
    "page": 7,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.803,
+   "unit": "%",
+   "page": 6,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.803% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1084,7 +1099,34 @@
    "page": 11,
    "quote": "Establishment cost 387 89 89"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 7,
+    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 5,
+    "page": 7,
+    "quote": "The establishment cost is amortized over the remaining five years of crop life."
+   },
+   "computed": 88.77040803349645,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 1.19,
+   "taxes": 1.93,
+   "acres": 440,
+   "insuranceRatePct": 0.803,
+   "taxRatePct": 1,
+   "page": 15,
+   "quote": "Establishment cost 170,280 5 0 39,059 525 851 0 40,435 / 440 acres (p. 3: \"Establishment and production costs are based on 440 acres of alfalfa.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1093,6 +1135,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1108,16 +1151,15 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "monthly"
   ],
   "warnings": [

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/6d/d5/6dd51838-68ce-4294-83a5-1eeb460baeda/walnutvn2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Walnuts 6,000.00 lb 1.20 7,200"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 11,
@@ -781,8 +786,18 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.803,
+   "unit": "%",
+   "page": 8,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.803% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -2148,7 +2163,34 @@
    "page": 14,
    "quote": "Orchard Establishment 8,919 680 680"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 3,
+   "label": "4th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 9,
+    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 21,
+    "page": 9,
+    "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 21 years of production."
+   },
+   "computed": 680.4222348712105,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 35.82,
+   "taxes": 44.6,
+   "acres": 60,
+   "insuranceRatePct": 0.803,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Orchard Establishment 535,140 21 0 40,825 2,149 2,676 535 46,185 / 60 acres (p. 9: \"For this study, this cost is $8,919 per acre or $535,140 for the 60-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2156,6 +2198,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
@@ -2170,6 +2213,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -2178,11 +2223,8 @@
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

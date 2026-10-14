@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/cb/93/cb938797-773f-4629-9a8c-13cf53cab75f/19winegrapessjvssouthcolombard.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2019,
   "priceYear": {
@@ -958,7 +958,12 @@
    "page": 11,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 8.86 percent per $1,000 of the value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2065,7 +2070,34 @@
    "page": 17,
    "quote": "Vineyard Establishment 21,602 1,690 1,690"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6,
+    "page": 11,
+    "quote": "An interest rate of 6 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 25,
+    "page": 22,
+    "quote": "Vineyard Establishment 864,080 25 0 67,594 3,828 4,320 4,320 80,063 (years of life of the establishment row in the investment table; the text says: \"The establishment cost is amortized over the remaining 22 years of the 25 years the vin...\")"
+   },
+   "computed": 1689.8535668215418,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 95.7,
+   "taxes": 108,
+   "acres": 40,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Vineyard Establishment 864,080 25 0 67,594 3,828 4,320 4,320 80,063 / 40 acres (p. 12: \"For this study the cost is $21,602 per acre or $864,080 for the 40-acre vineyard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2089,6 +2121,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2098,9 +2131,10 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
-  "warnings": []
+  "warnings": [
+   "establishment years: the text says 22 (\"The establishment cost is amortized over the remaining 22 years of the 25 years the vineyard is i...\") but the printed charge 1690 uses the investment row's 25 years"
+  ]
  }
 }

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/98/24/9824704c-852f-49e2-9f0c-fc78c330d0d3/peppermintim2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peppermint-oil",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -58,7 +58,12 @@
     "quote": "Mint Oil 80.00 lb 25.00 2,000"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate in January 2011."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 15,
@@ -1080,8 +1085,18 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.775,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.775% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1747,7 +1762,26 @@
    "source": "table"
   },
   "annualCharge": null,
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 8,
+    "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate in Januar..."
+   },
+   "years": {
+    "value": 4,
+    "page": 9,
+    "quote": "Establishment cost is amortized over the remaining 4 years that the mint stand is assumed to be in production."
+   },
+   "computed": 878.1373959347245,
+   "reproduces": false
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1756,6 +1790,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1772,17 +1807,18 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment"
   ],
   "fieldsMissing": [
-   "interestRatePct",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
-  "warnings": []
+  "warnings": [
+   "establishment investment row 318308: no acreage in the study turns it into the per acre total 3132"
+  ]
  }
 }

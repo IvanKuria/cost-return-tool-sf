@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/24/7c/247c069c-8290-4060-aa96-3e556b0f339b/16almondorganicnsjvfinaldraft42716.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2016,
   "priceYear": {
@@ -976,7 +976,12 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 7,
+   "quote": "Provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1063,7 +1068,11 @@
    "quote": "Costs to establish the orchard are included in non-cash overhead expenses and capital recovery costs for the production years and is estimated at $6,000 per planted acre for this study."
   },
   "annualCharge": null,
-  "productionYears": null,
+  "productionYears": {
+   "value": 23,
+   "page": 9,
+   "quote": "The cost is amortized over the remaining 23 years of orchard production to estimate the annual capital recovery cost."
+  },
   "plantingLife": {
    "value": 25,
    "page": 3,
@@ -1084,7 +1093,23 @@
    "source": "prose"
   },
   "annualCharge": null,
-  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text"
+  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.25,
+    "page": 9,
+    "quote": "The interest rate of 3.25 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 23,
+    "page": 9,
+    "quote": "The cost is amortized over the remaining 23 years of orchard production to estimate the annual capital recovery cost."
+   },
+   "computed": 374.43332660112304,
+   "reproduces": false
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1107,6 +1132,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1117,7 +1143,6 @@
    "counties",
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

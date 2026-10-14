@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/6f/9b/6f9b0a93-163b-4060-ba94-8a3fc689e97d/cherryvn2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/cherries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -66,7 +66,12 @@
     "quote": "Brining 540.00 lb 0.19 103"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 4.75% is used to calculate capital recovery costs."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -1016,8 +1021,18 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.775,
+   "unit": "%",
+   "page": 8,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.775% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -2324,12 +2339,40 @@
    "page": 15,
    "quote": "Orchard Establishment 7,503 572 572"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 3,
+   "label": "4th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 9,
+    "quote": "The interest rate of 4.75% is used to calculate capital recovery costs."
+   },
+   "years": {
+    "value": 21,
+    "page": 10,
+    "quote": "Establishment cost is amortized over the remaining 21 years that the orchard is assumed to be in production."
+   },
+   "computed": 572.3969086488052,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 29.08,
+   "taxes": 37.53,
+   "acres": 40,
+   "insuranceRatePct": 0.775,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Orchard Establishment (40 acres) 300,120 21 22,896 1,163 1,501 0 25,559"
+  }
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
+   "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
    "operatingTotal",
@@ -2343,6 +2386,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -2353,12 +2398,9 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
-   "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "Table 2 lists 3 return lines with different prices; pricePerUnit left null, see returns[]",

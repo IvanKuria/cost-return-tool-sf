@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/12/07/2021livermorecabfinaldraft_120221.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2021,
   "priceYear": {
@@ -711,7 +711,12 @@
    "page": 11,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 0.886 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1815,7 +1820,34 @@
    "page": 17,
    "quote": "Vineyard Establishment 28,063 2,019 2,019"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 11,
+    "quote": "An interest rate of 5.50 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 27,
+    "page": 11,
+    "quote": "The establishment cost is amortized over the remaining 27 years of the vineyard’s projected 30-year life span."
+   },
+   "computed": 2019.1968811838976,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 12.44,
+   "taxes": 140.33,
+   "acres": 18,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Vineyard Establishment 505,134 27 0 36,346 224 2,526 2,526 41,621 / 18 acres (p. 11: \"For this study the cost is $28,063 acre or $505,134 for the 18-acre vineyard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1835,6 +1867,7 @@
    "investments",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1848,7 +1881,6 @@
    "landRentPerAcre",
    "equipment",
    "hourlyEquipment",
-   "insuranceRatePct",
    "establishmentAccumulated"
   ],
   "warnings": [

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/38/fa/38fa8f9c-c93b-4c62-9740-a850bbc40df9/2020lemonsventuracounty.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": null
@@ -43,7 +43,12 @@
     "quote": "Eureka Lemon (Packed) 1,018 Carton 16.42 16,709"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 5.5,
+   "unit": "%",
+   "page": 9,
+   "quote": "An interest rate of 5.5% is used to calculate capital recovery (based on 2020 rates)."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -607,8 +612,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 8,
+   "quote": "Property insurance coverage for property loss is charged at 0.886% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, property taxes are calculated as 1 percent of the average value of the property and not influenced by the Williamson Act or additional county taxes."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -1821,7 +1836,34 @@
    "page": 17,
    "quote": "Grove Establishment (48 Acres) 11,623 742 742"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "Yr.3"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 9,
+    "quote": "An interest rate of 5.5% is used to calculate capital recovery (based on 2020 rates)."
+   },
+   "years": {
+    "value": 37,
+    "page": 22,
+    "quote": "Grove Establishment (48 Acres) 557,904 37 0 35,594 247 2,790 0 38,631 (years of life of the establishment row in the..."
+   },
+   "computed": 741.5465804490478,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 5.15,
+   "taxes": 58.13,
+   "acres": 48,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Grove Establishment (48 Acres) 557,904 37 0 35,594 247 2,790 0 38,631"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1830,6 +1872,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
@@ -1839,11 +1882,12 @@
    "equipment",
    "investments",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1851,8 +1895,6 @@
    "acresFarmed",
    "hourlyEquipment",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishmentAccumulated",
    "establishmentAnnual"

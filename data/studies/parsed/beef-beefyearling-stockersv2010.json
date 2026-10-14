@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/d5/be/d5be04c3-4432-4384-9d9e-b643e73bb0c4/beefyearling_stockersv2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/beef",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -28,7 +28,12 @@
   "yieldUnit": null,
   "pricePerUnit": null,
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.25,
+   "unit": "%",
+   "page": 8,
+   "quote": "The interest rate of 4.25% used to calculate capital recovery cost is the effective long term interest rate effective January 2010."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -77,19 +82,22 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
+   "interestRatePct",
    "capitalRecoveryFormula"
   ],
   "fieldsMissing": [
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",

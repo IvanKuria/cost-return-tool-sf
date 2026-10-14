@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/2e/90/2e901c98-7f60-42bf-83e5-43fac1e9a571/2019beefcowcalfcentralsanjoaquinvalleyamended92319.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/beef",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2019,
   "priceYear": {
@@ -38,7 +38,12 @@
   "yieldUnit": null,
   "pricePerUnit": null,
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6,
+   "unit": "%",
+   "page": 18,
+   "quote": "The interest rate for capital recovery is calculated at 6.0%. ‡Capital Recovery for the “Owned Land” column in Table 1 is shown at 33% of the total and at 67% of the total for the combined column in Table 1. †Capital Recovery for the \"Rented land\" column in Table 1 is shown at 33% of the total."
+  },
   "operatingInterestRatePct": {
    "value": 6.5,
    "unit": "%",
@@ -92,20 +97,23 @@
   "status": "none",
   "total": null,
   "annualCharge": null,
-  "reason": "Annual crop, no establishment period"
+  "reason": "Annual crop, no establishment period",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
+   "interestRatePct",
    "acresFarmed",
    "capitalRecoveryFormula"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",

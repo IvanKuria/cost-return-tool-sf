@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a0/49/a049aa0b-6c15-4f16-b8d1-6f971a003d78/2018tablegrapessjvscarletroyalfinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2018,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "GROSS RETURNS 1,600 Box 19.00 30,400"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 5.5,
+   "unit": "%",
+   "page": 11,
+   "quote": "An interest rate of 5.5 percent is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -1195,8 +1200,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.846,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 0. 846 percent of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 10,
+   "quote": "County taxes are calculated as 1 percent of the average value of the property."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -2348,7 +2363,34 @@
    "page": 17,
    "quote": "Vineyard Establishment: Scarlet Royal 15,427 1,226 1,226"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 11,
+    "quote": "An interest rate of 5.5 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 23,
+    "quote": "Establishment: SR 617,080 22 0 49,040 261 3,085 0 52,387 (years of life of the establishment row in the investment ta..."
+   },
+   "computed": 1226.0026952836135,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 6.53,
+   "taxes": 77.13,
+   "acres": 40,
+   "insuranceRatePct": 0.846,
+   "taxRatePct": 1,
+   "page": 23,
+   "quote": "Establishment: SR 617,080 22 0 49,040 261 3,085 0 52,387 / 40 acres (p. 3: \"The vineyard establishment and table grape production is on 40 acres, Scarlet Royal is...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2356,6 +2398,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -2367,19 +2410,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment"
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishmentAccumulated",
    "establishmentAnnual"

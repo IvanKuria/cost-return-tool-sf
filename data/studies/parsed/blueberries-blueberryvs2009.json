@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/79/77/7977d8f7-9f4e-4858-abc8-74c81163b3a5/blueberryvs2009.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/blueberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2009,
   "priceYear": {
@@ -58,7 +58,12 @@
     "quote": "Blueberries 10,000.00 lb 3.00 30,000"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate effective January 1, 2009."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -772,8 +777,18 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.82,
+   "unit": "%",
+   "page": 8,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.82% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1649,7 +1664,34 @@
    "page": 14,
    "quote": "Blueberry Establishment 12,734 1,335 1,335"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 1,
+   "label": "2nd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 9,
+    "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate effective..."
+   },
+   "years": {
+    "value": 13,
+    "page": 18,
+    "quote": "Establishment (Blueberries) 254,677 13 26,705 1,044 1,273 1,273 30,296 (years of life of the establishment row in the..."
+   },
+   "computed": 1335.2809260639651,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 52.2,
+   "taxes": 63.65,
+   "acres": 20,
+   "insuranceRatePct": 0.82,
+   "taxRatePct": 1,
+   "page": 18,
+   "quote": "Establishment (Blueberries) 254,677 13 26,705 1,044 1,273 1,273 30,296 / 20 acres (p. 9: \"The establishment costs is $12,734 per acre or $254,677 for the 20 acres.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1658,6 +1700,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
    "operatingTotal",
@@ -1671,18 +1714,17 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
    "establishmentAccumulated"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

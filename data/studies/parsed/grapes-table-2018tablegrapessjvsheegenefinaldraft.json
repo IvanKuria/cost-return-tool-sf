@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/0f/72/0f72d185-bf9d-4952-b9d7-f8c122ce5d13/2018tablegrapessjvsheegenefinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2018,
   "priceYear": {
@@ -1206,7 +1206,12 @@
    "page": 11,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.846,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 0.846 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2380,7 +2385,34 @@
    "page": 18,
    "quote": "Vineyard Establishment: Sheegene-21 18,399 1,462 1,462"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 11,
+    "quote": "An interest rate of 5.5 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 12,
+    "quote": "The establishment cost is amortized over the remaining 22 years of the 25 year vineyard."
+   },
+   "computed": 1462.1911966372727,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 7.78,
+   "taxes": 92,
+   "acres": 40,
+   "insuranceRatePct": 0.846,
+   "taxRatePct": 1,
+   "page": 24,
+   "quote": "Establishment: Sheegene 21 735,960 22 0 58,488 311 3,680 0 62,479 / 40 acres (p. 3: \"The vineyard establishment and table grape production is on 40 acres, Sheegene-21 is th...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2402,6 +2434,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2413,7 +2446,6 @@
    "yieldPerAcre",
    "pricePerUnit",
    "landRentPerAcre",
-   "insuranceRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

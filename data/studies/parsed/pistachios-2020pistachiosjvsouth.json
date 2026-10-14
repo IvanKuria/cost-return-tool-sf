@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e4/bd/e4bd9353-25a1-4258-b5b1-42a203bc09ad/2020pistachiosjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pistachios",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Weighted 2,800 Lb. 2.12 5,922"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 5.5,
+   "unit": "%",
+   "page": 18,
+   "quote": "An interest rate of 5.5% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 18,
@@ -1014,7 +1019,12 @@
    "page": 18,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 16,
+   "quote": "This provides coverage for property loss and is charged at 0.886 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2404,7 +2414,34 @@
    "page": 26,
    "quote": "Establishment Cost 11,308 742 742"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 5,
+   "label": "6th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 18,
+    "quote": "An interest rate of 5.5% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 34,
+    "page": 32,
+    "quote": "Establishment Cost 859,408 34 0 56,403 381 4,297 0 61,080 (years of life of the establishment row in the investment t..."
+   },
+   "computed": 742.1392551619556,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 5.01,
+   "taxes": 56.54,
+   "acres": 76,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 32,
+   "quote": "Establishment Cost 859,408 34 0 56,403 381 4,297 0 61,080 / 76 acres (p. 18: \"For this study, the cost is $11,308 per acre or $859,408 for the 76-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2413,6 +2450,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -2428,6 +2466,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2436,9 +2475,7 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "establishment table: TOTAL PLANTING COSTS column 1st prints 1900 but its rows sum to 596"

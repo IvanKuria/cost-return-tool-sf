@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/43/85/4385b69b-078a-43d9-8f39-6ac149688fb5/16dovraisinsogtsjvfinaldraft111716.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–raisins",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1003,7 +1003,12 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 8,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1994,7 +1999,34 @@
    "page": 15,
    "quote": "Vineyard Establishment-OGT 13,412 798 798"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.75,
+    "page": 9,
+    "quote": "An interest rate of 3.75 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 27,
+    "page": 20,
+    "quote": "Vineyard Establishment-OGT 1,072,960 27 0 63,877 452 5,365 0 69,694 (years of life of the establishment row in the in..."
+   },
+   "computed": 798.4623086117776,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 5.65,
+   "taxes": 67.06,
+   "acres": 80,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 20,
+   "quote": "Vineyard Establishment-OGT 1,072,960 27 0 63,877 452 5,365 0 69,694 / 80 acres (p. 9: \"For this study the cost is $13,412 per acre or $1,072,960 for the 80-acre vineyard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2017,6 +2049,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2027,7 +2060,6 @@
    "counties",
    "laborOverheadPct",
    "landRentPerAcre",
-   "insuranceRatePct",
    "establishmentAnnual"
   ],
   "warnings": []

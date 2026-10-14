@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/42/a7/42a7ee28-6775-426d-9e93-e621128aeb5d/grapewinesv2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "WINE GRAPES 7.00 ton 550.00 3,850"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate as of January 2013."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -930,8 +935,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.817,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, property insurance provides coverage for property loss and is charged at 0.817% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": null
  },
  "monthly": {
@@ -1859,7 +1874,34 @@
    "page": 14,
    "quote": "Vineyard Establishment 12,807 1,006 1,006"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 9,
+    "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate as of Jan..."
+   },
+   "years": {
+    "value": 20,
+    "page": 19,
+    "quote": "Vineyard Establishment 768,439 20 60,361 3,139 3,842 768 68,110 (years of life of the establishment row in the invest..."
+   },
+   "computed": 1005.9958342455855,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 52.32,
+   "taxes": 64.03,
+   "acres": 60,
+   "insuranceRatePct": 0.817,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Vineyard Establishment 768,439 20 60,361 3,139 3,842 768 68,110 / 60 acres (p. 3: \"The 200 contiguous acre farm consists of 135 acres of producing vineyards, 60 acres of...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1868,6 +1910,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
@@ -1879,19 +1922,18 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "monthly",
    "establishment",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
    "landRentPerAcre",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "establishmentAccumulated"
   ],

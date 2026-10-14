@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/4b/ac/4baca531-5bd2-4877-8179-63d706657905/lycheescc02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lychee",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -68,8 +68,18 @@
  "method": {
   "capitalRecoveryFormula": null,
   "salvageMethod": null,
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.7,
+   "unit": "%",
+   "page": 6,
+   "quote": "Property insurance provides coverage for property loss and is charged annually at 0.70% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 6,
+   "quote": "For depreciable assets, annual property taxes are calculated at the base county rate of 1.0% of the average value of the property."
+  },
   "machineLaborFactor": null
  },
  "monthly": null,
@@ -82,7 +92,11 @@
    "quote": "Our projected cost for six years of establishment period of a lychee orchard in the coastal region of California is $15,037/acre (Table 1)."
   },
   "annualCharge": null,
-  "productionYears": null,
+  "productionYears": {
+   "value": 30,
+   "page": 12,
+   "quote": "Amortized establishment (30 years) ac 1,152"
+  },
   "plantingLife": null,
   "amortizedFromYear": null,
   "removalCost": null,
@@ -106,7 +120,10 @@
    "page": 12,
    "quote": "Amortized establishment (30 years) ac 1,152"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text"
+  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -114,6 +131,8 @@
    "region",
    "counties",
    "laborOverheadPct",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "establishment",
    "establishmentAccumulated"
   ],
@@ -136,8 +155,6 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishmentAnnual"

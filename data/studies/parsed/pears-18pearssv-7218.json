@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/3d/01/3d01cbc0-8ca3-482d-a6d6-3780700bcb96/18pearssv-7218.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pears",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2018,
   "priceYear": {
@@ -1372,7 +1372,12 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.846,
+   "unit": "%",
+   "page": 8,
+   "quote": "This provides coverage for property loss and is charged at 0.846 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1463,7 +1468,11 @@
    "page": 13,
    "quote": "Establishment 12,500 692 692"
   },
-  "productionYears": null,
+  "productionYears": {
+   "value": 95,
+   "page": 10,
+   "quote": "Establishment cost is depreciated beginning in the sixth year over the remaining 95 years of production."
+  },
   "plantingLife": {
    "value": 95,
    "page": 3,
@@ -1488,7 +1497,23 @@
    "page": 13,
    "quote": "Establishment 12,500 692 692"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 9,
+    "quote": "An interest rate of 5.50 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 95,
+    "page": 10,
+    "quote": "Establishment cost is depreciated beginning in the sixth year over the remaining 95 years of production."
+   },
+   "computed": 691.7754465177969,
+   "reproduces": true
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1511,6 +1536,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1521,8 +1547,7 @@
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "Table 2 lists 3 return lines with different prices; pricePerUnit left null, see returns[]",

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2021/12/07/2021livermorechardfinaldraft_12221.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2021,
   "priceYear": {
@@ -697,7 +697,12 @@
    "page": 11,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.886,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 0.886 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -1805,7 +1810,34 @@
    "page": 17,
    "quote": "Vineyard Establishment 28,663 2,062 2,062"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 5.5,
+    "page": 11,
+    "quote": "An interest rate of 5.50 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 27,
+    "page": 11,
+    "quote": "The establishment cost is amortized over the remaining 27 years of the vineyard’s projected 30-year life span."
+   },
+   "computed": 2062.368250200408,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 12.72,
+   "taxes": 143.33,
+   "acres": 18,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Vineyard Establishment 515,934 27 0 37,123 229 2,580 2,580 42,511 / 18 acres (p. 11: \"For this study the cost is $28,663 per acre or $515,934 for the 18-acre vineyard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1825,6 +1857,7 @@
    "investments",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -1838,8 +1871,7 @@
    "laborOverheadPct",
    "landRentPerAcre",
    "equipment",
-   "hourlyEquipment",
-   "insuranceRatePct"
+   "hourlyEquipment"
   ],
   "warnings": [
    "equipment table present but no equipment rows parsed"

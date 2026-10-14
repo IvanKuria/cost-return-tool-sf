@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/46/c7/46c712f3-8a8f-4db5-aef4-8b9ccea1a82a/grapeconctsvs04.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–concentrate",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2004,
   "priceYear": null
@@ -53,7 +53,12 @@
     "quote": "Grapes for Concentrate 12.00 ton 200.00 2,400"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.25,
+   "unit": "%",
+   "page": 6,
+   "quote": "The interest rate of 6.25% used to calculate capital recovery cost is the USDA-ERS’s ten- year average of California’s agricultural sector long-run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 12.73,
@@ -827,8 +832,18 @@
    "page": 6,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.676,
+   "unit": "%",
+   "page": 5,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.676% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 5,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -915,8 +930,8 @@
   },
   "productionYears": {
    "value": 22,
-   "page": 13,
-   "quote": "Vineyard Establishment 278,240 22 23,571 940 1,391 5,564 31,466 (years of life of the establishment row in the investment table)"
+   "page": 6,
+   "quote": "The establishment cost is spread over the remaining 22 years of the 25 years the vineyard is in production."
   },
   "plantingLife": {
    "value": 25,
@@ -949,7 +964,31 @@
    "page": 9,
    "quote": "Vineyard Establishment 6,956 589 589"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead"
+  "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "basisYear": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.25,
+    "page": 6,
+    "quote": "The interest rate of 6.25% used to calculate capital recovery cost is the USDA-ERS’s ten- year average of California’..."
+   },
+   "years": {
+    "value": 22,
+    "page": 6,
+    "quote": "The establishment cost is spread over the remaining 22 years of the 25 years the vineyard is in production."
+   },
+   "computed": 590.2835227025528,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 23.5,
+   "taxes": 34.78,
+   "acres": 40,
+   "insuranceRatePct": 0.676,
+   "taxRatePct": 1,
+   "page": 13,
+   "quote": "Vineyard Establishment 278,240 22 23,571 940 1,391 5,564 31,466 / 40 acres (p. 6: \"For this study the estimated cost is $6,956 per acre or $278,240 for the 40-acre vineyard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -958,6 +997,7 @@
    "counties",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -973,6 +1013,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -980,10 +1022,7 @@
    "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "interestRatePct",
-   "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/23/26/2326336b-eb3e-4cda-a0f4-cca46e84429b/winegrapenc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Production 4.50 ton 4,455.00 20,048"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 4.75,
+   "unit": "%",
+   "page": 10,
+   "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate effective January 1, 2012."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 20.3,
@@ -805,8 +810,18 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.803,
+   "unit": "%",
+   "page": 9,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.803% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 9,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1824,7 +1839,11 @@
    "quote": "For this study the cost is $37,991 per acre or $379,910 for the 10-acre vineyard."
   },
   "annualCharge": null,
-  "productionYears": null,
+  "productionYears": {
+   "value": 27,
+   "page": 10,
+   "quote": "The establishment cost is spread over the remaining 27 years of the 30 years the vineyard is in production."
+  },
   "plantingLife": {
    "value": 30,
    "page": 10,
@@ -1850,7 +1869,26 @@
    "source": "table"
   },
   "annualCharge": null,
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 4.75,
+    "page": 10,
+    "quote": "The interest rate of 4.75% used to calculate capital recovery cost is the effective long term interest rate effective..."
+   },
+   "years": {
+    "value": 27,
+    "page": 10,
+    "quote": "The establishment cost is spread over the remaining 27 years of the 30 years the vineyard is in production."
+   },
+   "computed": 2526.190234076667,
+   "reproduces": false
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1858,6 +1896,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1873,6 +1912,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1880,10 +1921,7 @@
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "landRentPerAcre",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

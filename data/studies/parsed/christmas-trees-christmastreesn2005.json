@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f5/c0/f5c0ebbd-292b-4bc2-b5c0-bf8d85915c9b/christmastreesn2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/christmas-trees",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -38,7 +38,12 @@
   "yieldUnit": null,
   "pricePerUnit": null,
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 7.65,
+   "unit": "%",
+   "page": 9,
+   "quote": "The interest rate of 7.65% used to calculate capital recovery cost is the USDA-ERSs ten- year average of California’s agricultural sector long-run rate of return to production assets from current income."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -316,8 +321,18 @@
    "page": 9,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.69,
+   "unit": "%",
+   "page": 8,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.69% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 8,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1836,19 +1851,25 @@
   "status": "table",
   "total": null,
   "annualCharge": null,
-  "reason": "The accumulated net cost row of the establishment table does not rise year over year (it restarts or turns to net returns), and the study names no single establishment total"
+  "reason": "The accumulated net cost row of the establishment table does not rise year over year (it restarts or turns to net returns), and the study names no single establishment total",
+  "basisYear": null,
+  "capitalRecovery": null,
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
+   "interestRatePct",
    "laborOverheadPct",
    "acresFarmed",
    "equipment",
    "investments",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment"
@@ -1856,7 +1877,6 @@
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "landRentPerAcre",
@@ -1867,8 +1887,6 @@
    "grossReturns",
    "operations",
    "hourlyEquipment",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],

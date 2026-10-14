@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/04/21/2022prunessacvalley42023.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/prunes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2022,
   "priceYear": {
@@ -966,7 +966,12 @@
    "page": 10,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.846,
+   "unit": "%",
+   "page": 9,
+   "quote": "This provides coverage for property loss and is charged at 0.846 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2329,7 +2334,34 @@
    "page": 16,
    "quote": "Orchard Establishment 16,671 1,707 1,707"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 3,
+   "label": "4th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.5,
+    "page": 10,
+    "quote": "An interest rate of 6.50 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 16,
+    "page": 11,
+    "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 16 years of production."
+   },
+   "computed": 1706.736535395756,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 7.05,
+   "taxes": 83.36,
+   "acres": 100,
+   "insuranceRatePct": 0.846,
+   "taxRatePct": 1,
+   "page": 21,
+   "quote": "Establishment 1,667,100 16 0 170,674 705 8,336 48 179,762 / 100 acres (p. 11: \"The cost is $16,671 per acre or $1,667,100 for the 100-acre orchard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2353,6 +2385,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2362,8 +2395,7 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

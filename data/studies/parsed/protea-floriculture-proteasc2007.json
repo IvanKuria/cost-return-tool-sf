@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f3/08/f308b1f6-83b1-4a64-b2a2-c9c6615a395e/proteasc2007.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/protea–floriculture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2007,
   "priceYear": {
@@ -53,7 +53,12 @@
     "quote": "Protea: flowers and/or bunches 25,000.00 each 1.20 30,000"
    }
   ],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 7.25,
+   "unit": "%",
+   "page": 8,
+   "quote": "An interest rate of 7.25% is used to calculate capital recovery."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 16.22,
@@ -673,8 +678,18 @@
    "page": 8,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.714,
+   "unit": "%",
+   "page": 7,
+   "quote": "Property insurance provides coverage for property loss and is charged at 0.714% of the average value of the assets over their useful life."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 7,
+   "quote": "For this study, county taxes are calculated as 1% of the average value of the property."
+  },
   "machineLaborFactor": {
    "value": 1.2,
    "unit": "x",
@@ -1746,7 +1761,34 @@
    "page": 13,
    "quote": "Establishment (Protea) 26,915 3,434 3,434"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 7.25,
+    "page": 8,
+    "quote": "An interest rate of 7.25% is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 12,
+    "page": 17,
+    "quote": "Protea Establishment (10 acres) 269,150 12 34,339 942 1,346 0 36,627 (years of life of the establishment row in the i..."
+   },
+   "computed": 3433.9421881757253,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 94.2,
+   "taxes": 134.6,
+   "acres": 10,
+   "insuranceRatePct": 0.714,
+   "taxRatePct": 1,
+   "page": 17,
+   "quote": "Protea Establishment (10 acres) 269,150 12 34,339 942 1,346 0 36,627"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1754,6 +1796,7 @@
    "region",
    "yieldPerAcre",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",
@@ -1768,6 +1811,8 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
    "establishment",
@@ -1775,11 +1820,8 @@
   ],
   "fieldsMissing": [
    "counties",
-   "interestRatePct",
    "landRentPerAcre",
    "acresFarmed",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "establishmentAnnual"
   ],
   "warnings": [

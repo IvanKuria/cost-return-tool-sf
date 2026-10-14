@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/07/d6/07d6b068-6b6b-4f8d-9e49-91cd39b1dd39/guava_sc07.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/guava",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2007,
   "priceYear": null
@@ -33,7 +33,12 @@
    "quote": "For this study, crop value is estimated at a grower price of $1.93 per pound or $48.25 per carton--Los Angeles Terminal Market weighted average price for guavas from January to March for the 2005 to 2007 seasons (Table D)."
   },
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 7.25,
+   "unit": "%",
+   "page": 10,
+   "quote": "Interest Rate: For this study, interest on capital investments is calculated at 7.25% the ten year average long-run rate of return of agricultural assets to current income (USDA-ERS-Economic Research Services data)."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": {
    "value": 14.3,
@@ -210,8 +215,18 @@
    "page": 10,
    "quote": "Where: Salvage Value is an estimate of the remaining value of the investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
-  "propertyTaxRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.71,
+   "unit": "%",
+   "page": 9,
+   "quote": "Property Insurance: Property insurances are charged annually at 0.71% of the average value of the properties."
+  },
+  "propertyTaxRatePct": {
+   "value": 1,
+   "unit": "%",
+   "page": 9,
+   "quote": "For non-real estate properties, property taxes are estimated at 1.00% of the average values of the properties."
+  },
   "machineLaborFactor": null
  },
  "monthly": null,
@@ -1047,7 +1062,11 @@
    "page": 17,
    "quote": "Establishment Cost 8509 736 736"
   },
-  "productionYears": null,
+  "productionYears": {
+   "value": 26,
+   "page": 11,
+   "quote": "The establishment cost is amortized over 26 years (the expected useful life of the orchard) to determine an annual capital recovery charge (opportunity cost of the investment plus depreciation of trees)."
+  },
   "plantingLife": null,
   "amortizedFromYear": null,
   "removalCost": null,
@@ -1071,7 +1090,26 @@
    "page": 17,
    "quote": "Establishment Cost 8509 736 736"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 3,
+   "label": "4th"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 7.25,
+    "page": 10,
+    "quote": "Interest Rate: For this study, interest on capital investments is calculated at 7.25% the ten year average long-run r..."
+   },
+   "years": {
+    "value": 26,
+    "page": 11,
+    "quote": "The establishment cost is amortized over 26 years (the expected useful life of the orchard) to determine an annual ca..."
+   },
+   "computed": 736.2113587460775,
+   "reproduces": true
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
@@ -1079,18 +1117,20 @@
    "region",
    "counties",
    "pricePerUnit",
+   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
    "equipment",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
+   "propertyTaxRatePct",
    "establishment",
    "establishmentAccumulated",
    "establishmentAnnual"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
-   "interestRatePct",
    "laborOverheadPct",
    "landRentPerAcre",
    "operatingTotal",
@@ -1102,8 +1142,6 @@
    "investments",
    "hourlyEquipment",
    "businessOverhead",
-   "insuranceRatePct",
-   "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly"
   ],

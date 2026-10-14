@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e0/33/e033f051-c4b5-4907-bb08-eed0a1a40026/grapesrivcty02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2002,
   "priceYear": null
@@ -23,7 +23,12 @@
   "yieldUnit": null,
   "pricePerUnit": null,
   "returns": [],
-  "interestRatePct": null,
+  "interestRatePct": {
+   "value": 6.5,
+   "unit": "%",
+   "page": 8,
+   "quote": "The various parts of the capital recovery calculation include a10% salvage value and a capital recovery factor calculated at 6.5% interest rate-- (California’s long-term rate of return of agricultural production assets from current income) and the number of years service of equipments and investments."
+  },
   "operatingInterestRatePct": null,
   "laborMachineRate": null,
   "laborNonMachineRate": null,
@@ -952,7 +957,11 @@
    "quote": "Based on our assumptions of cultural practices and methods of analyses, vineyard establishment in Temecula, Riverside is estimated to cost $21,356/acre: $12,248/acre in the first year, $5,195/acre in the second year, and $3,912/acre in the third year (Tables 1 and 2)."
   },
   "annualCharge": null,
-  "productionYears": null,
+  "productionYears": {
+   "value": 27,
+   "page": 8,
+   "quote": "It is calculated by amortizing the net establishment costs (income-costs) at the 6.5% (California’s long-term rate of return of agricultural production assets from current income) interest rate over a 27 years productive life."
+  },
   "plantingLife": null,
   "amortizedFromYear": null,
   "removalCost": null,
@@ -976,13 +985,33 @@
    "page": 9,
    "quote": "Amortized Tree Establishment Cost 0 0 0 1,700"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "Year 3"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 6.5,
+    "page": 8,
+    "quote": "The various parts of the capital recovery calculation include a10% salvage value and a capital recovery factor calcul..."
+   },
+   "years": {
+    "value": 27,
+    "page": 8,
+    "quote": "It is calculated by amortizing the net establishment costs (income-costs) at the 6.5% (California’s long-term rate of..."
+   },
+   "computed": 1698.2905739798466,
+   "reproduces": true
+  },
+  "investmentCharges": null
  },
  "parse": {
   "fieldsFound": [
    "year",
    "region",
    "counties",
+   "interestRatePct",
    "capitalRecoveryFormula",
    "insuranceRatePct",
    "monthly",
@@ -992,7 +1021,6 @@
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
-   "interestRatePct",
    "laborMachineRate",
    "laborNonMachineRate",
    "laborOverheadPct",

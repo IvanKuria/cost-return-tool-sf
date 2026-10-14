@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/1c/e2/1ce256d0-957e-4bd4-b17e-18fef4efcedd/16alfalfasjv300acfinal_41916.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": false,
   "indexYear": 2016,
   "priceYear": null
@@ -1158,7 +1158,34 @@
    "page": 13,
    "quote": "Establishment Costs for 300 acres of alfalfa 888 315 315"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.25,
+    "page": 8,
+    "quote": "The interest rate of 3.25 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 3,
+    "page": 8,
+    "quote": "The alfalfa stand establishment cost is amortized over the 3-year stand life."
+   },
+   "computed": 315.44508297210996,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 0.37,
+   "taxes": 4.44,
+   "acres": 300,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 17,
+   "quote": "Establishment (300 Acres) 266,400 3 0 94,634 112 1,332 0 96,087"
+  }
  },
  "parse": {
   "fieldsFound": [

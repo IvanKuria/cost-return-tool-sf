@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a8/4a/a84a16ba-4971-4348-8a55-5f2f6f372134/2016grapewinelodifinaldraftmay192019.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-07",
+  "fetchedAt": "2026-10-14",
   "archived": true,
   "indexYear": 2016,
   "priceYear": {
@@ -961,7 +961,12 @@
    "page": 11,
    "quote": "Salvage value is an estimate of the remaining value of an investment at the end of its useful life."
   },
-  "insuranceRatePct": null,
+  "insuranceRatePct": {
+   "value": 0.843,
+   "unit": "%",
+   "page": 10,
+   "quote": "This provides coverage for property loss and is charged at 0.843 percent of the average value of the assets over their useful life."
+  },
   "propertyTaxRatePct": {
    "value": 1,
    "unit": "%",
@@ -2021,7 +2026,34 @@
    "page": 17,
    "quote": "Vineyard Establishment 18,979 1,282 1,282"
   },
-  "reason": null
+  "reason": null,
+  "basisYear": {
+   "index": 2,
+   "label": "3rd"
+  },
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 3.75,
+    "page": 11,
+    "quote": "An interest rate of 3.75 percent is used to calculate capital recovery."
+   },
+   "years": {
+    "value": 22,
+    "page": 11,
+    "quote": "The establishment cost is amortized over the remaining 22 years of the 25 years the vineyard is in production."
+   },
+   "computed": 1282.1321362053106,
+   "reproduces": true
+  },
+  "investmentCharges": {
+   "insurance": 8,
+   "taxes": 94.9,
+   "acres": 60,
+   "insuranceRatePct": 0.843,
+   "taxRatePct": 1,
+   "page": 22,
+   "quote": "Vineyard Establishment 1,138,740 22 0 76,928 480 5,694 5,694 88,796 / 60 acres (p. 11: \"For this study the cost is $18,979 per acre or $1,138,740 for the 60-acre vineyard.\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -2045,6 +2077,7 @@
    "hourlyEquipment",
    "businessOverhead",
    "capitalRecoveryFormula",
+   "insuranceRatePct",
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
@@ -2054,8 +2087,7 @@
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "insuranceRatePct"
+   "landRentPerAcre"
   ],
   "warnings": [
    "the text layer drops the decimal point of the Table 1 hours column (\"0 50\"); it is read as 0.50"
