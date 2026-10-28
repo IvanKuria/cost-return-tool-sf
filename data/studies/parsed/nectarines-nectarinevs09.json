@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/39/b6/39b6cb12-0c79-4b66-bb92-b1012bdbbfd2/nectarinevs09.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/nectarines",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2009,
   "priceYear": {
@@ -2306,9 +2306,12 @@
    "quote": "Orchard Establishment 6,809 757 757"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

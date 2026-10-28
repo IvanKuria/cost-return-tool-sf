@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/de/5b/de5b047e-efb5-4145-b618-1c643240abe9/walnutsv2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -2192,7 +2192,11 @@
    "page": 9,
    "quote": "For this study, this cost is $8,379 per acre or $837,900 for the 100-acre orchard."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 585,
+   "page": 13,
+   "quote": "Establishment (Orchard) 8,379 585 585"
+  },
   "productionYears": {
    "value": 31,
    "page": 9,
@@ -2237,23 +2241,26 @@
    "quote": "Establishment (Orchard) 8,379 585 585"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 3,
-   "label": "4th"
+   "label": "4th",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
-    "value": 4.75,
-    "page": 9,
-    "quote": "An interest rate of 4.75% is used to calculate capital recovery."
+    "value": 5.75,
+    "page": 18,
+    "quote": "Land 735,000 35 735,000 42,263 0 7,350 0 49,613 (capital recovery / salvage value of the land row = 5.75%; the text says: \"An interest rate of 4.75% is used to calculate capital recovery.\")"
    },
    "years": {
     "value": 31,
     "page": 9,
     "quote": "Establishment cost is amortized beginning in the fifth year over the remaining 31 years of production."
    },
-   "computed": 521.8064354571285,
-   "reproduces": false
+   "computed": 585.2175339909406,
+   "reproduces": true
   },
   "investmentCharges": {
    "insurance": 32.47,
@@ -2291,16 +2298,17 @@
    "propertyTaxRatePct",
    "machineLaborFactor",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
-   "monthly",
-   "establishmentAnnual"
+   "monthly"
   ],
   "warnings": [
-   "monthly table not used: MONTHLY CASH COSTS PER ACRE TO PRODUCE WALNUTS: TOTAL CASH COSTS row: months sum to 2043 but the Total column says 2220"
+   "monthly table not used: MONTHLY CASH COSTS PER ACRE TO PRODUCE WALNUTS: TOTAL CASH COSTS row: months sum to 2043 but the Total column says 2220",
+   "capital recovery rate: the text says 4.75% but the printed establishment charge 585 uses the land row's 5.75%"
   ]
  }
 }

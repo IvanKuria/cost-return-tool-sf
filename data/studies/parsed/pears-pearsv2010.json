@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/3d/89/3d892a7b-b898-466c-9024-2d8d3efc04c3/pearsv2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pears",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -1490,6 +1490,7 @@
    "quote": "Establishment Costs 9,500 457 457"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": {
    "ratePct": {

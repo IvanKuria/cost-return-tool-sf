@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/24/7c/247c069c-8290-4060-aa96-3e556b0f339b/16almondorganicnsjvfinaldraft42716.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2016,
   "priceYear": {
@@ -1093,22 +1093,10 @@
    "source": "prose"
   },
   "annualCharge": null,
-  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text",
+  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text. The study charges no yearly establishment cost: the establishment cost is included in the land value (p. 9: \"It is the crop land value plus the Establishment Cost for the first two years of an almond orchard in the northern San Joaquin Valley, ($17,000 + $6,000 = $23,000).\")",
+  "noYearlyCharge": true,
   "basisYear": null,
-  "capitalRecovery": {
-   "ratePct": {
-    "value": 3.25,
-    "page": 9,
-    "quote": "The interest rate of 3.25 percent is used to calculate capital recovery."
-   },
-   "years": {
-    "value": 23,
-    "page": 9,
-    "quote": "The cost is amortized over the remaining 23 years of orchard production to estimate the annual capital recovery cost."
-   },
-   "computed": 374.43332660112304,
-   "reproduces": false
-  },
+  "capitalRecovery": null,
   "investmentCharges": null
  },
  "parse": {

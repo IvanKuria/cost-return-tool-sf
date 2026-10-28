@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a0/49/a049aa0b-6c15-4f16-b8d1-6f971a003d78/2018tablegrapessjvscarletroyalfinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2018,
   "priceYear": {
@@ -2325,7 +2325,11 @@
    }
   ],
   "accumulatedNetCost": null,
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 1226,
+   "page": 17,
+   "quote": "Vineyard Establishment: Scarlet Royal 15,427 1,226 1,226"
+  },
   "productionYears": {
    "value": 22,
    "page": 23,
@@ -2364,9 +2368,12 @@
    "quote": "Vineyard Establishment: Scarlet Royal 15,427 1,226 1,226"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -2413,7 +2420,8 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "monthly",
-   "establishment"
+   "establishment",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",
@@ -2423,8 +2431,7 @@
    "landRentPerAcre",
    "capitalRecoveryFormula",
    "machineLaborFactor",
-   "establishmentAccumulated",
-   "establishmentAnnual"
+   "establishmentAccumulated"
   ],
   "warnings": [
    "establishment year 2: running net 6164.278 differs from printed accumulated 15433"

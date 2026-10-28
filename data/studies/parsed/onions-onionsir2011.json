@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/99/f7/99f71d07-ce98-4048-a0cb-357f69d65606/onionsir2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/onions",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -1899,6 +1899,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Annual crop, no establishment period",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

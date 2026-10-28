@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/57/c4/57c4611c-f2bb-4bde-9b77-a343ca9f0a62/lemonvs10.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -1775,9 +1775,12 @@
    "quote": "Orchard Establishment 3,951 229 229"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "TOTAL ACCUMULATED NET CASH COSTS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

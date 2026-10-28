@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/2e/f8/2ef8342f-19bd-41e8-bc14-5b5abc2b2488/blackberrycc2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -1519,7 +1519,11 @@
    "page": 10,
    "quote": "Establishment costs are $7,753 per acre or $116,295 for the 15 acres."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 2174,
+   "page": 18,
+   "quote": "Establishment Blackberries 7,753 2,174 2,174"
+  },
   "productionYears": {
    "value": 4,
    "page": 10,
@@ -1556,9 +1560,12 @@
    "quote": "Establishment Blackberries 7,753 2,174 2,174"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 1,
-   "label": "1st"
+   "label": "1st",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -1611,12 +1618,12 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborMachineRate",
-   "laborNonMachineRate",
-   "establishmentAnnual"
+   "laborNonMachineRate"
   ],
   "warnings": [
    "a later costs table had no totals or is a harvest-only table; used an earlier one",

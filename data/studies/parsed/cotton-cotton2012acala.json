@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e0/15/e0152943-7158-4e13-8ca9-f95260582a2d/cotton2012acala.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/cotton",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -1533,6 +1533,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Annual crop, no establishment period",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

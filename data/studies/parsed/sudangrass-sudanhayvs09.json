@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/61/f3/61f30970-b762-4de5-b84c-41fd03b761cd/sudanhayvs09.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/sudangrass",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2009,
   "priceYear": {
@@ -798,6 +798,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Annual crop, no establishment period",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

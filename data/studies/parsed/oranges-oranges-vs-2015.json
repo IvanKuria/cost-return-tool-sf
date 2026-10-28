@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/19/d4/19d4f1bb-408a-443e-a759-36fd53a2948f/oranges_vs_2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/oranges",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -1762,9 +1762,12 @@
    "quote": "Orchard Establishment 8,337 488 488"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 3,
-   "label": "4th"
+   "label": "4th",
+   "row": "TOTAL ACCUMULATED NET CASH COSTS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

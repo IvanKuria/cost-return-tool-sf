@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/54/26/54269a47-2bdb-4a22-84dd-567556d934d4/olivetablesv2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/olives",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -1625,9 +1625,12 @@
    "quote": "Olive Orchard Establishment 4,609 342 342"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

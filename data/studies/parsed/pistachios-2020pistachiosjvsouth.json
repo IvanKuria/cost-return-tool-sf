@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e4/bd/e4bd9353-25a1-4258-b5b1-42a203bc09ad/2020pistachiosjvsouth.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pistachios",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -2415,9 +2415,12 @@
    "quote": "Establishment Cost 11,308 742 742"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 5,
-   "label": "6th"
+   "label": "6th",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

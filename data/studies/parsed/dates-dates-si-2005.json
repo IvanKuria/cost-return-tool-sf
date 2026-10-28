@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b5/55/b5553ac8-9aaa-49e1-b617-8e87f0e55bf0/dates_si_2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/dates",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2005,
   "priceYear": null
@@ -1971,7 +1971,11 @@
    }
   ],
   "accumulatedNetCost": null,
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 2293,
+   "page": 18,
+   "quote": "Establishment Cost (Trees) 33637 2293 2293"
+  },
   "productionYears": {
    "value": 40,
    "page": 14,
@@ -2001,9 +2005,12 @@
    "quote": "Establishment Cost (Trees) 33637 2293 2293"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 8,
-   "label": "9th"
+   "label": "9th",
+   "row": "ACCUMULATED NET CASH COSTS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -2042,7 +2049,8 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "monthly",
-   "establishment"
+   "establishment",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -2052,8 +2060,7 @@
    "investments",
    "businessOverhead",
    "machineLaborFactor",
-   "establishmentAccumulated",
-   "establishmentAnnual"
+   "establishmentAccumulated"
   ],
   "warnings": [
    "Table 2 lists 3 return lines with different prices; pricePerUnit left null, see returns[]",

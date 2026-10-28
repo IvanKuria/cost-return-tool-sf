@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/bf/2a/bf2a6a2f-10da-4e01-97fc-7ed8e9bade2f/20pasturesnfhestabtillnotill.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -534,7 +534,11 @@
    "page": 8,
    "quote": "For this method, the cost is $783 per acre or $31,320 for the 40 acres."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 57,
+   "page": 14,
+   "quote": "Establish Pasture: Tilled 40 Acres 783 57 57"
+  },
   "productionYears": {
    "value": 30,
    "page": 8,
@@ -552,7 +556,14 @@
    "quote": "Remove Litter/Graze 0.00 0 0 0 0 22 22",
    "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
   },
-  "asset": null,
+  "asset": {
+   "price": 31320,
+   "yearsLife": 30,
+   "salvageValue": 0,
+   "capitalRecovery": 2275,
+   "page": 18,
+   "line": "Establish Pasture: Tilled 40 Ac 31,320 30 0 2,275 14 157 0 2,446"
+  },
   "method": {
    "page": 8,
    "quote": "The pasture stand establishment cost is amortized over the 30-year stand life."
@@ -567,11 +578,18 @@
    "quote": "TOTAL CASH COSTS/ACRE 783",
    "source": "table"
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 57,
+   "page": 14,
+   "quote": "Establish Pasture: Tilled 40 Acres 783 57 57"
+  },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 0,
-   "label": "Total Cost"
+   "label": "Total Cost",
+   "row": "TOTAL CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -585,9 +603,17 @@
     "quote": "The pasture stand establishment cost is amortized over the 30-year stand life."
    },
    "computed": 56.88409769670697,
-   "reproduces": false
+   "reproduces": true
   },
-  "investmentCharges": null
+  "investmentCharges": {
+   "insurance": 0.35,
+   "taxes": 3.93,
+   "acres": 40,
+   "insuranceRatePct": 0.886,
+   "taxRatePct": 1,
+   "page": 18,
+   "quote": "Establish Pasture: Tilled 40 Ac 31,320 30 0 2,275 14 157 0 2,446"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -611,7 +637,8 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborMachineRate",
@@ -620,8 +647,7 @@
    "equipment",
    "hourlyEquipment",
    "machineLaborFactor",
-   "monthly",
-   "establishmentAnnual"
+   "monthly"
   ],
   "warnings": [
    "equipment table present but no equipment rows parsed",

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/39/f2/39f29aa5-b991-4a13-816e-c695ed243249/alfalfa-flood-sv-2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -1464,7 +1464,11 @@
    "page": 8,
    "quote": "For this study, the cost is $821 per acre or $131,360 for the 160 acres."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 230,
+   "page": 13,
+   "quote": "Establishment Costs 160 Ac 821 230 230"
+  },
   "productionYears": {
    "value": 4,
    "page": 8,
@@ -1498,9 +1502,12 @@
    "quote": "Establishment Costs 160 Ac 821 230 230"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 0,
-   "label": "Total Cost"
+   "label": "Total Cost",
+   "row": "TOTAL CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -1552,13 +1559,13 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "landRentPerAcre",
    "investments",
-   "businessOverhead",
-   "establishmentAnnual"
+   "businessOverhead"
   ],
   "warnings": [
    "used an earlier equipment table; the last one had no parsable rows"

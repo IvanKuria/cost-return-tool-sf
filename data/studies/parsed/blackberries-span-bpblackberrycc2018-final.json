@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/3e/6e/3e6e2dd9-a6c7-4272-84b4-f5eaaddcdb1c/span_bpblackberrycc2018-final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2018,
   "priceYear": null
@@ -888,8 +888,14 @@
    "source": "prose"
   },
   "annualCharge": null,
-  "reason": null,
-  "basisYear": null,
+  "reason": "The study charges no yearly establishment cost: its production costs table has no establishment line and its investment table no establishment row",
+  "noYearlyCharge": true,
+  "basisYear": {
+   "index": 0,
+   "label": "Establecer",
+   "row": "COSTOS NETOS DE EFECTIVO / ACRE PARA EL AÑO",
+   "lessReturns": null
+  },
   "capitalRecovery": null,
   "investmentCharges": null
  },

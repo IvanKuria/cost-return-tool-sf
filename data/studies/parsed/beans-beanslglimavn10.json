@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e9/1f/e91f8ba2-2df2-48f7-af33-bf1c0b0456b1/beanslglimavn10.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/beans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -1144,6 +1144,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Annual crop, no establishment period",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

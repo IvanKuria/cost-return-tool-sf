@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/08/04/2023-romheartslettuce-full-final.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lettuce",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2023,
   "priceYear": {
@@ -1336,6 +1336,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Annual crop, no establishment period",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

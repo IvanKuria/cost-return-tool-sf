@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f9/c1/f9c1777a-1c0e-4231-9d59-15e5aa3da588/pearsnc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pears",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -2515,9 +2515,12 @@
    "quote": "Establishment cost 1,041"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 4,
-   "label": "5"
+   "label": "5",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

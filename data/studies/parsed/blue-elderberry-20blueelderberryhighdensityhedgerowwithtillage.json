@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/72/72/7272112b-2dec-4cb4-95ed-b4253dd5e981/20blueelderberryhighdensityhedgerowwithtillage.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blue-elderberry",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -435,7 +435,8 @@
   "status": "table",
   "total": null,
   "annualCharge": null,
-  "reason": "The establishment table is per 1,000 linear feet of hedgerow, not per acre",
+  "reason": "The establishment table is per 1,000 linear feet of hedgerow, not per acre. The study charges no yearly establishment cost: its production costs table has no establishment line and its investment table no establishment row",
+  "noYearlyCharge": true,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

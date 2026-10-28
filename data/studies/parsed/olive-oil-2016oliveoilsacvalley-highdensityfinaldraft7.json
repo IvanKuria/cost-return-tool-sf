@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/08/4a/084a8c93-1e36-496e-ad76-bd984109834e/2016oliveoilsacvalley-highdensityfinaldraft7.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/olive-oil",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1688,7 +1688,11 @@
    "page": 10,
    "quote": "For this study, the cost is $4,403 per acre or $484,330 for the 110 acres planted to olives."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 297,
+   "page": 14,
+   "quote": "Establishment SHDO 4,403 297 297"
+  },
   "productionYears": {
    "value": 22,
    "page": 10,
@@ -1733,9 +1737,12 @@
    "quote": "Establishment SHDO 4,403 297 297"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -1788,12 +1795,12 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
-   "landRentPerAcre",
-   "establishmentAnnual"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

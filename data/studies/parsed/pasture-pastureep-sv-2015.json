@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/b2/a9/b2a91349-8ef5-4ed3-8b99-37eccbbdd272/pastureep_sv_2015.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2015,
   "priceYear": {
@@ -649,7 +649,11 @@
    "page": 4,
    "quote": "The second year costs uses the tilling establishment costs of $439/acre to determine the $34 non cash overhead costs of establishment."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 34,
+   "page": 13,
+   "quote": "Establish Pasture-Tilled 40Ac 439 34 34"
+  },
   "productionYears": {
    "value": 20,
    "page": 18,
@@ -681,11 +685,18 @@
    "quote": "TOTAL CASH COSTS/ACRE 439",
    "source": "table"
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 34,
+   "page": 13,
+   "quote": "Establish Pasture-Tilled 40Ac 439 34 34"
+  },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 0,
-   "label": "Total Cost"
+   "label": "Total Cost",
+   "row": "TOTAL CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -730,7 +741,8 @@
    "insuranceRatePct",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",
@@ -742,8 +754,7 @@
    "hourlyEquipment",
    "capitalRecoveryFormula",
    "propertyTaxRatePct",
-   "machineLaborFactor",
-   "establishmentAnnual"
+   "machineLaborFactor"
   ],
   "warnings": [
    "equipment table present but no equipment rows parsed"

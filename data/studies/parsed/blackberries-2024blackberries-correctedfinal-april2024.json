@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/04/23/2024Blackberries-CorrectedFINAL-APRIL2024.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/blackberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2024,
   "priceYear": {
@@ -1544,7 +1544,13 @@
    "quote": "Blackberry Establishment 15,791 4,794 4,794"
   },
   "reason": null,
-  "basisYear": null,
+  "noYearlyCharge": false,
+  "basisYear": {
+   "index": 0,
+   "label": "Year 1",
+   "row": "NET CASH COSTS/ACRE FOR THE YEAR",
+   "lessReturns": null
+  },
   "capitalRecovery": {
    "ratePct": {
     "value": 8.25,

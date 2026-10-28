@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/05/1e/051eabc3-9bdd-45cc-9c85-f122f8f275f0/2016plumssjvfinaldraft112316.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/plums",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -2081,8 +2081,8 @@
   },
   "annualCharge": {
    "value": 629,
-   "page": 12,
-   "quote": "Orchard Establishment 629 629"
+   "page": 14,
+   "quote": "Establishment Cost-Plums 7,807 629 629"
   },
   "productionYears": {
    "value": 17,
@@ -2117,13 +2117,16 @@
   },
   "annualCharge": {
    "value": 629,
-   "page": 12,
-   "quote": "Orchard Establishment 629 629"
+   "page": 14,
+   "quote": "Establishment Cost-Plums 7,807 629 629"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

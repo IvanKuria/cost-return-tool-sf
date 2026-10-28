@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/8c/05/8c05587a-9954-46bd-b980-b3919ba8df97/figcalimyrnasjv05.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/figs",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -2298,9 +2298,12 @@
    "quote": "Orchard Establishment Cost 3,864 248 248"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

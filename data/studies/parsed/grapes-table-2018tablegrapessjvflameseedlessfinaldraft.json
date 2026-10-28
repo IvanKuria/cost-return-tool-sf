@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/03/e8/03e8865f-2b6b-4859-90c6-84414cd9d3f4/2018tablegrapessjvflameseedlessfinaldraft.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–table",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2018,
   "priceYear": {
@@ -2386,7 +2386,11 @@
    "page": 11,
    "quote": "The total cost is $15,871 per acre or $634,840 for the 40 producing acres."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 1261,
+   "page": 17,
+   "quote": "Vineyard Establishment: Flame Seedless 15,871 1,261 1,261"
+  },
   "productionYears": {
    "value": 22,
    "page": 12,
@@ -2432,9 +2436,12 @@
    "quote": "Vineyard Establishment: Flame Seedless 15,871 1,261 1,261"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -2487,12 +2494,12 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",
-   "landRentPerAcre",
-   "establishmentAnnual"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

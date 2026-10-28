@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/72/c6/72c666e3-858c-4f7d-8c68-3151c3104114/grapewinesonoma2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -2345,9 +2345,12 @@
    "quote": "Vineyard Establishment 30,826 2,289 2,289"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

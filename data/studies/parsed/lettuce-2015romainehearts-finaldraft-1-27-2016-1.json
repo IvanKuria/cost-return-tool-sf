@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/50/a0/50a0bad6-1cf0-4d61-a632-78b6fe2ff538/2015romainehearts-finaldraft_1-27-2016-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lettuce",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -1334,6 +1334,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Annual crop, no establishment period",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

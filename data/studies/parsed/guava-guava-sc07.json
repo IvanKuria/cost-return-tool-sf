@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/07/d6/07d6b068-6b6b-4f8d-9e49-91cd39b1dd39/guava_sc07.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/guava",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2007,
   "priceYear": null
@@ -1091,9 +1091,12 @@
    "quote": "Establishment Cost 8509 736 736"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 3,
-   "label": "4th"
+   "label": "4th",
+   "row": "ACCUMULATED NET CAS H COS TS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/79/77/7977d8f7-9f4e-4858-abc8-74c81163b3a5/blueberryvs2009.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/blueberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2009,
   "priceYear": {
@@ -1665,9 +1665,12 @@
    "quote": "Blueberry Establishment 12,734 1,335 1,335"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 1,
-   "label": "2nd"
+   "label": "2nd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

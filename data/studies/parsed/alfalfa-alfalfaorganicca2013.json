@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/bd/a9/bda9c6f9-4ae2-4778-9a39-453fd223b0c7/alfalfaorganicca2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -1094,23 +1094,26 @@
    "quote": "Establishment Cost 474 173 173"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 0,
-   "label": "Total Cost"
+   "label": "Total Cost",
+   "row": "TOTAL CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
-    "value": 5.75,
-    "page": 9,
-    "quote": "An interest rate of 5.75% is used to calculate capital recovery."
+    "value": 4.75,
+    "page": 18,
+    "quote": "Land 6,000,000 40 6,000,000 285,000 0 60,000 0 345,000 (capital recovery / salvage value of the land row = 4.75%; the text says: \"An interest rate of 5.75% is used to calculate capital recovery.\")"
    },
    "years": {
     "value": 3,
     "page": 9,
     "quote": "The establishment cost is amortized over the remaining three years of stand life."
    },
-   "computed": 176.50843761131492,
-   "reproduces": false
+   "computed": 173.2421032532327,
+   "reproduces": true
   },
   "investmentCharges": {
    "insurance": 0,
@@ -1156,6 +1159,8 @@
    "acresFarmed",
    "establishmentAccumulated"
   ],
-  "warnings": []
+  "warnings": [
+   "capital recovery rate: the text says 5.75% but the printed establishment charge 173 uses the land row's 4.75%"
+  ]
  }
 }

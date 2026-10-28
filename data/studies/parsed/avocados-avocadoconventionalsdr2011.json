@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/5a/87/5a87bb11-59b3-4056-a2d6-a6e14507dd84/avocadoconventionalsdr2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/avocados",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -1715,9 +1715,12 @@
    "quote": "Amortized Establishment Cost 32,407 2,048 2,048"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 5,
-   "label": "Year 6"
+   "label": "Year 6",
+   "row": "TOTAL ACCUMULATED NET COST",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/4b/ac/4baca531-5bd2-4877-8179-63d706657905/lycheescc02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/lychee",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -120,7 +120,8 @@
    "page": 12,
    "quote": "Amortized establishment (30 years) ac 1,152"
   },
-  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text",
+  "reason": "No year-by-year establishment table in the study; the total is the per acre establishment cost stated in the text. The study prints a yearly establishment charge of 1,152 but states no capital recovery interest rate, so the charge cannot be recomputed",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

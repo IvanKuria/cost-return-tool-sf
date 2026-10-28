@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/69/50/69503a65-9616-44bf-bcac-3c7ebb4c6002/bloodorangevs02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/citrus–blood-orange",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -1805,9 +1805,12 @@
    "quote": "Establishment 3,895 280 280"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 3,
-   "label": "4th"
+   "label": "4th",
+   "row": "TOTAL ACCUMULATED NET CASH COSTS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

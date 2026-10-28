@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/84/4f/844f0de3-7c1c-4bd3-89ac-893e3388c140/cherry2017_nsjv_final_draft4.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/cherries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2017,
   "priceYear": {
@@ -2339,9 +2339,12 @@
    "quote": "Cherry Orchard Establishment 8,688 678 678"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 3,
-   "label": "4th"
+   "label": "4th",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

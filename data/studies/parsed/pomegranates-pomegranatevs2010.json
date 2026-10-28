@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/d5/bd/d5bdaad2-b874-4b99-a3c2-cc7a89cfc72d/pomegranatevs2010.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pomegranates",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2010,
   "priceYear": {
@@ -1889,9 +1889,12 @@
    "quote": "Orchard Establishment 3,448 256 256"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/05/11/20022ricedeltacontinuousrotation5923.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/rice",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2022,
   "priceYear": {
@@ -1689,7 +1689,13 @@
    "quote": "Field Establishment 843 203 203"
   },
   "reason": null,
-  "basisYear": null,
+  "noYearlyCharge": false,
+  "basisYear": {
+   "index": 0,
+   "label": "Total Cost",
+   "row": "TOTAL OPERATING COSTS/ACRE",
+   "lessReturns": null
+  },
   "capitalRecovery": {
    "ratePct": {
     "value": 6.5,

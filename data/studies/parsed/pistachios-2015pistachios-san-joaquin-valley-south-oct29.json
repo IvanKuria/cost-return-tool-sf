@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/50/a8/50a8805e-03a8-4092-82ca-ce18cfb92b2b/2015pistachios_san_joaquin_valley-south_oct29.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pistachios",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2015,
   "priceYear": {
@@ -2228,9 +2228,12 @@
    "quote": "Pistachio Establishment Cost 671"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 5,
-   "label": "6th"
+   "label": "6th",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

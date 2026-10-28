@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/c9/4e/c94ec5b7-888d-482f-a6cb-b495d65e72e8/bermseed04.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/bermudagrass-seed",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2004,
   "priceYear": null
@@ -76,8 +76,22 @@
    "quote": "Amortization 20 % of total cost of stand establishment 62.24"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
-  "capitalRecovery": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 0,
+    "page": 6,
+    "quote": "Amortization 20 % of total cost of stand establishment 62.24 (a flat 20% of the stand cost each year, no interest)"
+   },
+   "years": {
+    "value": 5,
+    "page": 6,
+    "quote": "Amortization 20 % of total cost of stand establishment 62.24 (100 / 20% = 5 years)"
+   },
+   "computed": 62.236000000000004,
+   "reproduces": true
+  },
   "investmentCharges": null
  },
  "parse": {

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/a4/f8/a4f8ae8d-c0d4-4f6a-8a30-71a46258b6bd/eggplantamvs2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/eggplant",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -1209,6 +1209,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Annual crop, no establishment period",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

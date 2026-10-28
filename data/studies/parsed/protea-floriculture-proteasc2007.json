@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f3/08/f308b1f6-83b1-4a64-b2a2-c9c6615a395e/proteasc2007.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/protea–floriculture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2007,
   "priceYear": {
@@ -1724,7 +1724,11 @@
    "page": 8,
    "quote": "For this study the cost is $26,915 per acre or $269,150 for the 10-acre planting."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 3434,
+   "page": 13,
+   "quote": "Establishment (Protea) 26,915 3,434 3,434"
+  },
   "productionYears": {
    "value": 12,
    "page": 17,
@@ -1762,9 +1766,12 @@
    "quote": "Establishment (Protea) 26,915 3,434 3,434"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -1816,13 +1823,13 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",
    "landRentPerAcre",
-   "acresFarmed",
-   "establishmentAnnual"
+   "acresFarmed"
   ],
   "warnings": [
    "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",

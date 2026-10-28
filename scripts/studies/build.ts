@@ -13,11 +13,14 @@ export interface SalvageObservation {
   studyId: string; year: number | null; page: number;
 }
 
+/** A study as the bundle carries it: the establishment charge inputs stay in data/studies/parsed. */
+export type BundledStudy = Omit<ParsedStudy, 'establishmentSummary'> & { establishmentSummary: Omit<ParsedStudy['establishmentSummary'], 'basisYear' | 'capitalRecovery' | 'investmentCharges'> };
+
 export interface StudiesBundle {
   generatedAt: string;
   count: number;
   byCommodity: Record<string, string[]>;
-  studies: ParsedStudy[];            // operations dropped, archived studies first, when the bundle would exceed MAX_BYTES
+  studies: BundledStudy[];           // operations dropped, archived studies first, when the bundle would exceed MAX_BYTES
   equipmentSalvage: SalvageObservation[];
   operationsIncluded: boolean;       // true when at least the current studies keep their operation rows
   operationsDroppedFor: string[];    // study ids whose operation rows are not in the bundle (full rows stay in data/studies/parsed)
@@ -39,9 +42,13 @@ function main() {
 
   // The parse report (found/missing lists and warnings) stays in data/studies/parsed; the app does not read it.
   // The row-by-row establishment table is for the lender tool, which reads the full parsed files; the farmer app bundle keeps only the year totals.
-  const light = studies.map(s => ({ ...s, parse: { fieldsFound: [], fieldsMissing: [], warnings: [] }, establishment: s.establishment ? { ...s.establishment, table: null } : s.establishment }));
+  // So are the establishment charge inputs (basis year, capital recovery, investment charges), which the repricer reads.
+  const light = studies.map((s): BundledStudy => {
+    const { basisYear: _b, capitalRecovery: _c, investmentCharges: _i, ...summary } = s.establishmentSummary;
+    return { ...s, parse: { fieldsFound: [], fieldsMissing: [], warnings: [] }, establishment: s.establishment ? { ...s.establishment, table: null } : s.establishment, establishmentSummary: summary };
+  });
   const bundle: StudiesBundle = { generatedAt: new Date().toISOString().slice(0, 10), count: studies.length, byCommodity, studies: light, equipmentSalvage, operationsIncluded: true, operationsDroppedFor: [] };
-  const strip = (s: ParsedStudy): ParsedStudy => ({ ...s, costsPerAcre: { ...s.costsPerAcre, operations: [] } });
+  const strip = (s: BundledStudy): BundledStudy => ({ ...s, costsPerAcre: { ...s.costsPerAcre, operations: [] } });
   let json = JSON.stringify(bundle);
   if (Buffer.byteLength(json) > MAX_BYTES) {
     // Archived studies lose their operation rows first; the current studies are what the farmer app builds crops from.

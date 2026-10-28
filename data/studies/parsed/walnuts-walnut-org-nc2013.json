@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f1/ce/f1ce757f-c350-482c-a4fb-89657da2b07a/walnut_org_nc2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -826,6 +826,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "The study does not cost establishment: \"This study does not take into account establishment cost.\"",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

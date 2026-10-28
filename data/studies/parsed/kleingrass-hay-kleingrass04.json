@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/65/6c/656c9144-a12e-458e-940c-3f17388ca819/kleingrass04.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/kleingrass-hay",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2004,
   "priceYear": null
@@ -76,8 +76,22 @@
    "quote": "Amortization 20 % of total cost of stand establishment 61.94"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
-  "capitalRecovery": null,
+  "capitalRecovery": {
+   "ratePct": {
+    "value": 0,
+    "page": 6,
+    "quote": "Amortization 20 % of total cost of stand establishment 61.94 (a flat 20% of the stand cost each year, no interest)"
+   },
+   "years": {
+    "value": 5,
+    "page": 6,
+    "quote": "Amortization 20 % of total cost of stand establishment 61.94 (100 / 20% = 5 years)"
+   },
+   "computed": 61.93600000000001,
+   "reproduces": true
+  },
   "investmentCharges": null
  },
  "parse": {

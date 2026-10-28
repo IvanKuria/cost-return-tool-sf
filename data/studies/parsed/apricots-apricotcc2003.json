@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/20/a3/20a3613f-2ae8-4f0d-9e71-89cd099af990/apricotcc2003.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/apricots",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2003,
   "priceYear": {
@@ -1494,9 +1494,12 @@
    "quote": "Orchard Establishment Costs 2,898 225 225"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/9e/28/9e286208-f8d8-4a6c-bbcc-d6d04d0f61d3/raspberrycc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/raspberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -1434,10 +1434,13 @@
    "source": "table"
   },
   "annualCharge": null,
-  "reason": null,
+  "reason": "The study charges no yearly establishment cost: the establishment cost is recovered in the first production year (p. 9: \"The establishment cost is recovered in the first production year.\")",
+  "noYearlyCharge": true,
   "basisYear": {
    "index": 0,
-   "label": "Establish"
+   "label": "Establish",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": null,
   "investmentCharges": null

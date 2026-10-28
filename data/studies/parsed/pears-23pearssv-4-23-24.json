@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/05/02/23PearsSV-4.23.24.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pears",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2023,
   "priceYear": {
@@ -1557,7 +1557,11 @@
    "page": 9,
    "quote": "The estimated cost is $12,500 per acre or $1,250,000 for the 100-acre orchard."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 876,
+   "page": 12,
+   "quote": "Establishment SV 12,500 876 876"
+  },
   "productionYears": {
    "value": 95,
    "page": 9,
@@ -1588,6 +1592,7 @@
    "quote": "Establishment SV 12,500 876 876"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": {
    "ratePct": {
@@ -1630,14 +1635,14 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
    "pricePerUnit",
    "laborOverheadPct",
-   "landRentPerAcre",
-   "establishmentAnnual"
+   "landRentPerAcre"
   ],
   "warnings": [
    "Table 2 lists 3 return lines with different prices; pricePerUnit left null, see returns[]",

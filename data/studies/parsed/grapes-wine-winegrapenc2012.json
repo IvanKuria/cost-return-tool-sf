@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/23/26/2326336b-eb3e-4cda-a0f4-cca46e84429b/winegrapenc2012.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2012,
   "priceYear": {
@@ -1838,7 +1838,11 @@
    "page": 10,
    "quote": "For this study the cost is $37,991 per acre or $379,910 for the 10-acre vineyard."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 2526,
+   "page": 14,
+   "quote": "Establish Vineyard 37,991 2,526 2,526"
+  },
   "productionYears": {
    "value": 27,
    "page": 10,
@@ -1856,7 +1860,14 @@
    "quote": "Site Prep: Vineyard Removal and Clean Field by Hand (Custom) 1,600",
    "note": "Removal of the previous planting, charged as a pre-plant cost in the first establishment year. The studies do not charge an end-of-life removal and set the establishment asset salvage value to zero."
   },
-  "asset": null,
+  "asset": {
+   "price": 379910,
+   "yearsLife": 27,
+   "salvageValue": 0,
+   "capitalRecovery": 25262,
+   "page": 18,
+   "line": "Establish Vineyard (10 Ac) 379,910 27 0 25,262 1,540 1,900 0 28,701"
+  },
   "method": null
  },
  "establishmentSummary": {
@@ -1868,11 +1879,18 @@
    "quote": "ACCUMULATED NET CASH COSTS/ACRE 31,983 37,195 37,991",
    "source": "table"
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 2526,
+   "page": 14,
+   "quote": "Establish Vineyard 37,991 2,526 2,526"
+  },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -1886,9 +1904,17 @@
     "quote": "The establishment cost is spread over the remaining 27 years of the 30 years the vineyard is in production."
    },
    "computed": 2526.190234076667,
-   "reproduces": false
+   "reproduces": true
   },
-  "investmentCharges": null
+  "investmentCharges": {
+   "insurance": 154,
+   "taxes": 190,
+   "acres": 10,
+   "insuranceRatePct": 0.803,
+   "taxRatePct": 1,
+   "page": 18,
+   "quote": "Establish Vineyard (10 Ac) 379,910 27 0 25,262 1,540 1,900 0 28,701"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1917,12 +1943,12 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",
-   "landRentPerAcre",
-   "establishmentAnnual"
+   "landRentPerAcre"
   ],
   "warnings": [
    "1 equipment or investment rows dropped because their columns did not make sense (salvage above price, life outside 1 to 60 years)"

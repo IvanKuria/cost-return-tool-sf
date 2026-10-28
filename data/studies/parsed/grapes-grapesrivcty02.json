@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/e0/33/e033f051-c4b5-4907-bb08-eed0a1a40026/grapesrivcty02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2002,
   "priceYear": null
@@ -153,9 +153,9 @@
    ],
    "rows": [
     {
-     "label": "I. OPERATING (CASH) COSTS (Materials, Labor, Fuel, Lube, & Repair)",
-     "kind": "operation",
-     "section": "",
+     "label": "OPERATING (CASH) COSTS (Materials, Labor, Fuel, Lube, & Repair)",
+     "kind": "heading",
+     "section": "OPERATING (CASH) COSTS (Materials, Labor, Fuel, Lube, & Repair)",
      "values": [
       null,
       null,
@@ -168,7 +168,7 @@
     {
      "label": "A. Cultural Costs (preharvest)",
      "kind": "operation",
-     "section": "",
+     "section": "OPERATING (CASH) COSTS (Materials, Labor, Fuel, Lube, & Repair)",
      "values": [
       null,
       null,
@@ -582,9 +582,9 @@
      "quote": "TOTAL OPERATING COSTS 9,789 2,130 2,776 3,579"
     },
     {
-     "label": "II. CASH OVERHEAD COSTS",
-     "kind": "operation",
-     "section": "Labor",
+     "label": "CASH OVERHEAD COSTS",
+     "kind": "heading",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       null,
       null,
@@ -596,8 +596,8 @@
     },
     {
      "label": "Office Expenses",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       120,
       120,
@@ -609,8 +609,8 @@
     },
     {
      "label": "Taxes & Insurance",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       198,
       284,
@@ -622,8 +622,8 @@
     },
     {
      "label": "Liability Insurance",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       20,
       20,
@@ -635,8 +635,8 @@
     },
     {
      "label": "Investment Repair",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       62,
       62,
@@ -648,8 +648,8 @@
     },
     {
      "label": "Interest on Establishment",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       0,
       1102,
@@ -662,7 +662,7 @@
     {
      "label": "TOTAL CASH OVERHEAD COSTS",
      "kind": "total",
-     "section": "Labor",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       400,
       1589,
@@ -675,7 +675,7 @@
     {
      "label": "Interest on Operating Capital and Cash Overhead",
      "kind": "interest",
-     "section": "Labor",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       682,
       128,
@@ -688,7 +688,7 @@
     {
      "label": "TOTAL CASH COSTS",
      "kind": "total",
-     "section": "Labor",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       10871,
       3847,
@@ -701,7 +701,7 @@
     {
      "label": "LESS INCOME FROM PRODUCTION",
      "kind": "income",
-     "section": "Labor",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       0,
       0,
@@ -714,7 +714,7 @@
     {
      "label": "NET CASH COSTS FOR THE YEAR",
      "kind": "net",
-     "section": "Labor",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       10871,
       3847,
@@ -727,7 +727,7 @@
     {
      "label": "ACCUMULATED NET CASH COSTS",
      "kind": "accumulated",
-     "section": "Labor",
+     "section": "CASH OVERHEAD COSTS",
      "values": [
       10871,
       14717,
@@ -738,9 +738,9 @@
      "quote": "ACCUMULATED NET CASH COSTS 10,871 14,717 17,162 0"
     },
     {
-     "label": "III. NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
-     "kind": "operation",
-     "section": "Labor",
+     "label": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
+     "kind": "heading",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       null,
       null,
@@ -752,8 +752,8 @@
     },
     {
      "label": "Land Rent",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       1027,
       1027,
@@ -765,8 +765,8 @@
     },
     {
      "label": "Building",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       23,
       23,
@@ -778,8 +778,8 @@
     },
     {
      "label": "Tools",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       6,
       6,
@@ -791,8 +791,8 @@
     },
     {
      "label": "Fuel Tanks & Pumps",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       7,
       7,
@@ -804,8 +804,8 @@
     },
     {
      "label": "Sanitation Costs",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       6,
       6,
@@ -817,8 +817,8 @@
     },
     {
      "label": "Drip Irrigation",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       169,
       169,
@@ -830,8 +830,8 @@
     },
     {
      "label": "Depr. & Interest",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       140,
       112,
@@ -843,8 +843,8 @@
     },
     {
      "label": "Amortized Tree Establishment Cost",
-     "kind": "operation",
-     "section": "Labor",
+     "kind": "overheadItem",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       0,
       0,
@@ -857,7 +857,7 @@
     {
      "label": "TOTAL NON-CASH OVERHEAD COSTS",
      "kind": "total",
-     "section": "Labor",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       1377,
       1349,
@@ -870,7 +870,7 @@
     {
      "label": "TOTAL COSTS FOR THE YEAR",
      "kind": "total",
-     "section": "Labor",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       12248,
       5195,
@@ -883,7 +883,7 @@
     {
      "label": "TOTAL NET COSTS FOR THE YEAR",
      "kind": "net",
-     "section": "Labor",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       12248,
       5195,
@@ -896,7 +896,7 @@
     {
      "label": "ACCUMULATED NET COSTS",
      "kind": "accumulated",
-     "section": "Labor",
+     "section": "NON-CASH OVERHEAD COSTS (Depreciation & Interest)",
      "values": [
       12248,
       17443,
@@ -986,9 +986,12 @@
    "quote": "Amortized Tree Establishment Cost 0 0 0 1,700"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "Year 3"
+   "label": "Year 3",
+   "row": "ACCUMULATED NET COSTS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

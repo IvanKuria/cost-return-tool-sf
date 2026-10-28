@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/69/ed/69ed1c05-999e-4c06-b59f-ebe6dbcecc8a/alfalfa-drip-sv-delta-2014.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2014,
   "priceYear": {
@@ -1042,7 +1042,11 @@
    "page": 9,
    "quote": "For this study, the cost is $1,158 per acre or $185,280 for the 160 acres."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 226,
+   "page": 13,
+   "quote": "Establishment Costs 160 Ac 1,158 226 226"
+  },
   "productionYears": {
    "value": 4,
    "page": 9,
@@ -1083,6 +1087,7 @@
    "quote": "Establishment Costs 160 Ac 1,158 226 226"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": {
    "ratePct": {
@@ -1136,11 +1141,11 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "businessOverhead",
-   "establishmentAnnual"
+   "businessOverhead"
   ],
   "warnings": [
    "establishment years: the text says 4 (\"The alfalfa stand establishment cost is amortized over the 4-year stand life.\") but the printed charge 226 uses the investment row's 6 years"

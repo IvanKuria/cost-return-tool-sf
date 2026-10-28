@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/62/3a/623a8e4d-ba4c-4c7b-9f13-389e17fd1928/16winegrapebiodynamicmendocinofinaldraft61416-1.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–wine",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1427,7 +1427,11 @@
    "page": 11,
    "quote": "For this study, the total accumulated net cash cost in the third year represents the establishment cost and is estimated at $35,000 per planted acre."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 2204,
+   "page": 15,
+   "quote": "Vineyard Establishment-Biodynamic 35,000 2,204 2,204"
+  },
   "productionYears": {
    "value": 27,
    "page": 11,
@@ -1464,20 +1468,21 @@
    "quote": "Vineyard Establishment-Biodynamic 35,000 2,204 2,204"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": {
    "ratePct": {
-    "value": 3.25,
-    "page": 10,
-    "quote": "The interest rate of 3.25 percent is used to calculate capital recovery."
+    "value": 4.25,
+    "page": 27,
+    "quote": "Land 40 Acres 1,200,000 30 1,200,000 51,000 1,012 12,000 0 64,012 (capital recovery / salvage value of the land row = 4.25%; the text says: \"The interest rate of 3.25 percent is used to calculate capital recovery.\")"
    },
    "years": {
     "value": 27,
     "page": 11,
     "quote": "The cost is amortized over the remaining 27 years of vineyard production to estimate the annual capital recovery cost."
    },
-   "computed": 1966.855818936073,
-   "reproduces": false
+   "computed": 2203.857449406788,
+   "reproduces": true
   },
   "investmentCharges": {
    "insurance": 14.75,
@@ -1515,17 +1520,18 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborOverheadPct",
    "landRentPerAcre",
-   "acresFarmed",
-   "establishmentAnnual"
+   "acresFarmed"
   ],
   "warnings": [
    "several costs-per-acre tables (establishment and production); using the production one",
-   "monthly table gives operating costs by month only; cash overhead is not spread by month in this study"
+   "monthly table gives operating costs by month only; cash overhead is not spread by month in this study",
+   "capital recovery rate: the text says 3.25% but the printed establishment charge 2204 uses the land row's 4.25%"
   ]
  }
 }

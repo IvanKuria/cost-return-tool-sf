@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/82/e4/82e4005a-c6ae-4c66-9540-38c9a9b10aee/2000peach.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peaches–nectarines",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2000,
   "priceYear": null
@@ -2246,9 +2246,12 @@
    "quote": "Peach Establishment 4,679 482 482"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3"
+   "label": "3",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f6/c7/f6c7d8c2-d02a-4c61-a364-6d3b08a5428b/pecansjv2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/pecans",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -1788,9 +1788,12 @@
    "quote": "Orchard Establishment 4,287 294 294"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 3,
-   "label": "4th"
+   "label": "4th",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

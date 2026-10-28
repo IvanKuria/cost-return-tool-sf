@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/98/24/9824704c-852f-49e2-9f0c-fc78c330d0d3/peppermintim2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peppermint-oil",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -1721,7 +1721,11 @@
    }
   ],
   "accumulatedNetCost": null,
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 458,
+   "page": 14,
+   "quote": "Establish Mint 1,633 458 458"
+  },
   "productionYears": {
    "value": 4,
    "page": 9,
@@ -1756,16 +1760,27 @@
   "perennial": true,
   "status": "table",
   "total": {
-   "value": 3132,
-   "page": 11,
-   "quote": "TOTAL CASH COSTS/ACRE 3,132",
-   "source": "table"
+   "value": 1633,
+   "page": 14,
+   "quote": "Establish Mint 1,633 458 458",
+   "source": "production"
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 458,
+   "page": 14,
+   "quote": "Establish Mint 1,633 458 458"
+  },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 0,
-   "label": "Total Cost"
+   "label": "Total Cost",
+   "row": "TOTAL CASH COSTS/ACRE",
+   "lessReturns": {
+    "value": 1500,
+    "page": 12,
+    "quote": "TOTAL GROSS RETURNS 60.00 lb 1,500"
+   }
   },
   "capitalRecovery": {
    "ratePct": {
@@ -1778,10 +1793,18 @@
     "page": 9,
     "quote": "Establishment cost is amortized over the remaining 4 years that the mint stand is assumed to be in production."
    },
-   "computed": 878.1373959347245,
-   "reproduces": false
+   "computed": 457.8538849174346,
+   "reproduces": true
   },
-  "investmentCharges": null
+  "investmentCharges": {
+   "insurance": 0,
+   "taxes": 0,
+   "acres": 195,
+   "insuranceRatePct": 0.775,
+   "taxRatePct": 1,
+   "page": 19,
+   "quote": "Establishment Mint 318,308 4 0 89,246 0 0 0 89,246 / 195 acres (p. 3: \"Peppermint is grown on 200 acres; 195 acres are planted and 5 acres are roads, irrigati...\")"
+  }
  },
  "parse": {
   "fieldsFound": [
@@ -1811,14 +1834,12 @@
    "propertyTaxRatePct",
    "machineLaborFactor",
    "monthly",
-   "establishment"
-  ],
-  "fieldsMissing": [
-   "establishmentAccumulated",
+   "establishment",
    "establishmentAnnual"
   ],
-  "warnings": [
-   "establishment investment row 318308: no acreage in the study turns it into the per acre total 3132"
-  ]
+  "fieldsMissing": [
+   "establishmentAccumulated"
+  ],
+  "warnings": []
  }
 }

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2025/07/18/AlmondOrganicNSJV%20Final%20Publish_Update.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2024,
   "priceYear": {
@@ -1099,6 +1099,7 @@
    "quote": "Almond Orchard Establishment 17,182 1,718 1,718"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": {
    "ratePct": {

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/38/fa/38fa8f9c-c93b-4c62-9740-a850bbc40df9/2020lemonsventuracounty.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/lemons",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2020,
   "priceYear": null
@@ -1803,7 +1803,11 @@
    }
   ],
   "accumulatedNetCost": null,
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 742,
+   "page": 17,
+   "quote": "Grove Establishment (48 Acres) 11,623 742 742"
+  },
   "productionYears": {
    "value": 37,
    "page": 22,
@@ -1837,9 +1841,12 @@
    "quote": "Grove Establishment (48 Acres) 11,623 742 742"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "Yr.3"
+   "label": "Yr.3",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -1885,7 +1892,8 @@
    "insuranceRatePct",
    "propertyTaxRatePct",
    "monthly",
-   "establishment"
+   "establishment",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "laborMachineRate",
@@ -1896,8 +1904,7 @@
    "hourlyEquipment",
    "capitalRecoveryFormula",
    "machineLaborFactor",
-   "establishmentAccumulated",
-   "establishmentAnnual"
+   "establishmentAccumulated"
   ],
   "warnings": []
  }

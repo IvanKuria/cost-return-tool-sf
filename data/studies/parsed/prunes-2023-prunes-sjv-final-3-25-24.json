@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/03/27/2023.Prunes.SJV-Final-3.25.24.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/prunes",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2023,
   "priceYear": {
@@ -2134,9 +2134,12 @@
    "quote": "Orchard Establishment 14,823 1,368 1,368"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 3,
-   "label": "4th"
+   "label": "4th",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

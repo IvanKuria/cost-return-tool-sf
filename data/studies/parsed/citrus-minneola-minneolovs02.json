@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f1/bc/f1bc157e-feee-4f4e-9336-e2e8b4571c13/minneolovs02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/citrus–minneola",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -1735,9 +1735,12 @@
    "quote": "Orchard Establishment 4,530 325 325"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 3,
-   "label": "4th"
+   "label": "4th",
+   "row": "TOTAL ACCUMULATED NET CASH COSTS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

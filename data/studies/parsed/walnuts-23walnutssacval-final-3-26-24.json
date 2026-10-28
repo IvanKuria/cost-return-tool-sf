@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/2024/03/27/23WalnutsSacVal-Final-3.26.24.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/walnuts",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2023,
   "priceYear": {
@@ -2057,9 +2057,12 @@
    "quote": "Orchard Establishment 19,064 1,636 1,636"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 4,
-   "label": "5th"
+   "label": "5th",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

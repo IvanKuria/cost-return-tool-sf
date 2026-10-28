@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/46/c7/46c712f3-8a8f-4db5-aef4-8b9ccea1a82a/grapeconctsvs04.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grapes–concentrate",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2004,
   "priceYear": null
@@ -965,6 +965,7 @@
    "quote": "Vineyard Establishment 6,956 589 589"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": {
    "ratePct": {

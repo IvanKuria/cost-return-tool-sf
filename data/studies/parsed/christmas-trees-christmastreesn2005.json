@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/f5/c0/f5c0ebbd-292b-4bc2-b5c0-bf8d85915c9b/christmastreesn2005.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/christmas-trees",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2005,
   "priceYear": {
@@ -1851,7 +1851,8 @@
   "status": "table",
   "total": null,
   "annualCharge": null,
-  "reason": "The accumulated net cost row of the establishment table does not rise year over year (it restarts or turns to net returns), and the study names no single establishment total",
+  "reason": "The accumulated net cost row of the establishment table does not rise year over year (it restarts or turns to net returns), and the study names no single establishment total. The study charges no yearly establishment cost: its production costs table has no establishment line and its investment table no establishment row",
+  "noYearlyCharge": true,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/pub/2023/11/13/2023organicapplesccfullfinal-nov23.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/apples",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2023,
   "priceYear": {
@@ -1145,6 +1145,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "The study does not cost establishment: \"In this study, land value for an established apple orchard is estimated at $30,000 per acre; no other establishment costs are included here.\"",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

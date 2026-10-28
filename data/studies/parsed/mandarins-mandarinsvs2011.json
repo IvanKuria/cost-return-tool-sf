@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/05/9f/059f84bb-f096-4089-9053-a4cce02fb915/mandarinsvs2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/mandarins",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -1707,9 +1707,12 @@
    "quote": "Establishment Cost 8,011 464 464"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET TOTAL CASH COSTS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

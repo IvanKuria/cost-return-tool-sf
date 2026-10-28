@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/42/9f/429f9234-f33f-43d0-8db6-9be7251aa7f4/timothygrassir09.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/timothygrass",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2009,
   "priceYear": null
@@ -1115,9 +1115,12 @@
    "quote": "Timothygrass Hay Establishment Costs 620 142 142"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 0,
-   "label": "Total Cost"
+   "label": "Total Cost",
+   "row": "TOTAL CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

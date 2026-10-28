@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/7a/16/7a160359-7b30-4cd7-ab32-b47b2e2dd6de/peachesearlysv2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/peaches",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -1171,6 +1171,7 @@
    "quote": "Orchard Establishment 6,286 595 595"
   },
   "reason": "No year-by-year establishment table in the study; the total is the establishment line of the production costs table's non-cash overhead",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": {
    "ratePct": {

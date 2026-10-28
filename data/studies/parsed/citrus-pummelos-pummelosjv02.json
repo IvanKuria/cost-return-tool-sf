@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/85/55/85554f9d-dbbc-4310-868f-af6003b69dfe/pummelosjv02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/citrus–pummelos",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -1749,9 +1749,12 @@
    "quote": "Establishment 3,325 237 237"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "TOTAL ACCUMULATED NET CASH COSTS",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

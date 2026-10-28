@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/1c/e2/1ce256d0-957e-4bd4-b17e-18fef4efcedd/16alfalfasjv300acfinal_41916.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/alfalfa",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2016,
   "priceYear": null
@@ -1118,7 +1118,11 @@
    "page": 8,
    "quote": "For this study, the cost is $888 per acre or $266,400 for the 300 acres."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 315,
+   "page": 13,
+   "quote": "Establishment Costs for 300 acres of alfalfa 888 315 315"
+  },
   "productionYears": {
    "value": 3,
    "page": 8,
@@ -1159,9 +1163,12 @@
    "quote": "Establishment Costs for 300 acres of alfalfa 888 315 315"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 0,
-   "label": "Total Cost"
+   "label": "Total Cost",
+   "row": "TOTAL CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -1215,11 +1222,11 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
-   "yieldPerAcre",
-   "establishmentAnnual"
+   "yieldPerAcre"
   ],
   "warnings": [
    "Table 2 lists 2 return lines with different prices; pricePerUnit left null, see returns[]",

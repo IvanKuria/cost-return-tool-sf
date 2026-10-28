@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/43/85/4385b69b-078a-43d9-8f39-6ac149688fb5/16dovraisinsogtsjvfinaldraft111716.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/grapes–raisins",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2016,
   "priceYear": {
@@ -1957,7 +1957,11 @@
    "page": 9,
    "quote": "For this study the cost is $13,412 per acre or $1,072,960 for the 80-acre vineyard."
   },
-  "annualCharge": null,
+  "annualCharge": {
+   "value": 798,
+   "page": 15,
+   "quote": "Vineyard Establishment-OGT 13,412 798 798"
+  },
   "productionYears": {
    "value": 27,
    "page": 20,
@@ -2000,9 +2004,12 @@
    "quote": "Vineyard Establishment-OGT 13,412 798 798"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
@@ -2054,13 +2061,13 @@
    "machineLaborFactor",
    "monthly",
    "establishment",
-   "establishmentAccumulated"
+   "establishmentAccumulated",
+   "establishmentAnnual"
   ],
   "fieldsMissing": [
    "counties",
    "laborOverheadPct",
-   "landRentPerAcre",
-   "establishmentAnnual"
+   "landRentPerAcre"
   ],
   "warnings": []
  }

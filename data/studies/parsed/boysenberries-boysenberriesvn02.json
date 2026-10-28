@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/7f/02/7f02fe7a-64c0-4991-b809-dfbbd3f01cfb/boysenberriesvn02.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/boysenberries",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2002,
   "priceYear": {
@@ -1692,9 +1692,12 @@
    "quote": "Berry Crop Establishment 502 69 69"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 1,
-   "label": "2nd"
+   "label": "2nd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {

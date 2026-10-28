@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/8f/0c/8f0ce321-295f-409b-8d3e-267cb5fb163d/almondfloodvn2011.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/almonds",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2011,
   "priceYear": {
@@ -2279,23 +2279,26 @@
    "quote": "Orchard Establishment Costs 5,237 389 389"
   },
   "reason": null,
+  "noYearlyCharge": false,
   "basisYear": {
    "index": 2,
-   "label": "3rd"
+   "label": "3rd",
+   "row": "ACCUMULATED NET CASH COSTS/ACRE",
+   "lessReturns": null
   },
   "capitalRecovery": {
    "ratePct": {
-    "value": 5.75,
-    "page": 9,
-    "quote": "The interest rate of 5.75% is used to calculate capital recovery."
+    "value": 4.75,
+    "page": 20,
+    "quote": "Land 1,500,000 22 1,500,000 71,250 0 15,000 0 86,250 (capital recovery / salvage value of the land row = 4.75%; the text says: \"The interest rate of 5.75% is used to calculate capital recovery.\")"
    },
    "years": {
     "value": 22,
     "page": 9,
     "quote": "The establishment cost is spread over the remaining 22 years of the 25 years the orchard is in production."
    },
-   "computed": 425.502803217326,
-   "reproduces": false
+   "computed": 388.83917039842373,
+   "reproduces": true
   },
   "investmentCharges": {
    "insurance": 20.3,
@@ -2342,7 +2345,8 @@
    "landRentPerAcre"
   ],
   "warnings": [
-   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null"
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
+   "capital recovery rate: the text says 5.75% but the printed establishment charge 389 uses the land row's 4.75%"
   ]
  }
 }

@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/1a/d8/1ad8788d-8db4-4c43-9a84-19d48916311f/smallgrainsilagevs2013.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/archived/commodities/grain-silage",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": true,
   "indexYear": 2013,
   "priceYear": {
@@ -664,6 +664,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Annual crop, no establishment period",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null

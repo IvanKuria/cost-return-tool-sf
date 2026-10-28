@@ -1029,6 +1029,14 @@ function tailNumbers(text: string): number[] {
 }
 
 
+/** An establishment label: "Establishment", "Establish Vineyard", "Established ...". */
+const ESTABLISH_WORD = /\bestablish(?:ment|ed)?\b/i;
+/** Acre counts in a row label ("Tilled 40 Acres", "40Ac", "(10 Ac)") blanked to spaces, so they are not read as values. */
+/** The establishment row of the investment table ("Establishment Costs 160 Ac", "Establish Pasture: Tilled 40 Ac"); not a
+ *  re-establishment, not the land ("Land - Established Apples (20Acres)"). */
+const isEstablishRow = (d: string) => ESTABLISH_WORD.test(d) && !/re-?establish|\bland\b/i.test(d);
+const stripAcres = (text: string) => text.replace(/\(?(?<![\d.,])\d[\d,]*\s*-?\s*ac(?:res?|\.)?(?![a-z])\)?/gi, m => ' '.repeat(m.length));
+
 // ---------------------------------------------------------------- establishment table, row by row
 
 const EST_FURNITURE = /Costs? (&|and) Returns? Study|^\s*UCCE, Sample Costs|\bPage\s+\d+\s*$|UC COOPERATIVE EXTENSION|UC DAVIS|^\s*TABLE \d+\.?\s*CONTINUED|^\s*Costs? per Acre\s*$|^\s*Cost Per Acre\s*$|^\s*\(?Continued\)?\s*$/i;
@@ -1231,10 +1239,12 @@ function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: s
       if (/^Operation:?$/i.test(label)) continue;
       if (sinceHeader === 0 && !toks.length && /^Costs? .*a ?c ?r ?e/i.test(label) && label.length < 30) continue; // "Cost per acre ($)" under the header
       sinceHeader++;
-      const isHeading = (/:\s*$/.test(label) && (!toks.length || /costs?:$/i.test(label))) || (!toks.length && /^[A-Za-z][^:()]{1,60}:\s*\([^)]*\)$/.test(label));
+      // also a numbered heading without a colon: "II. CASH OVERHEAD COSTS", "III. NON-CASH OVERHEAD COSTS (Depreciation & Interest)"
+      const roman = !toks.length && /^(?:I|II|III|IV|V)\.\s+[A-Z][A-Z\s()&,-]*COSTS?\b/.test(label);
+      const isHeading = (/:\s*$/.test(label) && (!toks.length || /costs?:$/i.test(label))) || (!toks.length && /^[A-Za-z][^:()]{1,60}:\s*\([^)]*\)$/.test(label)) || roman;
       if (isHeading) {
         orphan = null; wrapped = null;
-        section = label.replace(/:\s*(?:\([^)]*\))?\s*$/, '');
+        section = label.replace(/^(?:I|II|III|IV|V)\.\s+/, '').replace(/:\s*(?:\([^)]*\))?\s*$/, '');
         const heading: EstablishmentTableRow = { label: section, kind: 'heading', section, values: cols.labels.map(() => null), page: lines[i].page, quote: clean(raw) };
         rows.push(heading);
         carry = toks.length ? { ...heading, values: placeValues(toks, cols.ends) } : null;
@@ -1287,19 +1297,31 @@ function parseEstablishmentTable(lines: Line[], all: TableHeading[], warn: (s: s
  *  production costs table, one row per operation, read from its Total Cost column (the last number on each row; the
  *  Your Cost column is blank). The table has a single column. */
 function parseOneYearEstablishment(lines: Line[], all: TableHeading[]): EstablishmentTable | null {
-  const cands = all.filter(t => isEstablishTitle(t.title) && /COSTS?\b.*\bESTABLISH/i.test(t.title) && !/RE-?ESTABLISH|RETURNS|MATERIAL|INPUT|EQUIPMENT|MONTHLY|HOURLY|RANGING|SUMMARY/i.test(t.title));
+  const cands = all.filter(t => isEstablishTitle(t.title) && /COSTS?\b.*\bESTABLISH/i.test(t.title) && !/RE-?ESTABLISH|MATERIAL|INPUT|EQUIPMENT|MONTHLY|HOURLY|RANGING|SUMMARY/i.test(t.title));
+  // the costs table, unless the costs and returns table to establish holds the accumulated net cash cost the study
+  // amortizes ("TOTAL ACCUMULATED NET CASH COST (ESTABLISHMENT COSTS): 217", wild rice)
+  let costsOnly: EstablishmentTable | null = null;
   for (const t of cands) {
+    const withReturns = /RETURNS/i.test(t.title);
+    if (!withReturns && costsOnly) continue;
     const [a, b] = spanOf(lines, all, t);
-    // the column header: a line naming the Total column, with no numbers on it
+    // the column header: a line naming the Total column (or the Cost/Acre column of a costs and returns table), with no numbers on it
     let i = a + 1;
-    while (i < b && !(/\bTotal\b/i.test(lines[i].text) && /\bCosts?\b|\bYour\b/i.test(lines[i].text) && !/\d/.test(lines[i].text.replace(/\(Hrs\/A\)/i, '')))) i++;
+    while (i < b && !((/\bTotal\b/i.test(lines[i].text) || (withReturns && /Cost\/Acre/i.test(lines[i].text))) && /\bCosts?\b|\bYour\b/i.test(lines[i].text) && !/\d/.test(lines[i].text.replace(/\(Hrs\/A\)/i, '')))) i++;
     if (i >= b) continue;
     const rows: EstablishmentTableRow[] = [];
     let section = ''; let pending: { label: string; raw: string } | null = null;
+    let gross = false; // the gross returns block on top of a costs and returns table: only its total is kept
     for (i = i + 1; i < b; i++) {
       const raw = lines[i].text;
       if (!raw.trim() || EST_FURNITURE.test(raw)) continue;
       if (yearColumns(raw)) break; // a year-by-year table follows; not a one-year table
+      if (/^\s*GROSS RETURNS\s*$/i.test(raw)) { gross = true; continue; }
+      if (gross) {
+        if (/^\s*OPERATING COSTS\b/i.test(raw)) gross = false;
+        else { const h = raw.match(/^\s*(TOTAL GROSS RETURNS\b.*?)\s+([\d,]+)\s*$/i); if (h) rows.push({ label: clean(h[1]), kind: 'income', section: 'GROSS RETURNS', values: [toNum(h[2])], page: lines[i].page, quote: clean(raw) }); }
+        continue;
+      }
       const toks = numericTokens(raw, 0);
       const label = clean(raw.slice(0, toks.length ? toks[0].start : raw.length));
       if (!toks.length) {
@@ -1315,15 +1337,18 @@ function parseOneYearEstablishment(lines: Line[], all: TableHeading[]): Establis
       if (pending && (!lab || /^[a-z0-9(%]/.test(lab))) { lab = clean(`${pending.label} ${lab}`); quote = clean(`${pending.raw} ${raw}`); }
       pending = null;
       if (!lab) continue;
+      lab = lab.replace(/\s*:\s*$/, ''); // "TOTAL ACCUMULATED NET CASH COST (ESTABLISHMENT COSTS):"
       rows.push({ label: lab, kind: rowKind(lab, section), section, values: [toks[toks.length - 1].value], page: lines[i].page, quote });
       if (/^TOTAL COSTS?\s*\/\s*ACRE$/i.test(lab)) break;
     }
     while (rows.length && rows[rows.length - 1].values.every(v => v == null)) rows.pop();
     if (rows.filter(r => r.kind !== 'heading').length < 5) continue;
     if (!rows.some(r => /^TOTAL (?:CASH|OPERATING) COSTS?/i.test(r.label))) continue;
-    return { title: t.title, years: ['Total Cost'], rows, yieldRow: null };
+    const table: EstablishmentTable = { title: t.title, years: [withReturns ? 'Cost/Acre' : 'Total Cost'], rows, yieldRow: null };
+    if (withReturns) { if (rows.some(r => r.kind === 'accumulated')) return table; }
+    else costsOnly = table;
   }
-  return null;
+  return costsOnly;
 }
 
 function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s: string) => void): Establishment | null {
@@ -1419,8 +1444,14 @@ function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s
   // one production table per region: the costs are read from the last one, so is the establishment line
   for (const t of regional ? [...prodTables].reverse() : prodTables) {
     const [a, b] = spanOf(lines, all, t);
-    const hit = find(lines, /^\s*(?:amortized\s+)?(?:orchard|vineyard|grove|field|stand)?\s*establishment( costs?)?\s+[\d,]{3,}(?:\.\d+)?(?:\s+[\d,]+(?:\.\d+)?)+\s*$/i, a, b);
-    if (hit) { const v = tailNumbers(hit.line.text); if (v.length >= 2 && (!regional || v.length <= 3)) {
+    // also "Establish Vineyard 37,991 2,526 2,526", "Establish Pasture: Tilled 40 Acres 783 57 57" (acre counts blanked)
+    let hit: { line: Line; text: string } | null = null;
+    for (let i = a; i < b && !hit; i++) {
+      const text = stripAcres(lines[i].text);
+      const m = text.match(/^\s*((?:amortized\s+)?(?:orchard|vineyard|grove|field|stand)?\s*establish(?:ment|ed)?(?: costs?)?(?:[\s:,-]+\(?[A-Za-z]+\)?){0,3}?)\s+[\d,]{3,}(?:\.\d+)?(?:\s+[\d,]+(?:\.\d+)?)+\s*$/i);
+      if (m && !/interest|removal|year|yr\b|\bland\b/i.test(m[1])) hit = { line: lines[i], text };
+    }
+    if (hit) { const v = tailNumbers(hit.text); if (v.length >= 2 && (!regional || v.length <= 3)) {
       // "Orchard Establishment 8,560 825 765": per producing acre, annual capital recovery, and the per acre cost the
       // table sums into its total; they agree except where the study prints a stale per producing acre pair
       annualCharge = { value: v.length === 3 ? v[2] : v[1], page: hit.line.page, quote: clean(hit.line.text) }; if (accumulatedNetCost && Math.abs(v[0] - accumulatedNetCost.value) > 0.02 * accumulatedNetCost.value) {
@@ -1448,7 +1479,7 @@ function parseEstablishment(lines: Line[], investments: EquipmentRow[], warn: (s
   }
 
   // The establishment row of the investment table, whole farm figures.
-  const inv = investments.find(r => /establishment/i.test(r.description));
+  const inv = investments.find(r => /establishment/i.test(r.description) || isEstablishRow(r.description));
   const asset = inv ? { price: inv.price, yearsLife: inv.yearsLife, salvageValue: inv.salvageValue, capitalRecovery: inv.capitalRecovery, page: inv.page, line: inv.line } : null;
 
   if (accumulatedNetCost && years.length) {
@@ -1479,11 +1510,11 @@ function productionEstablishmentLines(lines: Line[], all: TableHeading[]): { per
   for (const t of all.filter(x => !isEstablishTitle(x.title) && (x.kind === 'costs' || x.kind === 'returns' || x.kind === 'other'))) {
     const [a, b] = spanOf(lines, all, t);
     for (let i = a + 1; i < b; i++) {
-      const text = lines[i].text;
+      const text = stripAcres(lines[i].text); // "Establish Pasture: Tilled 40 Acres 783 57 57"
       const toks = numericTokens(text, 0);
       if (toks.length < 2 || toks.length > 3) continue;
       const label = text.slice(0, toks[0].start);
-      if (!/establishment/i.test(label) || /re-?establish|interest|removal|year|yr\b|\bestablishment fee|\bland\b/i.test(label)) continue;
+      if (!ESTABLISH_WORD.test(label) || /re-?establish|interest|removal|year|yr\b|\bestablishment fee|\bland\b/i.test(label)) continue;
       const v = toks.map(x => x.value);
       if (v.some(x => x == null)) continue;
       const [perAcre, annual] = v as number[];
@@ -1510,7 +1541,7 @@ function summarizeEstablishment(lines: Line[], est: Establishment | null, invest
     : desertTotal ? { value: toNum(desertTotal.m[1])!, page: desertTotal.line.page, quote: clean(desertTotal.line.text), source: 'production' } : null;
 
   // the whole farm establishment row divided by the acres, only when the study prints both
-  const inv = investments.find(r => /establishment/i.test(r.description) && !/re-?establish/i.test(r.description));
+  const inv = investments.find(r => isEstablishRow(r.description));
   let investment: Cand | null = null;
   if (inv && inv.price > 0) {
     const inDesc = inv.description.match(/\(?\s*(\d[\d,]*)\s*-?\s*acres?\b/i);
@@ -1593,7 +1624,7 @@ function summarizeEstablishment(lines: Line[], est: Establishment | null, invest
       for (let i = a + 1; i < b && !annualCharge; i++) {
         const toks = numericTokens(lines[i].text, 0);
         const label = lines[i].text.slice(0, toks[0]?.start ?? 0);
-        if (toks.length === 1 && toks[0].value != null && toks[0].value > 0 && /^\s*(?:\w+\s+){0,3}establishment(?: costs?)?\s*(?:\([^)]*\))?\s*$/i.test(label) && !/re-?establish|interest|fee/i.test(label)) annualCharge = { value: toks[0].value, page: lines[i].page, quote: clean(lines[i].text) };
+        if (toks.length === 1 && toks[0].value != null && toks[0].value > 0 && /^\s*(?:\w+\s+){0,3}establish(?:ment|ed)?(?: costs?)?\s*(?:\([^)]*\))?\s*$/i.test(stripAcres(label)) && !/re-?establish|interest|fee/i.test(label)) annualCharge = { value: toks[0].value, page: lines[i].page, quote: clean(lines[i].text) };
       }
       if (annualCharge) break;
     }
@@ -1623,7 +1654,7 @@ function summarizeEstablishment(lines: Line[], est: Establishment | null, invest
       : separate ? `Establishment is costed in a separate UC study: "${short(separate.s.text)}"`
         : 'The study prints no establishment table and no per acre establishment cost';
   }
-  return { perennial, status, total: perennial ? total : null, annualCharge: perennial ? annualCharge : null, reason, basisYear: null, capitalRecovery: null, investmentCharges: null };
+  return { perennial, status, total: perennial ? total : null, annualCharge: perennial ? annualCharge : null, reason, noYearlyCharge: false, basisYear: null, capitalRecovery: null, investmentCharges: null };
 }
 
 // ---------------------------------------------------------------- establishment charge inputs
@@ -1645,24 +1676,61 @@ function establishmentChargeInputs(lines: Line[], sum: EstablishmentSummary, est
   // -- basisYear: the column of the establishment table whose accumulated net cash cost the study amortizes
   const table = sum.status === 'table' && est?.table && est.table.years.length ? est.table : null;
   if (table && total) {
-    const accRows = table.rows.filter(r => r.kind === 'accumulated').sort((x, y) => Number(/NET\s*CASH/i.test(y.label)) - Number(/NET\s*CASH/i.test(x.label)));
-    const rows = table.years.length === 1 ? [...accRows, ...table.rows.filter(r => /^TOTAL CASH COSTS?\b/i.test(r.label))] : accRows;
+    const flat = (r: EstablishmentTableRow) => r.label.replace(/\s+/g, ''); // "ACCUMULATED NET CAS H COS TS"
+    const oneYear = table.years.length === 1;
+    const accRows = table.rows.filter(r => r.kind === 'accumulated').sort((x, y) => Number(/NETCASH/i.test(flat(y))) - Number(/NETCASH/i.test(flat(x))));
+    // then a single year's net cash cost ("NET CASH COSTS/ACRE FOR THE YEAR 15,791", Year 1), and in a one-column table
+    // its cash or operating cost total ("TOTAL OPERATING COSTS/ACRE 843")
+    const rows = [...accRows, ...table.rows.filter(r => r.kind === 'net' && /^NETCASHCO|^COSTOSNETOSDEEFECTIVO/i.test(flat(r))),
+      ...(oneYear ? table.rows.filter(r => /^TOTAL(?:CASH|OPERATING)COSTS?(?![A-Z])/i.test(flat(r))) : [])];
     const matches = (c: number) => rows.some(r => r.values[c] != null && near(r.values[c]!, total.value));
-    // "The Total Accumulated Net Cash Cost on Table 1, in the third year represents the establishment cost"
-    const nth = sentenceMatch(S, /accumulated net (?:cash )?costs?(?:\s*\/\s*acre)?(?:\s+(?:on|in|from|shown in) Table \d+,?)?\s+(?:in|at the end of|through|for|of) (?:the )?(\w+) year/i);
+    // "The Total Accumulated Net Cash Cost on Table 1, in the third year represents the establishment cost",
+    // "The Total Accumulated Net Cash Cost in the first year as shown in Table 2 represents ..."
+    const nth = sentenceMatch(S, /accumulated net (?:cash )?costs?(?:\s*\/\s*acre)?(?:\s+(?:on|in|from|shown in) Table \d+,?)?\s+(?:in|at the end of|through|for|of) (?:the )?(\w+) year/i)
+      ?? sentenceMatch(S.filter(x => /establishment/i.test(x.text)), /net cash costs?(?:\s*(?:\/|per)\s*acre)?(?:\s+(?:on|in|from|shown in) Table \d+,?)?\s+(?:in|at the end of|through|of) (?:the )?(\w+) year/i);
     const n = nth ? wordOrNum(nth.m[1]) ?? (Number(nth.m[1].replace(/\D/g, '')) || null) : null;
     const byProse = n != null ? table.years.findIndex(l => yearNumOf(l) === n) : -1;
     let index = byProse >= 0 && matches(byProse) ? byProse : -1;
     if (index < 0) for (const r of rows) { const c = r.values.findIndex(v => v != null && near(v, total.value)); if (c >= 0) { index = c; break; } }
     if (index < 0 && byProse >= 0) { index = byProse; warn(`establishment basis year: the text names column ${table.years[byProse]}, whose accumulated cost is not the total ${total.value}`); }
-    if (index >= 0) sum.basisYear = { index, label: table.years[index] };
-    else if (total.source === 'table') warn(`establishment basis year: no column of the accumulated row equals the total ${total.value}`);
+    if (index < 0 && oneYear) index = 0; // the only column
+    if (index >= 0) {
+      const row = rows.find(r => r.values[index] != null && near(r.values[index]!, total.value)) ?? null;
+      let lessReturns: { value: number; page: number; quote: string } | null = null;
+      // a one-column table of costs only, amortized net of the year's returns: "The Net Cash Cost Per Acre in the first
+      // year shown in Table 2 represents the establishment cost" (3,132 cash costs - 1,500 gross returns = 1,633 printed);
+      // the returns are read from the costs and returns table to establish, and must close the gap within $1
+      const cash = oneYear && !row ? table.rows.find(r => /^TOTALCASHCOSTS?(?![A-Z])/i.test(flat(r)) && r.values[0] != null) : undefined;
+      if (cash) {
+        const all = findTables(lines);
+        for (const t of all.filter(x => isEstablishTitle(x.title) && /RETURNS/i.test(x.title))) {
+          const [a0, b0] = spanOf(lines, all, t);
+          const h = find(lines, /^\s*TOTAL GROSS RETURNS\b/i, a0, b0);
+          const v = h ? tailNumbers(h.line.text) : [];
+          if (h && v.length && near(cash.values[0]! - v[v.length - 1], total.value)) { lessReturns = { value: v[v.length - 1], page: h.line.page, quote: clean(h.line.text) }; break; }
+        }
+      }
+      sum.basisYear = { index, label: table.years[index], row: row?.label ?? (lessReturns ? cash!.label : null), lessReturns };
+      if (!row && !lessReturns) warn(`establishment basis year: no row of column ${table.years[index]} equals the total ${total.value}`);
+    } else if (total.source === 'table') warn(`establishment basis year: no column of the accumulated row equals the total ${total.value}`);
   }
 
   // -- capitalRecovery: total x CRF(long-term rate, remaining production years)
   const rate = a.interestRatePct;
   const yp = est?.productionYears ?? null;
-  if (rate && yp && total && yp.value > 0) {
+  // the desert stand studies charge a flat share of the stand cost each year: "Amortization 20 % of total cost of stand
+  // establishment 62.24" is straight line over 100 / 20 = 5 years at no interest (CRF(0, n) = 1 / n)
+  const flatAm = find(lines, /^\s*Amortization\s+(\d+(?:\.\d+)?)\s*%\s+of total cost of stand establishment\s+([\d,]+(?:\.\d+)?)\s*$/i);
+  const flatPct = flatAm ? toNum(flatAm.m[1]) : null;
+  if (flatAm && flatPct && flatPct > 0 && flatPct <= 100 && total) {
+    const q = clean(flatAm.line.text), n = 100 / flatPct;
+    const computed = total.value * crf(0, n), printed = sum.annualCharge?.value ?? null;
+    sum.capitalRecovery = {
+      ratePct: { value: 0, page: flatAm.line.page, quote: `${q} (a flat ${flatPct}% of the stand cost each year, no interest)` },
+      years: { value: n, page: flatAm.line.page, quote: `${q} (100 / ${flatPct}% = ${fmtNum(n)} years)` },
+      computed, reproduces: printed != null && reproducesCharge(computed, printed),
+    };
+  } else if (rate && yp && total && yp.value > 0) {
     // the quotes repeat establishment.productionYears and assumptions.interestRatePct, which keep the full sentence; kept short for the bundle size
     let years = { value: yp.value, page: yp.page, quote: short(yp.quote, 120) };
     let computed = total.value * crf(rate.value, years.value);
@@ -1687,6 +1755,16 @@ function establishmentChargeInputs(lines: Line[], sum: EstablishmentSummary, est
       ratePct = { value: hv, page: hdr.line.page, quote: `${clean(hdr.line.text)} (header of the capital recovery table; the text says: "${short(rate.quote, 90)}")` };
       computed = total.value * crf(hv, years.value);
     }
+    // The land row of the investment table charges interest on its salvage value, which is its price, so capital
+    // recovery / salvage value is the rate the tables use ("Land 6,000,000 40 6,000,000 285,000": 4.75% where the text
+    // says 5.75%); when only that rate reproduces the printed charge, cite the land row.
+    const land = investments.find(r => /^land\b/i.test(r.description) && r.price > 0 && r.salvageValue === r.price && r.capitalRecovery > 0);
+    const lv = land ? Math.round((land.capitalRecovery / land.salvageValue) * 10000) / 100 : null;
+    if (printed != null && !reproducesCharge(computed, printed) && land && lv != null && lv !== ratePct.value && Math.abs((land.salvageValue * lv) / 100 - land.capitalRecovery) <= 1 && reproducesCharge(total.value * crf(lv, years.value), printed)) {
+      warn(`capital recovery rate: the text says ${rate.value}% but the printed establishment charge ${printed} uses the land row's ${lv}%`);
+      ratePct = { value: lv, page: land.page, quote: `${land.line} (capital recovery / salvage value of the land row = ${lv}%; the text says: "${short(rate.quote, 90)}")` };
+      computed = total.value * crf(lv, years.value);
+    }
     sum.capitalRecovery = {
       ratePct, years, computed,
       reproduces: printed != null && reproducesCharge(computed, printed),
@@ -1697,7 +1775,7 @@ function establishmentChargeInputs(lines: Line[], sum: EstablishmentSummary, est
   // the row from the parsed investment table, else the row as printed when that table was not read:
   // "Establishment Costs 160 Ac 131,360 4 0 36,830 55 657 0 37,542" (price, years, salvage, capital recovery,
   // insurance, taxes, repairs, total; the total checks the four charges)
-  const inv = investments.find(r => /establishment/i.test(r.description) && !/re-?establish/i.test(r.description)) ?? (() => {
+  const inv = investments.find(r => isEstablishRow(r.description)) ?? (() => {
     for (const l of lines) {
       const m = l.text.match(/^\s*((?:\w+\s+)?establishment(?:\s+costs?)?(?:\s+\d[\d,]*\s*ac\.?)?)\s+((?:[\d,]+(?:\.\d+)?\s+){7}[\d,]+(?:\.\d+)?)\s*$/i);
       if (!m || /re-?establish/i.test(m[1])) continue;
@@ -1739,6 +1817,21 @@ function establishmentChargeInputs(lines: Line[], sum: EstablishmentSummary, est
       };
     } else warn(`establishment investment row ${inv.price}: no acreage in the study turns it into the per acre total ${total?.value}`);
   }
+
+  // -- no yearly establishment charge: the study says why, or prints neither a charge line nor an establishment row
+  const addReason = (x: string) => { sum.reason = sum.reason ? `${sum.reason}. ${x}` : x; };
+  if (sum.perennial && sum.status !== 'none' && !sum.annualCharge) {
+    // "It is the crop land value plus the Establishment Cost for the first two years ... ($17,000 + $6,000 = $23,000)"
+    const inLand = sentenceMatch(S, /(?:land value|valued|worth)[^.]{0,120}\b(?:plus|includ\w*)\b[^.]{0,40}establishment/i);
+    // "The establishment cost is recovered in the first production year."
+    const once = sentenceMatch(S, /establishment cost is recovered in the (?:first|\w+) production year|costo (?:del? )?establecimiento se recupera en el primer año de producción/i);
+    const why = inLand ? `the establishment cost is included in the land value (p. ${inLand.s.page}: "${short(inLand.s.text)}")`
+      : once ? `the establishment cost is recovered in the first production year (p. ${once.s.page}: "${short(once.s.text)}")`
+        : !inv && !est?.asset ? 'its production costs table has no establishment line and its investment table no establishment row' : null;
+    if (why) { sum.noYearlyCharge = true; sum.capitalRecovery = null; addReason(`The study charges no yearly establishment cost: ${why}`); }
+  }
+  // a printed charge with no stated capital recovery rate to recompute it
+  if (sum.annualCharge && total && !sum.capitalRecovery && !rate) addReason(`The study prints a yearly establishment charge of ${fmtNum(sum.annualCharge.value)} but states no capital recovery interest rate, so the charge cannot be recomputed`);
 }
 
 // ---------------------------------------------------------------- method

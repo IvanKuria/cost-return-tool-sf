@@ -11,7 +11,7 @@
   "url": "https://coststudyfiles.ucdavis.edu/uploads/cs_public/bb/94/bb94edc2-fbfb-4be0-8853-6565b486e032/20pasturesnfhproduction.pdf",
   "indexPage": "https://coststudies.ucdavis.edu/current/commodities/pasture",
   "publisher": "UC Davis Department of Agricultural and Resource Economics / UC Cooperative Extension",
-  "fetchedAt": "2026-10-14",
+  "fetchedAt": "2026-10-28",
   "archived": false,
   "indexYear": 2020,
   "priceYear": {
@@ -368,6 +368,7 @@
   "total": null,
   "annualCharge": null,
   "reason": "Establishment is costed in a separate UC study: \"If your farm does not already have an established pasture, refer to (“Sample Costs to Establish or Reestablish and Produce Pasture in the Sierra Nevada Foothills - 2020”) for th...\"",
+  "noYearlyCharge": false,
   "basisYear": null,
   "capitalRecovery": null,
   "investmentCharges": null
