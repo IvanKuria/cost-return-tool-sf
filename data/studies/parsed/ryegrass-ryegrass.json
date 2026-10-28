@@ -36,17 +36,148 @@
   "priceStatement": null
  },
  "costsPerAcre": {
-  "title": null,
+  "title": "IMPERIAL COUNTY ANNUAL RYEGRASS PASTURE PRODUCTION COSTS 2000-2001",
   "operatingTotal": null,
   "operatingInterest": null,
   "cashOverheadTotal": null,
   "nonCashOverheadTotal": null,
-  "totalCost": null,
+  "totalCost": {
+   "value": 367.88,
+   "unit": "$/acre",
+   "page": 6,
+   "quote": "TOTAL ALL COSTS 367.88"
+  },
   "grossReturns": null,
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
-  "cashOverheadItems": [],
-  "operations": []
+  "cashOverheadItems": [
+   {
+    "description": "Land rent (net acres)",
+    "value": 100,
+    "page": 6,
+    "quote": "Land rent (net acres) 100.00"
+   },
+   {
+    "description": "Cash overhead 12 % of growing period, land preparation & land rent",
+    "value": 39.42,
+    "page": 6,
+    "quote": "Cash overhead-- 12 % of growing period, land preparation & land rent 39.42"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Disc 2x",
+    "category": "cultural",
+    "section": "LAND PREPARATION",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 23,
+    "totalCost": 23,
+    "page": 6,
+    "quote": "Disc 2x 11.50 23.00"
+   },
+   {
+    "name": "Inject fertilizer",
+    "category": "cultural",
+    "section": "LAND PREPARATION",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 16.5,
+    "customRent": 10,
+    "totalCost": 26.5,
+    "page": 6,
+    "quote": "Inject fertilizer 10.00 100 lb NH3 @ .165/lb 16.50 26.50"
+   },
+   {
+    "name": "Disc borders",
+    "category": "cultural",
+    "section": "LAND PREPARATION",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 11.25,
+    "totalCost": 11.25,
+    "page": 6,
+    "quote": "Disc borders 11.25 11.25"
+   },
+   {
+    "name": "Float 2x",
+    "category": "cultural",
+    "section": "LAND PREPARATION",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 20,
+    "totalCost": 20,
+    "page": 6,
+    "quote": "Float 2x 10.00 20.00"
+   },
+   {
+    "name": "Plant",
+    "category": "cultural",
+    "section": "GROWING PERIOD",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 14,
+    "customRent": 8.5,
+    "totalCost": 22.5,
+    "page": 6,
+    "quote": "Plant 8.50 40 lb seed @0.35/lb 14.00 22.50"
+   },
+   {
+    "name": "Irrigate 11x",
+    "category": "cultural",
+    "section": "GROWING PERIOD",
+    "timeHrsPerAcre": null,
+    "labor": 31,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 50.96,
+    "customRent": 0,
+    "totalCost": 81.96,
+    "page": 6,
+    "quote": "Irrigate 11x 3.5 ac-ft 50.96 4 31.00 81.96"
+   },
+   {
+    "name": "Fertilize (water run)",
+    "category": "cultural",
+    "section": "GROWING PERIOD",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 41.25,
+    "customRent": 0,
+    "totalCost": 41.25,
+    "page": 6,
+    "quote": "Fertilize (water run) 250 lb NH3 @ 0.165/lb 41.25 41.25"
+   },
+   {
+    "name": "Work ends (minimal)",
+    "category": "cultural",
+    "section": "GROWING PERIOD",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 2,
+    "totalCost": 2,
+    "page": 6,
+    "quote": "Work ends (minimal) 2.00 2.00"
+   }
+  ]
  },
  "equipment": [],
  "investments": [],
@@ -76,7 +207,9 @@
   "fieldsFound": [
    "year",
    "region",
-   "counties"
+   "counties",
+   "totalCost",
+   "operations"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -90,9 +223,7 @@
    "operatingTotal",
    "cashOverheadTotal",
    "nonCashOverheadTotal",
-   "totalCost",
    "grossReturns",
-   "operations",
    "equipment",
    "investments",
    "hourlyEquipment",
@@ -107,7 +238,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "no costs-per-acre table found",
+   "one-page budget format (Imperial County): operations from the production costs table; no operating total or interest is printed, so operatingTotal is null; prevailing-rate machine work is stored as custom; land rent and the percentage cash overhead are cash overhead items",
    "no whole-farm equipment table"
   ]
  }

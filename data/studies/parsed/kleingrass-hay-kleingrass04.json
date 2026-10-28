@@ -36,17 +36,139 @@
   "priceStatement": null
  },
  "costsPerAcre": {
-  "title": null,
+  "title": "IMPERIAL COUNTY KLEINGRASS HAY PRODUCTION COSTS 2004-2005",
   "operatingTotal": null,
   "operatingInterest": null,
   "cashOverheadTotal": null,
-  "nonCashOverheadTotal": null,
-  "totalCost": null,
+  "nonCashOverheadTotal": {
+   "value": 61.94,
+   "unit": "$/acre",
+   "page": 6,
+   "quote": "Amortization 20 % of total cost of stand establishment 61.94"
+  },
+  "totalCost": {
+   "value": 875.59,
+   "unit": "$/acre",
+   "page": 6,
+   "quote": "TOTAL ALL COSTS 875.59"
+  },
   "grossReturns": null,
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
-  "cashOverheadItems": [],
-  "operations": []
+  "cashOverheadItems": [
+   {
+    "description": "Land rent (net acres)",
+    "value": 135,
+    "page": 6,
+    "quote": "Land rent (net acres) 135.00"
+   },
+   {
+    "description": "Cost overhead 13 % of annual costs, land rent and amortization",
+    "value": 67.15,
+    "page": 6,
+    "quote": "Cost overhead 13 % of annual costs, land rent and amortization 67.15"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Irrigate 16x",
+    "category": "cultural",
+    "section": "ANNUAL COSTS OF HAY PRODUCTION (5-year life)",
+    "timeHrsPerAcre": null,
+    "labor": 49.61,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 100,
+    "customRent": 0,
+    "totalCost": 149.61,
+    "page": 6,
+    "quote": "Irrigate 16x Water 6.25 ac-ft 100.00 5 49.61 149.61"
+   },
+   {
+    "name": "Fertilizer, dry 3x",
+    "category": "cultural",
+    "section": "ANNUAL COSTS OF HAY PRODUCTION (5-year life)",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 102,
+    "customRent": 24,
+    "totalCost": 126,
+    "page": 6,
+    "quote": "Fertilizer, dry 3x 8.00 300 lb N (urea) 102.00 126.00"
+   },
+   {
+    "name": "Fertilize (water-run)",
+    "category": "cultural",
+    "section": "ANNUAL COSTS OF HAY PRODUCTION (5-year life)",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 44,
+    "customRent": 0,
+    "totalCost": 44,
+    "page": 6,
+    "quote": "Fertilize (water-run) 200 lb N (anhydrous) 44.00 44.00"
+   },
+   {
+    "name": "Swather 5x",
+    "category": "harvest",
+    "section": "HARVEST COSTS",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 68.75,
+    "totalCost": 68.75,
+    "page": 6,
+    "quote": "Swather 5x 13.75 68.75"
+   },
+   {
+    "name": "Rake 12x",
+    "category": "harvest",
+    "section": "HARVEST COSTS",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 66,
+    "totalCost": 66,
+    "page": 6,
+    "quote": "Rake 12x 5.50 66.00"
+   },
+   {
+    "name": "Bale 9 tons",
+    "category": "harvest",
+    "section": "HARVEST COSTS",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 113.4,
+    "totalCost": 113.4,
+    "page": 6,
+    "quote": "Bale 9 tons 0.70 /bale 18 bales/ton 113.40"
+   },
+   {
+    "name": "Haul & Stack 9 tons",
+    "category": "harvest",
+    "section": "HARVEST COSTS",
+    "timeHrsPerAcre": null,
+    "labor": 0,
+    "fuel": null,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 43.74,
+    "totalCost": 43.74,
+    "page": 6,
+    "quote": "Haul & Stack 9 tons 0.27 /bale 18 bales/ton 43.74"
+   }
+  ]
  },
  "equipment": [],
  "investments": [],
@@ -98,7 +220,10 @@
   "fieldsFound": [
    "year",
    "region",
-   "counties"
+   "counties",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "operations"
   ],
   "fieldsMissing": [
    "yieldPerAcre",
@@ -111,10 +236,7 @@
    "acresFarmed",
    "operatingTotal",
    "cashOverheadTotal",
-   "nonCashOverheadTotal",
-   "totalCost",
    "grossReturns",
-   "operations",
    "equipment",
    "investments",
    "hourlyEquipment",
@@ -129,7 +251,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
-   "no costs-per-acre table found",
+   "one-page budget format (Imperial County): operations from the production costs table; no operating total or interest is printed, so operatingTotal is null; prevailing-rate machine work is stored as custom; land rent and the percentage cash overhead are cash overhead items; the amortization of stand establishment is the non-cash overhead",
    "no whole-farm equipment table",
    "monthly table has no TABLE heading; parsed from the month header line",
    "monthly table not used: monthly table without a heading: month header has no Total column, so rows cannot be checked"

@@ -430,9 +430,9 @@ function tableSpan(lines: Line[], kind: TableKind, which: 'first' | 'last' = 'la
   return spanOf(lines, tables, which === 'last' ? hits[hits.length - 1] : hits[0]);
 }
 
-function lastTotal(lines: Line[], re: RegExp, from: number, to: number, unit: string | null): Cited | null {
+function lastTotal(lines: Line[], re: RegExp, from: number, to: number, unit: string | null, accept: (l: Line) => boolean = () => true): Cited | null {
   // a matching label line with no number at its end ("TOTAL COSTS PER ACRE - HARVEST COSTS PER ACRE = ...") is prose, not the row
-  const hits = findAll(lines, re, from, to).filter(h => new RegExp(String.raw`${NUM}\s*$`).test(h.line.text));
+  const hits = findAll(lines, re, from, to).filter(h => new RegExp(String.raw`${NUM}\s*$`).test(h.line.text) && accept(h.line));
   if (!hits.length) return null;
   const h = hits[hits.length - 1];
   const nums = h.line.text.match(new RegExp(NUM, 'g'));
@@ -445,10 +445,12 @@ function lastTotal(lines: Line[], re: RegExp, from: number, to: number, unit: st
 // "/ACRE", "/A", "/AC" or "PER ACRE" next to per-unit rows ("/CWT", "/TON", "/CRTN") that must never be read as per-acre.
 const OPER = String.raw`OPERATI\s?NG`; // the label words may also run together: "TOTALOPERATINGCOSTS/ACRE"
 // Spanish translations: "COSTOS TOTALES DE OPERACIÓN / ACRE", "GASTOS TOTALES GENERALES EN EFECTIVO / ACRE", "COSTOS TOTALES / ACRE".
+// Other Spanish wordings: "COSTOS DE OPERACIÓN TOTALES", "COSTOS GENERALES TOTALES NO EFECTIVOS", and labels that wrap
+// ("COSTOS TOTALES GENERALES EN" / "EFECTIVO / ACRE", "COSTOS TOTALES GENERALES NO" / "EFECTIVO") with the figures on the first line.
 const TOTAL_RE = {
-  operating: String.raw`(?:TOTAL\s*${OPER}\s*COSTS?|C?OSTOS\s+TOTALES\s+DE\s+OPERACI[ÓO]N)`,
-  cashOverhead: String.raw`(?:TOTAL\s*CASH\s*OVERHEAD(?:\s*COSTS?)?|(?:GASTOS|COSTOS)\s+TOTALES\s+(?:DE\s+GASTOS\s+)?GENERALES\s+EN\s+EFECTIVO)`,
-  nonCashOverhead: String.raw`(?:TOTAL\s*(?:NON-?\s?CASH\s*OVERHEAD|CAPITAL\s+RECOVERY)(?:\s*COSTS?)?|(?:GASTOS|COSTOS)\s+TOTALES\s+(?:DE\s+GASTOS\s+)?GENERALES\s+SIN\s+EFECTIVO)`,
+  operating: String.raw`(?:TOTAL\s*${OPER}\s*COSTS?|C?OSTOS\s+TOTALES\s+DE\s+OPERACI[ÓO]N|COSTOS\s+(?:DE\s+)?OPERACI[ÓO]N\s+TOTALES)`,
+  cashOverhead: String.raw`(?:TOTAL\s*CASH\s*OVERHEAD(?:\s*COSTS?)?|(?:GASTOS|COSTOS)\s+TOTALES\s+(?:DE\s+GASTOS\s+)?GENERALES\s+EN(?:\s+EFECTIVO)?)`,
+  nonCashOverhead: String.raw`(?:TOTAL\s*(?:NON-?\s?CASH\s*OVERHEAD|CAPITAL\s+RECOVERY)(?:\s*COSTS?)?|(?:GASTOS|COSTOS)\s+TOTALES\s+(?:DE\s+GASTOS\s+)?GENERALES\s+(?:SIN|NO)(?:\s+EFECTIVOS?)?|COSTOS\s+GENERALES\s+TOTALES\s+NO\s+EFECTIVOS?)`,
   total: String.raw`(?:TOTAL\s*(?:ALL\s+)?COSTS?|COSTOS\s+TOTALES)`,
 };
 const PER_ACRE = String.raw`(?:\s*\/\s*A(?:C(?:RE)?)?\.?(?![A-Za-z])|\s+P(?:ER|OR)\s+(?:PRODUCING\s+)?ACRE\b)`;
@@ -456,12 +458,23 @@ const perAcreRe = (label: string) => new RegExp(String.raw`^\s*${label}${PER_ACR
 // no unit printed: the label is followed directly by the numbers
 const bareRe = (label: string) => new RegExp(String.raw`^\s*${label}\s{2,}[-(\d$,.]`, 'i');
 
+// A per-acre label that wraps after its slash: "COSTOS DE OPERACIÓN TOTALES /   6,837 ...   58,287" with "ACRE" alone on the next line.
+const slashRe = (label: string) => new RegExp(String.raw`^\s*${label}\s*\/\s{2,}[-(\d$,.]`, 'i');
+const acreNext = (lines: Line[]) => (l: Line) => /^\s*ACRES?\s*$/i.test(lines[l.index + 1]?.text ?? '');
+/** Per-acre rows: printed with a per-acre suffix, or wrapped after the slash with ACRE on the next line. */
+function perAcreHits(lines: Line[], label: string, from: number, to: number) {
+  const wrapped = findAll(lines, slashRe(label), from, to).filter(h => acreNext(lines)(h.line));
+  return [...findAll(lines, perAcreRe(label), from, to), ...wrapped].sort((a, b) => a.line.index - b.line.index);
+}
+
 /** Per-acre total candidates in order of preference: Table 1, then Table 2; within a table a row printed with a per-acre suffix, then a row with no unit. */
 function acreTotals(lines: Line[], label: string, spans: ([number, number] | null)[], bare: boolean): Cited[] {
   const out: Cited[] = [];
-  for (const sp of spans) for (const re of bare ? [perAcreRe(label), bareRe(label)] : [perAcreRe(label)]) {
+  const tries: [RegExp, ((l: Line) => boolean) | undefined][] = [[perAcreRe(label), undefined], [slashRe(label), acreNext(lines)]];
+  if (bare) tries.push([bareRe(label), undefined]);
+  for (const sp of spans) for (const [re, accept] of tries) {
     if (!sp) continue;
-    const v = lastTotal(lines, re, sp[0], sp[1], '$/acre');
+    const v = lastTotal(lines, re, sp[0], sp[1], '$/acre', accept);
     if (v && !out.some(x => x.value === v.value)) out.push(v);
   }
   return out;
@@ -494,6 +507,81 @@ function interestRow(lines: Line[], from: number, to: number, dotLoss: boolean):
   return null;
 }
 
+/** The one-page Imperial County budgets (2000-2005): "IMPERIAL COUNTY ... PRODUCTION COSTS 2004-2005", one row per operation
+ *  with a prevailing (custom) rate, materials, hand labor hours and dollars and a cost per acre, then land rent, a percentage cash
+ *  overhead, for perennial stands an amortization of the stand establishment, harvest rows and TOTAL ALL COSTS. No operating
+ *  total and no interest are printed, so operatingTotal stays null. The rows are kept only when, with the overhead lines,
+ *  they add up to the printed TOTAL ALL COSTS. */
+function parseOnePageBudget(lines: Line[], c: CostsPerAcre, warn: (s: string) => void): boolean {
+  const titleAt = lines.findIndex(l => /IMPERIAL COUNTY .*PRODUCTION COSTS\s+\d{4}/i.test(l.text));
+  if (titleAt < 0) return false;
+  const h = lines.findIndex((l, i) => i > titleAt && i < titleAt + 15 && /\bHours\b/.test(l.text) && /\bDollars\b/.test(l.text));
+  if (h < 0) return false;
+  const end = lines.findIndex((l, i) => i > h && /^\s*TOTAL\s+(?:OF\s+)?ALL\s+COSTS\b/i.test(l.text));
+  if (end < 0 || end - h > 120) return false;
+  const wageHit = lines.slice(titleAt, h).map(l => l.text.match(/\$\s*(\d+\.\d{2})\s*(?:\/\s*hr|per\s*hour)/i)).find(Boolean);
+  const wage = wageHit ? Number(wageHit[1]) : null;
+  // materials, hours and dollars sit right of the "Type" column; the prevailing rate sits left of it
+  const typeCol = [lines[h - 1], lines[h]].map(l => l.text.search(/\bType\b/)).find(x => x > 0) ?? 55;
+  const totalAll = lastTotal(lines, /^\s*TOTAL\s+(?:OF\s+)?ALL\s+COSTS\b/i, end, end + 1, '$/acre');
+  if (!totalAll) return false;
+  const standEnd = lines.findIndex((l, i) => i > h && i < end && /TOTAL COST OF STAND ESTABLISHMENT/i.test(l.text));
+  const ops: OperationRow[] = [];
+  const co: CostsPerAcre['cashOverheadItems'] = [];
+  let amort: Cited | null = null;
+  let cat: OperationCategory = 'cultural', section = 'Cultural', pendingLabel = '', pendingQuote = '', bad = 0;
+  const round2 = (x: number) => Math.round(x * 100) / 100;
+  for (let i = h + 1; i < end; i++) {
+    const l = lines[i];
+    const toks = [...l.text.matchAll(/(?<=^|\s{2})(-?[\d,]*\.?\d+)(?=\s{2}|\s*$)/g)].map(m => ({ v: toNum(m[1])!, end: m.index! + m[1].length, start: m.index! }));
+    // the operation name is the text up to the first wide gap, without a prevailing rate one space after it ("Stubble disc / ring roller 24.50")
+    const first = l.text.trimStart().split(/\s{2,}/)[0];
+    const rateHit = first.match(/\s(\d*\.\d+)$/);
+    const label = (toks.length && toks[0].start <= l.text.length - l.text.trimStart().length ? '' : rateHit ? first.slice(0, rateHit.index) : first).trim();
+    if (!toks.length) {
+      if (!label) continue;
+      if (/^[A-Z]{3,}/.test(label) && !/^[A-Z][a-z]/.test(label)) { // a heading: "GROWING PERIOD", "HARVEST (field pack)*"
+        section = clean(label.replace(/[*:]+$/, '')); cat = /HARVEST/i.test(label) ? 'harvest' : 'cultural'; pendingLabel = ''; continue;
+      }
+      if (/[a-z]/.test(label)) { pendingLabel = label; pendingQuote = clean(l.text); }
+      continue;
+    }
+    if (i <= standEnd) { pendingLabel = ''; continue; } // land preparation and stand establishment: the establishment cost
+    if (!/[a-z]/.test(label) || /^TOTAL\b/i.test(label)) { pendingLabel = ''; continue; } // subtotals: "TOTAL ANNUAL COSTS", "GROWING PERIOD"
+    const total = toks[toks.length - 1].v;
+    if (/^Amortization/i.test(label)) { amort = cite(l, total, '$/acre'); pendingLabel = ''; continue; }
+    if (/land rent|overhead/i.test(label)) { co.push({ description: clean(l.text.slice(0, toks[toks.length - 1].start).replace(/-{2,}/g, ' ')), value: total, page: l.page, quote: clean(l.text) }); pendingLabel = ''; continue; }
+    const name = clean(`${pendingLabel} ${label}`);
+    const quote = pendingLabel ? `${pendingQuote} ${clean(l.text)}` : clean(l.text);
+    pendingLabel = '';
+    const right = toks.slice(0, -1).filter(t => t.end > typeCol);
+    const hasRate = Boolean(rateHit) || toks.slice(0, -1).some(t => t.end <= typeCol);
+    let mat = 0, hours: number | null = null, dollars = 0;
+    const isLabor = (hh: number, d: number) => wage != null && hh > 0 && Math.abs(hh * wage - d) <= 0.15 * d;
+    if (right.length === 3) [mat, hours, dollars] = right.map(t => t.v);
+    else if (right.length === 2 && isLabor(right[0].v, right[1].v)) [hours, dollars] = right.map(t => t.v);
+    else if (right.length === 1) mat = right[0].v;
+    else if (right.length) { bad++; continue; }
+    let custom = round2(total - mat - dollars), labor = dollars;
+    // hand labor and no prevailing rate on the row: what is left is hand labor ("Seedless transplants 600.00 12 9.95 719.40")
+    if (!hasRate && hours != null && Math.abs(custom) > 0.05) { labor = round2(total - mat); custom = 0; }
+    if (custom < -0.05) { bad++; continue; }
+    ops.push({ name, category: cat, section, timeHrsPerAcre: null, labor, fuel: null, lubeRepairs: null, materials: mat, customRent: custom, totalCost: total, page: l.page, quote, laborHours: hours } as OperationRow);
+  }
+  for (const o of ops) delete (o as { laborHours?: unknown }).laborHours;
+  const sum = ops.reduce((x, o) => x + (o.totalCost ?? 0), 0) + co.reduce((x, o) => x + o.value, 0) + (amort?.value ?? 0);
+  if (bad || !ops.length || Math.abs(sum - totalAll.value) > Math.max(0.5, 0.01 * ops.length)) {
+    warn(`one-page budget format: rows did not add up to TOTAL ALL COSTS ${totalAll.value} (rows ${round2(sum)}${bad ? `, ${bad} rows unreadable` : ''}); rows not read`);
+    return false;
+  }
+  c.title = clean(lines[titleAt].text);
+  c.operations = ops; c.cashOverheadItems = co; c.totalCost = totalAll;
+  // The amortized stand establishment is the only non-cash overhead in this format.
+  if (amort) c.nonCashOverheadTotal = amort;
+  warn('one-page budget format (Imperial County): operations from the production costs table; no operating total or interest is printed, so operatingTotal is null; prevailing-rate machine work is stored as custom; land rent and the percentage cash overhead are cash overhead items' + (amort ? '; the amortization of stand establishment is the non-cash overhead' : ''));
+  return true;
+}
+
 function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): CostsPerAcre {
   const c: CostsPerAcre = {
     title: null, operatingTotal: null, operatingInterest: null, cashOverheadTotal: null, nonCashOverheadTotal: null, totalCost: null,
@@ -502,7 +590,6 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
   };
   delete (a as unknown as { _gross?: Cited })._gross;
   const opAny = new RegExp(String.raw`^\s*${TOTAL_RE.operating}\b`, 'i');
-  const opPerAcre = perAcreRe(TOTAL_RE.operating);
   // production cost table: the last 'costs' table that actually has a TOTAL OPERATING COSTS row
   const all = findTables(lines);
   const costTables = all.filter(t => t.kind === 'costs');
@@ -523,11 +610,14 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
   }
   const t2 = tableSpan(lines, 'returns');
   if (!t1) { t1 = t2; const rt = all.filter(t => t.kind === 'returns').pop(); if (t1 && rt) c.title = rt.title; }
-  if (!t1) { warn('no costs-per-acre table found'); return c; }
+  if (!t1) {
+    if (parseOnePageBudget(lines, c, warn)) return c;
+    warn('no costs-per-acre table found'); return c;
+  }
   if (costTables.length > 1) warn('several costs-per-acre tables (establishment and production); using the production one');
   const [s, e] = t1;
   // the operating total row of Table 1: "/ACRE", "/A", "PER ACRE", or no unit; never "/CWT" or "/TON"
-  const opHits = findAll(lines, opPerAcre, s, e);
+  const opHits = perAcreHits(lines, TOTAL_RE.operating, s, e);
   if (!opHits.length && /\bACRE/i.test(c.title ?? '')) opHits.push(...findAll(lines, bareRe(TOTAL_RE.operating), s, e));
   if (opHits.length > 1) warn(`Table 1 has ${opHits.length} TOTAL OPERATING COSTS rows (multi-year table); using the last`);
   const spans: [number, number][] = t2 && t2[0] !== s ? [t1, t2] : [t1];
@@ -554,13 +644,13 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
   }
 
   // cash overhead items between CASH OVERHEAD: and TOTAL CASH OVERHEAD
-  const coStart = findAll(lines, /^\s*CASH\s*OVERHEAD(?: COSTS)?:?\s*$/i, s, e);
+  const coStart = findAll(lines, /^\s*(?:CASH\s*OVERHEAD(?: COSTS)?|GASTOS\s+GENERALES\s+EN\s+EFECTIVO):?\s*$/i, s, e);
   const co = coStart[coStart.length - 1];
   if (co) {
     for (let i = co.line.index + 1; i < e; i++) {
       const t = lines[i].text;
       // any TOTAL line ends the items, including run-together text like "TOTALCASHOVERHEADCOSTS/ACRE"
-      if (/^\s*TOTAL/i.test(t)) break;
+      if (/^\s*(?:TOTAL|(?:COSTOS|GASTOS)\s+TOTALES)/i.test(t)) break;
       // labels may carry digits ("Crop Insurance (70% Coverage)", "Fuel Tanks (2)"); the value is the last number after a wide gap
       const m = t.match(new RegExp(String.raw`^\s*([A-Za-z].*?)\s{2,}(${NUM})\s*$`));
       if (m) { const v = toNum(m[2]); if (v != null) c.cashOverheadItems.push({ description: clean(m[1]), value: v, page: lines[i].page, quote: clean(t) }); }
@@ -600,7 +690,7 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
     const from = prevTotal != null ? prevTotal + 1 : s;
     const catOf = (k: string): OperationCategory => {
       const x = k.toLowerCase();
-      return x.startsWith('harvest') || x.startsWith('cosecha') ? 'harvest' : x.startsWith('assess') ? 'assessment' : x.startsWith('post') ? 'postharvest' : x === 'cultural' ? 'cultural' : 'other';
+      return x.startsWith('harvest') || x.startsWith('cosecha') ? 'harvest' : x.startsWith('assess') ? 'assessment' : /^pos(?:t|\s*cosecha)/.test(x) ? 'postharvest' : x === 'cultural' || x.startsWith('agron') ? 'cultural' : 'other';
     };
     // Some studies print a second hours column, field labor (Hrs/A), after the operation time: "Time (Hrs/A) Labor (Hrs/A) Labor Cost ...".
     let laborHoursColumn = false;
@@ -622,6 +712,24 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
     let section = 'Cultural';
     let pending: OperationRow[] = [];
     const textOnly = (x: string) => /[A-Za-z]/.test(x) && !new RegExp(String.raw`\s{2,}${NUM}\s*$`).test(x);
+    // A row whose printed total disagrees with its own cells is a typo in one of them. When the section's printed subtotal
+    // equals the sum with the cells' total in place of the row's printed total (and not with the printed totals), the cells win.
+    const cellSum = (r: OperationRow) => (r.labor ?? 0) + (r.fuel ?? 0) + (r.lubeRepairs ?? 0) + (r.materials ?? 0) + (r.customRent ?? 0);
+    const checkSubtotal = (rows: OperationRow[], l: Line) => {
+      const nums = l.text.match(new RegExp(NUM, 'g'));
+      const sub = nums ? toNum(nums[nums.length - 1]) : null;
+      if (sub == null || !rows.length) return;
+      const tol = Math.max(2, 0.002 * sub);
+      const printed = rows.reduce((a, r) => a + (r.totalCost ?? 0), 0);
+      if (Math.abs(printed - sub) <= tol) return;
+      const bad = rows.filter(r => r.totalCost != null && Math.abs(cellSum(r) - r.totalCost) > 1.5);
+      const fixed = printed + bad.reduce((a, r) => a + cellSum(r) - r.totalCost!, 0);
+      if (!bad.length || Math.abs(fixed - sub) > tol) return;
+      for (const r of bad) {
+        warn(`Table 1 row "${r.name}" prints a total of ${r.totalCost} but its cells add to ${cellSum(r)}; the section subtotal ${sub} (page ${l.page}) matches the cells, so ${cellSum(r)} is used`);
+        r.totalCost = cellSum(r);
+      }
+    };
     for (let i = from; i < opEnd.line.index; i++) {
       let t = lines[i].text.replace(/[!|]/g, ' ');
       if (dotLoss) t = t.replace(dotLossRe, '$1$2.$3');
@@ -642,12 +750,31 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
       }
       const head = t.match(/^\s*([A-Z][A-Za-zÀ-ÿ ,&/()-]{1,40}?)\s*:\s*$/);
       if (head && !/OVERHEAD/i.test(head[1])) { cat = catOf(head[1]); section = clean(t).replace(/:\s*$/, ''); continue; }
-      const tot = t.match(/^\s*TOTAL\s*([A-Z][A-Z -]+?)\s*COSTS?\b/i);
-      if (tot) { const k = catOf(tot[1]); for (const r of pending) if (cat == null) r.category = k; pending = []; continue; }
+      // a section total: "TOTAL CULTURAL COSTS", "COSTOS AGRONÓMICOS TOTALES", "COSTOS TOTALES DE LA COSECHA"
+      const tot = t.match(/^\s*TOTAL\s*([A-Z][A-Z -]+?)\s*COSTS?\b/i) ?? t.match(/^\s*COSTOS\s+(?:TOTALES\s+DE\s+(?:LA\s+)?([A-ZÀ-Ü ]+?)|([A-ZÀ-Ü]+)\s+TOTALES)\s{2,}/i);
+      if (tot) {
+        const k = catOf(tot[1] ?? tot[2]);
+        for (const r of pending) if (cat == null) r.category = k;
+        checkSubtotal(pending, lines[i]);
+        pending = []; continue;
+      }
       if (/^\s*(TOTAL|C?OSTOS(?:\s+\S+)?\s+TOTALES|GASTOS\s+TOTALES)/i.test(t) || INTEREST_RE.test(t)) continue;
       // label, then numbers to the end of the line, with each number's end column
-      const lm = t.match(new RegExp(String.raw`^\s*(\S.*?)\s{2,}((?:${NUM}\s*)+)$`));
+      let lm = t.match(new RegExp(String.raw`^\s*(\S.*?)\s{2,}((?:${NUM}\s*)+)$`));
       if (!lm) continue;
+      // The hours figure can run into a long label: "Siembra (Incluye ... Replante) 50.00   805   0   0   3,202   0   4,007".
+      const runOn = lm[1].match(/^(.*\S)\s(\d+\.\d{2})$/);
+      if (runOn && lastFull && (lm[2].match(new RegExp(NUM, 'g')) ?? []).length === lastFull.ends.length - 1) {
+        const at = t.lastIndexOf(runOn[2], t.length - lm[2].length);
+        lm = Object.assign([t, runOn[1], t.slice(at)], { index: 0 }) as RegExpMatchArray;
+      }
+      // A label that wraps before its figures: "Disease/insect: Fire blight/codling moth (Agri-Mycin, Mycoshield," / "Intrepid)   0.31 ...".
+      let wrapAbove = '';
+      if (/^[a-z)]/.test(lm[1]) || /[,&/(-]\s*$/.test(lines[i - 1]?.text ?? '')) {
+        const above = lines[i - 1]?.text ?? '';
+        if (i - 1 >= from && textOnly(above) && /[,&/(-]\s*$/.test(above) && !/^\s*TOTAL\b|:\s*$/i.test(above)) wrapAbove = clean(above);
+      }
+      if (wrapAbove) quote = `${wrapAbove} ${quote}`;
       const off = t.length - lm[2].length;
       const toks = [...lm[2].matchAll(new RegExp(NUM, 'g'))].map(x => ({ raw: x[0], end: off + x.index! + x[0].length }));
       let vals: (string | null)[] | null = null;
@@ -669,7 +796,7 @@ function parseCosts(lines: Line[], a: Assumptions, warn: (s: string) => void): C
       }
       if (!vals || !layout) continue;
       const n = (k: number) => (vals![k] == null ? null : zeroDash(vals![k]!));
-      const base = { name: clean(lm[1]), category: cat ?? 'cultural', section, page: lines[i].page, quote };
+      const base = { name: clean(`${wrapAbove} ${lm[1]}`), category: cat ?? 'cultural', section, page: lines[i].page, quote };
       let row: OperationRow;
       if (layout === 'w8') row = { ...base, timeHrsPerAcre: n(0), labor: n(2), fuel: n(3), lubeRepairs: n(4), materials: n(5), customRent: n(6), totalCost: n(7) };
       // time, field labor hours, labor cost, fuel lube & repairs, material, custom, total
@@ -1888,6 +2015,12 @@ export const proseSentencesForDebug = (text: string) => proseSentences(pagesToLi
 
 // ---------------------------------------------------------------- driver
 
+/** Join words the text layer split after a letter: "HA RVEST", "ES TABLIS H", "COS TS", "CA SH", "Interes t", "A nalysis". */
+export const unsplitWords = (t: string) => t
+  .replace(/([A-Za-z][sSA]) (?=[A-Za-z]{1,2}\b)/g, '$1')
+  .replace(/\b(?!(?:A|I|OF|TO|IN|AT|BY|ON|OR|AN|AS|IS|IT|NO|BE)\b)([A-Z]{1,2}) (?=[A-Z]{3,})/g, '$1')
+  .replace(/\b(?!I\b)([A-Z]) (?=[a-z]{3,})/g, '$1');
+
 export function parseStudy(e: ManifestEntry, text: string): ParsedStudy {
   const warnings: string[] = [];
   const warn = (s: string) => warnings.push(s);
@@ -1896,7 +2029,30 @@ export function parseStudy(e: ManifestEntry, text: string): ParsedStudy {
   if (language === 'es') warn('Spanish-language study; prose regexes are English only');
   const source = parseSource(e, lines, language);
   const assumptions = parseAssumptions(lines, warn);
-  const costsPerAcre = parseCosts(lines, assumptions, warn);
+  const gross = (assumptions as unknown as { _gross?: Cited })._gross;
+  let costsPerAcre = parseCosts(lines, assumptions, warn);
+  // Some text layers split words after certain letters ("TOTAL OPERATING COS TS /ACRE", "CA SH OVERHEA D:", "Interes t on
+  // operating capital"). When no cost table is found, the cost tables are read again from lines with those splits joined.
+  if (!costsPerAcre.title && /\bCOS TS\b/.test(text)) {
+    const retry: string[] = [];
+    const joined = lines.map(l => ({ ...l, text: unsplitWords(l.text) }));
+    if (gross) (assumptions as unknown as { _gross?: Cited })._gross = gross;
+    const c2 = parseCosts(joined, assumptions, s => retry.push(s));
+    if (c2.title) {
+      // quotes stay verbatim: each joined line's quote is put back to the line as printed
+      const original = new Map(lines.map((l, k) => [clean(joined[k].text), clean(l.text)]));
+      const restore = (o: unknown): void => {
+        if (!o || typeof o !== 'object') return;
+        const r = o as Record<string, unknown>;
+        if (typeof r.quote === 'string') r.quote = original.get(r.quote) ?? r.quote;
+        Object.values(r).forEach(restore);
+      };
+      restore(c2);
+      costsPerAcre = c2;
+      warnings.splice(warnings.indexOf('no costs-per-acre table found'), 1);
+      warnings.push('the text layer splits words in the cost tables ("COS TS", "CA SH"); the tables are read with those splits joined', ...retry);
+    }
+  }
   const { equipment, investments, businessOverhead } = parseEquipment(lines, warn);
   const hourlyEquipment = parseHourly(lines, warn);
   const method = parseMethod(lines);

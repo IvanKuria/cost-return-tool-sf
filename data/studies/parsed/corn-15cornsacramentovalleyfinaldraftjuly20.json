@@ -461,7 +461,7 @@
     "lubeRepairs": 2,
     "materials": 9,
     "customRent": 0,
-    "totalCost": 16
+    "totalCost": 18
    },
    {
     "name": "Weeds-Post Plant-Broadleaf 25% of Ac",
@@ -1625,6 +1625,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
+   "Table 1 row \"Weeds-Post Plant Roundup PowerMax\" prints a total of 16 but its cells add to 18; the section subtotal 692 (page 9) matches the cells, so 18 is used",
    "monthly table gives operating costs by month only; cash overhead is not spread by month in this study"
   ]
  }

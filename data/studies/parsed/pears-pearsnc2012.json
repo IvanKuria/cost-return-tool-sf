@@ -476,11 +476,11 @@
     "totalCost": 26
    },
    {
-    "name": "Intrepid)",
+    "name": "Disease/insect: Fire blight/codling moth (Agri-Mycin, Mycoshield, Intrepid)",
     "category": "cultural",
     "section": "Cultural",
     "page": 18,
-    "quote": "Intrepid) 0.31 5 6 2 48 0 59",
+    "quote": "Disease/insect: Fire blight/codling moth (Agri-Mycin, Mycoshield, Intrepid) 0.31 5 6 2 48 0 59",
     "timeHrsPerAcre": 0.31,
     "labor": 5,
     "fuel": 6,

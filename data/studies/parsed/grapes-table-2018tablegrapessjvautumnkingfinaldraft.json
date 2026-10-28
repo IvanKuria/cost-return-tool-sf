@@ -693,7 +693,7 @@
     "lubeRepairs": 13,
     "materials": 4230,
     "customRent": 0,
-    "totalCost": 4759
+    "totalCost": 5069
    },
    {
     "name": "Water Truck",
@@ -2544,6 +2544,7 @@
    "landRentPerAcre"
   ],
   "warnings": [
+   "Table 1 row \"Spread/Swamp/Haul (Bags/Boxes/Labor\" prints a total of 4759 but its cells add to 5069; the section subtotal 14913 (page 16) matches the cells, so 5069 is used",
    "establishment year 3: running net 15562 differs from printed accumulated 17133"
   ]
  }

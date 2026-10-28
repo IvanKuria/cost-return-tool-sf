@@ -77,17 +77,243 @@
   }
  },
  "costsPerAcre": {
-  "title": null,
-  "operatingTotal": null,
-  "operatingInterest": null,
-  "cashOverheadTotal": null,
-  "nonCashOverheadTotal": null,
-  "totalCost": null,
-  "grossReturns": null,
+  "title": "COSTS PER ACREBY CATEGORY TO PRODUCEGUAVASIN S AN DIEGO COUNTY, 2007",
+  "operatingTotal": {
+   "value": 5410,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "TOTAL OPERATING COS TS /ACRE 1071 88 1690 2386 5410"
+  },
+  "operatingInterest": {
+   "value": 175,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "Interes t on operating capital @ 10.00% 175"
+  },
+  "cashOverheadTotal": {
+   "value": 1667,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "TOTAL CAS H OVERHEAD COS TS 1667"
+  },
+  "nonCashOverheadTotal": {
+   "value": 4043,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "TOTAL NON-CAS H OVERHEAD COS TS 53081 4043 4043"
+  },
+  "totalCost": {
+   "value": 11120,
+   "unit": "$/acre",
+   "page": 16,
+   "quote": "TOTAL COS TS /ACRE 11120"
+  },
+  "grossReturns": {
+   "value": 28082,
+   "unit": "$/acre",
+   "page": 18,
+   "quote": "TOTAL GROS S RETURNS FOR GUAVA 28082"
+  },
   "netReturnsAboveOperating": null,
   "netReturnsAboveTotal": null,
-  "cashOverheadItems": [],
-  "operations": []
+  "cashOverheadItems": [
+   {
+    "description": "Office Expense",
+    "value": 240,
+    "page": 16,
+    "quote": "Office Expens e 240"
+   },
+   {
+    "description": "Liability Ins uranc",
+    "value": 87,
+    "page": 16,
+    "quote": "Liability Ins uranc 87"
+   },
+   {
+    "description": "Interest-Cash Overhead Cost",
+    "value": 79,
+    "page": 16,
+    "quote": "Interes t-Cas h Overhead Cos t 79"
+   },
+   {
+    "description": "Leaf Analysis",
+    "value": 10,
+    "page": 16,
+    "quote": "Leaf A nalys is 10"
+   },
+   {
+    "description": "Soil Analysis",
+    "value": 2,
+    "page": 16,
+    "quote": "Soil A nalys is 2"
+   },
+   {
+    "description": "Field Sanitation",
+    "value": 348,
+    "page": 16,
+    "quote": "Field Sanitation 348"
+   },
+   {
+    "description": "Property Taxes",
+    "value": 464,
+    "page": 16,
+    "quote": "Property Taxes 464"
+   },
+   {
+    "description": "Property Ins urance",
+    "value": 331,
+    "page": 16,
+    "quote": "Property Ins urance 331"
+   },
+   {
+    "description": "Inves tment Repairs",
+    "value": 106,
+    "page": 16,
+    "quote": "Inves tment Repairs 106"
+   }
+  ],
+  "operations": [
+   {
+    "name": "Irrigate",
+    "category": "cultural",
+    "section": "CULTURAL",
+    "page": 16,
+    "quote": "Irrigate 13.00 223 65 1303 0 1591",
+    "timeHrsPerAcre": 13,
+    "labor": 223,
+    "fuel": 65,
+    "lubeRepairs": null,
+    "materials": 1303,
+    "customRent": 0,
+    "totalCost": 1591
+   },
+   {
+    "name": "Fertilizer CAN 17",
+    "category": "cultural",
+    "section": "CULTURAL",
+    "page": 16,
+    "quote": "Fertilizer CA N 17 0.00 0 0 106 0 106",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 106,
+    "customRent": 0,
+    "totalCost": 106
+   },
+   {
+    "name": "Pruning",
+    "category": "cultural",
+    "section": "CULTURAL",
+    "page": 16,
+    "quote": "Pruning 48.50 645 0 0 0 645",
+    "timeHrsPerAcre": 48.5,
+    "labor": 645,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 645
+   },
+   {
+    "name": "Weed Control-Weeding",
+    "category": "cultural",
+    "section": "CULTURAL",
+    "page": 16,
+    "quote": "Weed Control-Weeding 1.00 17 15 0 0 32",
+    "timeHrsPerAcre": 1,
+    "labor": 17,
+    "fuel": 15,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 0,
+    "totalCost": 32
+   },
+   {
+    "name": "Weed Control-Roundup",
+    "category": "cultural",
+    "section": "CULTURAL",
+    "page": 16,
+    "quote": "Weed Control-Roundup 3.00 40 0 6 0 46",
+    "timeHrsPerAcre": 3,
+    "labor": 40,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 6,
+    "customRent": 0,
+    "totalCost": 46
+   },
+   {
+    "name": "Gopher Control",
+    "category": "cultural",
+    "section": "CULTURAL",
+    "page": 16,
+    "quote": "Gopher Control 9.00 120 0 200 0 320",
+    "timeHrsPerAcre": 9,
+    "labor": 120,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 200,
+    "customRent": 0,
+    "totalCost": 320
+   },
+   {
+    "name": "Squirrel Control",
+    "category": "cultural",
+    "section": "CULTURAL",
+    "page": 16,
+    "quote": "Squirrel Control 1.50 26 8 75 0 109",
+    "timeHrsPerAcre": 1.5,
+    "labor": 26,
+    "fuel": 8,
+    "lubeRepairs": null,
+    "materials": 75,
+    "customRent": 0,
+    "totalCost": 109
+   },
+   {
+    "name": "Picking",
+    "category": "harvest",
+    "section": "HARVEST",
+    "page": 16,
+    "quote": "Picking 0 0 0 0 1542 1542",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 1542,
+    "totalCost": 1542
+   },
+   {
+    "name": "Trans port and Hauling",
+    "category": "harvest",
+    "section": "HARVEST",
+    "page": 16,
+    "quote": "Trans port and Hauling 0 0 0 0 378 378",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 378,
+    "totalCost": 378
+   },
+   {
+    "name": "Packing & Marketing",
+    "category": "harvest",
+    "section": "HARVEST",
+    "page": 16,
+    "quote": "Packing & M arketing 0 0 0 0 466 466",
+    "timeHrsPerAcre": 0,
+    "labor": 0,
+    "fuel": 0,
+    "lubeRepairs": null,
+    "materials": 0,
+    "customRent": 466,
+    "totalCost": 466
+   }
+  ]
  },
  "equipment": [
   {
@@ -1124,6 +1350,12 @@
    "laborMachineRate",
    "laborNonMachineRate",
    "acresFarmed",
+   "operatingTotal",
+   "cashOverheadTotal",
+   "nonCashOverheadTotal",
+   "totalCost",
+   "grossReturns",
+   "operations",
    "equipment",
    "capitalRecoveryFormula",
    "insuranceRatePct",
@@ -1136,12 +1368,6 @@
    "yieldPerAcre",
    "laborOverheadPct",
    "landRentPerAcre",
-   "operatingTotal",
-   "cashOverheadTotal",
-   "nonCashOverheadTotal",
-   "totalCost",
-   "grossReturns",
-   "operations",
    "investments",
    "hourlyEquipment",
    "businessOverhead",
@@ -1149,7 +1375,10 @@
    "monthly"
   ],
   "warnings": [
-   "no costs-per-acre table found",
+   "the text layer splits words in the cost tables (\"COS TS\", \"CA SH\"); the tables are read with those splits joined",
+   "a later costs table had no totals or is a harvest-only table; used an earlier one",
+   "several costs-per-acre tables (establishment and production); using the production one",
+   "Table 1 prints one combined fuel, lube and repairs column; it is stored under fuel with lubeRepairs null",
    "equipment row without a Total column: 2007 A TV 4WD",
    "equipment row without a Total column: 2007 Weed Wacker"
   ]

@@ -110,6 +110,7 @@
    "establishmentAnnual"
   ],
   "warnings": [
+   "one-page budget format: rows did not add up to TOTAL ALL COSTS 4678.37 (rows 4690.37); rows not read",
    "no costs-per-acre table found",
    "no whole-farm equipment table",
    "monthly table has no TABLE heading; parsed from the month header line",

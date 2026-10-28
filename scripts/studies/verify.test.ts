@@ -454,21 +454,13 @@ describe('per-acre operations table (Table 1 operation rows)', () => {
     'beef-beefyearling-stockersv2010': 'livestock budget',
     'goats-meatgoatncal2010': 'livestock budget',
     'sheep-2022sheepproductionsjvsouth': 'livestock budget',
-    // Imperial County 2004-05 (and 2000-01 ryegrass) budgets: Materials / Hand Labor / Cost Per Acre columns, no TOTAL OPERATING COSTS row
-    'artichokes-artichokes04': 'Imperial County layout',
-    'bermudagrass-hay-bermhay04': 'Imperial County layout',
-    'bermudagrass-seed-bermseed04': 'Imperial County layout',
-    'cantaloupes-cantaloupemb04': 'Imperial County layout',
-    'carrots-carrotsmkt04': 'Imperial County layout',
-    'cauliflower-cauliflower04': 'Imperial County layout',
-    'kleingrass-hay-kleingrass04': 'Imperial County layout',
-    'melons-mixedmelons04': 'Imperial County layout',
-    'ryegrass-ryegrass': 'Imperial County layout',
-    'sugar-beets-sugarbeet04': 'Imperial County layout',
-    'watermelon-watermelon04': 'Imperial County layout',
+    // Imperial County 2004-05 one-page budget whose text layer prints the first land preparation totals one line up
+    'cauliflower-cauliflower04': 'Imperial County layout; the text layer shifts the first four row totals onto the line above, so the rows do not add up to TOTAL OF ALL COSTS',
     // the operations table is an image in the PDF; the text layer has only its heading
     'onions-2023onions-final': 'Table 1 is an embedded image',
-    'lettuce-2010lettuce-wrap-cc': 'tables are embedded images',
+    // a one-off 2010 Central Coast layout (No. Times / Cost per Time / Material or Custom / Hand Labor / Total Cost) with
+    // sub totals by practice and no operating total, interest or overhead split
+    'lettuce-2010lettuce-wrap-cc': 'one-off "Sample Production Costs" layout with no operating total',
     // per 1,000 linear feet of hedgerow, establishment only
     'blue-elderberry-20blueelderberryhedgerowwithouttillage': 'per 1,000 LF hedgerow',
     'blue-elderberry-20blueelderberryhighdensityhedgerowwithtillage': 'per 1,000 LF hedgerow',
@@ -479,9 +471,12 @@ describe('per-acre operations table (Table 1 operation rows)', () => {
     'grapes-grapesrivcty02': 'one establishment-and-production table by year',
     'lychee-lycheescc02': 'profitability table by year',
     'christmas-trees-christmastreesn2005': 'one column per year and a per-tree column',
-    'guava-guava-sc07': 'text layer splits and joins words throughout ("COS TS PER ACREBY CATEGORY")',
-    'raspberries-span-bpraspberry-cc-final-v2-1': 'Spanish production tables are titled by season ("Producción de primavera - Año 2"), not "COSTOS POR ACRE"',
   };
+
+  // Imperial County one-page budgets (2000-01 ryegrass, 2004-05 the rest): operation rows, but no operating total or interest is
+  // printed; the rows, land rent, the percentage cash overhead and any stand amortization add up to TOTAL ALL COSTS.
+  const ONE_PAGE = ['artichokes-artichokes04', 'bermudagrass-hay-bermhay04', 'bermudagrass-seed-bermseed04', 'cantaloupes-cantaloupemb04', 'carrots-carrotsmkt04',
+    'kleingrass-hay-kleingrass04', 'melons-mixedmelons04', 'ryegrass-ryegrass', 'sugar-beets-sugarbeet04', 'watermelon-watermelon04'];
 
   it('every study with a per-acre operations table has operation rows that add up to the printed operating total', () => {
     const bad: string[] = [];
@@ -490,6 +485,11 @@ describe('per-acre operations table (Table 1 operation rows)', () => {
       if (id in NO_OPERATIONS_TABLE) continue;
       const c = s.costsPerAcre;
       if (!c.operations.length) { bad.push(`${id}: no operation rows`); continue; }
+      if (ONE_PAGE.includes(id)) {
+        const sum = sumOps(s) + c.cashOverheadItems.reduce((a, x) => a + x.value, 0) + (c.nonCashOverheadTotal?.value ?? 0);
+        if (c.operatingTotal || !c.totalCost || Math.abs(sum - c.totalCost.value) > 0.5) bad.push(`${id}: one-page rows ${sum.toFixed(2)} vs TOTAL ALL COSTS ${c.totalCost?.value}`);
+        continue;
+      }
       if (!c.operatingTotal) { bad.push(`${id}: no operating total`); continue; }
       const rebuilt = sumOps(s) + (c.operatingInterest?.value ?? 0);
       if (!within(rebuilt, c.operatingTotal.value, 2)) bad.push(`${id}: rows + interest ${rebuilt.toFixed(2)} vs printed ${c.operatingTotal.value}`);
@@ -509,6 +509,60 @@ describe('per-acre operations table (Table 1 operation rows)', () => {
       if (!within(op.value + co.value + nc.value, t.value, 2)) bad.push(`${s.source.id}: ${op.value} + ${co.value} + ${nc.value} vs ${t.value}`);
     }
     expect(bad).toEqual([]);
+  });
+
+  // Hand-checked against the printed tables.
+  it('Imperial County one-page budgets: annual rows only, stand establishment left out, amortization as the non-cash overhead', () => {
+    const c = get('bermudagrass-hay-bermhay04').costsPerAcre;
+    expect(c.operations.map(o => [o.name, o.totalCost])).toEqual([['Irrigate 16x', 149.61], ['Fertilizer, broadcast 4x', 168], ['Fertilize-water-run', 22], ['Weed control*-ground', 17],
+      ['Swather 5x', 68.75], ['Rake 12x', 66], ['Bale 10 tons', 126], ['Haul & Stack 10 tons', 48.6]]);
+    const irr = c.operations[0];
+    expect([irr.labor, irr.materials, irr.customRent, irr.page]).toEqual([49.61, 100, 0, 6]);
+    expect([c.operations[1].materials, c.operations[1].customRent]).toEqual([136, 32]);    // 8.00 prevailing rate x 4
+    expect(c.nonCashOverheadTotal).toMatchObject({ value: 62.24, page: 6, quote: 'Amortization 20 % of total cost of stand establishment 62.24' });
+    expect(c.cashOverheadItems.map(x => x.value)).toEqual([125, 70.7]);
+    expect(c.operatingTotal).toBeNull();
+    expect(c.totalCost).toMatchObject({ value: 923.9, page: 6 });
+    // no prevailing rate on the row: the remainder is hand labor ("Seedless transplants 600.00 12 9.95 719.40")
+    const t = get('watermelon-watermelon04').costsPerAcre.operations.find(o => o.name === 'Seedless transplants')!;
+    expect([t.materials, t.labor, t.customRent, t.totalCost]).toEqual([600, 119.4, 0, 719.4]);
+  });
+
+  it('guava 2007: split words are joined for the cost tables ("COS TS", "CA SH OVERHEA D")', () => {
+    const s = get('guava-guava-sc07'), c = s.costsPerAcre;
+    expect(c.operations).toHaveLength(10);
+    expect(c.operatingTotal).toMatchObject({ value: 5410, page: 16, quote: 'TOTAL OPERATING COS TS /ACRE 1071 88 1690 2386 5410' });
+    expect(c.operatingInterest?.value).toBe(175);
+    expect([c.cashOverheadTotal?.value, c.nonCashOverheadTotal?.value, c.totalCost?.value]).toEqual([1667, 4043, 11120]);
+    expect(c.operations.find(o => o.name === 'Packing & Marketing')?.customRent).toBe(466);
+    expect(s.parse.warnings).toContain('the text layer splits words in the cost tables ("COS TS", "CA SH"); the tables are read with those splits joined');
+  });
+
+  it('Spanish studies: "COSTOS DE OPERACIÓN TOTALES /" wrapped before ACRE, "COSTOS GENERALES TOTALES NO EFECTIVOS", cash overhead items', () => {
+    const r = get('raspberries-span-bpraspberry-cc-final-v2-1').costsPerAcre;
+    expect(r.operatingTotal).toMatchObject({ value: 58287, quote: 'COSTOS DE OPERACIÓN TOTALES / 6,837 266 102 9,608 41,055 58,287' });
+    expect([r.operatingInterest?.value, r.cashOverheadTotal?.value, r.nonCashOverheadTotal?.value, r.totalCost?.value]).toEqual([419, 3415, 5185, 66887]);
+    expect(r.operations).toHaveLength(25);
+    expect(r.operations[0].category).toBe('cultural');                                     // "Agronómico:"
+    expect(r.cashOverheadItems.reduce((a, x) => a + x.value, 0)).toBe(3415);
+    const b = get('blackberries-span-bpblackberrycc2018-final');
+    // Table 5 prints 64,597, but its own rows and Tables 1, 6 and 8 give 65,597
+    expect([b.costsPerAcre.nonCashOverheadTotal?.value, b.costsPerAcre.totalCost?.value]).toEqual([6615, 65597]);
+    expect(b.costsPerAcre.operations.find(o => o.name === 'Camioneta')?.totalCost).toBe(183);
+    expect(b.parse.warnings).toContain('Table 1 row "Camioneta" prints a total of 83 but its cells add to 183; the section subtotal 6140 (page 21) matches the cells, so 183 is used');
+    // the hours figure runs into a long label
+    const st = get('strawberries-spanish-translation-of-2016-strawberry-cost-study-central-coast').costsPerAcre.operations.find(o => /^Siembra/.test(o.name))!;
+    expect([st.timeHrsPerAcre, st.labor, st.materials, st.totalCost]).toEqual([50, 805, 3202, 4007]);
+  });
+
+  it('a row total that disagrees with its cells is replaced only when the section subtotal confirms the cells', () => {
+    const ak = get('grapes-table-2018tablegrapessjvautumnkingfinaldraft').costsPerAcre;
+    expect(ak.operations.find(o => /^Spread\/Swamp\/Haul/.test(o.name))?.totalCost).toBe(5069);      // printed 4,759; TOTAL HARVEST COSTS 14,913
+    expect(ak.operations.find(o => /Mildew \(SI\) 4x, Fertilizer/.test(o.name))?.totalCost).toBe(111); // cells 115, subtotal agrees with 111
+    // Flame Seedless prints 1,520 for cells of 1,133 and its subtotal agrees with 1,520: kept
+    expect(get('grapes-table-2018tablegrapessjvflameseedlessfinaldraft').costsPerAcre.operations.find(o => /^Prune: Dormant/.test(o.name))?.totalCost).toBe(1520);
+    // a label that wraps before its figures
+    expect(get('pears-pearsnc2012').costsPerAcre.operations.map(o => o.name)).toContain('Disease/insect: Fire blight/codling moth (Agri-Mycin, Mycoshield, Intrepid)');
   });
 
   // Hand-checked against the printed Table 1 / Table 2.
